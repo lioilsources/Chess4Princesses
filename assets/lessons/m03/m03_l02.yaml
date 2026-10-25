@@ -1,0 +1,30 @@
+id: m03_l02
+module: 3
+title: {cs: "Hádanka barev", en: "Colour riddle"}
+story:
+  cs: "Jeden Motýlek má rád bílé komnaty, druhý černé. Na jinou barvu nikdy nedoletí."
+  en: "One butterfly loves white rooms, the other loves dark ones. They never reach the other colour."
+skills: [bishop_colour]
+rules: piece_only
+prompt: {cs: "Doletí Motýlek na hvězdu?", en: "Can the butterfly reach the star?"}
+tasks:
+  - goal: yes_no
+    fen: "8/8/8/8/8/8/8/2B5 w - - 0 1"
+    stars: [e4]
+    answer: false
+    verify: reachable
+  - goal: yes_no
+    fen: "8/8/8/8/8/8/8/2B5 w - - 0 1"
+    stars: [f4]
+    answer: true
+    verify: reachable
+  - goal: yes_no
+    fen: "8/8/8/8/8/8/8/5B2 w - - 0 1"
+    stars: [c6]
+    answer: true
+    verify: reachable
+  - goal: yes_no
+    fen: "8/8/8/8/8/8/8/5B2 w - - 0 1"
+    stars: [d6]
+    answer: false
+    verify: reachable

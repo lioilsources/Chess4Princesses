@@ -1,0 +1,17 @@
+id: m03_l04
+module: 3
+title: {cs: "Motýlek v bitvě", en: "The butterfly in battle"}
+story:
+  cs: "Motýlek letí do bitvy! Pozor, dosáhne jen na svou barvu."
+  en: "The butterfly flies into battle! Remember, it only reaches its own colour."
+skills: [bishop_capture]
+rules: piece_only
+reward: {stars: 3, unlock: bishop}
+prompt: {cs: "Vezmi všechny soupeřovy družičky.", en: "Capture all the other bridesmaids."}
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 3, highlight: solution_first_move}
+tasks:
+  - goal: capture_all
+    fen: "8/3p4/8/1p6/6p1/8/8/5B2 w - - 0 1"
+    max_moves: 3

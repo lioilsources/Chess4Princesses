@@ -1,0 +1,23 @@
+id: m02_l03
+module: 2
+title: {cs: "Láva!", en: "Lava!"}
+story:
+  cs: "Pozor, některé komnaty hoří. Věžka nesmí na lávu ani přes ni přejet."
+  en: "Careful, some rooms are on fire. The rook may not stop on the lava or drive across it."
+skills: [rook_move, danger_squares]
+rules: piece_only
+prompt: {cs: "Dojeď k hvězdě, ale vyhni se lávě.", en: "Reach the star, but stay off the lava."}
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 2, highlight: solution_first_move}
+tasks:
+  - goal: avoid_lava
+    fen: "8/8/8/8/8/8/R7/8 w - - 0 1"
+    stars: [d5]
+    lava: [a5, b2, c3]
+    max_moves: 3
+  - goal: avoid_lava
+    fen: "7R/8/8/8/8/8/8/8 w - - 0 1"
+    stars: [a1]
+    lava: [d8, h4, e1, a5]
+    max_moves: 4

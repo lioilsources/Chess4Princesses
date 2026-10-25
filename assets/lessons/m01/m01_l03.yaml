@@ -1,0 +1,19 @@
+id: m01_l03
+module: 1
+title: {cs: "Bitva šikmo", en: "Slanted battle"}
+story:
+  cs: "Družičky bojují šikmo: pošťouchnou toho, kdo jim stojí šikmo vepředu."
+  en: "Bridesmaids fight on the slant: they nudge whoever stands diagonally in front of them."
+skills: [pawn_capture]
+rules: piece_only
+prompt: {cs: "Pošťouchni všechny soupeřovy družičky.", en: "Nudge away all the other bridesmaids."}
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 3, highlight: solution_first_move}
+tasks:
+  - goal: capture_all
+    fen: "8/8/8/5p2/4p3/3p4/4P3/8 w - - 0 1"
+    max_moves: 3
+  - goal: capture_all
+    fen: "8/8/8/8/p7/1p5p/2P3P1/8 w - - 0 1"
+    max_moves: 3

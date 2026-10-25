@@ -1,0 +1,14 @@
+id: m01_l05
+module: 1
+title: {cs: "Pěšcová válka", en: "Pawn war"}
+story:
+  cs: "Tvoje první opravdová hra! Kdo první dovede družičku na konec, vyhrává."
+  en: "Your very first real game! Whoever walks a bridesmaid to the end first, wins."
+skills: [pawn_war]
+rules: piece_only
+reward: {stars: 3, unlock: pawn}
+tasks:
+  - goal: pawn_war
+    prompt: {cs: "Hraješ proti robůtkovi Miminku.", en: "You play against Baby Robot."}
+    fen: "8/4pppp/8/8/8/8/4PPPP/8 w - - 0 1"
+    bot: baby

@@ -1,0 +1,19 @@
+id: m00_l01
+module: 0
+title: {cs: "Kde bydlí princezna?", en: "Where does the princess live?"}
+story:
+  cs: "Šachovnice je království se 64 komnatami. Každá komnata má jméno: písmeno ulice a číslo domu."
+  en: "The chessboard is a kingdom with 64 rooms. Every room has a name: a street letter and a house number."
+skills: [board_names]
+hints:
+  - {after_fails: 1, highlight: targets}
+tasks:
+  - goal: tap_square
+    prompt: {cs: "Klepni na ulici!", en: "Tap the street!"}
+    targets: [e, a, h, c]
+  - goal: tap_square
+    prompt: {cs: "Klepni na řadu domů!", en: "Tap the row of houses!"}
+    targets: ["1", "8", "4", "6"]
+  - goal: tap_square
+    prompt: {cs: "Najdi komnatu!", en: "Find the room!"}
+    targets: [e4, a1, h8, d5]

@@ -1,0 +1,21 @@
+id: m02_l02
+module: 2
+title: {cs: "Sbírej hvězdy", en: "Collect the stars"}
+story:
+  cs: "Věžka sbírá hvězdičky i cestou. Kudy pojede, aby jich měla co nejvíc najednou?"
+  en: "The rook picks up stars on the way too. Which way should she drive to grab as many as she can at once?"
+skills: [rook_move, planning]
+rules: piece_only
+prompt: {cs: "Seber všechny hvězdy co nejméně jízdami.", en: "Collect all the stars in as few drives as you can."}
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 2, highlight: solution_first_move}
+tasks:
+  - goal: collect_stars
+    fen: "8/8/8/8/8/8/8/R7 w - - 0 1"
+    stars: [a4, a8, e8, h8]
+    max_moves: 2
+  - goal: collect_stars
+    fen: "8/8/8/8/8/8/8/7R w - - 0 1"
+    stars: [h4, c4, c8]
+    max_moves: 3

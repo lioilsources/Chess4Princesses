@@ -1,0 +1,39 @@
+{
+  "id": "witches",
+  "name": {"cs": "Čarodějky", "en": "Witches"},
+  "palette": {"primary": "#9B7BD4", "accent": "#7FE0C9", "dark": "#2E1A55"},
+  "pieces": {
+    "king": {
+      "name": {"cs": "Král Bručoun", "en": "King Grumble"},
+      "motto": {"cs": "Ahoj, já jsem Král Bručoun. Bručím, ale ve skutečnosti mám rád koláčky.", "en": "Hi, I'm King Grumble. I grumble, but really I love cupcakes."},
+      "lines": {"attack": {"cs": "Brum brum!", "en": "Grumble grumble!"}, "defeat": {"cs": "Jdu si zdřímnout…", "en": "Nap time…"}, "victory": {"cs": "Ha, hezky!", "en": "Ha, lovely!"}}
+    },
+    "queen": {
+      "name": {"cs": "Královna Bouřka", "en": "Queen Thunder"},
+      "motto": {"cs": "Ahoj, já jsem Královna Bouřka. Moje kouzla dělají bum, ale nikoho nebolí.", "en": "Hi, I'm Queen Thunder. My spells go boom, but never hurt anyone."},
+      "lines": {"attack": {"cs": "Hromská jiskra!", "en": "Thunder spark!"}, "defeat": {"cs": "Letím na koštěti domů…", "en": "Flying home on my broom…"}, "victory": {"cs": "Mňáá-ha!", "en": "Mwa-ha!"}}
+    },
+    "rook": {
+      "name": {"cs": "Věž Netopýrka", "en": "Batty Tower"},
+      "motto": {"cs": "Ahoj, já jsem Věž Netopýrka. Bydlí ve mně tři malí netopýři.", "en": "Hi, I'm Batty Tower. Three little bats live inside me."},
+      "lines": {"attack": {"cs": "Netopýři, vzhůru!", "en": "Bats, away!"}, "defeat": {"cs": "Jdu si pověsit hlavou dolů…", "en": "Going to hang upside down…"}, "victory": {"cs": "Pípí!", "en": "Squeak!"}}
+    },
+    "bishop": {
+      "name": {"cs": "Můra Šeptalka", "en": "Whisper Moth"},
+      "motto": {"cs": "Ahoj, já jsem Můra Šeptalka. Šeptám kouzla a létám šikmo.", "en": "Hi, I'm Whisper Moth. I whisper spells and fly on the slant."},
+      "lines": {"attack": {"cs": "Pssst… kouzlo!", "en": "Psst… magic!"}, "defeat": {"cs": "Letím ke lampičce…", "en": "Off to the lamp…"}, "victory": {"cs": "Hihi!", "en": "Hee-hee!"}}
+    },
+    "knight": {
+      "name": {"cs": "Koník Stínek", "en": "Shadow Pony"},
+      "motto": {"cs": "Ahoj, já jsem Koník Stínek. Skáču potmě a nikdy nezakopnu.", "en": "Hi, I'm Shadow Pony. I jump in the dark and never trip."},
+      "lines": {"attack": {"cs": "Skok do stínu!", "en": "Shadow jump!"}, "defeat": {"cs": "Jdu do stáje…", "en": "Back to the stable…"}, "victory": {"cs": "Íhaa!", "en": "Neigh!"}}
+    },
+    "pawn": {
+      "name": {"cs": "Žabka Kapička", "en": "Little Froggy"},
+      "motto": {"cs": "Ahoj, já jsem Žabka Kapička. Skáču jen dopředu a jednou budu královna!", "en": "Hi, I'm Little Froggy. I only hop forward, and one day I'll be a queen!"},
+      "lines": {"attack": {"cs": "Kvák!", "en": "Ribbit!"}, "defeat": {"cs": "Jdu do rybníčku…", "en": "Off to the pond…"}, "victory": {"cs": "Kvákvá!", "en": "Ribbit-ribbit!"}}
+    }
+  },
+  "battle_overrides": {},
+  "board_skin": null
+}

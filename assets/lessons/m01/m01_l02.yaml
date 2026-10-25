@@ -1,0 +1,21 @@
+id: m01_l02
+module: 1
+title: {cs: "Kámen v cestě", en: "A stone in the way"}
+story:
+  cs: "Na cestě leží kameny. Družička přes ně neprojde. Která to zvládne?"
+  en: "Stones lie on the road. A bridesmaid can't walk through them. Which one can make it?"
+skills: [pawn_move, pawn_blocked]
+rules: piece_only
+prompt: {cs: "Která družička dojde ke hvězdě?", en: "Which bridesmaid can reach the star?"}
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 3, highlight: solution_first_move}
+tasks:
+  - goal: reach_square
+    fen: "8/8/1p3p2/8/8/8/1P1P1P2/8 w - - 0 1"
+    stars: [d6]
+    max_moves: 3
+  - goal: reach_square
+    fen: "8/8/8/1p1p4/8/8/1P1P1P2/8 w - - 0 1"
+    stars: [f6]
+    max_moves: 3

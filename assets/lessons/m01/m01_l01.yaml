@@ -1,0 +1,26 @@
+id: m01_l01
+module: 1
+title: {cs: "Družička jde k hvězdě", en: "To the star"}
+story:
+  cs: "Družičky jdou vždy dopředu, nikdy zpátky. Na první krok mohou skočit dva."
+  en: "Bridesmaids always walk forward, never back. On their very first step they may jump two."
+skills: [pawn_move, pawn_double_step]
+rules: piece_only
+prompt: {cs: "Doveď družičku na hvězdu.", en: "Walk the bridesmaid to the star."}
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 3, highlight: solution_first_move}
+tasks:
+  - goal: reach_square
+    fen: "8/8/8/8/8/8/4P3/8 w - - 0 1"
+    stars: [e3]
+    max_moves: 1
+  - goal: reach_square
+    prompt: {cs: "Zkus to jedním velkým skokem!", en: "Try it in one big jump!"}
+    fen: "8/8/8/8/8/8/3P4/8 w - - 0 1"
+    stars: [d4]
+    max_moves: 1
+  - goal: reach_square
+    fen: "8/8/8/8/8/8/2P5/8 w - - 0 1"
+    stars: [c6]
+    max_moves: 3

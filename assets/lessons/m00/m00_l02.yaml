@@ -1,0 +1,19 @@
+id: m00_l02
+module: 0
+title: {cs: "Barevné komnaty", en: "Coloured rooms"}
+story:
+  cs: "Bílá komnata musí být vpravo dole, jinak se princezna zlobí. Komnaty na šikmé cestičce mají všechny stejnou barvu."
+  en: "The white room must be in the bottom right corner, or the princess gets cross. Rooms along a slanted path all share one colour."
+skills: [board_colours]
+hints:
+  - {after_fails: 2, highlight: targets}
+tasks:
+  - goal: tap_all
+    prompt: {cs: "Klepni na všechny bílé komnaty v první řadě.", en: "Tap every white room in the first row."}
+    targets: [b1, d1, f1, h1]
+  - goal: tap_all
+    prompt: {cs: "Projdi šikmou cestičku z rohu do rohu.", en: "Walk the slanted path from corner to corner."}
+    targets: [a1, b2, c3, d4, e5, f6, g7, h8]
+  - goal: tap_all
+    prompt: {cs: "A teď bílou šikmou cestičku!", en: "Now the white slanted path!"}
+    targets: [h1, g2, f3, e4, d5, c6, b7, a8]

@@ -1,0 +1,21 @@
+id: m03_l03
+module: 3
+title: {cs: "Motýlkova cestička", en: "The butterfly's path"}
+story:
+  cs: "Motýlek sbírá hvězdičky cestou. Najdi šikmou cestičku přes co nejvíc hvězd."
+  en: "The butterfly picks up stars on the way. Find a slanted path through as many stars as you can."
+skills: [bishop_move, planning]
+rules: piece_only
+prompt: {cs: "Seber všechny hvězdy.", en: "Collect all the stars."}
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 2, highlight: solution_first_move}
+tasks:
+  - goal: collect_stars
+    fen: "8/8/8/8/8/8/8/2B5 w - - 0 1"
+    stars: [e3, g5, e7]
+    max_moves: 2
+  - goal: collect_stars
+    fen: "8/8/8/8/8/8/8/5B2 w - - 0 1"
+    stars: [c4, a6, c8, h3]
+    max_moves: 3

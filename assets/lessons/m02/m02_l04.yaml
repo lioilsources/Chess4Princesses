@@ -1,0 +1,17 @@
+id: m02_l04
+module: 2
+title: {cs: "Věžka v bitvě", en: "The rook in battle"}
+story:
+  cs: "Věžka vyráží do bitvy! Soupeřovy družičky stojí a čekají."
+  en: "The rook rides into battle! The other bridesmaids stand and wait."
+skills: [rook_capture]
+rules: piece_only
+reward: {stars: 3, unlock: rook}
+prompt: {cs: "Vezmi všechny soupeřovy družičky.", en: "Capture all the other bridesmaids."}
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 3, highlight: solution_first_move}
+tasks:
+  - goal: capture_all
+    fen: "8/4p2p/8/p3p3/8/8/8/R7 w - - 0 1"
+    max_moves: 4

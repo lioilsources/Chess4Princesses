@@ -1,0 +1,32 @@
+# Kingdom map: modules as islands (PLAN §1). Lessons are listed in play order;
+# a module without lessons is shown as "coming soon".
+modules:
+  - module: 0
+    title: {cs: "Království", en: "The Kingdom"}
+    icon: castle
+    unlock: queen
+    lessons: [m00_l01, m00_l02, m00_l03]
+  - module: 1
+    title: {cs: "Malé družičky", en: "Little Bridesmaids"}
+    icon: pawn
+    unlock: pawn
+    lessons: [m01_l01, m01_l02, m01_l03, m01_l04, m01_l05]
+  - module: 2
+    title: {cs: "Věžka na kolečkách", en: "Rook on Wheels"}
+    icon: rook
+    unlock: rook
+    lessons: [m02_l01, m02_l02, m02_l03, m02_l04]
+  - module: 3
+    title: {cs: "Motýlek", en: "Butterfly"}
+    icon: bishop
+    unlock: bishop
+    lessons: [m03_l01, m03_l02, m03_l03, m03_l04]
+  - {module: 4, title: {cs: "Princezna", en: "Princess"}, icon: queen}
+  - {module: 5, title: {cs: "Koník", en: "Pony"}, icon: knight}
+  - {module: 6, title: {cs: "Král tatínek", en: "Daddy King"}, icon: king}
+  - {module: 7, title: {cs: "Bitvy a jablíčka", en: "Battles and Apples"}, icon: apple}
+  - {module: 8, title: {cs: "Mat", en: "Checkmate"}, icon: crown}
+  - {module: 9, title: {cs: "Kouzelné tahy", en: "Magic Moves"}, icon: magic}
+  - {module: 10, title: {cs: "Začátek bitvy", en: "Openings"}, icon: map}
+  - {module: 11, title: {cs: "Lsti", en: "Tricks"}, icon: fox}
+  - {module: 12, title: {cs: "Velká partie", en: "The Big Game"}, icon: trophy}
