@@ -1,0 +1,27 @@
+{
+  "style": "cute chibi character for a children's chess game, chunky rounded proportions, big head, small body, thick clean dark outline, flat pastel colours with soft cel shading, 2D sticker illustration, full body, standing, centered, facing the viewer, friendly smile, a single character only with nothing around it, plain pure white background",
+  "armies": {
+    "fairies": {
+      "theme": "fairy kingdom, pink and soft lilac with golden yellow accents, sparkles, flowers",
+      "pieces": {
+        "king": "King Rainbeard, a kind old fairy king with a huge fluffy rainbow beard and a big golden crown with a cross on top, pink royal robe",
+        "queen": "Princess Sparkle, a cheerful fairy princess with a tall pointed golden crown, pink ball gown, small butterfly wings, holding a star wand",
+        "rook": "Daisy Tower, a living little castle tower character with stone battlements on top, pink stone walls, daisy flowers, tiny wheels, cute face on the tower",
+        "bishop": "Glimmer Butterfly, a butterfly fairy wearing a tall rounded pointed mitre hat with a slit, pink and yellow wings",
+        "knight": "Cloud Pony, a fluffy white pony with a pink cloud mane, seen from the side but head turned to the viewer, horse head clearly visible",
+        "pawn": "Dewdrop, a tiny round fairy child shaped like a water droplet with a little round head, small wings, pink"
+      }
+    },
+    "witches": {
+      "theme": "friendly witch kingdom, lavender purple and mint green accents, stars and moons, not scary",
+      "pieces": {
+        "king": "King Grumble, a grumpy-cute old wizard king with a big bushy grey beard and a big purple crown with a cross on top, holding a cupcake",
+        "queen": "Queen Thunder, a friendly witch queen with a tall pointed crown over a witch hat, purple dress, holding a wand with a small lightning spark",
+        "rook": "Batty Tower, a living little castle tower character with stone battlements on top, purple stone walls, three tiny cute bats peeking from windows, cute face on the tower",
+        "bishop": "Whisper Moth, a moth wizard wearing a tall rounded pointed mitre hat with a slit, lavender and mint wings",
+        "knight": "Shadow Pony, a dark purple pony with a mint green mane and stars, seen from the side but head turned to the viewer, horse head clearly visible",
+        "pawn": "Little Froggy, a tiny round mint green frog wearing a small purple witch hat"
+      }
+    }
+  }
+}

@@ -38,6 +38,17 @@
     `docs/CREDITS.md`), English = Kokoro `af_heart`; both at 0.9 speed. Squares are
     spelled for the narrator ("komnatu é čtyři"). A parent voice-clone can replace
     the clip set later without code changes.
+14. **Art = flux-schnell + BEN2 cut-out, chibi style** (recommendation Q2 taken). Only
+    licence-clean models (`docs/CREDITS.md`); flux-dev/Kontext are non-commercial.
+    Pipeline: `tool/art/characters.json` / `props.json` (prompts) → `comfy_gen.py`
+    (4 seeds each → `art_drafts/`, gitignored, with a contact sheet) → pick in
+    `picks.json` → `make_sprites.py` (drops stray sparkles, fills the inside of the
+    outline opaque, 512 px, common baseline). Same seed = same image, so a pick is
+    reproducible. `refine_foreground` stays off: it turns white fur black.
+15. **Board piece = character on a plate**: gold plate mine, dark plate theirs; rival
+    characters are mirrored to face my side. Battles use the same sprites over the
+    defender's arena (drawn under the game so it fills any screen shape).
+    Map islands 1–6 show my army's character, the rest a sticker icon.
 
 ## Open questions for Ol1n (PLAN §8 + BATTLES §7) — with recommendations
 
@@ -60,5 +71,6 @@
 - Play vs bot / pass-and-play screen (bot levels 1–4 already exist in `core/engine/bot.dart`).
 - Parent zone + parent gate, settings (battles on/off, language).
 - Module tournaments + diploma.
-- Artwork (M2): ComfyUI workflow in `tools/comfy/`, `SpriteFighter` reading `ClipAtlas`.
+- Battle poses (B2): attack / defeat / victory frames per character; consistency needs a reference method that is licence-clean (IP-Adapter on SDXL base, or a LoRA) — flux Kontext is non-commercial.
+- Kid test: can she tell the pieces apart at board size (fairy pawn vs queen are both pink)?
 - SFX/music.

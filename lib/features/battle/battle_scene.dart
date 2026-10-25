@@ -47,14 +47,19 @@ class BattleGame extends FlameGame with TapCallbacks {
 
   static const _left = -150.0;
   static const _right = 150.0;
-  static const _ground = 120.0;
+  static const _ground = 380.0; // on the arena stage (lower third of the art)
 
   @override
   Color backgroundColor() => const Color(0x00000000);
 
   @override
   Future<void> onLoad() async {
-    camera.backdrop.add(ArenaBackground(Color(request.attackerArmy.primary), Color(request.defenderArmy.primary)));
+    images.prefix = ''; // army art lives under assets/armies/, not assets/images/
+    // Arena art is drawn by BattleOverlay under the game (it must cover the
+    // whole screen, not just the fixed 600×900 view); gradient otherwise.
+    if (request.defenderArmy.arenaAsset == null) {
+      camera.backdrop.add(ArenaBackground(Color(request.attackerArmy.primary), Color(request.defenderArmy.primary)));
+    }
     _attacker = PlaceholderFighter(army: request.attackerArmy, type: request.attacker, facingRight: true)
       ..position = Vector2(-460, _ground);
     _defender = PlaceholderFighter(army: request.defenderArmy, type: request.defender, facingRight: false)
@@ -200,6 +205,15 @@ class PlaceholderFighter extends PositionComponent {
     final r = size.x / 2;
     add(CircleComponent(radius: r * .55, position: Vector2(r, size.y + 6), anchor: Anchor.center, paint: Paint()..color = const Color(0x33000000))
       ..scale = Vector2(1.4, .3));
+    if (army.spriteAsset(type) case final asset?) {
+      // Character art (M2); the effects below animate it like the placeholder.
+      final image = await findGame()!.images.load(asset);
+      final body = SpriteComponent(sprite: Sprite(image), size: Vector2.all(size.x * 1.35), anchor: Anchor.bottomCenter, position: Vector2(r, size.y + 4));
+      // Same rule as the board: the defender on the right is mirrored.
+      if (!facingRight) body.flipHorizontallyAroundCenter();
+      add(body);
+      return;
+    }
     add(CircleComponent(radius: r, paint: Paint()..color = Color(army.primary)));
     add(CircleComponent(radius: r, paint: Paint()
       ..color = Color(army.accent)

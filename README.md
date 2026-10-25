@@ -10,6 +10,7 @@ Plans: `Prompts/00-PRINCESSCHESS_PLAN.md`, `01-PRINCESSCHESS_LESSONS.md`, `03-BA
 - **M1** ✅ (mostly) LessonEngine + YAML schema + lint; modules 0–3 as data (16 lessons, 37 tasks); static kingdom map; stars + progress.
 - **Voice-over** ✅ every story, prompt, tap target, feedback and battle line is read aloud (pre-generated clips, cs + en). Tap the prompt bubble to hear it again.
 - **B1** ✅ battle overlay in Flame: `BattleDirector` state machine, placeholder fighters, fx, camera shake, tap to skip; `tool/pack_sheet.py` + atlas format.
+- **M2** (part) character art for Fairies + Witches (12 sprites), arena backgrounds, map icons — `tool/art/`, see DECISIONS §14.
 - Bonus: bot levels 1–4 (used by the pawn war), army manifests for Fairies + Witches and an army picker.
 
 See `docs/DECISIONS.md` for decisions, open questions and what's next.
@@ -54,6 +55,7 @@ lib/
 assets/lessons/   index.yaml + mNN/mNN_lMM.yaml   → docs/lesson_schema.md
 assets/armies/    <army>/manifest.json (+ battle/<piece>/<clip>.png|json later)
 tool/             lesson_lint.dart, pack_sheet.py, voice_lines.dart, voice_gen.py
+tool/art/         ComfyUI prompts, generator, picks, make_sprites.py
 assets/voice/     <lang>/<text-hash>.mp3 + lines.json
 ```
 

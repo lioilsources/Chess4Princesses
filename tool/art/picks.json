@@ -1,0 +1,8 @@
+{
+  "armies": {
+    "fairies": {"king": 2, "queen": 1, "rook": 4, "bishop": 3, "knight": 3, "pawn": 1},
+    "witches": {"king": 2, "queen": 2, "rook": 2, "bishop": 3, "knight": 2, "pawn": 3}
+  },
+  "arenas": {"fairies": 1, "witches": 3},
+  "icons": {"castle": 3, "apple": 2, "crown": 4, "magic": 3, "map": 3, "fox": 1, "trophy": 1}
+}

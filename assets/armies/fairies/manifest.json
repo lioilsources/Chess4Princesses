@@ -1,34 +1,41 @@
 {
   "id": "fairies",
   "name": {"cs": "Víly", "en": "Fairies"},
+  "arena": "arena.jpg",
   "palette": {"primary": "#F7A8D8", "accent": "#FFE29A", "dark": "#8A2F6B"},
   "pieces": {
     "king": {
+      "sprite": "sprites/king.png",
       "name": {"cs": "Král Duhovous", "en": "King Rainbeard"},
       "motto": {"cs": "Ahoj, já jsem Král Duhovous. Chodím pomalu, ale mám nejhezčí vousy v království.", "en": "Hi, I'm King Rainbeard. I walk slowly, but I have the finest beard in the kingdom."},
       "lines": {"attack": {"cs": "Hezky opatrně!", "en": "Nice and careful!"}, "defeat": {"cs": "Jdu si odpočinout…", "en": "Time for a rest…"}, "victory": {"cs": "Hurá!", "en": "Hooray!"}}
     },
     "queen": {
+      "sprite": "sprites/queen.png",
       "name": {"cs": "Princezna Jiskřička", "en": "Princess Sparkle"},
       "motto": {"cs": "Ahoj, já jsem Princezna Jiskřička. Umím chodit rovně i šikmo, kam se mi zachce!", "en": "Hi, I'm Princess Sparkle. I go straight and slanted, wherever I like!"},
       "lines": {"attack": {"cs": "Třpyt-třpyt!", "en": "Sparkle-sparkle!"}, "defeat": {"cs": "Jdu si odpočinout do hradu…", "en": "Off to rest in the castle…"}, "victory": {"cs": "Jupí!", "en": "Yippee!"}}
     },
     "rook": {
+      "sprite": "sprites/rook.png",
       "name": {"cs": "Věžka Kopretinka", "en": "Daisy Tower"},
       "motto": {"cs": "Ahoj, já jsem Věžka Kopretinka. Mám kolečka a jezdím jen rovně.", "en": "Hi, I'm Daisy Tower. I have wheels and only drive straight."},
       "lines": {"attack": {"cs": "Tú-túú!", "en": "Choo-choo!"}, "defeat": {"cs": "Jedu do depa…", "en": "Back to the depot…"}, "victory": {"cs": "Hopla!", "en": "Hop-la!"}}
     },
     "bishop": {
+      "sprite": "sprites/bishop.png",
       "name": {"cs": "Motýlek Třpytka", "en": "Glimmer Butterfly"},
       "motto": {"cs": "Ahoj, já jsem Motýlek Třpytka. Létám šikmo a mám ráda svou barvu.", "en": "Hi, I'm Glimmer Butterfly. I fly on the slant and love my colour."},
       "lines": {"attack": {"cs": "Mávnu křídly!", "en": "Flap flap!"}, "defeat": {"cs": "Odlétám na louku…", "en": "Flying off to the meadow…"}, "victory": {"cs": "Juchů!", "en": "Woohoo!"}}
     },
     "knight": {
+      "sprite": "sprites/knight.png",
       "name": {"cs": "Koník Obláček", "en": "Cloud Pony"},
       "motto": {"cs": "Ahoj, já jsem Koník Obláček. Skáču do písmene L a přeskočím cokoli!", "en": "Hi, I'm Cloud Pony. I jump in an L and hop over anything!"},
       "lines": {"attack": {"cs": "Hop a skok!", "en": "Hop and jump!"}, "defeat": {"cs": "Jdu se napást…", "en": "Off to graze…"}, "victory": {"cs": "Íha-há!", "en": "Yee-haw!"}}
     },
     "pawn": {
+      "sprite": "sprites/pawn.png",
       "name": {"cs": "Družička Rosička", "en": "Dewdrop"},
       "motto": {"cs": "Ahoj, já jsem Družička Rosička. Chodím jen dopředu a jednou budu princezna!", "en": "Hi, I'm Dewdrop. I only walk forward, and one day I'll be a princess!"},
       "lines": {"attack": {"cs": "Pošťouch!", "en": "Nudge!"}, "defeat": {"cs": "Jdu si odpočinout do hradu…", "en": "Off to rest in the castle…"}, "victory": {"cs": "Jupí!", "en": "Yippee!"}}

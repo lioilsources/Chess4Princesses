@@ -18,6 +18,8 @@ void main() {
       ),
     ));
     for (var i = 0; i < 240 && done == 0; i++) {
+      // Arena and sprites decode on real I/O, which fake time never waits for.
+      if (i < 20) await t.runAsync(() => Future<void>.delayed(const Duration(milliseconds: 20)));
       await t.pump(const Duration(milliseconds: 16));
     }
     expect(done, 1);

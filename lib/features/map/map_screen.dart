@@ -25,6 +25,12 @@ IconData moduleIcon(String key) => switch (key) {
   _ => Icons.star_rounded,
 };
 
+/// Island art: modules 1–6 show my army's character, the rest a sticker.
+String moduleArt(String key, String armyId) => switch (key) {
+  'pawn' || 'rook' || 'bishop' || 'queen' || 'knight' || 'king' => 'assets/armies/$armyId/sprites/$key.png',
+  _ => 'assets/ui/modules/$key.png',
+};
+
 const _islandColors = [KidPalette.peach, KidPalette.mint, KidPalette.sky, KidPalette.lavender, KidPalette.lemon];
 
 /// Kingdom map (PLAN §1.1): modules as islands along a winding path.
@@ -103,6 +109,7 @@ class _Islands extends StatelessWidget {
                         done: progress.isModuleDone(modules[i]),
                         stars: modules[i].lessonIds.fold(0, (s, id) => s + progress.starsOf(id)),
                         palette: _islandColors[i % _islandColors.length],
+                        armyId: progress.myArmy,
                         lang: lang,
                         l10n: l10n,
                       ),
@@ -118,9 +125,10 @@ class _Islands extends StatelessWidget {
 }
 
 class _Island extends StatelessWidget {
-  const _Island({required this.module, required this.open, required this.done, required this.stars, required this.palette, required this.lang, required this.l10n});
+  const _Island({required this.module, required this.open, required this.done, required this.stars, required this.palette, required this.armyId, required this.lang, required this.l10n});
 
   final ModuleInfo module;
+  final String armyId;
   final bool open;
   final bool done;
   final int stars;
@@ -148,7 +156,18 @@ class _Island extends StatelessWidget {
             child: Stack(
               alignment: Alignment.center,
               children: [
-                Icon(moduleIcon(module.icon), size: 46, color: grey ? const Color(0xFF9E9EAE) : palette.dark),
+                ColorFiltered(
+                  // Locked islands are greyed out, art included.
+                  colorFilter: grey
+                      ? const ColorFilter.matrix([.33, .33, .33, 0, 40, .33, .33, .33, 0, 40, .33, .33, .33, 0, 40, 0, 0, 0, .55, 0])
+                      : const ColorFilter.mode(Color(0x00000000), BlendMode.dst),
+                  child: Image.asset(
+                    moduleArt(module.icon, armyId),
+                    width: 72,
+                    height: 72,
+                    errorBuilder: (_, _, _) => Icon(moduleIcon(module.icon), size: 46, color: grey ? const Color(0xFF9E9EAE) : palette.dark),
+                  ),
+                ),
                 if (!open)
                   Positioned(right: 6, bottom: 6, child: Icon(module.isAuthored ? Icons.lock_rounded : Icons.hourglass_top_rounded, size: 24, color: const Color(0xFF6E6E80))),
               ],

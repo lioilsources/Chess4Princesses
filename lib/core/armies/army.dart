@@ -6,7 +6,7 @@ import '../lessons/lesson.dart';
 /// `assets/armies/<id>/manifest.json` (PLAN §3). Armies are data: a new pack
 /// is a new folder, no code change.
 class Army {
-  const Army({required this.id, required this.name, required this.primary, required this.accent, required this.dark, required this.pieces, this.battleOverrides = const {}});
+  const Army({required this.id, required this.name, required this.primary, required this.accent, required this.dark, required this.pieces, this.arena, this.battleOverrides = const {}});
 
   factory Army.fromJson(Map<String, dynamic> j) {
     final pal = j['palette'] as Map<String, dynamic>;
@@ -21,6 +21,7 @@ class Army {
         for (final t in PieceType.values)
           t: ArmyPiece.fromJson(pieces[_pieceKey(t)] as Map<String, dynamic>? ?? const {}),
       },
+      arena: j['arena'] as String?,
       battleOverrides: Map<String, String>.from(j['battle_overrides'] as Map? ?? const {}),
     );
   }
@@ -41,10 +42,21 @@ class Army {
   final int dark;
   final Map<PieceType, ArmyPiece> pieces;
 
+  /// Battle background relative to the army folder (portrait); null → gradient.
+  final String? arena;
+
+  String? get arenaAsset => arena == null ? null : 'assets/armies/$id/$arena';
+
   /// `"queen>knight": "<clip>"` — unique duel instead of the composed battle.
   final Map<String, String> battleOverrides;
 
   ArmyPiece operator [](PieceType t) => pieces[t]!;
+
+  /// Character art for [t] (`assets/armies/<id>/<sprite>`), null → placeholder.
+  String? spriteAsset(PieceType t) => switch (pieces[t]!.sprite) {
+    final s? => 'assets/armies/$id/$s',
+    null => null,
+  };
 
   static String _pieceKey(PieceType t) => t.name;
 
@@ -69,6 +81,7 @@ class ArmyPiece {
   /// Battle one-liners: `attack`, `defeat`, `victory` (BATTLES §4).
   final Map<String, LocalizedText> lines;
 
-  /// Board sprite (256×256) once artwork exists; null → placeholder.
+  /// Character art relative to the army folder (512×512, feet at the bottom);
+  /// null → placeholder disc.
   final String? sprite;
 }

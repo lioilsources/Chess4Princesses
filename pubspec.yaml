@@ -78,7 +78,10 @@ flutter:
     - assets/lessons/m02/
     - assets/lessons/m03/
     - assets/armies/fairies/
+    - assets/armies/fairies/sprites/
     - assets/armies/witches/
+    - assets/armies/witches/sprites/
+    - assets/ui/modules/
     - assets/voice/cs/
     - assets/voice/en/
 

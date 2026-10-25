@@ -22,6 +22,13 @@ class _BattleOverlayState extends State<BattleOverlay> {
     tween: Tween(begin: 0, end: 1),
     duration: const Duration(milliseconds: 180),
     builder: (context, t, child) => Opacity(opacity: t, child: child),
-    child: GameWidget(game: game),
+    child: switch (widget.request.defenderArmy.arenaAsset) {
+      // The defender's home turf, cropped to fill any screen shape.
+      final arena? => DecoratedBox(
+        decoration: BoxDecoration(image: DecorationImage(image: AssetImage(arena), fit: BoxFit.cover, alignment: Alignment.bottomCenter)),
+        child: GameWidget(game: game),
+      ),
+      null => GameWidget(game: game),
+    },
   );
 }

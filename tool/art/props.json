@@ -1,0 +1,16 @@
+{
+  "style": "cute chunky 2D sticker illustration for a children's game, thick clean dark outline, flat pastel colours with soft cel shading, a single object only with nothing around it, centered, plain pure white background",
+  "items": {
+    "icons/castle": "a small pink fairy-tale castle with round towers and flags",
+    "icons/apple": "a little wicker basket full of shiny red apples",
+    "icons/crown": "a golden royal crown with pink gems",
+    "icons/magic": "a magic wand with a glowing star tip and swirling sparkles",
+    "icons/map": "a rolled-open treasure map with a dotted path and a red X",
+    "icons/fox": "a cute clever little orange fox sitting and winking",
+    "icons/trophy": "a shiny golden trophy cup with a star on it"
+  },
+  "backgrounds": {
+    "arenas/fairies": "a soft dreamy fairy meadow arena at sunny day, pink blossom trees on the sides, pastel sky with fluffy clouds, flat open grass stage in the lower third, flat 2D cartoon illustration with thick clean outlines and soft cel shading, pastel colours, children's game background, no characters, no people, no animals, no text",
+    "arenas/witches": "a friendly twilight witch garden arena, lavender sky with stars and a smiling moon, purple mushrooms and mint glowing plants on the sides, flat open stage in the lower third, flat 2D cartoon illustration with thick clean outlines and soft cel shading, pastel colours, children's game background, not scary, no characters, no people, no animals, no text"
+  }
+}
