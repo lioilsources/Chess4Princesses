@@ -32,6 +32,12 @@
     atlases (B2) replace `PlaceholderFighter` without touching choreography.
 11. **Battles are fullscreen in lessons** (BATTLES Q3 proposal); a small in-board variant for bot games comes with M3.
 12. Working app title "Šachové království" / "Chess Kingdom" (ARB `appTitle`) until the name is chosen.
+13. **Voice-over is pre-generated, keyed by a hash of the text.** No on-device TTS:
+    offline, same voice on every phone, and no clip↔text mapping file to maintain.
+    Czech = Piper Kasandra (the only commercially clean Czech voice on SPARK, CC BY →
+    `docs/CREDITS.md`), English = Kokoro `af_heart`; both at 0.9 speed. Squares are
+    spelled for the narrator ("komnatu é čtyři"). A parent voice-clone can replace
+    the clip set later without code changes.
 
 ## Open questions for Ol1n (PLAN §8 + BATTLES §7) — with recommendations
 
@@ -49,7 +55,7 @@
 
 ## Not done yet (next steps)
 
-- **Voice-over** (M3): every prompt/story is text-only for now. Hook point: `LessonController._say` + story card.
+- Voice: listen through on a device and re-tune `say` spellings where the narrator stumbles; parent toggle for voice.
 - Goal types for modules 4–12 (see `docs/lesson_schema.md`).
 - Play vs bot / pass-and-play screen (bot levels 1–4 already exist in `core/engine/bot.dart`).
 - Parent zone + parent gate, settings (battles on/off, language).

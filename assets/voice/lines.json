@@ -1,0 +1,2438 @@
+[
+  {
+    "lang": "cs",
+    "key": "6470113476c6aab3",
+    "text": "Výborně!",
+    "say": "Výborně!",
+    "source": "arb:wellDone"
+  },
+  {
+    "lang": "cs",
+    "key": "aec70435b62db5f1",
+    "text": "Lekce hotová!",
+    "say": "Lekce hotová!",
+    "source": "arb:lessonDone"
+  },
+  {
+    "lang": "cs",
+    "key": "e1dffaf9d071f8d2",
+    "text": "Hurá!",
+    "say": "Hurá!",
+    "source": "arb:taskWon"
+  },
+  {
+    "lang": "cs",
+    "key": "a71a27b8fd97ec0e",
+    "text": "Zkusíme to znovu!",
+    "say": "Zkusíme to znovu!",
+    "source": "arb:tryAgain"
+  },
+  {
+    "lang": "cs",
+    "key": "7052817264966dfe",
+    "text": "Robůtek vyhrál. Hrajeme znovu!",
+    "say": "Robůtek vyhrál. Hrajeme znovu!",
+    "source": "arb:botWon"
+  },
+  {
+    "lang": "cs",
+    "key": "fdcbfd0719b75878",
+    "text": "Proměna v princeznu!",
+    "say": "Proměna v princeznu!",
+    "source": "arb:promoted"
+  },
+  {
+    "lang": "cs",
+    "key": "11db7973e98efbd8",
+    "text": "Au, láva!",
+    "say": "Au, láva!",
+    "source": "arb:lavaWarning"
+  },
+  {
+    "lang": "cs",
+    "key": "ee7697cb54c34339",
+    "text": "Robůtek přemýšlí…",
+    "say": "Robůtek přemýšlí…",
+    "source": "arb:opponentThinking"
+  },
+  {
+    "lang": "cs",
+    "key": "5a7b5ab62723920c",
+    "text": "Přetáhni figurku na šachovnici",
+    "say": "Přetáhni figurku na šachovnici",
+    "source": "arb:dragHint"
+  },
+  {
+    "lang": "cs",
+    "key": "718dc681c7e222d6",
+    "text": "Šachovnice je království se 64 komnatami. Každá komnata má jméno: písmeno ulice a číslo domu.",
+    "say": "Šachovnice je království se 64 komnatami. Každá komnata má jméno: písmeno ulice a číslo domu.",
+    "source": "m00_l01:story"
+  },
+  {
+    "lang": "cs",
+    "key": "aa6e8e3474c3d72a",
+    "text": "Klepni na ulici!",
+    "say": "Klepni na ulici!",
+    "source": "m00_l01#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "75ce7735a391d579",
+    "text": "Klepni na řadu domů!",
+    "say": "Klepni na řadu domů!",
+    "source": "m00_l01#2:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "775ca673087cde66",
+    "text": "Najdi komnatu!",
+    "say": "Najdi komnatu!",
+    "source": "m00_l01#3:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "3fc67d878b8deba3",
+    "text": "Bílá komnata musí být vpravo dole, jinak se princezna zlobí. Komnaty na šikmé cestičce mají všechny stejnou barvu.",
+    "say": "Bílá komnata musí být vpravo dole, jinak se princezna zlobí. Komnaty na šikmé cestičce mají všechny stejnou barvu.",
+    "source": "m00_l02:story"
+  },
+  {
+    "lang": "cs",
+    "key": "8b22acf290d62068",
+    "text": "Klepni na všechny bílé komnaty v první řadě.",
+    "say": "Klepni na všechny bílé komnaty v první řadě.",
+    "source": "m00_l02#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "c384789e42391bee",
+    "text": "Projdi šikmou cestičku z rohu do rohu.",
+    "say": "Projdi šikmou cestičku z rohu do rohu.",
+    "source": "m00_l02#2:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "8fe2a844e3328904",
+    "text": "A teď bílou šikmou cestičku!",
+    "say": "A teď bílou šikmou cestičku!",
+    "source": "m00_l02#3:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "bb8b0c4d5b6ffa57",
+    "text": "Postavíme hrad! Věžky hlídají rohy, Princezna stojí na své barvě a Král tatínek vedle ní.",
+    "say": "Postavíme hrad! Věžky hlídají rohy, Princezna stojí na své barvě a Král tatínek vedle ní.",
+    "source": "m00_l03:story"
+  },
+  {
+    "lang": "cs",
+    "key": "b2cbcb7209dc68de",
+    "text": "Postav Věžky do rohů.",
+    "say": "Postav Věžky do rohů.",
+    "source": "m00_l03#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "0fa92bd777d94f5f",
+    "text": "Postav celou první řadu. Princezna na svou barvu!",
+    "say": "Postav celou první řadu. Princezna na svou barvu!",
+    "source": "m00_l03#2:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "9ed971cb864a92d5",
+    "text": "Družičky jdou vždy dopředu, nikdy zpátky. Na první krok mohou skočit dva.",
+    "say": "Družičky jdou vždy dopředu, nikdy zpátky. Na první krok mohou skočit dva.",
+    "source": "m01_l01:story"
+  },
+  {
+    "lang": "cs",
+    "key": "d4795cf70727abbf",
+    "text": "Doveď družičku na hvězdu.",
+    "say": "Doveď družičku na hvězdu.",
+    "source": "m01_l01#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "157af0838a67292c",
+    "text": "Zkus to jedním velkým skokem!",
+    "say": "Zkus to jedním velkým skokem!",
+    "source": "m01_l01#2:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "905fff477d92b185",
+    "text": "Na cestě leží kameny. Družička přes ně neprojde. Která to zvládne?",
+    "say": "Na cestě leží kameny. Družička přes ně neprojde. Která to zvládne?",
+    "source": "m01_l02:story"
+  },
+  {
+    "lang": "cs",
+    "key": "296df8666724af3a",
+    "text": "Která družička dojde ke hvězdě?",
+    "say": "Která družička dojde ke hvězdě?",
+    "source": "m01_l02#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "c79a81287662455f",
+    "text": "Družičky bojují šikmo: pošťouchnou toho, kdo jim stojí šikmo vepředu.",
+    "say": "Družičky bojují šikmo: pošťouchnou toho, kdo jim stojí šikmo vepředu.",
+    "source": "m01_l03:story"
+  },
+  {
+    "lang": "cs",
+    "key": "01aa2adb33b5cb99",
+    "text": "Pošťouchni všechny soupeřovy družičky.",
+    "say": "Pošťouchni všechny soupeřovy družičky.",
+    "source": "m01_l03#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "8ff0a21a657f9cd7",
+    "text": "Když družička dojde až na konec království, promění se v princeznu!",
+    "say": "Když družička dojde až na konec království, promění se v princeznu!",
+    "source": "m01_l04:story"
+  },
+  {
+    "lang": "cs",
+    "key": "429df8dd4d4f7be2",
+    "text": "Doveď družičku až na konec.",
+    "say": "Doveď družičku až na konec.",
+    "source": "m01_l04#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "8fc64e1fbb7c5686",
+    "text": "Cestu blokuje kámen. Pošťouchni někoho šikmo!",
+    "say": "Cestu blokuje kámen. Pošťouchni někoho šikmo!",
+    "source": "m01_l04#3:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "0920c0a13ef33ee0",
+    "text": "Tvoje první opravdová hra! Kdo první dovede družičku na konec, vyhrává.",
+    "say": "Tvoje první opravdová hra! Kdo první dovede družičku na konec, vyhrává.",
+    "source": "m01_l05:story"
+  },
+  {
+    "lang": "cs",
+    "key": "7b00bf0985b753fb",
+    "text": "Hraješ proti robůtkovi Miminku.",
+    "say": "Hraješ proti robůtkovi Miminku.",
+    "source": "m01_l05#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "efc9d6c721911c22",
+    "text": "Věžka má kolečka jako vláček. Jezdí jen rovně: dopředu, dozadu, doleva, doprava. Jak daleko chce, dokud do něčeho nenarazí.",
+    "say": "Věžka má kolečka jako vláček. Jezdí jen rovně: dopředu, dozadu, doleva, doprava. Jak daleko chce, dokud do něčeho nenarazí.",
+    "source": "m02_l01:story"
+  },
+  {
+    "lang": "cs",
+    "key": "fa9a33a373d2b23c",
+    "text": "Doveď Věžku na hvězdu.",
+    "say": "Doveď Věžku na hvězdu.",
+    "source": "m02_l01#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "b086159bd93ece0f",
+    "text": "Tahle hvězda chce dvě jízdy.",
+    "say": "Tahle hvězda chce dvě jízdy.",
+    "source": "m02_l01#3:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "999200639eb3e7c5",
+    "text": "Věžka sbírá hvězdičky i cestou. Kudy pojede, aby jich měla co nejvíc najednou?",
+    "say": "Věžka sbírá hvězdičky i cestou. Kudy pojede, aby jich měla co nejvíc najednou?",
+    "source": "m02_l02:story"
+  },
+  {
+    "lang": "cs",
+    "key": "b727dd3a3c43316a",
+    "text": "Seber všechny hvězdy co nejméně jízdami.",
+    "say": "Seber všechny hvězdy co nejméně jízdami.",
+    "source": "m02_l02#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "757a2993b63c0d49",
+    "text": "Pozor, některé komnaty hoří. Věžka nesmí na lávu ani přes ni přejet.",
+    "say": "Pozor, některé komnaty hoří. Věžka nesmí na lávu ani přes ni přejet.",
+    "source": "m02_l03:story"
+  },
+  {
+    "lang": "cs",
+    "key": "7cb03f26aa0b3c7f",
+    "text": "Dojeď k hvězdě, ale vyhni se lávě.",
+    "say": "Dojeď k hvězdě, ale vyhni se lávě.",
+    "source": "m02_l03#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "3664ec23f6c86b14",
+    "text": "Věžka vyráží do bitvy! Soupeřovy družičky stojí a čekají.",
+    "say": "Věžka vyráží do bitvy! Soupeřovy družičky stojí a čekají.",
+    "source": "m02_l04:story"
+  },
+  {
+    "lang": "cs",
+    "key": "df3990467a1bde73",
+    "text": "Vezmi všechny soupeřovy družičky.",
+    "say": "Vezmi všechny soupeřovy družičky.",
+    "source": "m02_l04#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "edf506af7ad6a6bb",
+    "text": "Motýlek létá jen šikmo a celý život zůstává na své barvě komnat.",
+    "say": "Motýlek létá jen šikmo a celý život zůstává na své barvě komnat.",
+    "source": "m03_l01:story"
+  },
+  {
+    "lang": "cs",
+    "key": "3e44169987985e5a",
+    "text": "Dolétni s Motýlkem na hvězdu.",
+    "say": "Dolétni s Motýlkem na hvězdu.",
+    "source": "m03_l01#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "af09d33e2d63e2bf",
+    "text": "Tahle hvězda chce dva lety.",
+    "say": "Tahle hvězda chce dva lety.",
+    "source": "m03_l01#3:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "065a940016258c05",
+    "text": "Jeden Motýlek má rád bílé komnaty, druhý černé. Na jinou barvu nikdy nedoletí.",
+    "say": "Jeden Motýlek má rád bílé komnaty, druhý černé. Na jinou barvu nikdy nedoletí.",
+    "source": "m03_l02:story"
+  },
+  {
+    "lang": "cs",
+    "key": "7ad9302fa39d3c76",
+    "text": "Doletí Motýlek na hvězdu?",
+    "say": "Doletí Motýlek na hvězdu?",
+    "source": "m03_l02#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "ccdf0c62511dd6ba",
+    "text": "Motýlek sbírá hvězdičky cestou. Najdi šikmou cestičku přes co nejvíc hvězd.",
+    "say": "Motýlek sbírá hvězdičky cestou. Najdi šikmou cestičku přes co nejvíc hvězd.",
+    "source": "m03_l03:story"
+  },
+  {
+    "lang": "cs",
+    "key": "14b00e72df4a2576",
+    "text": "Seber všechny hvězdy.",
+    "say": "Seber všechny hvězdy.",
+    "source": "m03_l03#1:prompt"
+  },
+  {
+    "lang": "cs",
+    "key": "d25440fa9438342e",
+    "text": "Motýlek letí do bitvy! Pozor, dosáhne jen na svou barvu.",
+    "say": "Motýlek letí do bitvy! Pozor, dosáhne jen na svou barvu.",
+    "source": "m03_l04:story"
+  },
+  {
+    "lang": "cs",
+    "key": "e0e1a960b7f57f44",
+    "text": "ulici A",
+    "say": "ulici á",
+    "source": "target:a"
+  },
+  {
+    "lang": "cs",
+    "key": "b6ef233a9a4102c9",
+    "text": "ulici B",
+    "say": "ulici bé",
+    "source": "target:b"
+  },
+  {
+    "lang": "cs",
+    "key": "fa5548d4a9003d15",
+    "text": "ulici C",
+    "say": "ulici cé",
+    "source": "target:c"
+  },
+  {
+    "lang": "cs",
+    "key": "8ddb945d87469599",
+    "text": "ulici D",
+    "say": "ulici dé",
+    "source": "target:d"
+  },
+  {
+    "lang": "cs",
+    "key": "3a68ba8bee2538ad",
+    "text": "ulici E",
+    "say": "ulici é",
+    "source": "target:e"
+  },
+  {
+    "lang": "cs",
+    "key": "6608b83702c83ce2",
+    "text": "ulici F",
+    "say": "ulici ef",
+    "source": "target:f"
+  },
+  {
+    "lang": "cs",
+    "key": "150f8d05a9e22fd1",
+    "text": "ulici G",
+    "say": "ulici gé",
+    "source": "target:g"
+  },
+  {
+    "lang": "cs",
+    "key": "affbcd4819d057fc",
+    "text": "ulici H",
+    "say": "ulici há",
+    "source": "target:h"
+  },
+  {
+    "lang": "cs",
+    "key": "4ced44ce0df40e26",
+    "text": "řadu 1",
+    "say": "řadu jedna",
+    "source": "target:1"
+  },
+  {
+    "lang": "cs",
+    "key": "4cde384c74983b94",
+    "text": "řadu 2",
+    "say": "řadu dva",
+    "source": "target:2"
+  },
+  {
+    "lang": "cs",
+    "key": "96c523dd5e5d3f45",
+    "text": "řadu 3",
+    "say": "řadu tři",
+    "source": "target:3"
+  },
+  {
+    "lang": "cs",
+    "key": "e24913bef59c09cd",
+    "text": "řadu 4",
+    "say": "řadu čtyři",
+    "source": "target:4"
+  },
+  {
+    "lang": "cs",
+    "key": "699c4009816515f0",
+    "text": "řadu 5",
+    "say": "řadu pět",
+    "source": "target:5"
+  },
+  {
+    "lang": "cs",
+    "key": "3e8da89ddd2d2cc2",
+    "text": "řadu 6",
+    "say": "řadu šest",
+    "source": "target:6"
+  },
+  {
+    "lang": "cs",
+    "key": "e8364a32a280d836",
+    "text": "řadu 7",
+    "say": "řadu sedm",
+    "source": "target:7"
+  },
+  {
+    "lang": "cs",
+    "key": "0a7be38e942f85ac",
+    "text": "řadu 8",
+    "say": "řadu osm",
+    "source": "target:8"
+  },
+  {
+    "lang": "cs",
+    "key": "27a03139fda5cffa",
+    "text": "komnatu a1",
+    "say": "komnatu á jedna",
+    "source": "target:a1"
+  },
+  {
+    "lang": "cs",
+    "key": "87502a32a137023c",
+    "text": "komnatu b1",
+    "say": "komnatu bé jedna",
+    "source": "target:b1"
+  },
+  {
+    "lang": "cs",
+    "key": "16a31007f8398a1b",
+    "text": "komnatu c1",
+    "say": "komnatu cé jedna",
+    "source": "target:c1"
+  },
+  {
+    "lang": "cs",
+    "key": "390f2e9338928364",
+    "text": "komnatu d1",
+    "say": "komnatu dé jedna",
+    "source": "target:d1"
+  },
+  {
+    "lang": "cs",
+    "key": "4180b69867756bd1",
+    "text": "komnatu e1",
+    "say": "komnatu é jedna",
+    "source": "target:e1"
+  },
+  {
+    "lang": "cs",
+    "key": "62e3988586d4b3a1",
+    "text": "komnatu f1",
+    "say": "komnatu ef jedna",
+    "source": "target:f1"
+  },
+  {
+    "lang": "cs",
+    "key": "377b1c3aa822d0cc",
+    "text": "komnatu g1",
+    "say": "komnatu gé jedna",
+    "source": "target:g1"
+  },
+  {
+    "lang": "cs",
+    "key": "f6e0d7353bcc2a69",
+    "text": "komnatu h1",
+    "say": "komnatu há jedna",
+    "source": "target:h1"
+  },
+  {
+    "lang": "cs",
+    "key": "3b20b81465753a89",
+    "text": "komnatu a2",
+    "say": "komnatu á dva",
+    "source": "target:a2"
+  },
+  {
+    "lang": "cs",
+    "key": "e1baf2c1a217cc39",
+    "text": "komnatu b2",
+    "say": "komnatu bé dva",
+    "source": "target:b2"
+  },
+  {
+    "lang": "cs",
+    "key": "02685a764b2579b9",
+    "text": "komnatu c2",
+    "say": "komnatu cé dva",
+    "source": "target:c2"
+  },
+  {
+    "lang": "cs",
+    "key": "2e9da646f5cf9bfe",
+    "text": "komnatu d2",
+    "say": "komnatu dé dva",
+    "source": "target:d2"
+  },
+  {
+    "lang": "cs",
+    "key": "5a7c79912952dcc2",
+    "text": "komnatu e2",
+    "say": "komnatu é dva",
+    "source": "target:e2"
+  },
+  {
+    "lang": "cs",
+    "key": "cb8a10e7dc3209bc",
+    "text": "komnatu f2",
+    "say": "komnatu ef dva",
+    "source": "target:f2"
+  },
+  {
+    "lang": "cs",
+    "key": "46d8f12194234d57",
+    "text": "komnatu g2",
+    "say": "komnatu gé dva",
+    "source": "target:g2"
+  },
+  {
+    "lang": "cs",
+    "key": "9d90c13b90ec0503",
+    "text": "komnatu h2",
+    "say": "komnatu há dva",
+    "source": "target:h2"
+  },
+  {
+    "lang": "cs",
+    "key": "a95f3809eed6b89a",
+    "text": "komnatu a3",
+    "say": "komnatu á tři",
+    "source": "target:a3"
+  },
+  {
+    "lang": "cs",
+    "key": "be42fa9d85c1de68",
+    "text": "komnatu b3",
+    "say": "komnatu bé tři",
+    "source": "target:b3"
+  },
+  {
+    "lang": "cs",
+    "key": "4f76bd083248d8d8",
+    "text": "komnatu c3",
+    "say": "komnatu cé tři",
+    "source": "target:c3"
+  },
+  {
+    "lang": "cs",
+    "key": "bfa4bb77ad2b524f",
+    "text": "komnatu d3",
+    "say": "komnatu dé tři",
+    "source": "target:d3"
+  },
+  {
+    "lang": "cs",
+    "key": "e2f0c39d21701328",
+    "text": "komnatu e3",
+    "say": "komnatu é tři",
+    "source": "target:e3"
+  },
+  {
+    "lang": "cs",
+    "key": "e8a963b8c1feac17",
+    "text": "komnatu f3",
+    "say": "komnatu ef tři",
+    "source": "target:f3"
+  },
+  {
+    "lang": "cs",
+    "key": "a01db2c05242fef2",
+    "text": "komnatu g3",
+    "say": "komnatu gé tři",
+    "source": "target:g3"
+  },
+  {
+    "lang": "cs",
+    "key": "8b304bcd0fa54fcf",
+    "text": "komnatu h3",
+    "say": "komnatu há tři",
+    "source": "target:h3"
+  },
+  {
+    "lang": "cs",
+    "key": "04e2182b456b0291",
+    "text": "komnatu a4",
+    "say": "komnatu á čtyři",
+    "source": "target:a4"
+  },
+  {
+    "lang": "cs",
+    "key": "875fd10a6d27f90e",
+    "text": "komnatu b4",
+    "say": "komnatu bé čtyři",
+    "source": "target:b4"
+  },
+  {
+    "lang": "cs",
+    "key": "657c6d3c3e2a76c0",
+    "text": "komnatu c4",
+    "say": "komnatu cé čtyři",
+    "source": "target:c4"
+  },
+  {
+    "lang": "cs",
+    "key": "1f99021618cd7237",
+    "text": "komnatu d4",
+    "say": "komnatu dé čtyři",
+    "source": "target:d4"
+  },
+  {
+    "lang": "cs",
+    "key": "6a550c6151644762",
+    "text": "komnatu e4",
+    "say": "komnatu é čtyři",
+    "source": "target:e4"
+  },
+  {
+    "lang": "cs",
+    "key": "830a777e61b24cde",
+    "text": "komnatu f4",
+    "say": "komnatu ef čtyři",
+    "source": "target:f4"
+  },
+  {
+    "lang": "cs",
+    "key": "8cd46dc980442871",
+    "text": "komnatu g4",
+    "say": "komnatu gé čtyři",
+    "source": "target:g4"
+  },
+  {
+    "lang": "cs",
+    "key": "7ecb26c476f41b01",
+    "text": "komnatu h4",
+    "say": "komnatu há čtyři",
+    "source": "target:h4"
+  },
+  {
+    "lang": "cs",
+    "key": "89757c3037d57125",
+    "text": "komnatu a5",
+    "say": "komnatu á pět",
+    "source": "target:a5"
+  },
+  {
+    "lang": "cs",
+    "key": "cf704ae4d46826c1",
+    "text": "komnatu b5",
+    "say": "komnatu bé pět",
+    "source": "target:b5"
+  },
+  {
+    "lang": "cs",
+    "key": "25022cb5d78d8430",
+    "text": "komnatu c5",
+    "say": "komnatu cé pět",
+    "source": "target:c5"
+  },
+  {
+    "lang": "cs",
+    "key": "eecf84200c0e8a16",
+    "text": "komnatu d5",
+    "say": "komnatu dé pět",
+    "source": "target:d5"
+  },
+  {
+    "lang": "cs",
+    "key": "18641073083ce6dd",
+    "text": "komnatu e5",
+    "say": "komnatu é pět",
+    "source": "target:e5"
+  },
+  {
+    "lang": "cs",
+    "key": "8cbec552aab12662",
+    "text": "komnatu f5",
+    "say": "komnatu ef pět",
+    "source": "target:f5"
+  },
+  {
+    "lang": "cs",
+    "key": "2ce15df50251c902",
+    "text": "komnatu g5",
+    "say": "komnatu gé pět",
+    "source": "target:g5"
+  },
+  {
+    "lang": "cs",
+    "key": "4c82b8ceb8853316",
+    "text": "komnatu h5",
+    "say": "komnatu há pět",
+    "source": "target:h5"
+  },
+  {
+    "lang": "cs",
+    "key": "b5d027851bb63a13",
+    "text": "komnatu a6",
+    "say": "komnatu á šest",
+    "source": "target:a6"
+  },
+  {
+    "lang": "cs",
+    "key": "0dd729b299094903",
+    "text": "komnatu b6",
+    "say": "komnatu bé šest",
+    "source": "target:b6"
+  },
+  {
+    "lang": "cs",
+    "key": "74594f10fb0d9236",
+    "text": "komnatu c6",
+    "say": "komnatu cé šest",
+    "source": "target:c6"
+  },
+  {
+    "lang": "cs",
+    "key": "07ddf9e697e82c32",
+    "text": "komnatu d6",
+    "say": "komnatu dé šest",
+    "source": "target:d6"
+  },
+  {
+    "lang": "cs",
+    "key": "881200bc13e336b7",
+    "text": "komnatu e6",
+    "say": "komnatu é šest",
+    "source": "target:e6"
+  },
+  {
+    "lang": "cs",
+    "key": "a0c79bc0fc2e617b",
+    "text": "komnatu f6",
+    "say": "komnatu ef šest",
+    "source": "target:f6"
+  },
+  {
+    "lang": "cs",
+    "key": "c1320249e6d98423",
+    "text": "komnatu g6",
+    "say": "komnatu gé šest",
+    "source": "target:g6"
+  },
+  {
+    "lang": "cs",
+    "key": "b30381043187c34c",
+    "text": "komnatu h6",
+    "say": "komnatu há šest",
+    "source": "target:h6"
+  },
+  {
+    "lang": "cs",
+    "key": "8bd4a6c889ed8473",
+    "text": "komnatu a7",
+    "say": "komnatu á sedm",
+    "source": "target:a7"
+  },
+  {
+    "lang": "cs",
+    "key": "15e6b3b48a834101",
+    "text": "komnatu b7",
+    "say": "komnatu bé sedm",
+    "source": "target:b7"
+  },
+  {
+    "lang": "cs",
+    "key": "889169bfa82f0fc8",
+    "text": "komnatu c7",
+    "say": "komnatu cé sedm",
+    "source": "target:c7"
+  },
+  {
+    "lang": "cs",
+    "key": "aedc032529353f81",
+    "text": "komnatu d7",
+    "say": "komnatu dé sedm",
+    "source": "target:d7"
+  },
+  {
+    "lang": "cs",
+    "key": "18eaa1d52b756642",
+    "text": "komnatu e7",
+    "say": "komnatu é sedm",
+    "source": "target:e7"
+  },
+  {
+    "lang": "cs",
+    "key": "63782ca248757691",
+    "text": "komnatu f7",
+    "say": "komnatu ef sedm",
+    "source": "target:f7"
+  },
+  {
+    "lang": "cs",
+    "key": "c678c973516e8fc3",
+    "text": "komnatu g7",
+    "say": "komnatu gé sedm",
+    "source": "target:g7"
+  },
+  {
+    "lang": "cs",
+    "key": "f45c053a130d73ad",
+    "text": "komnatu h7",
+    "say": "komnatu há sedm",
+    "source": "target:h7"
+  },
+  {
+    "lang": "cs",
+    "key": "1824cc61c5a6a2a8",
+    "text": "komnatu a8",
+    "say": "komnatu á osm",
+    "source": "target:a8"
+  },
+  {
+    "lang": "cs",
+    "key": "cf8d5a45aee4b6c8",
+    "text": "komnatu b8",
+    "say": "komnatu bé osm",
+    "source": "target:b8"
+  },
+  {
+    "lang": "cs",
+    "key": "e8c0524b769d34c0",
+    "text": "komnatu c8",
+    "say": "komnatu cé osm",
+    "source": "target:c8"
+  },
+  {
+    "lang": "cs",
+    "key": "247c7f00e4269870",
+    "text": "komnatu d8",
+    "say": "komnatu dé osm",
+    "source": "target:d8"
+  },
+  {
+    "lang": "cs",
+    "key": "da45bf45da6802af",
+    "text": "komnatu e8",
+    "say": "komnatu é osm",
+    "source": "target:e8"
+  },
+  {
+    "lang": "cs",
+    "key": "1612c59a4771b6ca",
+    "text": "komnatu f8",
+    "say": "komnatu ef osm",
+    "source": "target:f8"
+  },
+  {
+    "lang": "cs",
+    "key": "83e7581814b9e8ec",
+    "text": "komnatu g8",
+    "say": "komnatu gé osm",
+    "source": "target:g8"
+  },
+  {
+    "lang": "cs",
+    "key": "4d87e2ead6801d3e",
+    "text": "komnatu h8",
+    "say": "komnatu há osm",
+    "source": "target:h8"
+  },
+  {
+    "lang": "cs",
+    "key": "838dc47e886c6ba4",
+    "text": "Ahoj, já jsem Družička Rosička. Chodím jen dopředu a jednou budu princezna!",
+    "say": "Ahoj, já jsem Družička Rosička. Chodím jen dopředu a jednou budu princezna!",
+    "source": "fairies.pawn:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "25964e845bfb64ba",
+    "text": "Pošťouch!",
+    "say": "Pošťouch!",
+    "source": "fairies.pawn:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "d88b20cffffb864d",
+    "text": "Jdu si odpočinout do hradu…",
+    "say": "Jdu si odpočinout do hradu…",
+    "source": "fairies.pawn:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "5f2491564b65c02a",
+    "text": "Jupí!",
+    "say": "Jupí!",
+    "source": "fairies.pawn:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "0ed090d854c66c0a",
+    "text": "Ahoj, já jsem Koník Obláček. Skáču do písmene L a přeskočím cokoli!",
+    "say": "Ahoj, já jsem Koník Obláček. Skáču do písmene L a přeskočím cokoli!",
+    "source": "fairies.knight:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "3738cc00d495055c",
+    "text": "Hop a skok!",
+    "say": "Hop a skok!",
+    "source": "fairies.knight:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "e5b62c71275a8827",
+    "text": "Jdu se napást…",
+    "say": "Jdu se napást…",
+    "source": "fairies.knight:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "5762eade580ae877",
+    "text": "Íha-há!",
+    "say": "Íha-há!",
+    "source": "fairies.knight:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "829bf6afbba090de",
+    "text": "Ahoj, já jsem Motýlek Třpytka. Létám šikmo a mám ráda svou barvu.",
+    "say": "Ahoj, já jsem Motýlek Třpytka. Létám šikmo a mám ráda svou barvu.",
+    "source": "fairies.bishop:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "3ed5595a6d001e23",
+    "text": "Mávnu křídly!",
+    "say": "Mávnu křídly!",
+    "source": "fairies.bishop:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "ae24acdae4c3384a",
+    "text": "Odlétám na louku…",
+    "say": "Odlétám na louku…",
+    "source": "fairies.bishop:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "96f577295ca5058f",
+    "text": "Juchů!",
+    "say": "Juchů!",
+    "source": "fairies.bishop:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "9a81538c6b0b2411",
+    "text": "Ahoj, já jsem Věžka Kopretinka. Mám kolečka a jezdím jen rovně.",
+    "say": "Ahoj, já jsem Věžka Kopretinka. Mám kolečka a jezdím jen rovně.",
+    "source": "fairies.rook:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "b617d2a063d54220",
+    "text": "Tú-túú!",
+    "say": "Tú-túú!",
+    "source": "fairies.rook:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "c1e1ba160647c205",
+    "text": "Jedu do depa…",
+    "say": "Jedu do depa…",
+    "source": "fairies.rook:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "10f0192391dfa930",
+    "text": "Hopla!",
+    "say": "Hopla!",
+    "source": "fairies.rook:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "915eeb852c392861",
+    "text": "Ahoj, já jsem Princezna Jiskřička. Umím chodit rovně i šikmo, kam se mi zachce!",
+    "say": "Ahoj, já jsem Princezna Jiskřička. Umím chodit rovně i šikmo, kam se mi zachce!",
+    "source": "fairies.queen:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "4ae9de22cc46d31f",
+    "text": "Třpyt-třpyt!",
+    "say": "Třpyt-třpyt!",
+    "source": "fairies.queen:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "4ab53d207bd0199f",
+    "text": "Ahoj, já jsem Král Duhovous. Chodím pomalu, ale mám nejhezčí vousy v království.",
+    "say": "Ahoj, já jsem Král Duhovous. Chodím pomalu, ale mám nejhezčí vousy v království.",
+    "source": "fairies.king:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "c017114662dd088f",
+    "text": "Hezky opatrně!",
+    "say": "Hezky opatrně!",
+    "source": "fairies.king:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "8e1fd22b4742e7bc",
+    "text": "Jdu si odpočinout…",
+    "say": "Jdu si odpočinout…",
+    "source": "fairies.king:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "df1515e59d80f321",
+    "text": "Ahoj, já jsem Žabka Kapička. Skáču jen dopředu a jednou budu královna!",
+    "say": "Ahoj, já jsem Žabka Kapička. Skáču jen dopředu a jednou budu královna!",
+    "source": "witches.pawn:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "50a47e0f94d0e759",
+    "text": "Kvák!",
+    "say": "Kvák!",
+    "source": "witches.pawn:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "a158b0f4dcb3b84c",
+    "text": "Jdu do rybníčku…",
+    "say": "Jdu do rybníčku…",
+    "source": "witches.pawn:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "ccd0b3fbb2185926",
+    "text": "Kvákvá!",
+    "say": "Kvákvá!",
+    "source": "witches.pawn:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "1888fa39ff506f52",
+    "text": "Ahoj, já jsem Koník Stínek. Skáču potmě a nikdy nezakopnu.",
+    "say": "Ahoj, já jsem Koník Stínek. Skáču potmě a nikdy nezakopnu.",
+    "source": "witches.knight:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "b7bd8c8b6ce28e74",
+    "text": "Skok do stínu!",
+    "say": "Skok do stínu!",
+    "source": "witches.knight:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "b3eebd91a20fc372",
+    "text": "Jdu do stáje…",
+    "say": "Jdu do stáje…",
+    "source": "witches.knight:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "191b942c1ed7f886",
+    "text": "Íhaa!",
+    "say": "Íhaa!",
+    "source": "witches.knight:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "f547509b9e948169",
+    "text": "Ahoj, já jsem Můra Šeptalka. Šeptám kouzla a létám šikmo.",
+    "say": "Ahoj, já jsem Můra Šeptalka. Šeptám kouzla a létám šikmo.",
+    "source": "witches.bishop:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "ec2f2f673d33c922",
+    "text": "Pssst… kouzlo!",
+    "say": "Pssst… kouzlo!",
+    "source": "witches.bishop:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "8f6f082901388e97",
+    "text": "Letím ke lampičce…",
+    "say": "Letím ke lampičce…",
+    "source": "witches.bishop:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "aab69749e61e88fd",
+    "text": "Hihi!",
+    "say": "Hihi!",
+    "source": "witches.bishop:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "e824d7e6543fb6e9",
+    "text": "Ahoj, já jsem Věž Netopýrka. Bydlí ve mně tři malí netopýři.",
+    "say": "Ahoj, já jsem Věž Netopýrka. Bydlí ve mně tři malí netopýři.",
+    "source": "witches.rook:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "9cd02f166c0e10b5",
+    "text": "Netopýři, vzhůru!",
+    "say": "Netopýři, vzhůru!",
+    "source": "witches.rook:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "2a80177e45124267",
+    "text": "Jdu si pověsit hlavou dolů…",
+    "say": "Jdu si pověsit hlavou dolů…",
+    "source": "witches.rook:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "5246e7c1293ae4bc",
+    "text": "Pípí!",
+    "say": "Pípí!",
+    "source": "witches.rook:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "e1e7eeea69b8ece2",
+    "text": "Ahoj, já jsem Královna Bouřka. Moje kouzla dělají bum, ale nikoho nebolí.",
+    "say": "Ahoj, já jsem Královna Bouřka. Moje kouzla dělají bum, ale nikoho nebolí.",
+    "source": "witches.queen:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "bbbd6ad89e445823",
+    "text": "Hromská jiskra!",
+    "say": "Hromská jiskra!",
+    "source": "witches.queen:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "69cd585571e41d9a",
+    "text": "Letím na koštěti domů…",
+    "say": "Letím na koštěti domů…",
+    "source": "witches.queen:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "9309815dc8a6b62f",
+    "text": "Mňáá-ha!",
+    "say": "Mňáá-ha!",
+    "source": "witches.queen:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "350c3dff5d01af37",
+    "text": "Ahoj, já jsem Král Bručoun. Bručím, ale ve skutečnosti mám rád koláčky.",
+    "say": "Ahoj, já jsem Král Bručoun. Bručím, ale ve skutečnosti mám rád koláčky.",
+    "source": "witches.king:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "e244d8016125c833",
+    "text": "Brum brum!",
+    "say": "Brum brum!",
+    "source": "witches.king:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "0dc18a94e8755802",
+    "text": "Jdu si zdřímnout…",
+    "say": "Jdu si zdřímnout…",
+    "source": "witches.king:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "9c02a07bf3f5eb9c",
+    "text": "Ha, hezky!",
+    "say": "Ha, hezky!",
+    "source": "witches.king:victory"
+  },
+  {
+    "lang": "en",
+    "key": "12532d83ae476166",
+    "text": "Well done!",
+    "say": "Well done!",
+    "source": "arb:wellDone"
+  },
+  {
+    "lang": "en",
+    "key": "2236fe8ca5fe1789",
+    "text": "Lesson complete!",
+    "say": "Lesson complete!",
+    "source": "arb:lessonDone"
+  },
+  {
+    "lang": "en",
+    "key": "f58bd8302014fefb",
+    "text": "Hooray!",
+    "say": "Hooray!",
+    "source": "arb:taskWon"
+  },
+  {
+    "lang": "en",
+    "key": "1c322b629a4ee8fb",
+    "text": "Let's try again!",
+    "say": "Let's try again!",
+    "source": "arb:tryAgain"
+  },
+  {
+    "lang": "en",
+    "key": "4ae4627175405e6e",
+    "text": "Robot won. Let's play again!",
+    "say": "Robot won. Let's play again!",
+    "source": "arb:botWon"
+  },
+  {
+    "lang": "en",
+    "key": "3a08bdf6ae915054",
+    "text": "She became a princess!",
+    "say": "She became a princess!",
+    "source": "arb:promoted"
+  },
+  {
+    "lang": "en",
+    "key": "2b217f297dd38043",
+    "text": "Ouch, lava!",
+    "say": "Ouch, lava!",
+    "source": "arb:lavaWarning"
+  },
+  {
+    "lang": "en",
+    "key": "f356d70c37b69939",
+    "text": "Robot is thinking…",
+    "say": "Robot is thinking…",
+    "source": "arb:opponentThinking"
+  },
+  {
+    "lang": "en",
+    "key": "51e700f733424981",
+    "text": "Drag a piece onto the board",
+    "say": "Drag a piece onto the board",
+    "source": "arb:dragHint"
+  },
+  {
+    "lang": "en",
+    "key": "945a96e69a73127c",
+    "text": "The chessboard is a kingdom with 64 rooms. Every room has a name: a street letter and a house number.",
+    "say": "The chessboard is a kingdom with 64 rooms. Every room has a name: a street letter and a house number.",
+    "source": "m00_l01:story"
+  },
+  {
+    "lang": "en",
+    "key": "679ef5e38a83147e",
+    "text": "Tap the street!",
+    "say": "Tap the street!",
+    "source": "m00_l01#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "0fcdf0952c944ada",
+    "text": "Tap the row of houses!",
+    "say": "Tap the row of houses!",
+    "source": "m00_l01#2:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "ce6b351a85120009",
+    "text": "Find the room!",
+    "say": "Find the room!",
+    "source": "m00_l01#3:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "933ecb4458fa4e30",
+    "text": "The white room must be in the bottom right corner, or the princess gets cross. Rooms along a slanted path all share one colour.",
+    "say": "The white room must be in the bottom right corner, or the princess gets cross. Rooms along a slanted path all share one colour.",
+    "source": "m00_l02:story"
+  },
+  {
+    "lang": "en",
+    "key": "d78ab178ae0a321a",
+    "text": "Tap every white room in the first row.",
+    "say": "Tap every white room in the first row.",
+    "source": "m00_l02#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "b32745a4a84d7a9b",
+    "text": "Walk the slanted path from corner to corner.",
+    "say": "Walk the slanted path from corner to corner.",
+    "source": "m00_l02#2:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "b9c11e3cd57828f9",
+    "text": "Now the white slanted path!",
+    "say": "Now the white slanted path!",
+    "source": "m00_l02#3:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "3beab61483c79479",
+    "text": "Let's build the castle! Rooks guard the corners, the Princess stands on her own colour and Daddy King next to her.",
+    "say": "Let's build the castle! Rooks guard the corners, the Princess stands on her own colour and Daddy King next to her.",
+    "source": "m00_l03:story"
+  },
+  {
+    "lang": "en",
+    "key": "6787dd3309da3b7c",
+    "text": "Put the Rooks in the corners.",
+    "say": "Put the Rooks in the corners.",
+    "source": "m00_l03#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "3eec6375207b9dba",
+    "text": "Set up the whole first row. Princess on her colour!",
+    "say": "Set up the whole first row. Princess on her colour!",
+    "source": "m00_l03#2:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "6892d5b07b416449",
+    "text": "Bridesmaids always walk forward, never back. On their very first step they may jump two.",
+    "say": "Bridesmaids always walk forward, never back. On their very first step they may jump two.",
+    "source": "m01_l01:story"
+  },
+  {
+    "lang": "en",
+    "key": "45a2b3f8a1b52031",
+    "text": "Walk the bridesmaid to the star.",
+    "say": "Walk the bridesmaid to the star.",
+    "source": "m01_l01#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "0f9c92ba852d3fc4",
+    "text": "Try it in one big jump!",
+    "say": "Try it in one big jump!",
+    "source": "m01_l01#2:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "d892ecf251ddb765",
+    "text": "Stones lie on the road. A bridesmaid can't walk through them. Which one can make it?",
+    "say": "Stones lie on the road. A bridesmaid can't walk through them. Which one can make it?",
+    "source": "m01_l02:story"
+  },
+  {
+    "lang": "en",
+    "key": "5dd00e2477aa985c",
+    "text": "Which bridesmaid can reach the star?",
+    "say": "Which bridesmaid can reach the star?",
+    "source": "m01_l02#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "46913f97e8334777",
+    "text": "Bridesmaids fight on the slant: they nudge whoever stands diagonally in front of them.",
+    "say": "Bridesmaids fight on the slant: they nudge whoever stands diagonally in front of them.",
+    "source": "m01_l03:story"
+  },
+  {
+    "lang": "en",
+    "key": "44b30eebc0fc2219",
+    "text": "Nudge away all the other bridesmaids.",
+    "say": "Nudge away all the other bridesmaids.",
+    "source": "m01_l03#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "76a7cbe2b8b2fff4",
+    "text": "When a bridesmaid reaches the far end of the kingdom, she turns into a princess!",
+    "say": "When a bridesmaid reaches the far end of the kingdom, she turns into a princess!",
+    "source": "m01_l04:story"
+  },
+  {
+    "lang": "en",
+    "key": "f8d7c975b6dc391e",
+    "text": "Walk the bridesmaid all the way to the end.",
+    "say": "Walk the bridesmaid all the way to the end.",
+    "source": "m01_l04#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "3a32ee0bd142ea9c",
+    "text": "A stone blocks the way. Nudge someone on the slant!",
+    "say": "A stone blocks the way. Nudge someone on the slant!",
+    "source": "m01_l04#3:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "4b651de65743cfc2",
+    "text": "Your very first real game! Whoever walks a bridesmaid to the end first, wins.",
+    "say": "Your very first real game! Whoever walks a bridesmaid to the end first, wins.",
+    "source": "m01_l05:story"
+  },
+  {
+    "lang": "en",
+    "key": "22f3e1e30d081241",
+    "text": "You play against Baby Robot.",
+    "say": "You play against Baby Robot.",
+    "source": "m01_l05#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "d3f7442a7b605dd2",
+    "text": "The rook has wheels like a little train. She only drives straight: forward, back, left, right. As far as she likes, until she bumps into something.",
+    "say": "The rook has wheels like a little train. She only drives straight: forward, back, left, right. As far as she likes, until she bumps into something.",
+    "source": "m02_l01:story"
+  },
+  {
+    "lang": "en",
+    "key": "d42656f2dc851a94",
+    "text": "Drive the rook to the star.",
+    "say": "Drive the rook to the star.",
+    "source": "m02_l01#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "20aea25ea45b8e5f",
+    "text": "This star needs two drives.",
+    "say": "This star needs two drives.",
+    "source": "m02_l01#3:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "d20532d6e1a08c8d",
+    "text": "The rook picks up stars on the way too. Which way should she drive to grab as many as she can at once?",
+    "say": "The rook picks up stars on the way too. Which way should she drive to grab as many as she can at once?",
+    "source": "m02_l02:story"
+  },
+  {
+    "lang": "en",
+    "key": "4d9cb5fbd72481f3",
+    "text": "Collect all the stars in as few drives as you can.",
+    "say": "Collect all the stars in as few drives as you can.",
+    "source": "m02_l02#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "51ec68fc5ef3b986",
+    "text": "Careful, some rooms are on fire. The rook may not stop on the lava or drive across it.",
+    "say": "Careful, some rooms are on fire. The rook may not stop on the lava or drive across it.",
+    "source": "m02_l03:story"
+  },
+  {
+    "lang": "en",
+    "key": "d258bebc3a604b50",
+    "text": "Reach the star, but stay off the lava.",
+    "say": "Reach the star, but stay off the lava.",
+    "source": "m02_l03#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "4e8cb36edf826ce8",
+    "text": "The rook rides into battle! The other bridesmaids stand and wait.",
+    "say": "The rook rides into battle! The other bridesmaids stand and wait.",
+    "source": "m02_l04:story"
+  },
+  {
+    "lang": "en",
+    "key": "ee3c942277c29cc1",
+    "text": "Capture all the other bridesmaids.",
+    "say": "Capture all the other bridesmaids.",
+    "source": "m02_l04#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "2d5b80cdc321d408",
+    "text": "The butterfly only flies on the slant and stays on its own colour of rooms all its life.",
+    "say": "The butterfly only flies on the slant and stays on its own colour of rooms all its life.",
+    "source": "m03_l01:story"
+  },
+  {
+    "lang": "en",
+    "key": "d0b53720769394e1",
+    "text": "Fly the butterfly to the star.",
+    "say": "Fly the butterfly to the star.",
+    "source": "m03_l01#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "4cdce075e28b48b2",
+    "text": "This star needs two flights.",
+    "say": "This star needs two flights.",
+    "source": "m03_l01#3:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "66bcdfbd93f2acbd",
+    "text": "One butterfly loves white rooms, the other loves dark ones. They never reach the other colour.",
+    "say": "One butterfly loves white rooms, the other loves dark ones. They never reach the other colour.",
+    "source": "m03_l02:story"
+  },
+  {
+    "lang": "en",
+    "key": "15fb31bcc2a6fd07",
+    "text": "Can the butterfly reach the star?",
+    "say": "Can the butterfly reach the star?",
+    "source": "m03_l02#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "ba5d606e9676bb63",
+    "text": "The butterfly picks up stars on the way. Find a slanted path through as many stars as you can.",
+    "say": "The butterfly picks up stars on the way. Find a slanted path through as many stars as you can.",
+    "source": "m03_l03:story"
+  },
+  {
+    "lang": "en",
+    "key": "68d86e2ab43454cc",
+    "text": "Collect all the stars.",
+    "say": "Collect all the stars.",
+    "source": "m03_l03#1:prompt"
+  },
+  {
+    "lang": "en",
+    "key": "0bb2950a05155acd",
+    "text": "The butterfly flies into battle! Remember, it only reaches its own colour.",
+    "say": "The butterfly flies into battle! Remember, it only reaches its own colour.",
+    "source": "m03_l04:story"
+  },
+  {
+    "lang": "en",
+    "key": "cc4d402ef97bc6ac",
+    "text": "street A",
+    "say": "street A",
+    "source": "target:a"
+  },
+  {
+    "lang": "en",
+    "key": "fcbcdd93592646c9",
+    "text": "street B",
+    "say": "street B",
+    "source": "target:b"
+  },
+  {
+    "lang": "en",
+    "key": "9aaec13f32051fd8",
+    "text": "street C",
+    "say": "street C",
+    "source": "target:c"
+  },
+  {
+    "lang": "en",
+    "key": "a74edf6b08649724",
+    "text": "street D",
+    "say": "street D",
+    "source": "target:d"
+  },
+  {
+    "lang": "en",
+    "key": "e7a5ca0012acdb76",
+    "text": "street E",
+    "say": "street E",
+    "source": "target:e"
+  },
+  {
+    "lang": "en",
+    "key": "0bdebc087a2274ef",
+    "text": "street F",
+    "say": "street F",
+    "source": "target:f"
+  },
+  {
+    "lang": "en",
+    "key": "a1392060efbc0dce",
+    "text": "street G",
+    "say": "street G",
+    "source": "target:g"
+  },
+  {
+    "lang": "en",
+    "key": "b4fda0e0a856f103",
+    "text": "street H",
+    "say": "street H",
+    "source": "target:h"
+  },
+  {
+    "lang": "en",
+    "key": "f965c91361fe1aa8",
+    "text": "row 1",
+    "say": "row 1",
+    "source": "target:1"
+  },
+  {
+    "lang": "en",
+    "key": "1429bc2f53237133",
+    "text": "row 2",
+    "say": "row 2",
+    "source": "target:2"
+  },
+  {
+    "lang": "en",
+    "key": "93efff0152b4409c",
+    "text": "row 3",
+    "say": "row 3",
+    "source": "target:3"
+  },
+  {
+    "lang": "en",
+    "key": "b3c03358e8bffdd8",
+    "text": "row 4",
+    "say": "row 4",
+    "source": "target:4"
+  },
+  {
+    "lang": "en",
+    "key": "f515594653e2c2eb",
+    "text": "row 5",
+    "say": "row 5",
+    "source": "target:5"
+  },
+  {
+    "lang": "en",
+    "key": "418e696afe9146c9",
+    "text": "row 6",
+    "say": "row 6",
+    "source": "target:6"
+  },
+  {
+    "lang": "en",
+    "key": "e1954406968af07c",
+    "text": "row 7",
+    "say": "row 7",
+    "source": "target:7"
+  },
+  {
+    "lang": "en",
+    "key": "2abc331918d38911",
+    "text": "row 8",
+    "say": "row 8",
+    "source": "target:8"
+  },
+  {
+    "lang": "en",
+    "key": "556cb22abe9ec521",
+    "text": "room a1",
+    "say": "room A 1",
+    "source": "target:a1"
+  },
+  {
+    "lang": "en",
+    "key": "2db5e386c2f6355a",
+    "text": "room b1",
+    "say": "room B 1",
+    "source": "target:b1"
+  },
+  {
+    "lang": "en",
+    "key": "e57c5427054698af",
+    "text": "room c1",
+    "say": "room C 1",
+    "source": "target:c1"
+  },
+  {
+    "lang": "en",
+    "key": "d7df6106dd967eb9",
+    "text": "room d1",
+    "say": "room D 1",
+    "source": "target:d1"
+  },
+  {
+    "lang": "en",
+    "key": "b844a6a35b20c179",
+    "text": "room e1",
+    "say": "room E 1",
+    "source": "target:e1"
+  },
+  {
+    "lang": "en",
+    "key": "d7bae9ca1e488660",
+    "text": "room f1",
+    "say": "room F 1",
+    "source": "target:f1"
+  },
+  {
+    "lang": "en",
+    "key": "9fcda7869411e712",
+    "text": "room g1",
+    "say": "room G 1",
+    "source": "target:g1"
+  },
+  {
+    "lang": "en",
+    "key": "0f18db2726804e3d",
+    "text": "room h1",
+    "say": "room H 1",
+    "source": "target:h1"
+  },
+  {
+    "lang": "en",
+    "key": "16e0f97249a5d438",
+    "text": "room a2",
+    "say": "room A 2",
+    "source": "target:a2"
+  },
+  {
+    "lang": "en",
+    "key": "5cf0ef0359659b09",
+    "text": "room b2",
+    "say": "room B 2",
+    "source": "target:b2"
+  },
+  {
+    "lang": "en",
+    "key": "1e9fdc7199d1598b",
+    "text": "room c2",
+    "say": "room C 2",
+    "source": "target:c2"
+  },
+  {
+    "lang": "en",
+    "key": "54eb226e984c5b33",
+    "text": "room d2",
+    "say": "room D 2",
+    "source": "target:d2"
+  },
+  {
+    "lang": "en",
+    "key": "24c669fcc20fa331",
+    "text": "room e2",
+    "say": "room E 2",
+    "source": "target:e2"
+  },
+  {
+    "lang": "en",
+    "key": "987ac94ee3f66a20",
+    "text": "room f2",
+    "say": "room F 2",
+    "source": "target:f2"
+  },
+  {
+    "lang": "en",
+    "key": "db6f688f11d5d525",
+    "text": "room g2",
+    "say": "room G 2",
+    "source": "target:g2"
+  },
+  {
+    "lang": "en",
+    "key": "ad19205984ce413b",
+    "text": "room h2",
+    "say": "room H 2",
+    "source": "target:h2"
+  },
+  {
+    "lang": "en",
+    "key": "a7578f3c40301374",
+    "text": "room a3",
+    "say": "room A 3",
+    "source": "target:a3"
+  },
+  {
+    "lang": "en",
+    "key": "f31d390a4e3c7c44",
+    "text": "room b3",
+    "say": "room B 3",
+    "source": "target:b3"
+  },
+  {
+    "lang": "en",
+    "key": "dcf9a04861b200a8",
+    "text": "room c3",
+    "say": "room C 3",
+    "source": "target:c3"
+  },
+  {
+    "lang": "en",
+    "key": "b3a24775db487b5b",
+    "text": "room d3",
+    "say": "room D 3",
+    "source": "target:d3"
+  },
+  {
+    "lang": "en",
+    "key": "2bf2c154cde61187",
+    "text": "room e3",
+    "say": "room E 3",
+    "source": "target:e3"
+  },
+  {
+    "lang": "en",
+    "key": "97ad65da85c729a3",
+    "text": "room f3",
+    "say": "room F 3",
+    "source": "target:f3"
+  },
+  {
+    "lang": "en",
+    "key": "69d4f21cf595797e",
+    "text": "room g3",
+    "say": "room G 3",
+    "source": "target:g3"
+  },
+  {
+    "lang": "en",
+    "key": "fb5569b18ea09d30",
+    "text": "room h3",
+    "say": "room H 3",
+    "source": "target:h3"
+  },
+  {
+    "lang": "en",
+    "key": "7259cb560253030e",
+    "text": "room a4",
+    "say": "room A 4",
+    "source": "target:a4"
+  },
+  {
+    "lang": "en",
+    "key": "3d72649f202736ef",
+    "text": "room b4",
+    "say": "room B 4",
+    "source": "target:b4"
+  },
+  {
+    "lang": "en",
+    "key": "ad7bf6d3192b9c7e",
+    "text": "room c4",
+    "say": "room C 4",
+    "source": "target:c4"
+  },
+  {
+    "lang": "en",
+    "key": "4c9b039c86780f5d",
+    "text": "room d4",
+    "say": "room D 4",
+    "source": "target:d4"
+  },
+  {
+    "lang": "en",
+    "key": "a2cf991724f504cc",
+    "text": "room e4",
+    "say": "room E 4",
+    "source": "target:e4"
+  },
+  {
+    "lang": "en",
+    "key": "9bf62484a1314824",
+    "text": "room f4",
+    "say": "room F 4",
+    "source": "target:f4"
+  },
+  {
+    "lang": "en",
+    "key": "8acb6ad378100aee",
+    "text": "room g4",
+    "say": "room G 4",
+    "source": "target:g4"
+  },
+  {
+    "lang": "en",
+    "key": "ea56007e1c7e7381",
+    "text": "room h4",
+    "say": "room H 4",
+    "source": "target:h4"
+  },
+  {
+    "lang": "en",
+    "key": "aa85830072a3ab58",
+    "text": "room a5",
+    "say": "room A 5",
+    "source": "target:a5"
+  },
+  {
+    "lang": "en",
+    "key": "4f3ed619c424c171",
+    "text": "room b5",
+    "say": "room B 5",
+    "source": "target:b5"
+  },
+  {
+    "lang": "en",
+    "key": "79535d7ac2e92598",
+    "text": "room c5",
+    "say": "room C 5",
+    "source": "target:c5"
+  },
+  {
+    "lang": "en",
+    "key": "837d4c8203021d6b",
+    "text": "room d5",
+    "say": "room D 5",
+    "source": "target:d5"
+  },
+  {
+    "lang": "en",
+    "key": "a4ccd60983619e4b",
+    "text": "room e5",
+    "say": "room E 5",
+    "source": "target:e5"
+  },
+  {
+    "lang": "en",
+    "key": "b91dedbcfa13e4f0",
+    "text": "room f5",
+    "say": "room F 5",
+    "source": "target:f5"
+  },
+  {
+    "lang": "en",
+    "key": "3a62cc21771247ed",
+    "text": "room g5",
+    "say": "room G 5",
+    "source": "target:g5"
+  },
+  {
+    "lang": "en",
+    "key": "26bbe4b6bd2b53ec",
+    "text": "room h5",
+    "say": "room H 5",
+    "source": "target:h5"
+  },
+  {
+    "lang": "en",
+    "key": "edab2af130de3ed6",
+    "text": "room a6",
+    "say": "room A 6",
+    "source": "target:a6"
+  },
+  {
+    "lang": "en",
+    "key": "d382b5e0536d6888",
+    "text": "room b6",
+    "say": "room B 6",
+    "source": "target:b6"
+  },
+  {
+    "lang": "en",
+    "key": "97216337093a17b1",
+    "text": "room c6",
+    "say": "room C 6",
+    "source": "target:c6"
+  },
+  {
+    "lang": "en",
+    "key": "0457cb521c44b746",
+    "text": "room d6",
+    "say": "room D 6",
+    "source": "target:d6"
+  },
+  {
+    "lang": "en",
+    "key": "964378f6eec4b4b2",
+    "text": "room e6",
+    "say": "room E 6",
+    "source": "target:e6"
+  },
+  {
+    "lang": "en",
+    "key": "fc34c1d3dd79e083",
+    "text": "room f6",
+    "say": "room F 6",
+    "source": "target:f6"
+  },
+  {
+    "lang": "en",
+    "key": "8b7aba8c67bd34a6",
+    "text": "room g6",
+    "say": "room G 6",
+    "source": "target:g6"
+  },
+  {
+    "lang": "en",
+    "key": "3a9315d33992b0a5",
+    "text": "room h6",
+    "say": "room H 6",
+    "source": "target:h6"
+  },
+  {
+    "lang": "en",
+    "key": "e496c812e3662fde",
+    "text": "room a7",
+    "say": "room A 7",
+    "source": "target:a7"
+  },
+  {
+    "lang": "en",
+    "key": "538dbd307ab169b9",
+    "text": "room b7",
+    "say": "room B 7",
+    "source": "target:b7"
+  },
+  {
+    "lang": "en",
+    "key": "72ee347d8e111762",
+    "text": "room c7",
+    "say": "room C 7",
+    "source": "target:c7"
+  },
+  {
+    "lang": "en",
+    "key": "977c5dd918857dc7",
+    "text": "room d7",
+    "say": "room D 7",
+    "source": "target:d7"
+  },
+  {
+    "lang": "en",
+    "key": "b2a476c1152f41bc",
+    "text": "room e7",
+    "say": "room E 7",
+    "source": "target:e7"
+  },
+  {
+    "lang": "en",
+    "key": "e8ccd370bc5b3029",
+    "text": "room f7",
+    "say": "room F 7",
+    "source": "target:f7"
+  },
+  {
+    "lang": "en",
+    "key": "8f3a4965e705c1d9",
+    "text": "room g7",
+    "say": "room G 7",
+    "source": "target:g7"
+  },
+  {
+    "lang": "en",
+    "key": "ea309b1b31b700b5",
+    "text": "room h7",
+    "say": "room H 7",
+    "source": "target:h7"
+  },
+  {
+    "lang": "en",
+    "key": "f8bbfc9077ea9032",
+    "text": "room a8",
+    "say": "room A 8",
+    "source": "target:a8"
+  },
+  {
+    "lang": "en",
+    "key": "0141e9d20882e066",
+    "text": "room b8",
+    "say": "room B 8",
+    "source": "target:b8"
+  },
+  {
+    "lang": "en",
+    "key": "4c306857bcc72888",
+    "text": "room c8",
+    "say": "room C 8",
+    "source": "target:c8"
+  },
+  {
+    "lang": "en",
+    "key": "fbb4d4854b751802",
+    "text": "room d8",
+    "say": "room D 8",
+    "source": "target:d8"
+  },
+  {
+    "lang": "en",
+    "key": "7673e7ae369baa88",
+    "text": "room e8",
+    "say": "room E 8",
+    "source": "target:e8"
+  },
+  {
+    "lang": "en",
+    "key": "cac93aae19b44618",
+    "text": "room f8",
+    "say": "room F 8",
+    "source": "target:f8"
+  },
+  {
+    "lang": "en",
+    "key": "a1d8bf04f65bfc5d",
+    "text": "room g8",
+    "say": "room G 8",
+    "source": "target:g8"
+  },
+  {
+    "lang": "en",
+    "key": "a1b214706255d1ba",
+    "text": "room h8",
+    "say": "room H 8",
+    "source": "target:h8"
+  },
+  {
+    "lang": "en",
+    "key": "6d9bbb2a1aab433a",
+    "text": "Hi, I'm Dewdrop. I only walk forward, and one day I'll be a princess!",
+    "say": "Hi, I'm Dewdrop. I only walk forward, and one day I'll be a princess!",
+    "source": "fairies.pawn:motto"
+  },
+  {
+    "lang": "en",
+    "key": "68fb2dd610e0eb0c",
+    "text": "Nudge!",
+    "say": "Nudge!",
+    "source": "fairies.pawn:attack"
+  },
+  {
+    "lang": "en",
+    "key": "62e5ffb78b252cf1",
+    "text": "Off to rest in the castle…",
+    "say": "Off to rest in the castle…",
+    "source": "fairies.pawn:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "c4379900702840e4",
+    "text": "Yippee!",
+    "say": "Yippee!",
+    "source": "fairies.pawn:victory"
+  },
+  {
+    "lang": "en",
+    "key": "20662bb163e8d5ff",
+    "text": "Hi, I'm Cloud Pony. I jump in an L and hop over anything!",
+    "say": "Hi, I'm Cloud Pony. I jump in an L and hop over anything!",
+    "source": "fairies.knight:motto"
+  },
+  {
+    "lang": "en",
+    "key": "accca3ccb3a78f9e",
+    "text": "Hop and jump!",
+    "say": "Hop and jump!",
+    "source": "fairies.knight:attack"
+  },
+  {
+    "lang": "en",
+    "key": "718782982801caf0",
+    "text": "Off to graze…",
+    "say": "Off to graze…",
+    "source": "fairies.knight:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "a08e50ff733d50f1",
+    "text": "Yee-haw!",
+    "say": "Yee-haw!",
+    "source": "fairies.knight:victory"
+  },
+  {
+    "lang": "en",
+    "key": "ad8052497e3e4492",
+    "text": "Hi, I'm Glimmer Butterfly. I fly on the slant and love my colour.",
+    "say": "Hi, I'm Glimmer Butterfly. I fly on the slant and love my colour.",
+    "source": "fairies.bishop:motto"
+  },
+  {
+    "lang": "en",
+    "key": "643cb20f81804b6f",
+    "text": "Flap flap!",
+    "say": "Flap flap!",
+    "source": "fairies.bishop:attack"
+  },
+  {
+    "lang": "en",
+    "key": "d60d0fdd005d27c2",
+    "text": "Flying off to the meadow…",
+    "say": "Flying off to the meadow…",
+    "source": "fairies.bishop:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "865cf71a227b4938",
+    "text": "Woohoo!",
+    "say": "Woohoo!",
+    "source": "fairies.bishop:victory"
+  },
+  {
+    "lang": "en",
+    "key": "205a0210421aa708",
+    "text": "Hi, I'm Daisy Tower. I have wheels and only drive straight.",
+    "say": "Hi, I'm Daisy Tower. I have wheels and only drive straight.",
+    "source": "fairies.rook:motto"
+  },
+  {
+    "lang": "en",
+    "key": "9cf4a9e0b8bbe554",
+    "text": "Choo-choo!",
+    "say": "Choo-choo!",
+    "source": "fairies.rook:attack"
+  },
+  {
+    "lang": "en",
+    "key": "0a670114badf799b",
+    "text": "Back to the depot…",
+    "say": "Back to the depot…",
+    "source": "fairies.rook:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "ecc11ee218a7824f",
+    "text": "Hop-la!",
+    "say": "Hop-la!",
+    "source": "fairies.rook:victory"
+  },
+  {
+    "lang": "en",
+    "key": "8d4965b67f6dc116",
+    "text": "Hi, I'm Princess Sparkle. I go straight and slanted, wherever I like!",
+    "say": "Hi, I'm Princess Sparkle. I go straight and slanted, wherever I like!",
+    "source": "fairies.queen:motto"
+  },
+  {
+    "lang": "en",
+    "key": "1057af9805627deb",
+    "text": "Sparkle-sparkle!",
+    "say": "Sparkle-sparkle!",
+    "source": "fairies.queen:attack"
+  },
+  {
+    "lang": "en",
+    "key": "9e58906531d98700",
+    "text": "Hi, I'm King Rainbeard. I walk slowly, but I have the finest beard in the kingdom.",
+    "say": "Hi, I'm King Rainbeard. I walk slowly, but I have the finest beard in the kingdom.",
+    "source": "fairies.king:motto"
+  },
+  {
+    "lang": "en",
+    "key": "5ec2095d6f7182b6",
+    "text": "Nice and careful!",
+    "say": "Nice and careful!",
+    "source": "fairies.king:attack"
+  },
+  {
+    "lang": "en",
+    "key": "0d5cccd76d9684fe",
+    "text": "Time for a rest…",
+    "say": "Time for a rest…",
+    "source": "fairies.king:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "e6f13461a2f6aea6",
+    "text": "Hi, I'm Little Froggy. I only hop forward, and one day I'll be a queen!",
+    "say": "Hi, I'm Little Froggy. I only hop forward, and one day I'll be a queen!",
+    "source": "witches.pawn:motto"
+  },
+  {
+    "lang": "en",
+    "key": "e3166540ede7207c",
+    "text": "Ribbit!",
+    "say": "Ribbit!",
+    "source": "witches.pawn:attack"
+  },
+  {
+    "lang": "en",
+    "key": "790862633bc7f183",
+    "text": "Off to the pond…",
+    "say": "Off to the pond…",
+    "source": "witches.pawn:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "4bd5a6b3a0b52aa9",
+    "text": "Ribbit-ribbit!",
+    "say": "Ribbit-ribbit!",
+    "source": "witches.pawn:victory"
+  },
+  {
+    "lang": "en",
+    "key": "399a2917312cac0d",
+    "text": "Hi, I'm Shadow Pony. I jump in the dark and never trip.",
+    "say": "Hi, I'm Shadow Pony. I jump in the dark and never trip.",
+    "source": "witches.knight:motto"
+  },
+  {
+    "lang": "en",
+    "key": "ed8fb5dbeb744dc4",
+    "text": "Shadow jump!",
+    "say": "Shadow jump!",
+    "source": "witches.knight:attack"
+  },
+  {
+    "lang": "en",
+    "key": "947dd0d36452e83a",
+    "text": "Back to the stable…",
+    "say": "Back to the stable…",
+    "source": "witches.knight:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "c24ce82063307df4",
+    "text": "Neigh!",
+    "say": "Neigh!",
+    "source": "witches.knight:victory"
+  },
+  {
+    "lang": "en",
+    "key": "d5a42c9320f60675",
+    "text": "Hi, I'm Whisper Moth. I whisper spells and fly on the slant.",
+    "say": "Hi, I'm Whisper Moth. I whisper spells and fly on the slant.",
+    "source": "witches.bishop:motto"
+  },
+  {
+    "lang": "en",
+    "key": "3d9b87d1d66e3b78",
+    "text": "Psst… magic!",
+    "say": "Psst… magic!",
+    "source": "witches.bishop:attack"
+  },
+  {
+    "lang": "en",
+    "key": "27898c08b88dcee8",
+    "text": "Off to the lamp…",
+    "say": "Off to the lamp…",
+    "source": "witches.bishop:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "a796032b84f17cd6",
+    "text": "Hee-hee!",
+    "say": "Hee-hee!",
+    "source": "witches.bishop:victory"
+  },
+  {
+    "lang": "en",
+    "key": "126b08dcddffd041",
+    "text": "Hi, I'm Batty Tower. Three little bats live inside me.",
+    "say": "Hi, I'm Batty Tower. Three little bats live inside me.",
+    "source": "witches.rook:motto"
+  },
+  {
+    "lang": "en",
+    "key": "3d8ed5ad05b0f4b7",
+    "text": "Bats, away!",
+    "say": "Bats, away!",
+    "source": "witches.rook:attack"
+  },
+  {
+    "lang": "en",
+    "key": "699bf470aa2c6f77",
+    "text": "Going to hang upside down…",
+    "say": "Going to hang upside down…",
+    "source": "witches.rook:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "c6a3410463bfd5b8",
+    "text": "Squeak!",
+    "say": "Squeak!",
+    "source": "witches.rook:victory"
+  },
+  {
+    "lang": "en",
+    "key": "843aac32791f94e4",
+    "text": "Hi, I'm Queen Thunder. My spells go boom, but never hurt anyone.",
+    "say": "Hi, I'm Queen Thunder. My spells go boom, but never hurt anyone.",
+    "source": "witches.queen:motto"
+  },
+  {
+    "lang": "en",
+    "key": "fc2d8833690956b4",
+    "text": "Thunder spark!",
+    "say": "Thunder spark!",
+    "source": "witches.queen:attack"
+  },
+  {
+    "lang": "en",
+    "key": "d1b1bd17114951ef",
+    "text": "Flying home on my broom…",
+    "say": "Flying home on my broom…",
+    "source": "witches.queen:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "a09b3724d1ed30c9",
+    "text": "Mwa-ha!",
+    "say": "Mwa-ha!",
+    "source": "witches.queen:victory"
+  },
+  {
+    "lang": "en",
+    "key": "78f02a14e4e3d090",
+    "text": "Hi, I'm King Grumble. I grumble, but really I love cupcakes.",
+    "say": "Hi, I'm King Grumble. I grumble, but really I love cupcakes.",
+    "source": "witches.king:motto"
+  },
+  {
+    "lang": "en",
+    "key": "548bd2cd3cdaa22d",
+    "text": "Grumble grumble!",
+    "say": "Grumble grumble!",
+    "source": "witches.king:attack"
+  },
+  {
+    "lang": "en",
+    "key": "737055b995a91901",
+    "text": "Nap time…",
+    "say": "Nap time…",
+    "source": "witches.king:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "282ab21d7cfd47a8",
+    "text": "Ha, lovely!",
+    "say": "Ha, lovely!",
+    "source": "witches.king:victory"
+  }
+]

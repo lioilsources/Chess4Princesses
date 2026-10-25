@@ -38,6 +38,10 @@ class LessonController extends ChangeNotifier {
   SquarePulse shake = const SquarePulse(null, 0);
   SquarePulse burst = const SquarePulse(null, 0);
   LessonFeedback feedback = LessonFeedback.none;
+
+  /// Bumped on every [_say], so the narrator repeats "try again" on the
+  /// second mistake too.
+  int feedbackTick = 0;
   PendingBattle? battle;
 
   void Function()? _afterBattle;
@@ -275,6 +279,7 @@ class LessonController extends ChangeNotifier {
 
   void _say(LessonFeedback f) {
     feedback = f;
+    feedbackTick++;
     _notify();
   }
 

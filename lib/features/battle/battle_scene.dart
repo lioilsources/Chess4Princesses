@@ -16,13 +16,16 @@ import 'battle_director.dart';
 
 /// Who fights whom. Built by the board when a capture happens.
 class BattleRequest {
-  const BattleRequest({required this.attackerArmy, required this.attacker, required this.defenderArmy, required this.defender, this.lang = 'cs'});
+  const BattleRequest({required this.attackerArmy, required this.attacker, required this.defenderArmy, required this.defender, this.lang = 'cs', this.onLine});
 
   final Army attackerArmy;
   final PieceType attacker;
   final Army defenderArmy;
   final PieceType defender;
   final String lang;
+
+  /// Called with each speech-bubble line (voice-over).
+  final void Function(String line)? onLine;
 }
 
 /// Full-screen battle overlay (BATTLES_PLAN §3). B1: placeholder fighters
@@ -66,6 +69,11 @@ class BattleGame extends FlameGame with TapCallbacks {
 
   String _line(Army army, PieceType t, String key) => army[t].lines[key]?.of(request.lang) ?? '';
 
+  void _sayLine(String text, {required bool left}) {
+    _bubble.say(text, left: left);
+    request.onLine?.call(text);
+  }
+
   @override
   void update(double dt) {
     super.update(dt);
@@ -85,11 +93,11 @@ class BattleGame extends FlameGame with TapCallbacks {
       case BattlePhase.idle:
         _attacker.idle();
         _defender.idle();
-        _bubble.say(_line(request.attackerArmy, request.attacker, 'attack'), left: true);
+        _sayLine(_line(request.attackerArmy, request.attacker, 'attack'), left: true);
       case BattlePhase.attack:
         _attacker.attack(towards: _right - _left - 150, hitAt: t.hitAt, total: t.attack);
       case BattlePhase.victory:
-        _bubble.say(_line(request.attackerArmy, request.attacker, 'victory'), left: true);
+        _sayLine(_line(request.attackerArmy, request.attacker, 'victory'), left: true);
         _attacker.victory(t.victory);
       case BattlePhase.exit:
         _bubble.say('', left: true);
@@ -104,7 +112,7 @@ class BattleGame extends FlameGame with TapCallbacks {
   }
 
   void _onHit() {
-    _bubble.say(_line(request.defenderArmy, request.defender, 'defeat'), left: false);
+    _sayLine(_line(request.defenderArmy, request.defender, 'defeat'), left: false);
     _defender.defeat(director.timing.defeat);
     _burst(Vector2(_right - 40, _ground - 40), Color(request.attackerArmy.accent));
     camera.viewfinder.add(

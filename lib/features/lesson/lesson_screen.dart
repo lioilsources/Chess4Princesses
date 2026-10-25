@@ -8,6 +8,7 @@ import '../../core/armies/army.dart';
 import '../../core/chess/types.dart';
 import '../../core/lessons/lesson.dart';
 import '../../core/lessons/lesson_engine.dart';
+import '../../core/voice/narrator.dart';
 import '../../l10n/app_localizations.dart';
 import '../battle/battle_overlay.dart';
 import '../battle/battle_scene.dart';
@@ -56,10 +57,24 @@ class _LessonViewState extends ConsumerState<_LessonView> {
     onFinished: (stars) => ref.read(progressProvider.notifier).completeLesson(widget.lesson, stars),
   )..addListener(_changed);
 
-  void _changed() => setState(() {});
+  void _changed() {
+    setState(() {});
+    _speak();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    ref.read(narratorProvider.future).then((n) {
+      if (!mounted) return;
+      _narrator = n;
+      _speak();
+    });
+  }
 
   @override
   void dispose() {
+    _narrator?.stop();
     c.dispose();
     super.dispose();
   }
@@ -67,6 +82,61 @@ class _LessonViewState extends ConsumerState<_LessonView> {
   void _restart() {
     c.dispose();
     setState(() => c = _newController());
+    _scene = null;
+    _finishedHeard = false;
+    _speak();
+  }
+
+  // ---- voice-over --------------------------------------------------------
+
+  Narrator? _narrator;
+
+  /// (story shown, task index, tap target) last read aloud.
+  (bool, int, String?)? _scene;
+  int _feedbackHeard = 0;
+  bool _finishedHeard = false;
+
+  /// Reads whatever just appeared: story, task prompt, next tap target,
+  /// feedback or the finished card. Rebuilds without a change stay silent.
+  void _speak() {
+    final n = _narrator;
+    if (n == null || !mounted) return;
+    final l10n = AppLocalizations.of(context);
+    final lang = Localizations.localeOf(context).languageCode;
+    if (c.finished) {
+      if (!_finishedHeard) n.say(lang, [l10n.lessonDone]);
+      _finishedHeard = true;
+      return;
+    }
+    if (c.feedbackTick != _feedbackHeard) {
+      _feedbackHeard = c.feedbackTick;
+      if (c.feedback != LessonFeedback.none) n.say(lang, [feedbackText(l10n, c.feedback, '')]);
+      return;
+    }
+    final target = c.task.currentTarget;
+    final scene = (c.showStory, c.session.taskIndex, target);
+    if (scene == _scene) return;
+    final sameTask = _scene != null && !_scene!.$1 && _scene!.$2 == scene.$2;
+    _scene = scene;
+    if (c.showStory) {
+      n.say(lang, [widget.lesson.story.of(lang)]);
+    } else if (sameTask) {
+      if (target != null) n.say(lang, [targetLabel(l10n, target)]);
+    } else {
+      _sayPrompt();
+    }
+  }
+
+  void _sayPrompt() {
+    final l10n = AppLocalizations.of(context);
+    final lang = Localizations.localeOf(context).languageCode;
+    final target = c.task.currentTarget;
+    _narrator?.say(lang, [c.task.task.prompt.of(lang), if (target != null) targetLabel(l10n, target)]);
+  }
+
+  void _sayStory() {
+    final lang = Localizations.localeOf(context).languageCode;
+    _narrator?.say(lang, [widget.lesson.story.of(lang)]);
   }
 
   Army _armyOf(Side s) => s == c.task.player ? widget.mine : widget.rival;
@@ -85,7 +155,10 @@ class _LessonViewState extends ConsumerState<_LessonView> {
             _TopBar(lesson: lesson, lang: lang, taskIndex: c.session.taskIndex),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-              child: _PromptBubble(task: t, lang: lang, feedback: c.feedback, l10n: l10n),
+              child: GestureDetector(
+                onTap: _sayPrompt,
+                child: _PromptBubble(task: t, lang: lang, feedback: c.feedback, l10n: l10n),
+              ),
             ),
             Expanded(
               child: Padding(
@@ -109,7 +182,7 @@ class _LessonViewState extends ConsumerState<_LessonView> {
             _BottomPanel(controller: c, armyOf: _armyOf, l10n: l10n),
           ],
         ),
-        if (c.showStory) _StoryCard(lesson: lesson, lang: lang, onStart: c.startTask, l10n: l10n),
+        if (c.showStory) _StoryCard(lesson: lesson, lang: lang, onStart: c.startTask, onListen: _sayStory, l10n: l10n),
         if (c.battle case final b?)
           Positioned.fill(
             child: BattleOverlay(
@@ -120,6 +193,7 @@ class _LessonViewState extends ConsumerState<_LessonView> {
                 defenderArmy: _armyOf(b.defender.side),
                 defender: b.defender.type,
                 lang: lang,
+                onLine: (line) => _narrator?.say(lang, [line]),
               ),
               onFinished: c.battleFinished,
             ),
@@ -174,25 +248,11 @@ class _PromptBubble extends StatelessWidget {
   final LessonFeedback feedback;
   final AppLocalizations l10n;
 
-  String _targetLabel(String t) {
-    if (RegExp(r'^[a-h]$').hasMatch(t)) return l10n.street(t.toUpperCase());
-    if (RegExp(r'^[1-8]$').hasMatch(t)) return l10n.house(t);
-    return l10n.room(t);
-  }
-
   @override
   Widget build(BuildContext context) {
     final style = KidTheme.of(context).style(KidRole.dialog).copyWith(fontSize: 22, color: KidPalette.lavender.dark);
     final target = task.currentTarget;
-    final text = switch (feedback) {
-      LessonFeedback.taskWon => l10n.taskWon,
-      LessonFeedback.botWon => l10n.botWon,
-      LessonFeedback.promoted => l10n.promoted,
-      LessonFeedback.lava => l10n.lavaWarning,
-      LessonFeedback.thinking => l10n.opponentThinking,
-      LessonFeedback.wrong => l10n.tryAgain,
-      LessonFeedback.none => task.task.prompt.of(lang),
-    };
+    final text = feedbackText(l10n, feedback, task.task.prompt.of(lang));
     return AnimatedContainer(
       duration: const Duration(milliseconds: 200),
       width: double.infinity,
@@ -209,10 +269,15 @@ class _PromptBubble extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Text(text, style: style, textAlign: TextAlign.center),
+          Row(
+            children: [
+              Expanded(child: Text(text, style: style, textAlign: TextAlign.center)),
+              Icon(Icons.volume_up_rounded, color: KidPalette.lavender.mid, size: 28),
+            ],
+          ),
           if (target != null && feedback == LessonFeedback.none) ...[
             const SizedBox(height: 4),
-            BubbleText(_targetLabel(target), role: KidRole.title, size: 40, palette: KidPalette.peach),
+            BubbleText(targetLabel(l10n, target), role: KidRole.title, size: 40, palette: KidPalette.peach),
           ],
         ],
       ),
@@ -302,11 +367,12 @@ class _BigButton extends StatelessWidget {
 }
 
 class _StoryCard extends StatelessWidget {
-  const _StoryCard({required this.lesson, required this.lang, required this.onStart, required this.l10n});
+  const _StoryCard({required this.lesson, required this.lang, required this.onStart, required this.onListen, required this.l10n});
 
   final Lesson lesson;
   final String lang;
   final VoidCallback onStart;
+  final VoidCallback onListen;
   final AppLocalizations l10n;
 
   @override
@@ -328,7 +394,14 @@ class _StoryCard extends StatelessWidget {
               style: KidTheme.of(context).style(KidRole.body).copyWith(fontSize: 22, color: const Color(0xFF4A3B5C)),
             ),
             const SizedBox(height: 24),
-            _BigButton(label: l10n.start, icon: Icons.play_arrow_rounded, color: const Color(0xFFEC6FAE), onTap: onStart),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                IconButton.filledTonal(iconSize: 40, onPressed: onListen, icon: const Icon(Icons.volume_up_rounded)),
+                const SizedBox(width: 24),
+                _BigButton(label: l10n.start, icon: Icons.play_arrow_rounded, color: const Color(0xFFEC6FAE), onTap: onStart),
+              ],
+            ),
           ],
         ),
       ),
@@ -385,3 +458,21 @@ class _FinishedCard extends StatelessWidget {
     ),
   );
 }
+
+/// Tap-square target in words ("ulici E", "řadu 4", "komnatu e4"); the voice
+/// lines are generated from the same strings (core/voice/voice_lines.dart).
+String targetLabel(AppLocalizations l10n, String t) {
+  if (RegExp(r'^[a-h]$').hasMatch(t)) return l10n.street(t.toUpperCase());
+  if (RegExp(r'^[1-8]$').hasMatch(t)) return l10n.house(t);
+  return l10n.room(t);
+}
+
+String feedbackText(AppLocalizations l10n, LessonFeedback f, String prompt) => switch (f) {
+  LessonFeedback.taskWon => l10n.taskWon,
+  LessonFeedback.botWon => l10n.botWon,
+  LessonFeedback.promoted => l10n.promoted,
+  LessonFeedback.lava => l10n.lavaWarning,
+  LessonFeedback.thinking => l10n.opponentThinking,
+  LessonFeedback.wrong => l10n.tryAgain,
+  LessonFeedback.none => prompt,
+};

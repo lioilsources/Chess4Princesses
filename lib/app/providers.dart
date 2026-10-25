@@ -5,6 +5,7 @@ import '../core/armies/army.dart';
 import '../core/lessons/curriculum.dart';
 import '../core/lessons/lesson.dart';
 import '../core/progress/progress.dart';
+import '../core/voice/narrator.dart';
 
 final curriculumProvider = FutureProvider<Curriculum>(
   (ref) async => Curriculum.fromYaml(await rootBundle.loadString('assets/lessons/index.yaml')),
@@ -18,6 +19,13 @@ final armiesProvider = FutureProvider<Map<String, Army>>((ref) async {
   return {
     for (final id in Army.baseIds) id: Army.parse(await rootBundle.loadString(Army.manifestAsset(id))),
   };
+});
+
+/// Voice-over player; resolves once the asset manifest is read.
+final narratorProvider = FutureProvider<Narrator>((ref) async {
+  final n = await Narrator.load();
+  ref.onDispose(n.dispose);
+  return n;
 });
 
 final progressStoreProvider = Provider((ref) => ProgressStore());

@@ -47,6 +47,8 @@ dependencies:
       url: https://github.com/lioilsources/CuteKidFonts.git
       ref: v0.2.1
       path: packages/cute_kid_fonts_flame
+  crypto: ^3.0.7
+  audioplayers: ^6.8.1
 
 dev_dependencies:
   flutter_test:
@@ -77,6 +79,8 @@ flutter:
     - assets/lessons/m03/
     - assets/armies/fairies/
     - assets/armies/witches/
+    - assets/voice/cs/
+    - assets/voice/en/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
