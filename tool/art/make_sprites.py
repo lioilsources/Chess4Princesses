@@ -9,7 +9,8 @@ For each pick in tool/art/picks.json:
   - write assets/armies/<army>/sprites/<piece>.png at 512 px
     (board shows it at ~48–90 pt, the battle at ~200 pt → 512 covers @3x),
     module icons assets/ui/modules/<name>.png at 256 px and
-    arena backgrounds assets/armies/<army>/arena.jpg.
+    arena backgrounds assets/armies/<army>/arena.jpg and battle poses
+    assets/armies/<army>/battle/<piece>/<pose>.png.
 
   python3 tool/art/make_sprites.py
 """
@@ -113,6 +114,12 @@ def main():
         for piece, seed in pieces.items():
             out.append(f"assets/armies/{army}/sprites/{piece}.png")
             process(f"art_drafts/{army}/{piece}_s{seed}.png", out[-1])
+    # Battle poses (pose_gen.py): same scale and baseline as the board sprite.
+    for army, pieces in picks.get("poses", {}).items():
+        for piece, poses in pieces.items():
+            for pose, seed in poses.items():
+                out.append(f"assets/armies/{army}/battle/{piece}/{pose}.png")
+                process(f"art_drafts/poses/{army}/{piece}_{pose}_s{seed}.png", out[-1])
     # Kingdom map islands for modules without a character (castle, apple, …).
     for name, seed in picks["icons"].items():
         out.append(f"assets/ui/modules/{name}.png")

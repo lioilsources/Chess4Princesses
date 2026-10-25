@@ -1,0 +1,18 @@
+{
+  "style": "cute chibi character for a children's chess game, chunky rounded proportions, big head, small body, thick clean dark outline, flat pastel colours with soft cel shading, 2D sticker illustration, full body, plain pure white background",
+  "poses": {
+    "attack": "leaning forward and casting a sparkly magic spell towards the right side, one arm stretched out to the right, determined happy face, dynamic action pose, facing right",
+    "hit": "just hit by a puff of magic sparkles, recoiling backwards, dizzy swirly eyes, little stars circling above the head, surprised round mouth, leaning back",
+    "victory": "jumping with joy, both arms raised high in the air, big happy smile, eyes closed laughing"
+  },
+  "overrides": {
+    "rook": {
+      "attack": "tilting forward towards the right side and shooting a stream of sparkles from its top battlements, determined happy face, dynamic action pose, facing right",
+      "victory": "hopping up with joy on its tiny wheels, little flags waving from the battlements, big happy smile, eyes closed laughing"
+    },
+    "knight": {
+      "attack": "rearing up on its hind legs facing right, front hooves kicking out a puff of sparkles, determined happy face, dynamic action pose",
+      "victory": "prancing happily with all four hooves off the ground, mane flowing, big happy smile, eyes closed laughing"
+    }
+  }
+}

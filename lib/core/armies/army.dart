@@ -52,6 +52,9 @@ class Army {
 
   ArmyPiece operator [](PieceType t) => pieces[t]!;
 
+  /// Battle key pose of [t] (`tool/art/pose_gen.py`); may not exist yet.
+  String poseAsset(PieceType t, String pose) => 'assets/armies/$id/battle/${t.name}/$pose.png';
+
   /// Character art for [t] (`assets/armies/<id>/<sprite>`), null → placeholder.
   String? spriteAsset(PieceType t) => switch (pieces[t]!.sprite) {
     final s? => 'assets/armies/$id/$s',

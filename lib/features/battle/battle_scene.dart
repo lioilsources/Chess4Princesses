@@ -8,6 +8,7 @@ import 'package:flame/game.dart';
 import 'package:flame/particles.dart';
 import 'package:flutter/animation.dart';
 import 'package:flutter/painting.dart';
+import 'package:flutter/services.dart';
 
 import '../../core/armies/army.dart';
 import '../../core/audio/sounds.dart';
@@ -204,6 +205,13 @@ class PlaceholderFighter extends PositionComponent {
   final PieceType type;
   final bool facingRight;
   Effect? _bob;
+  SpriteComponent? _body;
+  Sprite? _stand;
+
+  /// Key poses from `tool/art/pose_gen.py` (attack / hit / victory); the
+  /// effects below tween between them. Missing ones keep the standing art.
+  final _poses = <String, Sprite>{};
+  static final _manifest = AssetManifest.loadFromAssetBundle(rootBundle);
 
   double get _dir => facingRight ? 1 : -1;
 
@@ -215,10 +223,15 @@ class PlaceholderFighter extends PositionComponent {
     if (army.spriteAsset(type) case final asset?) {
       // Character art (M2); the effects below animate it like the placeholder.
       final image = await findGame()!.images.load(asset);
-      final body = SpriteComponent(sprite: Sprite(image), size: Vector2.all(size.x * 1.35), anchor: Anchor.bottomCenter, position: Vector2(r, size.y + 4));
+      final body = _body = SpriteComponent(sprite: _stand = Sprite(image), size: Vector2.all(size.x * 1.35), anchor: Anchor.bottomCenter, position: Vector2(r, size.y + 4));
       // Same rule as the board: the defender on the right is mirrored.
       if (!facingRight) body.flipHorizontallyAroundCenter();
       add(body);
+      final drawn = (await _manifest).listAssets().toSet();
+      for (final pose in const ['attack', 'hit', 'victory']) {
+        final asset = army.poseAsset(type, pose);
+        if (drawn.contains(asset)) _poses[pose] = Sprite(await findGame()!.images.load(asset));
+      }
       return;
     }
     add(CircleComponent(radius: r, paint: Paint()..color = Color(army.primary)));
@@ -239,7 +252,12 @@ class PlaceholderFighter extends PositionComponent {
     }
   }
 
+  void _pose(String? pose) {
+    if (_body case final body?) body.sprite = _poses[pose] ?? _stand;
+  }
+
   void idle() {
+    _pose(null);
     _bob = ScaleEffect.to(Vector2(1.04, .96), EffectController(duration: .25, alternate: true, infinite: true, curve: Curves.easeInOut));
     add(_bob!);
   }
@@ -255,6 +273,7 @@ class PlaceholderFighter extends PositionComponent {
     _stopBob();
     final wind = hitAt * .45;
     final lunge = hitAt - wind;
+    _pose('attack');
     add(
       SequenceEffect([
         MoveEffect.by(Vector2(-30 * _dir, 0), EffectController(duration: wind, curve: Curves.easeOut)),
@@ -274,6 +293,7 @@ class PlaceholderFighter extends PositionComponent {
   /// Bonk → spin and fly off the side ("odchází do hradu").
   void defeat(double duration) {
     _stopBob();
+    _pose('hit');
     add(
       SequenceEffect([
         ScaleEffect.to(Vector2(1.3, .7), EffectController(duration: duration * .15)),
@@ -287,6 +307,7 @@ class PlaceholderFighter extends PositionComponent {
 
   void victory(double duration) {
     _stopBob();
+    _pose('victory');
     add(MoveEffect.by(Vector2(0, -70), EffectController(duration: duration / 4, alternate: true, repeatCount: 2, curve: Curves.easeOut)));
     add(RotateEffect.by(.15 * _dir, EffectController(duration: duration / 4, alternate: true, repeatCount: 2)));
   }

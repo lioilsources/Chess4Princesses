@@ -49,7 +49,12 @@ def call(path, body=None):
 
 
 def run(prompt, seed, prefix, dest, **kw):
-    pid = json.loads(call("/prompt", {"prompt": workflow(prompt, seed, prefix, **kw), "client_id": str(uuid.uuid4())}))["prompt_id"]
+    run_wf(workflow(prompt, seed, prefix, **kw), dest)
+
+
+def run_wf(wf, dest):
+    """Queue a workflow and save the first image of its node "11"."""
+    pid = json.loads(call("/prompt", {"prompt": wf, "client_id": str(uuid.uuid4())}))["prompt_id"]
     deadline = time.time() + 600
     while time.time() < deadline:
         h = json.loads(call(f"/history/{pid}")).get(pid)

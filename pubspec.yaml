@@ -82,8 +82,14 @@ flutter:
     - assets/lessons/m06/
     - assets/armies/fairies/
     - assets/armies/fairies/sprites/
+    - assets/armies/fairies/battle/king/
+    - assets/armies/fairies/battle/knight/
     - assets/armies/witches/
     - assets/armies/witches/sprites/
+    - assets/armies/witches/battle/king/
+    - assets/armies/witches/battle/queen/
+    - assets/armies/witches/battle/knight/
+    - assets/armies/witches/battle/pawn/
     - assets/ui/modules/
     - assets/sounds/
     - assets/voice/cs/
