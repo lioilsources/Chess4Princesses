@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../core/armies/army.dart';
 import '../core/lessons/curriculum.dart';
 import '../core/lessons/lesson.dart';
+import '../core/audio/sounds.dart';
 import '../core/progress/progress.dart';
 import '../core/voice/narrator.dart';
 
@@ -26,6 +27,12 @@ final narratorProvider = FutureProvider<Narrator>((ref) async {
   final n = await Narrator.load();
   ref.onDispose(n.dispose);
   return n;
+});
+
+final soundsProvider = Provider<Sounds>((ref) {
+  final s = Sounds();
+  ref.onDispose(s.dispose);
+  return s;
 });
 
 final progressStoreProvider = Provider((ref) => ProgressStore());

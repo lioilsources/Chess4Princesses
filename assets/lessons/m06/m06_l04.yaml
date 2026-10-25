@@ -1,0 +1,31 @@
+id: m06_l04
+module: 6
+title: {cs: "Zachraň Krále!", en: "Save the king!"}
+story:
+  cs: "Když je Král v šachu, musí se hned zachránit. Jsou tři způsoby: uteč, zakryj, nebo vezmi."
+  en: "When the king is in check, he must be saved right away. There are three ways: run, block, or take."
+skills: [escape_check]
+rules: full
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 3, highlight: solution_first_move}
+tasks:
+  - goal: escape_check
+    escape: run
+    prompt: {cs: "Uteč! Odstup Králem z cesty.", en: "Run! Step the king out of the way."}
+    fen: "4r2k/8/8/8/8/8/8/4K3 w - - 0 1"
+    max_moves: 1
+  - goal: escape_check
+    escape: block
+    prompt: {cs: "Zakryj! Postav Věžku do cesty.", en: "Block! Put the rook in the way."}
+    fen: "4r2k/8/8/8/8/8/R7/4K3 w - - 0 1"
+    max_moves: 1
+  - goal: escape_check
+    escape: capture
+    prompt: {cs: "Vezmi! Motýlek sebere zlobivou Věž.", en: "Take! The butterfly captures the naughty rook."}
+    fen: "4r2k/8/8/1B6/8/8/8/4K3 w - - 0 1"
+    max_moves: 1
+  - goal: escape_check
+    prompt: {cs: "Zachraň Krále, jak chceš.", en: "Save the king any way you like."}
+    fen: "7k/8/8/8/1q6/8/8/R3K3 w - - 0 1"
+    max_moves: 1

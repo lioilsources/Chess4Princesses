@@ -17,7 +17,11 @@ class Solver {
   /// Moves allowed in [pos] — legal and not touching lava.
   List<Move> moves(Position pos) {
     final lava = task.lava.on(pos, task.player, rules);
-    final all = rules.legalMoves(pos).where((m) => m.promotion == null || m.promotion == PieceType.queen);
+    final kind = task.escape;
+    final all = rules
+        .legalMoves(pos)
+        .where((m) => m.promotion == null || m.promotion == PieceType.queen)
+        .where((m) => kind == null || escapeKind(pos, m) == kind);
     if (lava.isEmpty) return all.toList();
     return all.where((m) => !Rules.path(m).any(lava.contains)).toList();
   }
@@ -55,8 +59,21 @@ class Solver {
     GoalType.reachSquare || GoalType.collectStars || GoalType.avoidLava => stars.isEmpty,
     GoalType.captureAll => stars.isEmpty && pos.piecesOf(task.player.opponent).isEmpty,
     GoalType.promote => stars.isEmpty && promoted,
+    GoalType.escapeCheck => !rules.inCheck(pos, task.player),
     _ => false,
   };
+
+  /// How [m] gets the mover's king out of check: taking a checking piece
+  /// counts as capture (even by the king), other king moves as run, the
+  /// rest as block.
+  static EscapeKind escapeKind(Position pos, Move m) {
+    final side = pos[m.from]!.side;
+    final king = pos.kingOf(side);
+    final checkers = king == null ? const <Square>{} : Rules(RuleSet.full).attackers(pos, king, side.opponent);
+    if (checkers.contains(m.to)) return EscapeKind.capture;
+    if (m.from == king) return EscapeKind.run;
+    return EscapeKind.block;
+  }
 
   /// Can any player piece reach [target] at all (yes/no "is the star
   /// reachable" puzzles, LESSONS m3 l2)?

@@ -10,13 +10,14 @@ import 'package:flutter/animation.dart';
 import 'package:flutter/painting.dart';
 
 import '../../core/armies/army.dart';
+import '../../core/audio/sounds.dart';
 import '../../core/chess/types.dart';
 import '../board/piece_glyph.dart';
 import 'battle_director.dart';
 
 /// Who fights whom. Built by the board when a capture happens.
 class BattleRequest {
-  const BattleRequest({required this.attackerArmy, required this.attacker, required this.defenderArmy, required this.defender, this.lang = 'cs', this.onLine});
+  const BattleRequest({required this.attackerArmy, required this.attacker, required this.defenderArmy, required this.defender, this.lang = 'cs', this.onLine, this.onSfx});
 
   final Army attackerArmy;
   final PieceType attacker;
@@ -26,6 +27,9 @@ class BattleRequest {
 
   /// Called with each speech-bubble line (voice-over).
   final void Function(String line)? onLine;
+
+  /// Called with battle sound effects.
+  final void Function(Sfx sfx)? onSfx;
 }
 
 /// Full-screen battle overlay (BATTLES_PLAN §3). B1: placeholder fighters
@@ -100,11 +104,13 @@ class BattleGame extends FlameGame with TapCallbacks {
         _defender.idle();
         _sayLine(_line(request.attackerArmy, request.attacker, 'attack'), left: true);
       case BattlePhase.attack:
+        request.onSfx?.call(Sfx.whoosh);
         _attacker.attack(towards: _right - _left - 150, hitAt: t.hitAt, total: t.attack);
       case BattlePhase.victory:
         _sayLine(_line(request.attackerArmy, request.attacker, 'victory'), left: true);
         _attacker.victory(t.victory);
       case BattlePhase.exit:
+        request.onSfx?.call(Sfx.poof);
         _bubble.say('', left: true);
         final out = EffectController(duration: BattleDirector.exitTime, curve: Curves.easeIn);
         _attacker.add(ScaleEffect.to(Vector2.zero(), out));
@@ -117,6 +123,7 @@ class BattleGame extends FlameGame with TapCallbacks {
   }
 
   void _onHit() {
+    request.onSfx?.call(Sfx.hitSparkle);
     _sayLine(_line(request.defenderArmy, request.defender, 'defeat'), left: false);
     _defender.defeat(director.timing.defeat);
     _burst(Vector2(_right - 40, _ground - 40), Color(request.attackerArmy.accent));

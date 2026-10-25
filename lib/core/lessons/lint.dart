@@ -96,7 +96,7 @@ void _lintTask(LessonTask t, String where, LintReport r) {
     final fits = switch (h.kind) {
       HintKind.legalMoves => t.goal.isMoveGoal,
       HintKind.solutionFirstMove => t.goal.isSolvable,
-      HintKind.targets => t.goal == GoalType.tapSquare || t.goal == GoalType.tapAll,
+      HintKind.targets => t.goal.isTapGoal,
     };
     if (!fits) r.error(where, 'hint ${h.kind.id} does not fit goal ${t.goal.id}');
   }
@@ -126,12 +126,32 @@ void _lintTask(LessonTask t, String where, LintReport r) {
       for (final x in t.targets) {
         if (!RegExp(r'^([a-h]|[1-8]|[a-h][1-8])$').hasMatch(x)) r.error(where, 'bad target "$x"');
       }
+    case GoalType.tapAll when t.targets.length == 1 && t.targets.single == 'moves':
+      if (mine.where((e) => e.$2.type != PieceType.pawn).length != 1) r.error(where, 'targets: [moves] needs exactly one non-pawn player piece');
+      if (TaskSession(t).tapTargets.isEmpty) r.error(where, 'the piece has nowhere to go');
     case GoalType.tapAll:
       if (t.targets.isEmpty) r.error(where, 'tap_all needs targets');
       for (final x in t.targets) {
         if (Square.tryParse(x) == null) r.error(where, 'bad square "$x"');
       }
       if (t.targets.toSet().length != t.targets.length) r.error(where, 'duplicate targets');
+    case GoalType.tapAttackers:
+      final session = TaskSession(t);
+      final s = session.threatened;
+      if (s == null) {
+        r.error(where, 'tap_attackers: nothing threatened (targets: [sq], or a king/queen)');
+      } else if (pos[s]?.side != t.player) {
+        r.error(where, 'tap_attackers: ${s.name} is not my piece');
+      } else if (session.tapTargets.isEmpty) {
+        r.error(where, 'tap_attackers: nobody attacks ${s.name}');
+      }
+    case GoalType.escapeCheck:
+      if (t.rules != RuleSet.full) r.error(where, 'escape_check needs rules: full');
+      if (!Rules(RuleSet.full).inCheck(pos, t.player)) r.error(where, 'escape_check: my king is not in check');
+      if (t.escape case final k?) {
+        final ways = Rules(RuleSet.full).legalMoves(pos).map((m) => Solver.escapeKind(pos, m)).toSet();
+        if (!ways.contains(k)) r.error(where, 'escape_check: no way to ${k.name} (only ${ways.map((w) => w.name).join(', ')})');
+      }
     case GoalType.setupPieces:
       final target = t.targetPosition;
       if (target == null) {

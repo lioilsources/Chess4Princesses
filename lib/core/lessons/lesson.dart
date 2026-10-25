@@ -55,7 +55,15 @@ enum GoalType {
   pawnWar('pawn_war'),
 
   /// Yes/no question about the shown position.
-  yesNo('yes_no');
+  yesNo('yes_no'),
+
+  /// Tap every opponent piece that attacks my piece on `targets: [sq]`
+  /// (default: my king, else my queen) — "who threatens the princess?".
+  tapAttackers('tap_attackers'),
+
+  /// My king is in check: get out of it (optionally only by `escape`:
+  /// run | block | capture). Real rules, so every legal move escapes.
+  escapeCheck('escape_check');
 
   const GoalType(this.id);
 
@@ -66,9 +74,12 @@ enum GoalType {
 
   /// Goals where the player moves pieces on the board.
   bool get isMoveGoal => switch (this) {
-    reachSquare || collectStars || avoidLava || captureAll || promote || pawnWar => true,
+    reachSquare || collectStars || avoidLava || captureAll || promote || pawnWar || escapeCheck => true,
     _ => false,
   };
+
+  /// Goals played by tapping squares.
+  bool get isTapGoal => this == tapSquare || this == tapAll || this == tapAttackers;
 
   /// Goals solvable by a single-player search (opponent passive).
   bool get isSolvable => isMoveGoal && this != pawnWar;
@@ -135,6 +146,7 @@ class LessonTask {
     this.answer,
     this.verify,
     this.bot = BotLevel.baby,
+    this.escape,
   });
 
   /// Parses one task; [defaults] are lesson-level keys every task inherits.
@@ -158,6 +170,7 @@ class LessonTask {
       answer: m['answer'] as bool?,
       verify: m['verify'] as String?,
       bot: m['bot'] != null ? BotLevel.parse('${m['bot']}') : BotLevel.baby,
+      escape: m['escape'] != null ? EscapeKind.parse('${m['escape']}') : null,
     );
   }
 
@@ -172,7 +185,9 @@ class LessonTask {
   final int? maxMoves;
   final List<Hint> hints;
 
-  /// tap_square: `e` (street/file), `4` (house/rank) or `e4`. tap_all: squares.
+  /// tap_square: `e` (street/file), `4` (house/rank) or `e4`. tap_all: squares,
+  /// or `[moves]` = everywhere my one non-pawn piece can go. tap_attackers: the
+  /// threatened square.
   final List<String> targets;
 
   /// setup_pieces: what the board must look like at the end.
@@ -187,7 +202,20 @@ class LessonTask {
   /// pawn_war: opponent strength.
   final BotLevel bot;
 
+  /// escape_check: the one way out that counts (null = any).
+  final EscapeKind? escape;
+
   Side get player => position.sideToMove;
+}
+
+/// The three ways out of check (LESSONS m6 l4).
+enum EscapeKind {
+  run,
+  block,
+  capture;
+
+  static EscapeKind parse(String s) =>
+      values.firstWhere((e) => e.name == s, orElse: () => throw FormatException('escape: run | block | capture, got "$s"'));
 }
 
 class LessonReward {

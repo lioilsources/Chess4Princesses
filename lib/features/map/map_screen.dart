@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../app/providers.dart';
+import '../../core/audio/sounds.dart';
 import '../../core/lessons/curriculum.dart';
 import '../../core/progress/progress.dart';
 import '../../l10n/app_localizations.dart';
@@ -39,6 +40,7 @@ class MapScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    ref.read(soundsProvider).music(Music.map); // no-op while it already plays
     final l10n = AppLocalizations.of(context);
     final cur = ref.watch(curriculumProvider);
     final progress = ref.watch(progressProvider).value ?? const Progress();

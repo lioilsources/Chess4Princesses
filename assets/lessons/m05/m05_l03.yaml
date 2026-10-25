@@ -1,0 +1,25 @@
+id: m05_l03
+module: 5
+title: {cs: "Dva skoky", en: "Two jumps"}
+story:
+  cs: "Na některé hvězdy Koník jedním skokem nedosáhne. Musí skočit dvakrát."
+  en: "Some stars are out of reach in one jump. The pony has to jump twice."
+skills: [knight_move]
+rules: piece_only
+prompt: {cs: "Hvězda chce dva skoky.", en: "The star needs two jumps."}
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 3, highlight: solution_first_move}
+tasks:
+  - goal: reach_square
+    fen: "8/8/8/8/3N4/8/8/8 w - - 0 1"
+    stars: [d6]
+    max_moves: 2
+  - goal: reach_square
+    fen: "8/8/8/8/8/8/8/N7 w - - 0 1"
+    stars: [a3]
+    max_moves: 2
+  - goal: reach_square
+    fen: "8/8/8/8/8/8/8/6N1 w - - 0 1"
+    stars: [g3]
+    max_moves: 2

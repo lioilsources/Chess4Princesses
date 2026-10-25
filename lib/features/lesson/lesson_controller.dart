@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import '../../core/audio/sounds.dart';
 import '../../core/chess/types.dart';
 import '../../core/lessons/lesson.dart';
 import '../../core/lessons/lesson_engine.dart';
@@ -20,13 +21,16 @@ class PendingBattle {
 /// Glue between [LessonSession] (pure rules) and the lesson screen:
 /// selection, feedback pulses, battle hand-off, bot replies, timings.
 class LessonController extends ChangeNotifier {
-  LessonController(this.lesson, {this.onFinished, this.battles = true}) : session = LessonSession(lesson);
+  LessonController(this.lesson, {this.onFinished, this.onSfx, this.battles = true}) : session = LessonSession(lesson);
 
   final Lesson lesson;
   final LessonSession session;
 
   /// Called once with the lesson's stars.
   final void Function(int stars)? onFinished;
+
+  /// Sound effect hook (the screen owns the audio).
+  final void Function(Sfx sfx)? onSfx;
 
   /// Show battle animations on captures (parent setting later).
   final bool battles;
@@ -112,9 +116,10 @@ class LessonController extends ChangeNotifier {
     if (!inputEnabled) return;
     final t = task;
     switch (t.task.goal) {
-      case GoalType.tapSquare || GoalType.tapAll:
+      case _ when t.task.goal.isTapGoal:
         if (t.tap(s)) {
           _burst(s);
+          onSfx?.call(Sfx.star);
           HapticFeedback.lightImpact();
         } else {
           _shake(s);
@@ -148,6 +153,7 @@ class LessonController extends ChangeNotifier {
       case DragFromTray(:final piece):
         if (task.drop(piece, to)) {
           _burst(to);
+          onSfx?.call(Sfx.move);
         } else {
           _shake(to);
           _say(LessonFeedback.wrong);
@@ -180,6 +186,7 @@ class LessonController extends ChangeNotifier {
         selected = from;
         _shake(from);
         _say(LessonFeedback.lava);
+        onSfx?.call(Sfx.lava);
         HapticFeedback.mediumImpact();
       case MoveVerdict.notYours:
         break;
@@ -208,6 +215,7 @@ class LessonController extends ChangeNotifier {
 
   void _commit(MoveEvent ev) {
     if (ev.starCollected || ev.isCapture) _burst(ev.move.to);
+    onSfx?.call(ev.isPromotion ? Sfx.promote : (ev.starCollected ? Sfx.star : Sfx.move));
     if (ev.isPromotion) {
       _burst(ev.move.to);
       _say(LessonFeedback.promoted);
@@ -231,6 +239,7 @@ class LessonController extends ChangeNotifier {
       }
       _withBattle(t.position[m.from]!, t.position.capturedBy(m), () {
         final ev = t.playBot(m);
+        onSfx?.call(Sfx.move);
         _busy = false;
         feedback = LessonFeedback.none;
         if (ev.isCapture) _burst(m.to);
@@ -247,6 +256,7 @@ class LessonController extends ChangeNotifier {
       case TaskState.won:
         _busy = true;
         _say(LessonFeedback.taskWon);
+        onSfx?.call(Sfx.taskWon);
         HapticFeedback.heavyImpact();
         _later(const Duration(milliseconds: 1300), () {
           session.nextTask();
@@ -255,6 +265,7 @@ class LessonController extends ChangeNotifier {
           feedback = LessonFeedback.none;
           if (session.isFinished) {
             finished = true;
+            onSfx?.call(Sfx.lessonDone);
             onFinished?.call(session.stars);
           }
           _notify();
@@ -280,6 +291,7 @@ class LessonController extends ChangeNotifier {
   void _say(LessonFeedback f) {
     feedback = f;
     feedbackTick++;
+    if (f == LessonFeedback.wrong) onSfx?.call(Sfx.wrong);
     _notify();
   }
 

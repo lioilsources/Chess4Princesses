@@ -1,0 +1,21 @@
+id: m04_l02
+module: 4
+title: {cs: "Princeznin výlet", en: "The princess's trip"}
+story:
+  cs: "Princezna jede na výlet po celém království a sbírá hvězdičky."
+  en: "The princess goes on a trip around the kingdom, collecting little stars."
+skills: [queen_move]
+rules: piece_only
+prompt: {cs: "Posbírej všechny hvězdy.", en: "Collect all the stars."}
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 3, highlight: solution_first_move}
+tasks:
+  - goal: collect_stars
+    fen: "8/8/8/8/3Q4/8/8/8 w - - 0 1"
+    stars: [b2, b6, f6, f2, a7]
+    max_moves: 4
+  - goal: collect_stars
+    fen: "8/8/8/8/8/8/8/Q7 w - - 0 1"
+    stars: [a8, h8, h1, d5, c2]
+    max_moves: 5

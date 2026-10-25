@@ -1,0 +1,18 @@
+{
+  "sfx": {
+    "move": {"prompt": "soft cute wooden toy piece placed on a board, gentle pop, children's game UI sound", "duration_s": 0.6},
+    "star": {"prompt": "bright magical sparkle chime, collecting a star, cheerful twinkle, children's game", "duration_s": 1.2},
+    "wrong": {"prompt": "gentle soft cartoon boop, friendly 'oops' sound, not harsh, children's game", "duration_s": 0.6},
+    "lava": {"prompt": "short cartoon sizzle hiss with a tiny pop, playful, not scary", "duration_s": 0.9},
+    "promote": {"prompt": "magical transformation shimmer, rising harp glissando with sparkles, fairy tale", "duration_s": 1.8},
+    "task_won": {"prompt": "short happy fanfare jingle on xylophone and bells, success, children's game", "duration_s": 1.6},
+    "lesson_done": {"prompt": "joyful celebration fanfare with bells and trumpets, level complete, children's game", "duration_s": 3.0},
+    "whoosh": {"prompt": "quick soft cartoon whoosh swing, character dashes, light", "duration_s": 0.5},
+    "hit_sparkle": {"prompt": "magic spell zap with sparkling twinkle burst, cartoon, soft and cute", "duration_s": 0.8},
+    "poof": {"prompt": "cute cartoon poof puff of smoke disappearing, soft", "duration_s": 0.7}
+  },
+  "music": {
+    "map": {"prompt": "gentle whimsical fairy tale music box and celesta melody, soft strings, calm and happy, children's lullaby game menu music, seamless loop", "duration_s": 48, "bpm": 84},
+    "lesson": {"prompt": "very calm soft background music for a children's puzzle game, light harp and soft marimba, quiet, unobtrusive, seamless loop", "duration_s": 48, "bpm": 72}
+  }
+}

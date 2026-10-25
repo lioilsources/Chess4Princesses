@@ -1,0 +1,27 @@
+id: m04_l01
+module: 4
+title: {cs: "Princezna umí všechno", en: "The princess can do it all"}
+story:
+  cs: "Princezna umí to, co Věžka i Motýlek dohromady: jezdí rovně i šikmo, jak daleko chce."
+  en: "The princess can do what the rook and the butterfly can together: straight and slanted, as far as she likes."
+skills: [queen_move]
+rules: piece_only
+prompt: {cs: "Doveď Princeznu na hvězdu.", en: "Take the princess to the star."}
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 3, highlight: solution_first_move}
+tasks:
+  - goal: reach_square
+    fen: "8/8/8/8/8/8/8/3Q4 w - - 0 1"
+    stars: [d7]
+    max_moves: 1
+  - goal: reach_square
+    prompt: {cs: "Teď šikmo, jako Motýlek.", en: "Now slanted, like the butterfly."}
+    fen: "8/8/8/8/8/8/8/Q7 w - - 0 1"
+    stars: [g7]
+    max_moves: 1
+  - goal: reach_square
+    prompt: {cs: "Tahle hvězda chce dva tahy.", en: "This star needs two moves."}
+    fen: "8/8/8/8/8/8/1Q6/8 w - - 0 1"
+    stars: [h5]
+    max_moves: 2

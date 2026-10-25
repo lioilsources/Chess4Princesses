@@ -104,6 +104,8 @@ class TaskSession {
     final m = resolve(from, to);
     if (m == null) return MoveVerdict.illegal;
     if (Rules.path(m).any(lava.contains)) return MoveVerdict.lava;
+    // "Run away with the king" means the king: other legal escapes are wrong here.
+    if (task.escape case final k? when Solver.escapeKind(position, m) != k) return MoveVerdict.illegal;
     return MoveVerdict.ok;
   }
 
@@ -160,9 +162,26 @@ class TaskSession {
 
   Set<Square> get tapTargets => switch (task.goal) {
     GoalType.tapSquare => currentTarget == null ? {} : squaresFor(currentTarget!),
+    GoalType.tapAll when task.targets.length == 1 && task.targets.single == 'moves' => {
+      // Pawns around the piece are scenery ("he jumps over friends").
+      for (final (s, p) in task.position.piecesOf(player))
+        if (p.type != PieceType.pawn) ...rules.movesFrom(task.position, s).map((m) => m.to),
+    },
     GoalType.tapAll => {for (final t in task.targets) Square.parse(t)},
+    GoalType.tapAttackers => switch (threatened) {
+      final s? => rules.attackers(task.position, s, player.opponent),
+      null => {},
+    },
     _ => {},
   };
+
+  /// tap_attackers: the square under threat — `targets: [sq]`, else my
+  /// king, else my queen.
+  Square? get threatened {
+    if (task.targets.isNotEmpty) return Square.tryParse(task.targets.first);
+    return task.position.kingOf(player) ??
+        task.position.piecesOf(player).where((e) => e.$2.type == PieceType.queen).map((e) => e.$1).firstOrNull;
+  }
 
   /// Squares matching a target label: a whole street, a house row or one room.
   static Set<Square> squaresFor(String target) {
@@ -180,7 +199,7 @@ class TaskSession {
         tapIndex++;
         if (tapIndex >= task.targets.length) state = TaskState.won;
         return true;
-      case GoalType.tapAll:
+      case GoalType.tapAll || GoalType.tapAttackers:
         if (!tapTargets.contains(s)) return _wrong();
         tapped.add(s);
         if (tapped.containsAll(tapTargets)) state = TaskState.won;

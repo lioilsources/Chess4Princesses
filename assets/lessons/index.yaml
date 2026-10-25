@@ -21,9 +21,20 @@ modules:
     icon: bishop
     unlock: bishop
     lessons: [m03_l01, m03_l02, m03_l03, m03_l04]
-  - {module: 4, title: {cs: "Princezna", en: "Princess"}, icon: queen}
-  - {module: 5, title: {cs: "Koník", en: "Pony"}, icon: knight}
-  - {module: 6, title: {cs: "Král tatínek", en: "Daddy King"}, icon: king}
+  - module: 4
+    title: {cs: "Princezna", en: "Princess"}
+    icon: queen
+    lessons: [m04_l01, m04_l02, m04_l03, m04_l04]
+  - module: 5
+    title: {cs: "Koník", en: "Pony"}
+    icon: knight
+    unlock: knight
+    lessons: [m05_l01, m05_l02, m05_l03, m05_l04, m05_l05, m05_l06]
+  - module: 6
+    title: {cs: "Král tatínek", en: "Daddy King"}
+    icon: king
+    unlock: king
+    lessons: [m06_l01, m06_l02, m06_l03, m06_l04, m06_l05]
   - {module: 7, title: {cs: "Bitvy a jablíčka", en: "Battles and Apples"}, icon: apple}
   - {module: 8, title: {cs: "Mat", en: "Checkmate"}, icon: crown}
   - {module: 9, title: {cs: "Kouzelné tahy", en: "Magic Moves"}, icon: magic}

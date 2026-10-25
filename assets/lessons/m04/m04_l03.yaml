@@ -1,0 +1,16 @@
+id: m04_l03
+module: 4
+title: {cs: "Velká bitva", en: "The big battle"}
+story:
+  cs: "Princezna je nejsilnější z celé armády. Dnes se postaví šesti soupeřům!"
+  en: "The princess is the strongest in the whole army. Today she faces six rivals!"
+skills: [queen_capture]
+rules: piece_only
+prompt: {cs: "Vezmi všechny soupeřovy figury.", en: "Capture all the rival pieces."}
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 3, highlight: solution_first_move}
+tasks:
+  - goal: capture_all
+    fen: "8/1p3p2/8/p2p3p/8/5n2/8/3Q4 w - - 0 1"
+    max_moves: 6

@@ -124,6 +124,7 @@ def props(args):
     spec = json.load(open(args.props))
     jobs = [(f"{d}. {spec['style']}", name, {}) for name, d in spec["items"].items()]
     jobs += [(d, name, {"width": 768, "height": 1344, "cut": False}) for name, d in spec["backgrounds"].items()]
+    jobs += [(d, name, {"cut": False}) for name, d in spec.get("squares", {}).items()]
     ok = failed = 0
     for prompt, name, kw in jobs:
         if args.only and name not in args.only:

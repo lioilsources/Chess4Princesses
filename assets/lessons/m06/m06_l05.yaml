@@ -1,0 +1,22 @@
+id: m06_l05
+module: 6
+title: {cs: "Krále nikdo nebere", en: "Nobody takes the king"}
+story:
+  cs: "Krále nikdo nikdy nesebere. Král se jen schovává. Když se už nemá kam schovat, hra končí. Tomu se říká mat."
+  en: "Nobody ever takes the king. The king only hides. When he has nowhere left to hide, the game is over. That is called checkmate."
+skills: [king_rules]
+rules: piece_only
+reward: {stars: 3, unlock: king}
+tasks:
+  - goal: yes_no
+    prompt: {cs: "Smí Věžka sebrat Krále?", en: "May the rook take the king?"}
+    fen: "4k3/8/8/8/8/8/8/4R1K1 w - - 0 1"
+    answer: false
+  - goal: yes_no
+    prompt: {cs: "Je Král v šachu. Musí se hned zachránit?", en: "The king is in check. Must he be saved right away?"}
+    fen: "4r2k/8/8/8/8/8/8/4K3 w - - 0 1"
+    answer: true
+  - goal: yes_no
+    prompt: {cs: "Smí Král vstoupit na pole, kam míří soupeř?", en: "May the king step onto a square a rival aims at?"}
+    fen: "3r4/8/8/8/8/8/8/4K3 w - - 0 1"
+    answer: false

@@ -5,6 +5,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../app/providers.dart';
 import '../../core/armies/army.dart';
+import '../../core/audio/sounds.dart';
 import '../../core/chess/types.dart';
 import '../../core/lessons/lesson.dart';
 import '../../core/lessons/lesson_engine.dart';
@@ -55,7 +56,10 @@ class _LessonViewState extends ConsumerState<_LessonView> {
   LessonController _newController() => LessonController(
     widget.lesson,
     onFinished: (stars) => ref.read(progressProvider.notifier).completeLesson(widget.lesson, stars),
+    onSfx: _sounds.play,
   )..addListener(_changed);
+
+  late final Sounds _sounds = ref.read(soundsProvider);
 
   void _changed() {
     setState(() {});
@@ -65,6 +69,7 @@ class _LessonViewState extends ConsumerState<_LessonView> {
   @override
   void initState() {
     super.initState();
+    _sounds.music(Music.lesson);
     ref.read(narratorProvider.future).then((n) {
       if (!mounted) return;
       _narrator = n;
@@ -75,6 +80,7 @@ class _LessonViewState extends ConsumerState<_LessonView> {
   @override
   void dispose() {
     _narrator?.stop();
+    _sounds.music(Music.map);
     c.dispose();
     super.dispose();
   }
@@ -194,6 +200,7 @@ class _LessonViewState extends ConsumerState<_LessonView> {
                 defender: b.defender.type,
                 lang: lang,
                 onLine: (line) => _narrator?.say(lang, [line]),
+                onSfx: _sounds.play,
               ),
               onFinished: c.battleFinished,
             ),

@@ -88,6 +88,41 @@ void main() {
     expect(s.state, TaskState.won);
   });
 
+  test('tap_all [moves]: every knight square, pawns are scenery', () {
+    final s = TaskSession(task('goal: tap_all\nfen: "8/8/8/3P4/2PNP3/3P4/8/8"\ntargets: [moves]'));
+    expect(s.tapTargets, {for (final x in ['b3', 'b5', 'c2', 'c6', 'e2', 'e6', 'f3', 'f5']) sq(x)});
+    expect(s.tap(sq('d5')), isFalse);
+  });
+
+  test('tap_attackers: blocked pieces do not count', () {
+    final s = TaskSession(task('goal: tap_attackers\nfen: "8/8/5n2/3Q4/8/3P4/8/3r3b"'));
+    expect(s.threatened, sq('d5'));
+    expect(s.tapTargets, {sq('f6'), sq('h1')});
+    expect(s.tap(sq('d1')), isFalse);
+    s.tap(sq('f6'));
+    s.tap(sq('h1'));
+    expect(s.state, TaskState.won);
+  });
+
+  test('Rules.attackers: pawns attack forward diagonally only', () {
+    final pos = Position.fromFen('8/8/8/3p4/4K3/8/8/8 w - - 0 1');
+    expect(const Rules(RuleSet.pieceOnly).attackers(pos, sq('e4'), Side.black), {sq('d5')});
+    expect(const Rules(RuleSet.pieceOnly).attackers(pos, sq('c4'), Side.black), {sq('d5')});
+    expect(const Rules(RuleSet.pieceOnly).attackers(pos, sq('d4'), Side.black), isEmpty);
+  });
+
+  test('escape_check: only the asked way counts', () {
+    final block = TaskSession(task('goal: escape_check\nrules: full\nescape: block\nfen: "4r2k/8/8/8/8/8/R7/4K3 w - - 0 1"\nmax_moves: 1'));
+    expect(block.check(sq('e1'), sq('d1')), MoveVerdict.illegal); // running is not blocking
+    expect(block.check(sq('a2'), sq('a3')), MoveVerdict.illegal); // still in check
+    expect(block.check(sq('a2'), sq('e2')), MoveVerdict.ok);
+    block.play(sq('a2'), sq('e2'));
+    expect(block.state, TaskState.won);
+
+    final take = TaskSession(task('goal: escape_check\nrules: full\nescape: capture\nfen: "4r2k/8/8/1B6/8/8/8/4K3 w - - 0 1"'));
+    expect(take.solutionFirstMove()?.uci, 'b5e8');
+  });
+
   test('yes_no', () {
     final s = TaskSession(task('goal: yes_no\nfen: "8/8/8/8/8/8/8/2B5"\nstars: [e4]\nanswer: false'));
     expect(s.answer(true), isFalse);

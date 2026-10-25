@@ -44,16 +44,17 @@ A lesson with a single task may put the task keys at top level and omit `tasks`.
 | `goal` | all | see table below |
 | `rules` | move goals | `piece_only`: pattern moves only, no check, no castling, no en passant — works without kings. `full`: real chess |
 | `fen` | all | position; only the placement field is required. Kingless FENs are fine |
-| `prompt` | all | one line for the child (voiced later) |
+| `prompt` | all | one line for the child (read aloud: `assets/voice/`) |
 | `stars` | reach/collect/avoid/promote/capture, yes_no | star squares; a piece collects every star **on its path**, not only where it lands |
 | `lava` | any move goal | squares you may neither stop on nor drive through (knights jump over). `attacked` = every square the opponent attacks, recomputed each move |
 | `max_moves` | solvable goals | par for 3 stars — never a hard limit |
 | `hints` | all | `{after_fails: n, highlight: legal_moves \| solution_first_move \| targets}`; strongest unlocked wins; any hint caps the task at 2 stars |
-| `targets` | tap goals | `tap_square`: sequence of `e` (street = file), `4` (house = rank) or `e4`; `tap_all`: set of squares |
+| `targets` | tap goals | `tap_square`: sequence of `e` (street = file), `4` (house = rank) or `e4`; `tap_all`: set of squares, or `[moves]` = every square my one non-pawn piece can go to (pawns around it are scenery); `tap_attackers`: optional threatened square |
 | `target_fen` | setup_pieces | finished board; tray = target minus `fen` |
 | `answer` | yes_no | `true` / `false` |
 | `verify` | yes_no | `reachable`: lint checks `answer` = can a player piece reach the single star |
 | `bot` | pawn_war | `baby` \| `puppy` \| `knightess` \| `dragoness` |
+| `escape` | escape_check | `run` \| `block` \| `capture`: only this way out counts (others shake as wrong); omit = any |
 
 ## Goals
 
@@ -67,10 +68,12 @@ A lesson with a single task may put the task keys at top level and omit `tasks`.
 | `promote` | a pawn promoted (always to the Princess/queen) | passive |
 | `pawn_war` | own pawn on last rank or opponent has no pawns; lose = reset, no penalty beyond a fail | bot |
 | `yes_no` | right answer | — |
+| `tap_attackers` | every opponent piece attacking my piece on `targets[0]` (default: my king, else my queen) tapped; blocked pieces do not count | — |
+| `escape_check` | my king out of check (`rules: full`; lint: must start in check, and `escape` must be possible) | passive |
 
-Not yet implemented (needed from module 4+): `escape_check`, `mate_in_1`,
-`mate_in_2`, `mini_game`, `choose_move`, `spot_the_threat`. Add them to
-`GoalType`, `TaskSession`, `Solver.isWon` (if solvable) and `lint.dart`.
+Not yet implemented (needed from module 7+): `mate_in_1`, `mate_in_2`,
+`mini_game`, `choose_move`. Add them to `GoalType`, `TaskSession`,
+`Solver.isWon` (if solvable) and `lint.dart`.
 
 ## Stars
 

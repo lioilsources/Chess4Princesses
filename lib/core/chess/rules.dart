@@ -99,6 +99,31 @@ class Rules {
         slides(_bishopDirs, const {PieceType.bishop, PieceType.queen});
   }
 
+  /// Squares of the [by] pieces attacking [target] ("who threatens the
+  /// princess?", "who gives check?" — LESSONS m4 l4, m6 l3).
+  Set<Square> attackers(Position pos, Square target, Side by) => {
+    for (final (s, p) in pos.piecesOf(by))
+      if (_attacks(pos, s, p, target)) s,
+  };
+
+  static bool _attacks(Position pos, Square from, Piece p, Square target) {
+    final df = target.file - from.file;
+    final dr = target.rank - from.rank;
+    bool clear() {
+      final m = Move(from, target);
+      return path(m).takeWhile((s) => s != target).every((s) => pos[s] == null);
+    }
+
+    return switch (p.type) {
+      PieceType.pawn => dr == p.side.forward && df.abs() == 1,
+      PieceType.knight => (df.abs() == 1 && dr.abs() == 2) || (df.abs() == 2 && dr.abs() == 1),
+      PieceType.king => (df != 0 || dr != 0) && df.abs() <= 1 && dr.abs() <= 1,
+      PieceType.rook => (df == 0) != (dr == 0) && clear(),
+      PieceType.bishop => df != 0 && df.abs() == dr.abs() && clear(),
+      PieceType.queen => ((df == 0) != (dr == 0) || (df != 0 && df.abs() == dr.abs())) && clear(),
+    };
+  }
+
   /// All squares attacked by [by] — the "lava" overlay.
   Set<Square> attackedSquares(Position pos, Side by) =>
       Square.all.where((s) => isAttacked(pos, s, by)).toSet();

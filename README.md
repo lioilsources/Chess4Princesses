@@ -7,10 +7,12 @@ Plans: `Prompts/00-PRINCESSCHESS_PLAN.md`, `01-PRINCESSCHESS_LESSONS.md`, `03-BA
 ## Status
 
 - **M0** ✅ scaffold (go_router, Riverpod, cs/en ARB, `cute_kid_fonts`), board widget (tap or drag, legal squares glow), own rules engine with `full | piece_only`, placeholder pieces.
-- **M1** ✅ (mostly) LessonEngine + YAML schema + lint; modules 0–3 as data (16 lessons, 37 tasks); static kingdom map; stars + progress.
+- **M1** ✅ (mostly) LessonEngine + YAML schema + lint; modules 0–3 as data (16 lessons, 37 tasks; 0–6 now: 31 lessons); static kingdom map; stars + progress.
 - **Voice-over** ✅ every story, prompt, tap target, feedback and battle line is read aloud (pre-generated clips, cs + en). Tap the prompt bubble to hear it again.
 - **B1** ✅ battle overlay in Flame: `BattleDirector` state machine, placeholder fighters, fx, camera shake, tap to skip; `tool/pack_sheet.py` + atlas format.
 - **M2** (part) character art for Fairies + Witches (12 sprites), arena backgrounds, map icons — `tool/art/`, see DECISIONS §14.
+- **Modules 4–6** (queen, knight, king): 15 lessons, new goals `tap_attackers`, `escape_check`, `tap_all [moves]`.
+- **Sound**: 10 effects + map/lesson music loops (`tool/sound_gen.py`), app icon (`tool/art/make_icons.py`).
 - Bonus: bot levels 1–4 (used by the pawn war), army manifests for Fairies + Witches and an army picker.
 
 See `docs/DECISIONS.md` for decisions, open questions and what's next.

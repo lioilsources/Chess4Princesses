@@ -1,0 +1,19 @@
+id: m05_l05
+module: 5
+title: {cs: "Koník v bitvě", en: "The pony in battle"}
+story:
+  cs: "Koník přeskakuje a překvapí každého. Soupeřovy družičky ani nevědí, odkud přiletěl!"
+  en: "The pony jumps and surprises everyone. The rival bridesmaids don't even know where he came from!"
+skills: [knight_capture]
+rules: piece_only
+prompt: {cs: "Vezmi všechny soupeřovy družičky.", en: "Capture all the rival bridesmaids."}
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 3, highlight: solution_first_move}
+tasks:
+  - goal: capture_all
+    fen: "8/4p3/2p5/8/3N4/8/8/8 w - - 0 1"
+    max_moves: 2
+  - goal: capture_all
+    fen: "8/8/8/4p3/2p5/5p2/8/6N1 w - - 0 1"
+    max_moves: 3

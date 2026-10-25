@@ -1,0 +1,22 @@
+id: m05_l04
+module: 5
+title: {cs: "Koníkova cesta", en: "The pony's path"}
+story:
+  cs: "V rohu království je malá zahrádka. Koník ji chce celou proskákat a posbírat všechny hvězdy."
+  en: "In a corner of the kingdom there is a little garden. The pony wants to hop all around it and collect every star."
+skills: [knight_move, knight_plan]
+rules: piece_only
+prompt: {cs: "Proskákej zahrádku a posbírej hvězdy.", en: "Hop around the garden and collect the stars."}
+hints:
+  - {after_fails: 1, highlight: legal_moves}
+  - {after_fails: 3, highlight: solution_first_move}
+tasks:
+  - goal: collect_stars
+    prompt: {cs: "Nejdřív tři hvězdy.", en: "Three stars first."}
+    fen: "8/8/8/8/8/8/8/N7 w - - 0 1"
+    stars: [c2, a3, b1]
+    max_moves: 3
+  - goal: collect_stars
+    fen: "8/8/8/8/8/8/8/N7 w - - 0 1"
+    stars: [c2, a3, b1, c3, a2, c1, b3]
+    max_moves: 7

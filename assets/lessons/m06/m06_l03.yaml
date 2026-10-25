@@ -1,0 +1,20 @@
+id: m06_l03
+module: 6
+title: {cs: "Šach!", en: "Check!"}
+story:
+  cs: "Když soupeřova figura míří na Krále, zvolá: Šach! To znamená: Králi, pozor, jsi v nebezpečí."
+  en: "When a rival piece aims at the king, it calls out: Check! It means: King, watch out, you are in danger."
+skills: [spot_check]
+rules: piece_only
+prompt: {cs: "Šach! Klepni na figuru, která ohrožuje Krále.", en: "Check! Tap the piece that threatens the king."}
+hints:
+  - {after_fails: 2, highlight: targets}
+tasks:
+  - goal: tap_attackers
+    fen: "1n2r3/8/8/8/8/8/8/4K3 w - - 0 1"
+  - goal: tap_attackers
+    prompt: {cs: "Tady jsou dva! Klepni na oba.", en: "There are two! Tap both."}
+    fen: "8/1b6/8/3p4/4K3/8/8/r7 w - - 0 1"
+  - goal: tap_attackers
+    prompt: {cs: "Pozor, ne každá figura dosáhne!", en: "Careful, not every piece can reach him!"}
+    fen: "6r1/8/8/8/8/7n/6P1/6K1 w - - 0 1"
