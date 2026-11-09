@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../app/content_lang.dart';
 import '../../app/providers.dart';
 import '../../core/armies/army.dart';
 import '../../core/audio/sounds.dart';
@@ -108,7 +109,7 @@ class _LessonViewState extends ConsumerState<_LessonView> {
     final n = _narrator;
     if (n == null || !mounted) return;
     final l10n = AppLocalizations.of(context);
-    final lang = Localizations.localeOf(context).languageCode;
+    final lang = context.contentLang;
     if (c.finished) {
       if (!_finishedHeard) n.say(lang, [l10n.lessonDone]);
       _finishedHeard = true;
@@ -135,13 +136,13 @@ class _LessonViewState extends ConsumerState<_LessonView> {
 
   void _sayPrompt() {
     final l10n = AppLocalizations.of(context);
-    final lang = Localizations.localeOf(context).languageCode;
+    final lang = context.contentLang;
     final target = c.task.currentTarget;
     _narrator?.say(lang, [c.task.task.prompt.of(lang), if (target != null) targetLabel(l10n, target)]);
   }
 
   void _sayStory() {
-    final lang = Localizations.localeOf(context).languageCode;
+    final lang = context.contentLang;
     _narrator?.say(lang, [widget.lesson.story.of(lang)]);
   }
 
@@ -150,7 +151,7 @@ class _LessonViewState extends ConsumerState<_LessonView> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final lang = Localizations.localeOf(context).languageCode;
+    final lang = context.contentLang;
     final lesson = widget.lesson;
     final t = c.task;
 
@@ -232,14 +233,14 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Padding(
-    padding: const EdgeInsets.fromLTRB(4, 4, 16, 0),
+    padding: const EdgeInsetsDirectional.fromSTEB(4, 4, 16, 0),
     child: Row(
       children: [
         IconButton(iconSize: 36, icon: const Icon(Icons.arrow_back_rounded), onPressed: () => context.pop()),
         Expanded(child: BubbleText(lesson.title.of(lang), role: KidRole.title, size: 26, palette: KidPalette.lavender)),
         for (var i = 0; i < lesson.tasks.length; i++)
           Padding(
-            padding: const EdgeInsets.only(left: 4),
+            padding: const EdgeInsetsDirectional.only(start: 4),
             child: Icon(i < taskIndex ? Icons.circle : Icons.circle_outlined, size: 14, color: KidPalette.lavender.dark),
           ),
       ],
