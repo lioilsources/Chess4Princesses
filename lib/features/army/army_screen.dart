@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../app/content_lang.dart';
 import '../../app/providers.dart';
 import '../../core/armies/army.dart';
 import '../../core/chess/types.dart';
@@ -18,7 +19,7 @@ class ArmyScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
-    final lang = Localizations.localeOf(context).languageCode;
+    final lang = context.contentLang;
     final armies = ref.watch(armiesProvider).value;
     final progress = ref.watch(progressProvider).value ?? const Progress();
     final notifier = ref.read(progressProvider.notifier);

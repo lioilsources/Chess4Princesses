@@ -4,6 +4,7 @@ import '../chess/position.dart';
 import '../chess/rules.dart';
 import '../chess/types.dart';
 import '../engine/bot.dart';
+import 'content_catalog.dart';
 
 /// Text in several languages, `{cs: …, en: …}` in YAML. A bare string is
 /// treated as Czech.
@@ -21,8 +22,14 @@ class LocalizedText {
 
   bool get isEmpty => values.isEmpty;
 
-  /// Requested language, then Czech, then anything.
-  String of(String lang) => values[lang] ?? values['cs'] ?? (values.isEmpty ? '' : values.values.first);
+  /// Requested language (inline, then [ContentCatalog]), then English for
+  /// everyone but Czech, then Czech, then anything.
+  String of(String lang) =>
+      values[lang] ??
+      ContentCatalog.lookup(lang, values['cs']) ??
+      (lang == 'cs' ? null : values['en']) ??
+      values['cs'] ??
+      (values.isEmpty ? '' : values.values.first);
 }
 
 /// Mini-game types (LESSONS "Mechaniky mini‑her" + module 0/3 extras).
