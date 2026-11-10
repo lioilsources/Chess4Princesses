@@ -5,7 +5,8 @@ flux-schnell txt2img (Apache-2.0, safe for the store) + BEN2 background
 removal (MIT). Writes art_drafts/<army>/<piece>_s<seed>.png (cut-out, alpha)
 and a contact sheet art_drafts/sheet.png to pick from.
 
-Needs a ComfyUI window on SPARK (sparkctl, profile comfy).
+Needs a ComfyUI window on SPARK (sparkctl, profile comfy) and
+COMFY_URL=http://SPARK_HOST:8188 in the environment (see .env.example).
   python3 tool/art/comfy_gen.py                      # all 12 characters × 4 seeds
   python3 tool/art/comfy_gen.py --only fairies.queen --seeds 11 12
 """
@@ -17,7 +18,7 @@ import urllib.parse
 import urllib.request
 import uuid
 
-COMFY = os.environ.get("COMFY_URL", "http://192.168.88.66:8188")
+COMFY = os.environ.get("COMFY_URL", "http://localhost:8188")
 OUT = "art_drafts"
 
 

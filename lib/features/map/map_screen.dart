@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../app/content_lang.dart';
 import '../../app/providers.dart';
 import '../../core/audio/sounds.dart';
 import '../../core/lessons/curriculum.dart';
@@ -44,7 +45,7 @@ class MapScreen extends ConsumerWidget {
     final l10n = AppLocalizations.of(context);
     final cur = ref.watch(curriculumProvider);
     final progress = ref.watch(progressProvider).value ?? const Progress();
-    final lang = Localizations.localeOf(context).languageCode;
+    final lang = context.contentLang;
 
     return Scaffold(
       backgroundColor: const Color(0xFFDFF1FF),
