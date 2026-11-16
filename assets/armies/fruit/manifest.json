@@ -4,6 +4,7 @@
     "cs": "Ovoce",
     "en": "Fruit"
   },
+  "arena": "arena.jpg",
   "palette": {
     "primary": "#FFD23F",
     "accent": "#FF8FB1",

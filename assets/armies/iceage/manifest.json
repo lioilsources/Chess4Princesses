@@ -4,6 +4,7 @@
     "cs": "Doba ledová",
     "en": "Ice Age"
   },
+  "arena": "arena.jpg",
   "palette": {
     "primary": "#A8DDF5",
     "accent": "#FFFFFF",

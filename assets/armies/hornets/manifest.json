@@ -4,6 +4,7 @@
     "cs": "Sršni",
     "en": "Hornets"
   },
+  "arena": "arena.jpg",
   "palette": {
     "primary": "#FF6B3D",
     "accent": "#3FD0C9",

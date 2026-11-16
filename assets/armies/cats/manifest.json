@@ -4,6 +4,7 @@
     "cs": "Kočičky",
     "en": "Cats"
   },
+  "arena": "arena.jpg",
   "palette": {
     "primary": "#C9A8F0",
     "accent": "#FFB3C7",

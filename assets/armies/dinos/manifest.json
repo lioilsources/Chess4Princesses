@@ -4,6 +4,7 @@
     "cs": "Dinosauři",
     "en": "Dinos"
   },
+  "arena": "arena.jpg",
   "palette": {
     "primary": "#5CC46A",
     "accent": "#FF9A3D",
