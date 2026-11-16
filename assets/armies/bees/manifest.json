@@ -1,0 +1,166 @@
+{
+  "id": "bees",
+  "name": {
+    "cs": "Včelky",
+    "en": "Bees"
+  },
+  "palette": {
+    "primary": "#FFD23F",
+    "accent": "#FFF4D6",
+    "dark": "#6B4A1E"
+  },
+  "pieces": {
+    "king": {
+      "sprite": "sprites/king.webp",
+      "name": {
+        "cs": "Král Medovník",
+        "en": "King Honeycake"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Král Medovník. Mám žezlo na med a zlatou korunku. Chodím jen o jedno políčko.",
+        "en": "Hi, I'm King Honeycake. I have a honey dipper and a golden crown. I only step one square."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Bzzz, vpřed!",
+          "en": "Buzz, forward!"
+        },
+        "defeat": {
+          "cs": "Jdu do úlu…",
+          "en": "Back to the hive…"
+        },
+        "victory": {
+          "cs": "Medová výhra!",
+          "en": "Sweet as honey!"
+        }
+      }
+    },
+    "queen": {
+      "sprite": "sprites/queen.webp",
+      "name": {
+        "cs": "Královna Plástvička",
+        "en": "Queen Honeycomb"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Královna Plástvička. Mám čtyři křídla a korunu z plástve. Chodím rovně i šikmo, jak daleko chci!",
+        "en": "Hi, I'm Queen Honeycomb. I have four wings and a honeycomb crown. I go straight and slanted, as far as I like!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Bzzzum!",
+          "en": "Bzzzoom!"
+        },
+        "defeat": {
+          "cs": "Odlétám na květ…",
+          "en": "Off to a flower…"
+        },
+        "victory": {
+          "cs": "Bzz, hurá!",
+          "en": "Buzz, hooray!"
+        }
+      }
+    },
+    "rook": {
+      "sprite": "sprites/rook.webp",
+      "name": {
+        "cs": "Úlek",
+        "en": "Hivey"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Úlek. Jsem úl plný medu. Jezdím jen rovně.",
+        "en": "Hi, I'm Hivey. I'm a hive full of honey. I only go straight."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Bum, med!",
+          "en": "Bonk, honey!"
+        },
+        "defeat": {
+          "cs": "Zavírám dvířka…",
+          "en": "Closing my door…"
+        },
+        "victory": {
+          "cs": "Sladké!",
+          "en": "Sweet!"
+        }
+      }
+    },
+    "bishop": {
+      "sprite": "sprites/bishop.webp",
+      "name": {
+        "cs": "Strážkyně Žihadlenka",
+        "en": "Guard Stingette"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Strážkyně Žihadlenka. Mám helmu a dlouhé kopí. Chodím jen šikmo.",
+        "en": "Hi, I'm Guard Stingette. I have a helmet and a long spear. I only go on the slant."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Píchnu!",
+          "en": "Zap!"
+        },
+        "defeat": {
+          "cs": "Jdu hlídat úl…",
+          "en": "Back to guard the hive…"
+        },
+        "victory": {
+          "cs": "Stráž vyhrála!",
+          "en": "The guard wins!"
+        }
+      }
+    },
+    "knight": {
+      "sprite": "sprites/knight.webp",
+      "name": {
+        "cs": "Čmelák Chlupáček",
+        "en": "Fuzzy Bumble"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Čmelák Chlupáček. Jsem kulatý a hebký jako polštářek. Skáču do písmene L a přeskočím cokoli!",
+        "en": "Hi, I'm Fuzzy Bumble. I'm round and soft as a pillow. I jump in an L and hop over anything!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Brrrum, hop!",
+          "en": "Brrrm, hop!"
+        },
+        "defeat": {
+          "cs": "Jdu si sednout na jetel…",
+          "en": "Off to sit on clover…"
+        },
+        "victory": {
+          "cs": "Bzučím radostí!",
+          "en": "Buzzing with joy!"
+        }
+      }
+    },
+    "pawn": {
+      "sprite": "sprites/pawn.webp",
+      "name": {
+        "cs": "Dělnička Kapička",
+        "en": "Little Drop"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Dělnička Kapička. Nosím kyblíček medu. Chodím jen dopředu a jednou budu královna!",
+        "en": "Hi, I'm Little Drop. I carry a little bucket of honey. I only walk forward, and one day I'll be a queen!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Šup!",
+          "en": "Whoop!"
+        },
+        "defeat": {
+          "cs": "Jdu pro další med…",
+          "en": "Off for more honey…"
+        },
+        "victory": {
+          "cs": "Jupí!",
+          "en": "Yippee!"
+        }
+      }
+    }
+  },
+  "battle_overrides": {},
+  "board_skin": null
+}

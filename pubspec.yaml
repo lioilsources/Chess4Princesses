@@ -90,6 +90,42 @@ flutter:
     - assets/armies/witches/battle/queen/
     - assets/armies/witches/battle/knight/
     - assets/armies/witches/battle/pawn/
+    - assets/armies/kingdom/
+    - assets/armies/kingdom/sprites/
+    - assets/armies/kingdom/stand/
+    - assets/armies/devils/
+    - assets/armies/devils/sprites/
+    - assets/armies/devils/stand/
+    - assets/armies/fairies_toy/
+    - assets/armies/fairies_toy/sprites/
+    - assets/armies/fairies_toy/stand/
+    - assets/armies/witches_toy/
+    - assets/armies/witches_toy/sprites/
+    - assets/armies/witches_toy/stand/
+    - assets/armies/bees/
+    - assets/armies/bees/sprites/
+    - assets/armies/bees/stand/
+    - assets/armies/hornets/
+    - assets/armies/hornets/sprites/
+    - assets/armies/hornets/stand/
+    - assets/armies/dinos/
+    - assets/armies/dinos/sprites/
+    - assets/armies/dinos/stand/
+    - assets/armies/iceage/
+    - assets/armies/iceage/sprites/
+    - assets/armies/iceage/stand/
+    - assets/armies/cats/
+    - assets/armies/cats/sprites/
+    - assets/armies/cats/stand/
+    - assets/armies/dogs/
+    - assets/armies/dogs/sprites/
+    - assets/armies/dogs/stand/
+    - assets/armies/fruit/
+    - assets/armies/fruit/sprites/
+    - assets/armies/fruit/stand/
+    - assets/armies/veggies/
+    - assets/armies/veggies/sprites/
+    - assets/armies/veggies/stand/
     - assets/ui/modules/
     - assets/sounds/
     - assets/voice/cs/

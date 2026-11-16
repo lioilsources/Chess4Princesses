@@ -1,0 +1,166 @@
+{
+  "id": "fruit",
+  "name": {
+    "cs": "Ovoce",
+    "en": "Fruit"
+  },
+  "palette": {
+    "primary": "#FFD23F",
+    "accent": "#FF8FB1",
+    "dark": "#7A3B12"
+  },
+  "pieces": {
+    "king": {
+      "sprite": "sprites/king.webp",
+      "name": {
+        "cs": "Král Ananas",
+        "en": "King Pineapple"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Král Ananas. Mám korunu z listů a banánové žezlo. Chodím jen o jedno políčko.",
+        "en": "Hi, I'm King Pineapple. I have a leafy crown and a banana scepter. I only step one square."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Šťavnatě vpřed!",
+          "en": "Juicy charge!"
+        },
+        "defeat": {
+          "cs": "Jdu se vychladit…",
+          "en": "Off to cool down…"
+        },
+        "victory": {
+          "cs": "Ovocná sláva!",
+          "en": "Fruity glory!"
+        }
+      }
+    },
+    "queen": {
+      "sprite": "sprites/queen.webp",
+      "name": {
+        "cs": "Královna Granátka",
+        "en": "Queen Pomegranate"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Královna Granátka. Mám sukni z listů jako vějíř. Chodím rovně i šikmo, jak daleko chci!",
+        "en": "Hi, I'm Queen Pomegranate. My leafy skirt spreads like a fan. I go straight and slanted, as far as I like!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Šplouch!",
+          "en": "Splash!"
+        },
+        "defeat": {
+          "cs": "Jdu do košíku…",
+          "en": "Into the basket…"
+        },
+        "victory": {
+          "cs": "Sladká výhra!",
+          "en": "Sweet win!"
+        }
+      }
+    },
+    "rook": {
+      "sprite": "sprites/rook.webp",
+      "name": {
+        "cs": "Meloun Pevnůstka",
+        "en": "Melon Fort"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Meloun Pevnůstka. Jsem meloun a nahoře mám hradby. Jezdím jen rovně.",
+        "en": "Hi, I'm Melon Fort. I'm a melon with walls on top. I only go straight."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Kutálím se!",
+          "en": "Rolling in!"
+        },
+        "defeat": {
+          "cs": "Rozkrojili mě…",
+          "en": "I got sliced…"
+        },
+        "victory": {
+          "cs": "Mňam, hurá!",
+          "en": "Yum, hooray!"
+        }
+      }
+    },
+    "bishop": {
+      "sprite": "sprites/bishop.webp",
+      "name": {
+        "cs": "Banán Mudrc",
+        "en": "Banana Sage"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Banán Mudrc. Jsem dlouhý, žlutý a moudrý. Chodím jen šikmo.",
+        "en": "Hi, I'm Banana Sage. I'm long, yellow and wise. I only go on the slant."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Klouzavě!",
+          "en": "Slippery!"
+        },
+        "defeat": {
+          "cs": "Uklouzl jsem…",
+          "en": "I slipped…"
+        },
+        "victory": {
+          "cs": "Banánová výhra!",
+          "en": "Banana win!"
+        }
+      }
+    },
+    "knight": {
+      "sprite": "sprites/knight.webp",
+      "name": {
+        "cs": "Kiwi Zobáček",
+        "en": "Kiwi Beak"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Kiwi Zobáček. Jsem ptáček s kiwi bříškem. Skáču do písmene L a přeskočím cokoli!",
+        "en": "Hi, I'm Kiwi Beak. I'm a bird with a kiwi tummy. I jump in an L and hop over anything!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Klofnu!",
+          "en": "Peck!"
+        },
+        "defeat": {
+          "cs": "Odletím do koruny…",
+          "en": "Off to the treetop…"
+        },
+        "victory": {
+          "cs": "Píp, hurá!",
+          "en": "Tweet, hooray!"
+        }
+      }
+    },
+    "pawn": {
+      "sprite": "sprites/pawn.webp",
+      "name": {
+        "cs": "Broskvička",
+        "en": "Peachy"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Broskvička. Nosím na hlavě borůvku. Chodím jen dopředu a jednou budu královna!",
+        "en": "Hi, I'm Peachy. I wear a blueberry on my head. I only walk forward, and one day I'll be a queen!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Ťuk!",
+          "en": "Tap!"
+        },
+        "defeat": {
+          "cs": "Jdu do košíku…",
+          "en": "Into the basket…"
+        },
+        "victory": {
+          "cs": "Jupí!",
+          "en": "Yippee!"
+        }
+      }
+    }
+  },
+  "battle_overrides": {},
+  "board_skin": null
+}

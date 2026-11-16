@@ -1,0 +1,166 @@
+{
+  "id": "witches_toy",
+  "name": {
+    "cs": "Čarodějnice",
+    "en": "Hedge Witches"
+  },
+  "palette": {
+    "primary": "#A77BD9",
+    "accent": "#FF9A3D",
+    "dark": "#3B1F5C"
+  },
+  "pieces": {
+    "king": {
+      "sprite": "sprites/king.webp",
+      "name": {
+        "cs": "Čaroděj Bručimír",
+        "en": "Grumbledore"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Čaroděj Bručimír. Mám na rameni havrana a hůl z kořene. Chodím jen o jedno políčko.",
+        "en": "Hi, I'm Grumbledore. A raven sits on my shoulder and my staff is a root. I only step one square."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Abraka-bručák!",
+          "en": "Abraca-grumble!"
+        },
+        "defeat": {
+          "cs": "Jdu si zabručet do věže…",
+          "en": "Off to grumble in my tower…"
+        },
+        "victory": {
+          "cs": "Krá, krá, hurá!",
+          "en": "Caw, caw, hooray!"
+        }
+      }
+    },
+    "queen": {
+      "sprite": "sprites/queen.webp",
+      "name": {
+        "cs": "Královna Koštěnka",
+        "en": "Queen Broomie"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Královna Koštěnka. Létám na koštěti, kam se mi zachce. Chodím rovně i šikmo, jak daleko chci!",
+        "en": "Hi, I'm Queen Broomie. I fly on my broom wherever I like. I go straight and slanted, as far as I like!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Fííí, koště!",
+          "en": "Whoosh, broom!"
+        },
+        "defeat": {
+          "cs": "Koště potřebuje odpočinek…",
+          "en": "My broom needs a rest…"
+        },
+        "victory": {
+          "cs": "Chi-chi-chi!",
+          "en": "Tee-hee-hee!"
+        }
+      }
+    },
+    "rook": {
+      "sprite": "sprites/rook.webp",
+      "name": {
+        "cs": "Perníková chaloupka",
+        "en": "Gingerbread Cottage"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Perníková chaloupka. Jsem celá z perníku a bonbonů. Jezdím jen rovně.",
+        "en": "Hi, I'm Gingerbread Cottage. I'm all gingerbread and sweets. I only go straight."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Křup!",
+          "en": "Crunch!"
+        },
+        "defeat": {
+          "cs": "Někdo mě ochutnal…",
+          "en": "Someone took a bite…"
+        },
+        "victory": {
+          "cs": "Sladká výhra!",
+          "en": "Sweet win!"
+        }
+      }
+    },
+    "bishop": {
+      "sprite": "sprites/bishop.webp",
+      "name": {
+        "cs": "Vědma Polívka",
+        "en": "Soupy the Seer"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Vědma Polívka. V kotlíku vidím, co se stane. Chodím jen šikmo.",
+        "en": "Hi, I'm Soupy the Seer. My little pot shows what will happen. I only go on the slant."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Vidím to!",
+          "en": "I see it!"
+        },
+        "defeat": {
+          "cs": "To jsem neviděla…",
+          "en": "Didn't see that coming…"
+        },
+        "victory": {
+          "cs": "Říkala jsem to!",
+          "en": "Told you so!"
+        }
+      }
+    },
+    "knight": {
+      "sprite": "sprites/knight.webp",
+      "name": {
+        "cs": "Kocour Mourek",
+        "en": "Smudge the Cat"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Kocour Mourek. Mám zelené oči a dýňový košíček. Skáču do písmene L a přeskočím cokoli!",
+        "en": "Hi, I'm Smudge the Cat. I have green eyes and a pumpkin basket. I jump in an L and hop over anything!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Mňau, skok!",
+          "en": "Meow, pounce!"
+        },
+        "defeat": {
+          "cs": "Jdu si lehnout ke krbu…",
+          "en": "Off to nap by the fire…"
+        },
+        "victory": {
+          "cs": "Přede-přede!",
+          "en": "Purr-purr!"
+        }
+      }
+    },
+    "pawn": {
+      "sprite": "sprites/pawn.webp",
+      "name": {
+        "cs": "Žabka Klobouček",
+        "en": "Hattie Toad"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Žabka Klobouček. Nosím malý špičatý klobouček. Chodím jen dopředu a jednou budu královna!",
+        "en": "Hi, I'm Hattie Toad. I wear a tiny pointy hat. I only walk forward, and one day I'll be a queen!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Kvak, skok!",
+          "en": "Ribbit, hop!"
+        },
+        "defeat": {
+          "cs": "Skočím do louže…",
+          "en": "Into the puddle…"
+        },
+        "victory": {
+          "cs": "Kvák kvák!",
+          "en": "Croak croak!"
+        }
+      }
+    }
+  },
+  "battle_overrides": {},
+  "board_skin": null
+}

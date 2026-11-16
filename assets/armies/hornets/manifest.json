@@ -1,0 +1,166 @@
+{
+  "id": "hornets",
+  "name": {
+    "cs": "Sršni",
+    "en": "Hornets"
+  },
+  "palette": {
+    "primary": "#FF6B3D",
+    "accent": "#3FD0C9",
+    "dark": "#5A1A22"
+  },
+  "pieces": {
+    "king": {
+      "sprite": "sprites/king.webp",
+      "name": {
+        "cs": "Král Ostroklepetec",
+        "en": "King Spikejaw"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Král Ostroklepetec. Mám ostnatou korunu a trnové žezlo. Chodím jen o jedno políčko.",
+        "en": "Hi, I'm King Spikejaw. I have a spiky crown and a thorn scepter. I only step one square."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Bzzzt, vpřed!",
+          "en": "Bzzzt, forward!"
+        },
+        "defeat": {
+          "cs": "Jdu do hnízda…",
+          "en": "Back to the nest…"
+        },
+        "victory": {
+          "cs": "Sršní sláva!",
+          "en": "Hornet glory!"
+        }
+      }
+    },
+    "queen": {
+      "sprite": "sprites/queen.webp",
+      "name": {
+        "cs": "Královna Vějířka",
+        "en": "Queen Fanwing"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Královna Vějířka. Mám tyrkysová křídla jako vějíř. Chodím rovně i šikmo, jak daleko chci!",
+        "en": "Hi, I'm Queen Fanwing. My turquoise wings open like a fan. I go straight and slanted, as far as I like!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Bzzzum!",
+          "en": "Bzzzoom!"
+        },
+        "defeat": {
+          "cs": "Odlétám si odpočinout…",
+          "en": "Flying off to rest…"
+        },
+        "victory": {
+          "cs": "Bzz, vyhrála jsem!",
+          "en": "Buzz, I won!"
+        }
+      }
+    },
+    "rook": {
+      "sprite": "sprites/rook.webp",
+      "name": {
+        "cs": "Hnízdo Mračoun",
+        "en": "Grumpy Nest"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Hnízdo Mračoun. Jsem papírové hnízdo a pořád se mračím. Jezdím jen rovně.",
+        "en": "Hi, I'm Grumpy Nest. I'm a paper nest and I always frown. I only go straight."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Hrrr, bum!",
+          "en": "Grr, bonk!"
+        },
+        "defeat": {
+          "cs": "Hmpf, tak jo…",
+          "en": "Hmph, fine…"
+        },
+        "victory": {
+          "cs": "No vida!",
+          "en": "Well, look at that!"
+        }
+      }
+    },
+    "bishop": {
+      "sprite": "sprites/bishop.webp",
+      "name": {
+        "cs": "Vosa Lučištnice",
+        "en": "Archer Wasp"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Vosa Lučištnice. Mám špičatou čepici a dlouhou hůl. Chodím jen šikmo.",
+        "en": "Hi, I'm Archer Wasp. I have a pointy cap and a long staff. I only go on the slant."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Trefa!",
+          "en": "Bullseye!"
+        },
+        "defeat": {
+          "cs": "Vedle…",
+          "en": "Missed…"
+        },
+        "victory": {
+          "cs": "Přesně do středu!",
+          "en": "Right in the middle!"
+        }
+      }
+    },
+    "knight": {
+      "sprite": "sprites/knight.webp",
+      "name": {
+        "cs": "Vážka Šipka",
+        "en": "Darty Dragonfly"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Vážka Šipka. Létám jako tyrkysová šipka. Skáču do písmene L a přeskočím cokoli!",
+        "en": "Hi, I'm Darty Dragonfly. I fly like a turquoise dart. I jump in an L and hop over anything!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Fííí, hop!",
+          "en": "Whoosh, hop!"
+        },
+        "defeat": {
+          "cs": "Odlétám k rybníku…",
+          "en": "Off to the pond…"
+        },
+        "victory": {
+          "cs": "Šup a hotovo!",
+          "en": "Zip and done!"
+        }
+      }
+    },
+    "pawn": {
+      "sprite": "sprites/pawn.webp",
+      "name": {
+        "cs": "Vosík Špendlík",
+        "en": "Pin the Wasp"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Vosík Špendlík. Mám helmičku a meč jako špendlík. Chodím jen dopředu a jednou budu královna!",
+        "en": "Hi, I'm Pin the Wasp. I have a tiny helmet and a pin sword. I only walk forward, and one day I'll be a queen!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Šťouch!",
+          "en": "Poke!"
+        },
+        "defeat": {
+          "cs": "Jdu do hnízda…",
+          "en": "Back to the nest…"
+        },
+        "victory": {
+          "cs": "Bzz, jupí!",
+          "en": "Buzz, yippee!"
+        }
+      }
+    }
+  },
+  "battle_overrides": {},
+  "board_skin": null
+}

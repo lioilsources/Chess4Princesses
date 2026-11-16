@@ -1,0 +1,166 @@
+{
+  "id": "fairies_toy",
+  "name": {
+    "cs": "Lesní víly",
+    "en": "Woodland Fairies"
+  },
+  "palette": {
+    "primary": "#9BE8CF",
+    "accent": "#F7A8D8",
+    "dark": "#2C6E5A"
+  },
+  "pieces": {
+    "king": {
+      "sprite": "sprites/king.webp",
+      "name": {
+        "cs": "Skřítek Lístek",
+        "en": "King Leafy"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Skřítek Lístek. Mám korunu ze zlatých lístků. Chodím jen o jedno políčko.",
+        "en": "Hi, I'm King Leafy. My crown is made of golden leaves. I only step one square."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Kvítek, hop!",
+          "en": "Flower power!"
+        },
+        "defeat": {
+          "cs": "Jdu do mechu…",
+          "en": "Off into the moss…"
+        },
+        "victory": {
+          "cs": "Hurá, les!",
+          "en": "Hooray, forest!"
+        }
+      }
+    },
+    "queen": {
+      "sprite": "sprites/queen.webp",
+      "name": {
+        "cs": "Víla Rosenka",
+        "en": "Dewdrop Queen"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Víla Rosenka. Mám křídla jako vážka. Chodím rovně i šikmo, jak daleko chci!",
+        "en": "Hi, I'm Dewdrop Queen. I have wings like a dragonfly. I go straight and slanted, as far as I like!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Bzzz, kouzlo!",
+          "en": "Zing, magic!"
+        },
+        "defeat": {
+          "cs": "Odlétám na lístek…",
+          "en": "Flying off to a leaf…"
+        },
+        "victory": {
+          "cs": "Třpyt a lesk!",
+          "en": "Glitter and shine!"
+        }
+      }
+    },
+    "rook": {
+      "sprite": "sprites/rook.webp",
+      "name": {
+        "cs": "Domeček Muchomůrka",
+        "en": "Toadstool Cottage"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Domeček Muchomůrka. Mám tečkovanou střechu a kulatá okýnka. Jezdím jen rovně.",
+        "en": "Hi, I'm Toadstool Cottage. I have a spotty roof and round windows. I only go straight."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Bum do toho!",
+          "en": "Here I come!"
+        },
+        "defeat": {
+          "cs": "Zavírám dvířka…",
+          "en": "Shutting my door…"
+        },
+        "victory": {
+          "cs": "Domeček vyhrál!",
+          "en": "Home sweet win!"
+        }
+      }
+    },
+    "bishop": {
+      "sprite": "sprites/bishop.webp",
+      "name": {
+        "cs": "Světluška Lucinka",
+        "en": "Lucy Firefly"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Světluška Lucinka. Svítím si lucerničkou na cestu. Chodím jen šikmo.",
+        "en": "Hi, I'm Lucy Firefly. My little lantern lights the way. I only go on the slant."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Blik, blik!",
+          "en": "Blink, blink!"
+        },
+        "defeat": {
+          "cs": "Zhasínám…",
+          "en": "Lights out…"
+        },
+        "victory": {
+          "cs": "Svítím radostí!",
+          "en": "Glowing with joy!"
+        }
+      }
+    },
+    "knight": {
+      "sprite": "sprites/knight.webp",
+      "name": {
+        "cs": "Jednorožec Duháček",
+        "en": "Rainbow Unicorn"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Jednorožec Duháček. Mám zlatý roh a hřívu jako mátu. Skáču do písmene L a přeskočím cokoli!",
+        "en": "Hi, I'm Rainbow Unicorn. I have a golden horn and a minty mane. I jump in an L and hop over anything!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Duhový skok!",
+          "en": "Rainbow jump!"
+        },
+        "defeat": {
+          "cs": "Jdu se napást…",
+          "en": "Off to graze…"
+        },
+        "victory": {
+          "cs": "Íha-há!",
+          "en": "Yee-haw!"
+        }
+      }
+    },
+    "pawn": {
+      "sprite": "sprites/pawn.webp",
+      "name": {
+        "cs": "Žalud",
+        "en": "Acorn"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Žalud. Mám čepičku ze žaludu a lístkový štít. Chodím jen dopředu a jednou budu královna!",
+        "en": "Hi, I'm Acorn. I wear an acorn cap and carry a leaf shield. I only walk forward, and one day I'll be a queen!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Pošťouch!",
+          "en": "Nudge!"
+        },
+        "defeat": {
+          "cs": "Jdu se schovat pod list…",
+          "en": "Hiding under a leaf…"
+        },
+        "victory": {
+          "cs": "Jupí!",
+          "en": "Yippee!"
+        }
+      }
+    }
+  },
+  "battle_overrides": {},
+  "board_skin": null
+}

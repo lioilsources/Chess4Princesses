@@ -4,7 +4,9 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../app/providers.dart';
+import '../../core/armies/army.dart';
 import '../../core/audio/sounds.dart';
+import '../../core/chess/types.dart';
 import '../../core/lessons/curriculum.dart';
 import '../../core/progress/progress.dart';
 import '../../l10n/app_localizations.dart';
@@ -27,8 +29,9 @@ IconData moduleIcon(String key) => switch (key) {
 };
 
 /// Island art: modules 1–6 show my army's character, the rest a sticker.
-String moduleArt(String key, String armyId) => switch (key) {
-  'pawn' || 'rook' || 'bishop' || 'queen' || 'knight' || 'king' => 'assets/armies/$armyId/sprites/$key.png',
+/// Empty (→ icon) while the armies load.
+String moduleArt(String key, Army? army) => switch (key) {
+  'pawn' || 'rook' || 'bishop' || 'queen' || 'knight' || 'king' => army?.spriteAsset(PieceType.values.byName(key)) ?? '',
   _ => 'assets/ui/modules/$key.png',
 };
 
@@ -45,6 +48,7 @@ class MapScreen extends ConsumerWidget {
     final cur = ref.watch(curriculumProvider);
     final progress = ref.watch(progressProvider).value ?? const Progress();
     final lang = Localizations.localeOf(context).languageCode;
+    final army = ref.watch(armiesProvider).value?[progress.myArmy];
 
     return Scaffold(
       backgroundColor: const Color(0xFFDFF1FF),
@@ -63,7 +67,7 @@ class MapScreen extends ConsumerWidget {
             ),
             Expanded(
               child: switch (cur) {
-                AsyncData(value: final c) => _Islands(curriculum: c, progress: progress, lang: lang, l10n: l10n),
+                AsyncData(value: final c) => _Islands(curriculum: c, progress: progress, army: army, lang: lang, l10n: l10n),
                 AsyncError(:final error) => Center(child: Text('$error')),
                 _ => const Center(child: CircularProgressIndicator()),
               },
@@ -76,10 +80,11 @@ class MapScreen extends ConsumerWidget {
 }
 
 class _Islands extends StatelessWidget {
-  const _Islands({required this.curriculum, required this.progress, required this.lang, required this.l10n});
+  const _Islands({required this.curriculum, required this.progress, required this.army, required this.lang, required this.l10n});
 
   final Curriculum curriculum;
   final Progress progress;
+  final Army? army;
   final String lang;
   final AppLocalizations l10n;
 
@@ -111,7 +116,7 @@ class _Islands extends StatelessWidget {
                         done: progress.isModuleDone(modules[i]),
                         stars: modules[i].lessonIds.fold(0, (s, id) => s + progress.starsOf(id)),
                         palette: _islandColors[i % _islandColors.length],
-                        armyId: progress.myArmy,
+                        army: army,
                         lang: lang,
                         l10n: l10n,
                       ),
@@ -127,10 +132,10 @@ class _Islands extends StatelessWidget {
 }
 
 class _Island extends StatelessWidget {
-  const _Island({required this.module, required this.open, required this.done, required this.stars, required this.palette, required this.armyId, required this.lang, required this.l10n});
+  const _Island({required this.module, required this.open, required this.done, required this.stars, required this.palette, required this.army, required this.lang, required this.l10n});
 
   final ModuleInfo module;
-  final String armyId;
+  final Army? army;
   final bool open;
   final bool done;
   final int stars;
@@ -164,7 +169,7 @@ class _Island extends StatelessWidget {
                       ? const ColorFilter.matrix([.33, .33, .33, 0, 40, .33, .33, .33, 0, 40, .33, .33, .33, 0, 40, 0, 0, 0, .55, 0])
                       : const ColorFilter.mode(Color(0x00000000), BlendMode.dst),
                   child: Image.asset(
-                    moduleArt(module.icon, armyId),
+                    moduleArt(module.icon, army),
                     width: 72,
                     height: 72,
                     errorBuilder: (_, _, _) => Icon(moduleIcon(module.icon), size: 46, color: grey ? const Color(0xFF9E9EAE) : palette.dark),

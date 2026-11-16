@@ -220,14 +220,15 @@ class PlaceholderFighter extends PositionComponent {
     final r = size.x / 2;
     add(CircleComponent(radius: r * .55, position: Vector2(r, size.y + 6), anchor: Anchor.center, paint: Paint()..color = const Color(0x33000000))
       ..scale = Vector2(1.4, .3));
-    if (army.spriteAsset(type) case final asset?) {
+    if (army.spriteAsset(type) case final sprite?) {
       // Character art (M2); the effects below animate it like the placeholder.
-      final image = await findGame()!.images.load(asset);
+      final drawn = (await _manifest).listAssets().toSet();
+      final stand = army.standAsset(type);
+      final image = await findGame()!.images.load(stand != null && drawn.contains(stand) ? stand : sprite);
       final body = _body = SpriteComponent(sprite: _stand = Sprite(image), size: Vector2.all(size.x * 1.35), anchor: Anchor.bottomCenter, position: Vector2(r, size.y + 4));
       // Same rule as the board: the defender on the right is mirrored.
       if (!facingRight) body.flipHorizontallyAroundCenter();
       add(body);
-      final drawn = (await _manifest).listAssets().toSet();
       for (final pose in const ['attack', 'hit', 'victory']) {
         final asset = army.poseAsset(type, pose);
         if (drawn.contains(asset)) _poses[pose] = Sprite(await findGame()!.images.load(asset));
