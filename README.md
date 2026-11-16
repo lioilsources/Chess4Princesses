@@ -13,6 +13,7 @@ Plans: `Prompts/00-PRINCESSCHESS_PLAN.md`, `01-PRINCESSCHESS_LESSONS.md`, `03-BA
 - **M2** (part) character art for Fairies + Witches (12 sprites), arena backgrounds, map icons — `tool/art/`, see DECISIONS §14.
 - **Modules 4–6** (queen, knight, king): 15 lessons, new goals `tap_attackers`, `escape_check`, `tap_all [moves]`.
 - **Sound**: 10 effects + map/lesson music loops (`tool/sound_gen.py`), app icon (`tool/art/make_icons.py`).
+- **Armies from Archion**: 12 more vinyl-toy armies (kingdom, devils, bees, hornets, dinos, ice age, cats, dogs, fruit, veggies + toy fairies/witches) with names, mottos, battle lines and arenas — DECISIONS §16.
 - Bonus: bot levels 1–4 (used by the pawn war), army manifests for Fairies + Witches and an army picker.
 
 See `docs/DECISIONS.md` for decisions, open questions and what's next.
@@ -57,7 +58,7 @@ lib/
 assets/lessons/   index.yaml + mNN/mNN_lMM.yaml   → docs/lesson_schema.md
 assets/armies/    <army>/manifest.json (+ battle/<piece>/<clip>.png|json later)
 tool/             lesson_lint.dart, pack_sheet.py, voice_lines.dart, voice_gen.py
-tool/art/         ComfyUI prompts, generator, picks, make_sprites.py
+tool/art/         ComfyUI prompts, generator, picks, make_sprites.py, import_archion.py
 assets/voice/     <lang>/<text-hash>.mp3 + lines.json
 ```
 

@@ -1,0 +1,167 @@
+{
+  "id": "cats",
+  "name": {
+    "cs": "Kočičky",
+    "en": "Cats"
+  },
+  "arena": "arena.jpg",
+  "palette": {
+    "primary": "#C9A8F0",
+    "accent": "#FFB3C7",
+    "dark": "#4B2D6B"
+  },
+  "pieces": {
+    "king": {
+      "sprite": "sprites/king.webp",
+      "name": {
+        "cs": "Kocour Hřivoun",
+        "en": "King Fluffmane"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Kocour Hřivoun. Mám hřívu, korunu a žezlo se zvonečkem. Chodím jen o jedno políčko.",
+        "en": "Hi, I'm King Fluffmane. I have a mane, a crown and a bell scepter. I only step one square."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Mňau, vpřed!",
+          "en": "Meow, forward!"
+        },
+        "defeat": {
+          "cs": "Jdu si zdřímnout na polštář…",
+          "en": "Napping on a cushion…"
+        },
+        "victory": {
+          "cs": "Předu radostí!",
+          "en": "Purring with joy!"
+        }
+      }
+    },
+    "queen": {
+      "sprite": "sprites/queen.webp",
+      "name": {
+        "cs": "Královna Siamka",
+        "en": "Queen Siamy"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Královna Siamka. Mám ocásek stočený jako vějíř. Chodím rovně i šikmo, jak daleko chci!",
+        "en": "Hi, I'm Queen Siamy. My tail curls like a fan. I go straight and slanted, as far as I like!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Mňááu!",
+          "en": "Meeow!"
+        },
+        "defeat": {
+          "cs": "Jdu si umýt tlapky…",
+          "en": "Off to wash my paws…"
+        },
+        "victory": {
+          "cs": "Elegantně vyhráno!",
+          "en": "An elegant win!"
+        }
+      }
+    },
+    "rook": {
+      "sprite": "sprites/rook.webp",
+      "name": {
+        "cs": "Škrabadlo Drápek",
+        "en": "Scratchy Tower"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Škrabadlo Drápek. Jsem škrabadlo a nahoře mi sedí kotě. Jezdím jen rovně.",
+        "en": "Hi, I'm Scratchy Tower. I'm a scratching tower with a kitten on top. I only go straight."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Škráb!",
+          "en": "Scratch!"
+        },
+        "defeat": {
+          "cs": "Kotě usnulo…",
+          "en": "The kitten fell asleep…"
+        },
+        "victory": {
+          "cs": "Mňau, hurá!",
+          "en": "Meow, hooray!"
+        }
+      }
+    },
+    "bishop": {
+      "sprite": "sprites/bishop.webp",
+      "name": {
+        "cs": "Mudrc Fousek",
+        "en": "Sage Whiskers"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Mudrc Fousek. Nemám chlupy, zato mám moudrost. Chodím jen šikmo.",
+        "en": "Hi, I'm Sage Whiskers. I have no fur, but lots of wisdom. I only go on the slant."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Kouzlo z klubíčka!",
+          "en": "Yarn magic!"
+        },
+        "defeat": {
+          "cs": "Jdu přemýšlet…",
+          "en": "Off to think…"
+        },
+        "victory": {
+          "cs": "Moudře!",
+          "en": "Wise move!"
+        }
+      }
+    },
+    "knight": {
+      "sprite": "sprites/knight.webp",
+      "name": {
+        "cs": "Kočka Vysavačka",
+        "en": "Zoomy Cat"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Kočka Vysavačka. Jezdím na robotickém vysavači. Skáču do písmene L a přeskočím cokoli!",
+        "en": "Hi, I'm Zoomy Cat. I ride a robot vacuum. I jump in an L and hop over anything!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Vrrrum, skok!",
+          "en": "Vroom, jump!"
+        },
+        "defeat": {
+          "cs": "Vysavač se vybil…",
+          "en": "My vacuum ran out…"
+        },
+        "victory": {
+          "cs": "Vrrr, hurá!",
+          "en": "Vroom, hooray!"
+        }
+      }
+    },
+    "pawn": {
+      "sprite": "sprites/pawn.webp",
+      "name": {
+        "cs": "Koťátko Klubíčko",
+        "en": "Kitty Yarn"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Koťátko Klubíčko. Hraju si s klubíčkem. Chodím jen dopředu a jednou budu královna!",
+        "en": "Hi, I'm Kitty Yarn. I play with my ball of yarn. I only walk forward, and one day I'll be a queen!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Ťap!",
+          "en": "Pat!"
+        },
+        "defeat": {
+          "cs": "Klubíčko se zamotalo…",
+          "en": "My yarn got tangled…"
+        },
+        "victory": {
+          "cs": "Mňau, jupí!",
+          "en": "Meow, yippee!"
+        }
+      }
+    }
+  },
+  "battle_overrides": {},
+  "board_skin": null
+}

@@ -1,0 +1,167 @@
+{
+  "id": "dogs",
+  "name": {
+    "cs": "Pejsci",
+    "en": "Dogs"
+  },
+  "arena": "arena.jpg",
+  "palette": {
+    "primary": "#8CC8F0",
+    "accent": "#E0B47A",
+    "dark": "#5A3A1E"
+  },
+  "pieces": {
+    "king": {
+      "sprite": "sprites/king.webp",
+      "name": {
+        "cs": "Bernard Dobrák",
+        "en": "King Bernard"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Bernard Dobrák. Mám soudek, korunu a kostičku jako žezlo. Chodím jen o jedno políčko.",
+        "en": "Hi, I'm King Bernard. I have a barrel, a crown and a bone scepter. I only step one square."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Haf, vpřed!",
+          "en": "Woof, forward!"
+        },
+        "defeat": {
+          "cs": "Jdu si lehnout k boudě…",
+          "en": "Lying down by my house…"
+        },
+        "victory": {
+          "cs": "Hafhaf, hurá!",
+          "en": "Woof-woof, hooray!"
+        }
+      }
+    },
+    "queen": {
+      "sprite": "sprites/queen.webp",
+      "name": {
+        "cs": "Královna Hedvábka",
+        "en": "Queen Silky"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Královna Hedvábka. Mám dlouhé hedvábné uši. Chodím rovně i šikmo, jak daleko chci!",
+        "en": "Hi, I'm Queen Silky. I have long silky ears. I go straight and slanted, as far as I like!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Haf a hop!",
+          "en": "Woof and hop!"
+        },
+        "defeat": {
+          "cs": "Jdu se učesat…",
+          "en": "Off to brush my fur…"
+        },
+        "victory": {
+          "cs": "Krásně vyhráno!",
+          "en": "Beautifully done!"
+        }
+      }
+    },
+    "rook": {
+      "sprite": "sprites/rook.webp",
+      "name": {
+        "cs": "Bouda Kostička",
+        "en": "Bonehouse"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Bouda Kostička. Jsem psí bouda a uvnitř bydlí štěně. Jezdím jen rovně.",
+        "en": "Hi, I'm Bonehouse. I'm a doghouse and a puppy lives inside. I only go straight."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Bum, haf!",
+          "en": "Bonk, woof!"
+        },
+        "defeat": {
+          "cs": "Štěně usnulo…",
+          "en": "The puppy fell asleep…"
+        },
+        "victory": {
+          "cs": "Haf, hurá!",
+          "en": "Woof, hooray!"
+        }
+      }
+    },
+    "bishop": {
+      "sprite": "sprites/bishop.webp",
+      "name": {
+        "cs": "Chrt Poslíček",
+        "en": "Messenger Greyhound"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Chrt Poslíček. Nosím zprávy rychle a šikmo. Chodím jen šikmo.",
+        "en": "Hi, I'm Messenger Greyhound. I carry messages fast and slanted. I only go on the slant."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Mám zprávu!",
+          "en": "Special delivery!"
+        },
+        "defeat": {
+          "cs": "Zpráva se ztratila…",
+          "en": "Lost my message…"
+        },
+        "victory": {
+          "cs": "Doručeno!",
+          "en": "Delivered!"
+        }
+      }
+    },
+    "knight": {
+      "sprite": "sprites/knight.webp",
+      "name": {
+        "cs": "Teriér Skokan",
+        "en": "Jumpy Terrier"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Teriér Skokan. Skáču vysoko za míčkem. Skáču do písmene L a přeskočím cokoli!",
+        "en": "Hi, I'm Jumpy Terrier. I jump high for my ball. I jump in an L and hop over anything!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Hop za míčkem!",
+          "en": "Fetch!"
+        },
+        "defeat": {
+          "cs": "Jdu hledat míček…",
+          "en": "Off to find my ball…"
+        },
+        "victory": {
+          "cs": "Mám ho!",
+          "en": "Got it!"
+        }
+      }
+    },
+    "pawn": {
+      "sprite": "sprites/pawn.webp",
+      "name": {
+        "cs": "Štěňátko Kostík",
+        "en": "Puppy Bone"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Štěňátko Kostík. Nosím v pusince kostičku. Chodím jen dopředu a jednou budu královna!",
+        "en": "Hi, I'm Puppy Bone. I carry a bone in my mouth. I only walk forward, and one day I'll be a queen!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Haf!",
+          "en": "Yip!"
+        },
+        "defeat": {
+          "cs": "Jdu zakopat kostičku…",
+          "en": "Off to bury my bone…"
+        },
+        "victory": {
+          "cs": "Vrtím ocáskem!",
+          "en": "Wag wag!"
+        }
+      }
+    }
+  },
+  "battle_overrides": {},
+  "board_skin": null
+}

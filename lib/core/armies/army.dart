@@ -28,8 +28,14 @@ class Army {
 
   factory Army.parse(String source) => Army.fromJson(jsonDecode(source) as Map<String, dynamic>);
 
-  /// Army ids shipped in the base app (packs come later, PLAN §3).
-  static const baseIds = ['fairies', 'witches'];
+  /// Army ids shipped in the app, in picker order (packs/IAP later, PLAN §6).
+  /// The `*_toy` armies and the ten after them come from Archion
+  /// (Prompts/04-HANDOFF-archion-armies.md); test/armies_test.dart keeps
+  /// this list in sync with `assets/armies/`.
+  static const baseIds = [
+    'fairies', 'witches', 'kingdom', 'devils', 'fairies_toy', 'witches_toy', 'bees', 'hornets', //
+    'dinos', 'iceage', 'cats', 'dogs', 'fruit', 'veggies',
+  ];
 
   static String manifestAsset(String id) => 'assets/armies/$id/manifest.json';
 
@@ -54,6 +60,14 @@ class Army {
 
   /// Battle key pose of [t] (`tool/art/pose_gen.py`); may not exist yet.
   String poseAsset(PieceType t, String pose) => 'assets/armies/$id/battle/${t.name}/$pose.png';
+
+  /// Standing art for the arena without the board base: the sprite file
+  /// under `stand/` instead of `sprites/` (optional; the battle falls back
+  /// to [spriteAsset]).
+  String? standAsset(PieceType t) => switch (pieces[t]!.sprite) {
+    final s? when s.startsWith('sprites/') => 'assets/armies/$id/stand/${s.substring(8)}',
+    _ => null,
+  };
 
   /// Character art for [t] (`assets/armies/<id>/<sprite>`), null → placeholder.
   String? spriteAsset(PieceType t) => switch (pieces[t]!.sprite) {

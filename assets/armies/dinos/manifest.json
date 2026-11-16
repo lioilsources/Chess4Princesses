@@ -1,0 +1,167 @@
+{
+  "id": "dinos",
+  "name": {
+    "cs": "Dinosauři",
+    "en": "Dinos"
+  },
+  "arena": "arena.jpg",
+  "palette": {
+    "primary": "#5CC46A",
+    "accent": "#FF9A3D",
+    "dark": "#1E4D2B"
+  },
+  "pieces": {
+    "king": {
+      "sprite": "sprites/king.webp",
+      "name": {
+        "cs": "Král Rexík",
+        "en": "King Rexy"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Král Rexík. Jsem velký, ale hodný, a mám kapradinové žezlo. Chodím jen o jedno políčko.",
+        "en": "Hi, I'm King Rexy. I'm big but kind, with a fern scepter. I only step one square."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Hrrraaa!",
+          "en": "Rawwwr!"
+        },
+        "defeat": {
+          "cs": "Jdu si zdřímnout pod kapradí…",
+          "en": "Napping under the ferns…"
+        },
+        "victory": {
+          "cs": "Dino-hurá!",
+          "en": "Dino-hooray!"
+        }
+      }
+    },
+    "queen": {
+      "sprite": "sprites/queen.webp",
+      "name": {
+        "cs": "Královna Ptera",
+        "en": "Queen Ptera"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Královna Ptera. Roztáhnu křídla a létám nad sopkou. Chodím rovně i šikmo, jak daleko chci!",
+        "en": "Hi, I'm Queen Ptera. I spread my wings and fly over the volcano. I go straight and slanted, as far as I like!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Fííí, střemhlav!",
+          "en": "Swoosh, dive!"
+        },
+        "defeat": {
+          "cs": "Letím do hnízda…",
+          "en": "Flying to my nest…"
+        },
+        "victory": {
+          "cs": "Kráá, hurá!",
+          "en": "Kraa, hooray!"
+        }
+      }
+    },
+    "rook": {
+      "sprite": "sprites/rook.webp",
+      "name": {
+        "cs": "Tříroh Kvádr",
+        "en": "Trike"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Tříroh Kvádr. Mám tři rohy a velký límec. Jezdím jen rovně.",
+        "en": "Hi, I'm Trike. I have three horns and a big frill. I only go straight."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Dupy dup!",
+          "en": "Stomp stomp!"
+        },
+        "defeat": {
+          "cs": "Jdu se válet do bláta…",
+          "en": "Off to roll in the mud…"
+        },
+        "victory": {
+          "cs": "Dup, vyhrál jsem!",
+          "en": "Stomp, I won!"
+        }
+      }
+    },
+    "bishop": {
+      "sprite": "sprites/bishop.webp",
+      "name": {
+        "cs": "Brachi Dlouhokrčka",
+        "en": "Longneck Bracky"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Brachi Dlouhokrčka. Mám nejdelší krk a vidím hodně daleko. Chodím jen šikmo.",
+        "en": "Hi, I'm Longneck Bracky. I have the longest neck and see far away. I only go on the slant."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Natáhnu se!",
+          "en": "Big stretch!"
+        },
+        "defeat": {
+          "cs": "Jdu okusovat stromy…",
+          "en": "Off to munch the trees…"
+        },
+        "victory": {
+          "cs": "Vidím výhru!",
+          "en": "I see a win!"
+        }
+      }
+    },
+    "knight": {
+      "sprite": "sprites/knight.webp",
+      "name": {
+        "cs": "Raptor Skokánek",
+        "en": "Hoppy Raptor"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Raptor Skokánek. Jsem rychlý a skáču nejvýš. Skáču do písmene L a přeskočím cokoli!",
+        "en": "Hi, I'm Hoppy Raptor. I'm quick and jump the highest. I jump in an L and hop over anything!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Skok!",
+          "en": "Leap!"
+        },
+        "defeat": {
+          "cs": "Utíkám pryč…",
+          "en": "Running away…"
+        },
+        "victory": {
+          "cs": "Hop-hop, hurá!",
+          "en": "Hop-hop, hooray!"
+        }
+      }
+    },
+    "pawn": {
+      "sprite": "sprites/pawn.webp",
+      "name": {
+        "cs": "Vajíčko Kuk",
+        "en": "Peekaboo Egg"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Vajíčko Kuk. Zrovna jsem se vyklubal z vajíčka. Chodím jen dopředu a jednou budu královna!",
+        "en": "Hi, I'm Peekaboo Egg. I just hatched from my egg. I only walk forward, and one day I'll be a queen!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Kuk!",
+          "en": "Peekaboo!"
+        },
+        "defeat": {
+          "cs": "Schovám se do skořápky…",
+          "en": "Back into my shell…"
+        },
+        "victory": {
+          "cs": "Jupí!",
+          "en": "Yippee!"
+        }
+      }
+    }
+  },
+  "battle_overrides": {},
+  "board_skin": null
+}

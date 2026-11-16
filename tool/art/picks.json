@@ -19,7 +19,19 @@
   },
   "arenas": {
     "fairies": 1,
-    "witches": 3
+    "witches": 3,
+    "kingdom": 2,
+    "devils": 2,
+    "fairies_toy": 1,
+    "witches_toy": 2,
+    "bees": 2,
+    "hornets": 2,
+    "dinos": 2,
+    "iceage": 2,
+    "cats": 2,
+    "fruit": 2,
+    "veggies": 2,
+    "dogs": 6
   },
   "icons": {
     "castle": 3,

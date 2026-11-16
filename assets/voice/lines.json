@@ -1519,6 +1519,1861 @@
     "source": "witches.king:victory"
   },
   {
+    "lang": "cs",
+    "key": "f1f53a27ea1addec",
+    "text": "Ahoj, já jsem Honzík. Nesu si uzlíček buchet na cestu. Chodím jen dopředu a jednou budu královna!",
+    "say": "Ahoj, já jsem Honzík. Nesu si uzlíček buchet na cestu. Chodím jen dopředu a jednou budu královna!",
+    "source": "kingdom.pawn:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "5fb3a980ce1ff23c",
+    "text": "Hej rup!",
+    "say": "Hej rup!",
+    "source": "kingdom.pawn:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "035152df1a6e6ec4",
+    "text": "Jdu domů k mamince…",
+    "say": "Jdu domů k mamince…",
+    "source": "kingdom.pawn:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "63aa0338fb5a91bd",
+    "text": "Ahoj, já jsem Koník Zlatohřívek. Mám zlatou hřívu a rudé sedlo. Skáču do písmene L a přeskočím cokoli!",
+    "say": "Ahoj, já jsem Koník Zlatohřívek. Mám zlatou hřívu a rudé sedlo. Skáču do písmene L a přeskočím cokoli!",
+    "source": "kingdom.knight:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "901cf590ea192a28",
+    "text": "Hyjé!",
+    "say": "Hyjé!",
+    "source": "kingdom.knight:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "428d5142784d2dfd",
+    "text": "Cválám do stáje…",
+    "say": "Cválám do stáje…",
+    "source": "kingdom.knight:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "90301ecc08866058",
+    "text": "Ahoj, já jsem Dědeček Moudrovous. Vím, kudy vede každá cestička. Chodím jen šikmo.",
+    "say": "Ahoj, já jsem Dědeček Moudrovous. Vím, kudy vede každá cestička. Chodím jen šikmo.",
+    "source": "kingdom.bishop:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "0a2af2fb5487193b",
+    "text": "Hokus pokus!",
+    "say": "Hokus pokus!",
+    "source": "kingdom.bishop:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "173edb8b527c9c03",
+    "text": "Moudře vymyšleno!",
+    "say": "Moudře vymyšleno!",
+    "source": "kingdom.bishop:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "ed71fffece5f17af",
+    "text": "Ahoj, já jsem Věž Praporka. Na střeše mi vlaje praporek. Jezdím jen rovně.",
+    "say": "Ahoj, já jsem Věž Praporka. Na střeše mi vlaje praporek. Jezdím jen rovně.",
+    "source": "kingdom.rook:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "233f5736f3687f9b",
+    "text": "Bum, bác!",
+    "say": "Bum, bác!",
+    "source": "kingdom.rook:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "1f634e56bcc545f5",
+    "text": "Zavírám bránu…",
+    "say": "Zavírám bránu…",
+    "source": "kingdom.rook:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "f430a245a78e4f03",
+    "text": "Praporek vlaje!",
+    "say": "Praporek vlaje!",
+    "source": "kingdom.rook:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "612b9ce846b112f8",
+    "text": "Ahoj, já jsem Princezna Hvězdička. Na čele mi svítí zlatá hvězda. Chodím rovně i šikmo, jak daleko chci!",
+    "say": "Ahoj, já jsem Princezna Hvězdička. Na čele mi svítí zlatá hvězda. Chodím rovně i šikmo, jak daleko chci!",
+    "source": "kingdom.queen:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "3867f996c497081f",
+    "text": "Hvězdný třpyt!",
+    "say": "Hvězdný třpyt!",
+    "source": "kingdom.queen:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "d91ce9d03b58f708",
+    "text": "Hvězdička zhasíná…",
+    "say": "Hvězdička zhasíná…",
+    "source": "kingdom.queen:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "5fa5b43404bcd02f",
+    "text": "Svítím radostí!",
+    "say": "Svítím radostí!",
+    "source": "kingdom.queen:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "fb46216e1f8b4fe1",
+    "text": "Ahoj, já jsem Král Jablíčko. Mám zlaté jablko a laskavé srdce. Chodím jen o jedno políčko.",
+    "say": "Ahoj, já jsem Král Jablíčko. Mám zlaté jablko a laskavé srdce. Chodím jen o jedno políčko.",
+    "source": "kingdom.king:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "fac26d4a1728baa0",
+    "text": "Opatrně, ale statečně!",
+    "say": "Opatrně, ale statečně!",
+    "source": "kingdom.king:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "90235fdec37d53f8",
+    "text": "Jdu si sníst jablíčko…",
+    "say": "Jdu si sníst jablíčko…",
+    "source": "kingdom.king:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "8796cb374920046a",
+    "text": "Sláva království!",
+    "say": "Sláva království!",
+    "source": "kingdom.king:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "04e7294123d3acdf",
+    "text": "Ahoj, já jsem Čertík Vidlička. Mám malé vidle a vyplazený jazýček. Chodím jen dopředu a jednou budu královna!",
+    "say": "Ahoj, já jsem Čertík Vidlička. Mám malé vidle a vyplazený jazýček. Chodím jen dopředu a jednou budu královna!",
+    "source": "devils.pawn:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "394df614b50e5279",
+    "text": "Píchnu tě!",
+    "say": "Píchnu tě!",
+    "source": "devils.pawn:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "26c22d19fba7e4ff",
+    "text": "Utíkám do pekla na buchty…",
+    "say": "Utíkám do pekla na buchty…",
+    "source": "devils.pawn:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "157fe88327a5ddc7",
+    "text": "Bleee, vyhrál jsem!",
+    "say": "Bleee, vyhrál jsem!",
+    "source": "devils.pawn:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "57824a9b10336174",
+    "text": "Ahoj, já jsem Kozlík Zvoneček. Mám zvoneček a rohy jako preclík. Skáču do písmene L a přeskočím cokoli!",
+    "say": "Ahoj, já jsem Kozlík Zvoneček. Mám zvoneček a rohy jako preclík. Skáču do písmene L a přeskočím cokoli!",
+    "source": "devils.knight:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "e66a846cdc0ea44f",
+    "text": "Mééé, hop!",
+    "say": "Mééé, hop!",
+    "source": "devils.knight:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "017bb708050a0735",
+    "text": "Cinky-cink!",
+    "say": "Cinky-cink!",
+    "source": "devils.knight:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "c35a94648389bf3e",
+    "text": "Ahoj, já jsem Písař Brko. Všechno si zapíšu brkem do pytle. Chodím jen šikmo.",
+    "say": "Ahoj, já jsem Písař Brko. Všechno si zapíšu brkem do pytle. Chodím jen šikmo.",
+    "source": "devils.bishop:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "73c7a529c6ded7cf",
+    "text": "Čmáry čmáry!",
+    "say": "Čmáry čmáry!",
+    "source": "devils.bishop:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "2e77ec14babfff52",
+    "text": "Zapíšu si to…",
+    "say": "Zapíšu si to…",
+    "source": "devils.bishop:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "1574c0a3ecb3eb34",
+    "text": "Hotovo, podepsáno!",
+    "say": "Hotovo, podepsáno!",
+    "source": "devils.bishop:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "0b5a108af952644c",
+    "text": "Ahoj, já jsem Kotlík Bublinka. Bublám, syčím a jezdím rovně. Jezdím jen rovně.",
+    "say": "Ahoj, já jsem Kotlík Bublinka. Bublám, syčím a jezdím rovně. Jezdím jen rovně.",
+    "source": "devils.rook:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "a8e7173673787d0e",
+    "text": "Bubli-bubli!",
+    "say": "Bubli-bubli!",
+    "source": "devils.rook:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "70550b1c61af6d0d",
+    "text": "Pára mi došla…",
+    "say": "Pára mi došla…",
+    "source": "devils.rook:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "00721c149bba67a9",
+    "text": "Syčí a bublá!",
+    "say": "Syčí a bublá!",
+    "source": "devils.rook:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "37e3f21930e913e6",
+    "text": "Ahoj, já jsem Babička Vařečka. S vařečkou uvařím nejlepší guláš. Chodím rovně i šikmo, jak daleko chci!",
+    "say": "Ahoj, já jsem Babička Vařečka. S vařečkou uvařím nejlepší guláš. Chodím rovně i šikmo, jak daleko chci!",
+    "source": "devils.queen:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "47101624182718cf",
+    "text": "Mávnu vařečkou!",
+    "say": "Mávnu vařečkou!",
+    "source": "devils.queen:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "b8a1d04cbebe4ae1",
+    "text": "Jdu zamíchat polívku…",
+    "say": "Jdu zamíchat polívku…",
+    "source": "devils.queen:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "b5d8a045d0801e3e",
+    "text": "To se mi povedlo!",
+    "say": "To se mi povedlo!",
+    "source": "devils.queen:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "4dca34c04d2e1cd7",
+    "text": "Ahoj, já jsem Čertí král Bručoun. Mám velkou knihu a ještě větší rohy. Chodím jen o jedno políčko.",
+    "say": "Ahoj, já jsem Čertí král Bručoun. Mám velkou knihu a ještě větší rohy. Chodím jen o jedno políčko.",
+    "source": "devils.king:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "6072245886b2e46e",
+    "text": "Pekelně rychle!",
+    "say": "Pekelně rychle!",
+    "source": "devils.king:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "780a461ab007fe98",
+    "text": "Jdu se ohřát ke kamnům…",
+    "say": "Jdu se ohřát ke kamnům…",
+    "source": "devils.king:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "0560417af169c2e9",
+    "text": "Hohohó!",
+    "say": "Hohohó!",
+    "source": "devils.king:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "ba64c476d71db0d0",
+    "text": "Ahoj, já jsem Žalud. Mám čepičku ze žaludu a lístkový štít. Chodím jen dopředu a jednou budu královna!",
+    "say": "Ahoj, já jsem Žalud. Mám čepičku ze žaludu a lístkový štít. Chodím jen dopředu a jednou budu královna!",
+    "source": "fairies_toy.pawn:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "964560001af59a87",
+    "text": "Jdu se schovat pod list…",
+    "say": "Jdu se schovat pod list…",
+    "source": "fairies_toy.pawn:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "bfabfb3f330e0362",
+    "text": "Ahoj, já jsem Jednorožec Duháček. Mám zlatý roh a hřívu jako mátu. Skáču do písmene L a přeskočím cokoli!",
+    "say": "Ahoj, já jsem Jednorožec Duháček. Mám zlatý roh a hřívu jako mátu. Skáču do písmene L a přeskočím cokoli!",
+    "source": "fairies_toy.knight:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "6f1fc9515c9ece55",
+    "text": "Duhový skok!",
+    "say": "Duhový skok!",
+    "source": "fairies_toy.knight:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "03ced0a0d288be61",
+    "text": "Ahoj, já jsem Světluška Lucinka. Svítím si lucerničkou na cestu. Chodím jen šikmo.",
+    "say": "Ahoj, já jsem Světluška Lucinka. Svítím si lucerničkou na cestu. Chodím jen šikmo.",
+    "source": "fairies_toy.bishop:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "fd4aaa52763e3712",
+    "text": "Blik, blik!",
+    "say": "Blik, blik!",
+    "source": "fairies_toy.bishop:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "b795ef88ed83b078",
+    "text": "Zhasínám…",
+    "say": "Zhasínám…",
+    "source": "fairies_toy.bishop:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "8f47bcf5e8d6eb33",
+    "text": "Ahoj, já jsem Domeček Muchomůrka. Mám tečkovanou střechu a kulatá okýnka. Jezdím jen rovně.",
+    "say": "Ahoj, já jsem Domeček Muchomůrka. Mám tečkovanou střechu a kulatá okýnka. Jezdím jen rovně.",
+    "source": "fairies_toy.rook:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "812107c31be4a3d7",
+    "text": "Bum do toho!",
+    "say": "Bum do toho!",
+    "source": "fairies_toy.rook:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "d7e65b2ee917e5fe",
+    "text": "Zavírám dvířka…",
+    "say": "Zavírám dvířka…",
+    "source": "fairies_toy.rook:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "e9d2b80286a01b03",
+    "text": "Domeček vyhrál!",
+    "say": "Domeček vyhrál!",
+    "source": "fairies_toy.rook:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "c913caff0a87dccb",
+    "text": "Ahoj, já jsem Víla Rosenka. Mám křídla jako vážka. Chodím rovně i šikmo, jak daleko chci!",
+    "say": "Ahoj, já jsem Víla Rosenka. Mám křídla jako vážka. Chodím rovně i šikmo, jak daleko chci!",
+    "source": "fairies_toy.queen:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "09b3c868b8865ccf",
+    "text": "Bzzz, kouzlo!",
+    "say": "Bzzz, kouzlo!",
+    "source": "fairies_toy.queen:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "0893aa9656749145",
+    "text": "Odlétám na lístek…",
+    "say": "Odlétám na lístek…",
+    "source": "fairies_toy.queen:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "2bf25196284db941",
+    "text": "Třpyt a lesk!",
+    "say": "Třpyt a lesk!",
+    "source": "fairies_toy.queen:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "117d621f0c71050e",
+    "text": "Ahoj, já jsem Skřítek Lístek. Mám korunu ze zlatých lístků. Chodím jen o jedno políčko.",
+    "say": "Ahoj, já jsem Skřítek Lístek. Mám korunu ze zlatých lístků. Chodím jen o jedno políčko.",
+    "source": "fairies_toy.king:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "2590f66b30b17c2a",
+    "text": "Kvítek, hop!",
+    "say": "Kvítek, hop!",
+    "source": "fairies_toy.king:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "1aa0e83882d1f723",
+    "text": "Jdu do mechu…",
+    "say": "Jdu do mechu…",
+    "source": "fairies_toy.king:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "064969674be2a772",
+    "text": "Hurá, les!",
+    "say": "Hurá, les!",
+    "source": "fairies_toy.king:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "289fcf07bfdc500e",
+    "text": "Ahoj, já jsem Žabka Klobouček. Nosím malý špičatý klobouček. Chodím jen dopředu a jednou budu královna!",
+    "say": "Ahoj, já jsem Žabka Klobouček. Nosím malý špičatý klobouček. Chodím jen dopředu a jednou budu královna!",
+    "source": "witches_toy.pawn:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "82d453626aeaa241",
+    "text": "Kvak, skok!",
+    "say": "Kvak, skok!",
+    "source": "witches_toy.pawn:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "20ce724a9801debc",
+    "text": "Skočím do louže…",
+    "say": "Skočím do louže…",
+    "source": "witches_toy.pawn:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "cf89baf2ddead0a1",
+    "text": "Kvák kvák!",
+    "say": "Kvák kvák!",
+    "source": "witches_toy.pawn:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "146d8d6429720517",
+    "text": "Ahoj, já jsem Kocour Mourek. Mám zelené oči a dýňový košíček. Skáču do písmene L a přeskočím cokoli!",
+    "say": "Ahoj, já jsem Kocour Mourek. Mám zelené oči a dýňový košíček. Skáču do písmene L a přeskočím cokoli!",
+    "source": "witches_toy.knight:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "de77905de4894246",
+    "text": "Mňau, skok!",
+    "say": "Mňau, skok!",
+    "source": "witches_toy.knight:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "e03105296ff1df4d",
+    "text": "Jdu si lehnout ke krbu…",
+    "say": "Jdu si lehnout ke krbu…",
+    "source": "witches_toy.knight:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "c845a90d66b14ecf",
+    "text": "Přede-přede!",
+    "say": "Přede-přede!",
+    "source": "witches_toy.knight:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "90c8af73f5d1f9ba",
+    "text": "Ahoj, já jsem Vědma Polívka. V kotlíku vidím, co se stane. Chodím jen šikmo.",
+    "say": "Ahoj, já jsem Vědma Polívka. V kotlíku vidím, co se stane. Chodím jen šikmo.",
+    "source": "witches_toy.bishop:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "e03a4b646f5fc42d",
+    "text": "Vidím to!",
+    "say": "Vidím to!",
+    "source": "witches_toy.bishop:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "7c89c42e03cd165d",
+    "text": "To jsem neviděla…",
+    "say": "To jsem neviděla…",
+    "source": "witches_toy.bishop:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "0033bafd43349b4b",
+    "text": "Říkala jsem to!",
+    "say": "Říkala jsem to!",
+    "source": "witches_toy.bishop:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "10817b6af1b1b5e8",
+    "text": "Ahoj, já jsem Perníková chaloupka. Jsem celá z perníku a bonbonů. Jezdím jen rovně.",
+    "say": "Ahoj, já jsem Perníková chaloupka. Jsem celá z perníku a bonbonů. Jezdím jen rovně.",
+    "source": "witches_toy.rook:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "506a2e45d31e564b",
+    "text": "Křup!",
+    "say": "Křup!",
+    "source": "witches_toy.rook:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "83d0827174f4351a",
+    "text": "Někdo mě ochutnal…",
+    "say": "Někdo mě ochutnal…",
+    "source": "witches_toy.rook:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "a7fb47eecaca50f2",
+    "text": "Sladká výhra!",
+    "say": "Sladká výhra!",
+    "source": "witches_toy.rook:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "0fc512c6a437ce32",
+    "text": "Ahoj, já jsem Královna Koštěnka. Létám na koštěti, kam se mi zachce. Chodím rovně i šikmo, jak daleko chci!",
+    "say": "Ahoj, já jsem Královna Koštěnka. Létám na koštěti, kam se mi zachce. Chodím rovně i šikmo, jak daleko chci!",
+    "source": "witches_toy.queen:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "75bcce7fdb37e372",
+    "text": "Fííí, koště!",
+    "say": "Fííí, koště!",
+    "source": "witches_toy.queen:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "ae75912723618b2c",
+    "text": "Koště potřebuje odpočinek…",
+    "say": "Koště potřebuje odpočinek…",
+    "source": "witches_toy.queen:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "2ae830309440b9b8",
+    "text": "Chi-chi-chi!",
+    "say": "Chi-chi-chi!",
+    "source": "witches_toy.queen:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "8df39fb3c48a7f9f",
+    "text": "Ahoj, já jsem Čaroděj Bručimír. Mám na rameni havrana a hůl z kořene. Chodím jen o jedno políčko.",
+    "say": "Ahoj, já jsem Čaroděj Bručimír. Mám na rameni havrana a hůl z kořene. Chodím jen o jedno políčko.",
+    "source": "witches_toy.king:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "2c3ea13871c4e2e1",
+    "text": "Abraka-bručák!",
+    "say": "Abraka-bručák!",
+    "source": "witches_toy.king:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "5e6c29eecec85ad1",
+    "text": "Jdu si zabručet do věže…",
+    "say": "Jdu si zabručet do věže…",
+    "source": "witches_toy.king:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "05095d17f72694cb",
+    "text": "Krá, krá, hurá!",
+    "say": "Krá, krá, hurá!",
+    "source": "witches_toy.king:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "185da9c0144aee06",
+    "text": "Ahoj, já jsem Dělnička Kapička. Nosím kyblíček medu. Chodím jen dopředu a jednou budu královna!",
+    "say": "Ahoj, já jsem Dělnička Kapička. Nosím kyblíček medu. Chodím jen dopředu a jednou budu královna!",
+    "source": "bees.pawn:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "ac4a0628e42474b1",
+    "text": "Šup!",
+    "say": "Šup!",
+    "source": "bees.pawn:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "bd7ff986f10181a3",
+    "text": "Jdu pro další med…",
+    "say": "Jdu pro další med…",
+    "source": "bees.pawn:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "345f3ae00df95ea3",
+    "text": "Ahoj, já jsem Čmelák Chlupáček. Jsem kulatý a hebký jako polštářek. Skáču do písmene L a přeskočím cokoli!",
+    "say": "Ahoj, já jsem Čmelák Chlupáček. Jsem kulatý a hebký jako polštářek. Skáču do písmene L a přeskočím cokoli!",
+    "source": "bees.knight:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "4861a350b7110c85",
+    "text": "Brrrum, hop!",
+    "say": "Brrrum, hop!",
+    "source": "bees.knight:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "7d3e2caf88272224",
+    "text": "Jdu si sednout na jetel…",
+    "say": "Jdu si sednout na jetel…",
+    "source": "bees.knight:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "78d62c54d2387a6a",
+    "text": "Bzučím radostí!",
+    "say": "Bzučím radostí!",
+    "source": "bees.knight:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "77ef4c6afaa192d0",
+    "text": "Ahoj, já jsem Strážkyně Žihadlenka. Mám helmu a dlouhé kopí. Chodím jen šikmo.",
+    "say": "Ahoj, já jsem Strážkyně Žihadlenka. Mám helmu a dlouhé kopí. Chodím jen šikmo.",
+    "source": "bees.bishop:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "2f5a948cecbdae3f",
+    "text": "Píchnu!",
+    "say": "Píchnu!",
+    "source": "bees.bishop:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "2553a12f5bcb1a97",
+    "text": "Jdu hlídat úl…",
+    "say": "Jdu hlídat úl…",
+    "source": "bees.bishop:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "22a4720b59b36f93",
+    "text": "Stráž vyhrála!",
+    "say": "Stráž vyhrála!",
+    "source": "bees.bishop:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "5da7eff4767fcc98",
+    "text": "Ahoj, já jsem Úlek. Jsem úl plný medu. Jezdím jen rovně.",
+    "say": "Ahoj, já jsem Úlek. Jsem úl plný medu. Jezdím jen rovně.",
+    "source": "bees.rook:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "f27ca07f98507727",
+    "text": "Bum, med!",
+    "say": "Bum, med!",
+    "source": "bees.rook:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "12e0cdd5d123c804",
+    "text": "Sladké!",
+    "say": "Sladké!",
+    "source": "bees.rook:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "bcc9317c53b42785",
+    "text": "Ahoj, já jsem Královna Plástvička. Mám čtyři křídla a korunu z plástve. Chodím rovně i šikmo, jak daleko chci!",
+    "say": "Ahoj, já jsem Královna Plástvička. Mám čtyři křídla a korunu z plástve. Chodím rovně i šikmo, jak daleko chci!",
+    "source": "bees.queen:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "105003d5693c485b",
+    "text": "Bzzzum!",
+    "say": "Bzzzum!",
+    "source": "bees.queen:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "676fb1e1eb576ee8",
+    "text": "Odlétám na květ…",
+    "say": "Odlétám na květ…",
+    "source": "bees.queen:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "3d4248dde604009b",
+    "text": "Bzz, hurá!",
+    "say": "Bzz, hurá!",
+    "source": "bees.queen:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "4cf469b87ebf9a7a",
+    "text": "Ahoj, já jsem Král Medovník. Mám žezlo na med a zlatou korunku. Chodím jen o jedno políčko.",
+    "say": "Ahoj, já jsem Král Medovník. Mám žezlo na med a zlatou korunku. Chodím jen o jedno políčko.",
+    "source": "bees.king:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "f1a10149697b7297",
+    "text": "Bzzz, vpřed!",
+    "say": "Bzzz, vpřed!",
+    "source": "bees.king:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "f7aa5f2b57d22d06",
+    "text": "Jdu do úlu…",
+    "say": "Jdu do úlu…",
+    "source": "bees.king:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "f51527cc635ebaeb",
+    "text": "Medová výhra!",
+    "say": "Medová výhra!",
+    "source": "bees.king:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "8c54caa40dea30b1",
+    "text": "Ahoj, já jsem Vosík Špendlík. Mám helmičku a meč jako špendlík. Chodím jen dopředu a jednou budu královna!",
+    "say": "Ahoj, já jsem Vosík Špendlík. Mám helmičku a meč jako špendlík. Chodím jen dopředu a jednou budu královna!",
+    "source": "hornets.pawn:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "038a354c1d989469",
+    "text": "Šťouch!",
+    "say": "Šťouch!",
+    "source": "hornets.pawn:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "f2daf71a00638c0b",
+    "text": "Jdu do hnízda…",
+    "say": "Jdu do hnízda…",
+    "source": "hornets.pawn:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "b0560fc32caab7a1",
+    "text": "Bzz, jupí!",
+    "say": "Bzz, jupí!",
+    "source": "hornets.pawn:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "877839b0760ad047",
+    "text": "Ahoj, já jsem Vážka Šipka. Létám jako tyrkysová šipka. Skáču do písmene L a přeskočím cokoli!",
+    "say": "Ahoj, já jsem Vážka Šipka. Létám jako tyrkysová šipka. Skáču do písmene L a přeskočím cokoli!",
+    "source": "hornets.knight:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "1f5f775234374f47",
+    "text": "Fííí, hop!",
+    "say": "Fííí, hop!",
+    "source": "hornets.knight:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "03fff55520608111",
+    "text": "Odlétám k rybníku…",
+    "say": "Odlétám k rybníku…",
+    "source": "hornets.knight:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "0ca04a5ac1754fca",
+    "text": "Šup a hotovo!",
+    "say": "Šup a hotovo!",
+    "source": "hornets.knight:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "04a5e2aa2f5c796f",
+    "text": "Ahoj, já jsem Vosa Lučištnice. Mám špičatou čepici a dlouhou hůl. Chodím jen šikmo.",
+    "say": "Ahoj, já jsem Vosa Lučištnice. Mám špičatou čepici a dlouhou hůl. Chodím jen šikmo.",
+    "source": "hornets.bishop:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "3f771eddee979d0f",
+    "text": "Trefa!",
+    "say": "Trefa!",
+    "source": "hornets.bishop:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "af379e336bfe5238",
+    "text": "Vedle…",
+    "say": "Vedle…",
+    "source": "hornets.bishop:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "6f8d0a2359f97222",
+    "text": "Přesně do středu!",
+    "say": "Přesně do středu!",
+    "source": "hornets.bishop:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "13e9116bcdfade61",
+    "text": "Ahoj, já jsem Hnízdo Mračoun. Jsem papírové hnízdo a pořád se mračím. Jezdím jen rovně.",
+    "say": "Ahoj, já jsem Hnízdo Mračoun. Jsem papírové hnízdo a pořád se mračím. Jezdím jen rovně.",
+    "source": "hornets.rook:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "f810fb25d86a964c",
+    "text": "Hrrr, bum!",
+    "say": "Hrrr, bum!",
+    "source": "hornets.rook:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "3efda40c356873ba",
+    "text": "Hmpf, tak jo…",
+    "say": "Hmpf, tak jo…",
+    "source": "hornets.rook:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "79922527d5ca1bd6",
+    "text": "No vida!",
+    "say": "No vida!",
+    "source": "hornets.rook:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "e2be34bc1faa99bf",
+    "text": "Ahoj, já jsem Královna Vějířka. Mám tyrkysová křídla jako vějíř. Chodím rovně i šikmo, jak daleko chci!",
+    "say": "Ahoj, já jsem Královna Vějířka. Mám tyrkysová křídla jako vějíř. Chodím rovně i šikmo, jak daleko chci!",
+    "source": "hornets.queen:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "0311aea54835db8d",
+    "text": "Odlétám si odpočinout…",
+    "say": "Odlétám si odpočinout…",
+    "source": "hornets.queen:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "86b074665f6829c8",
+    "text": "Bzz, vyhrála jsem!",
+    "say": "Bzz, vyhrála jsem!",
+    "source": "hornets.queen:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "83aae646f4d138b5",
+    "text": "Ahoj, já jsem Král Ostroklepetec. Mám ostnatou korunu a trnové žezlo. Chodím jen o jedno políčko.",
+    "say": "Ahoj, já jsem Král Ostroklepetec. Mám ostnatou korunu a trnové žezlo. Chodím jen o jedno políčko.",
+    "source": "hornets.king:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "3e76d6aa0858b2e9",
+    "text": "Bzzzt, vpřed!",
+    "say": "Bzzzt, vpřed!",
+    "source": "hornets.king:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "99fb6c8c7056431f",
+    "text": "Sršní sláva!",
+    "say": "Sršní sláva!",
+    "source": "hornets.king:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "b0b4220efcc0a975",
+    "text": "Ahoj, já jsem Vajíčko Kuk. Zrovna jsem se vyklubal z vajíčka. Chodím jen dopředu a jednou budu královna!",
+    "say": "Ahoj, já jsem Vajíčko Kuk. Zrovna jsem se vyklubal z vajíčka. Chodím jen dopředu a jednou budu královna!",
+    "source": "dinos.pawn:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "0ff3b87e80cd537d",
+    "text": "Kuk!",
+    "say": "Kuk!",
+    "source": "dinos.pawn:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "756bfcac62a9870b",
+    "text": "Schovám se do skořápky…",
+    "say": "Schovám se do skořápky…",
+    "source": "dinos.pawn:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "4ace654299d08fa5",
+    "text": "Ahoj, já jsem Raptor Skokánek. Jsem rychlý a skáču nejvýš. Skáču do písmene L a přeskočím cokoli!",
+    "say": "Ahoj, já jsem Raptor Skokánek. Jsem rychlý a skáču nejvýš. Skáču do písmene L a přeskočím cokoli!",
+    "source": "dinos.knight:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "0856dedc012370d4",
+    "text": "Skok!",
+    "say": "Skok!",
+    "source": "dinos.knight:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "8f1a8f5bdda9856a",
+    "text": "Utíkám pryč…",
+    "say": "Utíkám pryč…",
+    "source": "dinos.knight:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "b418899a3135edc4",
+    "text": "Hop-hop, hurá!",
+    "say": "Hop-hop, hurá!",
+    "source": "dinos.knight:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "0c17ebfc93367bd6",
+    "text": "Ahoj, já jsem Brachi Dlouhokrčka. Mám nejdelší krk a vidím hodně daleko. Chodím jen šikmo.",
+    "say": "Ahoj, já jsem Brachi Dlouhokrčka. Mám nejdelší krk a vidím hodně daleko. Chodím jen šikmo.",
+    "source": "dinos.bishop:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "13d6a2a800138af4",
+    "text": "Natáhnu se!",
+    "say": "Natáhnu se!",
+    "source": "dinos.bishop:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "db2ecc6ef7a11e74",
+    "text": "Jdu okusovat stromy…",
+    "say": "Jdu okusovat stromy…",
+    "source": "dinos.bishop:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "f54441b17ef1c75c",
+    "text": "Vidím výhru!",
+    "say": "Vidím výhru!",
+    "source": "dinos.bishop:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "5deaf2bd2d87cd4e",
+    "text": "Ahoj, já jsem Tříroh Kvádr. Mám tři rohy a velký límec. Jezdím jen rovně.",
+    "say": "Ahoj, já jsem Tříroh Kvádr. Mám tři rohy a velký límec. Jezdím jen rovně.",
+    "source": "dinos.rook:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "3b80a974cd14d127",
+    "text": "Dupy dup!",
+    "say": "Dupy dup!",
+    "source": "dinos.rook:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "2473e4c0f54e9286",
+    "text": "Jdu se válet do bláta…",
+    "say": "Jdu se válet do bláta…",
+    "source": "dinos.rook:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "b7196b11d6551a00",
+    "text": "Dup, vyhrál jsem!",
+    "say": "Dup, vyhrál jsem!",
+    "source": "dinos.rook:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "92d5b0cb7a0c7990",
+    "text": "Ahoj, já jsem Královna Ptera. Roztáhnu křídla a létám nad sopkou. Chodím rovně i šikmo, jak daleko chci!",
+    "say": "Ahoj, já jsem Královna Ptera. Roztáhnu křídla a létám nad sopkou. Chodím rovně i šikmo, jak daleko chci!",
+    "source": "dinos.queen:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "aede819e1ccc2969",
+    "text": "Fííí, střemhlav!",
+    "say": "Fííí, střemhlav!",
+    "source": "dinos.queen:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "2bbd6184d898ea5f",
+    "text": "Letím do hnízda…",
+    "say": "Letím do hnízda…",
+    "source": "dinos.queen:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "6dc64cb1ecd9a09f",
+    "text": "Kráá, hurá!",
+    "say": "Kráá, hurá!",
+    "source": "dinos.queen:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "78f2dfce2d390bfc",
+    "text": "Ahoj, já jsem Král Rexík. Jsem velký, ale hodný, a mám kapradinové žezlo. Chodím jen o jedno políčko.",
+    "say": "Ahoj, já jsem Král Rexík. Jsem velký, ale hodný, a mám kapradinové žezlo. Chodím jen o jedno políčko.",
+    "source": "dinos.king:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "ca8cd329df915e66",
+    "text": "Hrrraaa!",
+    "say": "Hrrraaa!",
+    "source": "dinos.king:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "5070d59f182a544e",
+    "text": "Jdu si zdřímnout pod kapradí…",
+    "say": "Jdu si zdřímnout pod kapradí…",
+    "source": "dinos.king:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "43700330a35905f6",
+    "text": "Dino-hurá!",
+    "say": "Dino-hurá!",
+    "source": "dinos.king:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "46339ced8e2d19e3",
+    "text": "Ahoj, já jsem Mamútek. Jsem malý mamut s chlupatým kožíškem. Chodím jen dopředu a jednou budu královna!",
+    "say": "Ahoj, já jsem Mamútek. Jsem malý mamut s chlupatým kožíškem. Chodím jen dopředu a jednou budu královna!",
+    "source": "iceage.pawn:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "a41d53083ae35a55",
+    "text": "Trúú!",
+    "say": "Trúú!",
+    "source": "iceage.pawn:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "12b816e1da833663",
+    "text": "Jdu za mamkou…",
+    "say": "Jdu za mamkou…",
+    "source": "iceage.pawn:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "f9e588e87bfe0127",
+    "text": "Ahoj, já jsem Tygr Šavlozub. Mám dva dlouhé zuby a pruhy. Skáču do písmene L a přeskočím cokoli!",
+    "say": "Ahoj, já jsem Tygr Šavlozub. Mám dva dlouhé zuby a pruhy. Skáču do písmene L a přeskočím cokoli!",
+    "source": "iceage.knight:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "552be66ae6ea1e3f",
+    "text": "Mňááu, skok!",
+    "say": "Mňááu, skok!",
+    "source": "iceage.knight:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "818d2fe62fe18b42",
+    "text": "Jdu se schovat do jeskyně…",
+    "say": "Jdu se schovat do jeskyně…",
+    "source": "iceage.knight:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "bc9b52d1d3ce4fb0",
+    "text": "Předu radostí!",
+    "say": "Předu radostí!",
+    "source": "iceage.knight:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "b81e26d2e169a037",
+    "text": "Ahoj, já jsem Lenochod Pomalina. Jsem pomalý, ale chytrý, a mám ledovou větev. Chodím jen šikmo.",
+    "say": "Ahoj, já jsem Lenochod Pomalina. Jsem pomalý, ale chytrý, a mám ledovou větev. Chodím jen šikmo.",
+    "source": "iceage.bishop:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "2c93e1b950b07349",
+    "text": "Pomaličku… hop!",
+    "say": "Pomaličku… hop!",
+    "source": "iceage.bishop:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "54c48519df5e9982",
+    "text": "Jdu si pověsit na strom…",
+    "say": "Jdu si pověsit na strom…",
+    "source": "iceage.bishop:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "d776d34074e7fc7f",
+    "text": "Pomalu, ale jistě!",
+    "say": "Pomalu, ale jistě!",
+    "source": "iceage.bishop:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "18569d0be4237592",
+    "text": "Ahoj, já jsem Nosorožec Sněhulák. Mám chlupatý kožich a velký roh. Jezdím jen rovně.",
+    "say": "Ahoj, já jsem Nosorožec Sněhulák. Mám chlupatý kožich a velký roh. Jezdím jen rovně.",
+    "source": "iceage.rook:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "560f169155aaabbb",
+    "text": "Bác do toho!",
+    "say": "Bác do toho!",
+    "source": "iceage.rook:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "8373b3e996fbb4b5",
+    "text": "Lehnu si do závěje…",
+    "say": "Lehnu si do závěje…",
+    "source": "iceage.rook:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "003b95439ef68c87",
+    "text": "Funí a vyhrál!",
+    "say": "Funí a vyhrál!",
+    "source": "iceage.rook:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "62180f2397b6fbed",
+    "text": "Ahoj, já jsem Jelenice Parohatka. Mám obří paroží jako vějíř. Chodím rovně i šikmo, jak daleko chci!",
+    "say": "Ahoj, já jsem Jelenice Parohatka. Mám obří paroží jako vějíř. Chodím rovně i šikmo, jak daleko chci!",
+    "source": "iceage.queen:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "1b1298531c589eef",
+    "text": "Skok přes sníh!",
+    "say": "Skok přes sníh!",
+    "source": "iceage.queen:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "42bfe2244931b4fa",
+    "text": "Jdu do lesa…",
+    "say": "Jdu do lesa…",
+    "source": "iceage.queen:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "477cac302808981a",
+    "text": "Sněhová výhra!",
+    "say": "Sněhová výhra!",
+    "source": "iceage.queen:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "d262457649d35755",
+    "text": "Ahoj, já jsem Mamut Chlupáč. Mám korunu z rampouchů a dlouhé kly. Chodím jen o jedno políčko.",
+    "say": "Ahoj, já jsem Mamut Chlupáč. Mám korunu z rampouchů a dlouhé kly. Chodím jen o jedno políčko.",
+    "source": "iceage.king:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "83252b964f6ba981",
+    "text": "Trúúú!",
+    "say": "Trúúú!",
+    "source": "iceage.king:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "3bfeb199cfc12371",
+    "text": "Jdu se zahřát…",
+    "say": "Jdu se zahřát…",
+    "source": "iceage.king:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "ac695cbf5c0cc4f9",
+    "text": "Mamutí hurá!",
+    "say": "Mamutí hurá!",
+    "source": "iceage.king:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "8774e271a6880ba9",
+    "text": "Ahoj, já jsem Koťátko Klubíčko. Hraju si s klubíčkem. Chodím jen dopředu a jednou budu královna!",
+    "say": "Ahoj, já jsem Koťátko Klubíčko. Hraju si s klubíčkem. Chodím jen dopředu a jednou budu královna!",
+    "source": "cats.pawn:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "ba1bb75485da41e7",
+    "text": "Ťap!",
+    "say": "Ťap!",
+    "source": "cats.pawn:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "a15856bb705884af",
+    "text": "Klubíčko se zamotalo…",
+    "say": "Klubíčko se zamotalo…",
+    "source": "cats.pawn:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "ae48af68002fedbe",
+    "text": "Mňau, jupí!",
+    "say": "Mňau, jupí!",
+    "source": "cats.pawn:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "34f03a4424b8c87a",
+    "text": "Ahoj, já jsem Kočka Vysavačka. Jezdím na robotickém vysavači. Skáču do písmene L a přeskočím cokoli!",
+    "say": "Ahoj, já jsem Kočka Vysavačka. Jezdím na robotickém vysavači. Skáču do písmene L a přeskočím cokoli!",
+    "source": "cats.knight:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "581259957f391e58",
+    "text": "Vrrrum, skok!",
+    "say": "Vrrrum, skok!",
+    "source": "cats.knight:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "8d799182a4bbc0be",
+    "text": "Vysavač se vybil…",
+    "say": "Vysavač se vybil…",
+    "source": "cats.knight:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "11b916c6748151a1",
+    "text": "Vrrr, hurá!",
+    "say": "Vrrr, hurá!",
+    "source": "cats.knight:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "a96dbd8371c39bbc",
+    "text": "Ahoj, já jsem Mudrc Fousek. Nemám chlupy, zato mám moudrost. Chodím jen šikmo.",
+    "say": "Ahoj, já jsem Mudrc Fousek. Nemám chlupy, zato mám moudrost. Chodím jen šikmo.",
+    "source": "cats.bishop:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "0f8d04d35ab73d66",
+    "text": "Kouzlo z klubíčka!",
+    "say": "Kouzlo z klubíčka!",
+    "source": "cats.bishop:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "93b0e0422d6b2688",
+    "text": "Jdu přemýšlet…",
+    "say": "Jdu přemýšlet…",
+    "source": "cats.bishop:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "f5fe94baa4c322c1",
+    "text": "Moudře!",
+    "say": "Moudře!",
+    "source": "cats.bishop:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "5a6bf3657997e228",
+    "text": "Ahoj, já jsem Škrabadlo Drápek. Jsem škrabadlo a nahoře mi sedí kotě. Jezdím jen rovně.",
+    "say": "Ahoj, já jsem Škrabadlo Drápek. Jsem škrabadlo a nahoře mi sedí kotě. Jezdím jen rovně.",
+    "source": "cats.rook:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "9493394f4bc7e07a",
+    "text": "Škráb!",
+    "say": "Škráb!",
+    "source": "cats.rook:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "d2d1701f4e378b3a",
+    "text": "Kotě usnulo…",
+    "say": "Kotě usnulo…",
+    "source": "cats.rook:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "1b6d8ae9c6b7c099",
+    "text": "Mňau, hurá!",
+    "say": "Mňau, hurá!",
+    "source": "cats.rook:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "427561be36e6bdc7",
+    "text": "Ahoj, já jsem Královna Siamka. Mám ocásek stočený jako vějíř. Chodím rovně i šikmo, jak daleko chci!",
+    "say": "Ahoj, já jsem Královna Siamka. Mám ocásek stočený jako vějíř. Chodím rovně i šikmo, jak daleko chci!",
+    "source": "cats.queen:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "ede56d81ddf47cab",
+    "text": "Mňááu!",
+    "say": "Mňááu!",
+    "source": "cats.queen:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "0444f3285a12c1c0",
+    "text": "Jdu si umýt tlapky…",
+    "say": "Jdu si umýt tlapky…",
+    "source": "cats.queen:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "78fb8711fc83962f",
+    "text": "Elegantně vyhráno!",
+    "say": "Elegantně vyhráno!",
+    "source": "cats.queen:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "85ffd4c4f40dd2e1",
+    "text": "Ahoj, já jsem Kocour Hřivoun. Mám hřívu, korunu a žezlo se zvonečkem. Chodím jen o jedno políčko.",
+    "say": "Ahoj, já jsem Kocour Hřivoun. Mám hřívu, korunu a žezlo se zvonečkem. Chodím jen o jedno políčko.",
+    "source": "cats.king:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "dcc84f5f61bf7d04",
+    "text": "Mňau, vpřed!",
+    "say": "Mňau, vpřed!",
+    "source": "cats.king:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "54fac7f8ff24e023",
+    "text": "Jdu si zdřímnout na polštář…",
+    "say": "Jdu si zdřímnout na polštář…",
+    "source": "cats.king:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "83ee044d0d0adba5",
+    "text": "Ahoj, já jsem Štěňátko Kostík. Nosím v pusince kostičku. Chodím jen dopředu a jednou budu královna!",
+    "say": "Ahoj, já jsem Štěňátko Kostík. Nosím v pusince kostičku. Chodím jen dopředu a jednou budu královna!",
+    "source": "dogs.pawn:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "19c52d949d5b20da",
+    "text": "Haf!",
+    "say": "Haf!",
+    "source": "dogs.pawn:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "c22205672d5a7d17",
+    "text": "Jdu zakopat kostičku…",
+    "say": "Jdu zakopat kostičku…",
+    "source": "dogs.pawn:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "dd77b619d2fd6a33",
+    "text": "Vrtím ocáskem!",
+    "say": "Vrtím ocáskem!",
+    "source": "dogs.pawn:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "cf43d5940f5cf100",
+    "text": "Ahoj, já jsem Teriér Skokan. Skáču vysoko za míčkem. Skáču do písmene L a přeskočím cokoli!",
+    "say": "Ahoj, já jsem Teriér Skokan. Skáču vysoko za míčkem. Skáču do písmene L a přeskočím cokoli!",
+    "source": "dogs.knight:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "3d6c962229297c80",
+    "text": "Hop za míčkem!",
+    "say": "Hop za míčkem!",
+    "source": "dogs.knight:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "f44094e5090c2cdb",
+    "text": "Jdu hledat míček…",
+    "say": "Jdu hledat míček…",
+    "source": "dogs.knight:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "b8d8089e1c3d39a4",
+    "text": "Mám ho!",
+    "say": "Mám ho!",
+    "source": "dogs.knight:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "d6565de19b4c758a",
+    "text": "Ahoj, já jsem Chrt Poslíček. Nosím zprávy rychle a šikmo. Chodím jen šikmo.",
+    "say": "Ahoj, já jsem Chrt Poslíček. Nosím zprávy rychle a šikmo. Chodím jen šikmo.",
+    "source": "dogs.bishop:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "bd10200f9d284622",
+    "text": "Mám zprávu!",
+    "say": "Mám zprávu!",
+    "source": "dogs.bishop:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "e41a7f2edcd687a2",
+    "text": "Zpráva se ztratila…",
+    "say": "Zpráva se ztratila…",
+    "source": "dogs.bishop:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "8833f2a11693cd7b",
+    "text": "Doručeno!",
+    "say": "Doručeno!",
+    "source": "dogs.bishop:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "c6c88defc73cb176",
+    "text": "Ahoj, já jsem Bouda Kostička. Jsem psí bouda a uvnitř bydlí štěně. Jezdím jen rovně.",
+    "say": "Ahoj, já jsem Bouda Kostička. Jsem psí bouda a uvnitř bydlí štěně. Jezdím jen rovně.",
+    "source": "dogs.rook:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "fd5d7a0ca82331bc",
+    "text": "Bum, haf!",
+    "say": "Bum, haf!",
+    "source": "dogs.rook:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "b5dcf41e6645f37e",
+    "text": "Štěně usnulo…",
+    "say": "Štěně usnulo…",
+    "source": "dogs.rook:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "fd1a803c6e031b13",
+    "text": "Haf, hurá!",
+    "say": "Haf, hurá!",
+    "source": "dogs.rook:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "28fe90c5c0767080",
+    "text": "Ahoj, já jsem Královna Hedvábka. Mám dlouhé hedvábné uši. Chodím rovně i šikmo, jak daleko chci!",
+    "say": "Ahoj, já jsem Královna Hedvábka. Mám dlouhé hedvábné uši. Chodím rovně i šikmo, jak daleko chci!",
+    "source": "dogs.queen:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "908435acc6747b7a",
+    "text": "Haf a hop!",
+    "say": "Haf a hop!",
+    "source": "dogs.queen:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "c0744f3c05ec71de",
+    "text": "Jdu se učesat…",
+    "say": "Jdu se učesat…",
+    "source": "dogs.queen:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "ddf33b6b3b00e59d",
+    "text": "Krásně vyhráno!",
+    "say": "Krásně vyhráno!",
+    "source": "dogs.queen:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "f3d6cbd73dce3be6",
+    "text": "Ahoj, já jsem Bernard Dobrák. Mám soudek, korunu a kostičku jako žezlo. Chodím jen o jedno políčko.",
+    "say": "Ahoj, já jsem Bernard Dobrák. Mám soudek, korunu a kostičku jako žezlo. Chodím jen o jedno políčko.",
+    "source": "dogs.king:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "56487f635596c147",
+    "text": "Haf, vpřed!",
+    "say": "Haf, vpřed!",
+    "source": "dogs.king:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "af83319c8b660e5d",
+    "text": "Jdu si lehnout k boudě…",
+    "say": "Jdu si lehnout k boudě…",
+    "source": "dogs.king:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "ba7eb0d5711954ff",
+    "text": "Hafhaf, hurá!",
+    "say": "Hafhaf, hurá!",
+    "source": "dogs.king:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "b2f571caf3724093",
+    "text": "Ahoj, já jsem Broskvička. Nosím na hlavě borůvku. Chodím jen dopředu a jednou budu královna!",
+    "say": "Ahoj, já jsem Broskvička. Nosím na hlavě borůvku. Chodím jen dopředu a jednou budu královna!",
+    "source": "fruit.pawn:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "51190dcc4941e6b0",
+    "text": "Ťuk!",
+    "say": "Ťuk!",
+    "source": "fruit.pawn:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "0991afeb31165d68",
+    "text": "Jdu do košíku…",
+    "say": "Jdu do košíku…",
+    "source": "fruit.pawn:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "6f97ecabece90fd8",
+    "text": "Ahoj, já jsem Kiwi Zobáček. Jsem ptáček s kiwi bříškem. Skáču do písmene L a přeskočím cokoli!",
+    "say": "Ahoj, já jsem Kiwi Zobáček. Jsem ptáček s kiwi bříškem. Skáču do písmene L a přeskočím cokoli!",
+    "source": "fruit.knight:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "32944a1d22727904",
+    "text": "Klofnu!",
+    "say": "Klofnu!",
+    "source": "fruit.knight:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "d0444637637ff7c8",
+    "text": "Odletím do koruny…",
+    "say": "Odletím do koruny…",
+    "source": "fruit.knight:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "cc4ac3c613f98341",
+    "text": "Píp, hurá!",
+    "say": "Píp, hurá!",
+    "source": "fruit.knight:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "563f6b5cd0c9d620",
+    "text": "Ahoj, já jsem Banán Mudrc. Jsem dlouhý, žlutý a moudrý. Chodím jen šikmo.",
+    "say": "Ahoj, já jsem Banán Mudrc. Jsem dlouhý, žlutý a moudrý. Chodím jen šikmo.",
+    "source": "fruit.bishop:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "b20b28ace76c12d1",
+    "text": "Klouzavě!",
+    "say": "Klouzavě!",
+    "source": "fruit.bishop:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "9a253b1e460645f6",
+    "text": "Uklouzl jsem…",
+    "say": "Uklouzl jsem…",
+    "source": "fruit.bishop:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "01ccbb85a7b98f32",
+    "text": "Banánová výhra!",
+    "say": "Banánová výhra!",
+    "source": "fruit.bishop:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "90e95d5f9cbec80c",
+    "text": "Ahoj, já jsem Meloun Pevnůstka. Jsem meloun a nahoře mám hradby. Jezdím jen rovně.",
+    "say": "Ahoj, já jsem Meloun Pevnůstka. Jsem meloun a nahoře mám hradby. Jezdím jen rovně.",
+    "source": "fruit.rook:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "a8036653534e2225",
+    "text": "Kutálím se!",
+    "say": "Kutálím se!",
+    "source": "fruit.rook:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "58d4074d098d6b55",
+    "text": "Rozkrojili mě…",
+    "say": "Rozkrojili mě…",
+    "source": "fruit.rook:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "055ec8ea577e074d",
+    "text": "Mňam, hurá!",
+    "say": "Mňam, hurá!",
+    "source": "fruit.rook:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "8a607255fdaf1235",
+    "text": "Ahoj, já jsem Královna Granátka. Mám sukni z listů jako vějíř. Chodím rovně i šikmo, jak daleko chci!",
+    "say": "Ahoj, já jsem Královna Granátka. Mám sukni z listů jako vějíř. Chodím rovně i šikmo, jak daleko chci!",
+    "source": "fruit.queen:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "6e04758aa29a5625",
+    "text": "Šplouch!",
+    "say": "Šplouch!",
+    "source": "fruit.queen:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "983ca052c15b128b",
+    "text": "Ahoj, já jsem Král Ananas. Mám korunu z listů a banánové žezlo. Chodím jen o jedno políčko.",
+    "say": "Ahoj, já jsem Král Ananas. Mám korunu z listů a banánové žezlo. Chodím jen o jedno políčko.",
+    "source": "fruit.king:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "355642d4d33cf1da",
+    "text": "Šťavnatě vpřed!",
+    "say": "Šťavnatě vpřed!",
+    "source": "fruit.king:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "488fad4e2de92250",
+    "text": "Jdu se vychladit…",
+    "say": "Jdu se vychladit…",
+    "source": "fruit.king:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "562d24bce1a8e7de",
+    "text": "Ovocná sláva!",
+    "say": "Ovocná sláva!",
+    "source": "fruit.king:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "46fb4b2bc6a6ab22",
+    "text": "Ahoj, já jsem Hrášek. Jsem malý kulatý hrášek. Chodím jen dopředu a jednou budu královna!",
+    "say": "Ahoj, já jsem Hrášek. Jsem malý kulatý hrášek. Chodím jen dopředu a jednou budu královna!",
+    "source": "veggies.pawn:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "0fc029bf54858be2",
+    "text": "Zpátky do lusku…",
+    "say": "Zpátky do lusku…",
+    "source": "veggies.pawn:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "5b947aba67b02790",
+    "text": "Ahoj, já jsem Pálivý Koník. Jsem paprička, ale vypadám jako koník. Skáču do písmene L a přeskočím cokoli!",
+    "say": "Ahoj, já jsem Pálivý Koník. Jsem paprička, ale vypadám jako koník. Skáču do písmene L a přeskočím cokoli!",
+    "source": "veggies.knight:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "ae212d2ec5729a6c",
+    "text": "Pálí to!",
+    "say": "Pálí to!",
+    "source": "veggies.knight:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "adac0096d453eb41",
+    "text": "Uff, to pálilo…",
+    "say": "Uff, to pálilo…",
+    "source": "veggies.knight:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "cff1644a7ef37414",
+    "text": "Ohnivě vyhráno!",
+    "say": "Ohnivě vyhráno!",
+    "source": "veggies.knight:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "e4b16f84f230191d",
+    "text": "Ahoj, já jsem Mrkvička Dlouhánka. Jsem dlouhá mrkev s větvičkou. Chodím jen šikmo.",
+    "say": "Ahoj, já jsem Mrkvička Dlouhánka. Jsem dlouhá mrkev s větvičkou. Chodím jen šikmo.",
+    "source": "veggies.bishop:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "34cbe67b44d07c66",
+    "text": "Jdu zpátky do hlíny…",
+    "say": "Jdu zpátky do hlíny…",
+    "source": "veggies.bishop:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "03057fbbf5faf5f0",
+    "text": "Mrkvová výhra!",
+    "say": "Mrkvová výhra!",
+    "source": "veggies.bishop:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "556dd8692fc58efb",
+    "text": "Ahoj, já jsem Dýně Hradbička. Jsem velká dýně s hradbami. Jezdím jen rovně.",
+    "say": "Ahoj, já jsem Dýně Hradbička. Jsem velká dýně s hradbami. Jezdím jen rovně.",
+    "source": "veggies.rook:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "9225fc26f899cdec",
+    "text": "Jdu na pole…",
+    "say": "Jdu na pole…",
+    "source": "veggies.rook:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "122f944454438bf2",
+    "text": "Dýňová výhra!",
+    "say": "Dýňová výhra!",
+    "source": "veggies.rook:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "ad7d6ed790839ae5",
+    "text": "Ahoj, já jsem Královna Kukuřička. Mám zlaté vlasy z kukuřice. Chodím rovně i šikmo, jak daleko chci!",
+    "say": "Ahoj, já jsem Královna Kukuřička. Mám zlaté vlasy z kukuřice. Chodím rovně i šikmo, jak daleko chci!",
+    "source": "veggies.queen:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "20a024f294ae3d46",
+    "text": "Pop, pop!",
+    "say": "Pop, pop!",
+    "source": "veggies.queen:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "b7879a879e305b17",
+    "text": "Jdu se schovat do listů…",
+    "say": "Jdu se schovat do listů…",
+    "source": "veggies.queen:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "e802279b1c85a9c2",
+    "text": "Zlatá výhra!",
+    "say": "Zlatá výhra!",
+    "source": "veggies.queen:victory"
+  },
+  {
+    "lang": "cs",
+    "key": "48c82ab00e7ad5ba",
+    "text": "Ahoj, já jsem Král Brokolík. Mám zelenou hlavu a celerové žezlo. Chodím jen o jedno políčko.",
+    "say": "Ahoj, já jsem Král Brokolík. Mám zelenou hlavu a celerové žezlo. Chodím jen o jedno políčko.",
+    "source": "veggies.king:motto"
+  },
+  {
+    "lang": "cs",
+    "key": "68ac798ded6113f6",
+    "text": "Zdravě vpřed!",
+    "say": "Zdravě vpřed!",
+    "source": "veggies.king:attack"
+  },
+  {
+    "lang": "cs",
+    "key": "cc4e0a55adeb01c9",
+    "text": "Jdu do záhonu…",
+    "say": "Jdu do záhonu…",
+    "source": "veggies.king:defeat"
+  },
+  {
+    "lang": "cs",
+    "key": "928e5715ea263c00",
+    "text": "Zeleninová sláva!",
+    "say": "Zeleninová sláva!",
+    "source": "veggies.king:victory"
+  },
+  {
     "lang": "en",
     "key": "12532d83ae476166",
     "text": "Well done!",
@@ -3043,5 +4898,1874 @@
     "text": "Ha, lovely!",
     "say": "Ha, lovely!",
     "source": "witches.king:victory"
+  },
+  {
+    "lang": "en",
+    "key": "1ed852961121a0ad",
+    "text": "Hi, I'm Little Jack. I carry a bundle of buns for the road. I only walk forward, and one day I'll be a queen!",
+    "say": "Hi, I'm Little Jack. I carry a bundle of buns for the road. I only walk forward, and one day I'll be a queen!",
+    "source": "kingdom.pawn:motto"
+  },
+  {
+    "lang": "en",
+    "key": "365c0669312c0a2b",
+    "text": "Heave-ho!",
+    "say": "Heave-ho!",
+    "source": "kingdom.pawn:attack"
+  },
+  {
+    "lang": "en",
+    "key": "1b710b13407de855",
+    "text": "Going home to Mum…",
+    "say": "Going home to Mum…",
+    "source": "kingdom.pawn:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "9a07197eecb5de47",
+    "text": "Hi, I'm Goldmane. I have a golden mane and a red saddle. I jump in an L and hop over anything!",
+    "say": "Hi, I'm Goldmane. I have a golden mane and a red saddle. I jump in an L and hop over anything!",
+    "source": "kingdom.knight:motto"
+  },
+  {
+    "lang": "en",
+    "key": "1e6b3a3adb3e38ce",
+    "text": "Giddy-up!",
+    "say": "Giddy-up!",
+    "source": "kingdom.knight:attack"
+  },
+  {
+    "lang": "en",
+    "key": "c709dcd5035f0313",
+    "text": "Trotting to the stable…",
+    "say": "Trotting to the stable…",
+    "source": "kingdom.knight:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "ff9572bb6619bf8f",
+    "text": "Hi, I'm Grandpa Wisebeard. I know where every little path leads. I only go on the slant.",
+    "say": "Hi, I'm Grandpa Wisebeard. I know where every little path leads. I only go on the slant.",
+    "source": "kingdom.bishop:motto"
+  },
+  {
+    "lang": "en",
+    "key": "664eee4ebdb56460",
+    "text": "Hocus pocus!",
+    "say": "Hocus pocus!",
+    "source": "kingdom.bishop:attack"
+  },
+  {
+    "lang": "en",
+    "key": "7dff700f38cad5ba",
+    "text": "Time for a nap…",
+    "say": "Time for a nap…",
+    "source": "kingdom.bishop:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "a07a54c969992259",
+    "text": "Wisely done!",
+    "say": "Wisely done!",
+    "source": "kingdom.bishop:victory"
+  },
+  {
+    "lang": "en",
+    "key": "7bbdcbf4798ad787",
+    "text": "Hi, I'm Flagtop Tower. A little flag waves on my roof. I only go straight.",
+    "say": "Hi, I'm Flagtop Tower. A little flag waves on my roof. I only go straight.",
+    "source": "kingdom.rook:motto"
+  },
+  {
+    "lang": "en",
+    "key": "13c3c71d89e56e2a",
+    "text": "Bish, bash!",
+    "say": "Bish, bash!",
+    "source": "kingdom.rook:attack"
+  },
+  {
+    "lang": "en",
+    "key": "10451f6a4935c5d8",
+    "text": "Closing my gate…",
+    "say": "Closing my gate…",
+    "source": "kingdom.rook:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "238718f45b9d09dc",
+    "text": "My flag is waving!",
+    "say": "My flag is waving!",
+    "source": "kingdom.rook:victory"
+  },
+  {
+    "lang": "en",
+    "key": "20c238c3ea83f643",
+    "text": "Hi, I'm Princess Starlight. A golden star shines on my forehead. I go straight and slanted, as far as I like!",
+    "say": "Hi, I'm Princess Starlight. A golden star shines on my forehead. I go straight and slanted, as far as I like!",
+    "source": "kingdom.queen:motto"
+  },
+  {
+    "lang": "en",
+    "key": "7aeb0eba75032afb",
+    "text": "Starry sparkle!",
+    "say": "Starry sparkle!",
+    "source": "kingdom.queen:attack"
+  },
+  {
+    "lang": "en",
+    "key": "50b10cd469e933b0",
+    "text": "My star goes dim…",
+    "say": "My star goes dim…",
+    "source": "kingdom.queen:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "6cd231093a73963d",
+    "text": "I'm shining with joy!",
+    "say": "I'm shining with joy!",
+    "source": "kingdom.queen:victory"
+  },
+  {
+    "lang": "en",
+    "key": "b4f9f08e4a7f08cc",
+    "text": "Hi, I'm King Goldapple. I have a golden apple and a kind heart. I only step one square.",
+    "say": "Hi, I'm King Goldapple. I have a golden apple and a kind heart. I only step one square.",
+    "source": "kingdom.king:motto"
+  },
+  {
+    "lang": "en",
+    "key": "32392a4d9627cf7f",
+    "text": "Careful, but brave!",
+    "say": "Careful, but brave!",
+    "source": "kingdom.king:attack"
+  },
+  {
+    "lang": "en",
+    "key": "6a1be3a3cce774fb",
+    "text": "Off to eat my apple…",
+    "say": "Off to eat my apple…",
+    "source": "kingdom.king:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "79b336758ec7975e",
+    "text": "Hooray for the kingdom!",
+    "say": "Hooray for the kingdom!",
+    "source": "kingdom.king:victory"
+  },
+  {
+    "lang": "en",
+    "key": "134f56c3dfafb541",
+    "text": "Hi, I'm Forky. I have a tiny pitchfork and stick out my tongue. I only walk forward, and one day I'll be a queen!",
+    "say": "Hi, I'm Forky. I have a tiny pitchfork and stick out my tongue. I only walk forward, and one day I'll be a queen!",
+    "source": "devils.pawn:motto"
+  },
+  {
+    "lang": "en",
+    "key": "bd1ca12847feb54b",
+    "text": "Poke!",
+    "say": "Poke!",
+    "source": "devils.pawn:attack"
+  },
+  {
+    "lang": "en",
+    "key": "7e1b62306405bea5",
+    "text": "Running home for buns…",
+    "say": "Running home for buns…",
+    "source": "devils.pawn:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "8ef8fbdc4b9de6c5",
+    "text": "Bleh, I won!",
+    "say": "Bleh, I won!",
+    "source": "devils.pawn:victory"
+  },
+  {
+    "lang": "en",
+    "key": "b87b1d6c17317d09",
+    "text": "Hi, I'm Jingle Goat. I have a little bell and horns like pretzels. I jump in an L and hop over anything!",
+    "say": "Hi, I'm Jingle Goat. I have a little bell and horns like pretzels. I jump in an L and hop over anything!",
+    "source": "devils.knight:motto"
+  },
+  {
+    "lang": "en",
+    "key": "274b2b64c0579eb1",
+    "text": "Maa, hop!",
+    "say": "Maa, hop!",
+    "source": "devils.knight:attack"
+  },
+  {
+    "lang": "en",
+    "key": "d60a94af1ef05070",
+    "text": "Jingle-jingle!",
+    "say": "Jingle-jingle!",
+    "source": "devils.knight:victory"
+  },
+  {
+    "lang": "en",
+    "key": "73dac86806038bdd",
+    "text": "Hi, I'm Quill the Scribe. I write everything down with my quill. I only go on the slant.",
+    "say": "Hi, I'm Quill the Scribe. I write everything down with my quill. I only go on the slant.",
+    "source": "devils.bishop:motto"
+  },
+  {
+    "lang": "en",
+    "key": "097064e1687e42a8",
+    "text": "Scribble-scribble!",
+    "say": "Scribble-scribble!",
+    "source": "devils.bishop:attack"
+  },
+  {
+    "lang": "en",
+    "key": "924bb84af7ffee5d",
+    "text": "I'll write that down…",
+    "say": "I'll write that down…",
+    "source": "devils.bishop:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "3beb40a84115316c",
+    "text": "Done and signed!",
+    "say": "Done and signed!",
+    "source": "devils.bishop:victory"
+  },
+  {
+    "lang": "en",
+    "key": "7944ba26c19b2635",
+    "text": "Hi, I'm Bubbly Pot. I bubble and hiss and drive straight. I only go straight.",
+    "say": "Hi, I'm Bubbly Pot. I bubble and hiss and drive straight. I only go straight.",
+    "source": "devils.rook:motto"
+  },
+  {
+    "lang": "en",
+    "key": "ef1812253a262251",
+    "text": "Bubble-bubble!",
+    "say": "Bubble-bubble!",
+    "source": "devils.rook:attack"
+  },
+  {
+    "lang": "en",
+    "key": "b9b936f2ef877cde",
+    "text": "Out of steam…",
+    "say": "Out of steam…",
+    "source": "devils.rook:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "c79b630f3b5e6b27",
+    "text": "Hiss and bubble!",
+    "say": "Hiss and bubble!",
+    "source": "devils.rook:victory"
+  },
+  {
+    "lang": "en",
+    "key": "1098f585c8577dc0",
+    "text": "Hi, I'm Granny Ladle. With my ladle I cook the best stew. I go straight and slanted, as far as I like!",
+    "say": "Hi, I'm Granny Ladle. With my ladle I cook the best stew. I go straight and slanted, as far as I like!",
+    "source": "devils.queen:motto"
+  },
+  {
+    "lang": "en",
+    "key": "ecc9f58ab304a4a7",
+    "text": "Swish of the ladle!",
+    "say": "Swish of the ladle!",
+    "source": "devils.queen:attack"
+  },
+  {
+    "lang": "en",
+    "key": "a2458f121a0c5b26",
+    "text": "Off to stir the soup…",
+    "say": "Off to stir the soup…",
+    "source": "devils.queen:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "24f0c8b1e2258720",
+    "text": "Nailed it!",
+    "say": "Nailed it!",
+    "source": "devils.queen:victory"
+  },
+  {
+    "lang": "en",
+    "key": "fb793d5917d67a5f",
+    "text": "Hi, I'm King Grumblehorn. I have a big book and even bigger horns. I only step one square.",
+    "say": "Hi, I'm King Grumblehorn. I have a big book and even bigger horns. I only step one square.",
+    "source": "devils.king:motto"
+  },
+  {
+    "lang": "en",
+    "key": "7c67e78634753207",
+    "text": "Hot-foot hurry!",
+    "say": "Hot-foot hurry!",
+    "source": "devils.king:attack"
+  },
+  {
+    "lang": "en",
+    "key": "294f2b88fa2eb16e",
+    "text": "Off to warm up by the stove…",
+    "say": "Off to warm up by the stove…",
+    "source": "devils.king:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "950298b29ec434fe",
+    "text": "Ho-ho-ho!",
+    "say": "Ho-ho-ho!",
+    "source": "devils.king:victory"
+  },
+  {
+    "lang": "en",
+    "key": "11302d815810a155",
+    "text": "Hi, I'm Acorn. I wear an acorn cap and carry a leaf shield. I only walk forward, and one day I'll be a queen!",
+    "say": "Hi, I'm Acorn. I wear an acorn cap and carry a leaf shield. I only walk forward, and one day I'll be a queen!",
+    "source": "fairies_toy.pawn:motto"
+  },
+  {
+    "lang": "en",
+    "key": "0756f287095f3307",
+    "text": "Hiding under a leaf…",
+    "say": "Hiding under a leaf…",
+    "source": "fairies_toy.pawn:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "31b3901dfaa08e25",
+    "text": "Hi, I'm Rainbow Unicorn. I have a golden horn and a minty mane. I jump in an L and hop over anything!",
+    "say": "Hi, I'm Rainbow Unicorn. I have a golden horn and a minty mane. I jump in an L and hop over anything!",
+    "source": "fairies_toy.knight:motto"
+  },
+  {
+    "lang": "en",
+    "key": "64bd526677679236",
+    "text": "Rainbow jump!",
+    "say": "Rainbow jump!",
+    "source": "fairies_toy.knight:attack"
+  },
+  {
+    "lang": "en",
+    "key": "158aae6209da9abe",
+    "text": "Hi, I'm Lucy Firefly. My little lantern lights the way. I only go on the slant.",
+    "say": "Hi, I'm Lucy Firefly. My little lantern lights the way. I only go on the slant.",
+    "source": "fairies_toy.bishop:motto"
+  },
+  {
+    "lang": "en",
+    "key": "ae71536d9b04334d",
+    "text": "Blink, blink!",
+    "say": "Blink, blink!",
+    "source": "fairies_toy.bishop:attack"
+  },
+  {
+    "lang": "en",
+    "key": "546ebf73809abd5e",
+    "text": "Lights out…",
+    "say": "Lights out…",
+    "source": "fairies_toy.bishop:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "4109cc64fda9b849",
+    "text": "Glowing with joy!",
+    "say": "Glowing with joy!",
+    "source": "fairies_toy.bishop:victory"
+  },
+  {
+    "lang": "en",
+    "key": "29881321444489e5",
+    "text": "Hi, I'm Toadstool Cottage. I have a spotty roof and round windows. I only go straight.",
+    "say": "Hi, I'm Toadstool Cottage. I have a spotty roof and round windows. I only go straight.",
+    "source": "fairies_toy.rook:motto"
+  },
+  {
+    "lang": "en",
+    "key": "3dfa14d9c1d8c591",
+    "text": "Here I come!",
+    "say": "Here I come!",
+    "source": "fairies_toy.rook:attack"
+  },
+  {
+    "lang": "en",
+    "key": "1affca2f94f2c5e3",
+    "text": "Shutting my door…",
+    "say": "Shutting my door…",
+    "source": "fairies_toy.rook:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "a1a14a844db3b52e",
+    "text": "Home sweet win!",
+    "say": "Home sweet win!",
+    "source": "fairies_toy.rook:victory"
+  },
+  {
+    "lang": "en",
+    "key": "deddd3796df0e704",
+    "text": "Hi, I'm Dewdrop Queen. I have wings like a dragonfly. I go straight and slanted, as far as I like!",
+    "say": "Hi, I'm Dewdrop Queen. I have wings like a dragonfly. I go straight and slanted, as far as I like!",
+    "source": "fairies_toy.queen:motto"
+  },
+  {
+    "lang": "en",
+    "key": "edbdf7d09700dc83",
+    "text": "Zing, magic!",
+    "say": "Zing, magic!",
+    "source": "fairies_toy.queen:attack"
+  },
+  {
+    "lang": "en",
+    "key": "7166b0b03e084e89",
+    "text": "Flying off to a leaf…",
+    "say": "Flying off to a leaf…",
+    "source": "fairies_toy.queen:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "4061b46fb6259152",
+    "text": "Glitter and shine!",
+    "say": "Glitter and shine!",
+    "source": "fairies_toy.queen:victory"
+  },
+  {
+    "lang": "en",
+    "key": "1186350c401b2163",
+    "text": "Hi, I'm King Leafy. My crown is made of golden leaves. I only step one square.",
+    "say": "Hi, I'm King Leafy. My crown is made of golden leaves. I only step one square.",
+    "source": "fairies_toy.king:motto"
+  },
+  {
+    "lang": "en",
+    "key": "d3c14096a380f667",
+    "text": "Flower power!",
+    "say": "Flower power!",
+    "source": "fairies_toy.king:attack"
+  },
+  {
+    "lang": "en",
+    "key": "bd6140f8096ad232",
+    "text": "Off into the moss…",
+    "say": "Off into the moss…",
+    "source": "fairies_toy.king:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "99066d7842323430",
+    "text": "Hooray, forest!",
+    "say": "Hooray, forest!",
+    "source": "fairies_toy.king:victory"
+  },
+  {
+    "lang": "en",
+    "key": "b18aafa17015303c",
+    "text": "Hi, I'm Hattie Toad. I wear a tiny pointy hat. I only walk forward, and one day I'll be a queen!",
+    "say": "Hi, I'm Hattie Toad. I wear a tiny pointy hat. I only walk forward, and one day I'll be a queen!",
+    "source": "witches_toy.pawn:motto"
+  },
+  {
+    "lang": "en",
+    "key": "8c5491f45d7b00b0",
+    "text": "Ribbit, hop!",
+    "say": "Ribbit, hop!",
+    "source": "witches_toy.pawn:attack"
+  },
+  {
+    "lang": "en",
+    "key": "ffef094c3962f42b",
+    "text": "Into the puddle…",
+    "say": "Into the puddle…",
+    "source": "witches_toy.pawn:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "494356ed52d60f81",
+    "text": "Croak croak!",
+    "say": "Croak croak!",
+    "source": "witches_toy.pawn:victory"
+  },
+  {
+    "lang": "en",
+    "key": "b167a54dd01b5ea9",
+    "text": "Hi, I'm Smudge the Cat. I have green eyes and a pumpkin basket. I jump in an L and hop over anything!",
+    "say": "Hi, I'm Smudge the Cat. I have green eyes and a pumpkin basket. I jump in an L and hop over anything!",
+    "source": "witches_toy.knight:motto"
+  },
+  {
+    "lang": "en",
+    "key": "b9a4bbecc1426a23",
+    "text": "Meow, pounce!",
+    "say": "Meow, pounce!",
+    "source": "witches_toy.knight:attack"
+  },
+  {
+    "lang": "en",
+    "key": "89b51e6a395ebd19",
+    "text": "Off to nap by the fire…",
+    "say": "Off to nap by the fire…",
+    "source": "witches_toy.knight:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "ec4a1f1a9bfbbac0",
+    "text": "Purr-purr!",
+    "say": "Purr-purr!",
+    "source": "witches_toy.knight:victory"
+  },
+  {
+    "lang": "en",
+    "key": "28c6986f6dafcc58",
+    "text": "Hi, I'm Soupy the Seer. My little pot shows what will happen. I only go on the slant.",
+    "say": "Hi, I'm Soupy the Seer. My little pot shows what will happen. I only go on the slant.",
+    "source": "witches_toy.bishop:motto"
+  },
+  {
+    "lang": "en",
+    "key": "a2a282e67bc58d2f",
+    "text": "I see it!",
+    "say": "I see it!",
+    "source": "witches_toy.bishop:attack"
+  },
+  {
+    "lang": "en",
+    "key": "0e0ca637ddbfafe6",
+    "text": "Didn't see that coming…",
+    "say": "Didn't see that coming…",
+    "source": "witches_toy.bishop:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "c26a1bd4e110fded",
+    "text": "Told you so!",
+    "say": "Told you so!",
+    "source": "witches_toy.bishop:victory"
+  },
+  {
+    "lang": "en",
+    "key": "b0bcf93848ec586b",
+    "text": "Hi, I'm Gingerbread Cottage. I'm all gingerbread and sweets. I only go straight.",
+    "say": "Hi, I'm Gingerbread Cottage. I'm all gingerbread and sweets. I only go straight.",
+    "source": "witches_toy.rook:motto"
+  },
+  {
+    "lang": "en",
+    "key": "0a88501fad08cfc5",
+    "text": "Crunch!",
+    "say": "Crunch!",
+    "source": "witches_toy.rook:attack"
+  },
+  {
+    "lang": "en",
+    "key": "f3d35355450f6e42",
+    "text": "Someone took a bite…",
+    "say": "Someone took a bite…",
+    "source": "witches_toy.rook:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "fcbdb3314dd97d58",
+    "text": "Sweet win!",
+    "say": "Sweet win!",
+    "source": "witches_toy.rook:victory"
+  },
+  {
+    "lang": "en",
+    "key": "b3ad4746b5bea0af",
+    "text": "Hi, I'm Queen Broomie. I fly on my broom wherever I like. I go straight and slanted, as far as I like!",
+    "say": "Hi, I'm Queen Broomie. I fly on my broom wherever I like. I go straight and slanted, as far as I like!",
+    "source": "witches_toy.queen:motto"
+  },
+  {
+    "lang": "en",
+    "key": "6a5f4c110db6b031",
+    "text": "Whoosh, broom!",
+    "say": "Whoosh, broom!",
+    "source": "witches_toy.queen:attack"
+  },
+  {
+    "lang": "en",
+    "key": "2aba1d19771148d1",
+    "text": "My broom needs a rest…",
+    "say": "My broom needs a rest…",
+    "source": "witches_toy.queen:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "f19b0c986ca0f8ae",
+    "text": "Tee-hee-hee!",
+    "say": "Tee-hee-hee!",
+    "source": "witches_toy.queen:victory"
+  },
+  {
+    "lang": "en",
+    "key": "292f6bc4480501f0",
+    "text": "Hi, I'm Grumbledore. A raven sits on my shoulder and my staff is a root. I only step one square.",
+    "say": "Hi, I'm Grumbledore. A raven sits on my shoulder and my staff is a root. I only step one square.",
+    "source": "witches_toy.king:motto"
+  },
+  {
+    "lang": "en",
+    "key": "68a7d0f1d59fcb1c",
+    "text": "Abraca-grumble!",
+    "say": "Abraca-grumble!",
+    "source": "witches_toy.king:attack"
+  },
+  {
+    "lang": "en",
+    "key": "3acc093d6add9a3a",
+    "text": "Off to grumble in my tower…",
+    "say": "Off to grumble in my tower…",
+    "source": "witches_toy.king:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "ea26832d03173abf",
+    "text": "Caw, caw, hooray!",
+    "say": "Caw, caw, hooray!",
+    "source": "witches_toy.king:victory"
+  },
+  {
+    "lang": "en",
+    "key": "cc154293eb444858",
+    "text": "Hi, I'm Little Drop. I carry a little bucket of honey. I only walk forward, and one day I'll be a queen!",
+    "say": "Hi, I'm Little Drop. I carry a little bucket of honey. I only walk forward, and one day I'll be a queen!",
+    "source": "bees.pawn:motto"
+  },
+  {
+    "lang": "en",
+    "key": "180ce66cc97e3e0e",
+    "text": "Whoop!",
+    "say": "Whoop!",
+    "source": "bees.pawn:attack"
+  },
+  {
+    "lang": "en",
+    "key": "2020542ad9b3bb95",
+    "text": "Off for more honey…",
+    "say": "Off for more honey…",
+    "source": "bees.pawn:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "2cf1c6ce9dc4564b",
+    "text": "Hi, I'm Fuzzy Bumble. I'm round and soft as a pillow. I jump in an L and hop over anything!",
+    "say": "Hi, I'm Fuzzy Bumble. I'm round and soft as a pillow. I jump in an L and hop over anything!",
+    "source": "bees.knight:motto"
+  },
+  {
+    "lang": "en",
+    "key": "3adabac6bb6d59f2",
+    "text": "Brrrm, hop!",
+    "say": "Brrrm, hop!",
+    "source": "bees.knight:attack"
+  },
+  {
+    "lang": "en",
+    "key": "a4d43b1786bc3b56",
+    "text": "Off to sit on clover…",
+    "say": "Off to sit on clover…",
+    "source": "bees.knight:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "7db0e3c63ff8605b",
+    "text": "Buzzing with joy!",
+    "say": "Buzzing with joy!",
+    "source": "bees.knight:victory"
+  },
+  {
+    "lang": "en",
+    "key": "50c7d6115369df8c",
+    "text": "Hi, I'm Guard Stingette. I have a helmet and a long spear. I only go on the slant.",
+    "say": "Hi, I'm Guard Stingette. I have a helmet and a long spear. I only go on the slant.",
+    "source": "bees.bishop:motto"
+  },
+  {
+    "lang": "en",
+    "key": "b20d280801bf4cfd",
+    "text": "Zap!",
+    "say": "Zap!",
+    "source": "bees.bishop:attack"
+  },
+  {
+    "lang": "en",
+    "key": "dc03a6d3cbab6073",
+    "text": "Back to guard the hive…",
+    "say": "Back to guard the hive…",
+    "source": "bees.bishop:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "b7f86547420e1ac6",
+    "text": "The guard wins!",
+    "say": "The guard wins!",
+    "source": "bees.bishop:victory"
+  },
+  {
+    "lang": "en",
+    "key": "f6a24c107ffe0032",
+    "text": "Hi, I'm Hivey. I'm a hive full of honey. I only go straight.",
+    "say": "Hi, I'm Hivey. I'm a hive full of honey. I only go straight.",
+    "source": "bees.rook:motto"
+  },
+  {
+    "lang": "en",
+    "key": "dabf4e84bf55ab40",
+    "text": "Bonk, honey!",
+    "say": "Bonk, honey!",
+    "source": "bees.rook:attack"
+  },
+  {
+    "lang": "en",
+    "key": "f15b1deadedf69d7",
+    "text": "Closing my door…",
+    "say": "Closing my door…",
+    "source": "bees.rook:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "60a58180f4895464",
+    "text": "Sweet!",
+    "say": "Sweet!",
+    "source": "bees.rook:victory"
+  },
+  {
+    "lang": "en",
+    "key": "0abd9e83da47d2f2",
+    "text": "Hi, I'm Queen Honeycomb. I have four wings and a honeycomb crown. I go straight and slanted, as far as I like!",
+    "say": "Hi, I'm Queen Honeycomb. I have four wings and a honeycomb crown. I go straight and slanted, as far as I like!",
+    "source": "bees.queen:motto"
+  },
+  {
+    "lang": "en",
+    "key": "02edb97f43e947a3",
+    "text": "Bzzzoom!",
+    "say": "Bzzzoom!",
+    "source": "bees.queen:attack"
+  },
+  {
+    "lang": "en",
+    "key": "93cbefd952af1009",
+    "text": "Off to a flower…",
+    "say": "Off to a flower…",
+    "source": "bees.queen:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "bcb920b610139392",
+    "text": "Buzz, hooray!",
+    "say": "Buzz, hooray!",
+    "source": "bees.queen:victory"
+  },
+  {
+    "lang": "en",
+    "key": "b87936cd459276b1",
+    "text": "Hi, I'm King Honeycake. I have a honey dipper and a golden crown. I only step one square.",
+    "say": "Hi, I'm King Honeycake. I have a honey dipper and a golden crown. I only step one square.",
+    "source": "bees.king:motto"
+  },
+  {
+    "lang": "en",
+    "key": "9c0657808b904eef",
+    "text": "Buzz, forward!",
+    "say": "Buzz, forward!",
+    "source": "bees.king:attack"
+  },
+  {
+    "lang": "en",
+    "key": "e5bd9830ac00b2ce",
+    "text": "Back to the hive…",
+    "say": "Back to the hive…",
+    "source": "bees.king:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "281cbed63ae312cb",
+    "text": "Sweet as honey!",
+    "say": "Sweet as honey!",
+    "source": "bees.king:victory"
+  },
+  {
+    "lang": "en",
+    "key": "9ca79af6a5964fd2",
+    "text": "Hi, I'm Pin the Wasp. I have a tiny helmet and a pin sword. I only walk forward, and one day I'll be a queen!",
+    "say": "Hi, I'm Pin the Wasp. I have a tiny helmet and a pin sword. I only walk forward, and one day I'll be a queen!",
+    "source": "hornets.pawn:motto"
+  },
+  {
+    "lang": "en",
+    "key": "deff793471ef273b",
+    "text": "Back to the nest…",
+    "say": "Back to the nest…",
+    "source": "hornets.pawn:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "ea6a57b0b705ddac",
+    "text": "Buzz, yippee!",
+    "say": "Buzz, yippee!",
+    "source": "hornets.pawn:victory"
+  },
+  {
+    "lang": "en",
+    "key": "3ba60985ffa354fa",
+    "text": "Hi, I'm Darty Dragonfly. I fly like a turquoise dart. I jump in an L and hop over anything!",
+    "say": "Hi, I'm Darty Dragonfly. I fly like a turquoise dart. I jump in an L and hop over anything!",
+    "source": "hornets.knight:motto"
+  },
+  {
+    "lang": "en",
+    "key": "ea4c1fe1f6f959b0",
+    "text": "Whoosh, hop!",
+    "say": "Whoosh, hop!",
+    "source": "hornets.knight:attack"
+  },
+  {
+    "lang": "en",
+    "key": "6ae1d25dba455e13",
+    "text": "Zip and done!",
+    "say": "Zip and done!",
+    "source": "hornets.knight:victory"
+  },
+  {
+    "lang": "en",
+    "key": "0c798f6c712b4309",
+    "text": "Hi, I'm Archer Wasp. I have a pointy cap and a long staff. I only go on the slant.",
+    "say": "Hi, I'm Archer Wasp. I have a pointy cap and a long staff. I only go on the slant.",
+    "source": "hornets.bishop:motto"
+  },
+  {
+    "lang": "en",
+    "key": "b82c19068056e7ff",
+    "text": "Bullseye!",
+    "say": "Bullseye!",
+    "source": "hornets.bishop:attack"
+  },
+  {
+    "lang": "en",
+    "key": "a07656935a95f1be",
+    "text": "Missed…",
+    "say": "Missed…",
+    "source": "hornets.bishop:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "17a39256b18b8395",
+    "text": "Right in the middle!",
+    "say": "Right in the middle!",
+    "source": "hornets.bishop:victory"
+  },
+  {
+    "lang": "en",
+    "key": "e68deb7065cd9eeb",
+    "text": "Hi, I'm Grumpy Nest. I'm a paper nest and I always frown. I only go straight.",
+    "say": "Hi, I'm Grumpy Nest. I'm a paper nest and I always frown. I only go straight.",
+    "source": "hornets.rook:motto"
+  },
+  {
+    "lang": "en",
+    "key": "2875698278424fc4",
+    "text": "Grr, bonk!",
+    "say": "Grr, bonk!",
+    "source": "hornets.rook:attack"
+  },
+  {
+    "lang": "en",
+    "key": "b3c11b6dd82188a7",
+    "text": "Hmph, fine…",
+    "say": "Hmph, fine…",
+    "source": "hornets.rook:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "2e282bb28746fd0b",
+    "text": "Well, look at that!",
+    "say": "Well, look at that!",
+    "source": "hornets.rook:victory"
+  },
+  {
+    "lang": "en",
+    "key": "8f036b1a0121883a",
+    "text": "Hi, I'm Queen Fanwing. My turquoise wings open like a fan. I go straight and slanted, as far as I like!",
+    "say": "Hi, I'm Queen Fanwing. My turquoise wings open like a fan. I go straight and slanted, as far as I like!",
+    "source": "hornets.queen:motto"
+  },
+  {
+    "lang": "en",
+    "key": "3e01797313efcb8d",
+    "text": "Flying off to rest…",
+    "say": "Flying off to rest…",
+    "source": "hornets.queen:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "6fbdf58513424a11",
+    "text": "Buzz, I won!",
+    "say": "Buzz, I won!",
+    "source": "hornets.queen:victory"
+  },
+  {
+    "lang": "en",
+    "key": "cd4b05190cbcaab4",
+    "text": "Hi, I'm King Spikejaw. I have a spiky crown and a thorn scepter. I only step one square.",
+    "say": "Hi, I'm King Spikejaw. I have a spiky crown and a thorn scepter. I only step one square.",
+    "source": "hornets.king:motto"
+  },
+  {
+    "lang": "en",
+    "key": "69ea950160f5b147",
+    "text": "Bzzzt, forward!",
+    "say": "Bzzzt, forward!",
+    "source": "hornets.king:attack"
+  },
+  {
+    "lang": "en",
+    "key": "0e951aed84a0b089",
+    "text": "Hornet glory!",
+    "say": "Hornet glory!",
+    "source": "hornets.king:victory"
+  },
+  {
+    "lang": "en",
+    "key": "df9cf5e3f518ebe4",
+    "text": "Hi, I'm Peekaboo Egg. I just hatched from my egg. I only walk forward, and one day I'll be a queen!",
+    "say": "Hi, I'm Peekaboo Egg. I just hatched from my egg. I only walk forward, and one day I'll be a queen!",
+    "source": "dinos.pawn:motto"
+  },
+  {
+    "lang": "en",
+    "key": "85f31aa34881c93f",
+    "text": "Peekaboo!",
+    "say": "Peekaboo!",
+    "source": "dinos.pawn:attack"
+  },
+  {
+    "lang": "en",
+    "key": "140183cea9b625b8",
+    "text": "Back into my shell…",
+    "say": "Back into my shell…",
+    "source": "dinos.pawn:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "2c64750cc9430ac1",
+    "text": "Hi, I'm Hoppy Raptor. I'm quick and jump the highest. I jump in an L and hop over anything!",
+    "say": "Hi, I'm Hoppy Raptor. I'm quick and jump the highest. I jump in an L and hop over anything!",
+    "source": "dinos.knight:motto"
+  },
+  {
+    "lang": "en",
+    "key": "a997644bfad286a8",
+    "text": "Leap!",
+    "say": "Leap!",
+    "source": "dinos.knight:attack"
+  },
+  {
+    "lang": "en",
+    "key": "34ccb3b2792cafdf",
+    "text": "Running away…",
+    "say": "Running away…",
+    "source": "dinos.knight:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "cc855e73dc7d14ad",
+    "text": "Hop-hop, hooray!",
+    "say": "Hop-hop, hooray!",
+    "source": "dinos.knight:victory"
+  },
+  {
+    "lang": "en",
+    "key": "e073ef2ed47d30e7",
+    "text": "Hi, I'm Longneck Bracky. I have the longest neck and see far away. I only go on the slant.",
+    "say": "Hi, I'm Longneck Bracky. I have the longest neck and see far away. I only go on the slant.",
+    "source": "dinos.bishop:motto"
+  },
+  {
+    "lang": "en",
+    "key": "1e198b0f2b709f6c",
+    "text": "Big stretch!",
+    "say": "Big stretch!",
+    "source": "dinos.bishop:attack"
+  },
+  {
+    "lang": "en",
+    "key": "598bfdd47154cace",
+    "text": "Off to munch the trees…",
+    "say": "Off to munch the trees…",
+    "source": "dinos.bishop:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "a53bf5067d20d530",
+    "text": "I see a win!",
+    "say": "I see a win!",
+    "source": "dinos.bishop:victory"
+  },
+  {
+    "lang": "en",
+    "key": "4756e6d222058546",
+    "text": "Hi, I'm Trike. I have three horns and a big frill. I only go straight.",
+    "say": "Hi, I'm Trike. I have three horns and a big frill. I only go straight.",
+    "source": "dinos.rook:motto"
+  },
+  {
+    "lang": "en",
+    "key": "d7a141c2201966c1",
+    "text": "Stomp stomp!",
+    "say": "Stomp stomp!",
+    "source": "dinos.rook:attack"
+  },
+  {
+    "lang": "en",
+    "key": "e6a39330acdf2e35",
+    "text": "Off to roll in the mud…",
+    "say": "Off to roll in the mud…",
+    "source": "dinos.rook:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "9c56137746704666",
+    "text": "Stomp, I won!",
+    "say": "Stomp, I won!",
+    "source": "dinos.rook:victory"
+  },
+  {
+    "lang": "en",
+    "key": "1ae1ab566998e7a5",
+    "text": "Hi, I'm Queen Ptera. I spread my wings and fly over the volcano. I go straight and slanted, as far as I like!",
+    "say": "Hi, I'm Queen Ptera. I spread my wings and fly over the volcano. I go straight and slanted, as far as I like!",
+    "source": "dinos.queen:motto"
+  },
+  {
+    "lang": "en",
+    "key": "dffadad9655aee94",
+    "text": "Swoosh, dive!",
+    "say": "Swoosh, dive!",
+    "source": "dinos.queen:attack"
+  },
+  {
+    "lang": "en",
+    "key": "b797c30a58e9be2f",
+    "text": "Flying to my nest…",
+    "say": "Flying to my nest…",
+    "source": "dinos.queen:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "479f9c2c3882c72c",
+    "text": "Kraa, hooray!",
+    "say": "Kraa, hooray!",
+    "source": "dinos.queen:victory"
+  },
+  {
+    "lang": "en",
+    "key": "42c89636136f0ffc",
+    "text": "Hi, I'm King Rexy. I'm big but kind, with a fern scepter. I only step one square.",
+    "say": "Hi, I'm King Rexy. I'm big but kind, with a fern scepter. I only step one square.",
+    "source": "dinos.king:motto"
+  },
+  {
+    "lang": "en",
+    "key": "958e0adaef40d4d6",
+    "text": "Rawwwr!",
+    "say": "Rawwwr!",
+    "source": "dinos.king:attack"
+  },
+  {
+    "lang": "en",
+    "key": "22a41bdfefb4d0f0",
+    "text": "Napping under the ferns…",
+    "say": "Napping under the ferns…",
+    "source": "dinos.king:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "513ef1dbde76bc8d",
+    "text": "Dino-hooray!",
+    "say": "Dino-hooray!",
+    "source": "dinos.king:victory"
+  },
+  {
+    "lang": "en",
+    "key": "4f4347e0cfb1e606",
+    "text": "Hi, I'm Little Tusk. I'm a little mammoth with fluffy fur. I only walk forward, and one day I'll be a queen!",
+    "say": "Hi, I'm Little Tusk. I'm a little mammoth with fluffy fur. I only walk forward, and one day I'll be a queen!",
+    "source": "iceage.pawn:motto"
+  },
+  {
+    "lang": "en",
+    "key": "7ff195c9c5eab5c9",
+    "text": "Toot!",
+    "say": "Toot!",
+    "source": "iceage.pawn:attack"
+  },
+  {
+    "lang": "en",
+    "key": "10c6b3c9442b85c8",
+    "text": "Off to Mum…",
+    "say": "Off to Mum…",
+    "source": "iceage.pawn:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "c9ce915da34aa031",
+    "text": "Hi, I'm Sabre Tiger. I have two long teeth and stripes. I jump in an L and hop over anything!",
+    "say": "Hi, I'm Sabre Tiger. I have two long teeth and stripes. I jump in an L and hop over anything!",
+    "source": "iceage.knight:motto"
+  },
+  {
+    "lang": "en",
+    "key": "ac9f1d729c7c9b2c",
+    "text": "Rawr, pounce!",
+    "say": "Rawr, pounce!",
+    "source": "iceage.knight:attack"
+  },
+  {
+    "lang": "en",
+    "key": "5f90bc6af2bce6dd",
+    "text": "Into my cave…",
+    "say": "Into my cave…",
+    "source": "iceage.knight:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "7286c6b18a755e87",
+    "text": "Purring with joy!",
+    "say": "Purring with joy!",
+    "source": "iceage.knight:victory"
+  },
+  {
+    "lang": "en",
+    "key": "a8e6e19e004911bb",
+    "text": "Hi, I'm Slowpoke Sloth. I'm slow but clever, with an icy branch. I only go on the slant.",
+    "say": "Hi, I'm Slowpoke Sloth. I'm slow but clever, with an icy branch. I only go on the slant.",
+    "source": "iceage.bishop:motto"
+  },
+  {
+    "lang": "en",
+    "key": "990b7a700da3640c",
+    "text": "Slowly… hop!",
+    "say": "Slowly… hop!",
+    "source": "iceage.bishop:attack"
+  },
+  {
+    "lang": "en",
+    "key": "d8030455adaafa64",
+    "text": "Off to hang in a tree…",
+    "say": "Off to hang in a tree…",
+    "source": "iceage.bishop:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "954ed244667e2fa4",
+    "text": "Slow and steady!",
+    "say": "Slow and steady!",
+    "source": "iceage.bishop:victory"
+  },
+  {
+    "lang": "en",
+    "key": "594819738c49f307",
+    "text": "Hi, I'm Snowy Rhino. I have a shaggy coat and a big horn. I only go straight.",
+    "say": "Hi, I'm Snowy Rhino. I have a shaggy coat and a big horn. I only go straight.",
+    "source": "iceage.rook:motto"
+  },
+  {
+    "lang": "en",
+    "key": "9b49c4b3ad6a21ba",
+    "text": "Charge!",
+    "say": "Charge!",
+    "source": "iceage.rook:attack"
+  },
+  {
+    "lang": "en",
+    "key": "6013e42fdd246f66",
+    "text": "Lying down in the snow…",
+    "say": "Lying down in the snow…",
+    "source": "iceage.rook:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "b0c675a343b6d5c3",
+    "text": "Huff, I won!",
+    "say": "Huff, I won!",
+    "source": "iceage.rook:victory"
+  },
+  {
+    "lang": "en",
+    "key": "ce2a1be04863c563",
+    "text": "Hi, I'm Queen Antlera. My huge antlers spread like a fan. I go straight and slanted, as far as I like!",
+    "say": "Hi, I'm Queen Antlera. My huge antlers spread like a fan. I go straight and slanted, as far as I like!",
+    "source": "iceage.queen:motto"
+  },
+  {
+    "lang": "en",
+    "key": "4e2ea4f8ceb32bcb",
+    "text": "Leap over snow!",
+    "say": "Leap over snow!",
+    "source": "iceage.queen:attack"
+  },
+  {
+    "lang": "en",
+    "key": "186201171f1e1f8c",
+    "text": "Off to the woods…",
+    "say": "Off to the woods…",
+    "source": "iceage.queen:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "35f9fb34817788ef",
+    "text": "Snowy win!",
+    "say": "Snowy win!",
+    "source": "iceage.queen:victory"
+  },
+  {
+    "lang": "en",
+    "key": "0de3ac9cf3a17121",
+    "text": "Hi, I'm King Woolly. I have an icicle crown and long tusks. I only step one square.",
+    "say": "Hi, I'm King Woolly. I have an icicle crown and long tusks. I only step one square.",
+    "source": "iceage.king:motto"
+  },
+  {
+    "lang": "en",
+    "key": "4eba9773d24cd9b6",
+    "text": "Toot-toot!",
+    "say": "Toot-toot!",
+    "source": "iceage.king:attack"
+  },
+  {
+    "lang": "en",
+    "key": "e472a5e544219e75",
+    "text": "Off to warm up…",
+    "say": "Off to warm up…",
+    "source": "iceage.king:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "7749e9a39fe38988",
+    "text": "Mammoth hooray!",
+    "say": "Mammoth hooray!",
+    "source": "iceage.king:victory"
+  },
+  {
+    "lang": "en",
+    "key": "d5ed1b94633b768f",
+    "text": "Hi, I'm Kitty Yarn. I play with my ball of yarn. I only walk forward, and one day I'll be a queen!",
+    "say": "Hi, I'm Kitty Yarn. I play with my ball of yarn. I only walk forward, and one day I'll be a queen!",
+    "source": "cats.pawn:motto"
+  },
+  {
+    "lang": "en",
+    "key": "41c3dfd84a5a7032",
+    "text": "Pat!",
+    "say": "Pat!",
+    "source": "cats.pawn:attack"
+  },
+  {
+    "lang": "en",
+    "key": "99dc4fbbbab25176",
+    "text": "My yarn got tangled…",
+    "say": "My yarn got tangled…",
+    "source": "cats.pawn:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "acff4bdfc681eff7",
+    "text": "Meow, yippee!",
+    "say": "Meow, yippee!",
+    "source": "cats.pawn:victory"
+  },
+  {
+    "lang": "en",
+    "key": "b48f6f1b7680316a",
+    "text": "Hi, I'm Zoomy Cat. I ride a robot vacuum. I jump in an L and hop over anything!",
+    "say": "Hi, I'm Zoomy Cat. I ride a robot vacuum. I jump in an L and hop over anything!",
+    "source": "cats.knight:motto"
+  },
+  {
+    "lang": "en",
+    "key": "ad7a507ffbc14223",
+    "text": "Vroom, jump!",
+    "say": "Vroom, jump!",
+    "source": "cats.knight:attack"
+  },
+  {
+    "lang": "en",
+    "key": "b4efa84467c53d8d",
+    "text": "My vacuum ran out…",
+    "say": "My vacuum ran out…",
+    "source": "cats.knight:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "2b3901c506621b0d",
+    "text": "Vroom, hooray!",
+    "say": "Vroom, hooray!",
+    "source": "cats.knight:victory"
+  },
+  {
+    "lang": "en",
+    "key": "f93633b5946114aa",
+    "text": "Hi, I'm Sage Whiskers. I have no fur, but lots of wisdom. I only go on the slant.",
+    "say": "Hi, I'm Sage Whiskers. I have no fur, but lots of wisdom. I only go on the slant.",
+    "source": "cats.bishop:motto"
+  },
+  {
+    "lang": "en",
+    "key": "6a8d28e8b81e49c3",
+    "text": "Yarn magic!",
+    "say": "Yarn magic!",
+    "source": "cats.bishop:attack"
+  },
+  {
+    "lang": "en",
+    "key": "770d287e38f7e39d",
+    "text": "Off to think…",
+    "say": "Off to think…",
+    "source": "cats.bishop:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "7688e6474d5373f3",
+    "text": "Wise move!",
+    "say": "Wise move!",
+    "source": "cats.bishop:victory"
+  },
+  {
+    "lang": "en",
+    "key": "dfa75b00c80f9804",
+    "text": "Hi, I'm Scratchy Tower. I'm a scratching tower with a kitten on top. I only go straight.",
+    "say": "Hi, I'm Scratchy Tower. I'm a scratching tower with a kitten on top. I only go straight.",
+    "source": "cats.rook:motto"
+  },
+  {
+    "lang": "en",
+    "key": "6170980a53fda68e",
+    "text": "Scratch!",
+    "say": "Scratch!",
+    "source": "cats.rook:attack"
+  },
+  {
+    "lang": "en",
+    "key": "c6e628e1770aea1e",
+    "text": "The kitten fell asleep…",
+    "say": "The kitten fell asleep…",
+    "source": "cats.rook:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "537d1f856c1e5cd9",
+    "text": "Meow, hooray!",
+    "say": "Meow, hooray!",
+    "source": "cats.rook:victory"
+  },
+  {
+    "lang": "en",
+    "key": "96bcd371ef127e7e",
+    "text": "Hi, I'm Queen Siamy. My tail curls like a fan. I go straight and slanted, as far as I like!",
+    "say": "Hi, I'm Queen Siamy. My tail curls like a fan. I go straight and slanted, as far as I like!",
+    "source": "cats.queen:motto"
+  },
+  {
+    "lang": "en",
+    "key": "a56d8db7778c40ba",
+    "text": "Meeow!",
+    "say": "Meeow!",
+    "source": "cats.queen:attack"
+  },
+  {
+    "lang": "en",
+    "key": "0419a34318557b21",
+    "text": "Off to wash my paws…",
+    "say": "Off to wash my paws…",
+    "source": "cats.queen:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "a1df85c33aa9a554",
+    "text": "An elegant win!",
+    "say": "An elegant win!",
+    "source": "cats.queen:victory"
+  },
+  {
+    "lang": "en",
+    "key": "17c57789de78ef77",
+    "text": "Hi, I'm King Fluffmane. I have a mane, a crown and a bell scepter. I only step one square.",
+    "say": "Hi, I'm King Fluffmane. I have a mane, a crown and a bell scepter. I only step one square.",
+    "source": "cats.king:motto"
+  },
+  {
+    "lang": "en",
+    "key": "57d66070c002a7aa",
+    "text": "Meow, forward!",
+    "say": "Meow, forward!",
+    "source": "cats.king:attack"
+  },
+  {
+    "lang": "en",
+    "key": "55e799a6e0815d9f",
+    "text": "Napping on a cushion…",
+    "say": "Napping on a cushion…",
+    "source": "cats.king:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "2f7bea1e197c7844",
+    "text": "Hi, I'm Puppy Bone. I carry a bone in my mouth. I only walk forward, and one day I'll be a queen!",
+    "say": "Hi, I'm Puppy Bone. I carry a bone in my mouth. I only walk forward, and one day I'll be a queen!",
+    "source": "dogs.pawn:motto"
+  },
+  {
+    "lang": "en",
+    "key": "f1954b338fd69ba5",
+    "text": "Yip!",
+    "say": "Yip!",
+    "source": "dogs.pawn:attack"
+  },
+  {
+    "lang": "en",
+    "key": "e5382192656129b0",
+    "text": "Off to bury my bone…",
+    "say": "Off to bury my bone…",
+    "source": "dogs.pawn:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "457532c39343aa61",
+    "text": "Wag wag!",
+    "say": "Wag wag!",
+    "source": "dogs.pawn:victory"
+  },
+  {
+    "lang": "en",
+    "key": "b8b23f734a7b5f58",
+    "text": "Hi, I'm Jumpy Terrier. I jump high for my ball. I jump in an L and hop over anything!",
+    "say": "Hi, I'm Jumpy Terrier. I jump high for my ball. I jump in an L and hop over anything!",
+    "source": "dogs.knight:motto"
+  },
+  {
+    "lang": "en",
+    "key": "97ae012e62c7f45a",
+    "text": "Fetch!",
+    "say": "Fetch!",
+    "source": "dogs.knight:attack"
+  },
+  {
+    "lang": "en",
+    "key": "e415cd35cca057f2",
+    "text": "Off to find my ball…",
+    "say": "Off to find my ball…",
+    "source": "dogs.knight:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "8297bb17c6aa1537",
+    "text": "Got it!",
+    "say": "Got it!",
+    "source": "dogs.knight:victory"
+  },
+  {
+    "lang": "en",
+    "key": "baa295ef69d620ff",
+    "text": "Hi, I'm Messenger Greyhound. I carry messages fast and slanted. I only go on the slant.",
+    "say": "Hi, I'm Messenger Greyhound. I carry messages fast and slanted. I only go on the slant.",
+    "source": "dogs.bishop:motto"
+  },
+  {
+    "lang": "en",
+    "key": "a051c10715710ebb",
+    "text": "Special delivery!",
+    "say": "Special delivery!",
+    "source": "dogs.bishop:attack"
+  },
+  {
+    "lang": "en",
+    "key": "f38ef077fe7d628f",
+    "text": "Lost my message…",
+    "say": "Lost my message…",
+    "source": "dogs.bishop:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "e24d2379d4c205b6",
+    "text": "Delivered!",
+    "say": "Delivered!",
+    "source": "dogs.bishop:victory"
+  },
+  {
+    "lang": "en",
+    "key": "84f3aa024430ba9b",
+    "text": "Hi, I'm Bonehouse. I'm a doghouse and a puppy lives inside. I only go straight.",
+    "say": "Hi, I'm Bonehouse. I'm a doghouse and a puppy lives inside. I only go straight.",
+    "source": "dogs.rook:motto"
+  },
+  {
+    "lang": "en",
+    "key": "07e5ffec8d76c729",
+    "text": "Bonk, woof!",
+    "say": "Bonk, woof!",
+    "source": "dogs.rook:attack"
+  },
+  {
+    "lang": "en",
+    "key": "81056f77fc2e801d",
+    "text": "The puppy fell asleep…",
+    "say": "The puppy fell asleep…",
+    "source": "dogs.rook:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "ba201495c0eda615",
+    "text": "Woof, hooray!",
+    "say": "Woof, hooray!",
+    "source": "dogs.rook:victory"
+  },
+  {
+    "lang": "en",
+    "key": "8bda9dde851f8b6d",
+    "text": "Hi, I'm Queen Silky. I have long silky ears. I go straight and slanted, as far as I like!",
+    "say": "Hi, I'm Queen Silky. I have long silky ears. I go straight and slanted, as far as I like!",
+    "source": "dogs.queen:motto"
+  },
+  {
+    "lang": "en",
+    "key": "b4e5c73b5feb5250",
+    "text": "Woof and hop!",
+    "say": "Woof and hop!",
+    "source": "dogs.queen:attack"
+  },
+  {
+    "lang": "en",
+    "key": "c560b13ad3eb90a2",
+    "text": "Off to brush my fur…",
+    "say": "Off to brush my fur…",
+    "source": "dogs.queen:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "2acc9a8c3b63c36a",
+    "text": "Beautifully done!",
+    "say": "Beautifully done!",
+    "source": "dogs.queen:victory"
+  },
+  {
+    "lang": "en",
+    "key": "4b1140d7c16105f6",
+    "text": "Hi, I'm King Bernard. I have a barrel, a crown and a bone scepter. I only step one square.",
+    "say": "Hi, I'm King Bernard. I have a barrel, a crown and a bone scepter. I only step one square.",
+    "source": "dogs.king:motto"
+  },
+  {
+    "lang": "en",
+    "key": "1d3eed1474f88a5d",
+    "text": "Woof, forward!",
+    "say": "Woof, forward!",
+    "source": "dogs.king:attack"
+  },
+  {
+    "lang": "en",
+    "key": "41c6390392cb302f",
+    "text": "Lying down by my house…",
+    "say": "Lying down by my house…",
+    "source": "dogs.king:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "ad76b0c18313be78",
+    "text": "Woof-woof, hooray!",
+    "say": "Woof-woof, hooray!",
+    "source": "dogs.king:victory"
+  },
+  {
+    "lang": "en",
+    "key": "221f3800946db6fe",
+    "text": "Hi, I'm Peachy. I wear a blueberry on my head. I only walk forward, and one day I'll be a queen!",
+    "say": "Hi, I'm Peachy. I wear a blueberry on my head. I only walk forward, and one day I'll be a queen!",
+    "source": "fruit.pawn:motto"
+  },
+  {
+    "lang": "en",
+    "key": "bd234a44fc6755ae",
+    "text": "Tap!",
+    "say": "Tap!",
+    "source": "fruit.pawn:attack"
+  },
+  {
+    "lang": "en",
+    "key": "8b53ce856f7f4bfd",
+    "text": "Into the basket…",
+    "say": "Into the basket…",
+    "source": "fruit.pawn:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "3764bc5a5d3fbba5",
+    "text": "Hi, I'm Kiwi Beak. I'm a bird with a kiwi tummy. I jump in an L and hop over anything!",
+    "say": "Hi, I'm Kiwi Beak. I'm a bird with a kiwi tummy. I jump in an L and hop over anything!",
+    "source": "fruit.knight:motto"
+  },
+  {
+    "lang": "en",
+    "key": "441037348752f8b4",
+    "text": "Peck!",
+    "say": "Peck!",
+    "source": "fruit.knight:attack"
+  },
+  {
+    "lang": "en",
+    "key": "1914fe14c26f881e",
+    "text": "Off to the treetop…",
+    "say": "Off to the treetop…",
+    "source": "fruit.knight:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "701225daa85f73b1",
+    "text": "Tweet, hooray!",
+    "say": "Tweet, hooray!",
+    "source": "fruit.knight:victory"
+  },
+  {
+    "lang": "en",
+    "key": "beab2c9102c7a1e3",
+    "text": "Hi, I'm Banana Sage. I'm long, yellow and wise. I only go on the slant.",
+    "say": "Hi, I'm Banana Sage. I'm long, yellow and wise. I only go on the slant.",
+    "source": "fruit.bishop:motto"
+  },
+  {
+    "lang": "en",
+    "key": "d76abd13e6b3eea7",
+    "text": "Slippery!",
+    "say": "Slippery!",
+    "source": "fruit.bishop:attack"
+  },
+  {
+    "lang": "en",
+    "key": "f31be71bc27b90c0",
+    "text": "I slipped…",
+    "say": "I slipped…",
+    "source": "fruit.bishop:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "100293a49f1a7798",
+    "text": "Banana win!",
+    "say": "Banana win!",
+    "source": "fruit.bishop:victory"
+  },
+  {
+    "lang": "en",
+    "key": "6fccaf701849d45a",
+    "text": "Hi, I'm Melon Fort. I'm a melon with walls on top. I only go straight.",
+    "say": "Hi, I'm Melon Fort. I'm a melon with walls on top. I only go straight.",
+    "source": "fruit.rook:motto"
+  },
+  {
+    "lang": "en",
+    "key": "cca44ad37fd468b0",
+    "text": "Rolling in!",
+    "say": "Rolling in!",
+    "source": "fruit.rook:attack"
+  },
+  {
+    "lang": "en",
+    "key": "5ce21360e3b4f280",
+    "text": "I got sliced…",
+    "say": "I got sliced…",
+    "source": "fruit.rook:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "5a7d6b5c934a2146",
+    "text": "Yum, hooray!",
+    "say": "Yum, hooray!",
+    "source": "fruit.rook:victory"
+  },
+  {
+    "lang": "en",
+    "key": "237c4e9f8fb9abc5",
+    "text": "Hi, I'm Queen Pomegranate. My leafy skirt spreads like a fan. I go straight and slanted, as far as I like!",
+    "say": "Hi, I'm Queen Pomegranate. My leafy skirt spreads like a fan. I go straight and slanted, as far as I like!",
+    "source": "fruit.queen:motto"
+  },
+  {
+    "lang": "en",
+    "key": "15b3c681608b0b3b",
+    "text": "Splash!",
+    "say": "Splash!",
+    "source": "fruit.queen:attack"
+  },
+  {
+    "lang": "en",
+    "key": "d491eecd978d8241",
+    "text": "Hi, I'm King Pineapple. I have a leafy crown and a banana scepter. I only step one square.",
+    "say": "Hi, I'm King Pineapple. I have a leafy crown and a banana scepter. I only step one square.",
+    "source": "fruit.king:motto"
+  },
+  {
+    "lang": "en",
+    "key": "43471bc5dcaef4a7",
+    "text": "Juicy charge!",
+    "say": "Juicy charge!",
+    "source": "fruit.king:attack"
+  },
+  {
+    "lang": "en",
+    "key": "e13362b5a4d9d0ca",
+    "text": "Off to cool down…",
+    "say": "Off to cool down…",
+    "source": "fruit.king:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "4194d35490ceaf12",
+    "text": "Fruity glory!",
+    "say": "Fruity glory!",
+    "source": "fruit.king:victory"
+  },
+  {
+    "lang": "en",
+    "key": "6eafe2fa3e365162",
+    "text": "Hi, I'm Little Pea. I'm a little round pea. I only walk forward, and one day I'll be a queen!",
+    "say": "Hi, I'm Little Pea. I'm a little round pea. I only walk forward, and one day I'll be a queen!",
+    "source": "veggies.pawn:motto"
+  },
+  {
+    "lang": "en",
+    "key": "fbee4ee34316a683",
+    "text": "Roll!",
+    "say": "Roll!",
+    "source": "veggies.pawn:attack"
+  },
+  {
+    "lang": "en",
+    "key": "3eb7bcda5727eaad",
+    "text": "Back in my pod…",
+    "say": "Back in my pod…",
+    "source": "veggies.pawn:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "cc296fb248aff9be",
+    "text": "Hi, I'm Chili Pony. I'm a chili pepper shaped like a pony. I jump in an L and hop over anything!",
+    "say": "Hi, I'm Chili Pony. I'm a chili pepper shaped like a pony. I jump in an L and hop over anything!",
+    "source": "veggies.knight:motto"
+  },
+  {
+    "lang": "en",
+    "key": "5527c55312b2ae81",
+    "text": "Hot hot!",
+    "say": "Hot hot!",
+    "source": "veggies.knight:attack"
+  },
+  {
+    "lang": "en",
+    "key": "6fe6fe43de13ebe5",
+    "text": "Phew, that was spicy…",
+    "say": "Phew, that was spicy…",
+    "source": "veggies.knight:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "1ca3d71d21453843",
+    "text": "A fiery win!",
+    "say": "A fiery win!",
+    "source": "veggies.knight:victory"
+  },
+  {
+    "lang": "en",
+    "key": "3163bb383c3eab59",
+    "text": "Hi, I'm Lanky Carrot. I'm a tall carrot with a twig. I only go on the slant.",
+    "say": "Hi, I'm Lanky Carrot. I'm a tall carrot with a twig. I only go on the slant.",
+    "source": "veggies.bishop:motto"
+  },
+  {
+    "lang": "en",
+    "key": "19503398bc488c1e",
+    "text": "Back into the soil…",
+    "say": "Back into the soil…",
+    "source": "veggies.bishop:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "8451933c5470b472",
+    "text": "Carrot win!",
+    "say": "Carrot win!",
+    "source": "veggies.bishop:victory"
+  },
+  {
+    "lang": "en",
+    "key": "0a2c08da6aebea17",
+    "text": "Hi, I'm Pumpkin Keep. I'm a big pumpkin with castle walls. I only go straight.",
+    "say": "Hi, I'm Pumpkin Keep. I'm a big pumpkin with castle walls. I only go straight.",
+    "source": "veggies.rook:motto"
+  },
+  {
+    "lang": "en",
+    "key": "f83167cdbe8a0be2",
+    "text": "Back to the field…",
+    "say": "Back to the field…",
+    "source": "veggies.rook:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "a144cc10c4026fde",
+    "text": "Pumpkin win!",
+    "say": "Pumpkin win!",
+    "source": "veggies.rook:victory"
+  },
+  {
+    "lang": "en",
+    "key": "624ed9365576c2b1",
+    "text": "Hi, I'm Queen Cornsilk. I have golden corn-silk hair. I go straight and slanted, as far as I like!",
+    "say": "Hi, I'm Queen Cornsilk. I have golden corn-silk hair. I go straight and slanted, as far as I like!",
+    "source": "veggies.queen:motto"
+  },
+  {
+    "lang": "en",
+    "key": "20a024f294ae3d46",
+    "text": "Pop, pop!",
+    "say": "Pop, pop!",
+    "source": "veggies.queen:attack"
+  },
+  {
+    "lang": "en",
+    "key": "02e8883719749115",
+    "text": "Hiding in my husk…",
+    "say": "Hiding in my husk…",
+    "source": "veggies.queen:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "3f05ee9f4ef80a9f",
+    "text": "Golden win!",
+    "say": "Golden win!",
+    "source": "veggies.queen:victory"
+  },
+  {
+    "lang": "en",
+    "key": "a64e55f66c0a7b1c",
+    "text": "Hi, I'm King Broccoli. I have a green head and a celery scepter. I only step one square.",
+    "say": "Hi, I'm King Broccoli. I have a green head and a celery scepter. I only step one square.",
+    "source": "veggies.king:motto"
+  },
+  {
+    "lang": "en",
+    "key": "fb97d2d6e0379721",
+    "text": "Healthy charge!",
+    "say": "Healthy charge!",
+    "source": "veggies.king:attack"
+  },
+  {
+    "lang": "en",
+    "key": "faf4acbdcf9dd793",
+    "text": "Back to my bed…",
+    "say": "Back to my bed…",
+    "source": "veggies.king:defeat"
+  },
+  {
+    "lang": "en",
+    "key": "8df7e6d6416db5ae",
+    "text": "Veggie glory!",
+    "say": "Veggie glory!",
+    "source": "veggies.king:victory"
   }
 ]

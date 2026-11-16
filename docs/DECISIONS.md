@@ -49,6 +49,17 @@
     characters are mirrored to face my side. Battles use the same sprites over the
     defender's arena (drawn under the game so it fills any screen shape).
     Map islands 1–6 show my army's character, the rest a sticker icon.
+16. **Twelve more armies from Archion** (`Prompts/04-HANDOFF-archion-armies.md`):
+    kingdom, devils, bees, hornets, dinos, iceage, cats, dogs, fruit, veggies, plus
+    Archion's fairies/witches as costumes `fairies_toy` / `witches_toy` next to the
+    M2 armies (Olin's choice). Qwen-Image vinyl-toy renders, no baked outline, height
+    by piece type (king 1.00 … pawn 0.58). `tool/art/import_archion.py` copies them:
+    `sprites/` (with the low base, board) and `stand/` (base cut off, arena; the
+    battle prefers it when bundled). **WebP q90** instead of PNG: 5× smaller and no
+    visible loss; 256-colour PNG dithers the faces. Arenas: soft 3D toy dioramas
+    (`tool/art/arenas_archion.json`) to match the renders. Names, mottos and battle
+    lines are original (cs + en); `test/armies_test.dart` checks every folder.
+    The picker shows one list with a "mine / rival" switch (14 armies).
 
 ## Open questions for Ol1n (PLAN §8 + BATTLES §7) — with recommendations
 
@@ -72,5 +83,8 @@
 - Parent zone + parent gate, settings (battles on/off, language).
 - Module tournaments + diploma.
 - Battle poses (B2): attack / defeat / victory frames per character; consistency needs a reference method that is licence-clean (IP-Adapter on SDXL base, or a LoRA) — flux Kontext is non-commercial.
+- Archion armies: battle poses (attack / hit / victory) — `pose_gen.py` prompts are for the flat sticker style, the vinyl renders need their own style line.
+- Archion armies: bees, fruit and part of dinos are the same little figure in costumes, told apart mainly by height — kid test, maybe re-generate SUBJECT with a prop.
+- Monetisation (PLAN §6: two armies free, the rest as packs): all 14 armies are open for now, no IAP yet — Olin decides.
 - Kid test: can she tell the pieces apart at board size (fairy pawn vs queen are both pink)?
 - SFX/music.

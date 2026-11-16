@@ -1,0 +1,167 @@
+{
+  "id": "devils",
+  "name": {
+    "cs": "Čertíci",
+    "en": "Little Devils"
+  },
+  "arena": "arena.jpg",
+  "palette": {
+    "primary": "#FF8A3D",
+    "accent": "#FFD23F",
+    "dark": "#4A2A1A"
+  },
+  "pieces": {
+    "king": {
+      "sprite": "sprites/king.webp",
+      "name": {
+        "cs": "Čertí král Bručoun",
+        "en": "King Grumblehorn"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Čertí král Bručoun. Mám velkou knihu a ještě větší rohy. Chodím jen o jedno políčko.",
+        "en": "Hi, I'm King Grumblehorn. I have a big book and even bigger horns. I only step one square."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Pekelně rychle!",
+          "en": "Hot-foot hurry!"
+        },
+        "defeat": {
+          "cs": "Jdu se ohřát ke kamnům…",
+          "en": "Off to warm up by the stove…"
+        },
+        "victory": {
+          "cs": "Hohohó!",
+          "en": "Ho-ho-ho!"
+        }
+      }
+    },
+    "queen": {
+      "sprite": "sprites/queen.webp",
+      "name": {
+        "cs": "Babička Vařečka",
+        "en": "Granny Ladle"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Babička Vařečka. S vařečkou uvařím nejlepší guláš. Chodím rovně i šikmo, jak daleko chci!",
+        "en": "Hi, I'm Granny Ladle. With my ladle I cook the best stew. I go straight and slanted, as far as I like!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Mávnu vařečkou!",
+          "en": "Swish of the ladle!"
+        },
+        "defeat": {
+          "cs": "Jdu zamíchat polívku…",
+          "en": "Off to stir the soup…"
+        },
+        "victory": {
+          "cs": "To se mi povedlo!",
+          "en": "Nailed it!"
+        }
+      }
+    },
+    "rook": {
+      "sprite": "sprites/rook.webp",
+      "name": {
+        "cs": "Kotlík Bublinka",
+        "en": "Bubbly Pot"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Kotlík Bublinka. Bublám, syčím a jezdím rovně. Jezdím jen rovně.",
+        "en": "Hi, I'm Bubbly Pot. I bubble and hiss and drive straight. I only go straight."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Bubli-bubli!",
+          "en": "Bubble-bubble!"
+        },
+        "defeat": {
+          "cs": "Pára mi došla…",
+          "en": "Out of steam…"
+        },
+        "victory": {
+          "cs": "Syčí a bublá!",
+          "en": "Hiss and bubble!"
+        }
+      }
+    },
+    "bishop": {
+      "sprite": "sprites/bishop.webp",
+      "name": {
+        "cs": "Písař Brko",
+        "en": "Quill the Scribe"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Písař Brko. Všechno si zapíšu brkem do pytle. Chodím jen šikmo.",
+        "en": "Hi, I'm Quill the Scribe. I write everything down with my quill. I only go on the slant."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Čmáry čmáry!",
+          "en": "Scribble-scribble!"
+        },
+        "defeat": {
+          "cs": "Zapíšu si to…",
+          "en": "I'll write that down…"
+        },
+        "victory": {
+          "cs": "Hotovo, podepsáno!",
+          "en": "Done and signed!"
+        }
+      }
+    },
+    "knight": {
+      "sprite": "sprites/knight.webp",
+      "name": {
+        "cs": "Kozlík Zvoneček",
+        "en": "Jingle Goat"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Kozlík Zvoneček. Mám zvoneček a rohy jako preclík. Skáču do písmene L a přeskočím cokoli!",
+        "en": "Hi, I'm Jingle Goat. I have a little bell and horns like pretzels. I jump in an L and hop over anything!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Mééé, hop!",
+          "en": "Maa, hop!"
+        },
+        "defeat": {
+          "cs": "Jdu se napást…",
+          "en": "Off to graze…"
+        },
+        "victory": {
+          "cs": "Cinky-cink!",
+          "en": "Jingle-jingle!"
+        }
+      }
+    },
+    "pawn": {
+      "sprite": "sprites/pawn.webp",
+      "name": {
+        "cs": "Čertík Vidlička",
+        "en": "Forky"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Čertík Vidlička. Mám malé vidle a vyplazený jazýček. Chodím jen dopředu a jednou budu královna!",
+        "en": "Hi, I'm Forky. I have a tiny pitchfork and stick out my tongue. I only walk forward, and one day I'll be a queen!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Píchnu tě!",
+          "en": "Poke!"
+        },
+        "defeat": {
+          "cs": "Utíkám do pekla na buchty…",
+          "en": "Running home for buns…"
+        },
+        "victory": {
+          "cs": "Bleee, vyhrál jsem!",
+          "en": "Bleh, I won!"
+        }
+      }
+    }
+  },
+  "battle_overrides": {},
+  "board_skin": null
+}

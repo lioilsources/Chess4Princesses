@@ -1,0 +1,167 @@
+{
+  "id": "kingdom",
+  "name": {
+    "cs": "Království",
+    "en": "Kingdom"
+  },
+  "arena": "arena.jpg",
+  "palette": {
+    "primary": "#8FD3F4",
+    "accent": "#FFD45C",
+    "dark": "#1F4E8C"
+  },
+  "pieces": {
+    "king": {
+      "sprite": "sprites/king.webp",
+      "name": {
+        "cs": "Král Jablíčko",
+        "en": "King Goldapple"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Král Jablíčko. Mám zlaté jablko a laskavé srdce. Chodím jen o jedno políčko.",
+        "en": "Hi, I'm King Goldapple. I have a golden apple and a kind heart. I only step one square."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Opatrně, ale statečně!",
+          "en": "Careful, but brave!"
+        },
+        "defeat": {
+          "cs": "Jdu si sníst jablíčko…",
+          "en": "Off to eat my apple…"
+        },
+        "victory": {
+          "cs": "Sláva království!",
+          "en": "Hooray for the kingdom!"
+        }
+      }
+    },
+    "queen": {
+      "sprite": "sprites/queen.webp",
+      "name": {
+        "cs": "Princezna Hvězdička",
+        "en": "Princess Starlight"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Princezna Hvězdička. Na čele mi svítí zlatá hvězda. Chodím rovně i šikmo, jak daleko chci!",
+        "en": "Hi, I'm Princess Starlight. A golden star shines on my forehead. I go straight and slanted, as far as I like!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Hvězdný třpyt!",
+          "en": "Starry sparkle!"
+        },
+        "defeat": {
+          "cs": "Hvězdička zhasíná…",
+          "en": "My star goes dim…"
+        },
+        "victory": {
+          "cs": "Svítím radostí!",
+          "en": "I'm shining with joy!"
+        }
+      }
+    },
+    "rook": {
+      "sprite": "sprites/rook.webp",
+      "name": {
+        "cs": "Věž Praporka",
+        "en": "Flagtop Tower"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Věž Praporka. Na střeše mi vlaje praporek. Jezdím jen rovně.",
+        "en": "Hi, I'm Flagtop Tower. A little flag waves on my roof. I only go straight."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Bum, bác!",
+          "en": "Bish, bash!"
+        },
+        "defeat": {
+          "cs": "Zavírám bránu…",
+          "en": "Closing my gate…"
+        },
+        "victory": {
+          "cs": "Praporek vlaje!",
+          "en": "My flag is waving!"
+        }
+      }
+    },
+    "bishop": {
+      "sprite": "sprites/bishop.webp",
+      "name": {
+        "cs": "Dědeček Moudrovous",
+        "en": "Grandpa Wisebeard"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Dědeček Moudrovous. Vím, kudy vede každá cestička. Chodím jen šikmo.",
+        "en": "Hi, I'm Grandpa Wisebeard. I know where every little path leads. I only go on the slant."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Hokus pokus!",
+          "en": "Hocus pocus!"
+        },
+        "defeat": {
+          "cs": "Jdu si zdřímnout…",
+          "en": "Time for a nap…"
+        },
+        "victory": {
+          "cs": "Moudře vymyšleno!",
+          "en": "Wisely done!"
+        }
+      }
+    },
+    "knight": {
+      "sprite": "sprites/knight.webp",
+      "name": {
+        "cs": "Koník Zlatohřívek",
+        "en": "Goldmane"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Koník Zlatohřívek. Mám zlatou hřívu a rudé sedlo. Skáču do písmene L a přeskočím cokoli!",
+        "en": "Hi, I'm Goldmane. I have a golden mane and a red saddle. I jump in an L and hop over anything!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Hyjé!",
+          "en": "Giddy-up!"
+        },
+        "defeat": {
+          "cs": "Cválám do stáje…",
+          "en": "Trotting to the stable…"
+        },
+        "victory": {
+          "cs": "Íha-há!",
+          "en": "Yee-haw!"
+        }
+      }
+    },
+    "pawn": {
+      "sprite": "sprites/pawn.webp",
+      "name": {
+        "cs": "Honzík",
+        "en": "Little Jack"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Honzík. Nesu si uzlíček buchet na cestu. Chodím jen dopředu a jednou budu královna!",
+        "en": "Hi, I'm Little Jack. I carry a bundle of buns for the road. I only walk forward, and one day I'll be a queen!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Hej rup!",
+          "en": "Heave-ho!"
+        },
+        "defeat": {
+          "cs": "Jdu domů k mamince…",
+          "en": "Going home to Mum…"
+        },
+        "victory": {
+          "cs": "Jupí!",
+          "en": "Yippee!"
+        }
+      }
+    }
+  },
+  "battle_overrides": {},
+  "board_skin": null
+}

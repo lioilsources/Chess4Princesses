@@ -1,0 +1,167 @@
+{
+  "id": "veggies",
+  "name": {
+    "cs": "Zelenina",
+    "en": "Veggies"
+  },
+  "arena": "arena.jpg",
+  "palette": {
+    "primary": "#8BD450",
+    "accent": "#B07CD8",
+    "dark": "#3A4A1E"
+  },
+  "pieces": {
+    "king": {
+      "sprite": "sprites/king.webp",
+      "name": {
+        "cs": "Král Brokolík",
+        "en": "King Broccoli"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Král Brokolík. Mám zelenou hlavu a celerové žezlo. Chodím jen o jedno políčko.",
+        "en": "Hi, I'm King Broccoli. I have a green head and a celery scepter. I only step one square."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Zdravě vpřed!",
+          "en": "Healthy charge!"
+        },
+        "defeat": {
+          "cs": "Jdu do záhonu…",
+          "en": "Back to my bed…"
+        },
+        "victory": {
+          "cs": "Zeleninová sláva!",
+          "en": "Veggie glory!"
+        }
+      }
+    },
+    "queen": {
+      "sprite": "sprites/queen.webp",
+      "name": {
+        "cs": "Královna Kukuřička",
+        "en": "Queen Cornsilk"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Královna Kukuřička. Mám zlaté vlasy z kukuřice. Chodím rovně i šikmo, jak daleko chci!",
+        "en": "Hi, I'm Queen Cornsilk. I have golden corn-silk hair. I go straight and slanted, as far as I like!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Pop, pop!",
+          "en": "Pop, pop!"
+        },
+        "defeat": {
+          "cs": "Jdu se schovat do listů…",
+          "en": "Hiding in my husk…"
+        },
+        "victory": {
+          "cs": "Zlatá výhra!",
+          "en": "Golden win!"
+        }
+      }
+    },
+    "rook": {
+      "sprite": "sprites/rook.webp",
+      "name": {
+        "cs": "Dýně Hradbička",
+        "en": "Pumpkin Keep"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Dýně Hradbička. Jsem velká dýně s hradbami. Jezdím jen rovně.",
+        "en": "Hi, I'm Pumpkin Keep. I'm a big pumpkin with castle walls. I only go straight."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Kutálím se!",
+          "en": "Rolling in!"
+        },
+        "defeat": {
+          "cs": "Jdu na pole…",
+          "en": "Back to the field…"
+        },
+        "victory": {
+          "cs": "Dýňová výhra!",
+          "en": "Pumpkin win!"
+        }
+      }
+    },
+    "bishop": {
+      "sprite": "sprites/bishop.webp",
+      "name": {
+        "cs": "Mrkvička Dlouhánka",
+        "en": "Lanky Carrot"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Mrkvička Dlouhánka. Jsem dlouhá mrkev s větvičkou. Chodím jen šikmo.",
+        "en": "Hi, I'm Lanky Carrot. I'm a tall carrot with a twig. I only go on the slant."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Křup!",
+          "en": "Crunch!"
+        },
+        "defeat": {
+          "cs": "Jdu zpátky do hlíny…",
+          "en": "Back into the soil…"
+        },
+        "victory": {
+          "cs": "Mrkvová výhra!",
+          "en": "Carrot win!"
+        }
+      }
+    },
+    "knight": {
+      "sprite": "sprites/knight.webp",
+      "name": {
+        "cs": "Pálivý Koník",
+        "en": "Chili Pony"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Pálivý Koník. Jsem paprička, ale vypadám jako koník. Skáču do písmene L a přeskočím cokoli!",
+        "en": "Hi, I'm Chili Pony. I'm a chili pepper shaped like a pony. I jump in an L and hop over anything!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Pálí to!",
+          "en": "Hot hot!"
+        },
+        "defeat": {
+          "cs": "Uff, to pálilo…",
+          "en": "Phew, that was spicy…"
+        },
+        "victory": {
+          "cs": "Ohnivě vyhráno!",
+          "en": "A fiery win!"
+        }
+      }
+    },
+    "pawn": {
+      "sprite": "sprites/pawn.webp",
+      "name": {
+        "cs": "Hrášek",
+        "en": "Little Pea"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Hrášek. Jsem malý kulatý hrášek. Chodím jen dopředu a jednou budu královna!",
+        "en": "Hi, I'm Little Pea. I'm a little round pea. I only walk forward, and one day I'll be a queen!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Kutálím se!",
+          "en": "Roll!"
+        },
+        "defeat": {
+          "cs": "Zpátky do lusku…",
+          "en": "Back in my pod…"
+        },
+        "victory": {
+          "cs": "Jupí!",
+          "en": "Yippee!"
+        }
+      }
+    }
+  },
+  "battle_overrides": {},
+  "board_skin": null
+}

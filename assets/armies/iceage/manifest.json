@@ -1,0 +1,167 @@
+{
+  "id": "iceage",
+  "name": {
+    "cs": "Doba ledová",
+    "en": "Ice Age"
+  },
+  "arena": "arena.jpg",
+  "palette": {
+    "primary": "#A8DDF5",
+    "accent": "#FFFFFF",
+    "dark": "#3E2A1C"
+  },
+  "pieces": {
+    "king": {
+      "sprite": "sprites/king.webp",
+      "name": {
+        "cs": "Mamut Chlupáč",
+        "en": "King Woolly"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Mamut Chlupáč. Mám korunu z rampouchů a dlouhé kly. Chodím jen o jedno políčko.",
+        "en": "Hi, I'm King Woolly. I have an icicle crown and long tusks. I only step one square."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Trúúú!",
+          "en": "Toot-toot!"
+        },
+        "defeat": {
+          "cs": "Jdu se zahřát…",
+          "en": "Off to warm up…"
+        },
+        "victory": {
+          "cs": "Mamutí hurá!",
+          "en": "Mammoth hooray!"
+        }
+      }
+    },
+    "queen": {
+      "sprite": "sprites/queen.webp",
+      "name": {
+        "cs": "Jelenice Parohatka",
+        "en": "Queen Antlera"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Jelenice Parohatka. Mám obří paroží jako vějíř. Chodím rovně i šikmo, jak daleko chci!",
+        "en": "Hi, I'm Queen Antlera. My huge antlers spread like a fan. I go straight and slanted, as far as I like!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Skok přes sníh!",
+          "en": "Leap over snow!"
+        },
+        "defeat": {
+          "cs": "Jdu do lesa…",
+          "en": "Off to the woods…"
+        },
+        "victory": {
+          "cs": "Sněhová výhra!",
+          "en": "Snowy win!"
+        }
+      }
+    },
+    "rook": {
+      "sprite": "sprites/rook.webp",
+      "name": {
+        "cs": "Nosorožec Sněhulák",
+        "en": "Snowy Rhino"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Nosorožec Sněhulák. Mám chlupatý kožich a velký roh. Jezdím jen rovně.",
+        "en": "Hi, I'm Snowy Rhino. I have a shaggy coat and a big horn. I only go straight."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Bác do toho!",
+          "en": "Charge!"
+        },
+        "defeat": {
+          "cs": "Lehnu si do závěje…",
+          "en": "Lying down in the snow…"
+        },
+        "victory": {
+          "cs": "Funí a vyhrál!",
+          "en": "Huff, I won!"
+        }
+      }
+    },
+    "bishop": {
+      "sprite": "sprites/bishop.webp",
+      "name": {
+        "cs": "Lenochod Pomalina",
+        "en": "Slowpoke Sloth"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Lenochod Pomalina. Jsem pomalý, ale chytrý, a mám ledovou větev. Chodím jen šikmo.",
+        "en": "Hi, I'm Slowpoke Sloth. I'm slow but clever, with an icy branch. I only go on the slant."
+      },
+      "lines": {
+        "attack": {
+          "cs": "Pomaličku… hop!",
+          "en": "Slowly… hop!"
+        },
+        "defeat": {
+          "cs": "Jdu si pověsit na strom…",
+          "en": "Off to hang in a tree…"
+        },
+        "victory": {
+          "cs": "Pomalu, ale jistě!",
+          "en": "Slow and steady!"
+        }
+      }
+    },
+    "knight": {
+      "sprite": "sprites/knight.webp",
+      "name": {
+        "cs": "Tygr Šavlozub",
+        "en": "Sabre Tiger"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Tygr Šavlozub. Mám dva dlouhé zuby a pruhy. Skáču do písmene L a přeskočím cokoli!",
+        "en": "Hi, I'm Sabre Tiger. I have two long teeth and stripes. I jump in an L and hop over anything!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Mňááu, skok!",
+          "en": "Rawr, pounce!"
+        },
+        "defeat": {
+          "cs": "Jdu se schovat do jeskyně…",
+          "en": "Into my cave…"
+        },
+        "victory": {
+          "cs": "Předu radostí!",
+          "en": "Purring with joy!"
+        }
+      }
+    },
+    "pawn": {
+      "sprite": "sprites/pawn.webp",
+      "name": {
+        "cs": "Mamútek",
+        "en": "Little Tusk"
+      },
+      "motto": {
+        "cs": "Ahoj, já jsem Mamútek. Jsem malý mamut s chlupatým kožíškem. Chodím jen dopředu a jednou budu královna!",
+        "en": "Hi, I'm Little Tusk. I'm a little mammoth with fluffy fur. I only walk forward, and one day I'll be a queen!"
+      },
+      "lines": {
+        "attack": {
+          "cs": "Trúú!",
+          "en": "Toot!"
+        },
+        "defeat": {
+          "cs": "Jdu za mamkou…",
+          "en": "Off to Mum…"
+        },
+        "victory": {
+          "cs": "Jupí!",
+          "en": "Yippee!"
+        }
+      }
+    }
+  },
+  "battle_overrides": {},
+  "board_skin": null
+}
