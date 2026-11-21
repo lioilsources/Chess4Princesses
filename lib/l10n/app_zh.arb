@@ -27,5 +27,22 @@
   "rivalArmy": "对手",
   "battleDemo": "试玩战斗",
   "taskOf": "任务 {n}/{total}",
-  "opponentThinking": "机器人在思考…"
+  "opponentThinking": "机器人在思考…",
+  "hallTitle": "名人堂",
+  "hallFamous": "著名的棋局",
+  "replayCheck": "将军！",
+  "replayMate": "将死！",
+  "replayCastle": "国王躲进了城堡！",
+  "replaySacrifice": "勇敢的牺牲！",
+  "replayEndMate": "将死！战斗赢啦。",
+  "replayEndResign": "国王鞠了一躬，交出了王冠。战斗结束！",
+  "replayEndDraw": "和棋！两位国王握手了。",
+  "replayEndUnfinished": "这场战斗还在进行中。",
+  "replayPlay": "播放",
+  "replayPause": "暂停",
+  "replayNextBattle": "下一场战斗",
+  "replayChronicle": "战斗记录",
+  "replayStepBack": "上一步",
+  "replayStepForward": "下一步",
+  "replayMoveOf": "第 {n} 步，共 {total} 步"
 }

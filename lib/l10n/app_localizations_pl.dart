@@ -101,4 +101,58 @@ class AppLocalizationsPl extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Robocik myśli…';
+
+  @override
+  String get hallTitle => 'Sala sław';
+
+  @override
+  String get hallFamous => 'Słynne partie';
+
+  @override
+  String get replayCheck => 'Szach!';
+
+  @override
+  String get replayMate => 'Mat!';
+
+  @override
+  String get replayCastle => 'Król schował się w zamku!';
+
+  @override
+  String get replaySacrifice => 'Odważna ofiara!';
+
+  @override
+  String get replayEndMate => 'Mat! Bitwa wygrana.';
+
+  @override
+  String get replayEndResign =>
+      'Król ukłonił się i oddał koronę. Koniec bitwy!';
+
+  @override
+  String get replayEndDraw => 'Remis! Obaj królowie podali sobie ręce.';
+
+  @override
+  String get replayEndUnfinished => 'Ta bitwa jeszcze trwa.';
+
+  @override
+  String get replayPlay => 'Odtwórz';
+
+  @override
+  String get replayPause => 'Pauza';
+
+  @override
+  String get replayNextBattle => 'Następna bitwa';
+
+  @override
+  String get replayChronicle => 'Kronika';
+
+  @override
+  String get replayStepBack => 'Ruch wstecz';
+
+  @override
+  String get replayStepForward => 'Ruch naprzód';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Ruch $n z $total';
+  }
 }

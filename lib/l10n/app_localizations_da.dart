@@ -101,4 +101,58 @@ class AppLocalizationsDa extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Den lille robot tænker…';
+
+  @override
+  String get hallTitle => 'Berømmelsens hal';
+
+  @override
+  String get hallFamous => 'Berømte partier';
+
+  @override
+  String get replayCheck => 'Skak!';
+
+  @override
+  String get replayMate => 'Skakmat!';
+
+  @override
+  String get replayCastle => 'Kongen gemmer sig i slottet!';
+
+  @override
+  String get replaySacrifice => 'Et modigt offer!';
+
+  @override
+  String get replayEndMate => 'Skakmat! Kampen er vundet.';
+
+  @override
+  String get replayEndResign =>
+      'Kongen bukker og rækker sin krone frem. Kampen er slut!';
+
+  @override
+  String get replayEndDraw => 'Uafgjort! De to konger giver hinanden hånden.';
+
+  @override
+  String get replayEndUnfinished => 'Den her kamp er ikke slut endnu.';
+
+  @override
+  String get replayPlay => 'Afspil';
+
+  @override
+  String get replayPause => 'Pause';
+
+  @override
+  String get replayNextBattle => 'Næste kamp';
+
+  @override
+  String get replayChronicle => 'Krøniken';
+
+  @override
+  String get replayStepBack => 'Træk tilbage';
+
+  @override
+  String get replayStepForward => 'Træk frem';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Træk $n af $total';
+  }
 }

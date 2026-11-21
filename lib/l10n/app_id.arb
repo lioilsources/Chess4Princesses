@@ -27,5 +27,22 @@
   "rivalArmy": "Lawan",
   "battleDemo": "Pertempuran uji",
   "taskOf": "Tugas {n} dari {total}",
-  "opponentThinking": "Robot kecil sedang berpikir…"
+  "opponentThinking": "Robot kecil sedang berpikir…",
+  "hallTitle": "Aula Kejayaan",
+  "hallFamous": "Permainan terkenal",
+  "replayCheck": "Skak!",
+  "replayMate": "Skakmat!",
+  "replayCastle": "Raja bersembunyi di dalam kastil!",
+  "replaySacrifice": "Pengorbanan yang berani!",
+  "replayEndMate": "Skakmat! Pertempuran dimenangkan.",
+  "replayEndResign": "Raja membungkuk dan menyerahkan mahkotanya. Pertempuran selesai!",
+  "replayEndDraw": "Seri! Kedua raja berjabat tangan.",
+  "replayEndUnfinished": "Pertempuran ini masih berlangsung.",
+  "replayPlay": "Putar",
+  "replayPause": "Jeda",
+  "replayNextBattle": "Pertempuran berikutnya",
+  "replayChronicle": "Kronik",
+  "replayStepBack": "Langkah mundur",
+  "replayStepForward": "Langkah maju",
+  "replayMoveOf": "Langkah {n} dari {total}"
 }

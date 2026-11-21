@@ -27,5 +27,22 @@
   "rivalArmy": "あいて",
   "battleDemo": "ためしのバトル",
   "taskOf": "{total}このうち{n}こめ",
-  "opponentThinking": "ロボちゃんがかんがえちゅう…"
+  "opponentThinking": "ロボちゃんがかんがえちゅう…",
+  "hallTitle": "えいゆうのへや",
+  "hallFamous": "ゆうめいなしょうぶ",
+  "replayCheck": "おうて！",
+  "replayMate": "チェックメイト！",
+  "replayCastle": "おうさまがおしろにかくれたよ！",
+  "replaySacrifice": "ゆうきあるぎせい！",
+  "replayEndMate": "チェックメイト！ たたかいにかったよ。",
+  "replayEndResign": "おうさまがおじぎをして、かんむりをわたしたよ。たたかいはおしまい！",
+  "replayEndDraw": "ひきわけ！ ふたりのおうさまがあくしゅしたよ。",
+  "replayEndUnfinished": "このたたかいは まだつづいているよ。",
+  "replayPlay": "さいせい",
+  "replayPause": "ひとやすみ",
+  "replayNextBattle": "つぎのたたかい",
+  "replayChronicle": "きろく",
+  "replayStepBack": "ひとつもどる",
+  "replayStepForward": "ひとつすすむ",
+  "replayMoveOf": "{total}てのうち {n}てめ"
 }

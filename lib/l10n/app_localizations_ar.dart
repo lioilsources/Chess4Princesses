@@ -101,4 +101,57 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get opponentThinking => 'الروبوت يفكر…';
+
+  @override
+  String get hallTitle => 'قاعة المشاهير';
+
+  @override
+  String get hallFamous => 'مباريات مشهورة';
+
+  @override
+  String get replayCheck => 'كش!';
+
+  @override
+  String get replayMate => 'كش مات!';
+
+  @override
+  String get replayCastle => 'الملك اختبأ في القلعة!';
+
+  @override
+  String get replaySacrifice => 'تضحية شجاعة!';
+
+  @override
+  String get replayEndMate => 'كش مات! ربحنا المعركة.';
+
+  @override
+  String get replayEndResign => 'انحنى الملك وسلّم تاجه. انتهت المعركة!';
+
+  @override
+  String get replayEndDraw => 'تعادل! الملكان تصافحا.';
+
+  @override
+  String get replayEndUnfinished => 'هذه المعركة ما زالت مستمرة.';
+
+  @override
+  String get replayPlay => 'تشغيل';
+
+  @override
+  String get replayPause => 'إيقاف مؤقت';
+
+  @override
+  String get replayNextBattle => 'المعركة التالية';
+
+  @override
+  String get replayChronicle => 'السجل';
+
+  @override
+  String get replayStepBack => 'حركة للخلف';
+
+  @override
+  String get replayStepForward => 'حركة للأمام';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'الحركة $n من $total';
+  }
 }

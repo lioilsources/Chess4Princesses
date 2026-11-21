@@ -27,5 +27,22 @@
   "rivalArmy": "ప్రత్యర్థి",
   "battleDemo": "పరీక్షా యుద్ధం",
   "taskOf": "పని {n}/{total}",
-  "opponentThinking": "రోబోట్ ఆలోచిస్తోంది…"
+  "opponentThinking": "రోబోట్ ఆలోచిస్తోంది…",
+  "hallTitle": "కీర్తి మందిరం",
+  "hallFamous": "ప్రసిద్ధ ఆటలు",
+  "replayCheck": "చెక్!",
+  "replayMate": "చెక్‌మేట్!",
+  "replayCastle": "రాజు కోటలో దాక్కున్నాడు!",
+  "replaySacrifice": "ధైర్యమైన త్యాగం!",
+  "replayEndMate": "చెక్‌మేట్! యుద్ధం గెలిచాం.",
+  "replayEndResign": "రాజు వంగి నమస్కరించి తన కిరీటాన్ని ఇచ్చాడు. యుద్ధం ముగిసింది!",
+  "replayEndDraw": "డ్రా! ఇద్దరు రాజులు కరచాలనం చేశారు.",
+  "replayEndUnfinished": "ఈ యుద్ధం ఇంకా జరుగుతోంది.",
+  "replayPlay": "ఆడించు",
+  "replayPause": "ఆపు",
+  "replayNextBattle": "తర్వాతి యుద్ధం",
+  "replayChronicle": "చరిత్ర",
+  "replayStepBack": "ఒక ఎత్తు వెనక్కి",
+  "replayStepForward": "ఒక ఎత్తు ముందుకి",
+  "replayMoveOf": "{total}లో {n}వ ఎత్తు"
 }

@@ -27,5 +27,22 @@
   "rivalArmy": "Суперник",
   "battleDemo": "Пробна битва",
   "taskOf": "Завдання {n} з {total}",
-  "opponentThinking": "Роботик думає…"
+  "opponentThinking": "Роботик думає…",
+  "hallTitle": "Зал слави",
+  "hallFamous": "Відомі партії",
+  "replayCheck": "Шах!",
+  "replayMate": "Мат!",
+  "replayCastle": "Король сховався в замку!",
+  "replaySacrifice": "Смілива жертва!",
+  "replayEndMate": "Мат! Битву виграно.",
+  "replayEndResign": "Король вклонився й віддав свою корону. Битва закінчилась!",
+  "replayEndDraw": "Нічия! Два королі потиснули руки.",
+  "replayEndUnfinished": "Ця битва ще триває.",
+  "replayPlay": "Грати",
+  "replayPause": "Пауза",
+  "replayNextBattle": "Наступна битва",
+  "replayChronicle": "Хроніка",
+  "replayStepBack": "Хід назад",
+  "replayStepForward": "Хід уперед",
+  "replayMoveOf": "Хід {n} з {total}"
 }

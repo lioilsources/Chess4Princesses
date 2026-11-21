@@ -27,5 +27,22 @@
   "rivalArmy": "Tegenstander",
   "battleDemo": "Proefgevecht",
   "taskOf": "Opdracht {n} van {total}",
-  "opponentThinking": "Het robotje denkt na…"
+  "opponentThinking": "Het robotje denkt na…",
+  "hallTitle": "Roemhal",
+  "hallFamous": "Beroemde partijen",
+  "replayCheck": "Schaak!",
+  "replayMate": "Schaakmat!",
+  "replayCastle": "De koning verstopt zich in het kasteel!",
+  "replaySacrifice": "Een dappere opoffering!",
+  "replayEndMate": "Schaakmat! Het gevecht is gewonnen.",
+  "replayEndResign": "De koning buigt en geeft zijn kroon af. Het gevecht is voorbij!",
+  "replayEndDraw": "Remise! Beide koningen geven elkaar een hand.",
+  "replayEndUnfinished": "Dit gevecht is nog bezig.",
+  "replayPlay": "Afspelen",
+  "replayPause": "Pauze",
+  "replayNextBattle": "Volgend gevecht",
+  "replayChronicle": "Kroniek",
+  "replayStepBack": "Zet terug",
+  "replayStepForward": "Zet vooruit",
+  "replayMoveOf": "Zet {n} van {total}"
 }

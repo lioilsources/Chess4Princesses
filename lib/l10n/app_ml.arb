@@ -27,5 +27,22 @@
   "rivalArmy": "എതിരാളി",
   "battleDemo": "പരീക്ഷണ യുദ്ധം",
   "taskOf": "ചുമതല {n}/{total}",
-  "opponentThinking": "റോബോട്ട് ആലോചിക്കുന്നു…"
+  "opponentThinking": "റോബോട്ട് ആലോചിക്കുന്നു…",
+  "hallTitle": "പ്രശസ്തിയുടെ ഹാൾ",
+  "hallFamous": "പ്രശസ്തമായ കളികൾ",
+  "replayCheck": "ചെക്ക്!",
+  "replayMate": "ചെക്ക്മേറ്റ്!",
+  "replayCastle": "രാജാവ് കോട്ടയിൽ ഒളിച്ചു!",
+  "replaySacrifice": "ധീരമായ ത്യാഗം!",
+  "replayEndMate": "ചെക്ക്മേറ്റ്! യുദ്ധം ജയിച്ചു.",
+  "replayEndResign": "രാജാവ് തല കുനിച്ച് കിരീടം കൈമാറി. യുദ്ധം തീർന്നു!",
+  "replayEndDraw": "സമനില! രണ്ട് രാജാക്കന്മാരും കൈ കൊടുത്തു.",
+  "replayEndUnfinished": "ഈ യുദ്ധം ഇപ്പോഴും നടക്കുന്നു.",
+  "replayPlay": "പ്ലേ ചെയ്യൂ",
+  "replayPause": "നിർത്തൂ",
+  "replayNextBattle": "അടുത്ത യുദ്ധം",
+  "replayChronicle": "ചരിത്രക്കുറിപ്പ്",
+  "replayStepBack": "ഒരു നീക്കം പിന്നിലേക്ക്",
+  "replayStepForward": "ഒരു നീക്കം മുന്നിലേക്ക്",
+  "replayMoveOf": "{total}-ൽ {n}-ാം നീക്കം"
 }

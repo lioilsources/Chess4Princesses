@@ -101,4 +101,57 @@ class AppLocalizationsKo extends AppLocalizations {
 
   @override
   String get opponentThinking => '꼬마 로봇이 생각 중…';
+
+  @override
+  String get hallTitle => '명예의 전당';
+
+  @override
+  String get hallFamous => '유명한 경기';
+
+  @override
+  String get replayCheck => '체크!';
+
+  @override
+  String get replayMate => '체크메이트!';
+
+  @override
+  String get replayCastle => '왕이 성으로 쏙 숨었어요!';
+
+  @override
+  String get replaySacrifice => '용감한 희생!';
+
+  @override
+  String get replayEndMate => '체크메이트! 전투에서 이겼어요.';
+
+  @override
+  String get replayEndResign => '왕이 허리를 숙여 왕관을 건넸어요. 전투가 끝났어요!';
+
+  @override
+  String get replayEndDraw => '무승부! 두 왕이 악수를 해요.';
+
+  @override
+  String get replayEndUnfinished => '이 전투는 아직 계속되고 있어요.';
+
+  @override
+  String get replayPlay => '재생';
+
+  @override
+  String get replayPause => '일시정지';
+
+  @override
+  String get replayNextBattle => '다음 전투';
+
+  @override
+  String get replayChronicle => '연대기';
+
+  @override
+  String get replayStepBack => '한 수 뒤로';
+
+  @override
+  String get replayStepForward => '한 수 앞으로';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return '$total수 중 $n수';
+  }
 }

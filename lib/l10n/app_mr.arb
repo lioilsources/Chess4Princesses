@@ -27,5 +27,22 @@
   "rivalArmy": "प्रतिस्पर्धी",
   "battleDemo": "चाचणी लढाई",
   "taskOf": "काम {n}/{total}",
-  "opponentThinking": "रोबोट विचार करतोय…"
+  "opponentThinking": "रोबोट विचार करतोय…",
+  "hallTitle": "कीर्ती सभागृह",
+  "hallFamous": "प्रसिद्ध डाव",
+  "replayCheck": "शह!",
+  "replayMate": "मात!",
+  "replayCastle": "राजा किल्ल्यात लपला!",
+  "replaySacrifice": "धाडसी बलिदान!",
+  "replayEndMate": "मात! लढाई जिंकली.",
+  "replayEndResign": "राजाने वाकून आपला मुकुट दिला. लढाई संपली!",
+  "replayEndDraw": "बरोबरी! दोन्ही राजांनी हात मिळवला.",
+  "replayEndUnfinished": "ही लढाई अजून सुरू आहे.",
+  "replayPlay": "चालवा",
+  "replayPause": "थांबा",
+  "replayNextBattle": "पुढची लढाई",
+  "replayChronicle": "वृत्तांत",
+  "replayStepBack": "एक चाल मागे",
+  "replayStepForward": "एक चाल पुढे",
+  "replayMoveOf": "{total} पैकी चाल {n}"
 }

@@ -27,5 +27,22 @@
   "rivalArmy": "Modstander",
   "battleDemo": "Prøvekamp",
   "taskOf": "Opgave {n} af {total}",
-  "opponentThinking": "Den lille robot tænker…"
+  "opponentThinking": "Den lille robot tænker…",
+  "hallTitle": "Berømmelsens hal",
+  "hallFamous": "Berømte partier",
+  "replayCheck": "Skak!",
+  "replayMate": "Skakmat!",
+  "replayCastle": "Kongen gemmer sig i slottet!",
+  "replaySacrifice": "Et modigt offer!",
+  "replayEndMate": "Skakmat! Kampen er vundet.",
+  "replayEndResign": "Kongen bukker og rækker sin krone frem. Kampen er slut!",
+  "replayEndDraw": "Uafgjort! De to konger giver hinanden hånden.",
+  "replayEndUnfinished": "Den her kamp er ikke slut endnu.",
+  "replayPlay": "Afspil",
+  "replayPause": "Pause",
+  "replayNextBattle": "Næste kamp",
+  "replayChronicle": "Krøniken",
+  "replayStepBack": "Træk tilbage",
+  "replayStepForward": "Træk frem",
+  "replayMoveOf": "Træk {n} af {total}"
 }

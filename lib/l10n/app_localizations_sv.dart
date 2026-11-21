@@ -101,4 +101,58 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Den lilla roboten tänker…';
+
+  @override
+  String get hallTitle => 'Ärans hall';
+
+  @override
+  String get hallFamous => 'Berömda partier';
+
+  @override
+  String get replayCheck => 'Schack!';
+
+  @override
+  String get replayMate => 'Schackmatt!';
+
+  @override
+  String get replayCastle => 'Kungen gömmer sig i slottet!';
+
+  @override
+  String get replaySacrifice => 'Ett modigt offer!';
+
+  @override
+  String get replayEndMate => 'Schackmatt! Striden är vunnen.';
+
+  @override
+  String get replayEndResign =>
+      'Kungen bugar och lämnar över sin krona. Striden är slut!';
+
+  @override
+  String get replayEndDraw => 'Remi! De två kungarna skakar hand.';
+
+  @override
+  String get replayEndUnfinished => 'Den här striden pågår fortfarande.';
+
+  @override
+  String get replayPlay => 'Spela upp';
+
+  @override
+  String get replayPause => 'Paus';
+
+  @override
+  String get replayNextBattle => 'Nästa strid';
+
+  @override
+  String get replayChronicle => 'Krönika';
+
+  @override
+  String get replayStepBack => 'Drag tillbaka';
+
+  @override
+  String get replayStepForward => 'Drag framåt';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Drag $n av $total';
+  }
 }

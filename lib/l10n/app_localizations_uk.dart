@@ -101,4 +101,58 @@ class AppLocalizationsUk extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Роботик думає…';
+
+  @override
+  String get hallTitle => 'Зал слави';
+
+  @override
+  String get hallFamous => 'Відомі партії';
+
+  @override
+  String get replayCheck => 'Шах!';
+
+  @override
+  String get replayMate => 'Мат!';
+
+  @override
+  String get replayCastle => 'Король сховався в замку!';
+
+  @override
+  String get replaySacrifice => 'Смілива жертва!';
+
+  @override
+  String get replayEndMate => 'Мат! Битву виграно.';
+
+  @override
+  String get replayEndResign =>
+      'Король вклонився й віддав свою корону. Битва закінчилась!';
+
+  @override
+  String get replayEndDraw => 'Нічия! Два королі потиснули руки.';
+
+  @override
+  String get replayEndUnfinished => 'Ця битва ще триває.';
+
+  @override
+  String get replayPlay => 'Грати';
+
+  @override
+  String get replayPause => 'Пауза';
+
+  @override
+  String get replayNextBattle => 'Наступна битва';
+
+  @override
+  String get replayChronicle => 'Хроніка';
+
+  @override
+  String get replayStepBack => 'Хід назад';
+
+  @override
+  String get replayStepForward => 'Хід уперед';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Хід $n з $total';
+  }
 }

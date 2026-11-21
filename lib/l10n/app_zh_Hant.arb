@@ -27,5 +27,22 @@
   "rivalArmy": "對手",
   "battleDemo": "試玩戰鬥",
   "taskOf": "任務 {n}/{total}",
-  "opponentThinking": "機器人在思考…"
+  "opponentThinking": "機器人在思考…",
+  "hallTitle": "名人堂",
+  "hallFamous": "著名的棋局",
+  "replayCheck": "將軍！",
+  "replayMate": "將死！",
+  "replayCastle": "國王躲進了城堡！",
+  "replaySacrifice": "勇敢的犧牲！",
+  "replayEndMate": "將死！戰鬥贏啦。",
+  "replayEndResign": "國王鞠了一躬，交出了王冠。戰鬥結束！",
+  "replayEndDraw": "和棋！兩位國王握手了。",
+  "replayEndUnfinished": "這場戰鬥還在進行中。",
+  "replayPlay": "播放",
+  "replayPause": "暫停",
+  "replayNextBattle": "下一場戰鬥",
+  "replayChronicle": "戰鬥紀錄",
+  "replayStepBack": "上一步",
+  "replayStepForward": "下一步",
+  "replayMoveOf": "第 {n} 步，共 {total} 步"
 }

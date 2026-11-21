@@ -27,5 +27,22 @@
   "rivalArmy": "Αντίπαλος",
   "battleDemo": "Δοκιμαστική μάχη",
   "taskOf": "Αποστολή {n} από {total}",
-  "opponentThinking": "Το ρομποτάκι σκέφτεται…"
+  "opponentThinking": "Το ρομποτάκι σκέφτεται…",
+  "hallTitle": "Αίθουσα Δόξας",
+  "hallFamous": "Διάσημες παρτίδες",
+  "replayCheck": "Σαχ!",
+  "replayMate": "Ματ!",
+  "replayCastle": "Ο βασιλιάς κρύφτηκε στο κάστρο!",
+  "replaySacrifice": "Μια γενναία θυσία!",
+  "replayEndMate": "Ματ! Η μάχη κερδήθηκε.",
+  "replayEndResign": "Ο βασιλιάς υποκλίθηκε και παρέδωσε το στέμμα του. Η μάχη τελείωσε!",
+  "replayEndDraw": "Ισοπαλία! Οι δύο βασιλιάδες δίνουν τα χέρια.",
+  "replayEndUnfinished": "Αυτή η μάχη συνεχίζεται ακόμα.",
+  "replayPlay": "Αναπαραγωγή",
+  "replayPause": "Παύση",
+  "replayNextBattle": "Επόμενη μάχη",
+  "replayChronicle": "Χρονικό",
+  "replayStepBack": "Κίνηση πίσω",
+  "replayStepForward": "Κίνηση μπροστά",
+  "replayMoveOf": "Κίνηση {n} από {total}"
 }

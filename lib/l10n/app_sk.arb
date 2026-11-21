@@ -27,5 +27,22 @@
   "rivalArmy": "Súper",
   "battleDemo": "Skúšobná bitka",
   "taskOf": "Úloha {n} z {total}",
-  "opponentThinking": "Robotík premýšľa…"
+  "opponentThinking": "Robotík premýšľa…",
+  "hallTitle": "Sieň slávy",
+  "hallFamous": "Slávne partie",
+  "replayCheck": "Šach!",
+  "replayMate": "Mat!",
+  "replayCastle": "Kráľ sa schoval do hradu!",
+  "replaySacrifice": "Odvážna obeta!",
+  "replayEndMate": "Mat! Bitka je vyhraná.",
+  "replayEndResign": "Kráľ sa uklonil a odovzdal korunu. Koniec bitky!",
+  "replayEndDraw": "Remíza! Obaja králi si podali ruky.",
+  "replayEndUnfinished": "Táto bitka ešte trvá.",
+  "replayPlay": "Prehrať",
+  "replayPause": "Pauza",
+  "replayNextBattle": "Ďalšia bitka",
+  "replayChronicle": "Kronika",
+  "replayStepBack": "Ťah späť",
+  "replayStepForward": "Ťah vpred",
+  "replayMoveOf": "Ťah {n} z {total}"
 }

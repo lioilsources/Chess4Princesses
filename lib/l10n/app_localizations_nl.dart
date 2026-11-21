@@ -101,4 +101,58 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Het robotje denkt na…';
+
+  @override
+  String get hallTitle => 'Roemhal';
+
+  @override
+  String get hallFamous => 'Beroemde partijen';
+
+  @override
+  String get replayCheck => 'Schaak!';
+
+  @override
+  String get replayMate => 'Schaakmat!';
+
+  @override
+  String get replayCastle => 'De koning verstopt zich in het kasteel!';
+
+  @override
+  String get replaySacrifice => 'Een dappere opoffering!';
+
+  @override
+  String get replayEndMate => 'Schaakmat! Het gevecht is gewonnen.';
+
+  @override
+  String get replayEndResign =>
+      'De koning buigt en geeft zijn kroon af. Het gevecht is voorbij!';
+
+  @override
+  String get replayEndDraw => 'Remise! Beide koningen geven elkaar een hand.';
+
+  @override
+  String get replayEndUnfinished => 'Dit gevecht is nog bezig.';
+
+  @override
+  String get replayPlay => 'Afspelen';
+
+  @override
+  String get replayPause => 'Pauze';
+
+  @override
+  String get replayNextBattle => 'Volgend gevecht';
+
+  @override
+  String get replayChronicle => 'Kroniek';
+
+  @override
+  String get replayStepBack => 'Zet terug';
+
+  @override
+  String get replayStepForward => 'Zet vooruit';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Zet $n van $total';
+  }
 }

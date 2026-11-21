@@ -101,4 +101,58 @@ class AppLocalizationsKn extends AppLocalizations {
 
   @override
   String get opponentThinking => 'ರೋಬೋಟ್ ಯೋಚಿಸುತ್ತಿದೆ…';
+
+  @override
+  String get hallTitle => 'ಖ್ಯಾತಿಯ ಸಭಾಂಗಣ';
+
+  @override
+  String get hallFamous => 'ಪ್ರಸಿದ್ಧ ಆಟಗಳು';
+
+  @override
+  String get replayCheck => 'ಚೆಕ್!';
+
+  @override
+  String get replayMate => 'ಚೆಕ್‌ಮೇಟ್!';
+
+  @override
+  String get replayCastle => 'ರಾಜ ಕೋಟೆಯಲ್ಲಿ ಅಡಗಿಕೊಂಡ!';
+
+  @override
+  String get replaySacrifice => 'ಧೈರ್ಯದ ತ್ಯಾಗ!';
+
+  @override
+  String get replayEndMate => 'ಚೆಕ್‌ಮೇಟ್! ಯುದ್ಧ ಗೆದ್ದಿತು.';
+
+  @override
+  String get replayEndResign =>
+      'ರಾಜ ತಲೆಬಾಗಿ ತನ್ನ ಕಿರೀಟ ಒಪ್ಪಿಸಿದ. ಯುದ್ಧ ಮುಗಿಯಿತು!';
+
+  @override
+  String get replayEndDraw => 'ಡ್ರಾ! ಇಬ್ಬರು ರಾಜರು ಕೈ ಕುಲುಕಿದರು.';
+
+  @override
+  String get replayEndUnfinished => 'ಈ ಯುದ್ಧ ಇನ್ನೂ ನಡೆಯುತ್ತಿದೆ.';
+
+  @override
+  String get replayPlay => 'ಆಡಿಸು';
+
+  @override
+  String get replayPause => 'ತಡೆ';
+
+  @override
+  String get replayNextBattle => 'ಮುಂದಿನ ಯುದ್ಧ';
+
+  @override
+  String get replayChronicle => 'ವೃತ್ತಾಂತ';
+
+  @override
+  String get replayStepBack => 'ಒಂದು ನಡೆ ಹಿಂದೆ';
+
+  @override
+  String get replayStepForward => 'ಒಂದು ನಡೆ ಮುಂದೆ';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return '$totalರಲ್ಲಿ $nನೇ ನಡೆ';
+  }
 }

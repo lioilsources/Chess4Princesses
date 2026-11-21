@@ -101,4 +101,57 @@ class AppLocalizationsHe extends AppLocalizations {
 
   @override
   String get opponentThinking => 'הרובוט חושב…';
+
+  @override
+  String get hallTitle => 'היכל התהילה';
+
+  @override
+  String get hallFamous => 'משחקים מפורסמים';
+
+  @override
+  String get replayCheck => 'שח!';
+
+  @override
+  String get replayMate => 'מט!';
+
+  @override
+  String get replayCastle => 'המלך מתחבא בטירה!';
+
+  @override
+  String get replaySacrifice => 'הקרבה אמיצה!';
+
+  @override
+  String get replayEndMate => 'מט! ניצחנו בקרב.';
+
+  @override
+  String get replayEndResign => 'המלך משתחווה ומוסר את כתרו. הקרב נגמר!';
+
+  @override
+  String get replayEndDraw => 'תיקו! שני המלכים לוחצים ידיים.';
+
+  @override
+  String get replayEndUnfinished => 'הקרב הזה עדיין נמשך.';
+
+  @override
+  String get replayPlay => 'נגן';
+
+  @override
+  String get replayPause => 'השהיה';
+
+  @override
+  String get replayNextBattle => 'הקרב הבא';
+
+  @override
+  String get replayChronicle => 'יומן הקרב';
+
+  @override
+  String get replayStepBack => 'מהלך אחורה';
+
+  @override
+  String get replayStepForward => 'מהלך קדימה';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'מהלך $n מתוך $total';
+  }
 }

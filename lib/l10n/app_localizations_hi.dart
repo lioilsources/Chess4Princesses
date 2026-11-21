@@ -101,4 +101,57 @@ class AppLocalizationsHi extends AppLocalizations {
 
   @override
   String get opponentThinking => 'रोबोट सोच रहा है…';
+
+  @override
+  String get hallTitle => 'यश भवन';
+
+  @override
+  String get hallFamous => 'मशहूर खेल';
+
+  @override
+  String get replayCheck => 'शह!';
+
+  @override
+  String get replayMate => 'मात!';
+
+  @override
+  String get replayCastle => 'राजा किले में छिप गया!';
+
+  @override
+  String get replaySacrifice => 'बहादुर बलिदान!';
+
+  @override
+  String get replayEndMate => 'मात! लड़ाई जीत ली गई।';
+
+  @override
+  String get replayEndResign => 'राजा ने झुककर अपना ताज सौंप दिया। लड़ाई खत्म!';
+
+  @override
+  String get replayEndDraw => 'बराबरी! दोनों राजाओं ने हाथ मिलाया।';
+
+  @override
+  String get replayEndUnfinished => 'यह लड़ाई अभी चल रही है।';
+
+  @override
+  String get replayPlay => 'चलाएँ';
+
+  @override
+  String get replayPause => 'रुकें';
+
+  @override
+  String get replayNextBattle => 'अगली लड़ाई';
+
+  @override
+  String get replayChronicle => 'वृत्तांत';
+
+  @override
+  String get replayStepBack => 'एक चाल पीछे';
+
+  @override
+  String get replayStepForward => 'एक चाल आगे';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return '$total में से चाल $n';
+  }
 }

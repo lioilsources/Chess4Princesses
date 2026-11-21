@@ -27,5 +27,22 @@
   "rivalArmy": "প্রতিপক্ষ",
   "battleDemo": "পরীক্ষামূলক যুদ্ধ",
   "taskOf": "কাজ {n}/{total}",
-  "opponentThinking": "রোবট ভাবছে…"
+  "opponentThinking": "রোবট ভাবছে…",
+  "hallTitle": "খ্যাতির ঘর",
+  "hallFamous": "বিখ্যাত খেলা",
+  "replayCheck": "কিস্তি!",
+  "replayMate": "কিস্তিমাত!",
+  "replayCastle": "রাজা দুর্গে লুকিয়ে পড়ল!",
+  "replaySacrifice": "সাহসী ত্যাগ!",
+  "replayEndMate": "কিস্তিমাত! যুদ্ধ জেতা হলো।",
+  "replayEndResign": "রাজা মাথা নুইয়ে মুকুট তুলে দিল। যুদ্ধ শেষ!",
+  "replayEndDraw": "ড্র! দুই রাজা হাত মেলাল।",
+  "replayEndUnfinished": "এই যুদ্ধ এখনও চলছে।",
+  "replayPlay": "চালাও",
+  "replayPause": "থামাও",
+  "replayNextBattle": "পরের যুদ্ধ",
+  "replayChronicle": "ইতিবৃত্ত",
+  "replayStepBack": "এক চাল পেছনে",
+  "replayStepForward": "এক চাল সামনে",
+  "replayMoveOf": "{total}টির মধ্যে {n} নম্বর চাল"
 }

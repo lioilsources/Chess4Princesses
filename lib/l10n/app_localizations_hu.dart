@@ -101,4 +101,58 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get opponentThinking => 'A kis robot gondolkodik…';
+
+  @override
+  String get hallTitle => 'Hírességek csarnoka';
+
+  @override
+  String get hallFamous => 'Híres játszmák';
+
+  @override
+  String get replayCheck => 'Sakk!';
+
+  @override
+  String get replayMate => 'Matt!';
+
+  @override
+  String get replayCastle => 'A király elbújt a várban!';
+
+  @override
+  String get replaySacrifice => 'Bátor áldozat!';
+
+  @override
+  String get replayEndMate => 'Matt! Megnyertük a csatát.';
+
+  @override
+  String get replayEndResign =>
+      'A király meghajol és átadja a koronáját. Vége a csatának!';
+
+  @override
+  String get replayEndDraw => 'Döntetlen! A két király kezet fog.';
+
+  @override
+  String get replayEndUnfinished => 'Ez a csata még tart.';
+
+  @override
+  String get replayPlay => 'Lejátszás';
+
+  @override
+  String get replayPause => 'Szünet';
+
+  @override
+  String get replayNextBattle => 'Következő csata';
+
+  @override
+  String get replayChronicle => 'Krónika';
+
+  @override
+  String get replayStepBack => 'Lépés vissza';
+
+  @override
+  String get replayStepForward => 'Lépés előre';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Lépés: $n / $total';
+  }
 }

@@ -27,5 +27,22 @@
   "rivalArmy": "ପ୍ରତିପକ୍ଷ",
   "battleDemo": "ପରୀକ୍ଷା ଯୁଦ୍ଧ",
   "taskOf": "କାମ {n}/{total}",
-  "opponentThinking": "ରୋବଟ୍ ଭାବୁଛି…"
+  "opponentThinking": "ରୋବଟ୍ ଭାବୁଛି…",
+  "hallTitle": "ଖ୍ୟାତି ଭବନ",
+  "hallFamous": "ପ୍ରସିଦ୍ଧ ଖେଳ",
+  "replayCheck": "ଚେକ୍!",
+  "replayMate": "ଚେକ୍‌ମେଟ୍!",
+  "replayCastle": "ରାଜା ଦୁର୍ଗରେ ଲୁଚିଗଲା!",
+  "replaySacrifice": "ସାହସୀ ତ୍ୟାଗ!",
+  "replayEndMate": "ଚେକ୍‌ମେଟ୍! ଯୁଦ୍ଧ ଜିତିଗଲା।",
+  "replayEndResign": "ରାଜା ମୁଣ୍ଡ ନଇଁଇ ନିଜ ମୁକୁଟ ଦେଇଦେଲା। ଯୁଦ୍ଧ ଶେଷ!",
+  "replayEndDraw": "ଡ୍ରୋ! ଦୁଇ ରାଜା ହାତ ମିଳାଇଲେ।",
+  "replayEndUnfinished": "ଏହି ଯୁଦ୍ଧ ଏବେ ବି ଚାଲିଛି।",
+  "replayPlay": "ଚଲାନ୍ତୁ",
+  "replayPause": "ଅଟକାନ୍ତୁ",
+  "replayNextBattle": "ପରବର୍ତ୍ତୀ ଯୁଦ୍ଧ",
+  "replayChronicle": "ଇତିବୃତ୍ତ",
+  "replayStepBack": "ଗୋଟିଏ ଚାଲ ପଛକୁ",
+  "replayStepForward": "ଗୋଟିଏ ଚାଲ ଆଗକୁ",
+  "replayMoveOf": "{total}ରୁ {n} ନମ୍ବର ଚାଲ"
 }

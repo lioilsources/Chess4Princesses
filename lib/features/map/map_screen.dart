@@ -61,6 +61,7 @@ class MapScreen extends ConsumerWidget {
               child: Row(
                 children: [
                   Expanded(child: BubbleText(l10n.appTitle, role: KidRole.title, size: 34, palette: KidPalette.peach)),
+                  IconButton(iconSize: 36, tooltip: l10n.hallTitle, icon: const Icon(Icons.emoji_events_rounded), onPressed: () => context.push('/hall')),
                   IconButton(iconSize: 36, tooltip: l10n.battleDemo, icon: const Icon(Icons.bolt_rounded), onPressed: () => context.push('/battle')),
                   IconButton(iconSize: 36, tooltip: l10n.armies, icon: const Icon(Icons.shield_rounded), onPressed: () => context.push('/army')),
                 ],

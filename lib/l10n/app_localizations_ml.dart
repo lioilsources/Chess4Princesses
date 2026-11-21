@@ -101,4 +101,58 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get opponentThinking => 'റോബോട്ട് ആലോചിക്കുന്നു…';
+
+  @override
+  String get hallTitle => 'പ്രശസ്തിയുടെ ഹാൾ';
+
+  @override
+  String get hallFamous => 'പ്രശസ്തമായ കളികൾ';
+
+  @override
+  String get replayCheck => 'ചെക്ക്!';
+
+  @override
+  String get replayMate => 'ചെക്ക്മേറ്റ്!';
+
+  @override
+  String get replayCastle => 'രാജാവ് കോട്ടയിൽ ഒളിച്ചു!';
+
+  @override
+  String get replaySacrifice => 'ധീരമായ ത്യാഗം!';
+
+  @override
+  String get replayEndMate => 'ചെക്ക്മേറ്റ്! യുദ്ധം ജയിച്ചു.';
+
+  @override
+  String get replayEndResign =>
+      'രാജാവ് തല കുനിച്ച് കിരീടം കൈമാറി. യുദ്ധം തീർന്നു!';
+
+  @override
+  String get replayEndDraw => 'സമനില! രണ്ട് രാജാക്കന്മാരും കൈ കൊടുത്തു.';
+
+  @override
+  String get replayEndUnfinished => 'ഈ യുദ്ധം ഇപ്പോഴും നടക്കുന്നു.';
+
+  @override
+  String get replayPlay => 'പ്ലേ ചെയ്യൂ';
+
+  @override
+  String get replayPause => 'നിർത്തൂ';
+
+  @override
+  String get replayNextBattle => 'അടുത്ത യുദ്ധം';
+
+  @override
+  String get replayChronicle => 'ചരിത്രക്കുറിപ്പ്';
+
+  @override
+  String get replayStepBack => 'ഒരു നീക്കം പിന്നിലേക്ക്';
+
+  @override
+  String get replayStepForward => 'ഒരു നീക്കം മുന്നിലേക്ക്';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return '$total-ൽ $n-ാം നീക്കം';
+  }
 }

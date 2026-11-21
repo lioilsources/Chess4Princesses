@@ -27,5 +27,22 @@
   "rivalArmy": "પ્રતિસ્પર્ધી",
   "battleDemo": "અજમાયશી લડાઈ",
   "taskOf": "કામ {n}/{total}",
-  "opponentThinking": "રોબોટ વિચારે છે…"
+  "opponentThinking": "રોબોટ વિચારે છે…",
+  "hallTitle": "કીર્તિ ખંડ",
+  "hallFamous": "પ્રખ્યાત રમતો",
+  "replayCheck": "શાહ!",
+  "replayMate": "માત!",
+  "replayCastle": "રાજા કિલ્લામાં સંતાઈ ગયો!",
+  "replaySacrifice": "બહાદુર બલિદાન!",
+  "replayEndMate": "માત! લડાઈ જીતાઈ ગઈ.",
+  "replayEndResign": "રાજાએ નમીને પોતાનો મુગટ સોંપી દીધો. લડાઈ પૂરી!",
+  "replayEndDraw": "ડ્રો! બંને રાજાઓએ હાથ મિલાવ્યા.",
+  "replayEndUnfinished": "આ લડાઈ હજી ચાલે છે.",
+  "replayPlay": "ચલાવો",
+  "replayPause": "થોભો",
+  "replayNextBattle": "આગલી લડાઈ",
+  "replayChronicle": "વૃત્તાંત",
+  "replayStepBack": "ચાલ પાછળ",
+  "replayStepForward": "ચાલ આગળ",
+  "replayMoveOf": "{total} માંથી ચાલ {n}"
 }

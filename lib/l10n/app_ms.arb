@@ -27,5 +27,22 @@
   "rivalArmy": "Lawan",
   "battleDemo": "Pertempuran percubaan",
   "taskOf": "Tugasan {n} daripada {total}",
-  "opponentThinking": "Robot kecil sedang berfikir…"
+  "opponentThinking": "Robot kecil sedang berfikir…",
+  "hallTitle": "Dewan Kemasyhuran",
+  "hallFamous": "Permainan terkenal",
+  "replayCheck": "Syak!",
+  "replayMate": "Syak mat!",
+  "replayCastle": "Raja bersembunyi di dalam kubu!",
+  "replaySacrifice": "Pengorbanan yang berani!",
+  "replayEndMate": "Syak mat! Pertempuran dimenangi.",
+  "replayEndResign": "Raja tunduk dan menyerahkan mahkotanya. Pertempuran tamat!",
+  "replayEndDraw": "Seri! Kedua-dua raja berjabat tangan.",
+  "replayEndUnfinished": "Pertempuran ini masih berterusan.",
+  "replayPlay": "Main",
+  "replayPause": "Jeda",
+  "replayNextBattle": "Pertempuran seterusnya",
+  "replayChronicle": "Kronik",
+  "replayStepBack": "Langkah ke belakang",
+  "replayStepForward": "Langkah ke hadapan",
+  "replayMoveOf": "Langkah {n} daripada {total}"
 }

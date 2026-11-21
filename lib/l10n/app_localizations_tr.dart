@@ -101,4 +101,58 @@ class AppLocalizationsTr extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Küçük robot düşünüyor…';
+
+  @override
+  String get hallTitle => 'Şöhret Salonu';
+
+  @override
+  String get hallFamous => 'Ünlü oyunlar';
+
+  @override
+  String get replayCheck => 'Şah!';
+
+  @override
+  String get replayMate => 'Mat!';
+
+  @override
+  String get replayCastle => 'Kral kaleye saklandı!';
+
+  @override
+  String get replaySacrifice => 'Cesur bir fedakârlık!';
+
+  @override
+  String get replayEndMate => 'Mat! Savaş kazanıldı.';
+
+  @override
+  String get replayEndResign =>
+      'Kral eğildi ve tacını teslim etti. Savaş bitti!';
+
+  @override
+  String get replayEndDraw => 'Berabere! İki kral el sıkıştı.';
+
+  @override
+  String get replayEndUnfinished => 'Bu savaş hâlâ sürüyor.';
+
+  @override
+  String get replayPlay => 'Oynat';
+
+  @override
+  String get replayPause => 'Duraklat';
+
+  @override
+  String get replayNextBattle => 'Sonraki savaş';
+
+  @override
+  String get replayChronicle => 'Kronik';
+
+  @override
+  String get replayStepBack => 'Hamle geri';
+
+  @override
+  String get replayStepForward => 'Hamle ileri';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Hamle $n / $total';
+  }
 }

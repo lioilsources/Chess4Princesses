@@ -27,5 +27,22 @@
   "rivalArmy": "Соперник",
   "battleDemo": "Пробная битва",
   "taskOf": "Задание {n} из {total}",
-  "opponentThinking": "Роботёнок думает…"
+  "opponentThinking": "Роботёнок думает…",
+  "hallTitle": "Зал славы",
+  "hallFamous": "Знаменитые партии",
+  "replayCheck": "Шах!",
+  "replayMate": "Мат!",
+  "replayCastle": "Король спрятался в замке!",
+  "replaySacrifice": "Смелая жертва!",
+  "replayEndMate": "Мат! Битва выиграна.",
+  "replayEndResign": "Король поклонился и отдал свою корону. Битва окончена!",
+  "replayEndDraw": "Ничья! Два короля пожали друг другу руки.",
+  "replayEndUnfinished": "Эта битва ещё идёт.",
+  "replayPlay": "Играть",
+  "replayPause": "Пауза",
+  "replayNextBattle": "Следующая битва",
+  "replayChronicle": "Хроника",
+  "replayStepBack": "Ход назад",
+  "replayStepForward": "Ход вперёд",
+  "replayMoveOf": "Ход {n} из {total}"
 }

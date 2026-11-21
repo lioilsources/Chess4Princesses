@@ -101,6 +101,60 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get opponentThinking => 'O robozinho está pensando…';
+
+  @override
+  String get hallTitle => 'Salão da Fama';
+
+  @override
+  String get hallFamous => 'Partidas famosas';
+
+  @override
+  String get replayCheck => 'Xeque!';
+
+  @override
+  String get replayMate => 'Xeque-mate!';
+
+  @override
+  String get replayCastle => 'O rei se escondeu no castelo!';
+
+  @override
+  String get replaySacrifice => 'Um sacrifício corajoso!';
+
+  @override
+  String get replayEndMate => 'Xeque-mate! A batalha foi vencida.';
+
+  @override
+  String get replayEndResign =>
+      'O rei se curvou e entregou a coroa. A batalha acabou!';
+
+  @override
+  String get replayEndDraw => 'Empate! Os dois reis se cumprimentam.';
+
+  @override
+  String get replayEndUnfinished => 'Esta batalha ainda continua.';
+
+  @override
+  String get replayPlay => 'Reproduzir';
+
+  @override
+  String get replayPause => 'Pausar';
+
+  @override
+  String get replayNextBattle => 'Próxima batalha';
+
+  @override
+  String get replayChronicle => 'Crônica';
+
+  @override
+  String get replayStepBack => 'Jogada para trás';
+
+  @override
+  String get replayStepForward => 'Jogada para a frente';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Jogada $n de $total';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -200,6 +254,60 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get opponentThinking => 'O robozinho está pensando…';
+
+  @override
+  String get hallTitle => 'Salão da Fama';
+
+  @override
+  String get hallFamous => 'Partidas famosas';
+
+  @override
+  String get replayCheck => 'Xeque!';
+
+  @override
+  String get replayMate => 'Xeque-mate!';
+
+  @override
+  String get replayCastle => 'O rei se escondeu no castelo!';
+
+  @override
+  String get replaySacrifice => 'Um sacrifício corajoso!';
+
+  @override
+  String get replayEndMate => 'Xeque-mate! A batalha foi vencida.';
+
+  @override
+  String get replayEndResign =>
+      'O rei se curvou e entregou a coroa. A batalha acabou!';
+
+  @override
+  String get replayEndDraw => 'Empate! Os dois reis se cumprimentam.';
+
+  @override
+  String get replayEndUnfinished => 'Esta batalha ainda continua.';
+
+  @override
+  String get replayPlay => 'Reproduzir';
+
+  @override
+  String get replayPause => 'Pausar';
+
+  @override
+  String get replayNextBattle => 'Próxima batalha';
+
+  @override
+  String get replayChronicle => 'Crônica';
+
+  @override
+  String get replayStepBack => 'Jogada para trás';
+
+  @override
+  String get replayStepForward => 'Jogada para a frente';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Jogada $n de $total';
+  }
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -299,4 +407,58 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
 
   @override
   String get opponentThinking => 'O robozinho está a pensar…';
+
+  @override
+  String get hallTitle => 'Salão da Fama';
+
+  @override
+  String get hallFamous => 'Partidas famosas';
+
+  @override
+  String get replayCheck => 'Xeque!';
+
+  @override
+  String get replayMate => 'Xeque-mate!';
+
+  @override
+  String get replayCastle => 'O rei escondeu-se no castelo!';
+
+  @override
+  String get replaySacrifice => 'Um sacrifício corajoso!';
+
+  @override
+  String get replayEndMate => 'Xeque-mate! A batalha está ganha.';
+
+  @override
+  String get replayEndResign =>
+      'O rei curvou-se e entregou a coroa. A batalha acabou!';
+
+  @override
+  String get replayEndDraw => 'Empate! Os dois reis apertam as mãos.';
+
+  @override
+  String get replayEndUnfinished => 'Esta batalha ainda continua.';
+
+  @override
+  String get replayPlay => 'Reproduzir';
+
+  @override
+  String get replayPause => 'Pausa';
+
+  @override
+  String get replayNextBattle => 'Próxima batalha';
+
+  @override
+  String get replayChronicle => 'Crónica';
+
+  @override
+  String get replayStepBack => 'Jogada atrás';
+
+  @override
+  String get replayStepForward => 'Jogada à frente';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Jogada $n de $total';
+  }
 }

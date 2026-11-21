@@ -101,4 +101,58 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Roboțelul se gândește…';
+
+  @override
+  String get hallTitle => 'Sala faimei';
+
+  @override
+  String get hallFamous => 'Partide celebre';
+
+  @override
+  String get replayCheck => 'Șah!';
+
+  @override
+  String get replayMate => 'Șah mat!';
+
+  @override
+  String get replayCastle => 'Regele se ascunde în castel!';
+
+  @override
+  String get replaySacrifice => 'Un sacrificiu curajos!';
+
+  @override
+  String get replayEndMate => 'Șah mat! Bătălia este câștigată.';
+
+  @override
+  String get replayEndResign =>
+      'Regele face o plecăciune și își predă coroana. Bătălia s-a terminat!';
+
+  @override
+  String get replayEndDraw => 'Remiză! Cei doi regi își strâng mâna.';
+
+  @override
+  String get replayEndUnfinished => 'Bătălia aceasta încă nu s-a terminat.';
+
+  @override
+  String get replayPlay => 'Redă';
+
+  @override
+  String get replayPause => 'Pauză';
+
+  @override
+  String get replayNextBattle => 'Următoarea bătălie';
+
+  @override
+  String get replayChronicle => 'Cronica';
+
+  @override
+  String get replayStepBack => 'Mutare înapoi';
+
+  @override
+  String get replayStepForward => 'Mutare înainte';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Mutarea $n din $total';
+  }
 }

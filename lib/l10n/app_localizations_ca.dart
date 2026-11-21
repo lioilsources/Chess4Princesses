@@ -101,4 +101,58 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get opponentThinking => 'El robotet està pensant…';
+
+  @override
+  String get hallTitle => 'Sala de la Fama';
+
+  @override
+  String get hallFamous => 'Partides famoses';
+
+  @override
+  String get replayCheck => 'Escac!';
+
+  @override
+  String get replayMate => 'Escac i mat!';
+
+  @override
+  String get replayCastle => 'El rei s’amaga al castell!';
+
+  @override
+  String get replaySacrifice => 'Un sacrifici valent!';
+
+  @override
+  String get replayEndMate => 'Escac i mat! Hem guanyat la batalla.';
+
+  @override
+  String get replayEndResign =>
+      'El rei fa una reverència i lliura la corona. Fi de la batalla!';
+
+  @override
+  String get replayEndDraw => 'Taules! Els dos reis es donen la mà.';
+
+  @override
+  String get replayEndUnfinished => 'Aquesta batalla encara continua.';
+
+  @override
+  String get replayPlay => 'Reprodueix';
+
+  @override
+  String get replayPause => 'Pausa';
+
+  @override
+  String get replayNextBattle => 'Següent batalla';
+
+  @override
+  String get replayChronicle => 'Crònica';
+
+  @override
+  String get replayStepBack => 'Jugada enrere';
+
+  @override
+  String get replayStepForward => 'Jugada endavant';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Jugada $n de $total';
+  }
 }

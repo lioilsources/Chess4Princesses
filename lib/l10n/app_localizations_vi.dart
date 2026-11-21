@@ -101,4 +101,58 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Rô-bốt nhỏ đang suy nghĩ…';
+
+  @override
+  String get hallTitle => 'Phòng vinh danh';
+
+  @override
+  String get hallFamous => 'Ván cờ nổi tiếng';
+
+  @override
+  String get replayCheck => 'Chiếu!';
+
+  @override
+  String get replayMate => 'Chiếu bí!';
+
+  @override
+  String get replayCastle => 'Nhà vua trốn vào lâu đài!';
+
+  @override
+  String get replaySacrifice => 'Một sự hy sinh dũng cảm!';
+
+  @override
+  String get replayEndMate => 'Chiếu bí! Trận đánh đã thắng.';
+
+  @override
+  String get replayEndResign =>
+      'Nhà vua cúi chào và trao vương miện. Trận đánh kết thúc!';
+
+  @override
+  String get replayEndDraw => 'Hòa! Hai nhà vua bắt tay nhau.';
+
+  @override
+  String get replayEndUnfinished => 'Trận đánh này vẫn đang diễn ra.';
+
+  @override
+  String get replayPlay => 'Phát';
+
+  @override
+  String get replayPause => 'Tạm dừng';
+
+  @override
+  String get replayNextBattle => 'Trận tiếp theo';
+
+  @override
+  String get replayChronicle => 'Biên niên sử';
+
+  @override
+  String get replayStepBack => 'Lùi một nước';
+
+  @override
+  String get replayStepForward => 'Tiến một nước';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Nước $n trên $total';
+  }
 }

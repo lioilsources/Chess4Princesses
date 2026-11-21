@@ -27,5 +27,22 @@
   "rivalArmy": "Adversaire",
   "battleDemo": "Bataille d'essai",
   "taskOf": "Tâche {n} sur {total}",
-  "opponentThinking": "Le petit robot réfléchit…"
+  "opponentThinking": "Le petit robot réfléchit…",
+  "hallTitle": "Salle des légendes",
+  "hallFamous": "Parties célèbres",
+  "replayCheck": "Échec !",
+  "replayMate": "Échec et mat !",
+  "replayCastle": "Le roi se cache dans son château !",
+  "replaySacrifice": "Un courageux sacrifice !",
+  "replayEndMate": "Échec et mat ! La bataille est gagnée.",
+  "replayEndResign": "Le roi fait une révérence et rend sa couronne. La bataille est finie !",
+  "replayEndDraw": "Match nul ! Les deux rois se serrent la main.",
+  "replayEndUnfinished": "Cette bataille continue encore.",
+  "replayPlay": "Jouer",
+  "replayPause": "Pause",
+  "replayNextBattle": "Bataille suivante",
+  "replayChronicle": "Chronique",
+  "replayStepBack": "Coup précédent",
+  "replayStepForward": "Coup suivant",
+  "replayMoveOf": "Coup {n} sur {total}"
 }

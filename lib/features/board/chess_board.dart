@@ -57,6 +57,15 @@ class SquarePulse {
 }
 
 /// Kid chessboard: plain Flutter widgets (PLAN §2), tap-tap or drag & drop.
+/// Slides the piece of [move] from its start square; [tick] restarts it.
+/// The board already shows the position after the move.
+class MoveSlide {
+  const MoveSlide(this.move, this.tick, {this.duration = const Duration(milliseconds: 380)});
+  final Move move;
+  final int tick;
+  final Duration duration;
+}
+
 class ChessBoard extends StatelessWidget {
   const ChessBoard({
     super.key,
@@ -71,6 +80,7 @@ class ChessBoard extends StatelessWidget {
     this.onDragStart,
     this.onDrop,
     this.showCoordinates = true,
+    this.slide,
   });
 
   final Position position;
@@ -86,6 +96,7 @@ class ChessBoard extends StatelessWidget {
   final void Function(Square)? onDragStart;
   final void Function(BoardDrag, Square)? onDrop;
   final bool showCoordinates;
+  final MoveSlide? slide;
 
   static const light = Color(0xFFFFFAF0);
   static const dark = Color(0xFFC9A3E0);
@@ -121,10 +132,15 @@ class ChessBoard extends StatelessWidget {
                       decoration: BoxDecoration(color: frame, borderRadius: BorderRadius.circular(12)),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(8),
-                        child: Column(
+                        child: Stack(
                           children: [
-                            for (final r in ranks)
-                              Row(children: [for (final f in files) _cell(Square.at(f, r), cell)]),
+                            Column(
+                              children: [
+                                for (final r in ranks)
+                                  Row(children: [for (final f in files) _cell(Square.at(f, r), cell)]),
+                              ],
+                            ),
+                            ?_slidingPiece(files, ranks, cell),
                           ],
                         ),
                       ),
@@ -148,8 +164,31 @@ class ChessBoard extends StatelessWidget {
     );
   }
 
+  /// The moving piece, drawn above all cells so it never slides under one.
+  Widget? _slidingPiece(List<int> files, List<int> ranks, double cell) {
+    final sl = slide;
+    final piece = sl == null ? null : position[sl.move.to];
+    if (sl == null || piece == null) return null;
+    Offset at(Square q) => Offset(files.indexOf(q.file) * cell, ranks.indexOf(q.rank) * cell);
+    return IgnorePointer(
+      child: TweenAnimationBuilder<Offset>(
+        key: ValueKey('slide${sl.tick}'),
+        tween: Tween(begin: at(sl.move.from), end: at(sl.move.to)),
+        duration: sl.duration,
+        curve: Curves.easeInOutCubic,
+        builder: (context, o, child) => Transform.translate(offset: o, child: child),
+        child: SizedBox(
+          width: cell,
+          height: cell,
+          child: Center(child: PieceToken(piece: piece, army: armyOf(piece.side), mine: piece.side == mySide, size: cell)),
+        ),
+      ),
+    );
+  }
+
   Widget _cell(Square s, double size) {
-    final piece = position[s];
+    final hidden = slide != null && slide!.move.to == s;
+    final piece = hidden ? null : position[s];
     final m = marks;
     final isHintFrom = m.hintMove?.$1 == s, isHintTo = m.hintMove?.$2 == s;
 

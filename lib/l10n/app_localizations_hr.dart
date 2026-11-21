@@ -101,4 +101,58 @@ class AppLocalizationsHr extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Robotić razmišlja…';
+
+  @override
+  String get hallTitle => 'Dvorana slavnih';
+
+  @override
+  String get hallFamous => 'Slavne partije';
+
+  @override
+  String get replayCheck => 'Šah!';
+
+  @override
+  String get replayMate => 'Mat!';
+
+  @override
+  String get replayCastle => 'Kralj se sakrio u dvorac!';
+
+  @override
+  String get replaySacrifice => 'Hrabra žrtva!';
+
+  @override
+  String get replayEndMate => 'Mat! Bitka je dobivena.';
+
+  @override
+  String get replayEndResign =>
+      'Kralj se naklonio i predao krunu. Bitka je gotova!';
+
+  @override
+  String get replayEndDraw => 'Neriješeno! Oba kralja rukuju se.';
+
+  @override
+  String get replayEndUnfinished => 'Ova se bitka još igra.';
+
+  @override
+  String get replayPlay => 'Pusti';
+
+  @override
+  String get replayPause => 'Stanka';
+
+  @override
+  String get replayNextBattle => 'Sljedeća bitka';
+
+  @override
+  String get replayChronicle => 'Kronika';
+
+  @override
+  String get replayStepBack => 'Potez natrag';
+
+  @override
+  String get replayStepForward => 'Potez naprijed';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Potez $n od $total';
+  }
 }

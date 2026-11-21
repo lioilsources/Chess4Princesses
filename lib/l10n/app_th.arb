@@ -27,5 +27,22 @@
   "rivalArmy": "คู่ต่อสู้",
   "battleDemo": "การต่อสู้ทดลอง",
   "taskOf": "ภารกิจ {n} จาก {total}",
-  "opponentThinking": "หุ่นยนต์กำลังคิด…"
+  "opponentThinking": "หุ่นยนต์กำลังคิด…",
+  "hallTitle": "หอเกียรติยศ",
+  "hallFamous": "เกมที่มีชื่อเสียง",
+  "replayCheck": "รุก!",
+  "replayMate": "รุกฆาต!",
+  "replayCastle": "ราชาไปซ่อนในปราสาท!",
+  "replaySacrifice": "การเสียสละที่กล้าหาญ!",
+  "replayEndMate": "รุกฆาต! ชนะการต่อสู้แล้ว",
+  "replayEndResign": "ราชาโค้งคำนับและส่งมอบมงกุฎ การต่อสู้จบแล้ว!",
+  "replayEndDraw": "เสมอ! ราชาทั้งสองจับมือกัน",
+  "replayEndUnfinished": "การต่อสู้นี้ยังดำเนินอยู่",
+  "replayPlay": "เล่น",
+  "replayPause": "หยุดชั่วคราว",
+  "replayNextBattle": "การต่อสู้ถัดไป",
+  "replayChronicle": "บันทึก",
+  "replayStepBack": "ถอยหลังหนึ่งตา",
+  "replayStepForward": "เดินหน้าหนึ่งตา",
+  "replayMoveOf": "ตาที่ {n} จาก {total}"
 }

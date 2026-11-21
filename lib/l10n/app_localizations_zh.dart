@@ -101,6 +101,59 @@ class AppLocalizationsZh extends AppLocalizations {
 
   @override
   String get opponentThinking => '机器人在思考…';
+
+  @override
+  String get hallTitle => '名人堂';
+
+  @override
+  String get hallFamous => '著名的棋局';
+
+  @override
+  String get replayCheck => '将军！';
+
+  @override
+  String get replayMate => '将死！';
+
+  @override
+  String get replayCastle => '国王躲进了城堡！';
+
+  @override
+  String get replaySacrifice => '勇敢的牺牲！';
+
+  @override
+  String get replayEndMate => '将死！战斗赢啦。';
+
+  @override
+  String get replayEndResign => '国王鞠了一躬，交出了王冠。战斗结束！';
+
+  @override
+  String get replayEndDraw => '和棋！两位国王握手了。';
+
+  @override
+  String get replayEndUnfinished => '这场战斗还在进行中。';
+
+  @override
+  String get replayPlay => '播放';
+
+  @override
+  String get replayPause => '暂停';
+
+  @override
+  String get replayNextBattle => '下一场战斗';
+
+  @override
+  String get replayChronicle => '战斗记录';
+
+  @override
+  String get replayStepBack => '上一步';
+
+  @override
+  String get replayStepForward => '下一步';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return '第 $n 步，共 $total 步';
+  }
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
@@ -200,4 +253,57 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get opponentThinking => '機器人在思考…';
+
+  @override
+  String get hallTitle => '名人堂';
+
+  @override
+  String get hallFamous => '著名的棋局';
+
+  @override
+  String get replayCheck => '將軍！';
+
+  @override
+  String get replayMate => '將死！';
+
+  @override
+  String get replayCastle => '國王躲進了城堡！';
+
+  @override
+  String get replaySacrifice => '勇敢的犧牲！';
+
+  @override
+  String get replayEndMate => '將死！戰鬥贏啦。';
+
+  @override
+  String get replayEndResign => '國王鞠了一躬，交出了王冠。戰鬥結束！';
+
+  @override
+  String get replayEndDraw => '和棋！兩位國王握手了。';
+
+  @override
+  String get replayEndUnfinished => '這場戰鬥還在進行中。';
+
+  @override
+  String get replayPlay => '播放';
+
+  @override
+  String get replayPause => '暫停';
+
+  @override
+  String get replayNextBattle => '下一場戰鬥';
+
+  @override
+  String get replayChronicle => '戰鬥紀錄';
+
+  @override
+  String get replayStepBack => '上一步';
+
+  @override
+  String get replayStepForward => '下一步';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return '第 $n 步，共 $total 步';
+  }
 }

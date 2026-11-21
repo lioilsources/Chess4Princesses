@@ -27,5 +27,22 @@
   "rivalArmy": "Adversário",
   "battleDemo": "Batalha de teste",
   "taskOf": "Tarefa {n} de {total}",
-  "opponentThinking": "O robozinho está pensando…"
+  "opponentThinking": "O robozinho está pensando…",
+  "hallTitle": "Salão da Fama",
+  "hallFamous": "Partidas famosas",
+  "replayCheck": "Xeque!",
+  "replayMate": "Xeque-mate!",
+  "replayCastle": "O rei se escondeu no castelo!",
+  "replaySacrifice": "Um sacrifício corajoso!",
+  "replayEndMate": "Xeque-mate! A batalha foi vencida.",
+  "replayEndResign": "O rei se curvou e entregou a coroa. A batalha acabou!",
+  "replayEndDraw": "Empate! Os dois reis se cumprimentam.",
+  "replayEndUnfinished": "Esta batalha ainda continua.",
+  "replayPlay": "Reproduzir",
+  "replayPause": "Pausar",
+  "replayNextBattle": "Próxima batalha",
+  "replayChronicle": "Crônica",
+  "replayStepBack": "Jogada para trás",
+  "replayStepForward": "Jogada para a frente",
+  "replayMoveOf": "Jogada {n} de {total}"
 }
