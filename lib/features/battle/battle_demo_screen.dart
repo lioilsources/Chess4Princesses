@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../app/content_lang.dart';
 import '../../app/providers.dart';
 import '../../core/chess/types.dart';
 import '../../l10n/app_localizations.dart';
@@ -27,7 +28,7 @@ class _BattleDemoScreenState extends ConsumerState<BattleDemoScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
-    final lang = Localizations.localeOf(context).languageCode;
+    final lang = context.contentLang;
     final armies = ref.watch(boardArmiesProvider).value;
     if (armies == null) return const Scaffold(body: Center(child: CircularProgressIndicator()));
     final (mine, rival) = armies;

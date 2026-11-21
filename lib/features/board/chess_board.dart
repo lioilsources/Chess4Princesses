@@ -93,54 +93,58 @@ class ChessBoard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, c) {
-        final side = min(c.maxWidth, c.maxHeight);
-        final label = showCoordinates ? side * .055 : 0.0;
-        final cell = (side - label - 8) / 8;
-        final files = List.generate(8, (i) => mySide == Side.white ? i : 7 - i);
-        final ranks = List.generate(8, (i) => mySide == Side.white ? 7 - i : i);
-        final coordStyle = TextStyle(fontSize: label * .7, fontWeight: FontWeight.w700, color: frame);
+    // Files run a→h left to right in every language, RTL included.
+    return Directionality(
+      textDirection: TextDirection.ltr,
+      child: LayoutBuilder(
+        builder: (context, c) {
+          final side = min(c.maxWidth, c.maxHeight);
+          final label = showCoordinates ? side * .055 : 0.0;
+          final cell = (side - label - 8) / 8;
+          final files = List.generate(8, (i) => mySide == Side.white ? i : 7 - i);
+          final ranks = List.generate(8, (i) => mySide == Side.white ? 7 - i : i);
+          final coordStyle = TextStyle(fontSize: label * .7, fontWeight: FontWeight.w700, color: frame);
 
-        return SizedBox(
-          width: side,
-          height: side,
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  if (showCoordinates)
-                    Column(children: [for (final r in ranks) SizedBox(width: label, height: cell, child: Center(child: Text('${r + 1}', style: coordStyle)))]),
-                  Container(
-                    padding: const EdgeInsets.all(4),
-                    decoration: BoxDecoration(color: frame, borderRadius: BorderRadius.circular(12)),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(8),
-                      child: Column(
-                        children: [
-                          for (final r in ranks)
-                            Row(children: [for (final f in files) _cell(Square.at(f, r), cell)]),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              if (showCoordinates)
+          return SizedBox(
+            width: side,
+            height: side,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    SizedBox(width: label + 4),
-                    for (final f in files) SizedBox(width: cell, height: label, child: Center(child: Text(String.fromCharCode(0x61 + f), style: coordStyle))),
-                    const SizedBox(width: 4),
+                    if (showCoordinates)
+                      Column(children: [for (final r in ranks) SizedBox(width: label, height: cell, child: Center(child: Text('${r + 1}', style: coordStyle)))]),
+                    Container(
+                      padding: const EdgeInsets.all(4),
+                      decoration: BoxDecoration(color: frame, borderRadius: BorderRadius.circular(12)),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8),
+                        child: Column(
+                          children: [
+                            for (final r in ranks)
+                              Row(children: [for (final f in files) _cell(Square.at(f, r), cell)]),
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
-            ],
-          ),
-        );
-      },
+                if (showCoordinates)
+                  Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      SizedBox(width: label + 4),
+                      for (final f in files) SizedBox(width: cell, height: label, child: Center(child: Text(String.fromCharCode(0x61 + f), style: coordStyle))),
+                      const SizedBox(width: 4),
+                    ],
+                  ),
+              ],
+            ),
+          );
+        },
+      ),
     );
   }
 
