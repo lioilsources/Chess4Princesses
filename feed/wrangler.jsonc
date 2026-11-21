@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "princesschess-feed",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-21",
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.1,
+    "traces": { "enabled": true, "head_sampling_rate": 0.1 }
+  },
+  "vars": {
+    "SOURCE_BASE": "https://lichess.org"
+  }
+}

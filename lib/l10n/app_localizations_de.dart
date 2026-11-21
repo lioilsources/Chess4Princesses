@@ -156,4 +156,29 @@ class AppLocalizationsDe extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Zug $n von $total';
   }
+
+  @override
+  String get liveTitle => 'Läuft gerade';
+
+  @override
+  String get liveSwitch => 'Partien aus dem Internet';
+
+  @override
+  String get liveSwitchHint =>
+      'Live-Turniere werden nur geladen, solange der Schalter an ist.';
+
+  @override
+  String get liveNothing => 'Gerade wird nichts gespielt.';
+
+  @override
+  String get liveError =>
+      'Konnte nicht geladen werden. Versuch es später noch einmal.';
+
+  @override
+  String get liveOffline => 'Kein Internet: Ich zeige, was schon geladen ist.';
+
+  @override
+  String liveGame(int n) {
+    return 'Partie $n';
+  }
 }

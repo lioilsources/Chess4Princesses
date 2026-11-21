@@ -44,5 +44,12 @@
   "replayChronicle": "יומן הקרב",
   "replayStepBack": "מהלך אחורה",
   "replayStepForward": "מהלך קדימה",
-  "replayMoveOf": "מהלך {n} מתוך {total}"
+  "replayMoveOf": "מהלך {n} מתוך {total}",
+  "liveTitle": "משחקים עכשיו",
+  "liveSwitch": "משחקים מהאינטרנט",
+  "liveSwitchHint": "טורנירים חיים יורדים רק כשהמתג הזה דלוק.",
+  "liveNothing": "כרגע לא משחקים כלום.",
+  "liveError": "לא הצלחנו לטעון. נסו שוב מאוחר יותר.",
+  "liveOffline": "אין אינטרנט: מוצג מה שכבר הורד.",
+  "liveGame": "משחק {n}"
 }

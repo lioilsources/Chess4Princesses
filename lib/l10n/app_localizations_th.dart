@@ -154,4 +154,28 @@ class AppLocalizationsTh extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'ตาที่ $n จาก $total';
   }
+
+  @override
+  String get liveTitle => 'กำลังเล่นอยู่ตอนนี้';
+
+  @override
+  String get liveSwitch => 'เกมจากอินเทอร์เน็ต';
+
+  @override
+  String get liveSwitchHint =>
+      'ระบบจะดาวน์โหลดทัวร์นาเมนต์สดเฉพาะตอนที่เปิดสวิตช์นี้เท่านั้น';
+
+  @override
+  String get liveNothing => 'ตอนนี้ยังไม่มีใครเล่นอยู่';
+
+  @override
+  String get liveError => 'โหลดไม่สำเร็จ ลองใหม่ภายหลังนะ';
+
+  @override
+  String get liveOffline => 'ไม่มีอินเทอร์เน็ต: แสดงสิ่งที่ดาวน์โหลดไว้แล้ว';
+
+  @override
+  String liveGame(int n) {
+    return 'เกมที่ $n';
+  }
 }

@@ -155,4 +155,29 @@ class AppLocalizationsTr extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Hamle $n / $total';
   }
+
+  @override
+  String get liveTitle => 'Şu an oynanıyor';
+
+  @override
+  String get liveSwitch => 'İnternetten oyunlar';
+
+  @override
+  String get liveSwitchHint =>
+      'Canlı turnuvalar yalnızca bu açıkken indirilir.';
+
+  @override
+  String get liveNothing => 'Şu an hiçbir şey oynanmıyor.';
+
+  @override
+  String get liveError => 'Yüklenemedi. Daha sonra tekrar dene.';
+
+  @override
+  String get liveOffline =>
+      'İnternet yok: daha önce indirilenleri gösteriyorum.';
+
+  @override
+  String liveGame(int n) {
+    return 'Oyun $n';
+  }
 }

@@ -44,5 +44,12 @@
   "replayChronicle": "वृत्तांत",
   "replayStepBack": "एक चाल पीछे",
   "replayStepForward": "एक चाल आगे",
-  "replayMoveOf": "{total} में से चाल {n}"
+  "replayMoveOf": "{total} में से चाल {n}",
+  "liveTitle": "अभी खेला जा रहा है",
+  "liveSwitch": "इंटरनेट से खेल",
+  "liveSwitchHint": "लाइव टूर्नामेंट तभी डाउनलोड होते हैं जब यह चालू हो।",
+  "liveNothing": "अभी कुछ नहीं खेला जा रहा।",
+  "liveError": "लोड नहीं हो सका। बाद में फिर कोशिश करो।",
+  "liveOffline": "इंटरनेट नहीं है: जो पहले से डाउनलोड है वही दिखा रहे हैं।",
+  "liveGame": "खेल {n}"
 }

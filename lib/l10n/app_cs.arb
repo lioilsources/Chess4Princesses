@@ -50,5 +50,13 @@
   "replayStepBack": "Tah zpět",
   "replayStepForward": "Tah vpřed",
   "replayMoveOf": "Tah {n} z {total}",
-  "@replayMoveOf": {"placeholders": {"n": {"type": "int"}, "total": {"type": "int"}}}
+  "@replayMoveOf": {"placeholders": {"n": {"type": "int"}, "total": {"type": "int"}}},
+  "liveTitle": "Právě se hraje",
+  "liveSwitch": "Partie z internetu",
+  "liveSwitchHint": "Živé turnaje se stahují jen se zapnutým přepínačem.",
+  "liveNothing": "Teď se nic nehraje.",
+  "liveError": "Nepodařilo se načíst. Zkus to později.",
+  "liveOffline": "Bez internetu: ukazuji, co je už stažené.",
+  "liveGame": "Partie {n}",
+  "@liveGame": {"placeholders": {"n": {"type": "int"}}}
 }

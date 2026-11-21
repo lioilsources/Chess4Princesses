@@ -155,4 +155,28 @@ class AppLocalizationsUk extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Хід $n з $total';
   }
+
+  @override
+  String get liveTitle => 'Грають зараз';
+
+  @override
+  String get liveSwitch => 'Партії з інтернету';
+
+  @override
+  String get liveSwitchHint =>
+      'Турніри наживо завантажуються, лише поки перемикач увімкнено.';
+
+  @override
+  String get liveNothing => 'Зараз нічого не грається.';
+
+  @override
+  String get liveError => 'Не вдалося завантажити. Спробуй пізніше.';
+
+  @override
+  String get liveOffline => 'Немає інтернету: показую те, що вже завантажено.';
+
+  @override
+  String liveGame(int n) {
+    return 'Партія $n';
+  }
 }

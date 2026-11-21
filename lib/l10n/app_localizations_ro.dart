@@ -155,4 +155,28 @@ class AppLocalizationsRo extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Mutarea $n din $total';
   }
+
+  @override
+  String get liveTitle => 'Se joacă acum';
+
+  @override
+  String get liveSwitch => 'Partide de pe internet';
+
+  @override
+  String get liveSwitchHint =>
+      'Turneele în direct se descarcă doar cât timp comutatorul este pornit.';
+
+  @override
+  String get liveNothing => 'Acum nu se joacă nimic.';
+
+  @override
+  String get liveError => 'Nu s-a putut încărca. Încearcă din nou mai târziu.';
+
+  @override
+  String get liveOffline => 'Fără internet: arăt ce a fost deja descărcat.';
+
+  @override
+  String liveGame(int n) {
+    return 'Partida $n';
+  }
 }

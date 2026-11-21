@@ -155,4 +155,28 @@ class AppLocalizationsCa extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Jugada $n de $total';
   }
+
+  @override
+  String get liveTitle => 'Es juga ara';
+
+  @override
+  String get liveSwitch => 'Partides d’internet';
+
+  @override
+  String get liveSwitchHint =>
+      'Els torneigs en directe només es baixen mentre això està activat.';
+
+  @override
+  String get liveNothing => 'Ara no s’està jugant res.';
+
+  @override
+  String get liveError => 'No s’ha pogut carregar. Torna-ho a provar més tard.';
+
+  @override
+  String get liveOffline => 'Sense internet: mostro el que ja està baixat.';
+
+  @override
+  String liveGame(int n) {
+    return 'Partida $n';
+  }
 }

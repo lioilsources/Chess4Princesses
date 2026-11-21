@@ -155,4 +155,29 @@ class AppLocalizationsTe extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return '$totalలో $nవ ఎత్తు';
   }
+
+  @override
+  String get liveTitle => 'ఇప్పుడు ఆడుతున్నారు';
+
+  @override
+  String get liveSwitch => 'ఇంటర్నెట్ నుండి ఆటలు';
+
+  @override
+  String get liveSwitchHint =>
+      'ఇది ఆన్‌లో ఉన్నప్పుడు మాత్రమే లైవ్ టోర్నమెంట్‌లు డౌన్‌లోడ్ అవుతాయి.';
+
+  @override
+  String get liveNothing => 'ఇప్పుడు ఏదీ ఆడటం లేదు.';
+
+  @override
+  String get liveError => 'లోడ్ కాలేదు. తర్వాత మళ్లీ ప్రయత్నించండి.';
+
+  @override
+  String get liveOffline =>
+      'ఇంటర్నెట్ లేదు: ఇప్పటికే డౌన్‌లోడ్ అయినవి చూపిస్తున్నాం.';
+
+  @override
+  String liveGame(int n) {
+    return 'ఆట $n';
+  }
 }

@@ -59,3 +59,8 @@ build/
 .flutter-plugins
 lib/**/secrets.dart
 # devconv:end
+
+# feed/ Worker (docs/feed.md)
+feed/node_modules/
+feed/.wrangler/
+feed/worker-configuration.d.ts

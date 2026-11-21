@@ -44,5 +44,12 @@
   "replayChronicle": "Crònica",
   "replayStepBack": "Jugada enrere",
   "replayStepForward": "Jugada endavant",
-  "replayMoveOf": "Jugada {n} de {total}"
+  "replayMoveOf": "Jugada {n} de {total}",
+  "liveTitle": "Es juga ara",
+  "liveSwitch": "Partides d’internet",
+  "liveSwitchHint": "Els torneigs en directe només es baixen mentre això està activat.",
+  "liveNothing": "Ara no s’està jugant res.",
+  "liveError": "No s’ha pogut carregar. Torna-ho a provar més tard.",
+  "liveOffline": "Sense internet: mostro el que ja està baixat.",
+  "liveGame": "Partida {n}"
 }

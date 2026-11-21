@@ -44,5 +44,12 @@
   "replayChronicle": "Kronika",
   "replayStepBack": "Ťah späť",
   "replayStepForward": "Ťah vpred",
-  "replayMoveOf": "Ťah {n} z {total}"
+  "replayMoveOf": "Ťah {n} z {total}",
+  "liveTitle": "Práve sa hrá",
+  "liveSwitch": "Partie z internetu",
+  "liveSwitchHint": "Živé turnaje sa sťahujú len so zapnutým prepínačom.",
+  "liveNothing": "Teraz sa nič nehrá.",
+  "liveError": "Nepodarilo sa načítať. Skús to neskôr.",
+  "liveOffline": "Bez internetu: ukazujem, čo je už stiahnuté.",
+  "liveGame": "Partia {n}"
 }

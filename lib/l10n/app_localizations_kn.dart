@@ -155,4 +155,29 @@ class AppLocalizationsKn extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return '$totalರಲ್ಲಿ $nನೇ ನಡೆ';
   }
+
+  @override
+  String get liveTitle => 'ಈಗ ಆಡುತ್ತಿದ್ದಾರೆ';
+
+  @override
+  String get liveSwitch => 'ಇಂಟರ್ನೆಟ್‌ನ ಆಟಗಳು';
+
+  @override
+  String get liveSwitchHint =>
+      'ಇದು ಆನ್ ಇರುವಾಗ ಮಾತ್ರ ನೇರ ಪಂದ್ಯಾವಳಿಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತದೆ.';
+
+  @override
+  String get liveNothing => 'ಈಗ ಏನೂ ಆಡುತ್ತಿಲ್ಲ.';
+
+  @override
+  String get liveError => 'ಲೋಡ್ ಆಗಲಿಲ್ಲ. ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.';
+
+  @override
+  String get liveOffline =>
+      'ಇಂಟರ್ನೆಟ್ ಇಲ್ಲ: ಈಗಾಗಲೇ ಡೌನ್‌ಲೋಡ್ ಆದದ್ದನ್ನು ತೋರಿಸುತ್ತಿದ್ದೇವೆ.';
+
+  @override
+  String liveGame(int n) {
+    return 'ಆಟ $n';
+  }
 }

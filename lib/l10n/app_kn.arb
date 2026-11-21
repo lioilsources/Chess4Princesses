@@ -44,5 +44,12 @@
   "replayChronicle": "ವೃತ್ತಾಂತ",
   "replayStepBack": "ಒಂದು ನಡೆ ಹಿಂದೆ",
   "replayStepForward": "ಒಂದು ನಡೆ ಮುಂದೆ",
-  "replayMoveOf": "{total}ರಲ್ಲಿ {n}ನೇ ನಡೆ"
+  "replayMoveOf": "{total}ರಲ್ಲಿ {n}ನೇ ನಡೆ",
+  "liveTitle": "ಈಗ ಆಡುತ್ತಿದ್ದಾರೆ",
+  "liveSwitch": "ಇಂಟರ್ನೆಟ್‌ನ ಆಟಗಳು",
+  "liveSwitchHint": "ಇದು ಆನ್ ಇರುವಾಗ ಮಾತ್ರ ನೇರ ಪಂದ್ಯಾವಳಿಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತದೆ.",
+  "liveNothing": "ಈಗ ಏನೂ ಆಡುತ್ತಿಲ್ಲ.",
+  "liveError": "ಲೋಡ್ ಆಗಲಿಲ್ಲ. ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
+  "liveOffline": "ಇಂಟರ್ನೆಟ್ ಇಲ್ಲ: ಈಗಾಗಲೇ ಡೌನ್‌ಲೋಡ್ ಆದದ್ದನ್ನು ತೋರಿಸುತ್ತಿದ್ದೇವೆ.",
+  "liveGame": "ಆಟ {n}"
 }

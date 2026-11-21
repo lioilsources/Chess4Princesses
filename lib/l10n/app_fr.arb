@@ -44,5 +44,12 @@
   "replayChronicle": "Chronique",
   "replayStepBack": "Coup précédent",
   "replayStepForward": "Coup suivant",
-  "replayMoveOf": "Coup {n} sur {total}"
+  "replayMoveOf": "Coup {n} sur {total}",
+  "liveTitle": "En cours maintenant",
+  "liveSwitch": "Parties d’internet",
+  "liveSwitchHint": "Les tournois en direct ne sont téléchargés que lorsque ce réglage est activé.",
+  "liveNothing": "Rien ne se joue en ce moment.",
+  "liveError": "Impossible de charger. Réessaie plus tard.",
+  "liveOffline": "Pas d’internet : je montre ce qui est déjà téléchargé.",
+  "liveGame": "Partie {n}"
 }

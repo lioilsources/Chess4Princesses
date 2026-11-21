@@ -44,5 +44,12 @@
   "replayChronicle": "Kronik",
   "replayStepBack": "Langkah ke belakang",
   "replayStepForward": "Langkah ke hadapan",
-  "replayMoveOf": "Langkah {n} daripada {total}"
+  "replayMoveOf": "Langkah {n} daripada {total}",
+  "liveTitle": "Sedang dimainkan",
+  "liveSwitch": "Permainan dari internet",
+  "liveSwitchHint": "Kejohanan langsung hanya dimuat turun semasa suis ini dihidupkan.",
+  "liveNothing": "Tiada yang sedang dimainkan sekarang.",
+  "liveError": "Tidak dapat dimuatkan. Cuba lagi nanti.",
+  "liveOffline": "Tiada internet: menunjukkan yang sudah dimuat turun.",
+  "liveGame": "Permainan {n}"
 }

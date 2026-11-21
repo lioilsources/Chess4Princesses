@@ -44,5 +44,12 @@
   "replayChronicle": "Krönika",
   "replayStepBack": "Drag tillbaka",
   "replayStepForward": "Drag framåt",
-  "replayMoveOf": "Drag {n} av {total}"
+  "replayMoveOf": "Drag {n} av {total}",
+  "liveTitle": "Spelas nu",
+  "liveSwitch": "Partier från internet",
+  "liveSwitchHint": "Direktsända turneringar laddas bara ned när den här är på.",
+  "liveNothing": "Ingenting spelas just nu.",
+  "liveError": "Det gick inte att ladda. Försök igen senare.",
+  "liveOffline": "Inget internet: visar det som redan är nedladdat.",
+  "liveGame": "Parti {n}"
 }

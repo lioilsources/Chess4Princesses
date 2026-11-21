@@ -155,4 +155,29 @@ class AppLocalizationsPa extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return '$total ਵਿੱਚੋਂ ਚਾਲ $n';
   }
+
+  @override
+  String get liveTitle => 'ਹੁਣ ਖੇਡਿਆ ਜਾ ਰਿਹਾ ਹੈ';
+
+  @override
+  String get liveSwitch => 'ਇੰਟਰਨੈੱਟ ਦੀਆਂ ਖੇਡਾਂ';
+
+  @override
+  String get liveSwitchHint =>
+      'ਇਹ ਚਾਲੂ ਹੋਣ ਵੇਲੇ ਹੀ ਲਾਈਵ ਟੂਰਨਾਮੈਂਟ ਡਾਊਨਲੋਡ ਹੁੰਦੇ ਹਨ।';
+
+  @override
+  String get liveNothing => 'ਹੁਣ ਕੁਝ ਨਹੀਂ ਖੇਡਿਆ ਜਾ ਰਿਹਾ।';
+
+  @override
+  String get liveError => 'ਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ। ਬਾਅਦ ਵਿੱਚ ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ।';
+
+  @override
+  String get liveOffline =>
+      'ਇੰਟਰਨੈੱਟ ਨਹੀਂ ਹੈ: ਜੋ ਪਹਿਲਾਂ ਡਾਊਨਲੋਡ ਹੋਇਆ ਹੈ ਉਹੀ ਦਿਖਾ ਰਹੇ ਹਾਂ।';
+
+  @override
+  String liveGame(int n) {
+    return 'ਖੇਡ $n';
+  }
 }

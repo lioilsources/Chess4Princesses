@@ -44,5 +44,12 @@
   "replayChronicle": "きろく",
   "replayStepBack": "ひとつもどる",
   "replayStepForward": "ひとつすすむ",
-  "replayMoveOf": "{total}てのうち {n}てめ"
+  "replayMoveOf": "{total}てのうち {n}てめ",
+  "liveTitle": "いま あそんでいるよ",
+  "liveSwitch": "ネットのたいきょく",
+  "liveSwitchHint": "このスイッチがオンのときだけ、ライブのたいかいをダウンロードするよ。",
+  "liveNothing": "いまは だれも あそんでいないよ。",
+  "liveError": "よみこめなかったよ。あとで もういちど ためしてね。",
+  "liveOffline": "ネットにつながっていないよ。ダウンロードずみのものを みせているよ。",
+  "liveGame": "だい{n}きょく"
 }

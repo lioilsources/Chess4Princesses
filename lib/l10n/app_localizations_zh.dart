@@ -154,6 +154,29 @@ class AppLocalizationsZh extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return '第 $n 步，共 $total 步';
   }
+
+  @override
+  String get liveTitle => '正在进行';
+
+  @override
+  String get liveSwitch => '来自网络的棋局';
+
+  @override
+  String get liveSwitchHint => '只有打开这个开关，才会下载直播的比赛。';
+
+  @override
+  String get liveNothing => '现在没有正在进行的棋局。';
+
+  @override
+  String get liveError => '加载失败了，请稍后再试。';
+
+  @override
+  String get liveOffline => '没有网络：显示已经下载好的内容。';
+
+  @override
+  String liveGame(int n) {
+    return '第 $n 局';
+  }
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
@@ -305,5 +328,28 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   @override
   String replayMoveOf(int n, int total) {
     return '第 $n 步，共 $total 步';
+  }
+
+  @override
+  String get liveTitle => '正在進行';
+
+  @override
+  String get liveSwitch => '來自網路的棋局';
+
+  @override
+  String get liveSwitchHint => '只有開啟這個開關，才會下載直播的比賽。';
+
+  @override
+  String get liveNothing => '現在沒有正在進行的棋局。';
+
+  @override
+  String get liveError => '載入失敗了，請稍後再試。';
+
+  @override
+  String get liveOffline => '沒有網路：顯示已經下載好的內容。';
+
+  @override
+  String liveGame(int n) {
+    return '第 $n 局';
   }
 }

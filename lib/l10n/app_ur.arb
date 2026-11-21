@@ -44,5 +44,12 @@
   "replayChronicle": "روداد",
   "replayStepBack": "ایک چال پیچھے",
   "replayStepForward": "ایک چال آگے",
-  "replayMoveOf": "{total} میں سے چال {n}"
+  "replayMoveOf": "{total} میں سے چال {n}",
+  "liveTitle": "ابھی کھیلا جا رہا ہے",
+  "liveSwitch": "انٹرنیٹ سے کھیل",
+  "liveSwitchHint": "لائیو ٹورنامنٹ صرف اسی وقت ڈاؤن لوڈ ہوتے ہیں جب یہ آن ہو۔",
+  "liveNothing": "ابھی کچھ نہیں کھیلا جا رہا۔",
+  "liveError": "لوڈ نہیں ہو سکا۔ بعد میں دوبارہ کوشش کرو۔",
+  "liveOffline": "انٹرنیٹ نہیں ہے: جو پہلے سے ڈاؤن لوڈ ہے وہ دکھا رہے ہیں۔",
+  "liveGame": "کھیل {n}"
 }

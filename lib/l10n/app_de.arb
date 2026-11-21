@@ -44,5 +44,12 @@
   "replayChronicle": "Chronik",
   "replayStepBack": "Zug zurück",
   "replayStepForward": "Zug vor",
-  "replayMoveOf": "Zug {n} von {total}"
+  "replayMoveOf": "Zug {n} von {total}",
+  "liveTitle": "Läuft gerade",
+  "liveSwitch": "Partien aus dem Internet",
+  "liveSwitchHint": "Live-Turniere werden nur geladen, solange der Schalter an ist.",
+  "liveNothing": "Gerade wird nichts gespielt.",
+  "liveError": "Konnte nicht geladen werden. Versuch es später noch einmal.",
+  "liveOffline": "Kein Internet: Ich zeige, was schon geladen ist.",
+  "liveGame": "Partie {n}"
 }

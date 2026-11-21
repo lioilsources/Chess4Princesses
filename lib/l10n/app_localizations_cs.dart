@@ -154,4 +154,28 @@ class AppLocalizationsCs extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Tah $n z $total';
   }
+
+  @override
+  String get liveTitle => 'Právě se hraje';
+
+  @override
+  String get liveSwitch => 'Partie z internetu';
+
+  @override
+  String get liveSwitchHint =>
+      'Živé turnaje se stahují jen se zapnutým přepínačem.';
+
+  @override
+  String get liveNothing => 'Teď se nic nehraje.';
+
+  @override
+  String get liveError => 'Nepodařilo se načíst. Zkus to později.';
+
+  @override
+  String get liveOffline => 'Bez internetu: ukazuji, co je už stažené.';
+
+  @override
+  String liveGame(int n) {
+    return 'Partie $n';
+  }
 }

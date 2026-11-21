@@ -44,5 +44,12 @@
   "replayChronicle": "ଇତିବୃତ୍ତ",
   "replayStepBack": "ଗୋଟିଏ ଚାଲ ପଛକୁ",
   "replayStepForward": "ଗୋଟିଏ ଚାଲ ଆଗକୁ",
-  "replayMoveOf": "{total}ରୁ {n} ନମ୍ବର ଚାଲ"
+  "replayMoveOf": "{total}ରୁ {n} ନମ୍ବର ଚାଲ",
+  "liveTitle": "ଏବେ ଖେଳାଯାଉଛି",
+  "liveSwitch": "ଇଣ୍ଟରନେଟରୁ ଖେଳ",
+  "liveSwitchHint": "ଏହା ଚାଲୁ ଥିବା ବେଳେ ହିଁ ଲାଇଭ୍ ଟୁର୍ନାମେଣ୍ଟ ଡାଉନଲୋଡ୍ ହୁଏ।",
+  "liveNothing": "ଏବେ କିଛି ଖେଳାଯାଉନାହିଁ।",
+  "liveError": "ଲୋଡ୍ ହୋଇପାରିଲା ନାହିଁ। ପରେ ପୁଣି ଚେଷ୍ଟା କର।",
+  "liveOffline": "ଇଣ୍ଟରନେଟ ନାହିଁ: ଆଗରୁ ଡାଉନଲୋଡ୍ ହୋଇଥିବା ଦେଖାଉଛୁ।",
+  "liveGame": "ଖେଳ {n}"
 }

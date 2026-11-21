@@ -155,4 +155,28 @@ class AppLocalizationsSl extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Poteza $n od $total';
   }
+
+  @override
+  String get liveTitle => 'Igra se zdaj';
+
+  @override
+  String get liveSwitch => 'Partije z interneta';
+
+  @override
+  String get liveSwitchHint =>
+      'Turnirji v živo se prenesejo le, ko je to vklopljeno.';
+
+  @override
+  String get liveNothing => 'Trenutno se nič ne igra.';
+
+  @override
+  String get liveError => 'Nalaganje ni uspelo. Poskusi znova pozneje.';
+
+  @override
+  String get liveOffline => 'Ni interneta: prikazujem, kar je že preneseno.';
+
+  @override
+  String liveGame(int n) {
+    return 'Partija $n';
+  }
 }

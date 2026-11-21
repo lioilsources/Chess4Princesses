@@ -154,4 +154,27 @@ class AppLocalizationsKo extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return '$total수 중 $n수';
   }
+
+  @override
+  String get liveTitle => '지금 하는 중';
+
+  @override
+  String get liveSwitch => '인터넷에서 온 대국';
+
+  @override
+  String get liveSwitchHint => '이 스위치가 켜져 있을 때만 실시간 대회를 내려받아요.';
+
+  @override
+  String get liveNothing => '지금은 아무도 두고 있지 않아요.';
+
+  @override
+  String get liveError => '불러오지 못했어요. 나중에 다시 해 보세요.';
+
+  @override
+  String get liveOffline => '인터넷이 없어요. 이미 내려받은 것만 보여 줄게요.';
+
+  @override
+  String liveGame(int n) {
+    return '제$n국';
+  }
 }

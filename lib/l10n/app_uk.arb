@@ -44,5 +44,12 @@
   "replayChronicle": "Хроніка",
   "replayStepBack": "Хід назад",
   "replayStepForward": "Хід уперед",
-  "replayMoveOf": "Хід {n} з {total}"
+  "replayMoveOf": "Хід {n} з {total}",
+  "liveTitle": "Грають зараз",
+  "liveSwitch": "Партії з інтернету",
+  "liveSwitchHint": "Турніри наживо завантажуються, лише поки перемикач увімкнено.",
+  "liveNothing": "Зараз нічого не грається.",
+  "liveError": "Не вдалося завантажити. Спробуй пізніше.",
+  "liveOffline": "Немає інтернету: показую те, що вже завантажено.",
+  "liveGame": "Партія {n}"
 }

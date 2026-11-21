@@ -44,5 +44,12 @@
   "replayChronicle": "Cronaca",
   "replayStepBack": "Mossa indietro",
   "replayStepForward": "Mossa avanti",
-  "replayMoveOf": "Mossa {n} di {total}"
+  "replayMoveOf": "Mossa {n} di {total}",
+  "liveTitle": "Si gioca adesso",
+  "liveSwitch": "Partite da internet",
+  "liveSwitchHint": "I tornei in diretta vengono scaricati solo quando questo è attivo.",
+  "liveNothing": "Al momento non si sta giocando niente.",
+  "liveError": "Impossibile caricare. Riprova più tardi.",
+  "liveOffline": "Niente internet: mostro quello che è già scaricato.",
+  "liveGame": "Partita {n}"
 }

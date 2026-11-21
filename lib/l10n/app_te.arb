@@ -44,5 +44,12 @@
   "replayChronicle": "చరిత్ర",
   "replayStepBack": "ఒక ఎత్తు వెనక్కి",
   "replayStepForward": "ఒక ఎత్తు ముందుకి",
-  "replayMoveOf": "{total}లో {n}వ ఎత్తు"
+  "replayMoveOf": "{total}లో {n}వ ఎత్తు",
+  "liveTitle": "ఇప్పుడు ఆడుతున్నారు",
+  "liveSwitch": "ఇంటర్నెట్ నుండి ఆటలు",
+  "liveSwitchHint": "ఇది ఆన్‌లో ఉన్నప్పుడు మాత్రమే లైవ్ టోర్నమెంట్‌లు డౌన్‌లోడ్ అవుతాయి.",
+  "liveNothing": "ఇప్పుడు ఏదీ ఆడటం లేదు.",
+  "liveError": "లోడ్ కాలేదు. తర్వాత మళ్లీ ప్రయత్నించండి.",
+  "liveOffline": "ఇంటర్నెట్ లేదు: ఇప్పటికే డౌన్‌లోడ్ అయినవి చూపిస్తున్నాం.",
+  "liveGame": "ఆట {n}"
 }

@@ -155,4 +155,28 @@ class AppLocalizationsVi extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Nước $n trên $total';
   }
+
+  @override
+  String get liveTitle => 'Đang chơi';
+
+  @override
+  String get liveSwitch => 'Ván cờ từ internet';
+
+  @override
+  String get liveSwitchHint =>
+      'Giải đấu trực tiếp chỉ được tải về khi công tắc này đang bật.';
+
+  @override
+  String get liveNothing => 'Hiện chưa có ván nào đang chơi.';
+
+  @override
+  String get liveError => 'Không tải được. Hãy thử lại sau nhé.';
+
+  @override
+  String get liveOffline => 'Không có internet: đang hiện những gì đã tải về.';
+
+  @override
+  String liveGame(int n) {
+    return 'Ván $n';
+  }
 }

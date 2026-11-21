@@ -155,6 +155,31 @@ class AppLocalizationsPt extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Jogada $n de $total';
   }
+
+  @override
+  String get liveTitle => 'A jogar agora';
+
+  @override
+  String get liveSwitch => 'Partidas da internet';
+
+  @override
+  String get liveSwitchHint =>
+      'Os torneios ao vivo só são baixados enquanto isto estiver ligado.';
+
+  @override
+  String get liveNothing => 'Agora não está a ser jogado nada.';
+
+  @override
+  String get liveError =>
+      'Não foi possível carregar. Tenta de novo mais tarde.';
+
+  @override
+  String get liveOffline => 'Sem internet: mostrando o que já foi baixado.';
+
+  @override
+  String liveGame(int n) {
+    return 'Partida $n';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -308,6 +333,31 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String replayMoveOf(int n, int total) {
     return 'Jogada $n de $total';
   }
+
+  @override
+  String get liveTitle => 'Jogando agora';
+
+  @override
+  String get liveSwitch => 'Partidas da internet';
+
+  @override
+  String get liveSwitchHint =>
+      'Os torneios ao vivo só são baixados enquanto isto estiver ligado.';
+
+  @override
+  String get liveNothing => 'Ninguém está jogando agora.';
+
+  @override
+  String get liveError =>
+      'Não foi possível carregar. Tente de novo mais tarde.';
+
+  @override
+  String get liveOffline => 'Sem internet: mostrando o que já foi baixado.';
+
+  @override
+  String liveGame(int n) {
+    return 'Partida $n';
+  }
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -460,5 +510,31 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
   @override
   String replayMoveOf(int n, int total) {
     return 'Jogada $n de $total';
+  }
+
+  @override
+  String get liveTitle => 'A jogar agora';
+
+  @override
+  String get liveSwitch => 'Partidas da internet';
+
+  @override
+  String get liveSwitchHint =>
+      'Os torneios em direto só são descarregados enquanto isto estiver ligado.';
+
+  @override
+  String get liveNothing => 'Neste momento não está a ser jogado nada.';
+
+  @override
+  String get liveError =>
+      'Não foi possível carregar. Tenta de novo mais tarde.';
+
+  @override
+  String get liveOffline =>
+      'Sem internet: a mostrar o que já foi descarregado.';
+
+  @override
+  String liveGame(int n) {
+    return 'Partida $n';
   }
 }

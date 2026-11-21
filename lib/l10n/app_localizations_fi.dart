@@ -155,4 +155,28 @@ class AppLocalizationsFi extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Siirto $n/$total';
   }
+
+  @override
+  String get liveTitle => 'Pelataan nyt';
+
+  @override
+  String get liveSwitch => 'Pelejä netistä';
+
+  @override
+  String get liveSwitchHint =>
+      'Suorat turnaukset ladataan vain, kun tämä on päällä.';
+
+  @override
+  String get liveNothing => 'Juuri nyt ei pelata mitään.';
+
+  @override
+  String get liveError => 'Lataus ei onnistunut. Yritä myöhemmin uudelleen.';
+
+  @override
+  String get liveOffline => 'Ei nettiä: näytän jo ladatut.';
+
+  @override
+  String liveGame(int n) {
+    return 'Peli $n';
+  }
 }

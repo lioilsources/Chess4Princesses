@@ -44,5 +44,12 @@
   "replayChronicle": "Krøniken",
   "replayStepBack": "Trekk tilbake",
   "replayStepForward": "Trekk frem",
-  "replayMoveOf": "Trekk {n} av {total}"
+  "replayMoveOf": "Trekk {n} av {total}",
+  "liveTitle": "Spilles nå",
+  "liveSwitch": "Partier fra internett",
+  "liveSwitchHint": "Direkteturneringer lastes ned bare mens denne er slått på.",
+  "liveNothing": "Det spilles ingenting akkurat nå.",
+  "liveError": "Kunne ikke laste inn. Prøv igjen senere.",
+  "liveOffline": "Ikke internett: viser det som allerede er lastet ned.",
+  "liveGame": "Parti {n}"
 }

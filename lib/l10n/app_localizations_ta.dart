@@ -156,4 +156,29 @@ class AppLocalizationsTa extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return '$total-இல் $n-வது நகர்வு';
   }
+
+  @override
+  String get liveTitle => 'இப்போது விளையாடுகிறார்கள்';
+
+  @override
+  String get liveSwitch => 'இணையத்திலிருந்து ஆட்டங்கள்';
+
+  @override
+  String get liveSwitchHint =>
+      'இது இயக்கத்தில் இருக்கும்போது மட்டுமே நேரடிப் போட்டிகள் பதிவிறக்கப்படும்.';
+
+  @override
+  String get liveNothing => 'இப்போது எதுவும் விளையாடப்படவில்லை.';
+
+  @override
+  String get liveError => 'ஏற்ற முடியவில்லை. பிறகு மீண்டும் முயற்சி செய்.';
+
+  @override
+  String get liveOffline =>
+      'இணையம் இல்லை: ஏற்கெனவே பதிவிறக்கியதைக் காட்டுகிறேன்.';
+
+  @override
+  String liveGame(int n) {
+    return 'ஆட்டம் $n';
+  }
 }

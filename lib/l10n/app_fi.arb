@@ -44,5 +44,12 @@
   "replayChronicle": "Kronikka",
   "replayStepBack": "Siirto taakse",
   "replayStepForward": "Siirto eteen",
-  "replayMoveOf": "Siirto {n}/{total}"
+  "replayMoveOf": "Siirto {n}/{total}",
+  "liveTitle": "Pelataan nyt",
+  "liveSwitch": "Pelejä netistä",
+  "liveSwitchHint": "Suorat turnaukset ladataan vain, kun tämä on päällä.",
+  "liveNothing": "Juuri nyt ei pelata mitään.",
+  "liveError": "Lataus ei onnistunut. Yritä myöhemmin uudelleen.",
+  "liveOffline": "Ei nettiä: näytän jo ladatut.",
+  "liveGame": "Peli {n}"
 }

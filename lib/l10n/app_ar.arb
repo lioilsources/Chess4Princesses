@@ -44,5 +44,12 @@
   "replayChronicle": "السجل",
   "replayStepBack": "حركة للخلف",
   "replayStepForward": "حركة للأمام",
-  "replayMoveOf": "الحركة {n} من {total}"
+  "replayMoveOf": "الحركة {n} من {total}",
+  "liveTitle": "يُلعب الآن",
+  "liveSwitch": "مباريات من الإنترنت",
+  "liveSwitchHint": "تُنزَّل البطولات المباشرة فقط عندما يكون هذا المفتاح مفعّلًا.",
+  "liveNothing": "لا توجد مباراة تُلعب الآن.",
+  "liveError": "تعذّر التحميل. حاول مرة أخرى لاحقًا.",
+  "liveOffline": "لا يوجد إنترنت: نعرض ما تم تنزيله بالفعل.",
+  "liveGame": "المباراة {n}"
 }

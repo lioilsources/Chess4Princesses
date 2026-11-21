@@ -155,4 +155,29 @@ class AppLocalizationsMs extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Langkah $n daripada $total';
   }
+
+  @override
+  String get liveTitle => 'Sedang dimainkan';
+
+  @override
+  String get liveSwitch => 'Permainan dari internet';
+
+  @override
+  String get liveSwitchHint =>
+      'Kejohanan langsung hanya dimuat turun semasa suis ini dihidupkan.';
+
+  @override
+  String get liveNothing => 'Tiada yang sedang dimainkan sekarang.';
+
+  @override
+  String get liveError => 'Tidak dapat dimuatkan. Cuba lagi nanti.';
+
+  @override
+  String get liveOffline =>
+      'Tiada internet: menunjukkan yang sudah dimuat turun.';
+
+  @override
+  String liveGame(int n) {
+    return 'Permainan $n';
+  }
 }
