@@ -1,10 +1,12 @@
-Šachové království učí malé děti šachy hrou. Každá figurka je pohádková postava: družičky chodí jen dopředu, Věžka jezdí rovně jako vláček, Motýlek létá šikmo, Koník skáče do písmene L a Královna umí všechno.
+Princess Chess učí malé děti šachy hrou. Každá figurka je pohádková postava: družičky chodí jen dopředu, Věžka jezdí rovně jako vláček, Motýlek létá šikmo, Koník skáče do písmene L, Král tatínek chodí o jedno políčko a Královna umí všechno.
 
-• Krátké pohádkové lekce s hádankami: sbírej hvězdy, vyhni se lávě, zachraň Krále.
-• Vypravěč přečte každou větu (česky a anglicky), takže hrát může i dítě, které ještě nečte.
-• Veselé bitvy figurek místo obyčejného braní.
-• Dvě armády: Víly a Čarodějky.
-• Hvězdičky za každou lekci a jasný pokrok.
-• Bez reklam, bez sledování, funguje bez internetu.
+• 31 krátkých pohádkových lekcí na 7 ostrovech království: dojdi ke hvězdě, sbírej hvězdy, vyhni se lávě, zachraň Krále. Další ostrovy přibudou.
+• Vypravěč přečte každý příběh, úkol i nápovědu (česky a anglicky), takže hrát může i dítě, které ještě neumí číst.
+• Když figurka bere, odehraje se krátká veselá bitva s kouzelnými jiskrami.
+• 14 armád na výběr: Víly, Čarodějky, Včelky, Dinosauři, Kočičky, Pejsci, Ovoce, Zelenina a další. Svou armádu i armádu soupeře si dítě vybere samo.
+• Síň slávy: slavné šachové partie přehrané jako příběh, tah po tahu.
+• Živé turnaje: rodič může zapnout přehrávání partií z právě probíhajících turnajů. Ve výchozím stavu je to vypnuté a jen tahle funkce používá internet.
+• Hvězdičky za každou lekci a jasný postup po mapě.
+• Bez reklam, bez nákupů v aplikaci, bez účtů a bez sledování. Lekce fungují i bez internetu.
 
 Pro děti zhruba od 4 do 8 let a jejich rodiče.

@@ -1,10 +1,12 @@
-Chess Kingdom teaches little children chess through play. Every piece is a fairy-tale character: the bridesmaids only walk forward, the Rook drives straight like a little train, the Butterfly flies on the slant, the Pony jumps in an L and the Queen can do it all.
+Princess Chess teaches little children chess through play. Every piece is a fairy-tale character: the bridesmaids only walk forward, the Rook drives straight like a little train, the Butterfly flies on the slant, the Pony jumps in an L, Daddy King takes one step at a time and the Queen can do it all.
 
-• Short story lessons with puzzles: collect stars, avoid the lava, save the King.
-• A narrator reads every line aloud (in English and Czech), so even children who can't read yet can play.
-• Cheerful piece battles instead of plain captures.
-• Two armies: Fairies and Witches.
-• Stars for every lesson and clear progress.
-• No ads, no tracking, works offline.
+• 31 short story lessons on 7 islands of the kingdom: reach the star, collect stars, avoid the lava, save the King. More islands are on the way.
+• A narrator reads every story, task and hint aloud (in English and Czech), so even children who can't read yet can play.
+• When a piece captures, a short, cheerful battle with magic sparkles plays.
+• 14 armies to choose from: Fairies, Witches, Bees, Dinos, Cats, Dogs, Fruit, Veggies and more. Children pick their own army and the opponent's.
+• Hall of fame: famous chess games replayed as a story, move by move.
+• Live tournaments: a parent can switch on replays of games from tournaments being played right now. It is off by default and it is the only feature that uses the internet.
+• Stars for every lesson and clear progress across the map.
+• No ads, no in-app purchases, no accounts and no tracking. Lessons work offline.
 
 For children aged roughly 4 to 8 and their parents.
