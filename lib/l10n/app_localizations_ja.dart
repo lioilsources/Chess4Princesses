@@ -154,4 +154,27 @@ class AppLocalizationsJa extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return '$totalてのうち $nてめ';
   }
+
+  @override
+  String get liveTitle => 'いま あそんでいるよ';
+
+  @override
+  String get liveSwitch => 'ネットのたいきょく';
+
+  @override
+  String get liveSwitchHint => 'このスイッチがオンのときだけ、ライブのたいかいをダウンロードするよ。';
+
+  @override
+  String get liveNothing => 'いまは だれも あそんでいないよ。';
+
+  @override
+  String get liveError => 'よみこめなかったよ。あとで もういちど ためしてね。';
+
+  @override
+  String get liveOffline => 'ネットにつながっていないよ。ダウンロードずみのものを みせているよ。';
+
+  @override
+  String liveGame(int n) {
+    return 'だい$nきょく';
+  }
 }

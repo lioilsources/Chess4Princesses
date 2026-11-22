@@ -155,4 +155,28 @@ class AppLocalizationsNl extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Zet $n van $total';
   }
+
+  @override
+  String get liveTitle => 'Nu aan het spelen';
+
+  @override
+  String get liveSwitch => 'Partijen van internet';
+
+  @override
+  String get liveSwitchHint =>
+      'Live-toernooien worden alleen gedownload als dit aanstaat.';
+
+  @override
+  String get liveNothing => 'Er wordt nu niets gespeeld.';
+
+  @override
+  String get liveError => 'Laden is niet gelukt. Probeer het later nog eens.';
+
+  @override
+  String get liveOffline => 'Geen internet: ik laat zien wat al is gedownload.';
+
+  @override
+  String liveGame(int n) {
+    return 'Partij $n';
+  }
 }

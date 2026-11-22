@@ -155,4 +155,29 @@ class AppLocalizationsNb extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Trekk $n av $total';
   }
+
+  @override
+  String get liveTitle => 'Spilles nå';
+
+  @override
+  String get liveSwitch => 'Partier fra internett';
+
+  @override
+  String get liveSwitchHint =>
+      'Direkteturneringer lastes ned bare mens denne er slått på.';
+
+  @override
+  String get liveNothing => 'Det spilles ingenting akkurat nå.';
+
+  @override
+  String get liveError => 'Kunne ikke laste inn. Prøv igjen senere.';
+
+  @override
+  String get liveOffline =>
+      'Ikke internett: viser det som allerede er lastet ned.';
+
+  @override
+  String liveGame(int n) {
+    return 'Parti $n';
+  }
 }

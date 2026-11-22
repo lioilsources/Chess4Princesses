@@ -44,5 +44,12 @@
   "replayChronicle": "Хроника",
   "replayStepBack": "Ход назад",
   "replayStepForward": "Ход вперёд",
-  "replayMoveOf": "Ход {n} из {total}"
+  "replayMoveOf": "Ход {n} из {total}",
+  "liveTitle": "Играют сейчас",
+  "liveSwitch": "Партии из интернета",
+  "liveSwitchHint": "Турниры в прямом эфире загружаются, только пока переключатель включён.",
+  "liveNothing": "Сейчас ничего не играется.",
+  "liveError": "Не удалось загрузить. Попробуй позже.",
+  "liveOffline": "Нет интернета: показываю то, что уже загружено.",
+  "liveGame": "Партия {n}"
 }

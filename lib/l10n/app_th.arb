@@ -44,5 +44,12 @@
   "replayChronicle": "บันทึก",
   "replayStepBack": "ถอยหลังหนึ่งตา",
   "replayStepForward": "เดินหน้าหนึ่งตา",
-  "replayMoveOf": "ตาที่ {n} จาก {total}"
+  "replayMoveOf": "ตาที่ {n} จาก {total}",
+  "liveTitle": "กำลังเล่นอยู่ตอนนี้",
+  "liveSwitch": "เกมจากอินเทอร์เน็ต",
+  "liveSwitchHint": "ระบบจะดาวน์โหลดทัวร์นาเมนต์สดเฉพาะตอนที่เปิดสวิตช์นี้เท่านั้น",
+  "liveNothing": "ตอนนี้ยังไม่มีใครเล่นอยู่",
+  "liveError": "โหลดไม่สำเร็จ ลองใหม่ภายหลังนะ",
+  "liveOffline": "ไม่มีอินเทอร์เน็ต: แสดงสิ่งที่ดาวน์โหลดไว้แล้ว",
+  "liveGame": "เกมที่ {n}"
 }

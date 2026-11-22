@@ -44,5 +44,12 @@
   "replayChronicle": "Crónica",
   "replayStepBack": "Jogada atrás",
   "replayStepForward": "Jogada à frente",
-  "replayMoveOf": "Jogada {n} de {total}"
+  "replayMoveOf": "Jogada {n} de {total}",
+  "liveTitle": "A jogar agora",
+  "liveSwitch": "Partidas da internet",
+  "liveSwitchHint": "Os torneios em direto só são descarregados enquanto isto estiver ligado.",
+  "liveNothing": "Neste momento não está a ser jogado nada.",
+  "liveError": "Não foi possível carregar. Tenta de novo mais tarde.",
+  "liveOffline": "Sem internet: a mostrar o que já foi descarregado.",
+  "liveGame": "Partida {n}"
 }

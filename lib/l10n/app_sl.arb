@@ -44,5 +44,12 @@
   "replayChronicle": "Kronika",
   "replayStepBack": "Poteza nazaj",
   "replayStepForward": "Poteza naprej",
-  "replayMoveOf": "Poteza {n} od {total}"
+  "replayMoveOf": "Poteza {n} od {total}",
+  "liveTitle": "Igra se zdaj",
+  "liveSwitch": "Partije z interneta",
+  "liveSwitchHint": "Turnirji v živo se prenesejo le, ko je to vklopljeno.",
+  "liveNothing": "Trenutno se nič ne igra.",
+  "liveError": "Nalaganje ni uspelo. Poskusi znova pozneje.",
+  "liveOffline": "Ni interneta: prikazujem, kar je že preneseno.",
+  "liveGame": "Partija {n}"
 }

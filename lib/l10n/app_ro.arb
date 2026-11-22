@@ -44,5 +44,12 @@
   "replayChronicle": "Cronica",
   "replayStepBack": "Mutare înapoi",
   "replayStepForward": "Mutare înainte",
-  "replayMoveOf": "Mutarea {n} din {total}"
+  "replayMoveOf": "Mutarea {n} din {total}",
+  "liveTitle": "Se joacă acum",
+  "liveSwitch": "Partide de pe internet",
+  "liveSwitchHint": "Turneele în direct se descarcă doar cât timp comutatorul este pornit.",
+  "liveNothing": "Acum nu se joacă nimic.",
+  "liveError": "Nu s-a putut încărca. Încearcă din nou mai târziu.",
+  "liveOffline": "Fără internet: arăt ce a fost deja descărcat.",
+  "liveGame": "Partida {n}"
 }

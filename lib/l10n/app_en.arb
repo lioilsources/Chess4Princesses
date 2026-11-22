@@ -44,5 +44,12 @@
   "replayChronicle": "Chronicle",
   "replayStepBack": "Move back",
   "replayStepForward": "Move forward",
-  "replayMoveOf": "Move {n} of {total}"
+  "replayMoveOf": "Move {n} of {total}",
+  "liveTitle": "Playing now",
+  "liveSwitch": "Games from the internet",
+  "liveSwitchHint": "Live tournaments are downloaded only while this is on.",
+  "liveNothing": "Nothing is being played right now.",
+  "liveError": "Could not load. Try again later.",
+  "liveOffline": "No internet: showing what is already downloaded.",
+  "liveGame": "Game {n}"
 }

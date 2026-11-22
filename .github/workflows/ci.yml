@@ -51,6 +51,14 @@ jobs:
       - name: Battle atlases
         run: python3 tool/pack_sheet.py check assets/armies
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - name: Live feed Worker (docs/feed.md)
+        working-directory: feed
+        run: npm ci && npx wrangler types && npm run check && npm test
+
   build-android-debug:
     name: Android Debug Build
     runs-on: ubuntu-latest

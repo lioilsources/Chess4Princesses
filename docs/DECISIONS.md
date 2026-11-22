@@ -70,6 +70,13 @@
     wins. Generic event lines (check, castle, sacrifice, end by mate / resignation / draw) are ARB
     strings, not yet voiced. Bundled PGN is linted in CI (`tool/games_lint.dart`): legal replay,
     result vs final position, no comments, no URLs, no sponsor names.
+18. **Live games relay = Cloudflare Worker with edge cache** (`feed/`, `docs/feed.md`), not
+    cron + KV as the plan said: the Worker asks the source only when the app asks and keeps the
+    answer in `caches.default` (60 s, finished rounds 1 h), so there is no KV namespace and no
+    write limit. It serves only curated tournaments under neutral names and strips clocks,
+    comments and URLs. The app reaches it only when built with `FEED_BASE_URL` and a parent
+    turns on "Partie z internetu" (off by default); fetched rounds are kept in
+    `shared_preferences` and replay offline.
 
 ## Open questions for Ol1n (PLAN §8 + BATTLES §7) — with recommendations
 
@@ -98,4 +105,4 @@
 - Monetisation (PLAN §6: two armies free, the rest as packs): all 14 armies are open for now, no IAP yet — Olin decides.
 - Kid test: can she tell the pieces apart at board size (fairy pawn vs queen are both pink)?
 - SFX/music.
-- Famous games: voice clips for the replay event lines (SPARK), library and shelves (G3), live feed (G2).
+- Famous games: voice clips for the replay event lines (SPARK), library and shelves (G3); deploy the feed Worker and set `FEED_BASE_URL` in release builds.

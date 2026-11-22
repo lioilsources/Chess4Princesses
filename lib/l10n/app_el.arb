@@ -44,5 +44,12 @@
   "replayChronicle": "Χρονικό",
   "replayStepBack": "Κίνηση πίσω",
   "replayStepForward": "Κίνηση μπροστά",
-  "replayMoveOf": "Κίνηση {n} από {total}"
+  "replayMoveOf": "Κίνηση {n} από {total}",
+  "liveTitle": "Παίζεται τώρα",
+  "liveSwitch": "Παρτίδες από το διαδίκτυο",
+  "liveSwitchHint": "Τα ζωντανά τουρνουά κατεβαίνουν μόνο όσο ο διακόπτης είναι ενεργός.",
+  "liveNothing": "Τώρα δεν παίζεται τίποτα.",
+  "liveError": "Δεν φορτώθηκε. Δοκίμασε ξανά αργότερα.",
+  "liveOffline": "Χωρίς διαδίκτυο: δείχνω ό,τι έχει ήδη κατέβει.",
+  "liveGame": "Παρτίδα {n}"
 }

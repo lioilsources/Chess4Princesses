@@ -44,5 +44,12 @@
   "replayChronicle": "Biên niên sử",
   "replayStepBack": "Lùi một nước",
   "replayStepForward": "Tiến một nước",
-  "replayMoveOf": "Nước {n} trên {total}"
+  "replayMoveOf": "Nước {n} trên {total}",
+  "liveTitle": "Đang chơi",
+  "liveSwitch": "Ván cờ từ internet",
+  "liveSwitchHint": "Giải đấu trực tiếp chỉ được tải về khi công tắc này đang bật.",
+  "liveNothing": "Hiện chưa có ván nào đang chơi.",
+  "liveError": "Không tải được. Hãy thử lại sau nhé.",
+  "liveOffline": "Không có internet: đang hiện những gì đã tải về.",
+  "liveGame": "Ván {n}"
 }

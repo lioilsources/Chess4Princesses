@@ -44,5 +44,12 @@
   "replayChronicle": "Kronika",
   "replayStepBack": "Ruch wstecz",
   "replayStepForward": "Ruch naprzód",
-  "replayMoveOf": "Ruch {n} z {total}"
+  "replayMoveOf": "Ruch {n} z {total}",
+  "liveTitle": "Gramy teraz",
+  "liveSwitch": "Partie z internetu",
+  "liveSwitchHint": "Turnieje na żywo są pobierane tylko wtedy, gdy ten przełącznik jest włączony.",
+  "liveNothing": "Teraz nic się nie rozgrywa.",
+  "liveError": "Nie udało się wczytać. Spróbuj później.",
+  "liveOffline": "Brak internetu: pokazuję to, co już pobrano.",
+  "liveGame": "Partia {n}"
 }

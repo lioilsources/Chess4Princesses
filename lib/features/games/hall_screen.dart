@@ -3,12 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../app/content_lang.dart';
 import '../../core/games/game_record.dart';
+import '../../core/net/feed_client.dart';
 import '../../l10n/app_localizations.dart';
 import 'games_providers.dart';
+import 'live_providers.dart';
 
-/// Síň slávy (SLAVNE_PARTIE_PLAN §1): shelves of famous games. G1 has one
-/// shelf with the bundled samples; live games and the library join later.
+/// Síň slávy (SLAVNE_PARTIE_PLAN §1): shelves of famous games — bundled
+/// samples and, when a parent allows it, "Právě se hraje" from the relay.
 class HallScreen extends ConsumerWidget {
   const HallScreen({super.key});
 
@@ -30,6 +33,7 @@ class HallScreen extends ConsumerWidget {
                 ],
               ),
             ),
+            if (feedConfigured) const _LiveShelf(),
             Padding(
               padding: const EdgeInsets.fromLTRB(20, 12, 20, 4),
               child: Align(alignment: AlignmentDirectional.centerStart, child: BubbleText(l10n.hallFamous, role: KidRole.title, size: 22, palette: KidPalette.lavender)),
@@ -84,4 +88,49 @@ class _GameTile extends StatelessWidget {
       ),
     ),
   );
+}
+
+/// Live tournaments, behind the parent switch (off by default).
+class _LiveShelf extends ConsumerWidget {
+  const _LiveShelf();
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final l10n = AppLocalizations.of(context);
+    final lang = context.contentLang;
+    final on = ref.watch(liveEnabledProvider).value ?? false;
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          SwitchListTile(
+            value: on,
+            onChanged: (v) => ref.read(liveEnabledProvider.notifier).set(v),
+            title: Text(l10n.liveSwitch),
+            subtitle: on ? null : Text(l10n.liveSwitchHint),
+            secondary: const Icon(Icons.wifi_rounded),
+          ),
+          if (on)
+            switch (ref.watch(liveTournamentsProvider)) {
+              AsyncData(:final value) when value.value.isEmpty => Text(l10n.liveNothing, textAlign: TextAlign.center),
+              AsyncData(:final value) => Wrap(
+                spacing: 12,
+                runSpacing: 8,
+                children: [
+                  for (final t in value.value)
+                    ActionChip(
+                      avatar: const Icon(Icons.flash_on_rounded, color: Color(0xFFE53935)),
+                      label: Text(t.nameIn(lang)),
+                      onPressed: () => context.push('/live/${t.id}'),
+                    ),
+                ],
+              ),
+              AsyncError() => Text(l10n.liveError, textAlign: TextAlign.center),
+              _ => const Center(child: CircularProgressIndicator()),
+            },
+        ],
+      ),
+    );
+  }
 }

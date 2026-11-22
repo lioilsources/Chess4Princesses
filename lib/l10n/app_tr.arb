@@ -44,5 +44,12 @@
   "replayChronicle": "Kronik",
   "replayStepBack": "Hamle geri",
   "replayStepForward": "Hamle ileri",
-  "replayMoveOf": "Hamle {n} / {total}"
+  "replayMoveOf": "Hamle {n} / {total}",
+  "liveTitle": "Şu an oynanıyor",
+  "liveSwitch": "İnternetten oyunlar",
+  "liveSwitchHint": "Canlı turnuvalar yalnızca bu açıkken indirilir.",
+  "liveNothing": "Şu an hiçbir şey oynanmıyor.",
+  "liveError": "Yüklenemedi. Daha sonra tekrar dene.",
+  "liveOffline": "İnternet yok: daha önce indirilenleri gösteriyorum.",
+  "liveGame": "Oyun {n}"
 }

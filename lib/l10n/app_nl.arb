@@ -44,5 +44,12 @@
   "replayChronicle": "Kroniek",
   "replayStepBack": "Zet terug",
   "replayStepForward": "Zet vooruit",
-  "replayMoveOf": "Zet {n} van {total}"
+  "replayMoveOf": "Zet {n} van {total}",
+  "liveTitle": "Nu aan het spelen",
+  "liveSwitch": "Partijen van internet",
+  "liveSwitchHint": "Live-toernooien worden alleen gedownload als dit aanstaat.",
+  "liveNothing": "Er wordt nu niets gespeeld.",
+  "liveError": "Laden is niet gelukt. Probeer het later nog eens.",
+  "liveOffline": "Geen internet: ik laat zien wat al is gedownload.",
+  "liveGame": "Partij {n}"
 }

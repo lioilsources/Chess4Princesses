@@ -154,4 +154,28 @@ class AppLocalizationsAr extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'الحركة $n من $total';
   }
+
+  @override
+  String get liveTitle => 'يُلعب الآن';
+
+  @override
+  String get liveSwitch => 'مباريات من الإنترنت';
+
+  @override
+  String get liveSwitchHint =>
+      'تُنزَّل البطولات المباشرة فقط عندما يكون هذا المفتاح مفعّلًا.';
+
+  @override
+  String get liveNothing => 'لا توجد مباراة تُلعب الآن.';
+
+  @override
+  String get liveError => 'تعذّر التحميل. حاول مرة أخرى لاحقًا.';
+
+  @override
+  String get liveOffline => 'لا يوجد إنترنت: نعرض ما تم تنزيله بالفعل.';
+
+  @override
+  String liveGame(int n) {
+    return 'المباراة $n';
+  }
 }

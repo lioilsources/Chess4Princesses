@@ -44,5 +44,12 @@
   "replayChronicle": "Krónika",
   "replayStepBack": "Lépés vissza",
   "replayStepForward": "Lépés előre",
-  "replayMoveOf": "Lépés: {n} / {total}"
+  "replayMoveOf": "Lépés: {n} / {total}",
+  "liveTitle": "Most játszanak",
+  "liveSwitch": "Játszmák az internetről",
+  "liveSwitchHint": "Az élő versenyek csak akkor töltődnek le, ha ez be van kapcsolva.",
+  "liveNothing": "Most éppen semmi sem folyik.",
+  "liveError": "Nem sikerült betölteni. Próbáld újra később.",
+  "liveOffline": "Nincs internet: azt mutatom, ami már le van töltve.",
+  "liveGame": "{n}. játszma"
 }

@@ -155,4 +155,28 @@ class AppLocalizationsEl extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Κίνηση $n από $total';
   }
+
+  @override
+  String get liveTitle => 'Παίζεται τώρα';
+
+  @override
+  String get liveSwitch => 'Παρτίδες από το διαδίκτυο';
+
+  @override
+  String get liveSwitchHint =>
+      'Τα ζωντανά τουρνουά κατεβαίνουν μόνο όσο ο διακόπτης είναι ενεργός.';
+
+  @override
+  String get liveNothing => 'Τώρα δεν παίζεται τίποτα.';
+
+  @override
+  String get liveError => 'Δεν φορτώθηκε. Δοκίμασε ξανά αργότερα.';
+
+  @override
+  String get liveOffline => 'Χωρίς διαδίκτυο: δείχνω ό,τι έχει ήδη κατέβει.';
+
+  @override
+  String liveGame(int n) {
+    return 'Παρτίδα $n';
+  }
 }

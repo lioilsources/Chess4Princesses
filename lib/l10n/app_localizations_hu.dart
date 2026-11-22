@@ -155,4 +155,29 @@ class AppLocalizationsHu extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Lépés: $n / $total';
   }
+
+  @override
+  String get liveTitle => 'Most játszanak';
+
+  @override
+  String get liveSwitch => 'Játszmák az internetről';
+
+  @override
+  String get liveSwitchHint =>
+      'Az élő versenyek csak akkor töltődnek le, ha ez be van kapcsolva.';
+
+  @override
+  String get liveNothing => 'Most éppen semmi sem folyik.';
+
+  @override
+  String get liveError => 'Nem sikerült betölteni. Próbáld újra később.';
+
+  @override
+  String get liveOffline =>
+      'Nincs internet: azt mutatom, ami már le van töltve.';
+
+  @override
+  String liveGame(int n) {
+    return '$n. játszma';
+  }
 }

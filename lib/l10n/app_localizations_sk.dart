@@ -155,4 +155,28 @@ class AppLocalizationsSk extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return 'Ťah $n z $total';
   }
+
+  @override
+  String get liveTitle => 'Práve sa hrá';
+
+  @override
+  String get liveSwitch => 'Partie z internetu';
+
+  @override
+  String get liveSwitchHint =>
+      'Živé turnaje sa sťahujú len so zapnutým prepínačom.';
+
+  @override
+  String get liveNothing => 'Teraz sa nič nehrá.';
+
+  @override
+  String get liveError => 'Nepodarilo sa načítať. Skús to neskôr.';
+
+  @override
+  String get liveOffline => 'Bez internetu: ukazujem, čo je už stiahnuté.';
+
+  @override
+  String liveGame(int n) {
+    return 'Partia $n';
+  }
 }

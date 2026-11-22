@@ -155,4 +155,29 @@ class AppLocalizationsMl extends AppLocalizations {
   String replayMoveOf(int n, int total) {
     return '$total-ൽ $n-ാം നീക്കം';
   }
+
+  @override
+  String get liveTitle => 'ഇപ്പോൾ കളിക്കുന്നു';
+
+  @override
+  String get liveSwitch => 'ഇന്റർനെറ്റിൽ നിന്നുള്ള കളികൾ';
+
+  @override
+  String get liveSwitchHint =>
+      'ഇത് ഓണായിരിക്കുമ്പോൾ മാത്രമേ തത്സമയ ടൂർണമെന്റുകൾ ഡൗൺലോഡ് ചെയ്യൂ.';
+
+  @override
+  String get liveNothing => 'ഇപ്പോൾ ഒന്നും കളിക്കുന്നില്ല.';
+
+  @override
+  String get liveError => 'ലോഡ് ചെയ്യാനായില്ല. പിന്നീട് വീണ്ടും ശ്രമിക്കുക.';
+
+  @override
+  String get liveOffline =>
+      'ഇന്റർനെറ്റ് ഇല്ല: ഇതിനകം ഡൗൺലോഡ് ചെയ്തത് കാണിക്കുന്നു.';
+
+  @override
+  String liveGame(int n) {
+    return 'കളി $n';
+  }
 }

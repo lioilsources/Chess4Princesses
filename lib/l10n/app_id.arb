@@ -44,5 +44,12 @@
   "replayChronicle": "Kronik",
   "replayStepBack": "Langkah mundur",
   "replayStepForward": "Langkah maju",
-  "replayMoveOf": "Langkah {n} dari {total}"
+  "replayMoveOf": "Langkah {n} dari {total}",
+  "liveTitle": "Sedang dimainkan",
+  "liveSwitch": "Permainan dari internet",
+  "liveSwitchHint": "Turnamen langsung hanya diunduh saat tombol ini menyala.",
+  "liveNothing": "Tidak ada yang sedang dimainkan sekarang.",
+  "liveError": "Gagal memuat. Coba lagi nanti.",
+  "liveOffline": "Tidak ada internet: menampilkan yang sudah diunduh.",
+  "liveGame": "Permainan {n}"
 }

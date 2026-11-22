@@ -452,6 +452,48 @@ abstract class AppLocalizations {
   /// In cs, this message translates to:
   /// **'Tah {n} z {total}'**
   String replayMoveOf(int n, int total);
+
+  /// No description provided for @liveTitle.
+  ///
+  /// In cs, this message translates to:
+  /// **'Právě se hraje'**
+  String get liveTitle;
+
+  /// No description provided for @liveSwitch.
+  ///
+  /// In cs, this message translates to:
+  /// **'Partie z internetu'**
+  String get liveSwitch;
+
+  /// No description provided for @liveSwitchHint.
+  ///
+  /// In cs, this message translates to:
+  /// **'Živé turnaje se stahují jen se zapnutým přepínačem.'**
+  String get liveSwitchHint;
+
+  /// No description provided for @liveNothing.
+  ///
+  /// In cs, this message translates to:
+  /// **'Teď se nic nehraje.'**
+  String get liveNothing;
+
+  /// No description provided for @liveError.
+  ///
+  /// In cs, this message translates to:
+  /// **'Nepodařilo se načíst. Zkus to později.'**
+  String get liveError;
+
+  /// No description provided for @liveOffline.
+  ///
+  /// In cs, this message translates to:
+  /// **'Bez internetu: ukazuji, co je už stažené.'**
+  String get liveOffline;
+
+  /// No description provided for @liveGame.
+  ///
+  /// In cs, this message translates to:
+  /// **'Partie {n}'**
+  String liveGame(int n);
 }
 
 class _AppLocalizationsDelegate

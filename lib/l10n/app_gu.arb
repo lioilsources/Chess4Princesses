@@ -44,5 +44,12 @@
   "replayChronicle": "વૃત્તાંત",
   "replayStepBack": "ચાલ પાછળ",
   "replayStepForward": "ચાલ આગળ",
-  "replayMoveOf": "{total} માંથી ચાલ {n}"
+  "replayMoveOf": "{total} માંથી ચાલ {n}",
+  "liveTitle": "હમણાં રમાઈ રહ્યું છે",
+  "liveSwitch": "ઇન્ટરનેટની રમતો",
+  "liveSwitchHint": "આ ચાલુ હોય ત્યારે જ લાઇવ ટુર્નામેન્ટ ડાઉનલોડ થાય છે.",
+  "liveNothing": "હમણાં કંઈ રમાતું નથી.",
+  "liveError": "લોડ થઈ શક્યું નથી. પછી ફરી પ્રયત્ન કરો.",
+  "liveOffline": "ઇન્ટરનેટ નથી: જે પહેલેથી ડાઉનલોડ થયું છે તે બતાવું છું.",
+  "liveGame": "રમત {n}"
 }

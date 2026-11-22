@@ -44,5 +44,12 @@
   "replayChronicle": "ইতিবৃত্ত",
   "replayStepBack": "এক চাল পেছনে",
   "replayStepForward": "এক চাল সামনে",
-  "replayMoveOf": "{total}টির মধ্যে {n} নম্বর চাল"
+  "replayMoveOf": "{total}টির মধ্যে {n} নম্বর চাল",
+  "liveTitle": "এখন খেলা চলছে",
+  "liveSwitch": "ইন্টারনেট থেকে খেলা",
+  "liveSwitchHint": "এটি চালু থাকলেই লাইভ টুর্নামেন্ট ডাউনলোড হয়।",
+  "liveNothing": "এখন কোনো খেলা চলছে না।",
+  "liveError": "লোড করা গেল না। পরে আবার চেষ্টা করো।",
+  "liveOffline": "ইন্টারনেট নেই: যা আগে ডাউনলোড হয়েছে তা দেখাচ্ছি।",
+  "liveGame": "খেলা {n}"
 }

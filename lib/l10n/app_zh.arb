@@ -44,5 +44,12 @@
   "replayChronicle": "战斗记录",
   "replayStepBack": "上一步",
   "replayStepForward": "下一步",
-  "replayMoveOf": "第 {n} 步，共 {total} 步"
+  "replayMoveOf": "第 {n} 步，共 {total} 步",
+  "liveTitle": "正在进行",
+  "liveSwitch": "来自网络的棋局",
+  "liveSwitchHint": "只有打开这个开关，才会下载直播的比赛。",
+  "liveNothing": "现在没有正在进行的棋局。",
+  "liveError": "加载失败了，请稍后再试。",
+  "liveOffline": "没有网络：显示已经下载好的内容。",
+  "liveGame": "第 {n} 局"
 }
