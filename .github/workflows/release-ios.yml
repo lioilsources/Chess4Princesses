@@ -104,9 +104,18 @@ jobs:
             ./ios/Runner.xcodeproj/project.pbxproj
           grep PROVISIONING_PROFILE_SPECIFIER ./ios/Runner.xcodeproj/project.pbxproj
 
+      - name: Version from tag
+        run: |
+          case "$GITHUB_REF" in
+            refs/tags/v*) V="${GITHUB_REF_NAME#v}" ;;
+            *) V="$(sed -n 's/^version: *\([^+]*\).*/\1/p' pubspec.yaml)" ;;
+          esac
+          # Store build numbers must grow on every upload; pubspec keeps +1.
+          echo "BUILD_NAME=${V%%-*}" >> "$GITHUB_ENV"
+
       - name: Build Flutter iOS (no codesign)
         working-directory: .
-        run: flutter build ios --release --no-codesign
+        run: flutter build ios --release --no-codesign --build-name="$BUILD_NAME" --build-number=${{ github.run_number }} --dart-define=FEED_BASE_URL=${{ vars.FEED_BASE_URL }}
 
       - name: Archive with manual signing
         env:

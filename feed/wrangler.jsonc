@@ -8,6 +8,7 @@
     "head_sampling_rate": 0.1,
     "traces": { "enabled": true, "head_sampling_rate": 0.1 }
   },
+  "routes": [{ "pattern": "feed.ol1n.com", "custom_domain": true }],
   "vars": {
     "SOURCE_BASE": "https://lichess.org"
   }
