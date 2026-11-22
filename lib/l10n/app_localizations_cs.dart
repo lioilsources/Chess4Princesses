@@ -54,7 +54,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get botWon => 'Robůtek vyhrál. Hrajeme znovu!';
 
   @override
-  String get promoted => 'Proměna v princeznu!';
+  String get promoted => 'Proměna v královnu!';
 
   @override
   String get lavaWarning => 'Au, láva!';

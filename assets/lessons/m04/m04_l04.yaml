@@ -1,13 +1,13 @@
 id: m04_l04
 module: 4
-title: {cs: "Pozor na Princeznu!", en: "Watch out for the princess!"}
+title: {cs: "Pozor na Královnu!", en: "Watch out for the queen!"}
 story:
-  cs: "Princezna je vzácná, proto ji hlídáme. Když ji nějaká soupeřova figura může sebrat, říkáme, že ji ohrožuje."
-  en: "The princess is precious, so we guard her. When a rival piece could take her, we say it threatens her."
+  cs: "Královna je vzácná, proto ji hlídáme. Když ji nějaká soupeřova figura může sebrat, říkáme, že ji ohrožuje."
+  en: "The queen is precious, so we guard her. When a rival piece could take her, we say it threatens her."
 skills: [spot_threat]
 rules: piece_only
 reward: {stars: 3, unlock: queen}
-prompt: {cs: "Klepni na každou figuru, která může Princeznu sebrat.", en: "Tap every piece that could take the princess."}
+prompt: {cs: "Klepni na každou figuru, která může Královnu sebrat.", en: "Tap every piece that could take the queen."}
 hints:
   - {after_fails: 2, highlight: targets}
 tasks:

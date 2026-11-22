@@ -54,7 +54,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get botWon => 'ロボちゃんのかち。もういちどあそぼう！';
 
   @override
-  String get promoted => 'おひめさまにへんしん！';
+  String get promoted => 'じょおうさまにへんしん！';
 
   @override
   String get lavaWarning => 'あちっ、ようがんだ！';

@@ -54,7 +54,7 @@ class AppLocalizationsSv extends AppLocalizations {
   String get botWon => 'Den lilla roboten vann. Vi spelar igen!';
 
   @override
-  String get promoted => 'Hon blir en prinsessa!';
+  String get promoted => 'Hon blir en drottning!';
 
   @override
   String get lavaWarning => 'Aj, lava!';

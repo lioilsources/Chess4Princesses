@@ -54,7 +54,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get botWon => '机器人赢了。我们再玩一次！';
 
   @override
-  String get promoted => '她变成了公主！';
+  String get promoted => '她变成了王后！';
 
   @override
   String get lavaWarning => '哎呀，岩浆！';
@@ -229,7 +229,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get botWon => '機器人贏了。我們再玩一次！';
 
   @override
-  String get promoted => '她變成了公主！';
+  String get promoted => '她變成了王后！';
 
   @override
   String get lavaWarning => '哎呀，岩漿！';

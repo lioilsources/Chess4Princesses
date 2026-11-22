@@ -36,9 +36,9 @@
   },
   {
     "lang": "cs",
-    "key": "fdcbfd0719b75878",
-    "text": "Proměna v princeznu!",
-    "say": "Proměna v princeznu!",
+    "key": "66c6e83a00877e66",
+    "text": "Proměna v královnu!",
+    "say": "Proměna v královnu!",
     "source": "arb:promoted"
   },
   {
@@ -92,9 +92,9 @@
   },
   {
     "lang": "cs",
-    "key": "3fc67d878b8deba3",
-    "text": "Bílá komnata musí být vpravo dole, jinak se princezna zlobí. Komnaty na šikmé cestičce mají všechny stejnou barvu.",
-    "say": "Bílá komnata musí být vpravo dole, jinak se princezna zlobí. Komnaty na šikmé cestičce mají všechny stejnou barvu.",
+    "key": "a97e777be8471d43",
+    "text": "Bílá komnata musí být vpravo dole, jinak se královna zlobí. Komnaty na šikmé cestičce mají všechny stejnou barvu.",
+    "say": "Bílá komnata musí být vpravo dole, jinak se královna zlobí. Komnaty na šikmé cestičce mají všechny stejnou barvu.",
     "source": "m00_l02:story"
   },
   {
@@ -120,9 +120,9 @@
   },
   {
     "lang": "cs",
-    "key": "bb8b0c4d5b6ffa57",
-    "text": "Postavíme hrad! Věžky hlídají rohy, Princezna stojí na své barvě a Král tatínek vedle ní.",
-    "say": "Postavíme hrad! Věžky hlídají rohy, Princezna stojí na své barvě a Král tatínek vedle ní.",
+    "key": "8ec6fa8c64da70ed",
+    "text": "Postavíme hrad! Věžky hlídají rohy, Královna stojí na své barvě a Král tatínek vedle ní.",
+    "say": "Postavíme hrad! Věžky hlídají rohy, Královna stojí na své barvě a Král tatínek vedle ní.",
     "source": "m00_l03:story"
   },
   {
@@ -134,9 +134,9 @@
   },
   {
     "lang": "cs",
-    "key": "0fa92bd777d94f5f",
-    "text": "Postav celou první řadu. Princezna na svou barvu!",
-    "say": "Postav celou první řadu. Princezna na svou barvu!",
+    "key": "c672536c2c7c1f94",
+    "text": "Postav celou první řadu. Královna na svou barvu!",
+    "say": "Postav celou první řadu. Královna na svou barvu!",
     "source": "m00_l03#2:prompt"
   },
   {
@@ -190,9 +190,9 @@
   },
   {
     "lang": "cs",
-    "key": "8ff0a21a657f9cd7",
-    "text": "Když družička dojde až na konec království, promění se v princeznu!",
-    "say": "Když družička dojde až na konec království, promění se v princeznu!",
+    "key": "b04feb98b74e6d98",
+    "text": "Když družička dojde až na konec království, promění se v královnu!",
+    "say": "Když družička dojde až na konec království, promění se v královnu!",
     "source": "m01_l04:story"
   },
   {
@@ -344,16 +344,16 @@
   },
   {
     "lang": "cs",
-    "key": "cb84154a024856e2",
-    "text": "Princezna umí to, co Věžka i Motýlek dohromady: jezdí rovně i šikmo, jak daleko chce.",
-    "say": "Princezna umí to, co Věžka i Motýlek dohromady: jezdí rovně i šikmo, jak daleko chce.",
+    "key": "16363fff94fd033e",
+    "text": "Královna umí to, co Věžka i Motýlek dohromady: jezdí rovně i šikmo, jak daleko chce.",
+    "say": "Královna umí to, co Věžka i Motýlek dohromady: jezdí rovně i šikmo, jak daleko chce.",
     "source": "m04_l01:story"
   },
   {
     "lang": "cs",
-    "key": "b0abdd73cc2aa5ef",
-    "text": "Doveď Princeznu na hvězdu.",
-    "say": "Doveď Princeznu na hvězdu.",
+    "key": "195982756e388c7c",
+    "text": "Doveď Královnu na hvězdu.",
+    "say": "Doveď Královnu na hvězdu.",
     "source": "m04_l01#1:prompt"
   },
   {
@@ -372,9 +372,9 @@
   },
   {
     "lang": "cs",
-    "key": "88f2d93be78db8ae",
-    "text": "Princezna jede na výlet po celém království a sbírá hvězdičky.",
-    "say": "Princezna jede na výlet po celém království a sbírá hvězdičky.",
+    "key": "6f89ecb5aeb3344b",
+    "text": "Královna jede na výlet po celém království a sbírá hvězdičky.",
+    "say": "Královna jede na výlet po celém království a sbírá hvězdičky.",
     "source": "m04_l02:story"
   },
   {
@@ -386,9 +386,9 @@
   },
   {
     "lang": "cs",
-    "key": "13286d2169849d01",
-    "text": "Princezna je nejsilnější z celé armády. Dnes se postaví šesti soupeřům!",
-    "say": "Princezna je nejsilnější z celé armády. Dnes se postaví šesti soupeřům!",
+    "key": "a902edaed8004b5d",
+    "text": "Královna je nejsilnější z celé armády. Dnes se postaví šesti soupeřům!",
+    "say": "Královna je nejsilnější z celé armády. Dnes se postaví šesti soupeřům!",
     "source": "m04_l03:story"
   },
   {
@@ -400,16 +400,16 @@
   },
   {
     "lang": "cs",
-    "key": "9aa708c4225115f4",
-    "text": "Princezna je vzácná, proto ji hlídáme. Když ji nějaká soupeřova figura může sebrat, říkáme, že ji ohrožuje.",
-    "say": "Princezna je vzácná, proto ji hlídáme. Když ji nějaká soupeřova figura může sebrat, říkáme, že ji ohrožuje.",
+    "key": "3e59591e782d09ed",
+    "text": "Královna je vzácná, proto ji hlídáme. Když ji nějaká soupeřova figura může sebrat, říkáme, že ji ohrožuje.",
+    "say": "Královna je vzácná, proto ji hlídáme. Když ji nějaká soupeřova figura může sebrat, říkáme, že ji ohrožuje.",
     "source": "m04_l04:story"
   },
   {
     "lang": "cs",
-    "key": "7d596907e0179663",
-    "text": "Klepni na každou figuru, která může Princeznu sebrat.",
-    "say": "Klepni na každou figuru, která může Princeznu sebrat.",
+    "key": "dfa7588869e918b7",
+    "text": "Klepni na každou figuru, která může Královnu sebrat.",
+    "say": "Klepni na každou figuru, která může Královnu sebrat.",
     "source": "m04_l04#1:prompt"
   },
   {
@@ -1205,9 +1205,9 @@
   },
   {
     "lang": "cs",
-    "key": "838dc47e886c6ba4",
-    "text": "Ahoj, já jsem Družička Rosička. Chodím jen dopředu a jednou budu princezna!",
-    "say": "Ahoj, já jsem Družička Rosička. Chodím jen dopředu a jednou budu princezna!",
+    "key": "e52978c904018a58",
+    "text": "Ahoj, já jsem Družička Rosička. Chodím jen dopředu a jednou budu královna!",
+    "say": "Ahoj, já jsem Družička Rosička. Chodím jen dopředu a jednou budu královna!",
     "source": "fairies.pawn:motto"
   },
   {
@@ -3410,9 +3410,9 @@
   },
   {
     "lang": "en",
-    "key": "3a08bdf6ae915054",
-    "text": "She became a princess!",
-    "say": "She became a princess!",
+    "key": "d3d1301240e76c1c",
+    "text": "She became a queen!",
+    "say": "She became a queen!",
     "source": "arb:promoted"
   },
   {
@@ -3466,9 +3466,9 @@
   },
   {
     "lang": "en",
-    "key": "933ecb4458fa4e30",
-    "text": "The white room must be in the bottom right corner, or the princess gets cross. Rooms along a slanted path all share one colour.",
-    "say": "The white room must be in the bottom right corner, or the princess gets cross. Rooms along a slanted path all share one colour.",
+    "key": "ede520ebd403c5ab",
+    "text": "The white room must be in the bottom right corner, or the queen gets cross. Rooms along a slanted path all share one colour.",
+    "say": "The white room must be in the bottom right corner, or the queen gets cross. Rooms along a slanted path all share one colour.",
     "source": "m00_l02:story"
   },
   {
@@ -3494,9 +3494,9 @@
   },
   {
     "lang": "en",
-    "key": "3beab61483c79479",
-    "text": "Let's build the castle! Rooks guard the corners, the Princess stands on her own colour and Daddy King next to her.",
-    "say": "Let's build the castle! Rooks guard the corners, the Princess stands on her own colour and Daddy King next to her.",
+    "key": "f66641f9a2d6c2fe",
+    "text": "Let's build the castle! Rooks guard the corners, the Queen stands on her own colour and Daddy King next to her.",
+    "say": "Let's build the castle! Rooks guard the corners, the Queen stands on her own colour and Daddy King next to her.",
     "source": "m00_l03:story"
   },
   {
@@ -3508,9 +3508,9 @@
   },
   {
     "lang": "en",
-    "key": "3eec6375207b9dba",
-    "text": "Set up the whole first row. Princess on her colour!",
-    "say": "Set up the whole first row. Princess on her colour!",
+    "key": "b91ea011912ad3e6",
+    "text": "Set up the whole first row. Queen on her colour!",
+    "say": "Set up the whole first row. Queen on her colour!",
     "source": "m00_l03#2:prompt"
   },
   {
@@ -3564,9 +3564,9 @@
   },
   {
     "lang": "en",
-    "key": "76a7cbe2b8b2fff4",
-    "text": "When a bridesmaid reaches the far end of the kingdom, she turns into a princess!",
-    "say": "When a bridesmaid reaches the far end of the kingdom, she turns into a princess!",
+    "key": "dade8f97d2ea1dea",
+    "text": "When a bridesmaid reaches the far end of the kingdom, she turns into a queen!",
+    "say": "When a bridesmaid reaches the far end of the kingdom, she turns into a queen!",
     "source": "m01_l04:story"
   },
   {
@@ -3718,16 +3718,16 @@
   },
   {
     "lang": "en",
-    "key": "fe4feea32e224ea2",
-    "text": "The princess can do what the rook and the butterfly can together: straight and slanted, as far as she likes.",
-    "say": "The princess can do what the rook and the butterfly can together: straight and slanted, as far as she likes.",
+    "key": "cc02f8293e6adb47",
+    "text": "The queen can do what the rook and the butterfly can together: straight and slanted, as far as she likes.",
+    "say": "The queen can do what the rook and the butterfly can together: straight and slanted, as far as she likes.",
     "source": "m04_l01:story"
   },
   {
     "lang": "en",
-    "key": "81fd8db24ca674fb",
-    "text": "Take the princess to the star.",
-    "say": "Take the princess to the star.",
+    "key": "9bd12ae6c32f2f5b",
+    "text": "Take the queen to the star.",
+    "say": "Take the queen to the star.",
     "source": "m04_l01#1:prompt"
   },
   {
@@ -3746,16 +3746,16 @@
   },
   {
     "lang": "en",
-    "key": "887cf68b90f96bc6",
-    "text": "The princess goes on a trip around the kingdom, collecting little stars.",
-    "say": "The princess goes on a trip around the kingdom, collecting little stars.",
+    "key": "412cfb780bfacb5f",
+    "text": "The queen goes on a trip around the kingdom, collecting little stars.",
+    "say": "The queen goes on a trip around the kingdom, collecting little stars.",
     "source": "m04_l02:story"
   },
   {
     "lang": "en",
-    "key": "29e2abbc0d3309d4",
-    "text": "The princess is the strongest in the whole army. Today she faces six rivals!",
-    "say": "The princess is the strongest in the whole army. Today she faces six rivals!",
+    "key": "defc9c5eacb50bc3",
+    "text": "The queen is the strongest in the whole army. Today she faces six rivals!",
+    "say": "The queen is the strongest in the whole army. Today she faces six rivals!",
     "source": "m04_l03:story"
   },
   {
@@ -3767,16 +3767,16 @@
   },
   {
     "lang": "en",
-    "key": "d1a0e07555b8aae8",
-    "text": "The princess is precious, so we guard her. When a rival piece could take her, we say it threatens her.",
-    "say": "The princess is precious, so we guard her. When a rival piece could take her, we say it threatens her.",
+    "key": "8da66f6db0d87788",
+    "text": "The queen is precious, so we guard her. When a rival piece could take her, we say it threatens her.",
+    "say": "The queen is precious, so we guard her. When a rival piece could take her, we say it threatens her.",
     "source": "m04_l04:story"
   },
   {
     "lang": "en",
-    "key": "787d8c18f065a419",
-    "text": "Tap every piece that could take the princess.",
-    "say": "Tap every piece that could take the princess.",
+    "key": "ae6a6dbd5accbc8f",
+    "text": "Tap every piece that could take the queen.",
+    "say": "Tap every piece that could take the queen.",
     "source": "m04_l04#1:prompt"
   },
   {
@@ -4586,9 +4586,9 @@
   },
   {
     "lang": "en",
-    "key": "6d9bbb2a1aab433a",
-    "text": "Hi, I'm Dewdrop. I only walk forward, and one day I'll be a princess!",
-    "say": "Hi, I'm Dewdrop. I only walk forward, and one day I'll be a princess!",
+    "key": "abfb7d131bd35a7b",
+    "text": "Hi, I'm Dewdrop. I only walk forward, and one day I'll be a queen!",
+    "say": "Hi, I'm Dewdrop. I only walk forward, and one day I'll be a queen!",
     "source": "fairies.pawn:motto"
   },
   {

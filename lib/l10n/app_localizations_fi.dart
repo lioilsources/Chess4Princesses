@@ -54,7 +54,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get botWon => 'Pikkurobotti voitti. Pelataan uudestaan!';
 
   @override
-  String get promoted => 'Hänestä tulee prinsessa!';
+  String get promoted => 'Hänestä tulee kuningatar!';
 
   @override
   String get lavaWarning => 'Auts, laavaa!';

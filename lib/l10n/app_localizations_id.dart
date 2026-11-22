@@ -54,7 +54,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get botWon => 'Robot kecil menang. Ayo main lagi!';
 
   @override
-  String get promoted => 'Dia menjadi putri!';
+  String get promoted => 'Dia menjadi ratu!';
 
   @override
   String get lavaWarning => 'Aduh, lava!';

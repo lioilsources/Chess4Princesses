@@ -54,7 +54,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get botWon => '꼬마 로봇이 이겼어. 다시 해 보자!';
 
   @override
-  String get promoted => '공주님으로 변신!';
+  String get promoted => '여왕님으로 변신!';
 
   @override
   String get lavaWarning => '앗, 용암이야!';

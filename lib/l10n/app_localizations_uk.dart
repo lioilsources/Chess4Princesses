@@ -54,7 +54,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get botWon => 'Роботик виграв. Граємо ще раз!';
 
   @override
-  String get promoted => 'Вона стала принцесою!';
+  String get promoted => 'Вона стала королевою!';
 
   @override
   String get lavaWarning => 'Ой, лава!';

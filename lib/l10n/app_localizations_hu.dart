@@ -54,7 +54,7 @@ class AppLocalizationsHu extends AppLocalizations {
   String get botWon => 'A kis robot nyert. Játsszunk újra!';
 
   @override
-  String get promoted => 'Hercegnővé változik!';
+  String get promoted => 'Királynővé változik!';
 
   @override
   String get lavaWarning => 'Jaj, láva!';

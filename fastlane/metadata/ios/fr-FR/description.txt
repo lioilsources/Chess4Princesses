@@ -1,4 +1,4 @@
-Royaume des échecs apprend les échecs aux petits enfants en jouant. Chaque pièce est un personnage de conte : les demoiselles n'avancent que tout droit, la tour roule droit comme un petit train, le papillon vole en biais, le poney saute en L et la princesse sait tout faire.
+Royaume des échecs apprend les échecs aux petits enfants en jouant. Chaque pièce est un personnage de conte : les demoiselles n'avancent que tout droit, la tour roule droit comme un petit train, le papillon vole en biais, le poney saute en L et la reine sait tout faire.
 
 • De courtes leçons en forme de conte, avec des énigmes : ramasse les étoiles, évite la lave, sauve le roi.
 • Un narrateur lit chaque phrase à voix haute (en anglais et en tchèque).

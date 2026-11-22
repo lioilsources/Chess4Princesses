@@ -2,8 +2,8 @@ id: m00_l03
 module: 0
 title: {cs: "Postav království", en: "Build the kingdom"}
 story:
-  cs: "Postavíme hrad! Věžky hlídají rohy, Princezna stojí na své barvě a Král tatínek vedle ní."
-  en: "Let's build the castle! Rooks guard the corners, the Princess stands on her own colour and Daddy King next to her."
+  cs: "Postavíme hrad! Věžky hlídají rohy, Královna stojí na své barvě a Král tatínek vedle ní."
+  en: "Let's build the castle! Rooks guard the corners, the Queen stands on her own colour and Daddy King next to her."
 skills: [setup]
 reward: {stars: 3, unlock: queen}
 tasks:
@@ -12,6 +12,6 @@ tasks:
     fen: "8/8/8/8/8/8/8/8 w - - 0 1"
     target_fen: "8/8/8/8/8/8/8/R6R w - - 0 1"
   - goal: setup_pieces
-    prompt: {cs: "Postav celou první řadu. Princezna na svou barvu!", en: "Set up the whole first row. Princess on her colour!"}
+    prompt: {cs: "Postav celou první řadu. Královna na svou barvu!", en: "Set up the whole first row. Queen on her colour!"}
     fen: "8/8/8/8/8/8/8/R6R w - - 0 1"
     target_fen: "8/8/8/8/8/8/8/RNBQKBNR w - - 0 1"

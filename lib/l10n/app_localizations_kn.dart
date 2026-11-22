@@ -54,7 +54,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get botWon => 'ರೋಬೋಟ್ ಗೆದ್ದಿತು. ಮತ್ತೆ ಆಡೋಣ!';
 
   @override
-  String get promoted => 'ಅವಳು ರಾಜಕುಮಾರಿಯಾದಳು!';
+  String get promoted => 'ಅವಳು ರಾಣಿಯಾದಳು!';
 
   @override
   String get lavaWarning => 'ಅಯ್ಯೋ, ಲಾವಾ!';
