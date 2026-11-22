@@ -27,5 +27,22 @@
   "rivalArmy": "Przeciwnik",
   "battleDemo": "Bitwa próbna",
   "taskOf": "Zadanie {n} z {total}",
-  "opponentThinking": "Robocik myśli…"
+  "opponentThinking": "Robocik myśli…",
+  "hallTitle": "Sala sław",
+  "hallFamous": "Słynne partie",
+  "replayCheck": "Szach!",
+  "replayMate": "Mat!",
+  "replayCastle": "Król schował się w zamku!",
+  "replaySacrifice": "Odważna ofiara!",
+  "replayEndMate": "Mat! Bitwa wygrana.",
+  "replayEndResign": "Król ukłonił się i oddał koronę. Koniec bitwy!",
+  "replayEndDraw": "Remis! Obaj królowie podali sobie ręce.",
+  "replayEndUnfinished": "Ta bitwa jeszcze trwa.",
+  "replayPlay": "Odtwórz",
+  "replayPause": "Pauza",
+  "replayNextBattle": "Następna bitwa",
+  "replayChronicle": "Kronika",
+  "replayStepBack": "Ruch wstecz",
+  "replayStepForward": "Ruch naprzód",
+  "replayMoveOf": "Ruch {n} z {total}"
 }

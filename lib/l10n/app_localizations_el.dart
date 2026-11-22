@@ -101,4 +101,58 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Το ρομποτάκι σκέφτεται…';
+
+  @override
+  String get hallTitle => 'Αίθουσα Δόξας';
+
+  @override
+  String get hallFamous => 'Διάσημες παρτίδες';
+
+  @override
+  String get replayCheck => 'Σαχ!';
+
+  @override
+  String get replayMate => 'Ματ!';
+
+  @override
+  String get replayCastle => 'Ο βασιλιάς κρύφτηκε στο κάστρο!';
+
+  @override
+  String get replaySacrifice => 'Μια γενναία θυσία!';
+
+  @override
+  String get replayEndMate => 'Ματ! Η μάχη κερδήθηκε.';
+
+  @override
+  String get replayEndResign =>
+      'Ο βασιλιάς υποκλίθηκε και παρέδωσε το στέμμα του. Η μάχη τελείωσε!';
+
+  @override
+  String get replayEndDraw => 'Ισοπαλία! Οι δύο βασιλιάδες δίνουν τα χέρια.';
+
+  @override
+  String get replayEndUnfinished => 'Αυτή η μάχη συνεχίζεται ακόμα.';
+
+  @override
+  String get replayPlay => 'Αναπαραγωγή';
+
+  @override
+  String get replayPause => 'Παύση';
+
+  @override
+  String get replayNextBattle => 'Επόμενη μάχη';
+
+  @override
+  String get replayChronicle => 'Χρονικό';
+
+  @override
+  String get replayStepBack => 'Κίνηση πίσω';
+
+  @override
+  String get replayStepForward => 'Κίνηση μπροστά';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Κίνηση $n από $total';
+  }
 }

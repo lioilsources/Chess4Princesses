@@ -101,4 +101,58 @@ class AppLocalizationsGu extends AppLocalizations {
 
   @override
   String get opponentThinking => 'રોબોટ વિચારે છે…';
+
+  @override
+  String get hallTitle => 'કીર્તિ ખંડ';
+
+  @override
+  String get hallFamous => 'પ્રખ્યાત રમતો';
+
+  @override
+  String get replayCheck => 'શાહ!';
+
+  @override
+  String get replayMate => 'માત!';
+
+  @override
+  String get replayCastle => 'રાજા કિલ્લામાં સંતાઈ ગયો!';
+
+  @override
+  String get replaySacrifice => 'બહાદુર બલિદાન!';
+
+  @override
+  String get replayEndMate => 'માત! લડાઈ જીતાઈ ગઈ.';
+
+  @override
+  String get replayEndResign =>
+      'રાજાએ નમીને પોતાનો મુગટ સોંપી દીધો. લડાઈ પૂરી!';
+
+  @override
+  String get replayEndDraw => 'ડ્રો! બંને રાજાઓએ હાથ મિલાવ્યા.';
+
+  @override
+  String get replayEndUnfinished => 'આ લડાઈ હજી ચાલે છે.';
+
+  @override
+  String get replayPlay => 'ચલાવો';
+
+  @override
+  String get replayPause => 'થોભો';
+
+  @override
+  String get replayNextBattle => 'આગલી લડાઈ';
+
+  @override
+  String get replayChronicle => 'વૃત્તાંત';
+
+  @override
+  String get replayStepBack => 'ચાલ પાછળ';
+
+  @override
+  String get replayStepForward => 'ચાલ આગળ';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return '$total માંથી ચાલ $n';
+  }
 }

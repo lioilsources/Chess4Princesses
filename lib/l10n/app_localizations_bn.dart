@@ -101,4 +101,57 @@ class AppLocalizationsBn extends AppLocalizations {
 
   @override
   String get opponentThinking => 'রোবট ভাবছে…';
+
+  @override
+  String get hallTitle => 'খ্যাতির ঘর';
+
+  @override
+  String get hallFamous => 'বিখ্যাত খেলা';
+
+  @override
+  String get replayCheck => 'কিস্তি!';
+
+  @override
+  String get replayMate => 'কিস্তিমাত!';
+
+  @override
+  String get replayCastle => 'রাজা দুর্গে লুকিয়ে পড়ল!';
+
+  @override
+  String get replaySacrifice => 'সাহসী ত্যাগ!';
+
+  @override
+  String get replayEndMate => 'কিস্তিমাত! যুদ্ধ জেতা হলো।';
+
+  @override
+  String get replayEndResign => 'রাজা মাথা নুইয়ে মুকুট তুলে দিল। যুদ্ধ শেষ!';
+
+  @override
+  String get replayEndDraw => 'ড্র! দুই রাজা হাত মেলাল।';
+
+  @override
+  String get replayEndUnfinished => 'এই যুদ্ধ এখনও চলছে।';
+
+  @override
+  String get replayPlay => 'চালাও';
+
+  @override
+  String get replayPause => 'থামাও';
+
+  @override
+  String get replayNextBattle => 'পরের যুদ্ধ';
+
+  @override
+  String get replayChronicle => 'ইতিবৃত্ত';
+
+  @override
+  String get replayStepBack => 'এক চাল পেছনে';
+
+  @override
+  String get replayStepForward => 'এক চাল সামনে';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return '$totalটির মধ্যে $n নম্বর চাল';
+  }
 }

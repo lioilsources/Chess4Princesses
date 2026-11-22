@@ -27,5 +27,22 @@
   "rivalArmy": "Rakip",
   "battleDemo": "Deneme savaşı",
   "taskOf": "Görev {n} / {total}",
-  "opponentThinking": "Küçük robot düşünüyor…"
+  "opponentThinking": "Küçük robot düşünüyor…",
+  "hallTitle": "Şöhret Salonu",
+  "hallFamous": "Ünlü oyunlar",
+  "replayCheck": "Şah!",
+  "replayMate": "Mat!",
+  "replayCastle": "Kral kaleye saklandı!",
+  "replaySacrifice": "Cesur bir fedakârlık!",
+  "replayEndMate": "Mat! Savaş kazanıldı.",
+  "replayEndResign": "Kral eğildi ve tacını teslim etti. Savaş bitti!",
+  "replayEndDraw": "Berabere! İki kral el sıkıştı.",
+  "replayEndUnfinished": "Bu savaş hâlâ sürüyor.",
+  "replayPlay": "Oynat",
+  "replayPause": "Duraklat",
+  "replayNextBattle": "Sonraki savaş",
+  "replayChronicle": "Kronik",
+  "replayStepBack": "Hamle geri",
+  "replayStepForward": "Hamle ileri",
+  "replayMoveOf": "Hamle {n} / {total}"
 }

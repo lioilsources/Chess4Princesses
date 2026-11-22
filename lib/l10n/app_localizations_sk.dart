@@ -101,4 +101,58 @@ class AppLocalizationsSk extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Robotík premýšľa…';
+
+  @override
+  String get hallTitle => 'Sieň slávy';
+
+  @override
+  String get hallFamous => 'Slávne partie';
+
+  @override
+  String get replayCheck => 'Šach!';
+
+  @override
+  String get replayMate => 'Mat!';
+
+  @override
+  String get replayCastle => 'Kráľ sa schoval do hradu!';
+
+  @override
+  String get replaySacrifice => 'Odvážna obeta!';
+
+  @override
+  String get replayEndMate => 'Mat! Bitka je vyhraná.';
+
+  @override
+  String get replayEndResign =>
+      'Kráľ sa uklonil a odovzdal korunu. Koniec bitky!';
+
+  @override
+  String get replayEndDraw => 'Remíza! Obaja králi si podali ruky.';
+
+  @override
+  String get replayEndUnfinished => 'Táto bitka ešte trvá.';
+
+  @override
+  String get replayPlay => 'Prehrať';
+
+  @override
+  String get replayPause => 'Pauza';
+
+  @override
+  String get replayNextBattle => 'Ďalšia bitka';
+
+  @override
+  String get replayChronicle => 'Kronika';
+
+  @override
+  String get replayStepBack => 'Ťah späť';
+
+  @override
+  String get replayStepForward => 'Ťah vpred';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Ťah $n z $total';
+  }
 }

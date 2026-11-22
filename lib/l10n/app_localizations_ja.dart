@@ -101,4 +101,57 @@ class AppLocalizationsJa extends AppLocalizations {
 
   @override
   String get opponentThinking => 'ロボちゃんがかんがえちゅう…';
+
+  @override
+  String get hallTitle => 'えいゆうのへや';
+
+  @override
+  String get hallFamous => 'ゆうめいなしょうぶ';
+
+  @override
+  String get replayCheck => 'おうて！';
+
+  @override
+  String get replayMate => 'チェックメイト！';
+
+  @override
+  String get replayCastle => 'おうさまがおしろにかくれたよ！';
+
+  @override
+  String get replaySacrifice => 'ゆうきあるぎせい！';
+
+  @override
+  String get replayEndMate => 'チェックメイト！ たたかいにかったよ。';
+
+  @override
+  String get replayEndResign => 'おうさまがおじぎをして、かんむりをわたしたよ。たたかいはおしまい！';
+
+  @override
+  String get replayEndDraw => 'ひきわけ！ ふたりのおうさまがあくしゅしたよ。';
+
+  @override
+  String get replayEndUnfinished => 'このたたかいは まだつづいているよ。';
+
+  @override
+  String get replayPlay => 'さいせい';
+
+  @override
+  String get replayPause => 'ひとやすみ';
+
+  @override
+  String get replayNextBattle => 'つぎのたたかい';
+
+  @override
+  String get replayChronicle => 'きろく';
+
+  @override
+  String get replayStepBack => 'ひとつもどる';
+
+  @override
+  String get replayStepForward => 'ひとつすすむ';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return '$totalてのうち $nてめ';
+  }
 }

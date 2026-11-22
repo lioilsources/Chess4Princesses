@@ -101,4 +101,57 @@ class AppLocalizationsUr extends AppLocalizations {
 
   @override
   String get opponentThinking => 'روبوٹ سوچ رہا ہے…';
+
+  @override
+  String get hallTitle => 'شہرت کا ہال';
+
+  @override
+  String get hallFamous => 'مشہور کھیل';
+
+  @override
+  String get replayCheck => 'شہ!';
+
+  @override
+  String get replayMate => 'مات!';
+
+  @override
+  String get replayCastle => 'بادشاہ قلعے میں چھپ گیا!';
+
+  @override
+  String get replaySacrifice => 'بہادری کی قربانی!';
+
+  @override
+  String get replayEndMate => 'مات! جنگ جیت لی گئی۔';
+
+  @override
+  String get replayEndResign => 'بادشاہ جھکا اور اپنا تاج دے دیا۔ جنگ ختم!';
+
+  @override
+  String get replayEndDraw => 'برابری! دونوں بادشاہوں نے ہاتھ ملایا۔';
+
+  @override
+  String get replayEndUnfinished => 'یہ جنگ ابھی جاری ہے۔';
+
+  @override
+  String get replayPlay => 'چلائیں';
+
+  @override
+  String get replayPause => 'رکیں';
+
+  @override
+  String get replayNextBattle => 'اگلی جنگ';
+
+  @override
+  String get replayChronicle => 'روداد';
+
+  @override
+  String get replayStepBack => 'ایک چال پیچھے';
+
+  @override
+  String get replayStepForward => 'ایک چال آگے';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return '$total میں سے چال $n';
+  }
 }

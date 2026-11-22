@@ -27,5 +27,22 @@
   "rivalArmy": "الخصم",
   "battleDemo": "معركة تجريبية",
   "taskOf": "المهمة {n} من {total}",
-  "opponentThinking": "الروبوت يفكر…"
+  "opponentThinking": "الروبوت يفكر…",
+  "hallTitle": "قاعة المشاهير",
+  "hallFamous": "مباريات مشهورة",
+  "replayCheck": "كش!",
+  "replayMate": "كش مات!",
+  "replayCastle": "الملك اختبأ في القلعة!",
+  "replaySacrifice": "تضحية شجاعة!",
+  "replayEndMate": "كش مات! ربحنا المعركة.",
+  "replayEndResign": "انحنى الملك وسلّم تاجه. انتهت المعركة!",
+  "replayEndDraw": "تعادل! الملكان تصافحا.",
+  "replayEndUnfinished": "هذه المعركة ما زالت مستمرة.",
+  "replayPlay": "تشغيل",
+  "replayPause": "إيقاف مؤقت",
+  "replayNextBattle": "المعركة التالية",
+  "replayChronicle": "السجل",
+  "replayStepBack": "حركة للخلف",
+  "replayStepForward": "حركة للأمام",
+  "replayMoveOf": "الحركة {n} من {total}"
 }

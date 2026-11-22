@@ -27,5 +27,22 @@
   "rivalArmy": "Đối thủ",
   "battleDemo": "Trận đánh thử",
   "taskOf": "Nhiệm vụ {n}/{total}",
-  "opponentThinking": "Rô-bốt nhỏ đang suy nghĩ…"
+  "opponentThinking": "Rô-bốt nhỏ đang suy nghĩ…",
+  "hallTitle": "Phòng vinh danh",
+  "hallFamous": "Ván cờ nổi tiếng",
+  "replayCheck": "Chiếu!",
+  "replayMate": "Chiếu bí!",
+  "replayCastle": "Nhà vua trốn vào lâu đài!",
+  "replaySacrifice": "Một sự hy sinh dũng cảm!",
+  "replayEndMate": "Chiếu bí! Trận đánh đã thắng.",
+  "replayEndResign": "Nhà vua cúi chào và trao vương miện. Trận đánh kết thúc!",
+  "replayEndDraw": "Hòa! Hai nhà vua bắt tay nhau.",
+  "replayEndUnfinished": "Trận đánh này vẫn đang diễn ra.",
+  "replayPlay": "Phát",
+  "replayPause": "Tạm dừng",
+  "replayNextBattle": "Trận tiếp theo",
+  "replayChronicle": "Biên niên sử",
+  "replayStepBack": "Lùi một nước",
+  "replayStepForward": "Tiến một nước",
+  "replayMoveOf": "Nước {n} trên {total}"
 }

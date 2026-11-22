@@ -27,5 +27,22 @@
   "rivalArmy": "ಎದುರಾಳಿ",
   "battleDemo": "ಪ್ರಯೋಗ ಯುದ್ಧ",
   "taskOf": "ಕೆಲಸ {n}/{total}",
-  "opponentThinking": "ರೋಬೋಟ್ ಯೋಚಿಸುತ್ತಿದೆ…"
+  "opponentThinking": "ರೋಬೋಟ್ ಯೋಚಿಸುತ್ತಿದೆ…",
+  "hallTitle": "ಖ್ಯಾತಿಯ ಸಭಾಂಗಣ",
+  "hallFamous": "ಪ್ರಸಿದ್ಧ ಆಟಗಳು",
+  "replayCheck": "ಚೆಕ್!",
+  "replayMate": "ಚೆಕ್‌ಮೇಟ್!",
+  "replayCastle": "ರಾಜ ಕೋಟೆಯಲ್ಲಿ ಅಡಗಿಕೊಂಡ!",
+  "replaySacrifice": "ಧೈರ್ಯದ ತ್ಯಾಗ!",
+  "replayEndMate": "ಚೆಕ್‌ಮೇಟ್! ಯುದ್ಧ ಗೆದ್ದಿತು.",
+  "replayEndResign": "ರಾಜ ತಲೆಬಾಗಿ ತನ್ನ ಕಿರೀಟ ಒಪ್ಪಿಸಿದ. ಯುದ್ಧ ಮುಗಿಯಿತು!",
+  "replayEndDraw": "ಡ್ರಾ! ಇಬ್ಬರು ರಾಜರು ಕೈ ಕುಲುಕಿದರು.",
+  "replayEndUnfinished": "ಈ ಯುದ್ಧ ಇನ್ನೂ ನಡೆಯುತ್ತಿದೆ.",
+  "replayPlay": "ಆಡಿಸು",
+  "replayPause": "ತಡೆ",
+  "replayNextBattle": "ಮುಂದಿನ ಯುದ್ಧ",
+  "replayChronicle": "ವೃತ್ತಾಂತ",
+  "replayStepBack": "ಒಂದು ನಡೆ ಹಿಂದೆ",
+  "replayStepForward": "ಒಂದು ನಡೆ ಮುಂದೆ",
+  "replayMoveOf": "{total}ರಲ್ಲಿ {n}ನೇ ನಡೆ"
 }

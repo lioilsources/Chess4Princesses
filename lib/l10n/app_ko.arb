@@ -27,5 +27,22 @@
   "rivalArmy": "상대",
   "battleDemo": "연습 전투",
   "taskOf": "{total}개 중 {n}번째 과제",
-  "opponentThinking": "꼬마 로봇이 생각 중…"
+  "opponentThinking": "꼬마 로봇이 생각 중…",
+  "hallTitle": "명예의 전당",
+  "hallFamous": "유명한 경기",
+  "replayCheck": "체크!",
+  "replayMate": "체크메이트!",
+  "replayCastle": "왕이 성으로 쏙 숨었어요!",
+  "replaySacrifice": "용감한 희생!",
+  "replayEndMate": "체크메이트! 전투에서 이겼어요.",
+  "replayEndResign": "왕이 허리를 숙여 왕관을 건넸어요. 전투가 끝났어요!",
+  "replayEndDraw": "무승부! 두 왕이 악수를 해요.",
+  "replayEndUnfinished": "이 전투는 아직 계속되고 있어요.",
+  "replayPlay": "재생",
+  "replayPause": "일시정지",
+  "replayNextBattle": "다음 전투",
+  "replayChronicle": "연대기",
+  "replayStepBack": "한 수 뒤로",
+  "replayStepForward": "한 수 앞으로",
+  "replayMoveOf": "{total}수 중 {n}수"
 }

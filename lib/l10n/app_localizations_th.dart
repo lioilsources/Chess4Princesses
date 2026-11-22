@@ -101,4 +101,57 @@ class AppLocalizationsTh extends AppLocalizations {
 
   @override
   String get opponentThinking => 'หุ่นยนต์กำลังคิด…';
+
+  @override
+  String get hallTitle => 'หอเกียรติยศ';
+
+  @override
+  String get hallFamous => 'เกมที่มีชื่อเสียง';
+
+  @override
+  String get replayCheck => 'รุก!';
+
+  @override
+  String get replayMate => 'รุกฆาต!';
+
+  @override
+  String get replayCastle => 'ราชาไปซ่อนในปราสาท!';
+
+  @override
+  String get replaySacrifice => 'การเสียสละที่กล้าหาญ!';
+
+  @override
+  String get replayEndMate => 'รุกฆาต! ชนะการต่อสู้แล้ว';
+
+  @override
+  String get replayEndResign => 'ราชาโค้งคำนับและส่งมอบมงกุฎ การต่อสู้จบแล้ว!';
+
+  @override
+  String get replayEndDraw => 'เสมอ! ราชาทั้งสองจับมือกัน';
+
+  @override
+  String get replayEndUnfinished => 'การต่อสู้นี้ยังดำเนินอยู่';
+
+  @override
+  String get replayPlay => 'เล่น';
+
+  @override
+  String get replayPause => 'หยุดชั่วคราว';
+
+  @override
+  String get replayNextBattle => 'การต่อสู้ถัดไป';
+
+  @override
+  String get replayChronicle => 'บันทึก';
+
+  @override
+  String get replayStepBack => 'ถอยหลังหนึ่งตา';
+
+  @override
+  String get replayStepForward => 'เดินหน้าหนึ่งตา';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'ตาที่ $n จาก $total';
+  }
 }

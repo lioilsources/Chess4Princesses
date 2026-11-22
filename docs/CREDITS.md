@@ -32,3 +32,10 @@ No third-party characters or brands; prompts describe original archetypes only.
 ## Fonts
 
 `cute_kid_fonts` — see that package for the font licences.
+
+## Chess games (`assets/games/`)
+
+Moves and results of games are facts and carry no licence. Comments, annotations and
+third-party selections are never copied (SLAVNE_PARTIE_PLAN §7). Moves of the bundled
+samples were checked against Wikipedia (Opera Game; Game of the Century; Vera Menchik,
+"Menchik vs. Graf, Semmering 1937" with the final position).

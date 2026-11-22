@@ -8,7 +8,7 @@ Flutter app (iOS + Android) that teaches a 5-year-old chess through story lesson
 ## Build a test
 ```
 flutter pub get
-flutter analyze --no-fatal-infos && flutter test && dart run tool/lesson_lint.dart   # what CI runs, gate before push
+flutter analyze --no-fatal-infos && flutter test && dart run tool/lesson_lint.dart && dart run tool/games_lint.dart   # what CI runs, gate before push
 python3 tool/pack_sheet.py check    # battle atlases (needs Pillow)
 dart run tool/voice_lines.dart      # list spoken lines → assets/voice/lines.json
 ```
@@ -17,7 +17,8 @@ Voice clips are generated on SPARK through the broker (`sparkctl exec … -- pyt
 ## Mapa
 - `lib/app/` router, providers, app shell
 - `lib/core/` chess rules, bots, lessons (engine, solver, lint), progress, armies, voice
-- `lib/features/` map, lesson, board, battle (Flame), army
+- `lib/core/games/` PGN, game records, moments (famous games player) → `Prompts/05-SLAVNE_PARTIE_PLAN.md`
+- `lib/features/` map, lesson, board, battle (Flame), army, games (hall + replay)
 - `assets/lessons/` lesson YAML → `docs/lesson_schema.md`; `assets/armies/`, `assets/voice/`
 - `tool/` lesson lint, atlas packer, voice and sound generators; `tool/art/` ComfyUI art pipeline
 - `Prompts/` plans and handoffs; `docs/` decisions, credits, release

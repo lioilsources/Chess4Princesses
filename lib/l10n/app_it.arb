@@ -27,5 +27,22 @@
   "rivalArmy": "Avversario",
   "battleDemo": "Battaglia di prova",
   "taskOf": "Compito {n} di {total}",
-  "opponentThinking": "Il robottino sta pensando…"
+  "opponentThinking": "Il robottino sta pensando…",
+  "hallTitle": "Sala della fama",
+  "hallFamous": "Partite famose",
+  "replayCheck": "Scacco!",
+  "replayMate": "Scacco matto!",
+  "replayCastle": "Il re si nasconde nel castello!",
+  "replaySacrifice": "Un coraggioso sacrificio!",
+  "replayEndMate": "Scacco matto! La battaglia è vinta.",
+  "replayEndResign": "Il re si inchina e consegna la sua corona. La battaglia è finita!",
+  "replayEndDraw": "Patta! I due re si stringono la mano.",
+  "replayEndUnfinished": "Questa battaglia è ancora in corso.",
+  "replayPlay": "Riproduci",
+  "replayPause": "Pausa",
+  "replayNextBattle": "Battaglia successiva",
+  "replayChronicle": "Cronaca",
+  "replayStepBack": "Mossa indietro",
+  "replayStepForward": "Mossa avanti",
+  "replayMoveOf": "Mossa {n} di {total}"
 }

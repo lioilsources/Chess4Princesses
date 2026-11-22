@@ -101,4 +101,58 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Il robottino sta pensando…';
+
+  @override
+  String get hallTitle => 'Sala della fama';
+
+  @override
+  String get hallFamous => 'Partite famose';
+
+  @override
+  String get replayCheck => 'Scacco!';
+
+  @override
+  String get replayMate => 'Scacco matto!';
+
+  @override
+  String get replayCastle => 'Il re si nasconde nel castello!';
+
+  @override
+  String get replaySacrifice => 'Un coraggioso sacrificio!';
+
+  @override
+  String get replayEndMate => 'Scacco matto! La battaglia è vinta.';
+
+  @override
+  String get replayEndResign =>
+      'Il re si inchina e consegna la sua corona. La battaglia è finita!';
+
+  @override
+  String get replayEndDraw => 'Patta! I due re si stringono la mano.';
+
+  @override
+  String get replayEndUnfinished => 'Questa battaglia è ancora in corso.';
+
+  @override
+  String get replayPlay => 'Riproduci';
+
+  @override
+  String get replayPause => 'Pausa';
+
+  @override
+  String get replayNextBattle => 'Battaglia successiva';
+
+  @override
+  String get replayChronicle => 'Cronaca';
+
+  @override
+  String get replayStepBack => 'Mossa indietro';
+
+  @override
+  String get replayStepForward => 'Mossa avanti';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Mossa $n di $total';
+  }
 }

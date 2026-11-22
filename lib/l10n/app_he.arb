@@ -27,5 +27,22 @@
   "rivalArmy": "יריב",
   "battleDemo": "קרב ניסיון",
   "taskOf": "משימה {n} מתוך {total}",
-  "opponentThinking": "הרובוט חושב…"
+  "opponentThinking": "הרובוט חושב…",
+  "hallTitle": "היכל התהילה",
+  "hallFamous": "משחקים מפורסמים",
+  "replayCheck": "שח!",
+  "replayMate": "מט!",
+  "replayCastle": "המלך מתחבא בטירה!",
+  "replaySacrifice": "הקרבה אמיצה!",
+  "replayEndMate": "מט! ניצחנו בקרב.",
+  "replayEndResign": "המלך משתחווה ומוסר את כתרו. הקרב נגמר!",
+  "replayEndDraw": "תיקו! שני המלכים לוחצים ידיים.",
+  "replayEndUnfinished": "הקרב הזה עדיין נמשך.",
+  "replayPlay": "נגן",
+  "replayPause": "השהיה",
+  "replayNextBattle": "הקרב הבא",
+  "replayChronicle": "יומן הקרב",
+  "replayStepBack": "מהלך אחורה",
+  "replayStepForward": "מהלך קדימה",
+  "replayMoveOf": "מהלך {n} מתוך {total}"
 }

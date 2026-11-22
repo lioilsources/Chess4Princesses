@@ -60,6 +60,16 @@
     (`tool/art/arenas_archion.json`) to match the renders. Names, mottos and battle
     lines are original (cs + en); `test/armies_test.dart` checks every folder.
     The picker shows one list with a "mine / rival" switch (14 armies).
+17. **Famous games player (G1, `Prompts/05-SLAVNE_PARTIE_PLAN.md`).** Own PGN reader in
+    `lib/core/games/` (comments, variations and NAGs dropped) and a fast SAN reader that filters
+    legal moves instead of writing SAN for each (`Rules.parseSan` stays as the reference in tests).
+    Story mode plays the game like a film with at most 4 full-screen battles (mate, sacrifices,
+    first capture, queen captures — `battlePlies`), other captures just poof; chronicle mode is
+    the parent's notation and stepping, no battles. White always plays with my army. Moments come
+    from the moves alone (no engine); a sacrifice = the mover stays 2+ apples down for 4 plies and
+    wins. Generic event lines (check, castle, sacrifice, end by mate / resignation / draw) are ARB
+    strings, not yet voiced. Bundled PGN is linted in CI (`tool/games_lint.dart`): legal replay,
+    result vs final position, no comments, no URLs, no sponsor names.
 
 ## Open questions for Ol1n (PLAN §8 + BATTLES §7) — with recommendations
 
@@ -88,3 +98,4 @@
 - Monetisation (PLAN §6: two armies free, the rest as packs): all 14 armies are open for now, no IAP yet — Olin decides.
 - Kid test: can she tell the pieces apart at board size (fairy pawn vs queen are both pink)?
 - SFX/music.
+- Famous games: voice clips for the replay event lines (SPARK), library and shelves (G3), live feed (G2).

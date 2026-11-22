@@ -27,5 +27,22 @@
   "rivalArmy": "Rival",
   "battleDemo": "Test battle",
   "taskOf": "Task {n} of {total}",
-  "opponentThinking": "Robot is thinking…"
+  "opponentThinking": "Robot is thinking…",
+  "hallTitle": "Hall of Fame",
+  "hallFamous": "Famous games",
+  "replayCheck": "Check!",
+  "replayMate": "Checkmate!",
+  "replayCastle": "The king hides in his castle!",
+  "replaySacrifice": "A brave sacrifice!",
+  "replayEndMate": "Checkmate! The battle is won.",
+  "replayEndResign": "The king bows and hands over his crown. The battle is over!",
+  "replayEndDraw": "A draw! Both kings shake hands.",
+  "replayEndUnfinished": "This battle is still going on.",
+  "replayPlay": "Play",
+  "replayPause": "Pause",
+  "replayNextBattle": "Next battle",
+  "replayChronicle": "Chronicle",
+  "replayStepBack": "Move back",
+  "replayStepForward": "Move forward",
+  "replayMoveOf": "Move {n} of {total}"
 }

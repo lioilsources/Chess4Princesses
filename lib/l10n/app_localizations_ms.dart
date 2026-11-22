@@ -101,4 +101,58 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Robot kecil sedang berfikir…';
+
+  @override
+  String get hallTitle => 'Dewan Kemasyhuran';
+
+  @override
+  String get hallFamous => 'Permainan terkenal';
+
+  @override
+  String get replayCheck => 'Syak!';
+
+  @override
+  String get replayMate => 'Syak mat!';
+
+  @override
+  String get replayCastle => 'Raja bersembunyi di dalam kubu!';
+
+  @override
+  String get replaySacrifice => 'Pengorbanan yang berani!';
+
+  @override
+  String get replayEndMate => 'Syak mat! Pertempuran dimenangi.';
+
+  @override
+  String get replayEndResign =>
+      'Raja tunduk dan menyerahkan mahkotanya. Pertempuran tamat!';
+
+  @override
+  String get replayEndDraw => 'Seri! Kedua-dua raja berjabat tangan.';
+
+  @override
+  String get replayEndUnfinished => 'Pertempuran ini masih berterusan.';
+
+  @override
+  String get replayPlay => 'Main';
+
+  @override
+  String get replayPause => 'Jeda';
+
+  @override
+  String get replayNextBattle => 'Pertempuran seterusnya';
+
+  @override
+  String get replayChronicle => 'Kronik';
+
+  @override
+  String get replayStepBack => 'Langkah ke belakang';
+
+  @override
+  String get replayStepForward => 'Langkah ke hadapan';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Langkah $n daripada $total';
+  }
 }

@@ -27,5 +27,22 @@
   "rivalArmy": "Protivnik",
   "battleDemo": "Probna bitka",
   "taskOf": "Zadatak {n} od {total}",
-  "opponentThinking": "Robotić razmišlja…"
+  "opponentThinking": "Robotić razmišlja…",
+  "hallTitle": "Dvorana slavnih",
+  "hallFamous": "Slavne partije",
+  "replayCheck": "Šah!",
+  "replayMate": "Mat!",
+  "replayCastle": "Kralj se sakrio u dvorac!",
+  "replaySacrifice": "Hrabra žrtva!",
+  "replayEndMate": "Mat! Bitka je dobivena.",
+  "replayEndResign": "Kralj se naklonio i predao krunu. Bitka je gotova!",
+  "replayEndDraw": "Neriješeno! Oba kralja rukuju se.",
+  "replayEndUnfinished": "Ova se bitka još igra.",
+  "replayPlay": "Pusti",
+  "replayPause": "Stanka",
+  "replayNextBattle": "Sljedeća bitka",
+  "replayChronicle": "Kronika",
+  "replayStepBack": "Potez natrag",
+  "replayStepForward": "Potez naprijed",
+  "replayMoveOf": "Potez {n} od {total}"
 }

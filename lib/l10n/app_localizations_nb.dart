@@ -101,4 +101,58 @@ class AppLocalizationsNb extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Den lille roboten tenker…';
+
+  @override
+  String get hallTitle => 'Berømmelsens hall';
+
+  @override
+  String get hallFamous => 'Berømte partier';
+
+  @override
+  String get replayCheck => 'Sjakk!';
+
+  @override
+  String get replayMate => 'Sjakkmatt!';
+
+  @override
+  String get replayCastle => 'Kongen gjemmer seg i slottet!';
+
+  @override
+  String get replaySacrifice => 'Et modig offer!';
+
+  @override
+  String get replayEndMate => 'Sjakkmatt! Kampen er vunnet.';
+
+  @override
+  String get replayEndResign =>
+      'Kongen bukker og gir fra seg kronen. Kampen er over!';
+
+  @override
+  String get replayEndDraw => 'Remis! De to kongene tar hverandre i hånden.';
+
+  @override
+  String get replayEndUnfinished => 'Denne kampen pågår fortsatt.';
+
+  @override
+  String get replayPlay => 'Spill av';
+
+  @override
+  String get replayPause => 'Pause';
+
+  @override
+  String get replayNextBattle => 'Neste kamp';
+
+  @override
+  String get replayChronicle => 'Krøniken';
+
+  @override
+  String get replayStepBack => 'Trekk tilbake';
+
+  @override
+  String get replayStepForward => 'Trekk frem';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Trekk $n av $total';
+  }
 }

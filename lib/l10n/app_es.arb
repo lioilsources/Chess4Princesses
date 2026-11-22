@@ -27,5 +27,22 @@
   "rivalArmy": "Rival",
   "battleDemo": "Batalla de prueba",
   "taskOf": "Tarea {n} de {total}",
-  "opponentThinking": "El robotito está pensando…"
+  "opponentThinking": "El robotito está pensando…",
+  "hallTitle": "Salón de la Fama",
+  "hallFamous": "Partidas famosas",
+  "replayCheck": "¡Jaque!",
+  "replayMate": "¡Jaque mate!",
+  "replayCastle": "¡El rey se esconde en el castillo!",
+  "replaySacrifice": "¡Un sacrificio valiente!",
+  "replayEndMate": "¡Jaque mate! La batalla está ganada.",
+  "replayEndResign": "El rey hace una reverencia y entrega su corona. ¡Fin de la batalla!",
+  "replayEndDraw": "¡Tablas! Los dos reyes se dan la mano.",
+  "replayEndUnfinished": "Esta batalla todavía continúa.",
+  "replayPlay": "Reproducir",
+  "replayPause": "Pausa",
+  "replayNextBattle": "Siguiente batalla",
+  "replayChronicle": "Crónica",
+  "replayStepBack": "Jugada atrás",
+  "replayStepForward": "Jugada adelante",
+  "replayMoveOf": "Jugada {n} de {total}"
 }

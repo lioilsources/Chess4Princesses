@@ -101,4 +101,58 @@ class AppLocalizationsFi extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Pikkurobotti miettii…';
+
+  @override
+  String get hallTitle => 'Kunniahalli';
+
+  @override
+  String get hallFamous => 'Kuuluisia pelejä';
+
+  @override
+  String get replayCheck => 'Shakki!';
+
+  @override
+  String get replayMate => 'Matti!';
+
+  @override
+  String get replayCastle => 'Kuningas piiloutuu linnaan!';
+
+  @override
+  String get replaySacrifice => 'Rohkea uhraus!';
+
+  @override
+  String get replayEndMate => 'Matti! Taistelu on voitettu.';
+
+  @override
+  String get replayEndResign =>
+      'Kuningas kumartaa ja ojentaa kruununsa. Taistelu on ohi!';
+
+  @override
+  String get replayEndDraw => 'Tasapeli! Molemmat kuninkaat kättelevät.';
+
+  @override
+  String get replayEndUnfinished => 'Tämä taistelu on vielä kesken.';
+
+  @override
+  String get replayPlay => 'Toista';
+
+  @override
+  String get replayPause => 'Tauko';
+
+  @override
+  String get replayNextBattle => 'Seuraava taistelu';
+
+  @override
+  String get replayChronicle => 'Kronikka';
+
+  @override
+  String get replayStepBack => 'Siirto taakse';
+
+  @override
+  String get replayStepForward => 'Siirto eteen';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Siirto $n/$total';
+  }
 }

@@ -27,5 +27,22 @@
   "rivalArmy": "Ellenfél",
   "battleDemo": "Próbacsata",
   "taskOf": "{n}. feladat / {total}",
-  "opponentThinking": "A kis robot gondolkodik…"
+  "opponentThinking": "A kis robot gondolkodik…",
+  "hallTitle": "Hírességek csarnoka",
+  "hallFamous": "Híres játszmák",
+  "replayCheck": "Sakk!",
+  "replayMate": "Matt!",
+  "replayCastle": "A király elbújt a várban!",
+  "replaySacrifice": "Bátor áldozat!",
+  "replayEndMate": "Matt! Megnyertük a csatát.",
+  "replayEndResign": "A király meghajol és átadja a koronáját. Vége a csatának!",
+  "replayEndDraw": "Döntetlen! A két király kezet fog.",
+  "replayEndUnfinished": "Ez a csata még tart.",
+  "replayPlay": "Lejátszás",
+  "replayPause": "Szünet",
+  "replayNextBattle": "Következő csata",
+  "replayChronicle": "Krónika",
+  "replayStepBack": "Lépés vissza",
+  "replayStepForward": "Lépés előre",
+  "replayMoveOf": "Lépés: {n} / {total}"
 }

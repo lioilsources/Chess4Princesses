@@ -27,5 +27,22 @@
   "rivalArmy": "Gegner",
   "battleDemo": "Probeschlacht",
   "taskOf": "Aufgabe {n} von {total}",
-  "opponentThinking": "Der kleine Roboter denkt nach…"
+  "opponentThinking": "Der kleine Roboter denkt nach…",
+  "hallTitle": "Ruhmeshalle",
+  "hallFamous": "Berühmte Partien",
+  "replayCheck": "Schach!",
+  "replayMate": "Schachmatt!",
+  "replayCastle": "Der König versteckt sich in der Burg!",
+  "replaySacrifice": "Ein mutiges Opfer!",
+  "replayEndMate": "Schachmatt! Die Schlacht ist gewonnen.",
+  "replayEndResign": "Der König verbeugt sich und gibt seine Krone ab. Die Schlacht ist vorbei!",
+  "replayEndDraw": "Unentschieden! Beide Könige reichen sich die Hand.",
+  "replayEndUnfinished": "Diese Schlacht läuft noch.",
+  "replayPlay": "Abspielen",
+  "replayPause": "Pause",
+  "replayNextBattle": "Nächste Schlacht",
+  "replayChronicle": "Chronik",
+  "replayStepBack": "Zug zurück",
+  "replayStepForward": "Zug vor",
+  "replayMoveOf": "Zug {n} von {total}"
 }

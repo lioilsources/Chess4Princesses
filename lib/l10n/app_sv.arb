@@ -27,5 +27,22 @@
   "rivalArmy": "Motståndare",
   "battleDemo": "Provstrid",
   "taskOf": "Uppgift {n} av {total}",
-  "opponentThinking": "Den lilla roboten tänker…"
+  "opponentThinking": "Den lilla roboten tänker…",
+  "hallTitle": "Ärans hall",
+  "hallFamous": "Berömda partier",
+  "replayCheck": "Schack!",
+  "replayMate": "Schackmatt!",
+  "replayCastle": "Kungen gömmer sig i slottet!",
+  "replaySacrifice": "Ett modigt offer!",
+  "replayEndMate": "Schackmatt! Striden är vunnen.",
+  "replayEndResign": "Kungen bugar och lämnar över sin krona. Striden är slut!",
+  "replayEndDraw": "Remi! De två kungarna skakar hand.",
+  "replayEndUnfinished": "Den här striden pågår fortfarande.",
+  "replayPlay": "Spela upp",
+  "replayPause": "Paus",
+  "replayNextBattle": "Nästa strid",
+  "replayChronicle": "Krönika",
+  "replayStepBack": "Drag tillbaka",
+  "replayStepForward": "Drag framåt",
+  "replayMoveOf": "Drag {n} av {total}"
 }

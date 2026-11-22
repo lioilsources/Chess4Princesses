@@ -101,4 +101,58 @@ class AppLocalizationsTe extends AppLocalizations {
 
   @override
   String get opponentThinking => 'రోబోట్ ఆలోచిస్తోంది…';
+
+  @override
+  String get hallTitle => 'కీర్తి మందిరం';
+
+  @override
+  String get hallFamous => 'ప్రసిద్ధ ఆటలు';
+
+  @override
+  String get replayCheck => 'చెక్!';
+
+  @override
+  String get replayMate => 'చెక్‌మేట్!';
+
+  @override
+  String get replayCastle => 'రాజు కోటలో దాక్కున్నాడు!';
+
+  @override
+  String get replaySacrifice => 'ధైర్యమైన త్యాగం!';
+
+  @override
+  String get replayEndMate => 'చెక్‌మేట్! యుద్ధం గెలిచాం.';
+
+  @override
+  String get replayEndResign =>
+      'రాజు వంగి నమస్కరించి తన కిరీటాన్ని ఇచ్చాడు. యుద్ధం ముగిసింది!';
+
+  @override
+  String get replayEndDraw => 'డ్రా! ఇద్దరు రాజులు కరచాలనం చేశారు.';
+
+  @override
+  String get replayEndUnfinished => 'ఈ యుద్ధం ఇంకా జరుగుతోంది.';
+
+  @override
+  String get replayPlay => 'ఆడించు';
+
+  @override
+  String get replayPause => 'ఆపు';
+
+  @override
+  String get replayNextBattle => 'తర్వాతి యుద్ధం';
+
+  @override
+  String get replayChronicle => 'చరిత్ర';
+
+  @override
+  String get replayStepBack => 'ఒక ఎత్తు వెనక్కి';
+
+  @override
+  String get replayStepForward => 'ఒక ఎత్తు ముందుకి';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return '$totalలో $nవ ఎత్తు';
+  }
 }

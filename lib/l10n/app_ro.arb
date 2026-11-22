@@ -27,5 +27,22 @@
   "rivalArmy": "Adversar",
   "battleDemo": "Bătălie de probă",
   "taskOf": "Sarcina {n} din {total}",
-  "opponentThinking": "Roboțelul se gândește…"
+  "opponentThinking": "Roboțelul se gândește…",
+  "hallTitle": "Sala faimei",
+  "hallFamous": "Partide celebre",
+  "replayCheck": "Șah!",
+  "replayMate": "Șah mat!",
+  "replayCastle": "Regele se ascunde în castel!",
+  "replaySacrifice": "Un sacrificiu curajos!",
+  "replayEndMate": "Șah mat! Bătălia este câștigată.",
+  "replayEndResign": "Regele face o plecăciune și își predă coroana. Bătălia s-a terminat!",
+  "replayEndDraw": "Remiză! Cei doi regi își strâng mâna.",
+  "replayEndUnfinished": "Bătălia aceasta încă nu s-a terminat.",
+  "replayPlay": "Redă",
+  "replayPause": "Pauză",
+  "replayNextBattle": "Următoarea bătălie",
+  "replayChronicle": "Cronica",
+  "replayStepBack": "Mutare înapoi",
+  "replayStepForward": "Mutare înainte",
+  "replayMoveOf": "Mutarea {n} din {total}"
 }

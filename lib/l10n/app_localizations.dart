@@ -350,6 +350,108 @@ abstract class AppLocalizations {
   /// In cs, this message translates to:
   /// **'Robůtek přemýšlí…'**
   String get opponentThinking;
+
+  /// No description provided for @hallTitle.
+  ///
+  /// In cs, this message translates to:
+  /// **'Síň slávy'**
+  String get hallTitle;
+
+  /// No description provided for @hallFamous.
+  ///
+  /// In cs, this message translates to:
+  /// **'Slavné partie'**
+  String get hallFamous;
+
+  /// No description provided for @replayCheck.
+  ///
+  /// In cs, this message translates to:
+  /// **'Šach!'**
+  String get replayCheck;
+
+  /// No description provided for @replayMate.
+  ///
+  /// In cs, this message translates to:
+  /// **'Mat!'**
+  String get replayMate;
+
+  /// No description provided for @replayCastle.
+  ///
+  /// In cs, this message translates to:
+  /// **'Král se schoval do hradu!'**
+  String get replayCastle;
+
+  /// No description provided for @replaySacrifice.
+  ///
+  /// In cs, this message translates to:
+  /// **'Odvážná oběť!'**
+  String get replaySacrifice;
+
+  /// No description provided for @replayEndMate.
+  ///
+  /// In cs, this message translates to:
+  /// **'Mat! Bitva je vyhraná.'**
+  String get replayEndMate;
+
+  /// No description provided for @replayEndResign.
+  ///
+  /// In cs, this message translates to:
+  /// **'Král se uklonil a podal korunu. Konec bitvy!'**
+  String get replayEndResign;
+
+  /// No description provided for @replayEndDraw.
+  ///
+  /// In cs, this message translates to:
+  /// **'Remíza! Oba králové si podali ruce.'**
+  String get replayEndDraw;
+
+  /// No description provided for @replayEndUnfinished.
+  ///
+  /// In cs, this message translates to:
+  /// **'Tahle bitva se ještě hraje.'**
+  String get replayEndUnfinished;
+
+  /// No description provided for @replayPlay.
+  ///
+  /// In cs, this message translates to:
+  /// **'Přehrát'**
+  String get replayPlay;
+
+  /// No description provided for @replayPause.
+  ///
+  /// In cs, this message translates to:
+  /// **'Pauza'**
+  String get replayPause;
+
+  /// No description provided for @replayNextBattle.
+  ///
+  /// In cs, this message translates to:
+  /// **'Další bitva'**
+  String get replayNextBattle;
+
+  /// No description provided for @replayChronicle.
+  ///
+  /// In cs, this message translates to:
+  /// **'Kronika'**
+  String get replayChronicle;
+
+  /// No description provided for @replayStepBack.
+  ///
+  /// In cs, this message translates to:
+  /// **'Tah zpět'**
+  String get replayStepBack;
+
+  /// No description provided for @replayStepForward.
+  ///
+  /// In cs, this message translates to:
+  /// **'Tah vpřed'**
+  String get replayStepForward;
+
+  /// No description provided for @replayMoveOf.
+  ///
+  /// In cs, this message translates to:
+  /// **'Tah {n} z {total}'**
+  String replayMoveOf(int n, int total);
 }
 
 class _AppLocalizationsDelegate

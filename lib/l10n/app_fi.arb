@@ -27,5 +27,22 @@
   "rivalArmy": "Vastustaja",
   "battleDemo": "Harjoitustaistelu",
   "taskOf": "Tehtävä {n}/{total}",
-  "opponentThinking": "Pikkurobotti miettii…"
+  "opponentThinking": "Pikkurobotti miettii…",
+  "hallTitle": "Kunniahalli",
+  "hallFamous": "Kuuluisia pelejä",
+  "replayCheck": "Shakki!",
+  "replayMate": "Matti!",
+  "replayCastle": "Kuningas piiloutuu linnaan!",
+  "replaySacrifice": "Rohkea uhraus!",
+  "replayEndMate": "Matti! Taistelu on voitettu.",
+  "replayEndResign": "Kuningas kumartaa ja ojentaa kruununsa. Taistelu on ohi!",
+  "replayEndDraw": "Tasapeli! Molemmat kuninkaat kättelevät.",
+  "replayEndUnfinished": "Tämä taistelu on vielä kesken.",
+  "replayPlay": "Toista",
+  "replayPause": "Tauko",
+  "replayNextBattle": "Seuraava taistelu",
+  "replayChronicle": "Kronikka",
+  "replayStepBack": "Siirto taakse",
+  "replayStepForward": "Siirto eteen",
+  "replayMoveOf": "Siirto {n}/{total}"
 }

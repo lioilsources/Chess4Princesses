@@ -39,6 +39,9 @@ jobs:
       - name: Lesson lint (every lesson solvable, par reachable)
         run: dart run tool/lesson_lint.dart
 
+      - name: Games lint (bundled games replay legally, no brands)
+        run: dart run tool/games_lint.dart
+
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'

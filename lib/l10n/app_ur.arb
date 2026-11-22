@@ -27,5 +27,22 @@
   "rivalArmy": "مقابل",
   "battleDemo": "آزمائشی جنگ",
   "taskOf": "کام {n} از {total}",
-  "opponentThinking": "روبوٹ سوچ رہا ہے…"
+  "opponentThinking": "روبوٹ سوچ رہا ہے…",
+  "hallTitle": "شہرت کا ہال",
+  "hallFamous": "مشہور کھیل",
+  "replayCheck": "شہ!",
+  "replayMate": "مات!",
+  "replayCastle": "بادشاہ قلعے میں چھپ گیا!",
+  "replaySacrifice": "بہادری کی قربانی!",
+  "replayEndMate": "مات! جنگ جیت لی گئی۔",
+  "replayEndResign": "بادشاہ جھکا اور اپنا تاج دے دیا۔ جنگ ختم!",
+  "replayEndDraw": "برابری! دونوں بادشاہوں نے ہاتھ ملایا۔",
+  "replayEndUnfinished": "یہ جنگ ابھی جاری ہے۔",
+  "replayPlay": "چلائیں",
+  "replayPause": "رکیں",
+  "replayNextBattle": "اگلی جنگ",
+  "replayChronicle": "روداد",
+  "replayStepBack": "ایک چال پیچھے",
+  "replayStepForward": "ایک چال آگے",
+  "replayMoveOf": "{total} میں سے چال {n}"
 }

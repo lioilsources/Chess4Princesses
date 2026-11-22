@@ -101,4 +101,58 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get opponentThinking => 'Роботёнок думает…';
+
+  @override
+  String get hallTitle => 'Зал славы';
+
+  @override
+  String get hallFamous => 'Знаменитые партии';
+
+  @override
+  String get replayCheck => 'Шах!';
+
+  @override
+  String get replayMate => 'Мат!';
+
+  @override
+  String get replayCastle => 'Король спрятался в замке!';
+
+  @override
+  String get replaySacrifice => 'Смелая жертва!';
+
+  @override
+  String get replayEndMate => 'Мат! Битва выиграна.';
+
+  @override
+  String get replayEndResign =>
+      'Король поклонился и отдал свою корону. Битва окончена!';
+
+  @override
+  String get replayEndDraw => 'Ничья! Два короля пожали друг другу руки.';
+
+  @override
+  String get replayEndUnfinished => 'Эта битва ещё идёт.';
+
+  @override
+  String get replayPlay => 'Играть';
+
+  @override
+  String get replayPause => 'Пауза';
+
+  @override
+  String get replayNextBattle => 'Следующая битва';
+
+  @override
+  String get replayChronicle => 'Хроника';
+
+  @override
+  String get replayStepBack => 'Ход назад';
+
+  @override
+  String get replayStepForward => 'Ход вперёд';
+
+  @override
+  String replayMoveOf(int n, int total) {
+    return 'Ход $n из $total';
+  }
 }

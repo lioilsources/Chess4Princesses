@@ -27,5 +27,22 @@
   "rivalArmy": "ਵਿਰੋਧੀ",
   "battleDemo": "ਅਜ਼ਮਾਇਸ਼ੀ ਲੜਾਈ",
   "taskOf": "ਕੰਮ {n}/{total}",
-  "opponentThinking": "ਰੋਬੋਟ ਸੋਚ ਰਿਹਾ ਹੈ…"
+  "opponentThinking": "ਰੋਬੋਟ ਸੋਚ ਰਿਹਾ ਹੈ…",
+  "hallTitle": "ਸ਼ੋਹਰਤ ਹਾਲ",
+  "hallFamous": "ਮਸ਼ਹੂਰ ਖੇਡਾਂ",
+  "replayCheck": "ਸ਼ਹਿ!",
+  "replayMate": "ਮਾਤ!",
+  "replayCastle": "ਰਾਜਾ ਕਿਲ੍ਹੇ ਵਿੱਚ ਲੁਕ ਗਿਆ!",
+  "replaySacrifice": "ਬਹਾਦਰੀ ਭਰੀ ਕੁਰਬਾਨੀ!",
+  "replayEndMate": "ਮਾਤ! ਲੜਾਈ ਜਿੱਤ ਲਈ।",
+  "replayEndResign": "ਰਾਜੇ ਨੇ ਝੁਕ ਕੇ ਆਪਣਾ ਤਾਜ ਸੌਂਪ ਦਿੱਤਾ। ਲੜਾਈ ਖ਼ਤਮ!",
+  "replayEndDraw": "ਬਰਾਬਰੀ! ਦੋਵੇਂ ਰਾਜਿਆਂ ਨੇ ਹੱਥ ਮਿਲਾਇਆ।",
+  "replayEndUnfinished": "ਇਹ ਲੜਾਈ ਹਾਲੇ ਚੱਲ ਰਹੀ ਹੈ।",
+  "replayPlay": "ਚਲਾਓ",
+  "replayPause": "ਰੁਕੋ",
+  "replayNextBattle": "ਅਗਲੀ ਲੜਾਈ",
+  "replayChronicle": "ਇਤਿਹਾਸ",
+  "replayStepBack": "ਇੱਕ ਚਾਲ ਪਿੱਛੇ",
+  "replayStepForward": "ਇੱਕ ਚਾਲ ਅੱਗੇ",
+  "replayMoveOf": "{total} ਵਿੱਚੋਂ ਚਾਲ {n}"
 }

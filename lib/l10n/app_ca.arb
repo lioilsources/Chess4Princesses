@@ -27,5 +27,22 @@
   "rivalArmy": "Rival",
   "battleDemo": "Batalla de prova",
   "taskOf": "Tasca {n} de {total}",
-  "opponentThinking": "El robotet està pensant…"
+  "opponentThinking": "El robotet està pensant…",
+  "hallTitle": "Sala de la Fama",
+  "hallFamous": "Partides famoses",
+  "replayCheck": "Escac!",
+  "replayMate": "Escac i mat!",
+  "replayCastle": "El rei s’amaga al castell!",
+  "replaySacrifice": "Un sacrifici valent!",
+  "replayEndMate": "Escac i mat! Hem guanyat la batalla.",
+  "replayEndResign": "El rei fa una reverència i lliura la corona. Fi de la batalla!",
+  "replayEndDraw": "Taules! Els dos reis es donen la mà.",
+  "replayEndUnfinished": "Aquesta batalla encara continua.",
+  "replayPlay": "Reprodueix",
+  "replayPause": "Pausa",
+  "replayNextBattle": "Següent batalla",
+  "replayChronicle": "Crònica",
+  "replayStepBack": "Jugada enrere",
+  "replayStepForward": "Jugada endavant",
+  "replayMoveOf": "Jugada {n} de {total}"
 }
