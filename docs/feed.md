@@ -52,9 +52,11 @@ npx wrangler dev    # lokálně proti skutečnému zdroji: http://localhost:8787
 Appka proti lokálnímu Workeru: `flutter run --dart-define=FEED_BASE_URL=http://<adresa Macu>:8787`.
 Bez `FEED_BASE_URL` appka živou polici vůbec neukáže a na síť nesahá.
 
-Nasazení dělá Olin se svým přihlášením (`npx wrangler login`, pak `npm run deploy`).
-Výsledná adresa (`*.workers.dev` nebo vlastní subdoména) jde do buildu přes
-`--dart-define=FEED_BASE_URL=…`, v CI jako proměnná release workflow.
+Nasazení: `npm run deploy` (Wrangler přihlášený přes `npx wrangler login`). Worker běží
+na vlastní doméně `https://feed.ol1n.com` (`routes` v `wrangler.jsonc`, DNS záznam založí
+Wrangler sám). Release workflowy ji předávají appce jako
+`--dart-define=FEED_BASE_URL=${{ vars.FEED_BASE_URL }}` (proměnná repa, ne secret).
+Prázdná proměnná = build bez živé police.
 
 ## Před vydáním appky s kanálem
 

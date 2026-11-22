@@ -61,13 +61,22 @@ jobs:
           echo -n "$KEYSTORE_BASE64" | tr -d '[:space:]' | base64 --decode --ignore-garbage > ./android/app/release.keystore
           printf "storePassword=%s\nkeyPassword=%s\nkeyAlias=%s\nstoreFile=release.keystore\n" "$KEYSTORE_PASSWORD" "$KEY_PASSWORD" "$KEY_ALIAS" > ./android/key.properties
 
+      - name: Version from tag
+        run: |
+          case "$GITHUB_REF" in
+            refs/tags/v*) V="${GITHUB_REF_NAME#v}" ;;
+            *) V="$(sed -n 's/^version: *\([^+]*\).*/\1/p' pubspec.yaml)" ;;
+          esac
+          # Store build numbers must grow on every upload; pubspec keeps +1.
+          echo "BUILD_NAME=${V%%-*}" >> "$GITHUB_ENV"
+
       - name: Build release AAB
         working-directory: .
-        run: flutter build appbundle --release
+        run: flutter build appbundle --release --build-name="$BUILD_NAME" --build-number=${{ github.run_number }} --dart-define=FEED_BASE_URL=${{ vars.FEED_BASE_URL }}
 
       - name: Build release APK
         working-directory: .
-        run: flutter build apk --release
+        run: flutter build apk --release --build-name="$BUILD_NAME" --build-number=${{ github.run_number }} --dart-define=FEED_BASE_URL=${{ vars.FEED_BASE_URL }}
 
       - name: Verify APK signing certificate
         run: |
