@@ -1,9 +1,9 @@
 id: m04_l02
 module: 4
-title: {cs: "Princeznin výlet", en: "The princess's trip"}
+title: {cs: "Královnin výlet", en: "The queen's trip"}
 story:
-  cs: "Princezna jede na výlet po celém království a sbírá hvězdičky."
-  en: "The princess goes on a trip around the kingdom, collecting little stars."
+  cs: "Královna jede na výlet po celém království a sbírá hvězdičky."
+  en: "The queen goes on a trip around the kingdom, collecting little stars."
 skills: [queen_move]
 rules: piece_only
 prompt: {cs: "Posbírej všechny hvězdy.", en: "Collect all the stars."}

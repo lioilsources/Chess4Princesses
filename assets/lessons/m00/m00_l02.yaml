@@ -2,8 +2,8 @@ id: m00_l02
 module: 0
 title: {cs: "Barevné komnaty", en: "Coloured rooms"}
 story:
-  cs: "Bílá komnata musí být vpravo dole, jinak se princezna zlobí. Komnaty na šikmé cestičce mají všechny stejnou barvu."
-  en: "The white room must be in the bottom right corner, or the princess gets cross. Rooms along a slanted path all share one colour."
+  cs: "Bílá komnata musí být vpravo dole, jinak se královna zlobí. Komnaty na šikmé cestičce mají všechny stejnou barvu."
+  en: "The white room must be in the bottom right corner, or the queen gets cross. Rooms along a slanted path all share one colour."
 skills: [board_colours]
 hints:
   - {after_fails: 2, highlight: targets}

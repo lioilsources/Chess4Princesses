@@ -37,7 +37,7 @@
     "pawn": {
       "sprite": "sprites/pawn.png",
       "name": {"cs": "Družička Rosička", "en": "Dewdrop"},
-      "motto": {"cs": "Ahoj, já jsem Družička Rosička. Chodím jen dopředu a jednou budu princezna!", "en": "Hi, I'm Dewdrop. I only walk forward, and one day I'll be a princess!"},
+      "motto": {"cs": "Ahoj, já jsem Družička Rosička. Chodím jen dopředu a jednou budu královna!", "en": "Hi, I'm Dewdrop. I only walk forward, and one day I'll be a queen!"},
       "lines": {"attack": {"cs": "Pošťouch!", "en": "Nudge!"}, "defeat": {"cs": "Jdu si odpočinout do hradu…", "en": "Off to rest in the castle…"}, "victory": {"cs": "Jupí!", "en": "Yippee!"}}
     }
   },

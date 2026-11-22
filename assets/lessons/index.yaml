@@ -22,7 +22,7 @@ modules:
     unlock: bishop
     lessons: [m03_l01, m03_l02, m03_l03, m03_l04]
   - module: 4
-    title: {cs: "Princezna", en: "Princess"}
+    title: {cs: "Královna", en: "Queen"}
     icon: queen
     lessons: [m04_l01, m04_l02, m04_l03, m04_l04]
   - module: 5

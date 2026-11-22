@@ -54,7 +54,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get botWon => 'O robozinho ganhou. Vamos jogar de novo!';
 
   @override
-  String get promoted => 'Ela virou princesa!';
+  String get promoted => 'Ela virou rainha!';
 
   @override
   String get lavaWarning => 'Ai, lava!';
@@ -232,7 +232,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get botWon => 'O robozinho ganhou. Vamos jogar de novo!';
 
   @override
-  String get promoted => 'Ela virou princesa!';
+  String get promoted => 'Ela virou rainha!';
 
   @override
   String get lavaWarning => 'Ai, lava!';
@@ -410,7 +410,7 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
   String get botWon => 'O robozinho ganhou. Vamos jogar outra vez!';
 
   @override
-  String get promoted => 'Ela transformou-se em princesa!';
+  String get promoted => 'Ela transformou-se em rainha!';
 
   @override
   String get lavaWarning => 'Ai, lava!';

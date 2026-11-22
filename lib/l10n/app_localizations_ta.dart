@@ -54,7 +54,7 @@ class AppLocalizationsTa extends AppLocalizations {
   String get botWon => 'ரோபோ வென்றது. மீண்டும் விளையாடுவோம்!';
 
   @override
-  String get promoted => 'அவள் இளவரசி ஆகிவிட்டாள்!';
+  String get promoted => 'அவள் ராணி ஆகிவிட்டாள்!';
 
   @override
   String get lavaWarning => 'அச்சோ, எரிமலைக் குழம்பு!';

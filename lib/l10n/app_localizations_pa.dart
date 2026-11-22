@@ -54,7 +54,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get botWon => 'ਰੋਬੋਟ ਜਿੱਤ ਗਿਆ। ਚਲੋ ਫਿਰ ਖੇਡੀਏ!';
 
   @override
-  String get promoted => 'ਉਹ ਰਾਜਕੁਮਾਰੀ ਬਣ ਗਈ!';
+  String get promoted => 'ਉਹ ਰਾਣੀ ਬਣ ਗਈ!';
 
   @override
   String get lavaWarning => 'ਓਹ, ਲਾਵਾ!';

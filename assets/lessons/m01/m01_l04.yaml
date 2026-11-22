@@ -2,8 +2,8 @@ id: m01_l04
 module: 1
 title: {cs: "Proměna", en: "The transformation"}
 story:
-  cs: "Když družička dojde až na konec království, promění se v princeznu!"
-  en: "When a bridesmaid reaches the far end of the kingdom, she turns into a princess!"
+  cs: "Když družička dojde až na konec království, promění se v královnu!"
+  en: "When a bridesmaid reaches the far end of the kingdom, she turns into a queen!"
 skills: [pawn_promotion]
 rules: piece_only
 prompt: {cs: "Doveď družičku až na konec.", en: "Walk the bridesmaid all the way to the end."}

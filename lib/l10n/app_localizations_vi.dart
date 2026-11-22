@@ -54,7 +54,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get botWon => 'Rô-bốt nhỏ thắng rồi. Mình chơi lại nhé!';
 
   @override
-  String get promoted => 'Bạn ấy hóa thành công chúa!';
+  String get promoted => 'Bạn ấy hóa thành nữ hoàng!';
 
   @override
   String get lavaWarning => 'Ui, dung nham!';

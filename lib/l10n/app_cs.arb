@@ -15,7 +15,7 @@
   "taskWon": "Hurá!",
   "tryAgain": "Zkusíme to znovu!",
   "botWon": "Robůtek vyhrál. Hrajeme znovu!",
-  "promoted": "Proměna v princeznu!",
+  "promoted": "Proměna v královnu!",
   "lavaWarning": "Au, láva!",
   "tapTarget": "Klepni na: {target}",
   "@tapTarget": {"placeholders": {"target": {"type": "String"}}},

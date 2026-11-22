@@ -276,7 +276,7 @@ abstract class AppLocalizations {
   /// No description provided for @promoted.
   ///
   /// In cs, this message translates to:
-  /// **'Proměna v princeznu!'**
+  /// **'Proměna v královnu!'**
   String get promoted;
 
   /// No description provided for @lavaWarning.

@@ -54,7 +54,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get botWon => 'રોબોટ જીતી ગયો. ચાલો ફરી રમીએ!';
 
   @override
-  String get promoted => 'તે રાજકુમારી બની ગઈ!';
+  String get promoted => 'તે રાણી બની ગઈ!';
 
   @override
   String get lavaWarning => 'અરે, લાવા!';

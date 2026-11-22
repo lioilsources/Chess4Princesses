@@ -54,7 +54,7 @@ class AppLocalizationsOr extends AppLocalizations {
   String get botWon => 'ରୋବଟ୍ ଜିତିଲା। ଚାଲ ପୁଣି ଖେଳିବା!';
 
   @override
-  String get promoted => 'ସେ ରାଜକୁମାରୀ ହୋଇଗଲା!';
+  String get promoted => 'ସେ ରାଣୀ ହୋଇଗଲା!';
 
   @override
   String get lavaWarning => 'ଆରେ, ଲାଭା!';

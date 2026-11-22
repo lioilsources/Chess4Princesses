@@ -1,6 +1,6 @@
 id: m00_l01
 module: 0
-title: {cs: "Kde bydlí princezna?", en: "Where does the princess live?"}
+title: {cs: "Kde bydlí královna?", en: "Where does the queen live?"}
 story:
   cs: "Šachovnice je království se 64 komnatami. Každá komnata má jméno: písmeno ulice a číslo domu."
   en: "The chessboard is a kingdom with 64 rooms. Every room has a name: a street letter and a house number."

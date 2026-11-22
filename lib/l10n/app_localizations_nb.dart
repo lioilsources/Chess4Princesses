@@ -54,7 +54,7 @@ class AppLocalizationsNb extends AppLocalizations {
   String get botWon => 'Den lille roboten vant. Vi spiller igjen!';
 
   @override
-  String get promoted => 'Hun blir en prinsesse!';
+  String get promoted => 'Hun blir en dronning!';
 
   @override
   String get lavaWarning => 'Au, lava!';

@@ -1,12 +1,12 @@
 id: m04_l01
 module: 4
-title: {cs: "Princezna umí všechno", en: "The princess can do it all"}
+title: {cs: "Královna umí všechno", en: "The queen can do it all"}
 story:
-  cs: "Princezna umí to, co Věžka i Motýlek dohromady: jezdí rovně i šikmo, jak daleko chce."
-  en: "The princess can do what the rook and the butterfly can together: straight and slanted, as far as she likes."
+  cs: "Královna umí to, co Věžka i Motýlek dohromady: jezdí rovně i šikmo, jak daleko chce."
+  en: "The queen can do what the rook and the butterfly can together: straight and slanted, as far as she likes."
 skills: [queen_move]
 rules: piece_only
-prompt: {cs: "Doveď Princeznu na hvězdu.", en: "Take the princess to the star."}
+prompt: {cs: "Doveď Královnu na hvězdu.", en: "Take the queen to the star."}
 hints:
   - {after_fails: 1, highlight: legal_moves}
   - {after_fails: 3, highlight: solution_first_move}
