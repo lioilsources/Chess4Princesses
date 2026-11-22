@@ -106,7 +106,33 @@ class AppLocalizationsFr extends AppLocalizations {
   String get hallTitle => 'Salle des légendes';
 
   @override
-  String get hallFamous => 'Parties célèbres';
+  String get hallGolden => 'L\'échiquier d\'or';
+
+  @override
+  String get hallGoldenHint => 'Les 64 parties les plus célèbres';
+
+  @override
+  String get hallMatches => 'Matchs pour la couronne';
+
+  @override
+  String get hallMatchesHint => 'Tous les matchs du championnat du monde';
+
+  @override
+  String get hallWomen => 'Championnes';
+
+  @override
+  String get hallWomenHint => 'Les championnes du monde et leurs parties';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n sur $total';
+  }
+
+  @override
+  String get hallFideLine => 'Titre FIDE 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Partie rapide';
 
   @override
   String get replayCheck => 'Échec !';

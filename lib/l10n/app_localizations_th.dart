@@ -106,7 +106,33 @@ class AppLocalizationsTh extends AppLocalizations {
   String get hallTitle => 'หอเกียรติยศ';
 
   @override
-  String get hallFamous => 'เกมที่มีชื่อเสียง';
+  String get hallGolden => 'กระดานทองคำ';
+
+  @override
+  String get hallGoldenHint => '64 เกมที่โด่งดังที่สุด';
+
+  @override
+  String get hallMatches => 'ศึกชิงมงกุฎ';
+
+  @override
+  String get hallMatchesHint => 'ทุกแมตช์ชิงแชมป์โลก';
+
+  @override
+  String get hallWomen => 'แชมป์หญิง';
+
+  @override
+  String get hallWomenHint => 'แชมป์โลกหญิงและเกมของพวกเธอ';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n จาก $total';
+  }
+
+  @override
+  String get hallFideLine => 'ตำแหน่ง FIDE 1993–2006';
+
+  @override
+  String get hallTiebreak => 'เกมเร็ว';
 
   @override
   String get replayCheck => 'รุก!';

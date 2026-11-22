@@ -106,7 +106,33 @@ class AppLocalizationsNb extends AppLocalizations {
   String get hallTitle => 'Berømmelsens hall';
 
   @override
-  String get hallFamous => 'Berømte partier';
+  String get hallGolden => 'Det gylne brettet';
+
+  @override
+  String get hallGoldenHint => 'De 64 mest berømte partiene';
+
+  @override
+  String get hallMatches => 'Kamper om kronen';
+
+  @override
+  String get hallMatchesHint => 'Alle VM-matcher';
+
+  @override
+  String get hallWomen => 'Mesterinner';
+
+  @override
+  String get hallWomenHint => 'Verdensmesterinnene og partiene deres';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n av $total';
+  }
+
+  @override
+  String get hallFideLine => 'FIDE-tittelen 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Hurtigparti';
 
   @override
   String get replayCheck => 'Sjakk!';

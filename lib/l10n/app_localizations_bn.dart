@@ -106,7 +106,33 @@ class AppLocalizationsBn extends AppLocalizations {
   String get hallTitle => 'খ্যাতির ঘর';
 
   @override
-  String get hallFamous => 'বিখ্যাত খেলা';
+  String get hallGolden => 'সোনালি ছক';
+
+  @override
+  String get hallGoldenHint => 'সবচেয়ে বিখ্যাত ৬৪টি খেলা';
+
+  @override
+  String get hallMatches => 'মুকুটের লড়াই';
+
+  @override
+  String get hallMatchesHint => 'বিশ্ব চ্যাম্পিয়নশিপের সব ম্যাচ';
+
+  @override
+  String get hallWomen => 'চ্যাম্পিয়ন মেয়েরা';
+
+  @override
+  String get hallWomenHint => 'মহিলা বিশ্বচ্যাম্পিয়ন আর তাঁদের খেলা';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$total-এর মধ্যে $n';
+  }
+
+  @override
+  String get hallFideLine => 'ফিদে খেতাব ১৯৯৩–২০০৬';
+
+  @override
+  String get hallTiebreak => 'দ্রুত খেলা';
 
   @override
   String get replayCheck => 'কিস্তি!';

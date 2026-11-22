@@ -106,7 +106,33 @@ class AppLocalizationsOr extends AppLocalizations {
   String get hallTitle => 'ଖ୍ୟାତି ଭବନ';
 
   @override
-  String get hallFamous => 'ପ୍ରସିଦ୍ଧ ଖେଳ';
+  String get hallGolden => 'ସୁନେଲି ବୋର୍ଡ';
+
+  @override
+  String get hallGoldenHint => 'ସବୁଠୁ ପ୍ରସିଦ୍ଧ 64ଟି ଖେଳ';
+
+  @override
+  String get hallMatches => 'ମୁକୁଟ ପାଇଁ ମୁକାବିଲା';
+
+  @override
+  String get hallMatchesHint => 'ବିଶ୍ୱ ଚାମ୍ପିଅନସିପର ସବୁ ମୁକାବିଲା';
+
+  @override
+  String get hallWomen => 'ଚାମ୍ପିଅନ ମହିଳା';
+
+  @override
+  String get hallWomenHint => 'ମହିଳା ବିଶ୍ୱ ଚାମ୍ପିଅନ ଓ ସେମାନଙ୍କ ଖେଳ';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$totalରୁ $n';
+  }
+
+  @override
+  String get hallFideLine => 'ଫିଡେ ଖିତାବ 1993–2006';
+
+  @override
+  String get hallTiebreak => 'ଶୀଘ୍ର ଖେଳ';
 
   @override
   String get replayCheck => 'ଚେକ୍!';

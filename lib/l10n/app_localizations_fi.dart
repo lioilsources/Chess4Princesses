@@ -106,7 +106,33 @@ class AppLocalizationsFi extends AppLocalizations {
   String get hallTitle => 'Kunniahalli';
 
   @override
-  String get hallFamous => 'Kuuluisia pelejä';
+  String get hallGolden => 'Kultainen lauta';
+
+  @override
+  String get hallGoldenHint => '64 kuuluisinta peliä';
+
+  @override
+  String get hallMatches => 'Kamppailut kruunusta';
+
+  @override
+  String get hallMatchesHint => 'Kaikki maailmanmestaruusottelut';
+
+  @override
+  String get hallWomen => 'Mestarinaiset';
+
+  @override
+  String get hallWomenHint => 'Naisten maailmanmestarit ja heidän pelinsä';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n/$total';
+  }
+
+  @override
+  String get hallFideLine => 'FIDE-titteli 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Pikapeli';
 
   @override
   String get replayCheck => 'Shakki!';

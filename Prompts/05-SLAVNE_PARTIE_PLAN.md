@@ -197,7 +197,7 @@ Otázky k pořadí prací jsou rozhodnuté nahoře. Zbývají:
 1. **Síť v dětské appce:** kanál výchozí zapnutý, nebo ho zapíná rodič? Do odpovědi: zapíná rodič.
 2. **Doména kanálu:** vlastní subdoména, nebo adresa `workers.dev`? Potřeba před nasazením G2.
 3. **Šampionky** jako rovnocenná police hned od G3? Do odpovědi: ano.
-4. **Zdarma, nebo balíčky?** Celá knihovna v základu, nebo některé police jako IAP balíček? Potřeba před G3.
+4. ~~**Zdarma, nebo balíčky?**~~ Rozhodnuto 22. 11. 2026: celá knihovna zdarma (DECISIONS §19).
 5. **Hlas pro Tier A** přibalit (asi +15 MB), nebo stahovat na vyžádání? Potřeba před G4.
 6. **Emblémy šampionů:** stačí koruna s číslem, nebo původní kreslený motiv pro každého? Potřeba před G5.
 

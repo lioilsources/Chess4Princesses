@@ -1,0 +1,20 @@
+{
+ "v": 1,
+ "shelves": [
+  {
+   "id": "golden",
+   "kind": "board",
+   "file": "c/golden.json"
+  },
+  {
+   "id": "matches",
+   "kind": "timeline",
+   "file": "c/matches.json"
+  },
+  {
+   "id": "women",
+   "kind": "people",
+   "file": "c/women.json"
+  }
+ ]
+}

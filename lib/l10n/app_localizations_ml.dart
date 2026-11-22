@@ -106,7 +106,33 @@ class AppLocalizationsMl extends AppLocalizations {
   String get hallTitle => 'പ്രശസ്തിയുടെ ഹാൾ';
 
   @override
-  String get hallFamous => 'പ്രശസ്തമായ കളികൾ';
+  String get hallGolden => 'സ്വർണ്ണപ്പലക';
+
+  @override
+  String get hallGoldenHint => 'ഏറ്റവും പ്രശസ്തമായ 64 കളികൾ';
+
+  @override
+  String get hallMatches => 'കിരീടത്തിനായുള്ള മത്സരങ്ങൾ';
+
+  @override
+  String get hallMatchesHint => 'ലോക ചാമ്പ്യൻഷിപ്പിലെ എല്ലാ മത്സരങ്ങളും';
+
+  @override
+  String get hallWomen => 'ചാമ്പ്യൻ വനിതകൾ';
+
+  @override
+  String get hallWomenHint => 'വനിതാ ലോക ചാമ്പ്യന്മാരും അവരുടെ കളികളും';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$total-ൽ $n';
+  }
+
+  @override
+  String get hallFideLine => 'ഫിഡെ കിരീടം 1993–2006';
+
+  @override
+  String get hallTiebreak => 'വേഗക്കളി';
 
   @override
   String get replayCheck => 'ചെക്ക്!';

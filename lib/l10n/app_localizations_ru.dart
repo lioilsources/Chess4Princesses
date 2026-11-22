@@ -106,7 +106,33 @@ class AppLocalizationsRu extends AppLocalizations {
   String get hallTitle => 'Зал славы';
 
   @override
-  String get hallFamous => 'Знаменитые партии';
+  String get hallGolden => 'Золотая доска';
+
+  @override
+  String get hallGoldenHint => '64 самые знаменитые партии';
+
+  @override
+  String get hallMatches => 'Матчи за корону';
+
+  @override
+  String get hallMatchesHint => 'Все матчи за звание чемпиона мира';
+
+  @override
+  String get hallWomen => 'Чемпионки';
+
+  @override
+  String get hallWomenHint => 'Чемпионки мира и их партии';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n из $total';
+  }
+
+  @override
+  String get hallFideLine => 'Титул ФИДЕ 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Быстрая партия';
 
   @override
   String get replayCheck => 'Шах!';

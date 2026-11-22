@@ -1,0 +1,94 @@
+# Canonical player names for the games library (SLAVNE_PARTIE_PLAN §3).
+# `match` is a case-insensitive regex over the source spelling ("Last, First",
+# "Last,F", "First Last"). Other players are only reordered to "First Last".
+# `reigns` are title years; `line` is classic, fide (1993–2006) or women.
+# Champion numbering is not hardcoded anywhere else: add a row, rebuild.
+
+champions:
+  - {id: steinitz, name: William Steinitz, n: 1, line: classic, reigns: [[1886, 1894]], match: '^steinitz,\s*w'}
+  - {id: lasker, name: Emanuel Lasker, n: 2, line: classic, reigns: [[1894, 1921]], match: '^lasker,\s*em'}
+  - {id: capablanca, name: José Raúl Capablanca, n: 3, line: classic, reigns: [[1921, 1927]], match: '^capablanca'}
+  - {id: alekhine, name: Alexander Alekhine, n: 4, line: classic, reigns: [[1927, 1935], [1937, 1946]], match: '^alekhine(,\s*a\w*)?$'}
+  - {id: euwe, name: Max Euwe, n: 5, line: classic, reigns: [[1935, 1937]], match: '^euwe'}
+  - {id: botvinnik, name: Mikhail Botvinnik, n: 6, line: classic, reigns: [[1948, 1957], [1958, 1960], [1961, 1963]], match: '^botvinnik'}
+  - {id: smyslov, name: Vasily Smyslov, n: 7, line: classic, reigns: [[1957, 1958]], match: '^smyslov'}
+  - {id: tal, name: Mikhail Tal, n: 8, line: classic, reigns: [[1960, 1961]], match: '^tal,\s*m'}
+  - {id: petrosian, name: Tigran Petrosian, n: 9, line: classic, reigns: [[1963, 1969]], match: '^petrosian,\s*t'}
+  - {id: spassky, name: Boris Spassky, n: 10, line: classic, reigns: [[1969, 1972]], match: '^spassky'}
+  - {id: fischer, name: Robert James Fischer, n: 11, line: classic, reigns: [[1972, 1975]], match: '^fischer,\s*r'}
+  - {id: karpov, name: Anatoly Karpov, n: 12, line: classic, reigns: [[1975, 1985]], match: '^karpov,\s*(anatoly|an?|a\.?)$'}
+  - {id: kasparov, name: Garry Kasparov, n: 13, line: classic, reigns: [[1985, 2000]], match: '^kasparov,\s*g'}
+  - {id: kramnik, name: Vladimir Kramnik, n: 14, line: classic, reigns: [[2000, 2007]], match: '^kramnik'}
+  - {id: anand, name: Viswanathan Anand, n: 15, line: classic, reigns: [[2007, 2013]], match: '^anand,\s*v(iswanathan|\.)?$'}
+  - {id: carlsen, name: Magnus Carlsen, n: 16, line: classic, reigns: [[2013, 2023]], match: '^carlsen,\s*m'}
+  - {id: ding, name: Ding Liren, short: Ding, n: 17, line: classic, reigns: [[2023, 2024]], match: '^ding(\s+liren|,\s*l(iren)?)$'}
+  - {id: gukesh, name: Gukesh Dommaraju, short: Gukesh, n: 18, line: classic, reigns: [[2024, null]], match: '^gukesh'}
+
+  # FIDE title 1993–2006, while the classical line ran separately.
+  - {id: karpov, line: fide, reigns: [[1993, 1999]]}
+  - {id: khalifman, name: Alexander Khalifman, line: fide, reigns: [[1999, 2000]], match: '^khalifman'}
+  - {id: anand, line: fide, reigns: [[2000, 2002]]}
+  - {id: ponomariov, name: Ruslan Ponomariov, line: fide, reigns: [[2002, 2004]], match: '^ponomariov'}
+  - {id: kasimdzhanov, name: Rustam Kasimdzhanov, line: fide, reigns: [[2004, 2005]], match: '^kasimdzhanov'}
+  - {id: topalov, name: Veselin Topalov, line: fide, reigns: [[2005, 2006]], match: '^topalov'}
+
+  # Women's world champions. Only those with games in the sources get a shelf.
+  - {id: menchik, name: Vera Menchik, n: 1, line: women, reigns: [[1927, 1944]], match: '^(menchik|vera menchik)'}
+  - {id: gaprindashvili, name: Nona Gaprindashvili, n: 5, line: women, reigns: [[1962, 1978]], match: '^gaprindashvili'}
+  - {id: chiburdanidze, name: Maia Chiburdanidze, n: 6, line: women, reigns: [[1978, 1991]], match: '^chiburdanidze,\s*m(aia)?$'}
+  - {id: xie, name: Xie Jun, short: Xie, n: 7, line: women, reigns: [[1991, 1996], [1999, 2001]], match: '^xie(\s+jun|,\s*j(un)?)$'}
+  - {id: polgar-zsuzsa, name: Zsuzsa Polgar, n: 8, line: women, reigns: [[1996, 1999]], match: '^polgar,\s*(zsuzsa|zs?|susan|s)$'}
+  - {id: zhu, name: Zhu Chen, short: Zhu, n: 9, line: women, reigns: [[2001, 2004]], match: '^zhu(\s+chen|,\s*c(hen)?)$'}
+  - {id: stefanova, name: Antoaneta Stefanova, n: 10, line: women, reigns: [[2004, 2006]], match: '^stefanova,\s*a'}
+  - {id: kosteniuk, name: Alexandra Kosteniuk, n: 12, line: women, reigns: [[2008, 2010]], match: '^kosteniuk,\s*a'}
+  - {id: hou, name: Hou Yifan, short: Hou, n: 13, line: women, reigns: [[2010, 2012], [2013, 2015], [2016, 2017]], match: '^hou(\s+yifan|,\s*y(ifan)?)$'}
+
+# Strongest woman player ever, never needed the women's title.
+others:
+  - {id: polgar-judit, name: Judit Polgar, match: '^polgar,\s*(judit|ju|j)$'}
+  - {id: morphy, name: Paul Morphy, match: '^morphy'}
+  - {id: anderssen, name: Adolf Anderssen, match: '^anderssen'}
+
+# Opponents in matches and on the golden board, so names read whole.
+  - {id: zukertort, name: Johannes Zukertort, match: '^zukertort'}
+  - {id: chigorin, name: Mikhail Chigorin, match: '^(chigorin|tschigorin)'}
+  - {id: gunsberg, name: Isidor Gunsberg, match: '^gunsberg'}
+  - {id: marshall, name: Frank Marshall, match: '^marshall,\s*f'}
+  - {id: tarrasch, name: Siegbert Tarrasch, match: '^tarrasch'}
+  - {id: schlechter, name: Carl Schlechter, match: '^schlechter'}
+  - {id: janowski, name: Dawid Janowski, match: '^janowsk[iy]'}
+  - {id: bogoljubov, name: Efim Bogoljubov, match: '^bogoljubo[vw]'}
+  - {id: bronstein, name: David Bronstein, match: '^bronstein'}
+  - {id: korchnoi, name: Viktor Korchnoi, match: '^(korchnoi|kortschnoj)'}
+  - {id: short, name: Nigel Short, match: '^short,\s*n'}
+  - {id: timman, name: Jan Timman, match: '^timman'}
+  - {id: kamsky, name: Gata Kamsky, match: '^kamsky'}
+  - {id: akopian, name: Vladimir Akopian, match: '^akopian'}
+  - {id: shirov, name: Alexei Shirov, match: '^shirov'}
+  - {id: ivanchuk, name: Vassily Ivanchuk, match: '^ivanchuk'}
+  - {id: adams, name: Michael Adams, match: '^adams,\s*mi'}
+  - {id: leko, name: Peter Leko, match: '^leko'}
+  - {id: gelfand, name: Boris Gelfand, match: '^gelfand'}
+  - {id: karjakin, name: Sergey Karjakin, match: '^karjakin'}
+  - {id: caruana, name: Fabiano Caruana, match: '^caruana'}
+  - {id: nepomniachtchi, name: Ian Nepomniachtchi, match: '^nepomniachtchi'}
+  - {id: svidler, name: Peter Svidler, match: '^svidler'}
+  - {id: morozevich, name: Alexander Morozevich, match: '^morozevich'}
+  - {id: grischuk, name: Alexander Grischuk, match: '^grischuk'}
+  - {id: aronian, name: Levon Aronian, match: '^aronian'}
+  - {id: reshevsky, name: Samuel Reshevsky, match: '^reshevsky'}
+  - {id: keres, name: Paul Keres, match: '^keres'}
+  - {id: larsen, name: Bent Larsen, match: '^larsen,\s*b'}
+  - {id: benko, name: Pal Benko, match: '^benko'}
+  - {id: pachman, name: Luděk Pachman, match: '^pachman'}
+  - {id: portisch, name: Lajos Portisch, match: '^portisch'}
+  - {id: nimzowitsch, name: Aron Nimzowitsch, match: '^nimzowitsch'}
+  - {id: reti, name: Richard Réti, match: '^r[eé]ti,'}
+  - {id: tartakower, name: Savielly Tartakower, match: '^tartakower'}
+  - {id: bardeleben, name: Curt von Bardeleben, match: '^(von )?bardeleben|^von bardeleben'}
+  - {id: bauer, name: Johann Bauer, match: '^bauer,\s*j'}
+  - {id: isouard, name: "Duke Karl / Count Isouard", match: 'isouard'}
+  - {id: ernst, name: Sipke Ernst, match: '^ernst,\s*s'}
+  - {id: graf, name: Sonja Graf, match: '^graf,\s*s'}
+  - {id: dzagnidze, name: Nana Dzagnidze, match: '^dzagnidze'}
+  - {id: koneru, name: Humpy Koneru, match: '^koneru'}

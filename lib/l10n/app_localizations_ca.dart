@@ -106,7 +106,33 @@ class AppLocalizationsCa extends AppLocalizations {
   String get hallTitle => 'Sala de la Fama';
 
   @override
-  String get hallFamous => 'Partides famoses';
+  String get hallGolden => 'El tauler d\'or';
+
+  @override
+  String get hallGoldenHint => 'Les 64 partides més famoses';
+
+  @override
+  String get hallMatches => 'Duels per la corona';
+
+  @override
+  String get hallMatchesHint => 'Tots els matxs pel campionat del món';
+
+  @override
+  String get hallWomen => 'Campiones';
+
+  @override
+  String get hallWomenHint => 'Les campiones del món i les seves partides';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n de $total';
+  }
+
+  @override
+  String get hallFideLine => 'Títol FIDE 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Partida ràpida';
 
   @override
   String get replayCheck => 'Escac!';

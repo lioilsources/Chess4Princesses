@@ -9,7 +9,7 @@ import 'package:princesschess/core/games/pgn.dart';
 import 'package:princesschess/core/games/san_reader.dart';
 
 void main() {
-  final samples = parsePgn(File('assets/games/samples.pgn').readAsStringSync());
+  final samples = parsePgn(File('data/games/pgn/extra.pgn').readAsStringSync());
 
   test('parser skips comments, variations, NAGs and clock tags', () {
     final g = parsePgn('''

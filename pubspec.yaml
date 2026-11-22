@@ -81,6 +81,8 @@ flutter:
     - assets/lessons/m05/
     - assets/lessons/m06/
     - assets/games/
+    - assets/games/c/
+    - assets/games/p/
     - assets/armies/fairies/
     - assets/armies/fairies/sprites/
     - assets/armies/fairies/battle/king/

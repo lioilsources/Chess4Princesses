@@ -40,7 +40,7 @@ class _FakeTimer implements Timer {
 }
 
 void main() {
-  final games = [for (final g in parsePgn(File('assets/games/samples.pgn').readAsStringSync())) GameRecord.fromPgn(g)];
+  final games = [for (final g in parsePgn(File('data/games/pgn/extra.pgn').readAsStringSync())) GameRecord.fromPgn(g)];
   final opera = games.first;
 
   test('story mode plays to the end, stops for battles, ends with mate', () {

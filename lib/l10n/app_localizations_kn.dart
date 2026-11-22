@@ -106,7 +106,33 @@ class AppLocalizationsKn extends AppLocalizations {
   String get hallTitle => 'ಖ್ಯಾತಿಯ ಸಭಾಂಗಣ';
 
   @override
-  String get hallFamous => 'ಪ್ರಸಿದ್ಧ ಆಟಗಳು';
+  String get hallGolden => 'ಚಿನ್ನದ ಹಲಗೆ';
+
+  @override
+  String get hallGoldenHint => 'ಅತ್ಯಂತ ಪ್ರಸಿದ್ಧ 64 ಆಟಗಳು';
+
+  @override
+  String get hallMatches => 'ಕಿರೀಟಕ್ಕಾಗಿ ಪಂದ್ಯಗಳು';
+
+  @override
+  String get hallMatchesHint => 'ವಿಶ್ವ ಚಾಂಪಿಯನ್‌ಶಿಪ್‌ನ ಎಲ್ಲ ಪಂದ್ಯಗಳು';
+
+  @override
+  String get hallWomen => 'ಚಾಂಪಿಯನ್ ಮಹಿಳೆಯರು';
+
+  @override
+  String get hallWomenHint => 'ಮಹಿಳಾ ವಿಶ್ವ ಚಾಂಪಿಯನ್‌ಗಳು ಮತ್ತು ಅವರ ಆಟಗಳು';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$totalರಲ್ಲಿ $n';
+  }
+
+  @override
+  String get hallFideLine => 'ಫಿಡೆ ಪ್ರಶಸ್ತಿ 1993–2006';
+
+  @override
+  String get hallTiebreak => 'ವೇಗದ ಆಟ';
 
   @override
   String get replayCheck => 'ಚೆಕ್!';

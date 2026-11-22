@@ -106,7 +106,33 @@ class AppLocalizationsSk extends AppLocalizations {
   String get hallTitle => 'Sieň slávy';
 
   @override
-  String get hallFamous => 'Slávne partie';
+  String get hallGolden => 'Zlatá šachovnica';
+
+  @override
+  String get hallGoldenHint => '64 najslávnejších partií';
+
+  @override
+  String get hallMatches => 'Zápasy o korunu';
+
+  @override
+  String get hallMatchesHint => 'Všetky zápasy o titul majstra sveta';
+
+  @override
+  String get hallWomen => 'Šampiónky';
+
+  @override
+  String get hallWomenHint => 'Majsterky sveta a ich partie';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n z $total';
+  }
+
+  @override
+  String get hallFideLine => 'Titul FIDE 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Rýchla partia';
 
   @override
   String get replayCheck => 'Šach!';

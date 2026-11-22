@@ -106,7 +106,33 @@ class AppLocalizationsGu extends AppLocalizations {
   String get hallTitle => 'કીર્તિ ખંડ';
 
   @override
-  String get hallFamous => 'પ્રખ્યાત રમતો';
+  String get hallGolden => 'સોનેરી પાટિયું';
+
+  @override
+  String get hallGoldenHint => 'સૌથી પ્રખ્યાત 64 રમતો';
+
+  @override
+  String get hallMatches => 'તાજ માટેના મુકાબલા';
+
+  @override
+  String get hallMatchesHint => 'વિશ્વ ચેમ્પિયનશિપના બધા મુકાબલા';
+
+  @override
+  String get hallWomen => 'ચેમ્પિયન મહિલાઓ';
+
+  @override
+  String get hallWomenHint => 'મહિલા વિશ્વ ચેમ્પિયન અને તેમની રમતો';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$totalમાંથી $n';
+  }
+
+  @override
+  String get hallFideLine => 'ફિડે ખિતાબ 1993–2006';
+
+  @override
+  String get hallTiebreak => 'ઝડપી રમત';
 
   @override
   String get replayCheck => 'શાહ!';

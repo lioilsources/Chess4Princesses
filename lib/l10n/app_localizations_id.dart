@@ -106,7 +106,33 @@ class AppLocalizationsId extends AppLocalizations {
   String get hallTitle => 'Aula Kejayaan';
 
   @override
-  String get hallFamous => 'Permainan terkenal';
+  String get hallGolden => 'Papan Emas';
+
+  @override
+  String get hallGoldenHint => '64 partai paling terkenal';
+
+  @override
+  String get hallMatches => 'Pertandingan memperebutkan mahkota';
+
+  @override
+  String get hallMatchesHint => 'Semua pertandingan kejuaraan dunia';
+
+  @override
+  String get hallWomen => 'Para juara wanita';
+
+  @override
+  String get hallWomenHint => 'Juara dunia wanita dan partai mereka';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n dari $total';
+  }
+
+  @override
+  String get hallFideLine => 'Gelar FIDE 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Partai cepat';
 
   @override
   String get replayCheck => 'Skak!';

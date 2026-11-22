@@ -1,0 +1,816 @@
+{
+ "v": 1,
+ "groups": [
+  {
+   "id": "menchik",
+   "title": "Vera Menchik",
+   "n": 1,
+   "reigns": [
+    "1927–1944"
+   ],
+   "items": [
+    {
+     "id": "1939e624fc35",
+     "p": "women",
+     "i": 0,
+     "w": "Vera Menchik",
+     "b": "Sonja Graf",
+     "y": 1937,
+     "r": "1-0",
+     "n": 21,
+     "rd": "14"
+    }
+   ]
+  },
+  {
+   "id": "gaprindashvili",
+   "title": "Nona Gaprindashvili",
+   "n": 5,
+   "reigns": [
+    "1962–1978"
+   ],
+   "items": [
+    {
+     "id": "fa587b93d992",
+     "p": "women",
+     "i": 1,
+     "w": "Nona Gaprindashvili",
+     "b": "Ove Kinnmark",
+     "y": 1971,
+     "r": "1-0",
+     "n": 37,
+     "rd": "10"
+    },
+    {
+     "id": "2e4bc0162ca8",
+     "p": "women",
+     "i": 2,
+     "w": "Alla Kushnir",
+     "b": "Nona Gaprindashvili",
+     "y": 1972,
+     "r": "0-1",
+     "n": 38,
+     "m": 1,
+     "rd": "2"
+    },
+    {
+     "id": "a0c7df6b8240",
+     "p": "women",
+     "i": 3,
+     "w": "Nona Gaprindashvili",
+     "b": "Robert Hartoch",
+     "y": 1976,
+     "r": "1-0",
+     "n": 24,
+     "rd": "10"
+    },
+    {
+     "id": "59ebf4021d27",
+     "p": "women",
+     "i": 4,
+     "w": "Nona Gaprindashvili",
+     "b": "Michael Woodhams",
+     "y": 1976,
+     "r": "1-0",
+     "n": 36,
+     "rd": "7"
+    },
+    {
+     "id": "3f8d525dfcbd",
+     "p": "women",
+     "i": 5,
+     "w": "Nona Gaprindashvili",
+     "b": "Rainer Knaak",
+     "y": 1976,
+     "r": "1-0",
+     "n": 48,
+     "rd": "6"
+    },
+    {
+     "id": "dd1bb46d1010",
+     "p": "women",
+     "i": 6,
+     "w": "Nona Gaprindashvili",
+     "b": "Wolfgang Uhlmann",
+     "y": 1977,
+     "r": "1-0",
+     "n": 51,
+     "rd": "3"
+    },
+    {
+     "id": "c414dcea84e8",
+     "p": "women",
+     "i": 7,
+     "w": "Nona Gaprindashvili",
+     "b": "Leonid Shamkovich",
+     "y": 1977,
+     "r": "1-0",
+     "n": 47,
+     "rd": "7"
+    },
+    {
+     "id": "ce88184fa5ee",
+     "p": "women",
+     "i": 8,
+     "w": "Nona Gaprindashvili",
+     "b": "Ulf Andersson",
+     "y": 1978,
+     "r": "1-0",
+     "n": 37,
+     "rd": "5"
+    }
+   ]
+  },
+  {
+   "id": "chiburdanidze",
+   "title": "Maia Chiburdanidze",
+   "n": 6,
+   "reigns": [
+    "1978–1991"
+   ],
+   "items": [
+    {
+     "id": "743c044c4e1f",
+     "p": "women",
+     "i": 9,
+     "w": "Maia Chiburdanidze",
+     "b": "Vladimir Tukmakov",
+     "y": 1980,
+     "r": "1-0",
+     "n": 22
+    },
+    {
+     "id": "4ba147949aac",
+     "p": "women",
+     "i": 10,
+     "w": "Maia Chiburdanidze",
+     "b": "Nigel Short",
+     "y": 1983,
+     "r": "1-0",
+     "n": 28,
+     "rd": "5"
+    },
+    {
+     "id": "d92633e4121b",
+     "p": "women",
+     "i": 11,
+     "w": "Nigel Short",
+     "b": "Maia Chiburdanidze",
+     "y": 1985,
+     "r": "0-1",
+     "n": 31,
+     "m": 1
+    },
+    {
+     "id": "a13834b86912",
+     "p": "women",
+     "i": 12,
+     "w": "Maia Chiburdanidze",
+     "b": "Ljubomir Ljubojevic",
+     "y": 1987,
+     "r": "1-0",
+     "n": 42
+    },
+    {
+     "id": "eae69ee5a68f",
+     "p": "women",
+     "i": 13,
+     "w": "Maia Chiburdanidze",
+     "b": "Murray Chandler",
+     "y": 1988,
+     "r": "1-0",
+     "n": 45,
+     "m": 1
+    },
+    {
+     "id": "1c6f94e7a696",
+     "p": "women",
+     "i": 14,
+     "w": "Maia Chiburdanidze",
+     "b": "Jozsef Pinter",
+     "y": 1988,
+     "r": "1-0",
+     "n": 27
+    },
+    {
+     "id": "93f447941266",
+     "p": "women",
+     "i": 15,
+     "w": "Jiri Nun",
+     "b": "Maia Chiburdanidze",
+     "y": 1989,
+     "r": "0-1",
+     "n": 21
+    },
+    {
+     "id": "d8624a546bd9",
+     "p": "women",
+     "i": 16,
+     "w": "Maia Chiburdanidze",
+     "b": "Alexey Vyzmanavin",
+     "y": 1990,
+     "r": "1-0",
+     "n": 34,
+     "rd": "5"
+    }
+   ]
+  },
+  {
+   "id": "xie",
+   "title": "Xie Jun",
+   "n": 7,
+   "reigns": [
+    "1991–1996",
+    "1999–2001"
+   ],
+   "items": [
+    {
+     "id": "73f4b88c9f01",
+     "p": "women",
+     "i": 17,
+     "w": "Eugenio Torre",
+     "b": "Xie Jun",
+     "y": 1992,
+     "r": "0-1",
+     "n": 33,
+     "rd": "3"
+    },
+    {
+     "id": "f7cc4d6e389f",
+     "p": "women",
+     "i": 18,
+     "w": "Jan Timman",
+     "b": "Xie Jun",
+     "y": 1994,
+     "r": "0-1",
+     "n": 36,
+     "rd": "6"
+    },
+    {
+     "id": "bb8c33cbc209",
+     "p": "women",
+     "i": 19,
+     "w": "Xie Jun",
+     "b": "Bent Larsen",
+     "y": 1994,
+     "r": "1-0",
+     "n": 31,
+     "rd": "1"
+    },
+    {
+     "id": "3a96716b5664",
+     "p": "women",
+     "i": 20,
+     "w": "Xie Jun",
+     "b": "Sergei Movsesian",
+     "y": 1996,
+     "r": "1-0",
+     "n": 35,
+     "rd": "2"
+    },
+    {
+     "id": "07c663fb79be",
+     "p": "women",
+     "i": 21,
+     "w": "Xie Jun",
+     "b": "Viktor Korchnoi",
+     "y": 1999,
+     "r": "1-0",
+     "n": 37,
+     "rd": "5"
+    },
+    {
+     "id": "77d532b9c9fe",
+     "p": "women",
+     "i": 22,
+     "w": "Xie Jun",
+     "b": "Alisa Galliamova",
+     "y": 1999,
+     "r": "1-0",
+     "n": 29,
+     "rd": "2"
+    },
+    {
+     "id": "35a3b15c226e",
+     "p": "women",
+     "i": 23,
+     "w": "Xie Jun",
+     "b": "Viktor Korchnoi",
+     "y": 1999,
+     "r": "1-0",
+     "n": 45,
+     "rd": "4"
+    },
+    {
+     "id": "9469a0fe480f",
+     "p": "women",
+     "i": 24,
+     "w": "Xie Jun",
+     "b": "Nay Oo Kyaw Tun",
+     "y": 2000,
+     "r": "1-0",
+     "n": 34,
+     "rd": "7"
+    }
+   ]
+  },
+  {
+   "id": "polgar-zsuzsa",
+   "title": "Zsuzsa Polgar",
+   "n": 8,
+   "reigns": [
+    "1996–1999"
+   ],
+   "items": [
+    {
+     "id": "892f4945d6c7",
+     "p": "women",
+     "i": 25,
+     "w": "Zsuzsa Polgar",
+     "b": "Maia Chiburdanidze",
+     "y": 1994,
+     "r": "1-0",
+     "n": 37,
+     "rd": "1"
+    },
+    {
+     "id": "4893ac489d00",
+     "p": "women",
+     "i": 26,
+     "w": "Zsuzsa Polgar",
+     "b": "Maia Chiburdanidze",
+     "y": 1995,
+     "r": "1-0",
+     "n": 31,
+     "rd": "3"
+    },
+    {
+     "id": "a4e2b8e2bf05",
+     "p": "women",
+     "i": 27,
+     "w": "Maia Chiburdanidze",
+     "b": "Zsuzsa Polgar",
+     "y": 1995,
+     "r": "0-1",
+     "n": 32,
+     "rd": "4"
+    },
+    {
+     "id": "56bf99f8f78d",
+     "p": "women",
+     "i": 28,
+     "w": "Maia Chiburdanidze",
+     "b": "Zsuzsa Polgar",
+     "y": 1995,
+     "r": "0-1",
+     "n": 42,
+     "rd": "6"
+    },
+    {
+     "id": "331f5be9428f",
+     "p": "women",
+     "i": 29,
+     "w": "Zsuzsa Polgar",
+     "b": "Xie Jun",
+     "y": 1996,
+     "r": "1-0",
+     "n": 24,
+     "rd": "13"
+    },
+    {
+     "id": "4066d111677f",
+     "p": "women",
+     "i": 30,
+     "w": "Zsuzsa Polgar",
+     "b": "Xie Jun",
+     "y": 1996,
+     "r": "1-0",
+     "n": 25,
+     "rd": "5"
+    },
+    {
+     "id": "302e064fdd81",
+     "p": "women",
+     "i": 31,
+     "w": "Xie Jun",
+     "b": "Zsuzsa Polgar",
+     "y": 1996,
+     "r": "0-1",
+     "n": 33,
+     "rd": "4"
+    },
+    {
+     "id": "69fca52b8235",
+     "p": "women",
+     "i": 32,
+     "w": "Zsuzsa Polgar",
+     "b": "Xie Jun",
+     "y": 1996,
+     "r": "1-0",
+     "n": 44,
+     "rd": "7"
+    }
+   ]
+  },
+  {
+   "id": "zhu",
+   "title": "Zhu Chen",
+   "n": 9,
+   "reigns": [
+    "2001–2004"
+   ],
+   "items": [
+    {
+     "id": "590006a84278",
+     "p": "women",
+     "i": 33,
+     "w": "Khin Than",
+     "b": "Zhu Chen",
+     "y": 1999,
+     "r": "0-1",
+     "n": 34,
+     "rd": "1"
+    },
+    {
+     "id": "67486054aa9a",
+     "p": "women",
+     "i": 34,
+     "w": "Zhu Chen",
+     "b": "Than Soe Aung",
+     "y": 1999,
+     "r": "1-0",
+     "n": 23,
+     "rd": "6"
+    },
+    {
+     "id": "cd8a8bf224e0",
+     "p": "women",
+     "i": 35,
+     "w": "Thein Dan Oo",
+     "b": "Zhu Chen",
+     "y": 1999,
+     "r": "0-1",
+     "n": 29,
+     "rd": "11"
+    },
+    {
+     "id": "fe3bbb33eb22",
+     "p": "women",
+     "i": 36,
+     "w": "Ch. Gabriel",
+     "b": "Zhu Chen",
+     "y": 2000,
+     "r": "0-1",
+     "n": 25,
+     "rd": "4"
+    },
+    {
+     "id": "3cea44a7b385",
+     "p": "women",
+     "i": 37,
+     "w": "Zhu Chen",
+     "b": "K. Bischoff",
+     "y": 2000,
+     "r": "1-0",
+     "n": 24,
+     "rd": "5"
+    },
+    {
+     "id": "5d4757f52183",
+     "p": "women",
+     "i": 38,
+     "w": "Viktor Korchnoi",
+     "b": "Zhu Chen",
+     "y": 2000,
+     "r": "0-1",
+     "n": 34,
+     "rd": "4"
+    },
+    {
+     "id": "460bed7c51b7",
+     "p": "women",
+     "i": 39,
+     "w": "Zhu Chen",
+     "b": "Alexandra Kosteniuk",
+     "y": 2001,
+     "r": "1-0",
+     "n": 52,
+     "m": 1,
+     "rd": "6.7"
+    },
+    {
+     "id": "21072208b80a",
+     "p": "women",
+     "i": 40,
+     "w": "Zhu Chen",
+     "b": "J. Granda Zuniga",
+     "y": 2004,
+     "r": "1-0",
+     "n": 34,
+     "rd": "13"
+    }
+   ]
+  },
+  {
+   "id": "stefanova",
+   "title": "Antoaneta Stefanova",
+   "n": 10,
+   "reigns": [
+    "2004–2006"
+   ],
+   "items": [
+    {
+     "id": "4bfaee7e2d35",
+     "p": "women",
+     "i": 41,
+     "w": "Antoaneta Stefanova",
+     "b": "L. Bruzon",
+     "y": 2004,
+     "r": "1-0",
+     "n": 40,
+     "rd": "7"
+    },
+    {
+     "id": "f61775ae997d",
+     "p": "women",
+     "i": 42,
+     "w": "Antoaneta Stefanova",
+     "b": "Pr. Nikolic",
+     "y": 2005,
+     "r": "1-0",
+     "n": 24,
+     "rd": "9"
+    },
+    {
+     "id": "c64d167bac68",
+     "p": "women",
+     "i": 43,
+     "w": "S. Volkov",
+     "b": "Antoaneta Stefanova",
+     "y": 2006,
+     "r": "0-1",
+     "n": 45,
+     "rd": "2"
+    },
+    {
+     "id": "6e90b601b6dc",
+     "p": "women",
+     "i": 44,
+     "w": "Alexandra Kosteniuk",
+     "b": "Antoaneta Stefanova",
+     "y": 2006,
+     "r": "0-1",
+     "n": 27,
+     "rd": "10"
+    },
+    {
+     "id": "b4bf4658f826",
+     "p": "women",
+     "i": 45,
+     "w": "Antoaneta Stefanova",
+     "b": "P. Harikrishna",
+     "y": 2006,
+     "r": "1-0",
+     "n": 51,
+     "rd": "4"
+    },
+    {
+     "id": "d14481f0fb0d",
+     "p": "women",
+     "i": 46,
+     "w": "Antoaneta Stefanova",
+     "b": "B. Kurajica",
+     "y": 2006,
+     "r": "1-0",
+     "n": 31,
+     "rd": "5"
+    },
+    {
+     "id": "0fdec49d1881",
+     "p": "women",
+     "i": 47,
+     "w": "Antoaneta Stefanova",
+     "b": "Kateri Lahno",
+     "y": 2011,
+     "r": "1-0",
+     "n": 34,
+     "m": 1,
+     "rd": "10"
+    },
+    {
+     "id": "26db604e3a93",
+     "p": "women",
+     "i": 48,
+     "w": "Antoaneta Stefanova",
+     "b": "M. Chigaev",
+     "y": 2021,
+     "r": "1-0",
+     "n": 44,
+     "m": 1,
+     "rd": "14.35"
+    }
+   ]
+  },
+  {
+   "id": "kosteniuk",
+   "title": "Alexandra Kosteniuk",
+   "n": 12,
+   "reigns": [
+    "2008–2010"
+   ],
+   "items": [
+    {
+     "id": "21941d500f69",
+     "p": "women",
+     "i": 49,
+     "w": "Alexandra Kosteniuk",
+     "b": "R. Kempinski",
+     "y": 2006,
+     "r": "1-0",
+     "n": 36,
+     "rd": "8"
+    },
+    {
+     "id": "6872c4bb33db",
+     "p": "women",
+     "i": 50,
+     "w": "E. Danielian",
+     "b": "Alexandra Kosteniuk",
+     "y": 2007,
+     "r": "0-1",
+     "n": 30,
+     "rd": "2"
+    },
+    {
+     "id": "31ad164931c1",
+     "p": "women",
+     "i": 51,
+     "w": "Z. Hracek",
+     "b": "Alexandra Kosteniuk",
+     "y": 2008,
+     "r": "0-1",
+     "n": 29,
+     "rd": "5"
+    },
+    {
+     "id": "fea0672db4d4",
+     "p": "women",
+     "i": 52,
+     "w": "P. Tregubov",
+     "b": "Alexandra Kosteniuk",
+     "y": 2008,
+     "r": "0-1",
+     "n": 43,
+     "rd": "6"
+    },
+    {
+     "id": "7a38ed35dd5d",
+     "p": "women",
+     "i": 53,
+     "w": "A. Ushenina",
+     "b": "Alexandra Kosteniuk",
+     "y": 2008,
+     "r": "0-1",
+     "n": 26,
+     "rd": "4.2"
+    },
+    {
+     "id": "b59e7943d03b",
+     "p": "women",
+     "i": 54,
+     "w": "Alexandra Kosteniuk",
+     "b": "P. Cramling",
+     "y": 2008,
+     "r": "1-0",
+     "n": 36,
+     "rd": "5.1"
+    },
+    {
+     "id": "57cfe6e96228",
+     "p": "women",
+     "i": 55,
+     "w": "Alexandra Kosteniuk",
+     "b": "N. Kosintseva",
+     "y": 2010,
+     "r": "1-0",
+     "n": 30,
+     "rd": "11"
+    },
+    {
+     "id": "23f54563850a",
+     "p": "women",
+     "i": 56,
+     "w": "Alexandra Kosteniuk",
+     "b": "Yovann Gatineau",
+     "y": 2021,
+     "r": "1-0",
+     "n": 23,
+     "m": 1,
+     "rd": "9.4"
+    }
+   ]
+  },
+  {
+   "id": "hou",
+   "title": "Hou Yifan",
+   "n": 13,
+   "reigns": [
+    "2010–2012",
+    "2013–2015",
+    "2016–2017"
+   ],
+   "items": [
+    {
+     "id": "5593cc79c635",
+     "p": "women",
+     "i": 57,
+     "w": "Hou Yifan",
+     "b": "Nigel Short",
+     "y": 2008,
+     "r": "1-0",
+     "n": 23,
+     "rd": "3"
+    },
+    {
+     "id": "08d42c447f31",
+     "p": "women",
+     "i": 58,
+     "w": "Hou Yifan",
+     "b": "F. Vallejo Pons",
+     "y": 2009,
+     "r": "1-0",
+     "n": 31,
+     "rd": "12"
+    },
+    {
+     "id": "c3903338da0a",
+     "p": "women",
+     "i": 59,
+     "w": "Hou Yifan",
+     "b": "V. Cmilyte",
+     "y": 2012,
+     "r": "1-0",
+     "n": 73,
+     "m": 1,
+     "rd": "1"
+    },
+    {
+     "id": "a265cef5dfe0",
+     "p": "women",
+     "i": 60,
+     "w": "Hou Yifan",
+     "b": "A. Giri",
+     "y": 2014,
+     "r": "1-0",
+     "n": 28,
+     "rd": "1.3"
+    },
+    {
+     "id": "85d8e1bc6460",
+     "p": "women",
+     "i": 61,
+     "w": "Hou Yifan",
+     "b": "R. Ruck",
+     "y": 2014,
+     "r": "1-0",
+     "n": 56,
+     "m": 1,
+     "rd": "3.1"
+    },
+    {
+     "id": "76cdf441e315",
+     "p": "women",
+     "i": 62,
+     "w": "Wang Hao",
+     "b": "Hou Yifan",
+     "y": 2016,
+     "r": "0-1",
+     "n": 26,
+     "rd": "7.1"
+    },
+    {
+     "id": "4ff569d584cc",
+     "p": "women",
+     "i": 63,
+     "w": "Hou Yifan",
+     "b": "Fabiano Caruana",
+     "y": 2017,
+     "r": "1-0",
+     "n": 40,
+     "rd": "1.2"
+    },
+    {
+     "id": "0cd018405966",
+     "p": "women",
+     "i": 64,
+     "w": "E. Inarkiev",
+     "b": "Hou Yifan",
+     "y": 2017,
+     "r": "0-1",
+     "n": 34,
+     "rd": "9.7"
+    }
+   ]
+  }
+ ]
+}

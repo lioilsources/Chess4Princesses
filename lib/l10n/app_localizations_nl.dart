@@ -106,7 +106,33 @@ class AppLocalizationsNl extends AppLocalizations {
   String get hallTitle => 'Roemhal';
 
   @override
-  String get hallFamous => 'Beroemde partijen';
+  String get hallGolden => 'Het gouden bord';
+
+  @override
+  String get hallGoldenHint => 'De 64 beroemdste partijen';
+
+  @override
+  String get hallMatches => 'Strijd om de kroon';
+
+  @override
+  String get hallMatchesHint => 'Alle wereldkampioenschapsmatches';
+
+  @override
+  String get hallWomen => 'Kampioenes';
+
+  @override
+  String get hallWomenHint => 'Wereldkampioenes en hun partijen';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n van $total';
+  }
+
+  @override
+  String get hallFideLine => 'FIDE-titel 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Snelschaakpartij';
 
   @override
   String get replayCheck => 'Schaak!';

@@ -106,7 +106,33 @@ class AppLocalizationsRo extends AppLocalizations {
   String get hallTitle => 'Sala faimei';
 
   @override
-  String get hallFamous => 'Partide celebre';
+  String get hallGolden => 'Tabla de aur';
+
+  @override
+  String get hallGoldenHint => 'Cele mai celebre 64 de partide';
+
+  @override
+  String get hallMatches => 'Meciuri pentru coroană';
+
+  @override
+  String get hallMatchesHint => 'Toate meciurile pentru titlul mondial';
+
+  @override
+  String get hallWomen => 'Campioane';
+
+  @override
+  String get hallWomenHint => 'Campioanele mondiale și partidele lor';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n din $total';
+  }
+
+  @override
+  String get hallFideLine => 'Titlul FIDE 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Partidă rapidă';
 
   @override
   String get replayCheck => 'Șah!';

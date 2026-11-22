@@ -106,7 +106,33 @@ class AppLocalizationsUr extends AppLocalizations {
   String get hallTitle => 'شہرت کا ہال';
 
   @override
-  String get hallFamous => 'مشہور کھیل';
+  String get hallGolden => 'سنہری بساط';
+
+  @override
+  String get hallGoldenHint => '64 مشہور ترین بازیاں';
+
+  @override
+  String get hallMatches => 'تاج کے لیے مقابلے';
+
+  @override
+  String get hallMatchesHint => 'عالمی چیمپئن شپ کے تمام مقابلے';
+
+  @override
+  String get hallWomen => 'چیمپئن خواتین';
+
+  @override
+  String get hallWomenHint => 'خواتین عالمی چیمپئن اور ان کی بازیاں';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$total میں سے $n';
+  }
+
+  @override
+  String get hallFideLine => 'فیڈے ٹائٹل 1993–2006';
+
+  @override
+  String get hallTiebreak => 'تیز بازی';
 
   @override
   String get replayCheck => 'شہ!';

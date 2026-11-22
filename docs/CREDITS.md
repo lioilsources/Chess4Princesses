@@ -39,3 +39,9 @@ Moves and results of games are facts and carry no licence. Comments, annotations
 third-party selections are never copied (SLAVNE_PARTIE_PLAN §7). Moves of the bundled
 samples were checked against Wikipedia (Opera Game; Game of the Century; Vera Menchik,
 "Menchik vs. Graf, Semmering 1937" with the final position).
+
+The library (G3) comes from the free PGN downloads of PGN Mentor (pgnmentor.com): the world
+championship event files and the player collections of the champions, Morphy and Anderssen.
+Only moves, players, dates, places, rounds and ratings are kept; the selections on the shelves
+are our own (`data/games/sources.yaml`). The stories of the golden board (G4) will be checked
+against a second source game by game.

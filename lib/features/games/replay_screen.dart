@@ -62,6 +62,9 @@ class _ReplayViewState extends ConsumerState<ReplayView> {
   Narrator? _narrator;
   int _lineHeard = 0;
 
+  /// The sticker for this game is already given.
+  bool _stuck = false;
+
   @override
   void initState() {
     super.initState();
@@ -82,6 +85,10 @@ class _ReplayViewState extends ConsumerState<ReplayView> {
 
   void _changed() {
     setState(() {});
+    if (c.atEnd && !_stuck) {
+      _stuck = true;
+      ref.read(progressProvider.notifier).watchGame(widget.record.id);
+    }
     if (c.lineTick != _lineHeard) {
       _lineHeard = c.lineTick;
       final l = c.line;

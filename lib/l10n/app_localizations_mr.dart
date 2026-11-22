@@ -106,7 +106,33 @@ class AppLocalizationsMr extends AppLocalizations {
   String get hallTitle => 'कीर्ती सभागृह';
 
   @override
-  String get hallFamous => 'प्रसिद्ध डाव';
+  String get hallGolden => 'सोनेरी पट';
+
+  @override
+  String get hallGoldenHint => '64 सर्वात प्रसिद्ध डाव';
+
+  @override
+  String get hallMatches => 'मुकुटासाठी सामने';
+
+  @override
+  String get hallMatchesHint => 'जागतिक अजिंक्यपदाचे सर्व सामने';
+
+  @override
+  String get hallWomen => 'विजेत्या महिला';
+
+  @override
+  String get hallWomenHint => 'महिला जगज्जेत्या आणि त्यांचे डाव';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$total पैकी $n';
+  }
+
+  @override
+  String get hallFideLine => 'फिडे किताब 1993–2006';
+
+  @override
+  String get hallTiebreak => 'जलद डाव';
 
   @override
   String get replayCheck => 'शह!';
