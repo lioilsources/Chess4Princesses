@@ -106,7 +106,33 @@ class AppLocalizationsEn extends AppLocalizations {
   String get hallTitle => 'Hall of Fame';
 
   @override
-  String get hallFamous => 'Famous games';
+  String get hallGolden => 'The Golden Board';
+
+  @override
+  String get hallGoldenHint => 'The 64 most famous games';
+
+  @override
+  String get hallMatches => 'Matches for the Crown';
+
+  @override
+  String get hallMatchesHint => 'Every world championship match';
+
+  @override
+  String get hallWomen => 'Women Champions';
+
+  @override
+  String get hallWomenHint => 'Women\'s world champions and their games';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n of $total';
+  }
+
+  @override
+  String get hallFideLine => 'FIDE title 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Rapid game';
 
   @override
   String get replayCheck => 'Check!';

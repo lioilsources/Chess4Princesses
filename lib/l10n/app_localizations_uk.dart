@@ -106,7 +106,33 @@ class AppLocalizationsUk extends AppLocalizations {
   String get hallTitle => 'Зал слави';
 
   @override
-  String get hallFamous => 'Відомі партії';
+  String get hallGolden => 'Золота дошка';
+
+  @override
+  String get hallGoldenHint => '64 найвідоміші партії';
+
+  @override
+  String get hallMatches => 'Матчі за корону';
+
+  @override
+  String get hallMatchesHint => 'Усі матчі за звання чемпіона світу';
+
+  @override
+  String get hallWomen => 'Чемпіонки';
+
+  @override
+  String get hallWomenHint => 'Чемпіонки світу та їхні партії';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n з $total';
+  }
+
+  @override
+  String get hallFideLine => 'Титул ФІДЕ 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Швидка партія';
 
   @override
   String get replayCheck => 'Шах!';

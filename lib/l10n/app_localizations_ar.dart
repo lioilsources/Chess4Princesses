@@ -106,7 +106,33 @@ class AppLocalizationsAr extends AppLocalizations {
   String get hallTitle => 'قاعة المشاهير';
 
   @override
-  String get hallFamous => 'مباريات مشهورة';
+  String get hallGolden => 'الرقعة الذهبية';
+
+  @override
+  String get hallGoldenHint => 'أشهر 64 مباراة';
+
+  @override
+  String get hallMatches => 'مباريات على التاج';
+
+  @override
+  String get hallMatchesHint => 'كل مباريات بطولة العالم';
+
+  @override
+  String get hallWomen => 'البطلات';
+
+  @override
+  String get hallWomenHint => 'بطلات العالم ومبارياتهن';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n من $total';
+  }
+
+  @override
+  String get hallFideLine => 'لقب الفيديه 1993–2006';
+
+  @override
+  String get hallTiebreak => 'مباراة سريعة';
 
   @override
   String get replayCheck => 'كش!';

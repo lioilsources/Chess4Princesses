@@ -357,11 +357,59 @@ abstract class AppLocalizations {
   /// **'Síň slávy'**
   String get hallTitle;
 
-  /// No description provided for @hallFamous.
+  /// No description provided for @hallGolden.
   ///
   /// In cs, this message translates to:
-  /// **'Slavné partie'**
-  String get hallFamous;
+  /// **'Zlatá šachovnice'**
+  String get hallGolden;
+
+  /// No description provided for @hallGoldenHint.
+  ///
+  /// In cs, this message translates to:
+  /// **'64 nejslavnějších partií'**
+  String get hallGoldenHint;
+
+  /// No description provided for @hallMatches.
+  ///
+  /// In cs, this message translates to:
+  /// **'Zápasy o korunu'**
+  String get hallMatches;
+
+  /// No description provided for @hallMatchesHint.
+  ///
+  /// In cs, this message translates to:
+  /// **'Všechny zápasy o titul mistra světa'**
+  String get hallMatchesHint;
+
+  /// No description provided for @hallWomen.
+  ///
+  /// In cs, this message translates to:
+  /// **'Šampionky'**
+  String get hallWomen;
+
+  /// No description provided for @hallWomenHint.
+  ///
+  /// In cs, this message translates to:
+  /// **'Mistryně světa a jejich partie'**
+  String get hallWomenHint;
+
+  /// No description provided for @hallStickers.
+  ///
+  /// In cs, this message translates to:
+  /// **'{n} z {total}'**
+  String hallStickers(int n, int total);
+
+  /// No description provided for @hallFideLine.
+  ///
+  /// In cs, this message translates to:
+  /// **'Titul FIDE 1993–2006'**
+  String get hallFideLine;
+
+  /// No description provided for @hallTiebreak.
+  ///
+  /// In cs, this message translates to:
+  /// **'Rychlá partie'**
+  String get hallTiebreak;
 
   /// No description provided for @replayCheck.
   ///

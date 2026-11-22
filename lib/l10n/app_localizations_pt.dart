@@ -106,7 +106,33 @@ class AppLocalizationsPt extends AppLocalizations {
   String get hallTitle => 'Salão da Fama';
 
   @override
-  String get hallFamous => 'Partidas famosas';
+  String get hallGolden => 'O tabuleiro de ouro';
+
+  @override
+  String get hallGoldenHint => 'As 64 partidas mais famosas';
+
+  @override
+  String get hallMatches => 'Duelos pela coroa';
+
+  @override
+  String get hallMatchesHint => 'Todos os matches do campeonato do mundo';
+
+  @override
+  String get hallWomen => 'Campeãs';
+
+  @override
+  String get hallWomenHint => 'As campeãs do mundo e as suas partidas';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n de $total';
+  }
+
+  @override
+  String get hallFideLine => 'Título FIDE 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Partida rápida';
 
   @override
   String get replayCheck => 'Xeque!';
@@ -284,7 +310,33 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get hallTitle => 'Salão da Fama';
 
   @override
-  String get hallFamous => 'Partidas famosas';
+  String get hallGolden => 'O tabuleiro de ouro';
+
+  @override
+  String get hallGoldenHint => 'As 64 partidas mais famosas';
+
+  @override
+  String get hallMatches => 'Duelos pela coroa';
+
+  @override
+  String get hallMatchesHint => 'Todos os matches do campeonato mundial';
+
+  @override
+  String get hallWomen => 'Campeãs';
+
+  @override
+  String get hallWomenHint => 'As campeãs mundiais e suas partidas';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n de $total';
+  }
+
+  @override
+  String get hallFideLine => 'Título FIDE 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Partida rápida';
 
   @override
   String get replayCheck => 'Xeque!';
@@ -462,7 +514,33 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
   String get hallTitle => 'Salão da Fama';
 
   @override
-  String get hallFamous => 'Partidas famosas';
+  String get hallGolden => 'O tabuleiro de ouro';
+
+  @override
+  String get hallGoldenHint => 'As 64 partidas mais famosas';
+
+  @override
+  String get hallMatches => 'Duelos pela coroa';
+
+  @override
+  String get hallMatchesHint => 'Todos os matches do campeonato do mundo';
+
+  @override
+  String get hallWomen => 'Campeãs';
+
+  @override
+  String get hallWomenHint => 'As campeãs do mundo e as suas partidas';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n de $total';
+  }
+
+  @override
+  String get hallFideLine => 'Título FIDE 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Partida rápida';
 
   @override
   String get replayCheck => 'Xeque!';

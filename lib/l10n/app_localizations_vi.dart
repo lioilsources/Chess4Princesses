@@ -106,7 +106,33 @@ class AppLocalizationsVi extends AppLocalizations {
   String get hallTitle => 'Phòng vinh danh';
 
   @override
-  String get hallFamous => 'Ván cờ nổi tiếng';
+  String get hallGolden => 'Bàn cờ vàng';
+
+  @override
+  String get hallGoldenHint => '64 ván cờ nổi tiếng nhất';
+
+  @override
+  String get hallMatches => 'Những trận tranh vương miện';
+
+  @override
+  String get hallMatchesHint => 'Mọi trận tranh chức vô địch thế giới';
+
+  @override
+  String get hallWomen => 'Nữ vô địch';
+
+  @override
+  String get hallWomenHint => 'Các nữ vô địch thế giới và ván cờ của họ';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n/$total';
+  }
+
+  @override
+  String get hallFideLine => 'Danh hiệu FIDE 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Ván cờ nhanh';
 
   @override
   String get replayCheck => 'Chiếu!';

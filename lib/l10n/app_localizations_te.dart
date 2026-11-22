@@ -106,7 +106,33 @@ class AppLocalizationsTe extends AppLocalizations {
   String get hallTitle => 'కీర్తి మందిరం';
 
   @override
-  String get hallFamous => 'ప్రసిద్ధ ఆటలు';
+  String get hallGolden => 'బంగారు బోర్డు';
+
+  @override
+  String get hallGoldenHint => 'అత్యంత ప్రసిద్ధమైన 64 ఆటలు';
+
+  @override
+  String get hallMatches => 'కిరీటం కోసం పోటీలు';
+
+  @override
+  String get hallMatchesHint => 'ప్రపంచ ఛాంపియన్‌షిప్ పోటీలన్నీ';
+
+  @override
+  String get hallWomen => 'ఛాంపియన్ మహిళలు';
+
+  @override
+  String get hallWomenHint => 'మహిళా ప్రపంచ ఛాంపియన్లు, వారి ఆటలు';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$totalలో $n';
+  }
+
+  @override
+  String get hallFideLine => 'ఫిడే టైటిల్ 1993–2006';
+
+  @override
+  String get hallTiebreak => 'వేగవంతమైన ఆట';
 
   @override
   String get replayCheck => 'చెక్!';

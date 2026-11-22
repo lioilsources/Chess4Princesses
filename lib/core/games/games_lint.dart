@@ -6,6 +6,7 @@ import 'pgn.dart';
 const bannedHeaderWords = [
   'salesforce', 'tata steel', 'norway chess', 'sinquefield', 'grand chess tour', 'freestyle', 'chess.com', 'lichess',
   'champions chess tour', 'meltwater', 'altibox', 'esports', 'red bull', 'total chess',
+  'corus', 'hoogovens', 'gibtelecom', 'grenke', 'aeroflot', 'lindores', 'braingames', 'sportaccord', 'ordix', 'avro',
 ];
 
 /// Headers kept in bundled PGN (PLAN §6: no URLs, no clocks).
@@ -62,6 +63,39 @@ List<GamesLintIssue> lintPgnFile(String file, String text, Map<String, String> s
       err(e.message);
     } on FormatException catch (e) {
       err('$who: ${e.message}');
+    }
+  }
+  return out;
+}
+
+/// Lints the shelves against the packs (PLAN §3): every entry points at an
+/// existing game whose id matches, the golden board has exactly 64 squares,
+/// and every packed game sits on at least one shelf. [packs] maps a pack id
+/// to its parsed records; [collections] maps a shelf file to its JSON.
+List<GamesLintIssue> lintLibrary(Map<String, List<GameRecord>> packs, Map<String, Map<String, dynamic>> collections) {
+  final out = <GamesLintIssue>[];
+  final used = <String>{};
+  for (final MapEntry(key: file, value: json) in collections.entries) {
+    final groups = (json['groups'] as List).cast<Map<String, dynamic>>();
+    for (final g in groups) {
+      final items = (g['items'] as List).cast<Map<String, dynamic>>();
+      if (file.endsWith('golden.json') && items.length != 64) out.add(GamesLintIssue(file, 'golden board has ${items.length} games, needs 64'));
+      if (items.isEmpty) out.add(GamesLintIssue(file, 'group ${g['id']} is empty'));
+      for (final it in items) {
+        final pack = packs[it['p']];
+        final i = it['i'] as int;
+        if (pack == null || i >= pack.length) {
+          out.add(GamesLintIssue(file, '${it['id']}: no game ${it['p']}#$i'));
+          continue;
+        }
+        if (pack[i].id != it['id']) out.add(GamesLintIssue(file, '${it['id']}: ${it['p']}#$i is ${pack[i].id}'));
+        used.add('${it['p']}#$i');
+      }
+    }
+  }
+  for (final MapEntry(key: p, value: games) in packs.entries) {
+    for (var i = 0; i < games.length; i++) {
+      if (!used.contains('$p#$i')) out.add(GamesLintIssue('p/$p.pgn', 'game #${i + 1} is on no shelf'));
     }
   }
   return out;

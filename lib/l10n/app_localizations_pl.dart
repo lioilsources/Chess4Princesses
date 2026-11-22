@@ -106,7 +106,33 @@ class AppLocalizationsPl extends AppLocalizations {
   String get hallTitle => 'Sala sław';
 
   @override
-  String get hallFamous => 'Słynne partie';
+  String get hallGolden => 'Złota szachownica';
+
+  @override
+  String get hallGoldenHint => '64 najsłynniejsze partie';
+
+  @override
+  String get hallMatches => 'Mecze o koronę';
+
+  @override
+  String get hallMatchesHint => 'Wszystkie mecze o mistrzostwo świata';
+
+  @override
+  String get hallWomen => 'Mistrzynie';
+
+  @override
+  String get hallWomenHint => 'Mistrzynie świata i ich partie';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n z $total';
+  }
+
+  @override
+  String get hallFideLine => 'Tytuł FIDE 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Partia szybka';
 
   @override
   String get replayCheck => 'Szach!';

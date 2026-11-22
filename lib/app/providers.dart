@@ -57,6 +57,12 @@ class ProgressNotifier extends AsyncNotifier<Progress> {
     final p = state.value ?? const Progress();
     await _set(p.withArmies(mine: mine, rival: rival));
   }
+
+  Future<void> watchGame(String id) async {
+    final p = state.value ?? const Progress();
+    if (p.gamesWatched.contains(id)) return;
+    await _set(p.withGameWatched(id));
+  }
 }
 
 /// The two armies currently on the board (mine, rival).

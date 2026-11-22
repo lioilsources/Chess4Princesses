@@ -77,6 +77,21 @@
     comments and URLs. The app reaches it only when built with `FEED_BASE_URL` and a parent
     turns on "Partie z internetu" (off by default); fetched rounds are kept in
     `shared_preferences` and replay offline.
+19. **Games library is free (G3, Olin 22. 11. 2026).** The whole library ships in the base app,
+    no IAP shelves: a children's app without accounts or ads, and in-app purchases in the kids
+    category would need a parent gate and stricter store rules. Paid voice for the champion
+    boards stays possible later.
+20. **Library data (G3, `docs/games_schema.md`).** Packs are generated straight into
+    `assets/games/p/` by `tool/games/build.dart` from PGN Mentor downloads and
+    `data/games/{players,sources}.yaml`; there is no committed copy under `data/games/pgn/`
+    (only `extra.pgn`, hand-checked games missing from the sources). Title matches 1886–2024
+    (PCA 1993, 1995 in the classical line; FIDE 1993–2006 as its own branch: matches, knock-out
+    finals, San Luis 2005). The golden board is a hand-made list of 64 specs; women champions
+    get 8 games each by a scoring rule (wins, mates, reign years, strong opponents, no rapid,
+    blitz or online) until G5 brings the per-champion boards. Events from player files are
+    renamed to place + year (sponsors). Opponents not in `players.yaml` are only reordered to
+    "First Last"; champions and frequent opponents are canonical. A sticker = the game was
+    played to the end (`Progress.gamesWatched`).
 
 ## Open questions for Ol1n (PLAN §8 + BATTLES §7) — with recommendations
 

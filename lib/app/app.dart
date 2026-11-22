@@ -6,6 +6,7 @@ import '../features/army/army_screen.dart';
 import '../features/battle/battle_demo_screen.dart';
 import '../core/net/feed_client.dart';
 import '../features/games/hall_screen.dart';
+import '../features/games/library_screens.dart';
 import '../features/games/live_screen.dart';
 import '../features/games/replay_screen.dart';
 import '../features/lesson/lesson_screen.dart';
@@ -23,6 +24,10 @@ final router = GoRouter(
     GoRoute(path: '/army', builder: (_, _) => const ArmyScreen()),
     GoRoute(path: '/battle', builder: (_, _) => const BattleDemoScreen()),
     GoRoute(path: '/hall', builder: (_, _) => const HallScreen()),
+    GoRoute(path: '/hall/golden', builder: (_, _) => const GoldenBoardScreen()),
+    GoRoute(path: '/hall/matches', builder: (_, _) => const MatchesScreen()),
+    GoRoute(path: '/hall/women', builder: (_, _) => const WomenScreen()),
+    GoRoute(path: '/hall/group/:id', builder: (_, s) => GroupScreen(groupId: s.pathParameters['id']!)),
     GoRoute(path: '/game/:id', builder: (_, s) => ReplayScreen(gameId: s.pathParameters['id']!)),
     GoRoute(path: '/live/:t', builder: (_, s) => LiveScreen(tournamentId: s.pathParameters['t']!)),
     GoRoute(

@@ -1,0 +1,147 @@
+# What tool/games/build.dart takes from the downloaded sources
+# (SLAVNE_PARTIE_PLAN §2, §3). Source files are PGN Mentor downloads
+# (docs/CREDITS.md); the tool strips comments, variations and extra headers.
+#
+#   dart run tool/games/build.dart <dir with events/ and players/>
+#
+# Everything under assets/games/ is generated from this file. Do not edit it.
+
+# Title matches and tournaments. `line`: classic (incl. PCA 1993, 1995),
+# fide (the split title 1993–2006). `only` keeps games between these two
+# players (the knock-out finals). `kind: tournament` for 1948, 2005, 2007.
+matches:
+  - {year: 1886, file: WorldChamp1886.pgn, line: classic}
+  - {year: 1889, file: WorldChamp1889.pgn, line: classic}
+  - {year: 1890, file: WorldChamp1890.pgn, line: classic}
+  - {year: 1892, file: WorldChamp1892.pgn, line: classic}
+  - {year: 1894, file: WorldChamp1894.pgn, line: classic}
+  - {year: 1896, file: WorldChamp1896.pgn, line: classic}
+  - {year: 1907, file: WorldChamp1907.pgn, line: classic}
+  - {year: 1908, file: WorldChamp1908.pgn, line: classic}
+  - {year: 1910, id: wch-1910a, file: WorldChamp1910a.pgn, line: classic}
+  - {year: 1910, id: wch-1910b, file: WorldChamp1910b.pgn, line: classic}
+  - {year: 1921, file: WorldChamp1921.pgn, line: classic}
+  - {year: 1927, file: WorldChamp1927.pgn, line: classic}
+  - {year: 1929, file: WorldChamp1929.pgn, line: classic}
+  - {year: 1934, file: WorldChamp1934.pgn, line: classic}
+  - {year: 1935, file: WorldChamp1935.pgn, line: classic}
+  - {year: 1937, file: WorldChamp1937.pgn, line: classic}
+  - {year: 1948, file: WorldChamp1948.pgn, line: classic, kind: tournament, place: The Hague & Moscow}
+  - {year: 1951, file: WorldChamp1951.pgn, line: classic}
+  - {year: 1954, file: WorldChamp1954.pgn, line: classic}
+  - {year: 1957, file: WorldChamp1957.pgn, line: classic}
+  - {year: 1958, file: WorldChamp1958.pgn, line: classic}
+  - {year: 1960, file: WorldChamp1960.pgn, line: classic}
+  - {year: 1961, file: WorldChamp1961.pgn, line: classic}
+  - {year: 1963, file: WorldChamp1963.pgn, line: classic}
+  - {year: 1966, file: WorldChamp1966.pgn, line: classic}
+  - {year: 1969, file: WorldChamp1969.pgn, line: classic}
+  - {year: 1972, file: WorldChamp1972.pgn, line: classic}
+  - {year: 1978, file: WorldChamp1978.pgn, line: classic}
+  - {year: 1981, file: WorldChamp1981.pgn, line: classic}
+  - {year: 1984, file: WorldChamp1984.pgn, line: classic}
+  - {year: 1985, file: WorldChamp1985.pgn, line: classic}
+  - {year: 1986, file: WorldChamp1986.pgn, line: classic}
+  - {year: 1987, file: WorldChamp1987.pgn, line: classic}
+  - {year: 1990, file: WorldChamp1990.pgn, line: classic}
+  - {year: 1993, id: wch-1993, file: PCAChamp1993.pgn, line: classic}
+  - {year: 1995, file: PCAChamp1995.pgn, line: classic}
+  - {year: 2000, file: WorldChamp2000.pgn, line: classic}
+  - {year: 2004, file: WorldChamp2004.pgn, line: classic}
+  - {year: 2006, file: WorldChamp2006.pgn, line: classic}
+  - {year: 2007, file: WorldChamp2007.pgn, line: classic, kind: tournament, place: Mexico City}
+  - {year: 2008, file: WorldChamp2008.pgn, line: classic}
+  - {year: 2010, file: WorldChamp2010.pgn, line: classic}
+  - {year: 2012, file: WorldChamp2012.pgn, line: classic}
+  - {year: 2013, file: WorldChamp2013.pgn, line: classic}
+  - {year: 2014, file: WorldChamp2014.pgn, line: classic}
+  - {year: 2016, file: WorldChamp2016.pgn, line: classic}
+  - {year: 2018, file: WorldChamp2018.pgn, line: classic}
+  - {year: 2021, file: WorldChamp2021.pgn, line: classic}
+  - {year: 2023, file: WorldChamp2023.pgn, line: classic}
+  - {year: 2024, file: WorldChamp2024.pgn, line: classic}
+
+  - {year: 1993, id: fide-1993, file: FideChamp1993.pgn, line: fide}
+  - {year: 1996, file: FideChamp1996.pgn, line: fide}
+  - {year: 1998, file: FideChamp1998.pgn, line: fide, only: [karpov, anand]}
+  - {year: 1999, file: FideChamp1999.pgn, line: fide, only: [khalifman, akopian]}
+  - {year: 2000, id: fide-2000, file: FideChamp2000.pgn, line: fide, only: [anand, shirov]}
+  - {year: 2002, file: FideChamp2002.pgn, line: fide, only: [ponomariov, ivanchuk]}
+  - {year: 2004, id: fide-2004, file: FideChamp2004.pgn, line: fide, only: [kasimdzhanov, adams]}
+  - {year: 2005, file: FideChamp2005.pgn, line: fide, kind: tournament, place: San Luis}
+
+# Zlatá šachovnice: 64 games, a1 → h8 in time order. A pick is
+# "White ~ Black ~ year" by surname; `round` or `result` settle duplicates.
+# Games already in a match above are shared by id, not copied.
+golden:
+  - 'Anderssen~Kieseritzky~1851~1-0~n=23'
+  - 'Anderssen~Dufresne~1852~1-0'
+  - 'Paulsen~Morphy~1857~0-1~r=6'
+  - 'Morphy~Isouard~1858'
+  - 'Steinitz~Zukertort~1886~1-0~r=20'
+  - 'Lasker~Bauer~1889~n=38'
+  - 'Steinitz~Chigorin~1892~1-0~r=4'
+  - 'Lasker~Steinitz~1894~1-0~r=7'
+  - 'Steinitz~Bardeleben~1895'
+  - 'Pillsbury~Lasker~1895~0-1'
+  - 'Lasker~Marshall~1907~1-0~r=14'
+  - 'Lasker~Schlechter~1910~1-0'
+  - 'Lasker~Capablanca~1914~1-0'
+  - 'Capablanca~Marshall~1918'
+  - 'Capablanca~Lasker~1921~1-0~r=5'
+  - 'Bogoljubov~Alekhine~1922~0-1'
+  - 'Capablanca~Tartakower~1924'
+  - 'Réti~Alekhine~1925~0-1'
+  - 'Alekhine~Capablanca~1927~1-0~r=34'
+  - 'Alekhine~Nimzowitsch~1930~1-0'
+  - 'Euwe~Alekhine~1935~1-0~r=26'
+  - 'Menchik~Graf~1937'
+  - 'Alekhine~Euwe~1937~1-0~r=6'
+  - 'Botvinnik~Capablanca~1938~1-0'
+  - 'Botvinnik~Keres~1948~1-0~r=10'
+  - 'Smyslov~Botvinnik~1954~1-0~r=9'
+  - 'Byrne~Fischer~1956'
+  - 'Smyslov~Botvinnik~1957~1-0~r=6'
+  - 'Tal~Smyslov~1959~1-0~r=8'
+  - 'Botvinnik~Tal~1960~0-1~r=6'
+  - 'Spassky~Bronstein~1960~1-0'
+  - 'Petrosian~Pachman~1961~1-0'
+  - 'Fischer~Benko~1963~1-0~ev=usa'
+  - 'Tal~Larsen~1965~1-0~r=10'
+  - 'Petrosian~Spassky~1966~1-0~r=10'
+  - 'Botvinnik~Portisch~1968~1-0'
+  - 'Spassky~Petrosian~1969~1-0~r=19'
+  - 'Fischer~Larsen~1971~1-0~r=1'
+  - 'Fischer~Spassky~1972~1-0~r=6'
+  - 'Karpov~Kasparov~1985~0-1~r=16'
+  - 'Kasparov~Karpov~1986~1-0~r=16'
+  - 'Kasparov~Karpov~1990~1-0~r=20'
+  - 'Polgar~Gaprindashvili~1990~0-1'
+  - 'Polgar~Spassky~1993~1-0~r=2'
+  - 'Chiburdanidze~Larsen~1993~1-0'
+  - 'Kasparov~Short~1993~1-0~r=1~ev=pca'
+  - 'Anand~Kasparov~1995~1-0~r=9'
+  - 'Kasparov~Topalov~1999~1-0'
+  - 'Kramnik~Kasparov~2000~1-0~r=10'
+  - 'Polgar~Kasparov~2002~1-0'
+  - 'Carlsen~Ernst~2004~1-0'
+  - 'Kramnik~Leko~2004~1-0'
+  - 'Kramnik~Anand~2008~0-1~r=3'
+  - 'Topalov~Anand~2010~0-1~r=12'
+  - 'Hou~Dzagnidze~2011~1-0'
+  - 'Anand~Gelfand~2012~1-0~r=8'
+  - 'Aronian~Anand~2013~0-1'
+  - 'Carlsen~Anand~2013~1-0~r=5'
+  - 'Carlsen~Karjakin~2016~1-0~r=4'
+  - 'Carlsen~Nepomniachtchi~2021~1-0~r=8'
+  - 'Ding~Nepomniachtchi~2023~1-0~r=12.1'
+  - 'Nepomniachtchi~Ding~2023~0-1'
+  - 'Gukesh~Ding~2024~1-0~r=11.1'
+  - 'Ding~Gukesh~2024~0-1~r=14.1'
+
+# Šampionky: up to `perChampion` games for each women's champion found in
+# players/, chosen by tool/games/build.dart (wins first, mates, short games,
+# strong opponents; no rapid, blitz or online). Menchik comes from `extra`.
+women:
+  perChampion: 8
+  files: [Gaprindashvili.pgn, Chiburdanidze.pgn, Xie.pgn, PolgarS.pgn, Zhu.pgn, Stefanova.pgn, Kosteniuk.pgn, Hou.pgn]

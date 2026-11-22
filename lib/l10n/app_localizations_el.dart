@@ -106,7 +106,34 @@ class AppLocalizationsEl extends AppLocalizations {
   String get hallTitle => 'Αίθουσα Δόξας';
 
   @override
-  String get hallFamous => 'Διάσημες παρτίδες';
+  String get hallGolden => 'Η χρυσή σκακιέρα';
+
+  @override
+  String get hallGoldenHint => 'Οι 64 πιο διάσημες παρτίδες';
+
+  @override
+  String get hallMatches => 'Αγώνες για το στέμμα';
+
+  @override
+  String get hallMatchesHint => 'Όλοι οι αγώνες για τον παγκόσμιο τίτλο';
+
+  @override
+  String get hallWomen => 'Πρωταθλήτριες';
+
+  @override
+  String get hallWomenHint =>
+      'Οι παγκόσμιες πρωταθλήτριες και οι παρτίδες τους';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n από $total';
+  }
+
+  @override
+  String get hallFideLine => 'Τίτλος FIDE 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Γρήγορη παρτίδα';
 
   @override
   String get replayCheck => 'Σαχ!';

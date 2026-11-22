@@ -106,7 +106,34 @@ class AppLocalizationsTa extends AppLocalizations {
   String get hallTitle => 'புகழ் மண்டபம்';
 
   @override
-  String get hallFamous => 'புகழ்பெற்ற ஆட்டங்கள்';
+  String get hallGolden => 'தங்கப் பலகை';
+
+  @override
+  String get hallGoldenHint => 'மிகப் புகழ்பெற்ற 64 ஆட்டங்கள்';
+
+  @override
+  String get hallMatches => 'மகுடத்துக்கான போட்டிகள்';
+
+  @override
+  String get hallMatchesHint =>
+      'உலக சாம்பியன் பட்டத்துக்கான எல்லாப் போட்டிகளும்';
+
+  @override
+  String get hallWomen => 'சாம்பியன் பெண்கள்';
+
+  @override
+  String get hallWomenHint => 'பெண் உலக சாம்பியன்களும் அவர்களின் ஆட்டங்களும்';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$total-இல் $n';
+  }
+
+  @override
+  String get hallFideLine => 'ஃபிடே பட்டம் 1993–2006';
+
+  @override
+  String get hallTiebreak => 'விரைவு ஆட்டம்';
 
   @override
   String get replayCheck => 'செக்!';

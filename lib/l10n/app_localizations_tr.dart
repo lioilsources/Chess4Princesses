@@ -106,7 +106,33 @@ class AppLocalizationsTr extends AppLocalizations {
   String get hallTitle => 'Şöhret Salonu';
 
   @override
-  String get hallFamous => 'Ünlü oyunlar';
+  String get hallGolden => 'Altın Tahta';
+
+  @override
+  String get hallGoldenHint => 'En ünlü 64 oyun';
+
+  @override
+  String get hallMatches => 'Taç için maçlar';
+
+  @override
+  String get hallMatchesHint => 'Tüm dünya şampiyonluğu maçları';
+
+  @override
+  String get hallWomen => 'Şampiyon kadınlar';
+
+  @override
+  String get hallWomenHint => 'Kadın dünya şampiyonları ve oyunları';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n/$total';
+  }
+
+  @override
+  String get hallFideLine => 'FIDE unvanı 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Hızlı oyun';
 
   @override
   String get replayCheck => 'Şah!';

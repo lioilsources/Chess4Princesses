@@ -106,7 +106,33 @@ class AppLocalizationsHu extends AppLocalizations {
   String get hallTitle => 'Hírességek csarnoka';
 
   @override
-  String get hallFamous => 'Híres játszmák';
+  String get hallGolden => 'Az aranytábla';
+
+  @override
+  String get hallGoldenHint => 'A 64 leghíresebb játszma';
+
+  @override
+  String get hallMatches => 'Párosmérkőzések a koronáért';
+
+  @override
+  String get hallMatchesHint => 'Minden világbajnoki párosmérkőzés';
+
+  @override
+  String get hallWomen => 'Bajnoknők';
+
+  @override
+  String get hallWomenHint => 'A női világbajnokok és játszmáik';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n/$total';
+  }
+
+  @override
+  String get hallFideLine => 'FIDE-cím 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Rapidjátszma';
 
   @override
   String get replayCheck => 'Sakk!';

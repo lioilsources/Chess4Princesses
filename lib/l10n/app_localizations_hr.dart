@@ -106,7 +106,33 @@ class AppLocalizationsHr extends AppLocalizations {
   String get hallTitle => 'Dvorana slavnih';
 
   @override
-  String get hallFamous => 'Slavne partije';
+  String get hallGolden => 'Zlatna ploča';
+
+  @override
+  String get hallGoldenHint => '64 najslavnije partije';
+
+  @override
+  String get hallMatches => 'Mečevi za krunu';
+
+  @override
+  String get hallMatchesHint => 'Svi mečevi za naslov svjetskog prvaka';
+
+  @override
+  String get hallWomen => 'Prvakinje';
+
+  @override
+  String get hallWomenHint => 'Svjetske prvakinje i njihove partije';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n od $total';
+  }
+
+  @override
+  String get hallFideLine => 'Naslov FIDE 1993.–2006.';
+
+  @override
+  String get hallTiebreak => 'Brza partija';
 
   @override
   String get replayCheck => 'Šah!';

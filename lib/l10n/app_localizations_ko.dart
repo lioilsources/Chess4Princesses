@@ -106,7 +106,33 @@ class AppLocalizationsKo extends AppLocalizations {
   String get hallTitle => '명예의 전당';
 
   @override
-  String get hallFamous => '유명한 경기';
+  String get hallGolden => '황금 체스판';
+
+  @override
+  String get hallGoldenHint => '가장 유명한 64판';
+
+  @override
+  String get hallMatches => '왕관을 건 대결';
+
+  @override
+  String get hallMatchesHint => '세계 챔피언전의 모든 경기';
+
+  @override
+  String get hallWomen => '여자 챔피언';
+
+  @override
+  String get hallWomenHint => '여자 세계 챔피언과 그들의 경기';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$total판 중 $n판';
+  }
+
+  @override
+  String get hallFideLine => 'FIDE 타이틀 1993–2006';
+
+  @override
+  String get hallTiebreak => '속기 경기';
 
   @override
   String get replayCheck => '체크!';

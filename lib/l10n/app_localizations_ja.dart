@@ -106,7 +106,33 @@ class AppLocalizationsJa extends AppLocalizations {
   String get hallTitle => 'えいゆうのへや';
 
   @override
-  String get hallFamous => 'ゆうめいなしょうぶ';
+  String get hallGolden => 'きんのチェスばん';
+
+  @override
+  String get hallGoldenHint => 'いちばん ゆうめいな 64のゲーム';
+
+  @override
+  String get hallMatches => 'おうかんを かけた たたかい';
+
+  @override
+  String get hallMatchesHint => 'せかいチャンピオンせんの ぜんぶの しあい';
+
+  @override
+  String get hallWomen => 'じょせいチャンピオン';
+
+  @override
+  String get hallWomenHint => 'じょせいの せかいチャンピオンと その ゲーム';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$totalこ中 $nこ';
+  }
+
+  @override
+  String get hallFideLine => 'FIDEタイトル 1993–2006';
+
+  @override
+  String get hallTiebreak => 'はやざしの ゲーム';
 
   @override
   String get replayCheck => 'おうて！';

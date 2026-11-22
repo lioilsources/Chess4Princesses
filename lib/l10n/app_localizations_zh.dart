@@ -106,7 +106,33 @@ class AppLocalizationsZh extends AppLocalizations {
   String get hallTitle => '名人堂';
 
   @override
-  String get hallFamous => '著名的棋局';
+  String get hallGolden => '金色棋盘';
+
+  @override
+  String get hallGoldenHint => '最著名的64盘棋';
+
+  @override
+  String get hallMatches => '王冠之战';
+
+  @override
+  String get hallMatchesHint => '所有世界冠军赛';
+
+  @override
+  String get hallWomen => '女子冠军';
+
+  @override
+  String get hallWomenHint => '女子世界冠军和她们的对局';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n/$total';
+  }
+
+  @override
+  String get hallFideLine => '国际棋联头衔 1993–2006';
+
+  @override
+  String get hallTiebreak => '快棋';
 
   @override
   String get replayCheck => '将军！';
@@ -281,7 +307,33 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get hallTitle => '名人堂';
 
   @override
-  String get hallFamous => '著名的棋局';
+  String get hallGolden => '金色棋盤';
+
+  @override
+  String get hallGoldenHint => '最著名的64盤棋';
+
+  @override
+  String get hallMatches => '王冠之戰';
+
+  @override
+  String get hallMatchesHint => '所有世界冠軍賽';
+
+  @override
+  String get hallWomen => '女子冠軍';
+
+  @override
+  String get hallWomenHint => '女子世界冠軍和她們的對局';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n/$total';
+  }
+
+  @override
+  String get hallFideLine => '國際棋聯頭銜 1993–2006';
+
+  @override
+  String get hallTiebreak => '快棋';
 
   @override
   String get replayCheck => '將軍！';

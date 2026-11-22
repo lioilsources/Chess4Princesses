@@ -7,7 +7,7 @@ import '../lessons/curriculum.dart';
 /// What the child has done. Kept small and JSON-serialisable; a drift/isar
 /// store can replace [ProgressStore] once the skill heatmap needs queries.
 class Progress {
-  const Progress({this.lessonStars = const {}, this.skills = const {}, this.unlocked = const {}, this.myArmy = 'fairies', this.rivalArmy = 'witches'});
+  const Progress({this.lessonStars = const {}, this.skills = const {}, this.unlocked = const {}, this.myArmy = 'fairies', this.rivalArmy = 'witches', this.gamesWatched = const {}});
 
   factory Progress.fromJson(Map<String, dynamic> j) => Progress(
     lessonStars: Map<String, int>.from(j['lessonStars'] as Map? ?? {}),
@@ -15,6 +15,7 @@ class Progress {
     unlocked: Set<String>.from(j['unlocked'] as List? ?? const []),
     myArmy: j['myArmy'] as String? ?? 'fairies',
     rivalArmy: j['rivalArmy'] as String? ?? 'witches',
+    gamesWatched: Set<String>.from(j['gamesWatched'] as List? ?? const []),
   );
 
   /// Best stars per lesson id (1..3).
@@ -29,12 +30,17 @@ class Progress {
   final String myArmy;
   final String rivalArmy;
 
+  /// Library games played to the end: a sticker on their square
+  /// (SLAVNE_PARTIE_PLAN §1).
+  final Set<String> gamesWatched;
+
   Map<String, dynamic> toJson() => {
     'lessonStars': lessonStars,
     'skills': skills,
     'unlocked': unlocked.toList(),
     'myArmy': myArmy,
     'rivalArmy': rivalArmy,
+    'gamesWatched': gamesWatched.toList(),
   };
 
   int starsOf(String lessonId) => lessonStars[lessonId] ?? 0;
@@ -60,6 +66,7 @@ class Progress {
     unlocked: {...unlocked, ?unlock},
     myArmy: myArmy,
     rivalArmy: rivalArmy,
+    gamesWatched: gamesWatched,
   );
 
   Progress withArmies({String? mine, String? rival}) => Progress(
@@ -68,6 +75,16 @@ class Progress {
     unlocked: unlocked,
     myArmy: mine ?? myArmy,
     rivalArmy: rival ?? rivalArmy,
+    gamesWatched: gamesWatched,
+  );
+
+  Progress withGameWatched(String id) => Progress(
+    lessonStars: lessonStars,
+    skills: skills,
+    unlocked: unlocked,
+    myArmy: myArmy,
+    rivalArmy: rivalArmy,
+    gamesWatched: {...gamesWatched, id},
   );
 }
 

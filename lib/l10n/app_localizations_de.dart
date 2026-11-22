@@ -106,7 +106,33 @@ class AppLocalizationsDe extends AppLocalizations {
   String get hallTitle => 'Ruhmeshalle';
 
   @override
-  String get hallFamous => 'Berühmte Partien';
+  String get hallGolden => 'Das goldene Brett';
+
+  @override
+  String get hallGoldenHint => 'Die 64 berühmtesten Partien';
+
+  @override
+  String get hallMatches => 'Kämpfe um die Krone';
+
+  @override
+  String get hallMatchesHint => 'Alle Weltmeisterschaftskämpfe';
+
+  @override
+  String get hallWomen => 'Weltmeisterinnen';
+
+  @override
+  String get hallWomenHint => 'Weltmeisterinnen und ihre Partien';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n von $total';
+  }
+
+  @override
+  String get hallFideLine => 'FIDE-Titel 1993–2006';
+
+  @override
+  String get hallTiebreak => 'Schnellpartie';
 
   @override
   String get replayCheck => 'Schach!';

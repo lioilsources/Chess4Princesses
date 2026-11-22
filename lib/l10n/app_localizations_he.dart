@@ -106,7 +106,33 @@ class AppLocalizationsHe extends AppLocalizations {
   String get hallTitle => 'היכל התהילה';
 
   @override
-  String get hallFamous => 'משחקים מפורסמים';
+  String get hallGolden => 'הלוח המוזהב';
+
+  @override
+  String get hallGoldenHint => '64 המשחקים המפורסמים ביותר';
+
+  @override
+  String get hallMatches => 'קרבות על הכתר';
+
+  @override
+  String get hallMatchesHint => 'כל הקרבות על אליפות העולם';
+
+  @override
+  String get hallWomen => 'אלופות';
+
+  @override
+  String get hallWomenHint => 'אלופות העולם והמשחקים שלהן';
+
+  @override
+  String hallStickers(int n, int total) {
+    return '$n מתוך $total';
+  }
+
+  @override
+  String get hallFideLine => 'תואר פיד״ה 1993–2006';
+
+  @override
+  String get hallTiebreak => 'משחק מהיר';
 
   @override
   String get replayCheck => 'שח!';
