@@ -1,0 +1,63 @@
+# Babylon.js web client (babylon/) → GitHub Pages.
+# Site layout: docs/ unchanged at the root (landing, privacy, support), the game under /play/.
+# Requires Settings → Pages → Source: "GitHub Actions" (set by the repo owner, not by this workflow).
+# F1 adds the `golden` job (tool/dump_vectors.dart → babylon/test/golden/).
+name: Web
+
+on:
+  push:
+    branches: [main]
+    paths: ['babylon/**', 'docs/**', 'lib/core/**', 'assets/armies/**', '.github/workflows/web.yml']
+  pull_request:
+    paths: ['babylon/**', 'lib/core/**', 'assets/armies/**', '.github/workflows/web.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: web-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gate:
+    name: Lint, tests, build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: babylon
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: babylon/package-lock.json
+      - run: npm ci
+      - run: npm run gate
+      - name: Assemble site (docs/ at root, game under /play/)
+        working-directory: .
+        run: |
+          mkdir -p _site
+          if [ -d docs ]; then cp -R docs/. _site/; fi
+          mkdir -p _site/play
+          cp -R babylon/dist/. _site/play/
+          touch _site/.nojekyll
+      - if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: [gate]
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}play/
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

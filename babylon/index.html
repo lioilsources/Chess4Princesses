@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#7B4FA0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="Šachové království — šachy pro malé princezny a prince, hraj v prohlížeči.">
+  <title>Šachové království</title>
+</head>
+<body>
+  <canvas id="game"></canvas>
+  <div id="bar" class="hud">
+    <img id="turn" alt="" hidden>
+    <button class="round" type="button" data-restart aria-label="↻">↻</button>
+  </div>
+  <div id="end" class="hud" hidden>
+    <div class="card">
+      <span class="mark"></span>
+      <img alt="" hidden>
+      <button class="round" type="button" data-restart aria-label="↻">↻</button>
+    </div>
+  </div>
+  <div id="fps" class="hud" hidden></div>
+  <script type="module" src="/src/game/main.ts"></script>
+</body>
+</html>
