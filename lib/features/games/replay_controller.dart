@@ -12,7 +12,7 @@ import '../board/chess_board.dart';
 
 /// What the narrator says after a ply or at the end (SLAVNE_PARTIE_PLAN §5:
 /// generic event lines cover every game).
-enum ReplayLine { check, mate, castle, promotion, sacrifice, endMate, endResign, endDraw, endUnfinished }
+enum ReplayLine { check, mate, castle, promotion, sacrifice, endMate, endResign, endDraw, endUnfinished, timeTrouble }
 
 /// A full-screen battle waiting to be shown.
 class ReplayBattle {
@@ -26,10 +26,10 @@ typedef ReplayTimer = Timer Function(Duration, void Function());
 /// Plays a [GameRecord] like a film (story mode) or step by step
 /// (chronicle mode for the parent). Pure state + a timer; the screen renders.
 class ReplayController extends ChangeNotifier {
-  ReplayController(this.record, {this.onSfx, ReplayTimer? timer})
+  ReplayController(this.record, {this.onSfx, ReplayTimer? timer, bool battlesOn = true})
     : _timer = timer ?? Timer.new,
       moments = {for (final m in findMoments(record)) m.ply: m} {
-    battles = battlePlies(moments.values.toList());
+    battles = battlesOn ? battlePlies(moments.values.toList()) : <int>{};
   }
 
   final GameRecord record;

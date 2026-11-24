@@ -8,15 +8,19 @@ import 'piece_glyph.dart';
 /// The plate tells "mine" (gold) from "theirs" (dark) even when both armies
 /// look alike (PLAN §3). Without art, an army-coloured disc with the glyph.
 class PieceToken extends StatelessWidget {
-  const PieceToken({super.key, required this.piece, required this.army, required this.mine, required this.size});
+  const PieceToken({super.key, required this.piece, required this.army, required this.mine, required this.size, this.classic = false});
 
   final Piece piece;
   final Army army;
   final bool mine;
   final double size;
 
+  /// Plain chess figure in white/black instead of the army character.
+  final bool classic;
+
   @override
   Widget build(BuildContext context) {
+    if (classic) return SizedBox.square(dimension: size, child: Center(child: ClassicPiece(piece: piece, size: size)));
     final plate = mine ? const Color(0xFFFFC94D) : const Color(0xFF4A3B5C);
     final sprite = army.spriteAsset(piece.type);
     return SizedBox.square(
@@ -73,4 +77,34 @@ class PieceToken extends StatelessWidget {
       style: TextStyle(fontSize: size * .6, height: 1.0, color: Color(army.dark)),
     ),
   );
+}
+
+/// A classic chess figure: filled glyph in the side's colour with a contrasting
+/// outline, so white and black read on both square colours.
+class ClassicPiece extends StatelessWidget {
+  const ClassicPiece({super.key, required this.piece, required this.size});
+  final Piece piece;
+  final double size;
+
+  @override
+  Widget build(BuildContext context) {
+    final white = piece.side == Side.white;
+    final glyph = pieceGlyph(piece.type);
+    final style = TextStyle(fontSize: size * .82, height: 1.0, fontFamilyFallback: const ['Apple Symbols', 'Noto Sans Symbols 2', 'DejaVu Sans']);
+    return Stack(
+      alignment: Alignment.center,
+      children: [
+        Text(
+          glyph,
+          style: style.copyWith(
+            foreground: Paint()
+              ..style = PaintingStyle.stroke
+              ..strokeWidth = size * .07
+              ..color = white ? const Color(0xFF2B2233) : const Color(0xFFF5F0FA),
+          ),
+        ),
+        Text(glyph, style: style.copyWith(color: white ? const Color(0xFFFFFFFF) : const Color(0xFF1E1724))),
+      ],
+    );
+  }
 }

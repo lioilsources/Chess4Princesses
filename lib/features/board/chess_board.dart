@@ -32,6 +32,7 @@ class BoardMarks {
     this.glow = const {},
     this.done = const {},
     this.hintMove,
+    this.arrows = const [],
   });
 
   final Square? selected;
@@ -47,6 +48,17 @@ class BoardMarks {
   /// Already-tapped targets.
   final Set<Square> done;
   final (Square, Square)? hintMove;
+
+  /// Arrows over the board (adviser suggestions), drawn in order.
+  final List<BoardArrow> arrows;
+}
+
+/// An arrow from one square to another.
+class BoardArrow {
+  const BoardArrow(this.from, this.to, this.color);
+  final Square from;
+  final Square to;
+  final Color color;
 }
 
 /// A one-shot animation on a square; [tick] changes to replay it.
@@ -81,6 +93,8 @@ class ChessBoard extends StatelessWidget {
     this.onDrop,
     this.showCoordinates = true,
     this.slide,
+    this.frameColor,
+    this.classic = false,
   });
 
   final Position position;
@@ -98,6 +112,12 @@ class ChessBoard extends StatelessWidget {
   final bool showCoordinates;
   final MoveSlide? slide;
 
+  /// Frame colour; live mode uses another one while the viewer is away from the game.
+  final Color? frameColor;
+
+  /// Classic chess pieces instead of the army characters (parent setting).
+  final bool classic;
+
   static const light = Color(0xFFFFFAF0);
   static const dark = Color(0xFFC9A3E0);
   static const frame = Color(0xFF7B4FA0);
@@ -114,6 +134,7 @@ class ChessBoard extends StatelessWidget {
           final cell = (side - label - 8) / 8;
           final files = List.generate(8, (i) => mySide == Side.white ? i : 7 - i);
           final ranks = List.generate(8, (i) => mySide == Side.white ? 7 - i : i);
+          final frame = frameColor ?? ChessBoard.frame;
           final coordStyle = TextStyle(fontSize: label * .7, fontWeight: FontWeight.w700, color: frame);
 
           return SizedBox(
@@ -141,6 +162,13 @@ class ChessBoard extends StatelessWidget {
                               ],
                             ),
                             ?_slidingPiece(files, ranks, cell),
+                            if (marks.arrows.isNotEmpty)
+                              IgnorePointer(
+                                child: CustomPaint(
+                                  size: Size(cell * 8, cell * 8),
+                                  painter: _ArrowPainter(marks.arrows, (q) => Offset((files.indexOf(q.file) + .5) * cell, (ranks.indexOf(q.rank) + .5) * cell), cell),
+                                ),
+                              ),
                           ],
                         ),
                       ),
@@ -180,7 +208,7 @@ class ChessBoard extends StatelessWidget {
         child: SizedBox(
           width: cell,
           height: cell,
-          child: Center(child: PieceToken(piece: piece, army: armyOf(piece.side), mine: piece.side == mySide, size: cell)),
+          child: Center(child: PieceToken(piece: piece, army: armyOf(piece.side), mine: piece.side == mySide, size: cell, classic: classic)),
         ),
       ),
     );
@@ -194,7 +222,7 @@ class ChessBoard extends StatelessWidget {
 
     Widget? pieceWidget;
     if (piece != null) {
-      final token = PieceToken(piece: piece, army: armyOf(piece.side), mine: piece.side == mySide, size: size);
+      final token = PieceToken(piece: piece, army: armyOf(piece.side), mine: piece.side == mySide, size: size, classic: classic);
       Widget w = token;
       if (shake.square == s) w = _Shake(key: ValueKey('shake${shake.tick}'), child: w);
       if (canDrag?.call(s) ?? false) {
@@ -335,4 +363,40 @@ class _Burst extends StatelessWidget {
       ),
     ),
   );
+}
+
+class _ArrowPainter extends CustomPainter {
+  _ArrowPainter(this.arrows, this.center, this.cell);
+  final List<BoardArrow> arrows;
+  final Offset Function(Square) center;
+  final double cell;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    for (final a in arrows.reversed) {
+      final from = center(a.from), to = center(a.to);
+      final d = to - from;
+      final len = d.distance;
+      if (len == 0) continue;
+      final u = d / len;
+      final head = cell * .38;
+      final tip = to - u * (cell * .1);
+      final base = tip - u * head;
+      final n = Offset(-u.dy, u.dx);
+      final paint = Paint()
+        ..color = a.color.withValues(alpha: .8)
+        ..strokeWidth = cell * .16
+        ..strokeCap = StrokeCap.round;
+      canvas.drawLine(from, base, paint);
+      final path = Path()
+        ..moveTo(tip.dx, tip.dy)
+        ..lineTo((base + n * head * .6).dx, (base + n * head * .6).dy)
+        ..lineTo((base - n * head * .6).dx, (base - n * head * .6).dy)
+        ..close();
+      canvas.drawPath(path, Paint()..color = a.color.withValues(alpha: .8));
+    }
+  }
+
+  @override
+  bool shouldRepaint(_ArrowPainter old) => old.arrows != arrows;
 }

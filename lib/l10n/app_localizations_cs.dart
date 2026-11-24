@@ -212,4 +212,72 @@ class AppLocalizationsCs extends AppLocalizations {
   String liveGame(int n) {
     return 'Partie $n';
   }
+
+  @override
+  String get settingsTitle => 'Nastavení';
+
+  @override
+  String get settingsBattles => 'Bitvy při braní';
+
+  @override
+  String get settingsBattlesHint =>
+      'Vypnuté: sebraná figurka jen zmizí v obláčku.';
+
+  @override
+  String get settingsClassic => 'Klasické šachové figurky';
+
+  @override
+  String get settingsClassicHint =>
+      'V partiích místo postav armád. Bitvy se pak neukazují.';
+
+  @override
+  String get liveBadge => 'Živě';
+
+  @override
+  String get liveSkip => 'Přeskočit';
+
+  @override
+  String get liveTryOwn => 'Zkusím to sám';
+
+  @override
+  String get liveAdviser => 'Rádce';
+
+  @override
+  String get liveBackToGame => 'Zpět k partii';
+
+  @override
+  String get liveNewMove => 'Nový tah!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Nové tahy: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Dochází čas!';
+
+  @override
+  String get liveAdviserThinking => 'Rádce ještě přemýšlí.';
+
+  @override
+  String get liveAdviserContinue => 'Zkusím pokračovat sám';
+
+  @override
+  String get liveAhead => 'Kdo vede';
+
+  @override
+  String get liveClockApprox => 'Čas je přibližný';
+
+  @override
+  String get liveReset => 'Od začátku';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Začátek v $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'hloubka $n';
+  }
 }

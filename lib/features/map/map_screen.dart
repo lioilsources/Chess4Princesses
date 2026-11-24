@@ -64,6 +64,7 @@ class MapScreen extends ConsumerWidget {
                   IconButton(iconSize: 36, tooltip: l10n.hallTitle, icon: const Icon(Icons.emoji_events_rounded), onPressed: () => context.push('/hall')),
                   IconButton(iconSize: 36, tooltip: l10n.battleDemo, icon: const Icon(Icons.bolt_rounded), onPressed: () => context.push('/battle')),
                   IconButton(iconSize: 36, tooltip: l10n.armies, icon: const Icon(Icons.shield_rounded), onPressed: () => context.push('/army')),
+                  IconButton(iconSize: 36, tooltip: l10n.settingsTitle, icon: const Icon(Icons.settings_rounded), onPressed: () => context.push('/settings')),
                 ],
               ),
             ),

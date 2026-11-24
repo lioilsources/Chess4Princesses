@@ -213,4 +213,72 @@ class AppLocalizationsEn extends AppLocalizations {
   String liveGame(int n) {
     return 'Game $n';
   }
+
+  @override
+  String get settingsTitle => 'Settings';
+
+  @override
+  String get settingsBattles => 'Battles on captures';
+
+  @override
+  String get settingsBattlesHint =>
+      'Off: a captured piece just vanishes in a puff.';
+
+  @override
+  String get settingsClassic => 'Classic chess pieces';
+
+  @override
+  String get settingsClassicHint =>
+      'In games, instead of the army characters. Battles are then hidden.';
+
+  @override
+  String get liveBadge => 'Live';
+
+  @override
+  String get liveSkip => 'Skip';
+
+  @override
+  String get liveTryOwn => 'I\'ll try it myself';
+
+  @override
+  String get liveAdviser => 'Adviser';
+
+  @override
+  String get liveBackToGame => 'Back to the game';
+
+  @override
+  String get liveNewMove => 'New move!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'New moves: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Time is running out!';
+
+  @override
+  String get liveAdviserThinking => 'The adviser is still thinking.';
+
+  @override
+  String get liveAdviserContinue => 'I\'ll go on myself';
+
+  @override
+  String get liveAhead => 'Who is ahead';
+
+  @override
+  String get liveClockApprox => 'The time is approximate';
+
+  @override
+  String get liveReset => 'From the start';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Starts at $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'depth $n';
+  }
 }

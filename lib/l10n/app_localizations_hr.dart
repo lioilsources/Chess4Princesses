@@ -214,4 +214,72 @@ class AppLocalizationsHr extends AppLocalizations {
   String liveGame(int n) {
     return 'Partija $n';
   }
+
+  @override
+  String get settingsTitle => 'Postavke';
+
+  @override
+  String get settingsBattles => 'Bitke pri uzimanju';
+
+  @override
+  String get settingsBattlesHint =>
+      'Isključeno: uzeta figura samo nestane u oblačiću.';
+
+  @override
+  String get settingsClassic => 'Klasične šahovske figure';
+
+  @override
+  String get settingsClassicHint =>
+      'U partijama umjesto likova vojski. Tada se bitke ne prikazuju.';
+
+  @override
+  String get liveBadge => 'Uživo';
+
+  @override
+  String get liveSkip => 'Preskoči';
+
+  @override
+  String get liveTryOwn => 'Probat ću sam';
+
+  @override
+  String get liveAdviser => 'Savjetnik';
+
+  @override
+  String get liveBackToGame => 'Natrag na partiju';
+
+  @override
+  String get liveNewMove => 'Novi potez!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Novi potezi: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Vrijeme istječe!';
+
+  @override
+  String get liveAdviserThinking => 'Savjetnik još razmišlja.';
+
+  @override
+  String get liveAdviserContinue => 'Nastavit ću sam';
+
+  @override
+  String get liveAhead => 'Tko vodi';
+
+  @override
+  String get liveClockApprox => 'Vrijeme je približno';
+
+  @override
+  String get liveReset => 'Od početka';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Počinje u $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'dubina $n';
+  }
 }

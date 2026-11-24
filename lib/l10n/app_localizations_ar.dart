@@ -212,4 +212,72 @@ class AppLocalizationsAr extends AppLocalizations {
   String liveGame(int n) {
     return 'المباراة $n';
   }
+
+  @override
+  String get settingsTitle => 'الإعدادات';
+
+  @override
+  String get settingsBattles => 'معارك عند الأسر';
+
+  @override
+  String get settingsBattlesHint =>
+      'عند الإيقاف: تختفي القطعة المأسورة في سحابة صغيرة.';
+
+  @override
+  String get settingsClassic => 'قطع شطرنج كلاسيكية';
+
+  @override
+  String get settingsClassicHint =>
+      'في المباريات بدلًا من شخصيات الجيوش. عندها لا تظهر المعارك.';
+
+  @override
+  String get liveBadge => 'مباشر';
+
+  @override
+  String get liveSkip => 'تخطٍّ';
+
+  @override
+  String get liveTryOwn => 'سأجرّب بنفسي';
+
+  @override
+  String get liveAdviser => 'المستشار';
+
+  @override
+  String get liveBackToGame => 'العودة إلى المباراة';
+
+  @override
+  String get liveNewMove => 'حركة جديدة!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'حركات جديدة: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'الوقت ينفد!';
+
+  @override
+  String get liveAdviserThinking => 'المستشار ما زال يفكّر.';
+
+  @override
+  String get liveAdviserContinue => 'سأكمل بنفسي';
+
+  @override
+  String get liveAhead => 'من المتقدّم';
+
+  @override
+  String get liveClockApprox => 'الوقت تقريبي';
+
+  @override
+  String get liveReset => 'من البداية';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'تبدأ في $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'العمق $n';
+  }
 }

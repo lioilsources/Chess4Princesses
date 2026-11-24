@@ -6,6 +6,7 @@ import '../core/lessons/curriculum.dart';
 import '../core/lessons/lesson.dart';
 import '../core/audio/sounds.dart';
 import '../core/progress/progress.dart';
+import '../core/settings/settings.dart';
 import '../core/voice/narrator.dart';
 
 final curriculumProvider = FutureProvider<Curriculum>(
@@ -71,3 +72,19 @@ final boardArmiesProvider = FutureProvider<(Army, Army)>((ref) async {
   final p = await ref.watch(progressProvider.future);
   return (armies[p.myArmy] ?? armies.values.first, armies[p.rivalArmy] ?? armies.values.last);
 });
+
+final settingsStoreProvider = Provider((ref) => SettingsStore());
+
+/// Parent settings; [Settings] defaults until loaded.
+final settingsProvider = AsyncNotifierProvider<SettingsNotifier, Settings>(SettingsNotifier.new);
+
+class SettingsNotifier extends AsyncNotifier<Settings> {
+  @override
+  Future<Settings> build() => ref.read(settingsStoreProvider).load();
+
+  Future<void> change(Settings Function(Settings) edit) async {
+    final next = edit(state.value ?? const Settings());
+    state = AsyncData(next);
+    await ref.read(settingsStoreProvider).save(next);
+  }
+}

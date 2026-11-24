@@ -214,4 +214,72 @@ class AppLocalizationsHu extends AppLocalizations {
   String liveGame(int n) {
     return '$n. játszma';
   }
+
+  @override
+  String get settingsTitle => 'Beállítások';
+
+  @override
+  String get settingsBattles => 'Csaták ütéskor';
+
+  @override
+  String get settingsBattlesHint =>
+      'Kikapcsolva: a leütött bábu csak eltűnik egy felhőben.';
+
+  @override
+  String get settingsClassic => 'Klasszikus sakkfigurák';
+
+  @override
+  String get settingsClassicHint =>
+      'A játszmákban a seregek szereplői helyett. Ilyenkor nincsenek csaták.';
+
+  @override
+  String get liveBadge => 'Élő';
+
+  @override
+  String get liveSkip => 'Átugrás';
+
+  @override
+  String get liveTryOwn => 'Kipróbálom magam';
+
+  @override
+  String get liveAdviser => 'Tanácsadó';
+
+  @override
+  String get liveBackToGame => 'Vissza a játszmához';
+
+  @override
+  String get liveNewMove => 'Új lépés!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Új lépések: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Fogy az idő!';
+
+  @override
+  String get liveAdviserThinking => 'A tanácsadó még gondolkodik.';
+
+  @override
+  String get liveAdviserContinue => 'Folytatom magam';
+
+  @override
+  String get liveAhead => 'Ki vezet';
+
+  @override
+  String get liveClockApprox => 'Az idő hozzávetőleges';
+
+  @override
+  String get liveReset => 'Az elejéről';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Kezdés: $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'mélység $n';
+  }
 }

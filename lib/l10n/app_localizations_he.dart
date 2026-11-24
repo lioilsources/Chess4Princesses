@@ -211,4 +211,71 @@ class AppLocalizationsHe extends AppLocalizations {
   String liveGame(int n) {
     return 'משחק $n';
   }
+
+  @override
+  String get settingsTitle => 'הגדרות';
+
+  @override
+  String get settingsBattles => 'קרבות בזמן הכאה';
+
+  @override
+  String get settingsBattlesHint => 'כבוי: הכלי שהוכה פשוט נעלם בענן.';
+
+  @override
+  String get settingsClassic => 'כלי שחמט קלאסיים';
+
+  @override
+  String get settingsClassicHint =>
+      'במשחקים במקום דמויות הצבאות. אז הקרבות לא מוצגים.';
+
+  @override
+  String get liveBadge => 'שידור חי';
+
+  @override
+  String get liveSkip => 'דלג';
+
+  @override
+  String get liveTryOwn => 'אנסה בעצמי';
+
+  @override
+  String get liveAdviser => 'יועץ';
+
+  @override
+  String get liveBackToGame => 'חזרה למשחק';
+
+  @override
+  String get liveNewMove => 'מסע חדש!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'מסעים חדשים: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'הזמן אוזל!';
+
+  @override
+  String get liveAdviserThinking => 'היועץ עדיין חושב.';
+
+  @override
+  String get liveAdviserContinue => 'אמשיך בעצמי';
+
+  @override
+  String get liveAhead => 'מי מוביל';
+
+  @override
+  String get liveClockApprox => 'הזמן משוער';
+
+  @override
+  String get liveReset => 'מההתחלה';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'מתחיל ב־$time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'עומק $n';
+  }
 }

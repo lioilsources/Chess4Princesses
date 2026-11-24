@@ -57,9 +57,10 @@ final roundGamesProvider = FutureProvider.family<Cached<List<GameRecord>>, (Stri
   final (tour, round) = arg;
   final prefs = await SharedPreferences.getInstance();
   final key = _roundKey(tour, round.id);
+  // A running round keeps games without moves yet: they are about to start.
   List<GameRecord> parse(String pgn) => [
     for (final g in parsePgn(pgn))
-      if (g.sans.isNotEmpty) GameRecord.fromPgn(g),
+      if (g.sans.isNotEmpty || (round.state != RoundState.finished && g.result == '*')) GameRecord.fromPgn(g),
   ];
   final stored = prefs.getString(key);
   if (stored != null && round.state == RoundState.finished) return Cached(parse(stored), offline: false);

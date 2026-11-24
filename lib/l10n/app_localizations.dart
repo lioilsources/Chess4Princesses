@@ -554,6 +554,126 @@ abstract class AppLocalizations {
   /// In cs, this message translates to:
   /// **'Partie {n}'**
   String liveGame(int n);
+
+  /// No description provided for @settingsTitle.
+  ///
+  /// In cs, this message translates to:
+  /// **'Nastavení'**
+  String get settingsTitle;
+
+  /// No description provided for @settingsBattles.
+  ///
+  /// In cs, this message translates to:
+  /// **'Bitvy při braní'**
+  String get settingsBattles;
+
+  /// No description provided for @settingsBattlesHint.
+  ///
+  /// In cs, this message translates to:
+  /// **'Vypnuté: sebraná figurka jen zmizí v obláčku.'**
+  String get settingsBattlesHint;
+
+  /// No description provided for @settingsClassic.
+  ///
+  /// In cs, this message translates to:
+  /// **'Klasické šachové figurky'**
+  String get settingsClassic;
+
+  /// No description provided for @settingsClassicHint.
+  ///
+  /// In cs, this message translates to:
+  /// **'V partiích místo postav armád. Bitvy se pak neukazují.'**
+  String get settingsClassicHint;
+
+  /// No description provided for @liveBadge.
+  ///
+  /// In cs, this message translates to:
+  /// **'Živě'**
+  String get liveBadge;
+
+  /// No description provided for @liveSkip.
+  ///
+  /// In cs, this message translates to:
+  /// **'Přeskočit'**
+  String get liveSkip;
+
+  /// No description provided for @liveTryOwn.
+  ///
+  /// In cs, this message translates to:
+  /// **'Zkusím to sám'**
+  String get liveTryOwn;
+
+  /// No description provided for @liveAdviser.
+  ///
+  /// In cs, this message translates to:
+  /// **'Rádce'**
+  String get liveAdviser;
+
+  /// No description provided for @liveBackToGame.
+  ///
+  /// In cs, this message translates to:
+  /// **'Zpět k partii'**
+  String get liveBackToGame;
+
+  /// No description provided for @liveNewMove.
+  ///
+  /// In cs, this message translates to:
+  /// **'Nový tah!'**
+  String get liveNewMove;
+
+  /// No description provided for @liveNewMoves.
+  ///
+  /// In cs, this message translates to:
+  /// **'Nové tahy: {n}'**
+  String liveNewMoves(int n);
+
+  /// No description provided for @liveTimeTrouble.
+  ///
+  /// In cs, this message translates to:
+  /// **'Dochází čas!'**
+  String get liveTimeTrouble;
+
+  /// No description provided for @liveAdviserThinking.
+  ///
+  /// In cs, this message translates to:
+  /// **'Rádce ještě přemýšlí.'**
+  String get liveAdviserThinking;
+
+  /// No description provided for @liveAdviserContinue.
+  ///
+  /// In cs, this message translates to:
+  /// **'Zkusím pokračovat sám'**
+  String get liveAdviserContinue;
+
+  /// No description provided for @liveAhead.
+  ///
+  /// In cs, this message translates to:
+  /// **'Kdo vede'**
+  String get liveAhead;
+
+  /// No description provided for @liveClockApprox.
+  ///
+  /// In cs, this message translates to:
+  /// **'Čas je přibližný'**
+  String get liveClockApprox;
+
+  /// No description provided for @liveReset.
+  ///
+  /// In cs, this message translates to:
+  /// **'Od začátku'**
+  String get liveReset;
+
+  /// No description provided for @liveStartsAt.
+  ///
+  /// In cs, this message translates to:
+  /// **'Začátek v {time}'**
+  String liveStartsAt(String time);
+
+  /// No description provided for @liveDepth.
+  ///
+  /// In cs, this message translates to:
+  /// **'hloubka {n}'**
+  String liveDepth(int n);
 }
 
 class _AppLocalizationsDelegate

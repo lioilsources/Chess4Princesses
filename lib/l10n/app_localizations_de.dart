@@ -215,4 +215,72 @@ class AppLocalizationsDe extends AppLocalizations {
   String liveGame(int n) {
     return 'Partie $n';
   }
+
+  @override
+  String get settingsTitle => 'Einstellungen';
+
+  @override
+  String get settingsBattles => 'Kämpfe beim Schlagen';
+
+  @override
+  String get settingsBattlesHint =>
+      'Aus: eine geschlagene Figur verschwindet nur in einer Wolke.';
+
+  @override
+  String get settingsClassic => 'Klassische Schachfiguren';
+
+  @override
+  String get settingsClassicHint =>
+      'In Partien statt der Armeefiguren. Kämpfe werden dann nicht gezeigt.';
+
+  @override
+  String get liveBadge => 'Live';
+
+  @override
+  String get liveSkip => 'Überspringen';
+
+  @override
+  String get liveTryOwn => 'Ich probiere es selbst';
+
+  @override
+  String get liveAdviser => 'Ratgeber';
+
+  @override
+  String get liveBackToGame => 'Zurück zur Partie';
+
+  @override
+  String get liveNewMove => 'Neuer Zug!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Neue Züge: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Die Zeit wird knapp!';
+
+  @override
+  String get liveAdviserThinking => 'Der Ratgeber denkt noch nach.';
+
+  @override
+  String get liveAdviserContinue => 'Ich spiele selbst weiter';
+
+  @override
+  String get liveAhead => 'Wer führt';
+
+  @override
+  String get liveClockApprox => 'Die Zeit ist ungefähr';
+
+  @override
+  String get liveReset => 'Von vorn';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Beginn um $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'Tiefe $n';
+  }
 }

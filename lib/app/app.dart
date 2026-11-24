@@ -7,11 +7,13 @@ import '../features/battle/battle_demo_screen.dart';
 import '../core/net/feed_client.dart';
 import '../features/games/hall_screen.dart';
 import '../features/games/library_screens.dart';
+import '../features/games/live_game_screen.dart';
 import '../features/games/live_screen.dart';
 import '../features/games/replay_screen.dart';
 import '../features/lesson/lesson_screen.dart';
 import '../features/map/map_screen.dart';
 import '../features/map/module_screen.dart';
+import '../features/settings/settings_screen.dart';
 import '../l10n/app_localizations.dart';
 
 final router = GoRouter(
@@ -35,9 +37,14 @@ final router = GoRouter(
       path: '/live/:t/:r',
       builder: (_, s) => switch (s.extra) {
         final FeedRound round => LiveRoundScreen(tournamentId: s.pathParameters['t']!, round: round),
-        _ => LiveScreen(tournamentId: s.pathParameters['t']!),
+        _ => LiveRoundLoader(tournamentId: s.pathParameters['t']!, roundId: s.pathParameters['r']!),
       },
     ),
+    GoRoute(
+      path: '/live/:t/:r/:g',
+      builder: (_, s) => LiveGameScreen(tournamentId: s.pathParameters['t']!, roundId: s.pathParameters['r']!, gameIndex: int.tryParse(s.pathParameters['g']!) ?? 0),
+    ),
+    GoRoute(path: '/settings', builder: (_, _) => const SettingsScreen()),
   ],
 );
 
