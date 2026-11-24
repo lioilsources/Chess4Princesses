@@ -35,6 +35,8 @@
   "hallMatchesHint": "Όλοι οι αγώνες για τον παγκόσμιο τίτλο",
   "hallWomen": "Πρωταθλήτριες",
   "hallWomenHint": "Οι παγκόσμιες πρωταθλήτριες και οι παρτίδες τους",
+  "hallChallenge": "Πρωταθλητής και διεκδικητής",
+  "hallChallengeHint": "Οι ωραιότερες νίκες και των δύο παικτών του αγώνα για τον τίτλο {year}",
   "hallStickers": "{n} από {total}",
   "hallFideLine": "Τίτλος FIDE 1993–2006",
   "hallTiebreak": "Γρήγορη παρτίδα",

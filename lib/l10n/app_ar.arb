@@ -35,6 +35,8 @@
   "hallMatchesHint": "كل مباريات بطولة العالم",
   "hallWomen": "البطلات",
   "hallWomenHint": "بطلات العالم ومبارياتهن",
+  "hallChallenge": "البطل والمتحدي",
+  "hallChallengeHint": "أجمل انتصارات لاعبَي مباراة اللقب {year}",
   "hallStickers": "{n} من {total}",
   "hallFideLine": "لقب الفيديه 1993–2006",
   "hallTiebreak": "مباراة سريعة",

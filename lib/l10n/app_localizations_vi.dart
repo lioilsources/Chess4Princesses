@@ -124,6 +124,14 @@ class AppLocalizationsVi extends AppLocalizations {
   String get hallWomenHint => 'Các nữ vô địch thế giới và ván cờ của họ';
 
   @override
+  String get hallChallenge => 'Nhà vô địch và người thách đấu';
+
+  @override
+  String hallChallengeHint(String year) {
+    return 'Những chiến thắng đẹp nhất của hai kỳ thủ trận tranh ngôi $year';
+  }
+
+  @override
   String hallStickers(int n, int total) {
     return '$n/$total';
   }

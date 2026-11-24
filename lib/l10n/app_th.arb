@@ -35,6 +35,8 @@
   "hallMatchesHint": "ทุกแมตช์ชิงแชมป์โลก",
   "hallWomen": "แชมป์หญิง",
   "hallWomenHint": "แชมป์โลกหญิงและเกมของพวกเธอ",
+  "hallChallenge": "แชมป์และผู้ท้าชิง",
+  "hallChallengeHint": "ชัยชนะที่สวยที่สุดของผู้เล่นทั้งสองในแมตช์ชิงแชมป์ {year}",
   "hallStickers": "{n} จาก {total}",
   "hallFideLine": "ตำแหน่ง FIDE 1993–2006",
   "hallTiebreak": "เกมเร็ว",

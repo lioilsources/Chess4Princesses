@@ -35,6 +35,8 @@
   "hallMatchesHint": "Все матчи за звание чемпиона мира",
   "hallWomen": "Чемпионки",
   "hallWomenHint": "Чемпионки мира и их партии",
+  "hallChallenge": "Чемпион и претендент",
+  "hallChallengeHint": "Самые красивые победы обоих участников матча за титул {year}",
   "hallStickers": "{n} из {total}",
   "hallFideLine": "Титул ФИДЕ 1993–2006",
   "hallTiebreak": "Быстрая партия",

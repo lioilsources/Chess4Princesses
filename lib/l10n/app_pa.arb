@@ -35,6 +35,8 @@
   "hallMatchesHint": "ਵਿਸ਼ਵ ਚੈਂਪੀਅਨਸ਼ਿਪ ਦੇ ਸਾਰੇ ਮੁਕਾਬਲੇ",
   "hallWomen": "ਚੈਂਪੀਅਨ ਔਰਤਾਂ",
   "hallWomenHint": "ਔਰਤ ਵਿਸ਼ਵ ਚੈਂਪੀਅਨ ਅਤੇ ਉਨ੍ਹਾਂ ਦੀਆਂ ਬਾਜ਼ੀਆਂ",
+  "hallChallenge": "ਚੈਂਪੀਅਨ ਅਤੇ ਚੁਣੌਤੀ ਦੇਣ ਵਾਲਾ",
+  "hallChallengeHint": "{year} ਦੇ ਖ਼ਿਤਾਬੀ ਮੁਕਾਬਲੇ ਦੇ ਦੋਵਾਂ ਖਿਡਾਰੀਆਂ ਦੀਆਂ ਸਭ ਤੋਂ ਸੋਹਣੀਆਂ ਜਿੱਤਾਂ",
   "hallStickers": "{total} ਵਿੱਚੋਂ {n}",
   "hallFideLine": "ਫਿਡੇ ਖ਼ਿਤਾਬ 1993–2006",
   "hallTiebreak": "ਤੇਜ਼ ਬਾਜ਼ੀ",

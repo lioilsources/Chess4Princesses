@@ -1,0 +1,200 @@
+{
+ "v": 1,
+ "groups": [
+  {
+   "id": "gukesh",
+   "title": "Gukesh Dommaraju",
+   "n": 18,
+   "year": 2026,
+   "reigns": [
+    "2024–"
+   ],
+   "items": [
+    {
+     "id": "cd9636249c65",
+     "p": "challenge",
+     "i": 0,
+     "w": "Wei Yi",
+     "b": "Gukesh Dommaraju",
+     "y": 2024,
+     "r": "0-1",
+     "n": 33,
+     "rd": "2.4"
+    },
+    {
+     "id": "f24523b735c9",
+     "p": "challenge",
+     "i": 1,
+     "w": "Gukesh Dommaraju",
+     "b": "Vincent Keymer",
+     "y": 2024,
+     "r": "1-0",
+     "n": 27,
+     "rd": "8.2"
+    },
+    {
+     "id": "ec3224377ab6",
+     "p": "challenge",
+     "i": 2,
+     "w": "R Praggnanandhaa",
+     "b": "Gukesh Dommaraju",
+     "y": 2024,
+     "r": "0-1",
+     "n": 33,
+     "rd": "2.1"
+    },
+    {
+     "id": "b18587dd4cc6",
+     "p": "challenge",
+     "i": 3,
+     "w": "Parham Maghsoodloo",
+     "b": "Gukesh Dommaraju",
+     "y": 2024,
+     "r": "0-1",
+     "n": 34,
+     "rd": "8.1"
+    },
+    {
+     "id": "f83d76e83bee",
+     "p": "wch-2024",
+     "i": 10,
+     "w": "Gukesh Dommaraju",
+     "b": "Ding Liren",
+     "y": 2024,
+     "r": "1-0",
+     "n": 29,
+     "rd": "11.1"
+    },
+    {
+     "id": "3252d9adf9f2",
+     "p": "challenge",
+     "i": 4,
+     "w": "Gukesh Dommaraju",
+     "b": "Hikaru Nakamura",
+     "y": 2025,
+     "r": "1-0",
+     "n": 42,
+     "rd": "3.3"
+    },
+    {
+     "id": "3be670a97fb5",
+     "p": "challenge",
+     "i": 5,
+     "w": "Gukesh Dommaraju",
+     "b": "Fabiano Caruana",
+     "y": 2025,
+     "r": "1-0",
+     "n": 36,
+     "rd": "6.1"
+    },
+    {
+     "id": "9f2d745db6e6",
+     "p": "challenge",
+     "i": 6,
+     "w": "Gukesh Dommaraju",
+     "b": "Fabiano Caruana",
+     "y": 2025,
+     "r": "1-0",
+     "n": 40,
+     "rd": "5.2"
+    }
+   ]
+  },
+  {
+   "id": "sindarov",
+   "title": "Javokhir Sindarov",
+   "year": 2026,
+   "reigns": [],
+   "items": [
+    {
+     "id": "c601e574e2f4",
+     "p": "challenge",
+     "i": 7,
+     "w": "Javokhir Sindarov",
+     "b": "Victor Bologan",
+     "y": 2024,
+     "r": "1-0",
+     "n": 41,
+     "rd": "5.31"
+    },
+    {
+     "id": "0f6418c7aceb",
+     "p": "challenge",
+     "i": 8,
+     "w": "Matthias Bluebaum",
+     "b": "Javokhir Sindarov",
+     "y": 2026,
+     "r": "0-1",
+     "n": 27,
+     "rd": "4.7"
+    },
+    {
+     "id": "47be98a9816a",
+     "p": "challenge",
+     "i": 9,
+     "w": "Javokhir Sindarov",
+     "b": "Andrey Esipenko",
+     "y": 2026,
+     "r": "1-0",
+     "n": 41,
+     "rd": "1.4"
+    },
+    {
+     "id": "f00ad7501b8c",
+     "p": "challenge",
+     "i": 10,
+     "w": "R Praggnanandhaa",
+     "b": "Javokhir Sindarov",
+     "y": 2026,
+     "r": "0-1",
+     "n": 40,
+     "rd": "3.1"
+    },
+    {
+     "id": "972d0da93077",
+     "p": "challenge",
+     "i": 11,
+     "w": "Javokhir Sindarov",
+     "b": "Fabiano Caruana",
+     "y": 2026,
+     "r": "1-0",
+     "n": 36,
+     "rd": "4.1"
+    },
+    {
+     "id": "322b6acab7f2",
+     "p": "challenge",
+     "i": 12,
+     "w": "Hikaru Nakamura",
+     "b": "Javokhir Sindarov",
+     "y": 2026,
+     "r": "0-1",
+     "n": 41,
+     "rd": "5.1"
+    },
+    {
+     "id": "31b0b3d7c455",
+     "p": "challenge",
+     "i": 13,
+     "w": "Wei Yi",
+     "b": "Javokhir Sindarov",
+     "y": 2026,
+     "r": "0-1",
+     "n": 36,
+     "rd": "6.1"
+    },
+    {
+     "id": "90abbd370669",
+     "p": "challenge",
+     "i": 14,
+     "w": "Javokhir Sindarov",
+     "b": "R Praggnanandhaa",
+     "y": 2026,
+     "r": "1-0",
+     "n": 53,
+     "rd": "10.1"
+    }
+   ]
+  }
+ ]
+}

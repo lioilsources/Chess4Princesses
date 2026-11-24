@@ -35,6 +35,8 @@
   "hallMatchesHint": "বিশ্ব চ্যাম্পিয়নশিপের সব ম্যাচ",
   "hallWomen": "চ্যাম্পিয়ন মেয়েরা",
   "hallWomenHint": "মহিলা বিশ্বচ্যাম্পিয়ন আর তাঁদের খেলা",
+  "hallChallenge": "চ্যাম্পিয়ন ও চ্যালেঞ্জার",
+  "hallChallengeHint": "{year} সালের শিরোপা ম্যাচের দুই খেলোয়াড়ের সেরা জয়",
   "hallStickers": "{total}-এর মধ্যে {n}",
   "hallFideLine": "ফিদে খেতাব ১৯৯৩–২০০৬",
   "hallTiebreak": "দ্রুত খেলা",

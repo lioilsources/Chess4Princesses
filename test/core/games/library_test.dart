@@ -11,9 +11,30 @@ import 'package:princesschess/core/progress/progress.dart';
 Map<String, dynamic> _json(String path) => jsonDecode(File(path).readAsStringSync()) as Map<String, dynamic>;
 
 void main() {
-  test('bundled index lists the three shelves', () {
+  test('bundled index lists the four shelves', () {
     final shelves = parseLibraryIndex(_json('assets/games/index.json'));
-    expect(shelves.map((s) => (s.id, s.kind)), [('golden', ShelfKind.board), ('matches', ShelfKind.timeline), ('women', ShelfKind.people)]);
+    expect(shelves.map((s) => (s.id, s.kind)), [
+      ('golden', ShelfKind.board),
+      ('matches', ShelfKind.timeline),
+      ('women', ShelfKind.people),
+      ('challenge', ShelfKind.people),
+    ]);
+  });
+
+  test('champion and challenger: both players with their wins, the year on every group', () {
+    final groups = parseCollection(_json('assets/games/c/challenge.json'));
+    expect(groups, hasLength(2));
+    for (final g in groups) {
+      expect(g.year, isNotNull);
+      expect(g.entries, isNotEmpty);
+      for (final e in g.entries) {
+        final winner = e.result == '1-0' ? e.white : e.black;
+        expect(winner, g.title, reason: '${e.white} – ${e.black}');
+      }
+    }
+    // The champion keeps the crown number, the challenger has none yet.
+    expect(groups.first.number, isNotNull);
+    expect(groups.last.number, isNull);
   });
 
   test('title matches run from 1886, the title holder first', () {

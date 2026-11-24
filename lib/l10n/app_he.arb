@@ -35,6 +35,8 @@
   "hallMatchesHint": "כל הקרבות על אליפות העולם",
   "hallWomen": "אלופות",
   "hallWomenHint": "אלופות העולם והמשחקים שלהן",
+  "hallChallenge": "האלוף והמתמודד",
+  "hallChallengeHint": "הניצחונות היפים ביותר של שני השחקנים בקרב על התואר {year}",
   "hallStickers": "{n} מתוך {total}",
   "hallFideLine": "תואר פיד״ה 1993–2006",
   "hallTiebreak": "משחק מהיר",

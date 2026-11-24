@@ -124,6 +124,14 @@ class AppLocalizationsZh extends AppLocalizations {
   String get hallWomenHint => '女子世界冠军和她们的对局';
 
   @override
+  String get hallChallenge => '冠军与挑战者';
+
+  @override
+  String hallChallengeHint(String year) {
+    return '$year年冠军赛两位棋手最精彩的胜局';
+  }
+
+  @override
   String hallStickers(int n, int total) {
     return '$n/$total';
   }
@@ -323,6 +331,14 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
 
   @override
   String get hallWomenHint => '女子世界冠軍和她們的對局';
+
+  @override
+  String get hallChallenge => '冠軍與挑戰者';
+
+  @override
+  String hallChallengeHint(String year) {
+    return '$year年冠軍賽兩位棋手最精彩的勝局';
+  }
 
   @override
   String hallStickers(int n, int total) {

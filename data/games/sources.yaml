@@ -145,3 +145,17 @@ golden:
 women:
   perChampion: 8
   files: [Gaprindashvili.pgn, Chiburdanidze.pgn, Xie.pgn, PolgarS.pgn, Zhu.pgn, Stefanova.pgn, Kosteniuk.pgn, Hou.pgn]
+
+# Mistr a vyzyvatel: both players of the coming title match, up to
+# `perPlayer` best wins each (same choice as Šampionky; bonus for the last
+# two years). Gukesh from PGN Mentor, Sindarov from Lichess broadcasts of
+# classical events (docs/CREDITS.md). Next match: change players and year.
+challenge:
+  year: 2026
+  perPlayer: 8
+  players: [gukesh, sindarov]
+  files: [Gukesh.pgn, Sindarov.pgn]
+  # Lichess broadcast tours for players PGN Mentor lacks (tool/games/lichess_player.py):
+  # Olympiad 2024 Open I–IV, World Cup 2025 rounds 1–Finals, Tata Steel 2025/2026, Candidates 2026.
+  lichess:
+    Sindarov: [wYigbpXq, M5YHvpOX, q6ezoCXP, jCcYzv6v, CBWLKDSY, C8xGMEpX, sOK6GBCf, xLyRWYPA, zb9ruNEJ, 4Zfj97D4, 25zoKzpI, DqmmnYSq, jR0BiOwR, 3COxSfdj, BLA70Vds]

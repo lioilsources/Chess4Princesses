@@ -35,6 +35,8 @@
   "hallMatchesHint": "Toate meciurile pentru titlul mondial",
   "hallWomen": "Campioane",
   "hallWomenHint": "Campioanele mondiale și partidele lor",
+  "hallChallenge": "Campionul și challengerul",
+  "hallChallengeHint": "Cele mai frumoase victorii ale celor doi jucători din meciul pentru titlu {year}",
   "hallStickers": "{n} din {total}",
   "hallFideLine": "Titlul FIDE 1993–2006",
   "hallTiebreak": "Partidă rapidă",

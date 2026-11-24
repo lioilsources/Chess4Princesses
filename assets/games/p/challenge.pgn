@@ -1,0 +1,274 @@
+[Event "Wijk aan Zee 2024"]
+[Site "Wijk aan Zee NED"]
+[Date "2024.01.14"]
+[Round "2.4"]
+[White "Wei Yi"]
+[Black "Gukesh Dommaraju"]
+[Result "0-1"]
+[ECO "C53"]
+[WhiteElo "2740"]
+[BlackElo "2725"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d3 d6 6. Bg5 h6 7. Bh4 a6 8. Nbd2
+Ba7 9. O-O g5 10. Bg3 Bg4 11. h3 Bh5 12. b4 Qc8 13. b5 axb5 14. Bxb5 O-O 15. Re1
+Bg6 16. Rc1 Nh5 17. Bh2 Ng7 18. d4 f6 19. Nf1 Ne7 20. Ne3 h5 21. c4 exd4 22. Nd5
+Qd8 23. Nxd4 Bc5 24. Nb3 Ba3 25. Nxc7 Qxc7 26. c5 Bxc1 27. cxd6 Qb6 28. dxe7
+Rfc8 29. e8=Q+ Nxe8 30. Bxe8 Rxa2 31. Qd5+ Kh8 32. Nd4 Bxe8 33. Bd6 Qa5 0-1
+
+[Event "Prague 2024"]
+[Site "Prague CZE"]
+[Date "2024.03.06"]
+[Round "8.2"]
+[White "Gukesh Dommaraju"]
+[Black "Vincent Keymer"]
+[Result "1-0"]
+[ECO "E21"]
+[WhiteElo "2743"]
+[BlackElo "2738"]
+
+1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Nf3 d6 5. Qc2 O-O 6. Bg5 Nc6 7. a3 Bxc3+
+8. Qxc3 h6 9. Bh4 Re8 10. O-O-O Bd7 11. e3 e5 12. Qc2 a6 13. Bd3 g5 14. dxe5
+Nxe5 15. Nxe5 Rxe5 16. f4 Rc5 17. b4 Rc6 18. fxg5 Ng4 19. Bh7+ Kf8 20. Rhf1 Qe7
+21. g6 f6 22. h3 d5 23. hxg4 Rxc4 24. Rxf6+ Ke8 25. g7 Rxc2+ 26. Bxc2 Qxg7
+27. Bg6+ 1-0
+
+[Event "Toronto 2024"]
+[Site "Toronto CAN"]
+[Date "2024.04.05"]
+[Round "2.1"]
+[White "R Praggnanandhaa"]
+[Black "Gukesh Dommaraju"]
+[Result "0-1"]
+[ECO "D30"]
+[WhiteElo "2747"]
+[BlackElo "2743"]
+
+1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. g3 Bb4+ 5. Nc3 dxc4 6. Bg2 O-O 7. O-O Nc6 8. a3
+Be7 9. e4 a6 10. Be3 b5 11. Qe2 Bb7 12. Rad1 Na5 13. d5 exd5 14. e5 Ne8 15. e6
+f5 16. Ne5 Nf6 17. Qc2 c6 18. Qxf5 Qe8 19. Nf7 Bc8 20. Rfe1 Nb7 21. Bg5 Ra7
+22. Bxf6 Bxf6 23. Bxd5 cxd5 24. Nxd5 Be7 25. Qg4 Nd8 26. Nxd8 Bxd8 27. Qd4 Rb7
+28. Re4 Bf6 29. Qe3 Be7 30. h4 Qc6 31. h5 Bc5 32. Qg5 Bxe6 33. h6 Rxf2 0-1
+
+[Event "Budapest 2024"]
+[Site "Budapest HUN"]
+[Date "2024.09.19"]
+[Round "8.1"]
+[White "Parham Maghsoodloo"]
+[Black "Gukesh Dommaraju"]
+[Result "0-1"]
+[ECO "D33"]
+[WhiteElo "2723"]
+[BlackElo "2764"]
+
+1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nf6 6. g3 Nc6 7. Bg2 cxd4
+8. Nxd4 Bc5 9. Nb3 Bb6 10. O-O d4 11. Na4 O-O 12. Re1 h6 13. Bf4 Be6 14. Nbc5
+Bd5 15. Nxb6 axb6 16. Nxb7 Qd7 17. e4 dxe3 18. Rxe3 Nb4 19. Nd6 Bxg2 20. Kxg2
+Rad8 21. Rb3 Nbd5 22. Be5 Qe6 23. Qd4 Ng4 24. Rd1 Ne7 25. Bxg7 Nf5 26. Qf4 Nxg7
+27. Rxb6 f5 28. h3 Ne5 29. Nc4 Qxc4 30. Rxd8 Rxd8 31. Qxe5 Rd1 32. Rb3 Qf1+
+33. Kf3 Qh1+ 34. Kf4 Rd5 0-1
+
+[Event "Stavanger 2025"]
+[Site "Stavanger NOR"]
+[Date "2025.05.28"]
+[Round "3.3"]
+[White "Gukesh Dommaraju"]
+[Black "Hikaru Nakamura"]
+[Result "1-0"]
+[ECO "C55"]
+[WhiteElo "2787"]
+[BlackElo "2804"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Be7 5. O-O O-O 6. Re1 d6 7. a4 Na5 8. Ba2
+c5 9. Bd2 Nc6 10. Na3 h6 11. c3 Be6 12. Bxe6 fxe6 13. b4 b6 14. Nc4 Qe8 15. b5
+Nd8 16. d4 exd4 17. cxd4 cxd4 18. Bb4 Nxe4 19. Rxe4 d5 20. Bxe7 Qxe7 21. Rxd4
+dxc4 22. Ne5 Qg5 23. Nxc4 Nb7 24. Qe2 Nc5 25. Rad1 Rf4 26. a5 bxa5 27. Nxa5 Rxd4
+28. Rxd4 Rd8 29. Rxd8+ Qxd8 30. Nc6 Qd7 31. h4 Qd6 32. Nxa7 Nd3 33. Nc6 Kh8
+34. Qf3 Kg8 35. g3 Nc5 36. Kg2 Qd7 37. Qf4 Qd5+ 38. Kh2 Kh7 39. Qf7 Nd3 40. Ne7
+Qd8 41. Qxe6 Nxf2 42. Qf5+ 1-0
+
+[Event "Saint Louis 2025"]
+[Site "Saint Louis USA"]
+[Date "2025.10.27"]
+[Round "6.1"]
+[White "Gukesh Dommaraju"]
+[Black "Fabiano Caruana"]
+[Result "1-0"]
+[ECO "E62"]
+[WhiteElo "2752"]
+[BlackElo "2789"]
+
+1. d4 Nf6 2. g3 g6 3. Bg2 Bg7 4. Nf3 O-O 5. O-O d6 6. c4 c6 7. Nc3 Bf5 8. Ne1 e5
+9. d5 cxd5 10. cxd5 a5 11. e4 Bg4 12. f3 Bd7 13. Be3 Na6 14. Nd3 b6 15. b3 Nc5
+16. Qe2 Bc8 17. Nb5 Ba6 18. Nxc5 bxc5 19. a4 Ne8 20. Bd2 Qb6 21. Rfc1 Nc7
+22. Bf1 h5 23. h4 f5 24. exf5 gxf5 25. Bg5 Rae8 26. Ra2 f4 27. gxf4 exf4 28. Qc4
+Kh8 29. Rg2 Rf5 30. Bd3 Rxd5 31. Kh1 Bb7 32. Rcg1 Nxb5 33. Bf6 Bxf6 34. Qxf4 Bg5
+35. Rxg5 Qd8 36. Rg8+ 1-0
+
+[Event "Mumbai 2025"]
+[Site "Mumbai IND"]
+[Date "2025.12.14"]
+[Round "5.2"]
+[White "Gukesh Dommaraju"]
+[Black "Fabiano Caruana"]
+[Result "1-0"]
+[ECO "C55"]
+[WhiteElo "2754"]
+[BlackElo "2795"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Be7 5. Nbd2 O-O 6. a4 d6 7. O-O a5 8. c3
+Be6 9. Re1 Bxc4 10. Nxc4 h6 11. Bd2 Re8 12. b4 Bf8 13. b5 Nb8 14. Qc2 Nbd7
+15. d4 b6 16. Rad1 Qc8 17. Bc1 g6 18. Bb2 Bg7 19. dxe5 dxe5 20. Ba3 Bf8 21. Bxf8
+Kxf8 22. Ne3 Kg7 23. Nd5 c6 24. bxc6 Qxc6 25. c4 Re6 26. Qb2 Rae8 27. h3 Nh7
+28. Rb1 Nc5 29. Qa1 Nd7 30. Rb5 Nhf6 31. Nd2 Rb8 32. f4 Kh7 33. Rf1 exf4
+34. Rxf4 Rf8 35. Nf3 Nh5 36. Nd4 Qd6 37. Nxe6 Qxe6 38. Rg4 Ne5 39. Nc7 Qe7
+40. Qxe5 1-0
+
+[Event "Budapest 2024"]
+[Site "Budapest, Hungary"]
+[Date "2024.09.15"]
+[Round "5.31"]
+[White "Javokhir Sindarov"]
+[Black "Victor Bologan"]
+[Result "1-0"]
+[ECO "C56"]
+[WhiteElo "2677"]
+[BlackElo "2598"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 Nf6 5. d5 Ne7 6. Bd3 g6 7. c4 Bg7 8. Nc3 O-O
+9. h3 a5 10. Be3 Nd7 11. g4 Nc5 12. Bc2 b6 13. Rg1 Ba6 14. Nd2 c6 15. a4 Kh8
+16. h4 cxd5 17. cxd5 Qd7 18. g5 f6 19. Ra3 Rac8 20. Nb3 Ng8 21. Nxc5 bxc5
+22. Bd3 c4 23. Bc2 Rb8 24. Bc1 Qf7 25. Rg2 h5 26. Kf1 fxg5 27. hxg5 Ne7 28. Kg1
+Kg8 29. Ne2 Bc8 30. Qe1 Rb4 31. Nc3 Bh3 32. Nb5 Rxb5 33. axb5 Bxg2 34. Kxg2 Nc8
+35. Bd1 Nb6 36. Rxa5 Qb7 37. Be3 Nxd5 38. exd5 Qxd5+ 39. Kg1 h4 40. b6 Qc6
+41. Qd2 1-0
+
+[Event "Wijk aan Zee 2026"]
+[Site "Wijk aan Zee, Netherlands"]
+[Date "2026.01.20"]
+[Round "4.7"]
+[White "Matthias Bluebaum"]
+[Black "Javokhir Sindarov"]
+[Result "0-1"]
+[ECO "E90"]
+[WhiteElo "2679"]
+[BlackElo "2726"]
+
+1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. h3 a5 7. Be3 Na6 8. Bd3 e5
+9. O-O exd4 10. Nxd4 Nc5 11. Bc2 Re8 12. f3 c6 13. Qd2 a4 14. Rad1 Qa5 15. Bf4
+Ne6 16. Be3 Nh5 17. Nxa4 Nxd4 18. Bxd4 Bxd4+ 19. Qxd4 Qg5 20. Rd2 Nf4 21. Kh1
+Qh6 22. Qxd6 Bxh3 23. gxh3 Re6 24. Qc5 Nd3 25. Rxd3 Qxh3+ 26. Kg1 Qg3+ 27. Kh1
+g5 0-1
+
+[Event "Paphos 2026"]
+[Site "Paphos, Cyprus"]
+[Date "2026.03.29"]
+[Round "1.4"]
+[White "Javokhir Sindarov"]
+[Black "Andrey Esipenko"]
+[Result "1-0"]
+[ECO "D37"]
+[WhiteElo "2745"]
+[BlackElo "2698"]
+
+1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. Nc3 Be7 5. cxd5 exd5 6. Bf4 O-O 7. e3 c5 8. Bd3
+Nc6 9. O-O c4 10. Bc2 Nh5 11. Be5 f6 12. Bg3 f5 13. Be5 Be6 14. b3 Qa5 15. Ne2
+b5 16. Nf4 Nxf4 17. exf4 Qd8 18. Re1 Qd7 19. Re3 Rae8 20. h4 h6 21. g3 a6
+22. Kg2 Bf7 23. Qd2 Bb4 24. Qe2 Bh5 25. a4 Ba5 26. axb5 axb5 27. Bd1 Bxf3+
+28. Qxf3 Bb6 29. Ra6 Nxd4 30. Qh5 Rxe5 31. Rxe5 Qc6 32. bxc4 bxc4 33. Ba4 Qc5
+34. Qg6 Ba7 35. Re8 Rxe8 36. Qxe8+ Kh7 37. Qg6+ Kg8 38. Bd7 c3 39. Qe8+ Kh7
+40. Qg6+ Kg8 41. Re6 1-0
+
+[Event "Paphos 2026"]
+[Site "Paphos, Cyprus"]
+[Date "2026.03.31"]
+[Round "3.1"]
+[White "R Praggnanandhaa"]
+[Black "Javokhir Sindarov"]
+[Result "0-1"]
+[ECO "D37"]
+[WhiteElo "2741"]
+[BlackElo "2745"]
+
+1. d4 d5 2. c4 e6 3. Nc3 Be7 4. Nf3 Nf6 5. Bf4 O-O 6. e3 c5 7. dxc5 Bxc5 8. a3
+Nc6 9. Qc2 Re8 10. Bg5 d4 11. Bxf6 Qxf6 12. Ne4 Qf5 13. b4 Nxb4 14. axb4 Bxb4+
+15. Kd1 dxe3 16. Bd3 Qg6 17. fxe3 f5 18. Ng3 Bc5 19. Qc3 e5 20. Bc2 e4 21. Nd2
+Rd8 22. Kc1 Qg5 23. Re1 Qe7 24. Re2 Bb4 25. Qb2 a5 26. Nb3 Ra6 27. Nd4 Qg5
+28. Kb1 h5 29. Ka2 h4 30. Nf1 Bd7 31. Rd1 Rc8 32. Nd2 Rb6 33. c5 Rxc5 34. Qb3+
+Kh8 35. Qf7 Rxc2+ 36. Kb1 Rxd2 37. Rdxd2 Bxd2+ 38. Ka2 Bxe3 39. Qxd7 Bxd4
+40. Qxd4 Qf6 0-1
+
+[Event "Paphos 2026"]
+[Site "Paphos, Cyprus"]
+[Date "2026.04.01"]
+[Round "4.1"]
+[White "Javokhir Sindarov"]
+[Black "Fabiano Caruana"]
+[Result "1-0"]
+[ECO "D26"]
+[WhiteElo "2745"]
+[BlackElo "2795"]
+
+1. d4 d5 2. c4 e6 3. Nf3 dxc4 4. e3 Nf6 5. Bxc4 c5 6. O-O Nc6 7. Qe2 a6 8. Nc3
+b5 9. Bd3 Bb7 10. a4 b4 11. Ne4 Na5 12. Nxf6+ gxf6 13. dxc5 Nb3 14. c6 Bxc6
+15. Nd4 Nxd4 16. exd4 Rg8 17. g3 f5 18. Bc4 Rg4 19. Be3 Bd5 20. Rac1 Be7
+21. Bxa6 Kf8 22. Bb5 Bf6 23. Rfd1 Kg7 24. Bc6 Ra5 25. Bxd5 Rxd5 26. Rc5 Rd7
+27. d5 exd5 28. Qf3 Bxb2 29. Rcxd5 Rxd5 30. Rxd5 Qe8 31. Rxf5 Rg6 32. h4 Bc3
+33. h5 Ra6 34. Qg4+ Kh8 35. Bd4+ f6 36. Rc5 1-0
+
+[Event "Paphos 2026"]
+[Site "Paphos, Cyprus"]
+[Date "2026.04.03"]
+[Round "5.1"]
+[White "Hikaru Nakamura"]
+[Black "Javokhir Sindarov"]
+[Result "0-1"]
+[ECO "D31"]
+[WhiteElo "2810"]
+[BlackElo "2745"]
+
+1. d4 d5 2. c4 e6 3. Nc3 c6 4. e4 dxe4 5. Nxe4 Bb4+ 6. Bd2 Qxd4 7. Bxb4 Qxe4+
+8. Be2 Na6 9. Bd6 Qxg2 10. Bf3 Qg5 11. Ne2 Ne7 12. Ng3 O-O 13. h4 Qa5+ 14. b4
+Nxb4 15. O-O Re8 16. Qd2 c5 17. Rad1 Nf5 18. Nxf5 exf5 19. Qf4 Nc6 20. Kh1 Nd4
+21. Rg1 g6 22. Bd5 Be6 23. Bxb7 Ne2 24. Qd2 Qxd2 25. Rxd2 Nxg1 26. Bxa8 Rxa8
+27. Kxg1 Rd8 28. Bf4 Rxd2 29. Bxd2 Bxc4 30. Be3 Bxa2 31. Bxc5 a5 32. f4 f6
+33. Kf2 Kf7 34. Ba3 Ke6 35. Bf8 a4 36. Ke3 Kf7 37. Bb4 h6 38. Kf2 g5 39. Kg3 Bd5
+40. Ba3 Be4 41. Bc1 gxh4+ 0-1
+
+[Event "Paphos 2026"]
+[Site "Paphos, Cyprus"]
+[Date "2026.04.04"]
+[Round "6.1"]
+[White "Wei Yi"]
+[Black "Javokhir Sindarov"]
+[Result "0-1"]
+[ECO "C24"]
+[WhiteElo "2754"]
+[BlackElo "2745"]
+
+1. e4 e5 2. Nc3 Nc6 3. Bc4 Nf6 4. d3 Na5 5. a3 Nxc4 6. dxc4 Bc5 7. Nf3 d6 8. Qd3
+Be6 9. Bg5 a5 10. Nd5 c6 11. Nxf6+ gxf6 12. Bh4 Rg8 13. O-O a4 14. b4 axb3
+15. cxb3 Bg4 16. b4 Bxf3 17. Qxf3 Bd4 18. Bxf6 Qd7 19. Rad1 Qe6 20. h3 Qxc4
+21. Rd3 Qe6 22. Rfd1 Rg6 23. Bh4 Kf8 24. Qh5 Kg8 25. Kh1 c5 26. f4 exf4 27. Qf3
+Re8 28. Bf2 Bxf2 29. Qxf2 Qxe4 30. Rxd6 Rxd6 31. Rxd6 Qe3 32. Qf3 c4 33. Qg4+
+Kf8 34. Rd1 c3 35. Qg5 f3 36. Qxe3 Rxe3 0-1
+
+[Event "Paphos 2026"]
+[Site "Paphos, Cyprus"]
+[Date "2026.04.09"]
+[Round "10.1"]
+[White "Javokhir Sindarov"]
+[Black "R Praggnanandhaa"]
+[Result "1-0"]
+[ECO "D37"]
+[WhiteElo "2745"]
+[BlackElo "2741"]
+
+1. d4 Nf6 2. c4 e6 3. Nf3 d5 4. Nc3 Nbd7 5. Bf4 Bb4 6. cxd5 exd5 7. e3 Ne4
+8. Qc2 g5 9. Bg3 h5 10. Bd3 h4 11. Bxe4 dxe4 12. Qxe4+ Kf8 13. Be5 f6 14. Nxg5
+Bxc3+ 15. bxc3 Nxe5 16. dxe5 fxg5 17. f4 h3 18. Rd1 Qe7 19. g3 gxf4 20. O-O Rh6
+21. Rxf4+ Kg8 22. Rdf1 Bd7 23. Rf7 Qxf7 24. Rxf7 Kxf7 25. Qf4+ Kg7 26. Qg5+ Kh7
+27. Qe7+ Kg8 28. Qxd7 Rf8 29. Qg4+ Kh8 30. a4 a5 31. Qg5 Rh7 32. e6 Re8 33. Qxa5
+b6 34. Qe5+ Kg8 35. Qg5+ Rg7 36. Qf5 Rge7 37. Qg4+ Kf8 38. Qxh3 Rxe6 39. Kf2
+R8e7 40. Qh8+ Kf7 41. g4 Re4 42. Qh5+ Kg7 43. Qg5+ Kf7 44. Kf3 Rxa4 45. h4 Ra5
+46. Qh6 Rae5 47. Qh7+ Kf8 48. Qh8+ Kf7 49. e4 b5 50. h5 c5 51. h6 Rg5 52. Qd8
+Rg8 53. Qd5+ 1-0

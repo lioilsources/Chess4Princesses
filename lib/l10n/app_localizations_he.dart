@@ -124,6 +124,14 @@ class AppLocalizationsHe extends AppLocalizations {
   String get hallWomenHint => 'אלופות העולם והמשחקים שלהן';
 
   @override
+  String get hallChallenge => 'האלוף והמתמודד';
+
+  @override
+  String hallChallengeHint(String year) {
+    return 'הניצחונות היפים ביותר של שני השחקנים בקרב על התואר $year';
+  }
+
+  @override
   String hallStickers(int n, int total) {
     return '$n מתוך $total';
   }

@@ -35,6 +35,8 @@
   "hallMatchesHint": "Wszystkie mecze o mistrzostwo świata",
   "hallWomen": "Mistrzynie",
   "hallWomenHint": "Mistrzynie świata i ich partie",
+  "hallChallenge": "Mistrz i pretendent",
+  "hallChallengeHint": "Najpiękniejsze zwycięstwa obu graczy meczu o tytuł {year}",
   "hallStickers": "{n} z {total}",
   "hallFideLine": "Tytuł FIDE 1993–2006",
   "hallTiebreak": "Partia szybka",

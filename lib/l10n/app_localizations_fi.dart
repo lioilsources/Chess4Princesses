@@ -124,6 +124,14 @@ class AppLocalizationsFi extends AppLocalizations {
   String get hallWomenHint => 'Naisten maailmanmestarit ja heidän pelinsä';
 
   @override
+  String get hallChallenge => 'Mestari ja haastaja';
+
+  @override
+  String hallChallengeHint(String year) {
+    return 'Kummankin pelaajan kauneimmat voitot, MM-ottelu $year';
+  }
+
+  @override
   String hallStickers(int n, int total) {
     return '$n/$total';
   }

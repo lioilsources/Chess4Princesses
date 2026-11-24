@@ -35,6 +35,8 @@
   "hallMatchesHint": "세계 챔피언전의 모든 경기",
   "hallWomen": "여자 챔피언",
   "hallWomenHint": "여자 세계 챔피언과 그들의 경기",
+  "hallChallenge": "챔피언과 도전자",
+  "hallChallengeHint": "{year} 타이틀 매치 두 선수의 가장 멋진 승리",
   "hallStickers": "{total}판 중 {n}판",
   "hallFideLine": "FIDE 타이틀 1993–2006",
   "hallTiebreak": "속기 경기",

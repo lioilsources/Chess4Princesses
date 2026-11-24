@@ -22,6 +22,7 @@ class HallScreen extends ConsumerWidget {
     final l10n = AppLocalizations.of(context);
     final watched = ref.watch(progressProvider).value?.gamesWatched ?? const <String>{};
     final golden = ref.watch(shelfProvider('golden')).value?.firstOrNull?.entries ?? const <LibraryEntry>[];
+    final challengeYear = ref.watch(shelfProvider('challenge')).value?.firstOrNull?.year;
     return Scaffold(
       backgroundColor: const Color(0xFFFFF4D6),
       body: SafeArea(
@@ -49,6 +50,14 @@ class HallScreen extends ConsumerWidget {
                     route: '/hall/matches',
                   ),
                   _ShelfCard(icon: Icons.auto_awesome_rounded, title: l10n.hallWomen, hint: l10n.hallWomenHint, palette: KidPalette.mint, route: '/hall/women'),
+                  if (challengeYear != null)
+                    _ShelfCard(
+                      icon: Icons.emoji_events_rounded,
+                      title: l10n.hallChallenge,
+                      hint: l10n.hallChallengeHint('$challengeYear'),
+                      palette: KidPalette.sky,
+                      route: '/hall/challenge',
+                    ),
                 ],
               ),
             ),

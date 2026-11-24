@@ -35,6 +35,8 @@
   "hallMatchesHint": "Tots els matxs pel campionat del món",
   "hallWomen": "Campiones",
   "hallWomenHint": "Les campiones del món i les seves partides",
+  "hallChallenge": "Campió i aspirant",
+  "hallChallengeHint": "Les victòries més boniques dels dos jugadors del matx pel títol {year}",
   "hallStickers": "{n} de {total}",
   "hallFideLine": "Títol FIDE 1993–2006",
   "hallTiebreak": "Partida ràpida",

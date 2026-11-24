@@ -124,6 +124,14 @@ class AppLocalizationsNl extends AppLocalizations {
   String get hallWomenHint => 'Wereldkampioenes en hun partijen';
 
   @override
+  String get hallChallenge => 'Kampioen en uitdager';
+
+  @override
+  String hallChallengeHint(String year) {
+    return 'De mooiste overwinningen van beide spelers uit de titelmatch $year';
+  }
+
+  @override
   String hallStickers(int n, int total) {
     return '$n van $total';
   }

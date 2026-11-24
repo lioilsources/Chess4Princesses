@@ -35,6 +35,8 @@
   "hallMatchesHint": "Tüm dünya şampiyonluğu maçları",
   "hallWomen": "Şampiyon kadınlar",
   "hallWomenHint": "Kadın dünya şampiyonları ve oyunları",
+  "hallChallenge": "Şampiyon ve rakibi",
+  "hallChallengeHint": "{year} unvan maçındaki iki oyuncunun en güzel galibiyetleri",
   "hallStickers": "{n}/{total}",
   "hallFideLine": "FIDE unvanı 1993–2006",
   "hallTiebreak": "Hızlı oyun",

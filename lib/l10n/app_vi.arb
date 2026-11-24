@@ -35,6 +35,8 @@
   "hallMatchesHint": "Mọi trận tranh chức vô địch thế giới",
   "hallWomen": "Nữ vô địch",
   "hallWomenHint": "Các nữ vô địch thế giới và ván cờ của họ",
+  "hallChallenge": "Nhà vô địch và người thách đấu",
+  "hallChallengeHint": "Những chiến thắng đẹp nhất của hai kỳ thủ trận tranh ngôi {year}",
   "hallStickers": "{n}/{total}",
   "hallFideLine": "Danh hiệu FIDE 1993–2006",
   "hallTiebreak": "Ván cờ nhanh",

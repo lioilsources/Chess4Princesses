@@ -35,6 +35,8 @@
   "hallMatchesHint": "Alle wereldkampioenschapsmatches",
   "hallWomen": "Kampioenes",
   "hallWomenHint": "Wereldkampioenes en hun partijen",
+  "hallChallenge": "Kampioen en uitdager",
+  "hallChallengeHint": "De mooiste overwinningen van beide spelers uit de titelmatch {year}",
   "hallStickers": "{n} van {total}",
   "hallFideLine": "FIDE-titel 1993–2006",
   "hallTiebreak": "Snelschaakpartij",

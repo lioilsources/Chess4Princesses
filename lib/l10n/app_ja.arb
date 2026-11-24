@@ -35,6 +35,8 @@
   "hallMatchesHint": "せかいチャンピオンせんの ぜんぶの しあい",
   "hallWomen": "じょせいチャンピオン",
   "hallWomenHint": "じょせいの せかいチャンピオンと その ゲーム",
+  "hallChallenge": "チャンピオンと挑戦者",
+  "hallChallengeHint": "{year}年タイトル戦の二人のいちばん美しい勝利",
   "hallStickers": "{total}こ中 {n}こ",
   "hallFideLine": "FIDEタイトル 1993–2006",
   "hallTiebreak": "はやざしの ゲーム",

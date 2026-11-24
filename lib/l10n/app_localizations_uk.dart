@@ -124,6 +124,14 @@ class AppLocalizationsUk extends AppLocalizations {
   String get hallWomenHint => 'Чемпіонки світу та їхні партії';
 
   @override
+  String get hallChallenge => 'Чемпіон і претендент';
+
+  @override
+  String hallChallengeHint(String year) {
+    return 'Найкрасивіші перемоги обох учасників матчу за титул $year';
+  }
+
+  @override
   String hallStickers(int n, int total) {
     return '$n з $total';
   }
