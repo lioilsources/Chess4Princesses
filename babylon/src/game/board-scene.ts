@@ -29,7 +29,7 @@ const FRAME = 0.32;
 const SLIDE_S = 0.38;
 
 export interface ScreenRect { left: number; top: number; width: number; height: number }
-export interface BoardMarks { selected: Square | null; dots: ReadonlySet<Square>; last: Move | null }
+export interface BoardMarks { selected: Square | null; dots: ReadonlySet<Square> }
 
 interface Token { node: TransformNode; piece: Piece; square: Square }
 
@@ -48,6 +48,7 @@ export class BoardScene {
   private readonly plates: Record<'mine' | 'theirs', StandardMaterial>;
   private readonly spriteMats = new Map<string, StandardMaterial>();
   private tokens: Token[] = [];
+  private occupied = new Set<Square>();
   private slide: { token: Token; from: Vector3; to: Vector3; t: number } | null = null;
   private view: { rect: ScreenRect; unitsPerPx: number; cx: number; cy: number } | null = null;
 
@@ -70,7 +71,7 @@ export class BoardScene {
     bm.emissiveColor = Color3.White();
     board.material = bm;
     this.plates = { mine: flat(scene, 'plateMine', rgb01(PLATE.mine)), theirs: flat(scene, 'plateTheirs', rgb01(PLATE.theirs)) };
-    this.paint({ selected: null, dots: new Set(), last: null });
+    this.paint({ selected: null, dots: new Set() });
   }
 
   /** Screen position (board units) of a square for the player's side at the bottom. */
@@ -125,6 +126,7 @@ export class BoardScene {
   setPosition(pos: Position, move: Move | null = null): void {
     for (const t of this.tokens) t.node.dispose();
     this.tokens = [...pos.pieces()].map(([s, p]) => this.makeToken(p, s));
+    this.occupied = new Set(this.tokens.map((t) => t.square));
     this.slide = null;
     if (move) {
       const token = this.tokens.find((t) => t.square === move.to);
@@ -162,22 +164,25 @@ export class BoardScene {
       const p = this.place(s);
       const x = (p.x - 0.5 + FRAME) * px;
       const y = (8 - (p.y + 0.5) + FRAME) * px;
-      const isLast = marks.last && (marks.last.from === s || marks.last.to === s);
       g.fillStyle = isLight(s) ? BOARD.light : BOARD.dark;
       g.fillRect(x, y, px + 0.5, px + 0.5);
-      if (isLast) {
-        g.fillStyle = BOARD.lastMove;
-        g.fillRect(x, y, px + 0.5, px + 0.5);
-      }
       if (marks.selected === s) {
         g.fillStyle = BOARD.selected;
         g.fillRect(x, y, px + 0.5, px + 0.5);
       }
       if (marks.dots.has(s)) {
-        g.fillStyle = BOARD.dot;
+        // chess_board.dart: a dot on an empty square, a ring around a piece that can be taken.
         g.beginPath();
-        g.arc(x + px / 2, y + px / 2, px * 0.16, 0, Math.PI * 2);
-        g.fill();
+        if (this.occupied.has(s)) {
+          g.strokeStyle = BOARD.dotRing;
+          g.lineWidth = px * 0.07;
+          g.arc(x + px / 2, y + px / 2, px * 0.45 - px * 0.035, 0, Math.PI * 2);
+          g.stroke();
+        } else {
+          g.fillStyle = BOARD.dot;
+          g.arc(x + px / 2, y + px / 2, px * 0.14, 0, Math.PI * 2);
+          g.fill();
+        }
       }
     }
     this.squares.update();

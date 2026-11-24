@@ -94,6 +94,13 @@ export class Position {
   /** Placement + side to move — a cheap, unique key for search. */
   get boardKey(): string { return this.fen.split(' ').slice(0, 2).join(' '); }
 
+  /** Copy with pieces changed — for lesson setup and editors. */
+  edit(set: ReadonlyMap<Square, Piece | null>, sideToMove?: Side): Position {
+    const board = [...this.board];
+    for (const [s, p] of set) board[s] = p;
+    return new Position(board, sideToMove ?? this.sideToMove, this.castling, this.epSquare, this.halfmove, this.fullmove);
+  }
+
   /** Applies m without any legality check (castling, en passant, promotion bookkeeping). */
   apply(m: Move): Position {
     const board = [...this.board];

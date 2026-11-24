@@ -3,7 +3,7 @@
 Webový klient Šachového království (Chess4Princesses) v TypeScriptu nad Babylon.js. Zdroj pravdy je
 Flutter appka v kořeni repa (pravidla v `lib/core/`). Plán: `DevConventions/Prompts/06-PLAN-babylon-web.md`,
 šablona `DevConventions/templates/babylon`, vzor `ChrestysSkatepark/babylon`.
-Stav: **F0 (audit a spike)**. Hostování: GitHub Pages repa, hra pod `/play/`, `docs/` (landing, privacy, support) dál v kořeni.
+Stav: **F1 (pravidla a zlaté vektory)**, F0 je nasazené. Hostování: GitHub Pages repa, hra pod `/play/`, `docs/` (landing, privacy, support) dál v kořeni.
 
 ## Úrovně parity
 
@@ -27,14 +27,14 @@ Stav: **F0 (audit a spike)**. Hostování: GitHub Pages repa, hra pod `/play/`, 
 
 | Dart | ř. | TS | Parita | Fáze |
 |---|---|---|---|---|
-| `core/chess/types.dart` | 114 | `rules/types.ts` | P0 | **F0 hotovo** |
-| `core/chess/position.dart` | 166 | `rules/position.ts` | P0 | **F0 hotovo** |
-| `core/chess/rules.dart` | 289 | `rules/rules.ts` | P0 | **F0** bez `san`/`parseSan`/`attackers`/`path`, zbytek F1 |
-| `core/engine/bot.dart` | 138 | `rules/bot.ts` | P0 (se seedem) | F1 |
-| `core/lessons/lesson.dart` | 283 | `rules/lesson.ts` | P0 | F1 |
-| `core/lessons/lesson_engine.dart` | 306 | `rules/lesson-engine.ts` | P0 | F1 |
-| `core/lessons/solver.dart` | 105 | `rules/solver.ts` | P0 | F1 |
-| `core/lessons/curriculum.dart`, `content_catalog.dart` | 77 | `rules/curriculum.ts` | P0 | F1 |
+| `core/chess/types.dart` | 114 | `rules/types.ts` | P0 | **hotovo** (F0) |
+| `core/chess/position.dart` | 166 | `rules/position.ts` | P0 | **hotovo** (F0, `edit` F1) |
+| `core/chess/rules.dart` | 289 | `rules/rules.ts` | P0 | **hotovo** (F0 + F1) |
+| `core/engine/bot.dart` | 138 | `rules/bot.ts` | P0 (se seedem) | **hotovo** (F1) |
+| `core/lessons/lesson.dart` | 283 | `rules/lesson.ts` | P0 | **hotovo** (F1) |
+| `core/lessons/lesson_engine.dart` | 306 | `rules/lesson-engine.ts` | P0 | **hotovo** (F1) |
+| `core/lessons/solver.dart` | 105 | `rules/solver.ts` | P0 | **hotovo** (F1) |
+| `core/lessons/curriculum.dart`, `content_catalog.dart` | 77 | `rules/curriculum.ts`, `rules/content-catalog.ts` | P0 | **hotovo** (F1) |
 | `core/lessons/lint.dart` | 199 | — (zůstává v Dartu, CI) | — | vypouští se |
 | `core/progress/progress.dart` | 109 | `rules/progress.ts` (localStorage v `ui/`) | P0 | F3 |
 | `core/armies/army.dart` | 104 | `rules/army.ts` (dnes `ui/armies.ts`, jen sprity) | P0 | F3 |
@@ -52,16 +52,26 @@ Stav: **F0 (audit a spike)**. Hostování: GitHub Pages repa, hra pod `/play/`, 
 | `features/games/*` | 1 502 | `ui/hall.ts`, `game/replay.ts` | P2 | F3 |
 | `app/*` | 173 | `game/main.ts` (obrazovky místo go_router) | — | F2 |
 
-## Zlaté vektory (F1)
+## Zlaté vektory
 
-| Soubor | Co pokrývá | Přesně (CI diff) |
-|---|---|---|
-| `moves.json` | legální tahy, `san`, `status` na sadě FEN (vč. lekcí bez králů, `piece_only`) | ano |
-| `lessons.json` | každá lekce: start, sekvence tahů → stav cílů, hvězdy, par ze solveru | ano |
-| `bot.json` | tahy botů všech úrovní se seedovaným Lcg | ano (bot dostane injektovaný generátor) |
-| `pgn.json` | PGN → UCI tahy, momenty, id partie (sha1) | ano |
+`dart run tool/dump_vectors.dart` (z kořene repa) → `test/golden/`, `test/golden.test.ts` je přehraje přes
+`test/drivers.ts`, který zrcadlí skript nástroje krok po kroku. Generování je deterministické (dva běhy bajtově shodné),
+CI job `golden` vektory přegeneruje, porovná s commitnutými a přehraje je.
 
-F0 hlídá pravidla perftem (standardní počty uzlů, `test/rules.test.ts`).
+| Soubor | Případů | Co pokrývá | Přesně (CI diff) |
+|---|---|---|---|
+| `moves.json` | 157 | standardní pozice, každá šachovnice z lekcí (i `piece_only` bez králů, `target_fen`) a pozice z náhodných partií: legální tahy v pořadí generátoru, SAN, `parseSan`, stav, šach, napadená pole, útočníci, `path` | ano |
+| `bot.json` | 292 | všechny 4 úrovně na plné šachovnici (2 seedy) a na šachovnicích z lekcí (pěšcová válka s cílem `pawnWar`), 4 půltahy bota za sebou + `evaluate` | ano |
+| `lessons.json` | 32 | mapa (`index.yaml`) a všech 31 lekcí: parsování (texty cs/en/de/ja přes katalog, hvězdy, láva, nápovědy, …), řešení ze solveru, `canReach`, skriptovaná hra přes `LessonSession` (chyby, nápověda, tahy řešení, ťukání, stavění, ano/ne, pěšcová válka proti botovi) a hvězdy | ano |
+| `pgn.json` | — | PGN → UCI tahy, momenty, id partie (sha1) | F3 |
+
+Bot a pěšcová válka berou náhodu ze seedovaného Lcg (`random.ts` = `Lcg` v nástroji). V Dartu k tomu přibyl jen volitelný
+parametr `random` u `TaskSession` a `LessonSession` (appka ho nepředává, chování beze změny). Perft (`test/rules.test.ts`)
+zůstává jako rychlá kontrola generátoru tahů.
+
+Data a barvy: lekce se při `dev`/`build`/`test` převádějí z YAML do `src/rules/generated/lessons.json` (`scripts/gen-lessons.ts`,
+gitignored); barvy šachovnice čte `scripts/dart-palette.ts` přímo z Dart widgetů do `src/ui/generated/palette.ts`
+(`npm run gen`, commitnuté, `test/palette-sync.test.ts` hlídá rozjetí).
 
 ## Funkce
 
@@ -132,7 +142,11 @@ Flutter se měřil na dočasné kopii projektu (`flutter create --platforms=web`
 
 - **Hlavní objekt spiku je celá partie proti botovi**, ne lekce. Lekce stojí na `lesson_engine.dart` (F1). Bot ve spiku
   je úroveň „baby“ (náhodný legální tah). Proměna je vždy na dámu (Flutter ukazuje výběr, F2).
-- **Workflow zatím nemá job `golden`.** Vektory vznikají v F1, pak se job doplní ze šablony.
-- **Barvy šachovnice jsou v F0 opsané** (`ui/palette.ts`). V F1 je nahradí generátor, který je čte z `chess_board.dart`.
+- **Zvýraznění posledního tahu ze spiku je pryč** (F1): Flutter šachovnice ho nemá. Tečky jsou jako ve Flutteru: tečka na prázdném
+  poli, kroužek kolem figurky, kterou jde sebrat.
+- **Bot ve volné hře** je od F1 port `bot.dart` (`?bot=1..4`, výchozí „baby“). Volná partie proti botovi ve Flutter appce není
+  (bot hraje jen pěšcovou válku): je to web navíc pro hlavní obrazovku spiku, do F3 zůstane jako ukázka.
+- **`dart:math` Random v botovi** se ve vektorech nahrazuje seedovaným Lcg přes rozhraní `Random`; `nextInt(n)` = `next() % n`
+  stejně jako v TS.
 - **Texty:** spike nemá žádné. Ovládá se obrázky (král na tahu, ↻, 🎉/🌟/🤝). Texty z ARB přijdou v F3.
 - **`node.md` (Astro/SvelteKit, Paraglide)** neplatí: stack je zafixovaný plánem 06 (Vite + TS + Babylon, texty z ARB).
