@@ -1,4 +1,5 @@
-// Store screenshots (App Store): map, story, lesson, battle, armies, replay.
+// Store screenshots (App Store, Google Play): map, story, lesson, battle,
+// armies, hall of fame, golden board, champion and challenger, replay.
 // Run by tool/store_screenshots.sh (flutter drive on a simulator); the PNGs
 // are written by test_driver/screenshot_driver.dart into SCREENSHOT_DIR.
 //
@@ -31,7 +32,16 @@ const _progress = {
   'unlocked': ['queen', 'pawn', 'rook', 'bishop'],
   'myArmy': 'fairies',
   'rivalArmy': 'witches',
+  // The first row of the golden board already has its stickers.
+  'gamesWatched': [
+    '6569fbdb052b', '479412081d09', 'd0e8da818e76', '1f2bc0d78e0c', //
+    'e607939977ff', '5df0d08d0f02', 'dda9802b72d3', 'f62e7d01cb5f',
+    '6c5479cffbf0', '7ee906a65e27',
+  ],
 };
+
+/// Fischer – Spassky, 1972, game 6 (golden board).
+const _replayGame = 'ab8e4e410001';
 
 void main() {
   final binding = IntegrationTestWidgetsFlutterBinding.ensureInitialized();
@@ -77,9 +87,17 @@ void main() {
       router.go('/');
       await _wait(tester, 1);
       router.push('/hall');
-      await _wait(tester, 2);
+      await shot(6, 'hall', settle: 2);
+      router.push('/hall/golden');
+      await shot(7, 'golden', settle: 2);
+      router.pop();
+      await _wait(tester, 1);
+      router.push('/hall/challenge');
+      await shot(8, 'challenge', settle: 2);
+      router.pop();
+      await _wait(tester, 1);
 
-      await tester.tap(find.text('Robert James Fischer').first);
+      router.push('/game/$_replayGame');
       await _wait(tester, 2);
       for (var i = 0; i < 12; i++) {
         final next = find.byIcon(Icons.chevron_right_rounded);
@@ -87,7 +105,7 @@ void main() {
         await tester.tap(next.first);
         await _wait(tester, .4);
       }
-      await shot(6, 'replay', settle: 2);
+      await shot(9, 'replay', settle: 2);
 
       router.go('/');
       await _wait(tester, 1);

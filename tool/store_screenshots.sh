@@ -47,7 +47,7 @@ ios() { # ios <kind> <prefix> <simulators…>
   # audioplayers can throw while the app is torn down after the last shot;
   # that fails the drive but the PNGs are complete.
   local n; n=$(ls "$RAW/$kind"/*.png 2>/dev/null | wc -l | tr -d ' ')
-  [ "$n" -ge 12 ] || { echo "flutter drive failed (rc=$rc, $n shots)" >&2; exit 1; }
+  [ "$n" -ge 18 ] || { echo "flutter drive failed (rc=$rc, $n shots)" >&2; exit 1; }
   for loc in cs:cs en:en-US; do
     local out="$META/ios/${loc#*:}/screenshots"; mkdir -p "$out"; rm -f "$out/${prefix}"_*.png
     for f in "$RAW/$kind/${loc%%:*}"_*.png; do
