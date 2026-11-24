@@ -124,6 +124,14 @@ class AppLocalizationsHu extends AppLocalizations {
   String get hallWomenHint => 'A női világbajnokok és játszmáik';
 
   @override
+  String get hallChallenge => 'Bajnok és kihívó';
+
+  @override
+  String hallChallengeHint(String year) {
+    return 'A $year-es világbajnoki párosmérkőzés két játékosának legszebb győzelmei';
+  }
+
+  @override
   String hallStickers(int n, int total) {
     return '$n/$total';
   }

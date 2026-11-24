@@ -258,23 +258,26 @@ class _MatchRow extends StatelessWidget {
   }
 }
 
-/// Šampionky: women's world champions, each with her own shelf.
-class WomenScreen extends ConsumerWidget {
-  const WomenScreen({super.key});
+/// A shelf of people, each with their own games: Šampionky (women's world
+/// champions) and Mistr a vyzyvatel (both players of the coming title match).
+class PeopleScreen extends ConsumerWidget {
+  const PeopleScreen({super.key, required this.shelfId, required this.title});
+
+  final String shelfId;
+  final String title;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final l10n = AppLocalizations.of(context);
     final watched = _watched(ref);
     return Scaffold(
       backgroundColor: _paper,
       body: SafeArea(
         child: Column(
           children: [
-            HallHeader(title: l10n.hallWomen),
+            HallHeader(title: title),
             Expanded(
               child: _loading(
-                ref.watch(shelfProvider('women')),
+                ref.watch(shelfProvider(shelfId)),
                 (groups) => GridView.extent(
                   padding: const EdgeInsets.all(16),
                   maxCrossAxisExtent: 240,

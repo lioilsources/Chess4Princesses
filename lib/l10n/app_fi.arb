@@ -35,6 +35,8 @@
   "hallMatchesHint": "Kaikki maailmanmestaruusottelut",
   "hallWomen": "Mestarinaiset",
   "hallWomenHint": "Naisten maailmanmestarit ja heidän pelinsä",
+  "hallChallenge": "Mestari ja haastaja",
+  "hallChallengeHint": "Kummankin pelaajan kauneimmat voitot, MM-ottelu {year}",
   "hallStickers": "{n}/{total}",
   "hallFideLine": "FIDE-titteli 1993–2006",
   "hallTiebreak": "Pikapeli",

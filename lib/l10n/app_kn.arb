@@ -35,6 +35,8 @@
   "hallMatchesHint": "ವಿಶ್ವ ಚಾಂಪಿಯನ್‌ಶಿಪ್‌ನ ಎಲ್ಲ ಪಂದ್ಯಗಳು",
   "hallWomen": "ಚಾಂಪಿಯನ್ ಮಹಿಳೆಯರು",
   "hallWomenHint": "ಮಹಿಳಾ ವಿಶ್ವ ಚಾಂಪಿಯನ್‌ಗಳು ಮತ್ತು ಅವರ ಆಟಗಳು",
+  "hallChallenge": "ಚಾಂಪಿಯನ್ ಮತ್ತು ಸವಾಲುಗಾರ",
+  "hallChallengeHint": "{year} ಪ್ರಶಸ್ತಿ ಪಂದ್ಯದ ಇಬ್ಬರೂ ಆಟಗಾರರ ಅತ್ಯಂತ ಸುಂದರ ಗೆಲುವುಗಳು",
   "hallStickers": "{total}ರಲ್ಲಿ {n}",
   "hallFideLine": "ಫಿಡೆ ಪ್ರಶಸ್ತಿ 1993–2006",
   "hallTiebreak": "ವೇಗದ ಆಟ",

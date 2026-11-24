@@ -35,6 +35,8 @@
   "hallMatchesHint": "Semua perlawanan kejohanan dunia",
   "hallWomen": "Juara wanita",
   "hallWomenHint": "Juara dunia wanita dan permainan mereka",
+  "hallChallenge": "Juara dan pencabar",
+  "hallChallengeHint": "Kemenangan terindah kedua-dua pemain perlawanan gelaran {year}",
   "hallStickers": "{n} daripada {total}",
   "hallFideLine": "Gelaran FIDE 1993–2006",
   "hallTiebreak": "Permainan pantas",

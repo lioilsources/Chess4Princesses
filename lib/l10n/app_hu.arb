@@ -35,6 +35,8 @@
   "hallMatchesHint": "Minden világbajnoki párosmérkőzés",
   "hallWomen": "Bajnoknők",
   "hallWomenHint": "A női világbajnokok és játszmáik",
+  "hallChallenge": "Bajnok és kihívó",
+  "hallChallengeHint": "A {year}-es világbajnoki párosmérkőzés két játékosának legszebb győzelmei",
   "hallStickers": "{n}/{total}",
   "hallFideLine": "FIDE-cím 1993–2006",
   "hallTiebreak": "Rapidjátszma",

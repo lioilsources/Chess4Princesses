@@ -43,5 +43,7 @@ samples were checked against Wikipedia (Opera Game; Game of the Century; Vera Me
 The library (G3) comes from the free PGN downloads of PGN Mentor (pgnmentor.com): the world
 championship event files and the player collections of the champions, Morphy and Anderssen.
 Only moves, players, dates, places, rounds and ratings are kept; the selections on the shelves
-are our own (`data/games/sources.yaml`). The stories of the golden board (G4) will be checked
+are our own (`data/games/sources.yaml`). Players PGN Mentor does not have yet (the 2026
+challenger Javokhir Sindarov) come from the public Lichess broadcasts of classical events
+(lichess.org/broadcast), fetched by `tool/games/lichess_player.py`; the same facts only are kept. The stories of the golden board (G4) will be checked
 against a second source game by game.

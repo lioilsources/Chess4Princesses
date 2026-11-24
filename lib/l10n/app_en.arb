@@ -35,6 +35,8 @@
   "hallMatchesHint": "Every world championship match",
   "hallWomen": "Women Champions",
   "hallWomenHint": "Women's world champions and their games",
+  "hallChallenge": "Champion and Challenger",
+  "hallChallengeHint": "The finest wins of both players in the {year} title match",
   "hallStickers": "{n} of {total}",
   "hallFideLine": "FIDE title 1993–2006",
   "hallTiebreak": "Rapid game",

@@ -35,6 +35,8 @@
   "hallMatchesHint": "Tutti i match per il campionato del mondo",
   "hallWomen": "Campionesse",
   "hallWomenHint": "Le campionesse del mondo e le loro partite",
+  "hallChallenge": "Campione e sfidante",
+  "hallChallengeHint": "Le vittorie più belle dei due giocatori del match per il titolo {year}",
   "hallStickers": "{n} su {total}",
   "hallFideLine": "Titolo FIDE 1993–2006",
   "hallTiebreak": "Partita rapida",

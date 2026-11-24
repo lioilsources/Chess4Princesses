@@ -35,6 +35,8 @@
   "hallMatchesHint": "विश्व चैंपियनशिप के सारे मुक़ाबले",
   "hallWomen": "चैंपियन महिलाएँ",
   "hallWomenHint": "महिला विश्व चैंपियन और उनकी बाज़ियाँ",
+  "hallChallenge": "चैंपियन और चैलेंजर",
+  "hallChallengeHint": "{year} के खिताबी मुकाबले के दोनों खिलाड़ियों की सबसे सुंदर जीतें",
   "hallStickers": "{total} में से {n}",
   "hallFideLine": "फ़िडे ख़िताब 1993–2006",
   "hallTiebreak": "तेज़ बाज़ी",

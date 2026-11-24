@@ -92,3 +92,9 @@ others:
   - {id: graf, name: Sonja Graf, match: '^graf,\s*s'}
   - {id: dzagnidze, name: Nana Dzagnidze, match: '^dzagnidze'}
   - {id: koneru, name: Humpy Koneru, match: '^koneru'}
+  - {id: sindarov, name: Javokhir Sindarov, match: '^sindarov'}
+  - {id: nakamura, name: Hikaru Nakamura, match: '^nakamura,\s*h'}
+  - {id: erigaisi, name: Arjun Erigaisi, match: '^erigaisi'}
+  - {id: praggnanandhaa, name: R Praggnanandhaa, short: Praggnanandhaa, match: '^(praggnanandhaa|r\.? praggnanandhaa)'}
+  - {id: esipenko, name: Andrey Esipenko, match: '^esipenko'}
+  - {id: wei, name: Wei Yi, short: Wei, match: '^wei(,\s*yi|\s+yi)$'}

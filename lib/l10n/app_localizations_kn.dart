@@ -124,6 +124,14 @@ class AppLocalizationsKn extends AppLocalizations {
   String get hallWomenHint => 'ಮಹಿಳಾ ವಿಶ್ವ ಚಾಂಪಿಯನ್‌ಗಳು ಮತ್ತು ಅವರ ಆಟಗಳು';
 
   @override
+  String get hallChallenge => 'ಚಾಂಪಿಯನ್ ಮತ್ತು ಸವಾಲುಗಾರ';
+
+  @override
+  String hallChallengeHint(String year) {
+    return '$year ಪ್ರಶಸ್ತಿ ಪಂದ್ಯದ ಇಬ್ಬರೂ ಆಟಗಾರರ ಅತ್ಯಂತ ಸುಂದರ ಗೆಲುವುಗಳು';
+  }
+
+  @override
   String hallStickers(int n, int total) {
     return '$totalರಲ್ಲಿ $n';
   }

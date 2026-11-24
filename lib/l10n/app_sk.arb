@@ -35,6 +35,8 @@
   "hallMatchesHint": "Všetky zápasy o titul majstra sveta",
   "hallWomen": "Šampiónky",
   "hallWomenHint": "Majsterky sveta a ich partie",
+  "hallChallenge": "Majster a vyzývateľ",
+  "hallChallengeHint": "Najkrajšie výhry oboch hráčov zápasu o titul {year}",
   "hallStickers": "{n} z {total}",
   "hallFideLine": "Titul FIDE 1993–2006",
   "hallTiebreak": "Rýchla partia",

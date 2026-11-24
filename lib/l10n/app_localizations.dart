@@ -393,6 +393,18 @@ abstract class AppLocalizations {
   /// **'Mistryně světa a jejich partie'**
   String get hallWomenHint;
 
+  /// No description provided for @hallChallenge.
+  ///
+  /// In cs, this message translates to:
+  /// **'Mistr a vyzyvatel'**
+  String get hallChallenge;
+
+  /// No description provided for @hallChallengeHint.
+  ///
+  /// In cs, this message translates to:
+  /// **'Nejkrásnější výhry obou hráčů zápasu o titul {year}'**
+  String hallChallengeHint(String year);
+
   /// No description provided for @hallStickers.
   ///
   /// In cs, this message translates to:

@@ -35,6 +35,8 @@
   "hallMatchesHint": "Alle VM-matcher",
   "hallWomen": "Mesterinner",
   "hallWomenHint": "Verdensmesterinnene og partiene deres",
+  "hallChallenge": "Mester og utfordrer",
+  "hallChallengeHint": "De vakreste seirene til begge spillerne i tittelkampen {year}",
   "hallStickers": "{n} av {total}",
   "hallFideLine": "FIDE-tittelen 1993–2006",
   "hallTiebreak": "Hurtigparti",

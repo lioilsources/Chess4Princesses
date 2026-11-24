@@ -125,6 +125,14 @@ class AppLocalizationsEl extends AppLocalizations {
       'Οι παγκόσμιες πρωταθλήτριες και οι παρτίδες τους';
 
   @override
+  String get hallChallenge => 'Πρωταθλητής και διεκδικητής';
+
+  @override
+  String hallChallengeHint(String year) {
+    return 'Οι ωραιότερες νίκες και των δύο παικτών του αγώνα για τον τίτλο $year';
+  }
+
+  @override
   String hallStickers(int n, int total) {
     return '$n από $total';
   }

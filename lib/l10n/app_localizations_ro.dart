@@ -124,6 +124,14 @@ class AppLocalizationsRo extends AppLocalizations {
   String get hallWomenHint => 'Campioanele mondiale și partidele lor';
 
   @override
+  String get hallChallenge => 'Campionul și challengerul';
+
+  @override
+  String hallChallengeHint(String year) {
+    return 'Cele mai frumoase victorii ale celor doi jucători din meciul pentru titlu $year';
+  }
+
+  @override
   String hallStickers(int n, int total) {
     return '$n din $total';
   }

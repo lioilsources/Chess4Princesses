@@ -124,6 +124,14 @@ class AppLocalizationsPt extends AppLocalizations {
   String get hallWomenHint => 'As campeãs do mundo e as suas partidas';
 
   @override
+  String get hallChallenge => 'Campeão e desafiante';
+
+  @override
+  String hallChallengeHint(String year) {
+    return 'As vitórias mais bonitas dos dois jogadores do match pelo título $year';
+  }
+
+  @override
   String hallStickers(int n, int total) {
     return '$n de $total';
   }
@@ -328,6 +336,14 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get hallWomenHint => 'As campeãs mundiais e suas partidas';
 
   @override
+  String get hallChallenge => 'Campeão e desafiante';
+
+  @override
+  String hallChallengeHint(String year) {
+    return 'As vitórias mais bonitas dos dois jogadores do match pelo título $year';
+  }
+
+  @override
   String hallStickers(int n, int total) {
     return '$n de $total';
   }
@@ -530,6 +546,14 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
 
   @override
   String get hallWomenHint => 'As campeãs do mundo e as suas partidas';
+
+  @override
+  String get hallChallenge => 'Campeão e desafiante';
+
+  @override
+  String hallChallengeHint(String year) {
+    return 'As vitórias mais bonitas dos dois jogadores do match pelo título $year';
+  }
 
   @override
   String hallStickers(int n, int total) {

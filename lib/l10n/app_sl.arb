@@ -35,6 +35,8 @@
   "hallMatchesHint": "Vsi dvoboji za naslov svetovnega prvaka",
   "hallWomen": "Prvakinje",
   "hallWomenHint": "Svetovne prvakinje in njihove partije",
+  "hallChallenge": "Prvak in izzivalec",
+  "hallChallengeHint": "Najlepše zmage obeh igralcev dvoboja za naslov {year}",
   "hallStickers": "{n} od {total}",
   "hallFideLine": "Naslov FIDE 1993–2006",
   "hallTiebreak": "Hitropotezna partija",

@@ -21,6 +21,15 @@ final _fast = RegExp(
   caseSensitive: false,
 );
 
+/// Rapid, blitz and the like by event/round names, or by a TimeControl
+/// header (broadcast PGNs) with less than an hour on the clock.
+bool _isFast(PgnGame g) {
+  if (_fast.hasMatch('${g.headers['Event']} ${g.headers['Site']} ${g.headers['Round']}')) return true;
+  // Only the PGN form ("40/5400+30:1800+30", "900+10"); prose like "120 minutes…" is skipped.
+  final base = int.tryParse(RegExp(r'^(?:\d+/)?(\d+)(?:\+\d+)?(?::|$)').firstMatch(g.headers['TimeControl'] ?? '')?[1] ?? '');
+  return base != null && base < 3600;
+}
+
 class Player {
   Player(this.id, this.name, this.short, this.match);
   final String id;
@@ -96,7 +105,8 @@ Src? clean(String file, PgnGame g, {String? event}) {
   h['Result'] = g.result;
   // Events are named by place and year (PLAN §7): player-file events are
   // full of sponsors, so they are rebuilt from Site and Date.
-  final site = h['Site']?.replaceAll(RegExp(r'\s+[A-Z]{3}$'), '').trim();
+  // "Toronto CAN", "Paphos, Cyprus" → the town only.
+  final site = h['Site']?.replaceAll(RegExp(r'(\s+[A-Z]{3}|,.*)$'), '').trim();
   final year = (h['Date'] ?? '').split('.').first;
   h['Event'] = event ?? [?site, if (int.tryParse(year) != null) year].join(' ');
   if (h['Event']!.isEmpty) h.remove('Event');
@@ -248,60 +258,92 @@ void main(List<String> args) {
   }
   writeJson('$_out/c/matches.json', {'v': 1, 'groups': groups});
 
+  /// A shelf of people (Šampionky, Mistr a vyzyvatel): up to [per] best wins of
+  /// each player found in [files], scored by mates, strong opponents, short
+  /// games and a bonus for the years in [window].
+  List<Map<String, Object?>> peopleShelf(String pack, List<YamlMap> people, List<String> files, int per, List<List<int?>> Function(YamlMap) window, {int? year}) {
+    final groups = <Map<String, Object?>>[];
+    final games = <Src>[];
+    final from = [...extras, for (final f in files) ...byFile[f] ?? <Raw>[]];
+    for (final c in people) {
+      final p = _players[c['id']]!;
+      final cands = <String, Src>{};
+      for (final r in from) {
+        final g = r.g;
+        if (g.result != '1-0' && g.result != '0-1') continue;
+        if (canon(g.header(g.result == '1-0' ? 'White' : 'Black')) != p.name) continue;
+        if (_isFast(g)) continue;
+        final s = r.src;
+        if (s == null) continue;
+        final won = (s.white == p.name && s.raw.result == '1-0') || (s.black == p.name && s.raw.result == '0-1');
+        if (!won || s.raw.headers['FEN'] != null || s.record.length < 40) continue;
+        final opp = int.tryParse(s.raw.headers[s.white == p.name ? 'BlackElo' : 'WhiteElo'] ?? '');
+        if (opp != null && opp < 2350) continue;
+        if (_fast.hasMatch('${s.raw.headers['Event']} ${s.raw.headers['Site']}')) continue;
+        cands[s.id] = s;
+      }
+      if (cands.isEmpty) continue;
+      final spans = window(c);
+      double score(Src s) {
+        final opp = int.tryParse(s.raw.headers[s.white == p.name ? 'BlackElo' : 'WhiteElo'] ?? '') ?? 2200;
+        final y = s.year ?? 0;
+        final inWindow = spans.any((r) => y >= r[0]! && y <= (r[1] ?? 9999));
+        return (s.record.endsInMate ? 150 : 0) + (inWindow ? 150 : 0) + opp / 4 - s.record.length;
+      }
+
+      final pick = (cands.values.toList()..sort((a, b) => score(b).compareTo(score(a)))).take(per).toList()
+        ..sort((a, b) => (a.raw.headers['Date'] ?? '').compareTo(b.raw.headers['Date'] ?? ''));
+      final items = <Map<String, Object?>>[];
+      for (final s in pick) {
+        final had = where[s.id];
+        if (had != null) {
+          items.add(had);
+          continue;
+        }
+        final it = item(s, pack, games.length);
+        games.add(s);
+        where[s.id] = it;
+        items.add(it);
+      }
+      final reigns = [for (final r in (c['reigns'] as YamlList?)?.cast<YamlList>() ?? const <YamlList>[]) '${r[0]}–${r[1] ?? ''}'];
+      groups.add({'id': p.id, 'title': p.name, 'n': ?c['n'], 'year': ?year, 'reigns': reigns, 'items': items});
+    }
+    writePack(pack, games);
+    writeJson('$_out/c/$pack.json', {'v': 1, 'groups': groups});
+    return groups;
+  }
+
   // --- Šampionky ---
   final women = cfg['women'] as YamlMap;
-  final per = women['perChampion'] as int;
-  final womenGroups = <Map<String, Object?>>[];
-  final womenGames = <Src>[];
-  final champs = [
-    for (final p in (py['champions'] as YamlList).cast<YamlMap>())
-      if (p['line'] == 'women') p,
-  ];
-  for (final c in champs) {
-    final p = _players[c['id']]!;
-    final from = [...extras, for (final f in (women['files'] as YamlList).cast<String>()) ...byFile[f] ?? <Raw>[]];
-    final cands = <String, Src>{};
-    for (final r in from) {
-      final g = r.g;
-      if (g.result != '1-0' && g.result != '0-1') continue;
-      if (canon(g.header(g.result == '1-0' ? 'White' : 'Black')) != p.name) continue;
-      if (_fast.hasMatch('${g.headers['Event']} ${g.headers['Site']}')) continue;
-      final s = r.src;
-      if (s == null) continue;
-      final won = (s.white == p.name && s.raw.result == '1-0') || (s.black == p.name && s.raw.result == '0-1');
-      if (!won || s.raw.headers['FEN'] != null || s.record.length < 40) continue;
-      final opp = int.tryParse(s.raw.headers[s.white == p.name ? 'BlackElo' : 'WhiteElo'] ?? '');
-      if (opp != null && opp < 2350) continue;
-      if (_fast.hasMatch('${s.raw.headers['Event']} ${s.raw.headers['Site']}')) continue;
-      cands[s.id] = s;
-    }
-    if (cands.isEmpty) continue;
-    double score(Src s) {
-      final opp = int.tryParse(s.raw.headers[s.white == p.name ? 'BlackElo' : 'WhiteElo'] ?? '') ?? 2200;
-      final y = s.year ?? 0;
-      final reign = (c['reigns'] as YamlList).cast<YamlList>().any((r) => y >= (r[0] as int) - 2 && y <= ((r[1] as int?) ?? 9999));
-      return (s.record.endsInMate ? 150 : 0) + (reign ? 150 : 0) + opp / 4 - s.record.length;
-    }
+  final womenGroups = peopleShelf(
+    'women',
+    [
+      for (final p in (py['champions'] as YamlList).cast<YamlMap>())
+        if (p['line'] == 'women') p,
+    ],
+    (women['files'] as YamlList).cast<String>().toList(),
+    women['perChampion'] as int,
+    (c) => [
+      for (final r in (c['reigns'] as YamlList).cast<YamlList>()) [(r[0] as int) - 2, r[1] as int?],
+    ],
+  );
 
-    final pick = (cands.values.toList()..sort((a, b) => score(b).compareTo(score(a)))).take(per).toList()
-      ..sort((a, b) => (a.raw.headers['Date'] ?? '').compareTo(b.raw.headers['Date'] ?? ''));
-    final items = <Map<String, Object?>>[];
-    for (final s in pick) {
-      final had = where[s.id];
-      if (had != null) {
-        items.add(had);
-        continue;
-      }
-      final it = item(s, 'women', womenGames.length);
-      womenGames.add(s);
-      where[s.id] = it;
-      items.add(it);
-    }
-    final reigns = [for (final r in (c['reigns'] as YamlList).cast<YamlList>()) '${r[0]}–${r[1] ?? ''}'];
-    womenGroups.add({'id': p.id, 'title': p.name, 'n': c['n'], 'reigns': reigns, 'items': items});
-  }
-  writePack('women', womenGames);
-  writeJson('$_out/c/women.json', {'v': 1, 'groups': womenGroups});
+  // --- Mistr a vyzyvatel: both players of the coming title match ---
+  final ch = cfg['challenge'] as YamlMap;
+  final chYear = ch['year'] as int;
+  final byId = <String, YamlMap>{
+    for (final p in [...py['others'] as YamlList, ...(py['champions'] as YamlList).reversed]) (p as YamlMap)['id'] as String: p,
+  };
+  final challenge = peopleShelf(
+    'challenge',
+    [for (final id in (ch['players'] as YamlList).cast<String>()) byId[id]!],
+    (ch['files'] as YamlList).cast<String>().toList(),
+    ch['perPlayer'] as int,
+    (_) => [
+      [chYear - 2, chYear],
+    ],
+    year: chYear,
+  );
 
   // --- Zlatá šachovnice ---
   final goldenGames = <Src>[];
@@ -334,10 +376,11 @@ void main(List<String> args) {
       {'id': 'golden', 'kind': 'board', 'file': 'c/golden.json'},
       {'id': 'matches', 'kind': 'timeline', 'file': 'c/matches.json'},
       {'id': 'women', 'kind': 'people', 'file': 'c/women.json'},
+      {'id': 'challenge', 'kind': 'people', 'file': 'c/challenge.json'},
     ],
   });
   final total = where.length;
-  stdout.writeln('games: ${groups.length} matches, ${womenGroups.length} women champions, ${golden.length} golden, $total unique games');
+  stdout.writeln('games: ${groups.length} matches, ${womenGroups.length} women champions, ${challenge.length} challengers, ${golden.length} golden, $total unique games');
 }
 
 /// Champion of [line] right after a title event held in [year].

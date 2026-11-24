@@ -35,6 +35,8 @@
   "hallMatchesHint": "عالمی چیمپئن شپ کے تمام مقابلے",
   "hallWomen": "چیمپئن خواتین",
   "hallWomenHint": "خواتین عالمی چیمپئن اور ان کی بازیاں",
+  "hallChallenge": "چیمپئن اور چیلنجر",
+  "hallChallengeHint": "{year} کے ٹائٹل میچ کے دونوں کھلاڑیوں کی سب سے خوبصورت جیتیں",
   "hallStickers": "{total} میں سے {n}",
   "hallFideLine": "فیڈے ٹائٹل 1993–2006",
   "hallTiebreak": "تیز بازی",

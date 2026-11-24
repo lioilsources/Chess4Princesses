@@ -124,6 +124,14 @@ class AppLocalizationsJa extends AppLocalizations {
   String get hallWomenHint => 'じょせいの せかいチャンピオンと その ゲーム';
 
   @override
+  String get hallChallenge => 'チャンピオンと挑戦者';
+
+  @override
+  String hallChallengeHint(String year) {
+    return '$year年タイトル戦の二人のいちばん美しい勝利';
+  }
+
+  @override
   String hallStickers(int n, int total) {
     return '$totalこ中 $nこ';
   }

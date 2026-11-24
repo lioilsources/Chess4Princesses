@@ -35,6 +35,8 @@
   "hallMatchesHint": "所有世界冠军赛",
   "hallWomen": "女子冠军",
   "hallWomenHint": "女子世界冠军和她们的对局",
+  "hallChallenge": "冠军与挑战者",
+  "hallChallengeHint": "{year}年冠军赛两位棋手最精彩的胜局",
   "hallStickers": "{n}/{total}",
   "hallFideLine": "国际棋联头衔 1993–2006",
   "hallTiebreak": "快棋",

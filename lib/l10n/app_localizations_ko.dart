@@ -124,6 +124,14 @@ class AppLocalizationsKo extends AppLocalizations {
   String get hallWomenHint => '여자 세계 챔피언과 그들의 경기';
 
   @override
+  String get hallChallenge => '챔피언과 도전자';
+
+  @override
+  String hallChallengeHint(String year) {
+    return '$year 타이틀 매치 두 선수의 가장 멋진 승리';
+  }
+
+  @override
   String hallStickers(int n, int total) {
     return '$total판 중 $n판';
   }
