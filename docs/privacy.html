@@ -37,7 +37,7 @@
 
   <h2>Live games (off by default)</h2>
   <p>Lessons, voices, sounds and famous games are all inside the app and work offline. The only feature that uses the internet is <em>live games</em>: replays of chess tournaments that are being played right now. It is <strong>off by default</strong> and must be switched on in the hall of famous games.</p>
-  <p>When it is on, the app downloads the list of current tournaments and their moves from the developer's server <code>feed.ol1n.com</code>. The request carries no account, no device or advertising identifier, no cookies and nothing about the child. The game data itself comes from public broadcasts on lichess.org; the app never contacts lichess.org directly.</p>
+  <p>When it is on, the app downloads the list of current tournaments, their moves and clock times from the developer's server <code>feed.ol1n.com</code>, about every 10 seconds while a live game is open on screen and never in the background. When the adviser is opened, the app also sends the position on the board (chess notation only) to get suggested moves. The request carries no account, no device or advertising identifier, no cookies and nothing about the child. The game data itself comes from public broadcasts on lichess.org; the app never contacts lichess.org directly.</p>
   <p>The server runs on Cloudflare. As with any internet connection, the device's IP address is visible to Cloudflare to deliver the answer. The developer's server does not store IP addresses or request headers; it keeps only error logs with the requested path.</p>
   <p>Switching live games off stops all network requests.</p>
 
@@ -70,7 +70,7 @@
 
   <h2>Živé partie (výchozí stav: vypnuto)</h2>
   <p>Lekce, hlasy, zvuky i slavné partie jsou přímo v appce a fungují bez internetu. Internet používá jen funkce <em>živé partie</em>: přehrávání šachových turnajů, které se právě hrají. Je <strong>ve výchozím stavu vypnutá</strong> a zapíná se v síni slavných partií.</p>
-  <p>Když je zapnutá, appka stahuje seznam probíhajících turnajů a jejich tahy ze serveru provozovatele <code>feed.ol1n.com</code>. Požadavek neobsahuje žádný účet, identifikátor zařízení ani reklamní identifikátor, žádné cookies a nic o dítěti. Samotné partie pocházejí z veřejných přenosů na lichess.org; appka se na lichess.org nikdy nepřipojuje napřímo.</p>
+  <p>Když je zapnutá, appka stahuje seznam probíhajících turnajů, jejich tahy a časy na hodinách ze serveru provozovatele <code>feed.ol1n.com</code>, zhruba každých 10 sekund, jen když je živá partie otevřená na obrazovce, nikdy na pozadí. Když se otevře rádce, appka pošle i pozici na šachovnici (jen šachový zápis), aby dostala návrhy tahů. Požadavek neobsahuje žádný účet, identifikátor zařízení ani reklamní identifikátor, žádné cookies a nic o dítěti. Samotné partie pocházejí z veřejných přenosů na lichess.org; appka se na lichess.org nikdy nepřipojuje napřímo.</p>
   <p>Server běží na Cloudflare. Jako u každého připojení k internetu vidí Cloudflare IP adresu zařízení, aby mohl odpověď doručit. Server provozovatele IP adresy ani hlavičky požadavků neukládá; uchovává jen záznamy o chybách s požadovanou cestou.</p>
   <p>Vypnutím živých partií přestanou veškeré síťové požadavky.</p>
 
