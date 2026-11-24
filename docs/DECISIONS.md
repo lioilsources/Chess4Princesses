@@ -93,6 +93,15 @@
     "First Last"; champions and frequent opponents are canonical. A sticker = the game was
     played to the end (`Progress.gamesWatched`).
 
+21. **Live mode (Prompts/06-ZIVY_PRENOS_PLAN.md, 24. 11. 2026).** A running game is no longer
+    a replay that stops at the last downloaded move: the live screen polls the relay every 10 s
+    while open and in front, catches up quickly, then plays each new move (battles on captures,
+    a burst of more than four plies quickly). Clocks and engine evaluations travel in the PGN as
+    `[%clk]` / `[%eval]` comments, so older app versions keep working. The adviser is the
+    source's cloud evaluation behind `/v1/advice` (no human commentary exists in the feed).
+    This overrides SLAVNE_PARTIE_PLAN §6 "no move-by-move live watching for the child".
+    Parent settings: battles on/off, classic pieces in games (replay and live).
+
 ## Open questions for Ol1n (PLAN §8 + BATTLES §7) — with recommendations
 
 | # | Question | Recommendation |

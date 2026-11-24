@@ -139,7 +139,7 @@ zdroj (Lichess Broadcast API) → relay → statické soubory na vlastní domén
   - Nasazení (`wrangler deploy`) je krok ven: dělá se na Olinův pokyn a s jeho přihlášením.
 - **Formát kanálu `v1/`:** `live.json` (běžící a nedávné turnaje: id, název cs/en, emblém, data, kola a jejich stav), `t/<id>/r<kolo>.pgn` (jen hlavičky a tahy). Kurátorský seznam `feed/tournaments.json`: ID vysílání, neutrální název, emblém. Přidání turnaje = PR + nasazení.
 - **Appka:** `lib/core/net/feed_client.dart` (závislosti `http`, `path_provider`), dotaz jen když je obrazovka otevřená, podmíněný `ETag`, stažené kolo se uloží a jde přehrát offline. Bez účtů, identifikátorů a analytiky. Přepínač „partie z internetu" v rodičovské zóně.
-- **Pro dítě:** živé sledování tah po tahu ne. Po skončení kola appka nabídne **pohádku z dnešního kola**: partii vybere pravidlo (rozhodnutý výsledek, mat na šachovnici, krátkost, počet bitev). Rodič vidí všechny partie kola i rozehrané.
+- **Pro dítě:** ~~živé sledování tah po tahu ne.~~ Změněno 24. 11. 2026: režim Živě, viz `06-ZIVY_PRENOS_PLAN.md`. Po skončení kola appka nabídne **pohádku z dnešního kola**: partii vybere pravidlo (rozhodnutý výsledek, mat na šachovnici, krátkost, počet bitev). Rodič vidí všechny partie kola i rozehrané.
 - **Po turnaji:** partie se přesunou do `data/games/` a vyjdou v dalším vydání appky; kanál tedy slouží i jako doplňování obsahu mezi vydáními.
 
 **Pilot: zápas o mistra světa 2026, Gukesh–Sindarov, Ženeva.** Údaje z Lichess API k 21. 11. 2026:
