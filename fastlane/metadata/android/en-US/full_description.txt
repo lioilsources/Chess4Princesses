@@ -5,7 +5,7 @@ Chess Kingdom teaches little children chess through play. Every piece is a fairy
 • When a piece captures, a short, cheerful battle with magic sparkles plays.
 • 14 armies to choose from: Fairies, Witches, Bees, Dinos, Cats, Dogs, Fruit, Veggies and more. Children pick their own army and the opponent's.
 • A hall of fame with almost 1,300 games: the Golden Board with the 64 most famous games in history, every world championship match since 1886, the women's world champions and the finest wins of both players in this year's title match (Gukesh and Sindarov). Games replay as a story, move by move, and each one earns a sticker.
-• Live tournaments: a parent can switch on replays of games from tournaments being played right now. It is off by default and it is the only feature that uses the internet.
+• Live tournaments: a parent can switch on games being played right now. New moves arrive by themselves, with both players' clocks, an adviser that shows possible continuations and a way to try your own moves. It is off by default and it is the only feature that uses the internet.
 • Stars for every lesson and clear progress across the map.
 • No ads, no in-app purchases, no accounts and no tracking. Lessons work offline.
 
