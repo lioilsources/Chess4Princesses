@@ -4,12 +4,15 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "predev": "npm run assets",
+    "predev": "npm run assets && npm run lessons",
     "dev": "vite",
+    "gen": "tsx scripts/gen-palette.ts",
+    "lessons": "tsx scripts/gen-lessons.ts",
     "assets": "tsx scripts/copy-assets.ts",
-    "prebuild": "npm run assets",
+    "prebuild": "npm run assets && npm run lessons",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
+    "pretest": "npm run lessons",
     "test": "vitest run",
     "lint": "eslint src test scripts",
     "gate": "npm run lint && npm run test && npm run build"
@@ -24,6 +27,7 @@
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.73.0",
     "vite": "^8.3.8",
-    "vitest": "^5.1.1"
+    "vitest": "^5.1.1",
+    "yaml": "^2.9.1"
   }
 }

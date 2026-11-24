@@ -1,12 +1,14 @@
-// F0 spike: a full game against the "baby" bot (random legal move, BotLevel.baby in
-// lib/core/engine/bot.dart) on the kid board. Tap-tap like chess_board.dart: tap a
-// piece of yours to see its dots, tap a dot to move. Lessons, map and battles: F1–F3.
+// Free game against a bot (rules/bot.ts, a port of lib/core/engine/bot.dart) on the
+// kid board. Tap-tap like chess_board.dart: tap a piece of yours to see its dots, tap
+// a dot to move. Lessons, map and battles: F2–F3.
 //
-// Deep links: ?army=<id> (mine), ?rival=<id>, ?seed=<n> (repeatable bot), ?debug (FPS).
+// Deep links: ?army=<id> (mine), ?rival=<id>, ?bot=1..4 or a level name,
+// ?seed=<n> (repeatable bot), ?debug (FPS).
 import { Engine } from '@babylonjs/core/Engines/engine';
 
+import { Bot, parseBotLevel, type BotLevel } from '../rules/bot';
 import { Position } from '../rules/position';
-import { lcg, pick } from '../rules/random';
+import { lcg } from '../rules/random';
 import { Rules } from '../rules/rules';
 import { opponent, type Move, type Side, type Square } from '../rules/types';
 import { armyParam, loadArmy, type ArmyArt } from '../ui/armies';
@@ -23,6 +25,14 @@ const BOT_DELAY_MS = 600;
 
 const me: Side = 'white';
 const rules = new Rules('full');
+const botLevel = ((): BotLevel => {
+  try {
+    return parseBotLevel(params.get('bot') ?? 'baby');
+  } catch {
+    return 'baby';
+  }
+})();
+const bot = new Bot(botLevel, random, rules);
 const canvas = byId('game') as HTMLCanvasElement;
 const engine = new Engine(canvas, true, { preserveDrawingBuffer: false, stencil: false, antialias: true }, true);
 engine.setHardwareScalingLevel(1 / (devicePixelRatio || 1));
@@ -37,7 +47,6 @@ const board = new BoardScene(engine, armyOf, me);
 let pos = Position.initial();
 let selected: Square | null = null;
 let dots = new Map<Square, Move>();
-let last: Move | null = null;
 let botTimer = 0;
 
 const hud = new Hud(restart);
@@ -47,13 +56,12 @@ function restart(): void {
   pos = Position.initial();
   selected = null;
   dots = new Map();
-  last = null;
   board.setPosition(pos);
   refresh();
 }
 
 function refresh(): void {
-  board.paint({ selected, dots: new Set(dots.keys()), last });
+  board.paint({ selected, dots: new Set(dots.keys()) });
   hud.setTurn(armyOf(pos.sideToMove));
   const status = rules.status(pos);
   if (status === 'ongoing') {
@@ -68,15 +76,14 @@ function refresh(): void {
 
 function play(m: Move): void {
   pos = pos.apply(m);
-  last = m;
   selected = null;
   dots = new Map();
   board.setPosition(pos, m);
   refresh();
   if (pos.sideToMove !== me && rules.status(pos) === 'ongoing') {
     botTimer = window.setTimeout(() => {
-      const moves = rules.legalMoves(pos);
-      if (moves.length) play(pick(moves, random));
+      const reply = bot.chooseMove(pos);
+      if (reply) play(reply);
     }, BOT_DELAY_MS);
   }
 }

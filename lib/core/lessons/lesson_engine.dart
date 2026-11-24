@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import '../chess/position.dart';
 import '../chess/rules.dart';
 import '../chess/types.dart';
@@ -35,9 +37,10 @@ class MoveEvent {
 
 /// Runtime state of one [LessonTask]. Pure Dart; the Flutter controller wraps it.
 class TaskSession {
-  TaskSession(this.task, {Bot? bot})
+  /// [random] seeds the pawn-war bot (golden vectors); the app passes none.
+  TaskSession(this.task, {Bot? bot, Random? random})
     : rules = Rules(task.rules),
-      _bot = bot ?? Bot(task.bot, rules: Rules(task.rules), goal: BotGoal.pawnWar) {
+      _bot = bot ?? Bot(task.bot, rules: Rules(task.rules), goal: BotGoal.pawnWar, random: random) {
     reset();
   }
 
@@ -277,9 +280,11 @@ class TaskSession {
 
 /// A whole lesson: tasks one after another.
 class LessonSession {
-  LessonSession(this.lesson) : current = TaskSession(lesson.tasks.first);
+  /// [random] seeds the pawn-war bots (golden vectors); the app passes none.
+  LessonSession(this.lesson, {Random? random}) : _random = random, current = TaskSession(lesson.tasks.first, random: random);
 
   final Lesson lesson;
+  final Random? _random;
   int taskIndex = 0;
   TaskSession current;
   final List<int> _taskStars = [];
@@ -293,7 +298,7 @@ class LessonSession {
     _taskStars.add(current.starsEarned);
     if (!isLastTask) {
       taskIndex++;
-      current = TaskSession(lesson.tasks[taskIndex]);
+      current = TaskSession(lesson.tasks[taskIndex], random: _random);
     }
   }
 

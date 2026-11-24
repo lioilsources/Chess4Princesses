@@ -1,15 +1,14 @@
 # Babylon.js web client (babylon/) → GitHub Pages.
 # Site layout: docs/ unchanged at the root (landing, privacy, support), the game under /play/.
 # Requires Settings → Pages → Source: "GitHub Actions" (set by the repo owner, not by this workflow).
-# F1 adds the `golden` job (tool/dump_vectors.dart → babylon/test/golden/).
 name: Web
 
 on:
   push:
     branches: [main]
-    paths: ['babylon/**', 'docs/**', 'lib/core/**', 'assets/armies/**', '.github/workflows/web.yml']
+    paths: ['babylon/**', 'docs/**', 'lib/core/**', 'lib/features/board/**', 'lib/features/lesson/lesson_screen.dart', 'assets/armies/**', 'assets/lessons/**', 'assets/i18n/**', 'tool/dump_vectors.dart', '.github/workflows/web.yml']
   pull_request:
-    paths: ['babylon/**', 'lib/core/**', 'assets/armies/**', '.github/workflows/web.yml']
+    paths: ['babylon/**', 'lib/core/**', 'lib/features/board/**', 'lib/features/lesson/lesson_screen.dart', 'assets/armies/**', 'assets/lessons/**', 'assets/i18n/**', 'tool/dump_vectors.dart', '.github/workflows/web.yml']
   workflow_dispatch:
 
 permissions:
@@ -20,6 +19,29 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  golden:
+    name: Golden vectors in sync with Dart
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.50.x'
+          channel: stable
+          cache: true
+      - run: flutter pub get && dart run tool/dump_vectors.dart
+      # Chess is all discrete (no libm): the vectors must be byte-identical.
+      - name: Vectors equal the committed ones
+        run: git diff --exit-code --stat babylon/test/golden/moves.json babylon/test/golden/bot.json babylon/test/golden/lessons.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: babylon/package-lock.json
+      - name: TS port replays the freshly generated vectors
+        working-directory: babylon
+        run: npm ci && npm run lessons && npx vitest run test/golden.test.ts
+
   gate:
     name: Lint, tests, build
     runs-on: ubuntu-latest
@@ -50,7 +72,7 @@ jobs:
 
   deploy:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
-    needs: [gate]
+    needs: [golden, gate]
     runs-on: ubuntu-latest
     permissions:
       pages: write
