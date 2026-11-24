@@ -1,0 +1,89 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #FFF4FB;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+#game {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+}
+
+.hud { position: fixed; z-index: 2; }
+
+#bar {
+  top: max(10px, env(safe-area-inset-top));
+  left: 12px;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+#turn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(74, 59, 92, 0.25);
+  object-fit: contain;
+}
+
+.round {
+  pointer-events: auto;
+  width: 52px;
+  height: 52px;
+  border: 0;
+  border-radius: 50%;
+  background: #7B4FA0;
+  color: #FFFFFF;
+  font-size: 28px;
+  box-shadow: 0 2px 8px rgba(74, 59, 92, 0.25);
+  cursor: pointer;
+}
+
+#end {
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(74, 59, 92, 0.35);
+}
+
+#end[hidden] { display: none; }
+
+#end .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 32px;
+  border-radius: 28px;
+  background: #FFFAF0;
+  box-shadow: 0 8px 32px rgba(74, 59, 92, 0.35);
+}
+
+#end img { width: 140px; height: 140px; object-fit: contain; }
+#end .mark { font-size: 56px; line-height: 1; }
+#end[data-outcome='won'] .mark::before { content: '🎉'; }
+#end[data-outcome='lost'] .mark::before { content: '🌟'; }
+#end[data-outcome='draw'] .mark::before { content: '🤝'; }
+
+#fps {
+  bottom: 8px;
+  left: 8px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  font: 12px ui-monospace, monospace;
+}
