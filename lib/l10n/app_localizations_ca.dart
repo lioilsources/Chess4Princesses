@@ -213,4 +213,72 @@ class AppLocalizationsCa extends AppLocalizations {
   String liveGame(int n) {
     return 'Partida $n';
   }
+
+  @override
+  String get settingsTitle => 'Configuració';
+
+  @override
+  String get settingsBattles => 'Batalles en capturar';
+
+  @override
+  String get settingsBattlesHint =>
+      'Desactivat: la peça capturada només desapareix en un núvol.';
+
+  @override
+  String get settingsClassic => 'Peces d\'escacs clàssiques';
+
+  @override
+  String get settingsClassicHint =>
+      'A les partides, en lloc dels personatges dels exèrcits. Llavors no es mostren batalles.';
+
+  @override
+  String get liveBadge => 'En directe';
+
+  @override
+  String get liveSkip => 'Salta';
+
+  @override
+  String get liveTryOwn => 'Ho provaré jo';
+
+  @override
+  String get liveAdviser => 'Conseller';
+
+  @override
+  String get liveBackToGame => 'Torna a la partida';
+
+  @override
+  String get liveNewMove => 'Jugada nova!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Jugades noves: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'S\'acaba el temps!';
+
+  @override
+  String get liveAdviserThinking => 'El conseller encara pensa.';
+
+  @override
+  String get liveAdviserContinue => 'Continuaré jo';
+
+  @override
+  String get liveAhead => 'Qui va guanyant';
+
+  @override
+  String get liveClockApprox => 'El temps és aproximat';
+
+  @override
+  String get liveReset => 'Des del principi';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Comença a les $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'profunditat $n';
+  }
 }

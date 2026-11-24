@@ -213,4 +213,71 @@ class AppLocalizationsFi extends AppLocalizations {
   String liveGame(int n) {
     return 'Peli $n';
   }
+
+  @override
+  String get settingsTitle => 'Asetukset';
+
+  @override
+  String get settingsBattles => 'Taistelut syödessä';
+
+  @override
+  String get settingsBattlesHint => 'Pois: syöty nappula vain katoaa pilveen.';
+
+  @override
+  String get settingsClassic => 'Klassiset shakkinappulat';
+
+  @override
+  String get settingsClassicHint =>
+      'Peleissä armeijoiden hahmojen sijaan. Taisteluita ei silloin näytetä.';
+
+  @override
+  String get liveBadge => 'Suorana';
+
+  @override
+  String get liveSkip => 'Ohita';
+
+  @override
+  String get liveTryOwn => 'Kokeilen itse';
+
+  @override
+  String get liveAdviser => 'Neuvonantaja';
+
+  @override
+  String get liveBackToGame => 'Takaisin peliin';
+
+  @override
+  String get liveNewMove => 'Uusi siirto!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Uusia siirtoja: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Aika loppuu!';
+
+  @override
+  String get liveAdviserThinking => 'Neuvonantaja miettii vielä.';
+
+  @override
+  String get liveAdviserContinue => 'Jatkan itse';
+
+  @override
+  String get liveAhead => 'Kuka johtaa';
+
+  @override
+  String get liveClockApprox => 'Aika on likimääräinen';
+
+  @override
+  String get liveReset => 'Alusta';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Alkaa klo $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'syvyys $n';
+  }
 }

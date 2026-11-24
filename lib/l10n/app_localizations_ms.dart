@@ -214,4 +214,72 @@ class AppLocalizationsMs extends AppLocalizations {
   String liveGame(int n) {
     return 'Permainan $n';
   }
+
+  @override
+  String get settingsTitle => 'Tetapan';
+
+  @override
+  String get settingsBattles => 'Pertempuran semasa menangkap';
+
+  @override
+  String get settingsBattlesHint =>
+      'Mati: buah yang ditangkap hanya hilang dalam awan.';
+
+  @override
+  String get settingsClassic => 'Buah catur klasik';
+
+  @override
+  String get settingsClassicHint =>
+      'Dalam permainan, menggantikan watak tentera. Pertempuran tidak dipaparkan.';
+
+  @override
+  String get liveBadge => 'Langsung';
+
+  @override
+  String get liveSkip => 'Langkau';
+
+  @override
+  String get liveTryOwn => 'Saya cuba sendiri';
+
+  @override
+  String get liveAdviser => 'Penasihat';
+
+  @override
+  String get liveBackToGame => 'Kembali ke permainan';
+
+  @override
+  String get liveNewMove => 'Langkah baharu!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Langkah baharu: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Masa hampir habis!';
+
+  @override
+  String get liveAdviserThinking => 'Penasihat masih berfikir.';
+
+  @override
+  String get liveAdviserContinue => 'Saya teruskan sendiri';
+
+  @override
+  String get liveAhead => 'Siapa mendahului';
+
+  @override
+  String get liveClockApprox => 'Masa ini anggaran';
+
+  @override
+  String get liveReset => 'Dari awal';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Bermula pada $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'kedalaman $n';
+  }
 }

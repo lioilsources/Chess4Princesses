@@ -214,4 +214,72 @@ class AppLocalizationsIt extends AppLocalizations {
   String liveGame(int n) {
     return 'Partita $n';
   }
+
+  @override
+  String get settingsTitle => 'Impostazioni';
+
+  @override
+  String get settingsBattles => 'Battaglie nelle catture';
+
+  @override
+  String get settingsBattlesHint =>
+      'Disattivato: il pezzo catturato sparisce solo in una nuvoletta.';
+
+  @override
+  String get settingsClassic => 'Pezzi degli scacchi classici';
+
+  @override
+  String get settingsClassicHint =>
+      'Nelle partite, al posto dei personaggi degli eserciti. Le battaglie allora non si vedono.';
+
+  @override
+  String get liveBadge => 'In diretta';
+
+  @override
+  String get liveSkip => 'Salta';
+
+  @override
+  String get liveTryOwn => 'Provo da solo';
+
+  @override
+  String get liveAdviser => 'Consigliere';
+
+  @override
+  String get liveBackToGame => 'Torna alla partita';
+
+  @override
+  String get liveNewMove => 'Mossa nuova!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Mosse nuove: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Il tempo sta finendo!';
+
+  @override
+  String get liveAdviserThinking => 'Il consigliere sta ancora pensando.';
+
+  @override
+  String get liveAdviserContinue => 'Continuo da solo';
+
+  @override
+  String get liveAhead => 'Chi è in vantaggio';
+
+  @override
+  String get liveClockApprox => 'Il tempo è approssimativo';
+
+  @override
+  String get liveReset => 'Dall\'inizio';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Inizia alle $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'profondità $n';
+  }
 }

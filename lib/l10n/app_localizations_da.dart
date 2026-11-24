@@ -214,4 +214,72 @@ class AppLocalizationsDa extends AppLocalizations {
   String liveGame(int n) {
     return 'Parti $n';
   }
+
+  @override
+  String get settingsTitle => 'Indstillinger';
+
+  @override
+  String get settingsBattles => 'Kampe ved slag';
+
+  @override
+  String get settingsBattlesHint =>
+      'Fra: en slået brik forsvinder bare i en sky.';
+
+  @override
+  String get settingsClassic => 'Klassiske skakbrikker';
+
+  @override
+  String get settingsClassicHint =>
+      'I partier i stedet for hærenes figurer. Så vises kampe ikke.';
+
+  @override
+  String get liveBadge => 'Live';
+
+  @override
+  String get liveSkip => 'Spring over';
+
+  @override
+  String get liveTryOwn => 'Jeg prøver selv';
+
+  @override
+  String get liveAdviser => 'Rådgiver';
+
+  @override
+  String get liveBackToGame => 'Tilbage til partiet';
+
+  @override
+  String get liveNewMove => 'Nyt træk!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Nye træk: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Tiden er ved at løbe ud!';
+
+  @override
+  String get liveAdviserThinking => 'Rådgiveren tænker stadig.';
+
+  @override
+  String get liveAdviserContinue => 'Jeg fortsætter selv';
+
+  @override
+  String get liveAhead => 'Hvem fører';
+
+  @override
+  String get liveClockApprox => 'Tiden er omtrentlig';
+
+  @override
+  String get liveReset => 'Fra starten';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Starter kl. $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'dybde $n';
+  }
 }

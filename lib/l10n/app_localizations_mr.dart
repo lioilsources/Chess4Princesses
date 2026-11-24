@@ -211,4 +211,71 @@ class AppLocalizationsMr extends AppLocalizations {
   String liveGame(int n) {
     return 'खेळ $n';
   }
+
+  @override
+  String get settingsTitle => 'सेटिंग्ज';
+
+  @override
+  String get settingsBattles => 'मोहरा मारताना लढाई';
+
+  @override
+  String get settingsBattlesHint => 'बंद: मारलेला मोहरा फक्त ढगात नाहीसा होतो.';
+
+  @override
+  String get settingsClassic => 'क्लासिक बुद्धिबळाचे मोहरे';
+
+  @override
+  String get settingsClassicHint =>
+      'डावांमध्ये सैन्याच्या पात्रांऐवजी. तेव्हा लढाया दिसत नाहीत.';
+
+  @override
+  String get liveBadge => 'थेट';
+
+  @override
+  String get liveSkip => 'वगळा';
+
+  @override
+  String get liveTryOwn => 'मी स्वतः प्रयत्न करतो';
+
+  @override
+  String get liveAdviser => 'सल्लागार';
+
+  @override
+  String get liveBackToGame => 'डावाकडे परत';
+
+  @override
+  String get liveNewMove => 'नवी चाल!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'नव्या चाली: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'वेळ संपत आहे!';
+
+  @override
+  String get liveAdviserThinking => 'सल्लागार अजून विचार करत आहे.';
+
+  @override
+  String get liveAdviserContinue => 'मी स्वतः पुढे खेळतो';
+
+  @override
+  String get liveAhead => 'कोण पुढे आहे';
+
+  @override
+  String get liveClockApprox => 'वेळ अंदाजे आहे';
+
+  @override
+  String get liveReset => 'सुरुवातीपासून';
+
+  @override
+  String liveStartsAt(String time) {
+    return '$time ला सुरू';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'खोली $n';
+  }
 }

@@ -213,4 +213,72 @@ class AppLocalizationsRo extends AppLocalizations {
   String liveGame(int n) {
     return 'Partida $n';
   }
+
+  @override
+  String get settingsTitle => 'Setări';
+
+  @override
+  String get settingsBattles => 'Bătălii la capturare';
+
+  @override
+  String get settingsBattlesHint =>
+      'Oprit: piesa capturată doar dispare într-un nor.';
+
+  @override
+  String get settingsClassic => 'Piese de șah clasice';
+
+  @override
+  String get settingsClassicHint =>
+      'În partide, în locul personajelor armatelor. Atunci bătăliile nu apar.';
+
+  @override
+  String get liveBadge => 'În direct';
+
+  @override
+  String get liveSkip => 'Sari peste';
+
+  @override
+  String get liveTryOwn => 'Încerc singur';
+
+  @override
+  String get liveAdviser => 'Sfătuitor';
+
+  @override
+  String get liveBackToGame => 'Înapoi la partidă';
+
+  @override
+  String get liveNewMove => 'Mutare nouă!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Mutări noi: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Se termină timpul!';
+
+  @override
+  String get liveAdviserThinking => 'Sfătuitorul încă se gândește.';
+
+  @override
+  String get liveAdviserContinue => 'Continui singur';
+
+  @override
+  String get liveAhead => 'Cine conduce';
+
+  @override
+  String get liveClockApprox => 'Timpul este aproximativ';
+
+  @override
+  String get liveReset => 'De la început';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Începe la $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'adâncime $n';
+  }
 }

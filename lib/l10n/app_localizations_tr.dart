@@ -214,4 +214,72 @@ class AppLocalizationsTr extends AppLocalizations {
   String liveGame(int n) {
     return 'Oyun $n';
   }
+
+  @override
+  String get settingsTitle => 'Ayarlar';
+
+  @override
+  String get settingsBattles => 'Taş alırken savaş';
+
+  @override
+  String get settingsBattlesHint =>
+      'Kapalı: alınan taş yalnızca bir bulutta kaybolur.';
+
+  @override
+  String get settingsClassic => 'Klasik satranç taşları';
+
+  @override
+  String get settingsClassicHint =>
+      'Oyunlarda ordu karakterlerinin yerine. O zaman savaşlar gösterilmez.';
+
+  @override
+  String get liveBadge => 'Canlı';
+
+  @override
+  String get liveSkip => 'Atla';
+
+  @override
+  String get liveTryOwn => 'Kendim deneyeceğim';
+
+  @override
+  String get liveAdviser => 'Danışman';
+
+  @override
+  String get liveBackToGame => 'Oyuna dön';
+
+  @override
+  String get liveNewMove => 'Yeni hamle!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Yeni hamleler: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Süre bitiyor!';
+
+  @override
+  String get liveAdviserThinking => 'Danışman hâlâ düşünüyor.';
+
+  @override
+  String get liveAdviserContinue => 'Kendim devam edeceğim';
+
+  @override
+  String get liveAhead => 'Kim önde';
+
+  @override
+  String get liveClockApprox => 'Süre yaklaşıktır';
+
+  @override
+  String get liveReset => 'Baştan';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Başlangıç $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'derinlik $n';
+  }
 }

@@ -214,4 +214,72 @@ class AppLocalizationsEl extends AppLocalizations {
   String liveGame(int n) {
     return 'Παρτίδα $n';
   }
+
+  @override
+  String get settingsTitle => 'Ρυθμίσεις';
+
+  @override
+  String get settingsBattles => 'Μάχες στις αιχμαλωσίες';
+
+  @override
+  String get settingsBattlesHint =>
+      'Ανενεργό: το κομμάτι που πιάστηκε απλώς χάνεται σε ένα συννεφάκι.';
+
+  @override
+  String get settingsClassic => 'Κλασικά κομμάτια σκακιού';
+
+  @override
+  String get settingsClassicHint =>
+      'Στις παρτίδες αντί για τους χαρακτήρες των στρατών. Τότε οι μάχες δεν εμφανίζονται.';
+
+  @override
+  String get liveBadge => 'Ζωντανά';
+
+  @override
+  String get liveSkip => 'Παράλειψη';
+
+  @override
+  String get liveTryOwn => 'Θα το δοκιμάσω μόνος μου';
+
+  @override
+  String get liveAdviser => 'Σύμβουλος';
+
+  @override
+  String get liveBackToGame => 'Πίσω στην παρτίδα';
+
+  @override
+  String get liveNewMove => 'Νέα κίνηση!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Νέες κινήσεις: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Ο χρόνος τελειώνει!';
+
+  @override
+  String get liveAdviserThinking => 'Ο σύμβουλος ακόμα σκέφτεται.';
+
+  @override
+  String get liveAdviserContinue => 'Θα συνεχίσω μόνος μου';
+
+  @override
+  String get liveAhead => 'Ποιος προηγείται';
+
+  @override
+  String get liveClockApprox => 'Ο χρόνος είναι κατά προσέγγιση';
+
+  @override
+  String get liveReset => 'Από την αρχή';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Αρχίζει στις $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'βάθος $n';
+  }
 }

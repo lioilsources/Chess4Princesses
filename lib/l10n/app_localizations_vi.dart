@@ -213,4 +213,72 @@ class AppLocalizationsVi extends AppLocalizations {
   String liveGame(int n) {
     return 'Ván $n';
   }
+
+  @override
+  String get settingsTitle => 'Cài đặt';
+
+  @override
+  String get settingsBattles => 'Trận đấu khi ăn quân';
+
+  @override
+  String get settingsBattlesHint =>
+      'Tắt: quân bị ăn chỉ biến mất trong làn khói.';
+
+  @override
+  String get settingsClassic => 'Quân cờ vua cổ điển';
+
+  @override
+  String get settingsClassicHint =>
+      'Trong ván cờ, thay cho các nhân vật của đội quân. Khi đó không hiện trận đấu.';
+
+  @override
+  String get liveBadge => 'Trực tiếp';
+
+  @override
+  String get liveSkip => 'Bỏ qua';
+
+  @override
+  String get liveTryOwn => 'Mình tự thử';
+
+  @override
+  String get liveAdviser => 'Quân sư';
+
+  @override
+  String get liveBackToGame => 'Quay lại ván cờ';
+
+  @override
+  String get liveNewMove => 'Nước đi mới!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Nước đi mới: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Sắp hết giờ!';
+
+  @override
+  String get liveAdviserThinking => 'Quân sư vẫn đang suy nghĩ.';
+
+  @override
+  String get liveAdviserContinue => 'Mình tự đi tiếp';
+
+  @override
+  String get liveAhead => 'Ai đang dẫn';
+
+  @override
+  String get liveClockApprox => 'Thời gian là ước tính';
+
+  @override
+  String get liveReset => 'Từ đầu';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Bắt đầu lúc $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'độ sâu $n';
+  }
 }

@@ -12,10 +12,16 @@ Lichess Broadcast API → Worker (edge cache) → appka (cache v telefonu)
 | Cesta | Obsah | Cache |
 |---|---|---|
 | `/v1/live.json` | `{v: 1, tournaments: [{id, name: {cs, en}, emblem, rounds: [{id, n, startsAt, state}]}]}` | 60 s |
-| `/v1/t/<id>/<roundId>.pgn` | partie kola: jen hlavičky `Event Date Round White Black Result ECO WhiteElo BlackElo FEN SetUp` a tahy hlavní varianty | 60 s, skončené kolo 1 h |
+| `/v1/t/<id>/<roundId>.pgn` | partie kola: hlavičky `Event Date Round White Black Result ECO WhiteElo BlackElo FEN SetUp`, `TimeControl` (z kurátorského seznamu, pole `tc`), u rozehrané partie `LastMoveAt` (unix sekundy posledního tahu); tahy hlavní varianty s komentářem `{[%clk …][%eval …]}` | rozehrané kolo 10 s, skončené 1 h |
+| `/v1/advice?fen=<FEN>` | rádce: `{v: 1, depth, lines: [{cp \| mate, moves: [uci…]}]}`, nejvýš 3 varianty po 10 půltazích, prázdné `lines` když zdroj pozici nezná | 10 min, neznámá pozice 60 s |
+
+Všechny odpovědi mají slabý `ETag`; na `If-None-Match` vrací Worker `304` bez těla.
+Appka se během otevřené živé partie ptá každých 10 s (`lib/core/games/live_config.dart`).
 
 - `Event` se přepisuje na neutrální název z kurátorského seznamu, bez sponzora.
-- Komentáře s hodinami a hodnocením, varianty a URL se zahazují.
+- Z komentářů zůstávají jen příkazy `[%clk]` a `[%eval]`; text komentářů, varianty, NAGy a URL se zahazují.
+- `LastMoveAt` = čas stažení ze zdroje minus `thinkTime` z JSON kola (`/api/broadcast/-/-/<roundId>`). Když ho zdroj nemá, hlavička chybí a appka tiká od chvíle, kdy tah uviděla.
+- Při `429` od zdroje rádce minutu odpovídá `503` s `retry-after: 60`.
 - Do appky jdou jen turnaje z `feed/src/tournaments.json` a jen v jejich termínu (± 1 den).
 
 ## Proč edge cache a ne cron + KV
@@ -50,6 +56,11 @@ npx wrangler dev    # lokálně proti skutečnému zdroji: http://localhost:8787
 ```
 
 Appka proti lokálnímu Workeru: `flutter run --dart-define=FEED_BASE_URL=http://<adresa Macu>:8787`.
+
+Simulátor bez sítě (`tool/fake_feed.dart`) pouští 1. partii zápasu po tazích se stejnými cestami:
+`dart run tool/fake_feed.dart --every 5 --start-ply 30 [--burst 3] [--correct-at 40]`, pak
+`flutter run --dart-define=FEED_BASE_URL=http://localhost:8787 --dart-define=ROUTE=/live/wch2026/Sim00001`.
+Zlatý soubor `feed/test/fixtures/wch2026_r1_feed.pgn` (kopie v `test/fixtures/`) drží kontrakt mezi Workerem a appkou.
 Bez `FEED_BASE_URL` appka živou polici vůbec neukáže a na síť nesahá.
 
 Nasazení: `npm run deploy` (Wrangler přihlášený přes `npx wrangler login`). Worker běží

@@ -5,6 +5,7 @@
     "name": { "cs": "Zápas o mistra světa 2026, Ženeva", "en": "World Championship Match 2026, Geneva" },
     "emblem": "crown",
     "from": "2026-11-22",
-    "to": "2026-12-20"
+    "to": "2026-12-20",
+    "tc": "40/7200:1800+30"
   }
 ]

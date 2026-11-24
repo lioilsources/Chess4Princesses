@@ -213,4 +213,72 @@ class AppLocalizationsSv extends AppLocalizations {
   String liveGame(int n) {
     return 'Parti $n';
   }
+
+  @override
+  String get settingsTitle => 'Inställningar';
+
+  @override
+  String get settingsBattles => 'Strider vid slag';
+
+  @override
+  String get settingsBattlesHint =>
+      'Av: en slagen pjäs försvinner bara i ett moln.';
+
+  @override
+  String get settingsClassic => 'Klassiska schackpjäser';
+
+  @override
+  String get settingsClassicHint =>
+      'I partier i stället för arméernas figurer. Då visas inga strider.';
+
+  @override
+  String get liveBadge => 'Live';
+
+  @override
+  String get liveSkip => 'Hoppa över';
+
+  @override
+  String get liveTryOwn => 'Jag provar själv';
+
+  @override
+  String get liveAdviser => 'Rådgivare';
+
+  @override
+  String get liveBackToGame => 'Tillbaka till partiet';
+
+  @override
+  String get liveNewMove => 'Nytt drag!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Nya drag: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Tiden håller på att ta slut!';
+
+  @override
+  String get liveAdviserThinking => 'Rådgivaren tänker fortfarande.';
+
+  @override
+  String get liveAdviserContinue => 'Jag fortsätter själv';
+
+  @override
+  String get liveAhead => 'Vem leder';
+
+  @override
+  String get liveClockApprox => 'Tiden är ungefärlig';
+
+  @override
+  String get liveReset => 'Från början';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Börjar kl. $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'djup $n';
+  }
 }

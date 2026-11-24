@@ -37,7 +37,7 @@ class GameFormatException implements Exception {
 /// One fully replayed game: headers, moves and the position after every ply.
 /// `positions[0]` is the start, `positions[i + 1]` follows `moves[i]`.
 class GameRecord {
-  GameRecord._(this.headers, this.moves, this.sans, this.positions, this.result);
+  GameRecord._(this.headers, this.moves, this.sans, this.positions, this.result, {this.clocks = const [], this.evals = const []});
 
   factory GameRecord.fromPgn(PgnGame g) {
     const rules = Rules();
@@ -58,7 +58,15 @@ class GameRecord {
       pos = pos.apply(m);
       positions.add(pos);
     }
-    return GameRecord._(g.headers, List.unmodifiable(moves), List.unmodifiable(sans), List.unmodifiable(positions), GameResult.parse(g.result));
+    return GameRecord._(
+      g.headers,
+      List.unmodifiable(moves),
+      List.unmodifiable(sans),
+      List.unmodifiable(positions),
+      GameResult.parse(g.result),
+      clocks: g.clocks,
+      evals: g.evals,
+    );
   }
 
   static String _who(PgnGame g) => '${g.header('White')} – ${g.header('Black')}, ${g.header('Date')}';
@@ -70,6 +78,29 @@ class GameRecord {
   final List<String> sans;
   final List<Position> positions;
   final GameResult result;
+
+  /// Mover's clock after each ply, or empty (library games have none).
+  final List<Duration?> clocks;
+
+  /// Engine evaluation after each ply, or empty.
+  final List<Eval?> evals;
+
+  /// Last known clock of [side] after [ply] plies were played, or null.
+  Duration? clockOf(Side side, int ply) {
+    for (var i = ply - 1; i >= 0; i--) {
+      final mover = positions[i].sideToMove;
+      if (mover == side && i < clocks.length && clocks[i] != null) return clocks[i];
+    }
+    return null;
+  }
+
+  /// Latest evaluation at or before [ply] plies, or null.
+  Eval? evalAt(int ply) {
+    for (var i = (ply < evals.length ? ply : evals.length) - 1; i >= 0; i--) {
+      if (evals[i] != null) return evals[i];
+    }
+    return null;
+  }
 
   int get length => moves.length;
   String get white => headers['White'] ?? '?';

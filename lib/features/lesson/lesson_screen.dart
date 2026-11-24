@@ -58,6 +58,7 @@ class _LessonViewState extends ConsumerState<_LessonView> {
     widget.lesson,
     onFinished: (stars) => ref.read(progressProvider.notifier).completeLesson(widget.lesson, stars),
     onSfx: _sounds.play,
+    battles: ref.read(settingsProvider).value?.battles ?? true,
   )..addListener(_changed);
 
   late final Sounds _sounds = ref.read(soundsProvider);

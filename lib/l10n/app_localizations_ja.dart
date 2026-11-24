@@ -211,4 +211,70 @@ class AppLocalizationsJa extends AppLocalizations {
   String liveGame(int n) {
     return 'だい$nきょく';
   }
+
+  @override
+  String get settingsTitle => 'せってい';
+
+  @override
+  String get settingsBattles => 'とるときのバトル';
+
+  @override
+  String get settingsBattlesHint => 'オフ：とられたこまは けむりで きえるだけ。';
+
+  @override
+  String get settingsClassic => 'ふつうの チェスのこま';
+
+  @override
+  String get settingsClassicHint => 'パーティーで ぐんたいの キャラクターの かわりに。バトルは でなくなります。';
+
+  @override
+  String get liveBadge => 'ライブ';
+
+  @override
+  String get liveSkip => 'スキップ';
+
+  @override
+  String get liveTryOwn => 'じぶんで やってみる';
+
+  @override
+  String get liveAdviser => 'アドバイザー';
+
+  @override
+  String get liveBackToGame => 'しあいに もどる';
+
+  @override
+  String get liveNewMove => 'あたらしい て！';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'あたらしい て：$n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'じかんが なくなる！';
+
+  @override
+  String get liveAdviserThinking => 'アドバイザーは まだ かんがえちゅう。';
+
+  @override
+  String get liveAdviserContinue => 'じぶんで つづける';
+
+  @override
+  String get liveAhead => 'どっちが ゆうせい';
+
+  @override
+  String get liveClockApprox => 'じかんは だいたいです';
+
+  @override
+  String get liveReset => 'さいしょから';
+
+  @override
+  String liveStartsAt(String time) {
+    return '$time から';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'ふかさ $n';
+  }
 }

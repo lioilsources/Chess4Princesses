@@ -18,7 +18,8 @@ Voice clips are generated on SPARK through the broker (`sparkctl exec … -- pyt
 - `lib/app/` router, providers, app shell
 - `lib/core/` chess rules, bots, lessons (engine, solver, lint), progress, armies, voice
 - `lib/core/games/` PGN, game records, moments, library (famous games) → `Prompts/05-SLAVNE_PARTIE_PLAN.md`, `docs/games_schema.md`; data in `data/games/`, built by `tool/games/build.dart`
-- `lib/features/` map, lesson, board, battle (Flame), army, games (hall + replay)
+- `lib/features/` map, lesson, board, battle (Flame), army, games (hall, replay, live mode → `Prompts/06-ZIVY_PRENOS_PLAN.md`), settings
+- `feed/` live relay (Cloudflare Worker) → `docs/feed.md`; local stand-in `dart run tool/fake_feed.dart`
 - `assets/lessons/` lesson YAML → `docs/lesson_schema.md`; `assets/armies/`, `assets/voice/`
 - `tool/` lesson lint, atlas packer, voice and sound generators; `tool/art/` ComfyUI art pipeline
 - `Prompts/` plans and handoffs; `docs/` decisions, credits, release

@@ -211,4 +211,70 @@ class AppLocalizationsKo extends AppLocalizations {
   String liveGame(int n) {
     return '제$n국';
   }
+
+  @override
+  String get settingsTitle => '설정';
+
+  @override
+  String get settingsBattles => '잡을 때 전투';
+
+  @override
+  String get settingsBattlesHint => '끄면: 잡힌 말은 구름 속으로 사라지기만 해요.';
+
+  @override
+  String get settingsClassic => '클래식 체스 말';
+
+  @override
+  String get settingsClassicHint => '대국에서 군대 캐릭터 대신 보여요. 그러면 전투는 나오지 않아요.';
+
+  @override
+  String get liveBadge => '라이브';
+
+  @override
+  String get liveSkip => '건너뛰기';
+
+  @override
+  String get liveTryOwn => '내가 해 볼래';
+
+  @override
+  String get liveAdviser => '조언자';
+
+  @override
+  String get liveBackToGame => '대국으로 돌아가기';
+
+  @override
+  String get liveNewMove => '새 수!';
+
+  @override
+  String liveNewMoves(int n) {
+    return '새 수: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => '시간이 얼마 안 남았어요!';
+
+  @override
+  String get liveAdviserThinking => '조언자가 아직 생각 중이에요.';
+
+  @override
+  String get liveAdviserContinue => '내가 이어서 둘래';
+
+  @override
+  String get liveAhead => '누가 앞서나';
+
+  @override
+  String get liveClockApprox => '시간은 대략이에요';
+
+  @override
+  String get liveReset => '처음부터';
+
+  @override
+  String liveStartsAt(String time) {
+    return '$time 시작';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return '깊이 $n';
+  }
 }

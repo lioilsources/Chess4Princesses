@@ -49,6 +49,7 @@ dependencies:
       path: packages/cute_kid_fonts_flame
   crypto: ^3.0.7
   audioplayers: ^6.8.1
+  wakelock_plus: ^1.8.2
 
 dev_dependencies:
   flutter_test:
