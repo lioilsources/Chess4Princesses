@@ -229,7 +229,7 @@ class AppLocalizationsCa extends AppLocalizations {
 
   @override
   String get settingsClassicHint =>
-      'A les partides, en lloc dels personatges dels exèrcits. Llavors no es mostren batalles.';
+      'A les partides, en lloc dels personatges dels exèrcits.';
 
   @override
   String get liveBadge => 'En directe';

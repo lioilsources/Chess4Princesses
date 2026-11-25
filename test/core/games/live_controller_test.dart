@@ -143,6 +143,36 @@ void main() {
     expect(c.analysis!.moves.length, 1);
   });
 
+  test('a game already over when opened plays as a story with its battles', () {
+    final c = make(upTo(76, result: '1/2-1/2'));
+    expect(c.story, isTrue);
+    expect(c.storyBattles, isNotEmpty);
+    expect(c.storyBattles.length, lessThanOrEqualTo(4));
+    var battles = 0;
+    for (var guard = 0; guard < 500; guard++) {
+      if (c.battle != null) {
+        battles++;
+        c.battleFinished();
+      } else if (!timers.fire()) {
+        break;
+      }
+    }
+    expect(battles, c.storyBattles.length);
+    expect(c.phase, LivePhase.ended);
+    expect(c.line, ReplayLine.endDraw);
+    expect(watched.length, 1);
+  });
+
+  test('story without battles when the parent turned them off', () {
+    final c = make(upTo(76, result: '1/2-1/2'), battles: false);
+    var battles = 0;
+    for (var guard = 0; guard < 500 && timers.fire(); guard++) {
+      if (c.battle != null) battles++;
+    }
+    expect(battles, 0);
+    expect(c.ply, 76);
+  });
+
   test('the end: result card line and one sticker', () {
     final c = make(upTo(76))..skipCatchUp();
     expect(c.phase, LivePhase.live);

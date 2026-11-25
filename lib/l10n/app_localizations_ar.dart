@@ -227,8 +227,7 @@ class AppLocalizationsAr extends AppLocalizations {
   String get settingsClassic => 'قطع شطرنج كلاسيكية';
 
   @override
-  String get settingsClassicHint =>
-      'في المباريات بدلًا من شخصيات الجيوش. عندها لا تظهر المعارك.';
+  String get settingsClassicHint => 'في المباريات بدلًا من شخصيات الجيوش.';
 
   @override
   String get liveBadge => 'مباشر';

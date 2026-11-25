@@ -229,7 +229,7 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get settingsClassicHint =>
-      'Trong ván cờ, thay cho các nhân vật của đội quân. Khi đó không hiện trận đấu.';
+      'Trong ván cờ, thay cho các nhân vật của đội quân.';
 
   @override
   String get liveBadge => 'Trực tiếp';

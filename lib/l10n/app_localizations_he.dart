@@ -225,8 +225,7 @@ class AppLocalizationsHe extends AppLocalizations {
   String get settingsClassic => 'כלי שחמט קלאסיים';
 
   @override
-  String get settingsClassicHint =>
-      'במשחקים במקום דמויות הצבאות. אז הקרבות לא מוצגים.';
+  String get settingsClassicHint => 'במשחקים במקום דמויות הצבאות.';
 
   @override
   String get liveBadge => 'שידור חי';

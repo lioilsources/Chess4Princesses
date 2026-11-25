@@ -146,7 +146,7 @@ Nastavení v appce zatím není (jen přepínač živých partií v Síni slávy
 - **Úložiště:** `lib/core/settings/` nad `shared_preferences`, `settingsProvider` v `lib/app/providers.dart`. Dvě volby: `battles` (výchozí zapnuto), `classicPieces` (výchozí vypnuto).
 - **Obrazovka `/settings`**, vstup ozubeným kolem z mapy a ze Síně slávy. Rodičovská brána přijde s rodičovskou zónou, tady ne.
 - **Bitvy vypnuté:** lekce, přehrávač i živý režim dělají při braní jen „puf".
-- **Klasické figurky:** `PieceToken` kreslí šachové figury místo postav. Při zapnutí se bitvy neukazují (postavy na šachovnici nejsou) a přepínač bitev je zašedlý. Rozsah viz otázka 3.
+- **Klasické figurky:** `PieceToken` kreslí šachové figury místo postav. Bitvy se řídí jen svým přepínačem; s klasickými figurkami bitva ukáže postavy armád (Olin 26. 11. 2026). Rozsah viz otázka 3.
 - **Kresba figur:** glyfy z `piece_glyph.dart` se na Androidu a iOS kreslí různě. Přibalit písmo s šachovými znaky pod licencí OFL (např. podmnožinu Noto Sans Symbols 2) nebo nakreslit vlastní tvary. Zapsat do `docs/CREDITS.md`.
 
 ## 11. Texty a hlas

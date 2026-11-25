@@ -74,6 +74,11 @@ class LiveController extends ChangeNotifier {
   /// Plies being played quickly (catch-up or a burst): no battles, no lines.
   bool _fast = false;
 
+  /// The game was already over when opened: it plays as a story (replay pace,
+  /// the [storyBattles] only, narrator lines) instead of a silent catch-up.
+  bool story = false;
+  Set<int> storyBattles = const {};
+
   DateTime get now => _now().add(_clockOffset);
   bool get atLatest => ply >= _record.length;
   bool get inGame => away == LiveAway.none;
@@ -109,11 +114,13 @@ class LiveController extends ChangeNotifier {
   /// Starts the catch-up from the first move.
   void start() {
     phase = LivePhase.catchUp;
-    _fast = true;
+    story = finished && !atLatest;
+    _fast = !story;
+    if (story) storyBattles = battlesOn ? battlePlies(_moments.values.toList()) : const {};
     if (atLatest) {
       _arrive();
     } else {
-      _schedule(_catchUpDelay());
+      _schedule(story ? replayEdgeDelay : _catchUpDelay());
     }
     _changed();
   }
@@ -124,6 +131,7 @@ class LiveController extends ChangeNotifier {
     _cancel();
     ply = _record.length;
     slide = null;
+    battle = null;
     _arrive();
     _changed();
   }
@@ -184,11 +192,11 @@ class LiveController extends ChangeNotifier {
     final i = ply;
     final m = _record.moves[i];
     ply++;
-    slide = MoveSlide(m, ++_tick, duration: _fast ? liveCatchUpPly : liveSlide);
+    slide = MoveSlide(m, ++_tick, duration: _fast ? liveCatchUpPly : (story ? replaySlide : liveSlide));
     final moment = _moments[i];
     final quiet = _fast;
     if (moment != null && moment.isCapture) {
-      if (!quiet && battlesOn && !chronicle) {
+      if (!quiet && battlesOn && !chronicle && (!story || storyBattles.contains(i))) {
         battle = ReplayBattle(moment.attacker!, moment.victim!);
       } else {
         burst = SquarePulse(m.to, _tick);
@@ -209,12 +217,13 @@ class LiveController extends ChangeNotifier {
     if (atLatest) {
       _arrive();
     } else {
-      _schedule(_fast ? _catchUpDelay() : replayPlyDelay);
+      _schedule(_fast ? _catchUpDelay() : (story && (_moments[ply - 1]?.isNotable ?? false) ? replayMomentDelay : replayPlyDelay));
     }
   }
 
   void _arrive() {
     _fast = false;
+    if (atLatest) story = false;
     _cancel();
     if (!atLatest) return;
     if (finished) {
@@ -437,7 +446,7 @@ class LiveController extends ChangeNotifier {
     _pending = _timer(d, () {
       _pending = null;
       if (_disposed || battle != null) return;
-      if (phase == LivePhase.catchUp && !_fast) _fast = true;
+      if (phase == LivePhase.catchUp && !_fast && !story) _fast = true;
       if (!inGame) return;
       _step();
     });

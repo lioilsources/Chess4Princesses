@@ -229,7 +229,7 @@ class AppLocalizationsRo extends AppLocalizations {
 
   @override
   String get settingsClassicHint =>
-      'În partide, în locul personajelor armatelor. Atunci bătăliile nu apar.';
+      'În partide, în locul personajelor armatelor.';
 
   @override
   String get liveBadge => 'În direct';

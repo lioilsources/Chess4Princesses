@@ -225,7 +225,7 @@ class AppLocalizationsKo extends AppLocalizations {
   String get settingsClassic => '클래식 체스 말';
 
   @override
-  String get settingsClassicHint => '대국에서 군대 캐릭터 대신 보여요. 그러면 전투는 나오지 않아요.';
+  String get settingsClassicHint => '대국에서 군대 캐릭터 대신 보여요.';
 
   @override
   String get liveBadge => '라이브';

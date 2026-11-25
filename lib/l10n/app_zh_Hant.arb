@@ -66,7 +66,7 @@
   "settingsBattles": "吃子時的戰鬥",
   "settingsBattlesHint": "關閉：被吃的棋子只會在一團煙裡消失。",
   "settingsClassic": "經典西洋棋棋子",
-  "settingsClassicHint": "在對局中取代軍隊角色。這時不顯示戰鬥。",
+  "settingsClassicHint": "在對局中取代軍隊角色。",
   "liveBadge": "直播",
   "liveSkip": "跳過",
   "liveTryOwn": "我自己試試",

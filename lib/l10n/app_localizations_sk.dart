@@ -228,8 +228,7 @@ class AppLocalizationsSk extends AppLocalizations {
   String get settingsClassic => 'Klasické šachové figúrky';
 
   @override
-  String get settingsClassicHint =>
-      'V partiách namiesto postáv armád. Bitky sa potom neukazujú.';
+  String get settingsClassicHint => 'V partiách namiesto postáv armád.';
 
   @override
   String get liveBadge => 'Naživo';

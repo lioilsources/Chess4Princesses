@@ -66,7 +66,7 @@
   "settingsBattles": "잡을 때 전투",
   "settingsBattlesHint": "끄면: 잡힌 말은 구름 속으로 사라지기만 해요.",
   "settingsClassic": "클래식 체스 말",
-  "settingsClassicHint": "대국에서 군대 캐릭터 대신 보여요. 그러면 전투는 나오지 않아요.",
+  "settingsClassicHint": "대국에서 군대 캐릭터 대신 보여요.",
   "liveBadge": "라이브",
   "liveSkip": "건너뛰기",
   "liveTryOwn": "내가 해 볼래",

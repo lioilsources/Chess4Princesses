@@ -225,7 +225,7 @@ class AppLocalizationsJa extends AppLocalizations {
   String get settingsClassic => 'ふつうの チェスのこま';
 
   @override
-  String get settingsClassicHint => 'パーティーで ぐんたいの キャラクターの かわりに。バトルは でなくなります。';
+  String get settingsClassicHint => 'しあいで ぐんたいの キャラクターの かわりに。';
 
   @override
   String get liveBadge => 'ライブ';

@@ -66,7 +66,7 @@
   "settingsBattles": "吃子时的战斗",
   "settingsBattlesHint": "关闭：被吃的棋子只会在一团烟里消失。",
   "settingsClassic": "经典国际象棋棋子",
-  "settingsClassicHint": "在对局中代替军队角色。这时不显示战斗。",
+  "settingsClassicHint": "在对局中代替军队角色。",
   "liveBadge": "直播",
   "liveSkip": "跳过",
   "liveTryOwn": "我自己试试",

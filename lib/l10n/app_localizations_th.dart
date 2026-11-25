@@ -227,8 +227,7 @@ class AppLocalizationsTh extends AppLocalizations {
   String get settingsClassic => 'หมากรุกแบบคลาสสิก';
 
   @override
-  String get settingsClassicHint =>
-      'ในเกมแทนตัวละครของกองทัพ แล้วจะไม่แสดงการต่อสู้';
+  String get settingsClassicHint => 'ในเกมแทนตัวละครของกองทัพ';
 
   @override
   String get liveBadge => 'สด';

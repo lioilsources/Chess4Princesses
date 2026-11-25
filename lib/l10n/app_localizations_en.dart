@@ -228,8 +228,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsClassic => 'Classic chess pieces';
 
   @override
-  String get settingsClassicHint =>
-      'In games, instead of the army characters. Battles are then hidden.';
+  String get settingsClassicHint => 'In games, instead of the army characters.';
 
   @override
   String get liveBadge => 'Live';

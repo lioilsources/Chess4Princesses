@@ -228,8 +228,7 @@ class AppLocalizationsUk extends AppLocalizations {
   String get settingsClassic => 'Класичні шахові фігури';
 
   @override
-  String get settingsClassicHint =>
-      'У партіях замість персонажів армій. Тоді битви не показуються.';
+  String get settingsClassicHint => 'У партіях замість персонажів армій.';
 
   @override
   String get liveBadge => 'Наживо';

@@ -582,7 +582,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsClassicHint.
   ///
   /// In cs, this message translates to:
-  /// **'V partiích místo postav armád. Bitvy se pak neukazují.'**
+  /// **'V partiích místo postav armád.'**
   String get settingsClassicHint;
 
   /// No description provided for @liveBadge.

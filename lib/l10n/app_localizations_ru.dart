@@ -228,8 +228,7 @@ class AppLocalizationsRu extends AppLocalizations {
   String get settingsClassic => 'Классические шахматные фигуры';
 
   @override
-  String get settingsClassicHint =>
-      'В партиях вместо персонажей армий. Тогда битвы не показываются.';
+  String get settingsClassicHint => 'В партиях вместо персонажей армий.';
 
   @override
   String get liveBadge => 'Прямой эфир';

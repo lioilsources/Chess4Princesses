@@ -227,8 +227,7 @@ class AppLocalizationsCs extends AppLocalizations {
   String get settingsClassic => 'Klasické šachové figurky';
 
   @override
-  String get settingsClassicHint =>
-      'V partiích místo postav armád. Bitvy se pak neukazují.';
+  String get settingsClassicHint => 'V partiích místo postav armád.';
 
   @override
   String get liveBadge => 'Živě';

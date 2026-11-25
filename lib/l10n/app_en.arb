@@ -66,7 +66,7 @@
   "settingsBattles": "Battles on captures",
   "settingsBattlesHint": "Off: a captured piece just vanishes in a puff.",
   "settingsClassic": "Classic chess pieces",
-  "settingsClassicHint": "In games, instead of the army characters. Battles are then hidden.",
+  "settingsClassicHint": "In games, instead of the army characters.",
   "liveBadge": "Live",
   "liveSkip": "Skip",
   "liveTryOwn": "I'll try it myself",

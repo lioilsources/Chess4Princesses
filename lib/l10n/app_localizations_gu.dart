@@ -229,8 +229,7 @@ class AppLocalizationsGu extends AppLocalizations {
   String get settingsClassic => 'ક્લાસિક શતરંજના મહોરાં';
 
   @override
-  String get settingsClassicHint =>
-      'રમતોમાં સેનાનાં પાત્રોને બદલે. ત્યારે લડાઈ બતાવાતી નથી.';
+  String get settingsClassicHint => 'રમતોમાં સેનાનાં પાત્રોને બદલે.';
 
   @override
   String get liveBadge => 'લાઇવ';

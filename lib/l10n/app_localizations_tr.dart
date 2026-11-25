@@ -229,8 +229,7 @@ class AppLocalizationsTr extends AppLocalizations {
   String get settingsClassic => 'Klasik satranç taşları';
 
   @override
-  String get settingsClassicHint =>
-      'Oyunlarda ordu karakterlerinin yerine. O zaman savaşlar gösterilmez.';
+  String get settingsClassicHint => 'Oyunlarda ordu karakterlerinin yerine.';
 
   @override
   String get liveBadge => 'Canlı';

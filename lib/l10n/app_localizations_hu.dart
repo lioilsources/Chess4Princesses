@@ -230,7 +230,7 @@ class AppLocalizationsHu extends AppLocalizations {
 
   @override
   String get settingsClassicHint =>
-      'A játszmákban a seregek szereplői helyett. Ilyenkor nincsenek csaták.';
+      'A játszmákban a seregek szereplői helyett.';
 
   @override
   String get liveBadge => 'Élő';

@@ -229,8 +229,7 @@ class AppLocalizationsDa extends AppLocalizations {
   String get settingsClassic => 'Klassiske skakbrikker';
 
   @override
-  String get settingsClassicHint =>
-      'I partier i stedet for hærenes figurer. Så vises kampe ikke.';
+  String get settingsClassicHint => 'I partier i stedet for hærenes figurer.';
 
   @override
   String get liveBadge => 'Live';

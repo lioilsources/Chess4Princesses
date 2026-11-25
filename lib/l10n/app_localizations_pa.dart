@@ -229,8 +229,7 @@ class AppLocalizationsPa extends AppLocalizations {
   String get settingsClassic => 'ਕਲਾਸਿਕ ਸ਼ਤਰੰਜ ਦੇ ਮੋਹਰੇ';
 
   @override
-  String get settingsClassicHint =>
-      'ਖੇਡਾਂ ਵਿੱਚ ਫ਼ੌਜ ਦੇ ਕਿਰਦਾਰਾਂ ਦੀ ਥਾਂ। ਫਿਰ ਲੜਾਈਆਂ ਨਹੀਂ ਦਿਸਦੀਆਂ।';
+  String get settingsClassicHint => 'ਖੇਡਾਂ ਵਿੱਚ ਫ਼ੌਜ ਦੇ ਕਿਰਦਾਰਾਂ ਦੀ ਥਾਂ।';
 
   @override
   String get liveBadge => 'ਲਾਈਵ';

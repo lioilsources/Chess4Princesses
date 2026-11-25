@@ -229,7 +229,7 @@ class AppLocalizationsSv extends AppLocalizations {
 
   @override
   String get settingsClassicHint =>
-      'I partier i stället för arméernas figurer. Då visas inga strider.';
+      'I partier i stället för arméernas figurer.';
 
   @override
   String get liveBadge => 'Live';

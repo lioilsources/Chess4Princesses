@@ -226,8 +226,7 @@ class AppLocalizationsOr extends AppLocalizations {
   String get settingsClassic => 'କ୍ଲାସିକ୍ ଚେସ୍ ଘୋଟି';
 
   @override
-  String get settingsClassicHint =>
-      'ଖେଳରେ ସେନାର ଚରିତ୍ର ବଦଳରେ। ସେତେବେଳେ ଯୁଦ୍ଧ ଦେଖାଯାଏ ନାହିଁ।';
+  String get settingsClassicHint => 'ଖେଳରେ ସେନାର ଚରିତ୍ର ବଦଳରେ।';
 
   @override
   String get liveBadge => 'ସିଧାପ୍ରସାରଣ';

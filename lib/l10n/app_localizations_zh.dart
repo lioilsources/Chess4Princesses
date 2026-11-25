@@ -225,7 +225,7 @@ class AppLocalizationsZh extends AppLocalizations {
   String get settingsClassic => '经典国际象棋棋子';
 
   @override
-  String get settingsClassicHint => '在对局中代替军队角色。这时不显示战斗。';
+  String get settingsClassicHint => '在对局中代替军队角色。';
 
   @override
   String get liveBadge => '直播';
@@ -500,7 +500,7 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   String get settingsClassic => '經典西洋棋棋子';
 
   @override
-  String get settingsClassicHint => '在對局中取代軍隊角色。這時不顯示戰鬥。';
+  String get settingsClassicHint => '在對局中取代軍隊角色。';
 
   @override
   String get liveBadge => '直播';

@@ -7,11 +7,12 @@ class Settings {
   /// Full-screen battles on captures; off = just a "poof".
   final bool battles;
 
-  /// Classic chess figures in games (replay and live) instead of the armies.
+  /// Classic chess figures on the board in games (replay and live).
   final bool classicPieces;
 
-  /// Battles really shown: classic figures have no characters to fight.
-  bool get battlesShown => battles && !classicPieces;
+  /// Battles follow their own switch; with classic pieces the battle still
+  /// shows the army characters (Olin 2026-11-26: "ani když zapnu bitvy").
+  bool get battlesShown => battles;
 
   Settings copyWith({bool? battles, bool? classicPieces}) =>
       Settings(battles: battles ?? this.battles, classicPieces: classicPieces ?? this.classicPieces);
