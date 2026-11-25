@@ -52,7 +52,16 @@ final liveTournamentsProvider = FutureProvider<Cached<List<FeedTournament>>>((re
   }
 });
 
-/// Games of one round. Finished rounds are stored and never fetched again.
+/// Every played game of a stored round has a result (a copy saved mid-round
+/// does not). Games without moves never started and do not count.
+bool roundComplete(String pgn) {
+  final played = parsePgn(pgn).where((g) => g.sans.isNotEmpty).toList();
+  return played.isNotEmpty && played.every((g) => g.result != '*');
+}
+
+/// Games of one round. A finished round is stored and not fetched again, but
+/// only once the stored copy has every result: a copy saved while the round
+/// was running is fetched again (it used to stop at the move it was saved on).
 final roundGamesProvider = FutureProvider.family<Cached<List<GameRecord>>, (String, FeedRound)>((ref, arg) async {
   final (tour, round) = arg;
   final prefs = await SharedPreferences.getInstance();
@@ -63,7 +72,7 @@ final roundGamesProvider = FutureProvider.family<Cached<List<GameRecord>>, (Stri
       if (g.sans.isNotEmpty || (round.state != RoundState.finished && g.result == '*')) GameRecord.fromPgn(g),
   ];
   final stored = prefs.getString(key);
-  if (stored != null && round.state == RoundState.finished) return Cached(parse(stored), offline: false);
+  if (stored != null && round.state == RoundState.finished && roundComplete(stored)) return Cached(parse(stored), offline: false);
   try {
     final pgn = await ref.read(feedClientProvider).roundPgn(tour, round.id);
     final games = parse(pgn);
