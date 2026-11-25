@@ -33,6 +33,7 @@ class BoardMarks {
     this.done = const {},
     this.hintMove,
     this.arrows = const [],
+    this.lastMove,
   });
 
   final Square? selected;
@@ -51,6 +52,9 @@ class BoardMarks {
 
   /// Arrows over the board (adviser suggestions), drawn in order.
   final List<BoardArrow> arrows;
+
+  /// The move just played (games): pale "from", strong framed "to".
+  final Move? lastMove;
 }
 
 /// An arrow from one square to another.
@@ -252,6 +256,14 @@ class ChessBoard extends StatelessWidget {
             children: [
               if (m.lava.contains(s)) _Lava(size: size),
               if (m.done.contains(s)) Container(color: const Color(0x8869D49A)),
+              if (m.lastMove?.from == s) Container(color: const Color(0x66FFD54F)),
+              if (m.lastMove?.to == s)
+                Container(
+                  decoration: BoxDecoration(
+                    color: const Color(0xAAFFC107),
+                    border: Border.all(color: const Color(0xFFFF8F00), width: size * .06),
+                  ),
+                ),
               if (m.selected == s) Container(color: const Color(0x99FFD54F)),
               if (candidate.isNotEmpty) Container(color: const Color(0x55FFFFFF)),
               if (m.glow.contains(s) || isHintFrom || isHintTo) const _Glow(),

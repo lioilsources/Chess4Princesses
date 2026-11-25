@@ -255,7 +255,9 @@ class _LiveViewState extends ConsumerState<_LiveView> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 12),
-                child: Center(
+                child: Align(
+                  // Top, so the board stays put while the panels below change height.
+                  alignment: Alignment.topCenter,
                   child: FutureBuilder<Advice>(
                     future: advice,
                     builder: (context, snap) {
@@ -269,7 +271,7 @@ class _LiveViewState extends ConsumerState<_LiveView> {
                         position: c.position,
                         armyOf: _armyOf,
                         mySide: Side.white,
-                        marks: BoardMarks(done: last == null ? const {} : {last.from, last.to}, selected: c.selected, dots: c.dots, arrows: arrows),
+                        marks: BoardMarks(lastMove: last, selected: c.selected, dots: c.dots, arrows: arrows),
                         burst: c.burst,
                         slide: c.slide,
                         showCoordinates: c.chronicle,
