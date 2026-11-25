@@ -7,6 +7,7 @@ import '../../app/content_lang.dart';
 import '../../core/games/game_record.dart';
 import '../../core/net/feed_client.dart';
 import '../../l10n/app_localizations.dart';
+import 'live_game_screen.dart';
 import 'live_providers.dart';
 import 'replay_screen.dart';
 
@@ -95,11 +96,13 @@ class _RoundTile extends StatelessWidget {
       RoundState.upcoming => (Icons.schedule_rounded, const Color(0xFFB0A3BF)),
     };
     final start = round.startsAt?.toLocal();
+    final day = start == null ? null : MaterialLocalizations.of(context).formatMediumDate(start);
+    final time = start == null ? null : TimeOfDay.fromDateTime(start).format(context);
     return Card(
       child: ListTile(
         leading: Icon(icon, color: color, size: 36),
         title: Text(l10n.liveGame(round.n), style: const TextStyle(fontWeight: FontWeight.w700)),
-        subtitle: start == null ? null : Text(MaterialLocalizations.of(context).formatMediumDate(start)),
+        subtitle: start == null ? null : Text(round.state == RoundState.upcoming ? '$day · ${l10n.liveStartsAt(time!)}' : day!),
         enabled: round.state != RoundState.upcoming,
         onTap: () => context.push('/live/${tournament.id}/${round.id}', extra: round),
       ),
@@ -107,7 +110,32 @@ class _RoundTile extends StatelessWidget {
   }
 }
 
-/// One round: a single game opens straight away, several are listed.
+/// `/live/:t/:r` without the round object (a link, a restored route):
+/// find it in the tournament list.
+class LiveRoundLoader extends ConsumerWidget {
+  const LiveRoundLoader({super.key, required this.tournamentId, required this.roundId});
+  final String tournamentId;
+  final String roundId;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final live = ref.watch(liveTournamentsProvider);
+    if (live case AsyncData(:final value)) {
+      for (final t in value.value) {
+        if (t.id != tournamentId) continue;
+        for (final r in t.rounds) {
+          if (r.id == roundId) return LiveRoundScreen(tournamentId: tournamentId, round: r);
+        }
+      }
+      return LiveScreen(tournamentId: tournamentId);
+    }
+    if (live is AsyncError) return LiveScreen(tournamentId: tournamentId);
+    return const Scaffold(body: Center(child: CircularProgressIndicator()));
+  }
+}
+
+/// One round. Finished: a single game opens as a story, several are listed.
+/// Running: the live mode (live_game_screen.dart) for each game.
 class LiveRoundScreen extends ConsumerWidget {
   const LiveRoundScreen({super.key, required this.tournamentId, required this.round});
   final String tournamentId;
@@ -116,8 +144,10 @@ class LiveRoundScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
+    final live = round.state == RoundState.ongoing;
     final games = ref.watch(roundGamesProvider((tournamentId, round)));
     return switch (games) {
+      AsyncData(value: Cached(value: [_])) when live => LiveGameScreen(tournamentId: tournamentId, roundId: round.id),
       AsyncData(value: Cached(value: [final only])) => ReplayScreen(gameId: only.id, game: only),
       AsyncData(value: Cached(value: final list)) => Scaffold(
         backgroundColor: const Color(0xFFFFF4D6),
@@ -128,7 +158,13 @@ class LiveRoundScreen extends ConsumerWidget {
               Expanded(
                 child: list.isEmpty
                     ? Center(child: Text(l10n.liveNothing))
-                    : ListView(padding: const EdgeInsets.all(16), children: [for (final g in list) _GameRow(game: g)]),
+                    : ListView(
+                        padding: const EdgeInsets.all(16),
+                        children: [
+                          for (final (i, g) in list.indexed)
+                            _GameRow(game: g, onTap: live ? () => context.push('/live/$tournamentId/${round.id}/$i') : null),
+                        ],
+                      ),
               ),
             ],
           ),
@@ -141,15 +177,19 @@ class LiveRoundScreen extends ConsumerWidget {
 }
 
 class _GameRow extends StatelessWidget {
-  const _GameRow({required this.game});
+  const _GameRow({required this.game, this.onTap});
   final GameRecord game;
+
+  /// Live game; null = a finished one, opened as a story.
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) => Card(
     child: ListTile(
       title: Text('${game.white} – ${game.black}'),
       subtitle: Text(game.result.pgn),
-      onTap: () => Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => ReplayScreen(gameId: game.id, game: game))),
+      trailing: onTap == null ? null : const Icon(Icons.flash_on_rounded, color: Color(0xFFE53935)),
+      onTap: onTap ?? () => Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => ReplayScreen(gameId: game.id, game: game))),
     ),
   );
 }

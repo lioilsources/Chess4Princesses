@@ -212,4 +212,72 @@ class AppLocalizationsTh extends AppLocalizations {
   String liveGame(int n) {
     return 'เกมที่ $n';
   }
+
+  @override
+  String get settingsTitle => 'การตั้งค่า';
+
+  @override
+  String get settingsBattles => 'การต่อสู้เมื่อกินหมาก';
+
+  @override
+  String get settingsBattlesHint =>
+      'ปิด: หมากที่ถูกกินจะหายไปในก้อนเมฆเท่านั้น';
+
+  @override
+  String get settingsClassic => 'หมากรุกแบบคลาสสิก';
+
+  @override
+  String get settingsClassicHint =>
+      'ในเกมแทนตัวละครของกองทัพ แล้วจะไม่แสดงการต่อสู้';
+
+  @override
+  String get liveBadge => 'สด';
+
+  @override
+  String get liveSkip => 'ข้าม';
+
+  @override
+  String get liveTryOwn => 'ฉันจะลองเอง';
+
+  @override
+  String get liveAdviser => 'ที่ปรึกษา';
+
+  @override
+  String get liveBackToGame => 'กลับไปที่เกม';
+
+  @override
+  String get liveNewMove => 'ตาเดินใหม่!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'ตาเดินใหม่: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'เวลาใกล้หมดแล้ว!';
+
+  @override
+  String get liveAdviserThinking => 'ที่ปรึกษายังคิดอยู่';
+
+  @override
+  String get liveAdviserContinue => 'ฉันจะเล่นต่อเอง';
+
+  @override
+  String get liveAhead => 'ใครนำอยู่';
+
+  @override
+  String get liveClockApprox => 'เวลาเป็นค่าประมาณ';
+
+  @override
+  String get liveReset => 'ตั้งแต่ต้น';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'เริ่มเวลา $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'ความลึก $n';
+  }
 }

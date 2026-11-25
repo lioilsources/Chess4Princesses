@@ -214,4 +214,72 @@ class AppLocalizationsNb extends AppLocalizations {
   String liveGame(int n) {
     return 'Parti $n';
   }
+
+  @override
+  String get settingsTitle => 'Innstillinger';
+
+  @override
+  String get settingsBattles => 'Kamper ved slag';
+
+  @override
+  String get settingsBattlesHint =>
+      'Av: en slått brikke forsvinner bare i en sky.';
+
+  @override
+  String get settingsClassic => 'Klassiske sjakkbrikker';
+
+  @override
+  String get settingsClassicHint =>
+      'I partier i stedet for hærenes figurer. Da vises ikke kamper.';
+
+  @override
+  String get liveBadge => 'Direkte';
+
+  @override
+  String get liveSkip => 'Hopp over';
+
+  @override
+  String get liveTryOwn => 'Jeg prøver selv';
+
+  @override
+  String get liveAdviser => 'Rådgiver';
+
+  @override
+  String get liveBackToGame => 'Tilbake til partiet';
+
+  @override
+  String get liveNewMove => 'Nytt trekk!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Nye trekk: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Tiden er i ferd med å renne ut!';
+
+  @override
+  String get liveAdviserThinking => 'Rådgiveren tenker fortsatt.';
+
+  @override
+  String get liveAdviserContinue => 'Jeg fortsetter selv';
+
+  @override
+  String get liveAhead => 'Hvem leder';
+
+  @override
+  String get liveClockApprox => 'Tiden er omtrentlig';
+
+  @override
+  String get liveReset => 'Fra starten';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Starter kl. $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'dybde $n';
+  }
 }

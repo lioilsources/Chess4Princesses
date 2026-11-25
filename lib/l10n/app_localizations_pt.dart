@@ -214,6 +214,74 @@ class AppLocalizationsPt extends AppLocalizations {
   String liveGame(int n) {
     return 'Partida $n';
   }
+
+  @override
+  String get settingsTitle => 'Definições';
+
+  @override
+  String get settingsBattles => 'Batalhas ao capturar';
+
+  @override
+  String get settingsBattlesHint =>
+      'Desligado: a peça capturada só desaparece numa nuvem.';
+
+  @override
+  String get settingsClassic => 'Peças de xadrez clássicas';
+
+  @override
+  String get settingsClassicHint =>
+      'Nas partidas, em vez das personagens dos exércitos. As batalhas deixam de aparecer.';
+
+  @override
+  String get liveBadge => 'Em direto';
+
+  @override
+  String get liveSkip => 'Saltar';
+
+  @override
+  String get liveTryOwn => 'Vou tentar sozinho';
+
+  @override
+  String get liveAdviser => 'Conselheiro';
+
+  @override
+  String get liveBackToGame => 'Voltar à partida';
+
+  @override
+  String get liveNewMove => 'Jogada nova!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Jogadas novas: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'O tempo está a acabar!';
+
+  @override
+  String get liveAdviserThinking => 'O conselheiro ainda está a pensar.';
+
+  @override
+  String get liveAdviserContinue => 'Continuo sozinho';
+
+  @override
+  String get liveAhead => 'Quem está à frente';
+
+  @override
+  String get liveClockApprox => 'O tempo é aproximado';
+
+  @override
+  String get liveReset => 'Desde o início';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Começa às $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'profundidade $n';
+  }
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -425,6 +493,74 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   @override
   String liveGame(int n) {
     return 'Partida $n';
+  }
+
+  @override
+  String get settingsTitle => 'Configurações';
+
+  @override
+  String get settingsBattles => 'Batalhas ao capturar';
+
+  @override
+  String get settingsBattlesHint =>
+      'Desligado: a peça capturada só some numa nuvem.';
+
+  @override
+  String get settingsClassic => 'Peças de xadrez clássicas';
+
+  @override
+  String get settingsClassicHint =>
+      'Nas partidas, no lugar dos personagens dos exércitos. Aí as batalhas não aparecem.';
+
+  @override
+  String get liveBadge => 'Ao vivo';
+
+  @override
+  String get liveSkip => 'Pular';
+
+  @override
+  String get liveTryOwn => 'Vou tentar sozinho';
+
+  @override
+  String get liveAdviser => 'Conselheiro';
+
+  @override
+  String get liveBackToGame => 'Voltar à partida';
+
+  @override
+  String get liveNewMove => 'Lance novo!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Lances novos: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'O tempo está acabando!';
+
+  @override
+  String get liveAdviserThinking => 'O conselheiro ainda está pensando.';
+
+  @override
+  String get liveAdviserContinue => 'Continuo sozinho';
+
+  @override
+  String get liveAhead => 'Quem está na frente';
+
+  @override
+  String get liveClockApprox => 'O tempo é aproximado';
+
+  @override
+  String get liveReset => 'Do começo';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Começa às $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'profundidade $n';
   }
 }
 
@@ -638,5 +774,73 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
   @override
   String liveGame(int n) {
     return 'Partida $n';
+  }
+
+  @override
+  String get settingsTitle => 'Definições';
+
+  @override
+  String get settingsBattles => 'Batalhas ao capturar';
+
+  @override
+  String get settingsBattlesHint =>
+      'Desligado: a peça capturada só desaparece numa nuvem.';
+
+  @override
+  String get settingsClassic => 'Peças de xadrez clássicas';
+
+  @override
+  String get settingsClassicHint =>
+      'Nas partidas, em vez das personagens dos exércitos. As batalhas deixam de aparecer.';
+
+  @override
+  String get liveBadge => 'Em direto';
+
+  @override
+  String get liveSkip => 'Saltar';
+
+  @override
+  String get liveTryOwn => 'Vou tentar sozinho';
+
+  @override
+  String get liveAdviser => 'Conselheiro';
+
+  @override
+  String get liveBackToGame => 'Voltar à partida';
+
+  @override
+  String get liveNewMove => 'Jogada nova!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Jogadas novas: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'O tempo está a acabar!';
+
+  @override
+  String get liveAdviserThinking => 'O conselheiro ainda está a pensar.';
+
+  @override
+  String get liveAdviserContinue => 'Continuo sozinho';
+
+  @override
+  String get liveAhead => 'Quem está à frente';
+
+  @override
+  String get liveClockApprox => 'O tempo é aproximado';
+
+  @override
+  String get liveReset => 'Desde o início';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Começa às $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'profundidade $n';
   }
 }

@@ -211,6 +211,72 @@ class AppLocalizationsZh extends AppLocalizations {
   String liveGame(int n) {
     return '第 $n 局';
   }
+
+  @override
+  String get settingsTitle => '设置';
+
+  @override
+  String get settingsBattles => '吃子时的战斗';
+
+  @override
+  String get settingsBattlesHint => '关闭：被吃的棋子只会在一团烟里消失。';
+
+  @override
+  String get settingsClassic => '经典国际象棋棋子';
+
+  @override
+  String get settingsClassicHint => '在对局中代替军队角色。这时不显示战斗。';
+
+  @override
+  String get liveBadge => '直播';
+
+  @override
+  String get liveSkip => '跳过';
+
+  @override
+  String get liveTryOwn => '我自己试试';
+
+  @override
+  String get liveAdviser => '参谋';
+
+  @override
+  String get liveBackToGame => '回到对局';
+
+  @override
+  String get liveNewMove => '新的一步！';
+
+  @override
+  String liveNewMoves(int n) {
+    return '新的步数：$n';
+  }
+
+  @override
+  String get liveTimeTrouble => '时间快到了！';
+
+  @override
+  String get liveAdviserThinking => '参谋还在思考。';
+
+  @override
+  String get liveAdviserContinue => '我自己接着下';
+
+  @override
+  String get liveAhead => '谁领先';
+
+  @override
+  String get liveClockApprox => '时间是大概的';
+
+  @override
+  String get liveReset => '从头开始';
+
+  @override
+  String liveStartsAt(String time) {
+    return '$time 开始';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return '深度 $n';
+  }
 }
 
 /// The translations for Chinese, using the Han script (`zh_Hant`).
@@ -419,5 +485,71 @@ class AppLocalizationsZhHant extends AppLocalizationsZh {
   @override
   String liveGame(int n) {
     return '第 $n 局';
+  }
+
+  @override
+  String get settingsTitle => '設定';
+
+  @override
+  String get settingsBattles => '吃子時的戰鬥';
+
+  @override
+  String get settingsBattlesHint => '關閉：被吃的棋子只會在一團煙裡消失。';
+
+  @override
+  String get settingsClassic => '經典西洋棋棋子';
+
+  @override
+  String get settingsClassicHint => '在對局中取代軍隊角色。這時不顯示戰鬥。';
+
+  @override
+  String get liveBadge => '直播';
+
+  @override
+  String get liveSkip => '跳過';
+
+  @override
+  String get liveTryOwn => '我自己試試';
+
+  @override
+  String get liveAdviser => '參謀';
+
+  @override
+  String get liveBackToGame => '回到對局';
+
+  @override
+  String get liveNewMove => '新的一步！';
+
+  @override
+  String liveNewMoves(int n) {
+    return '新的步數：$n';
+  }
+
+  @override
+  String get liveTimeTrouble => '時間快到了！';
+
+  @override
+  String get liveAdviserThinking => '參謀還在思考。';
+
+  @override
+  String get liveAdviserContinue => '我自己接著下';
+
+  @override
+  String get liveAhead => '誰領先';
+
+  @override
+  String get liveClockApprox => '時間是大概的';
+
+  @override
+  String get liveReset => '從頭開始';
+
+  @override
+  String liveStartsAt(String time) {
+    return '$time 開始';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return '深度 $n';
   }
 }

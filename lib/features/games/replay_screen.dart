@@ -9,6 +9,7 @@ import '../../core/armies/army.dart';
 import '../../core/audio/sounds.dart';
 import '../../core/chess/types.dart';
 import '../../core/games/game_record.dart';
+import '../../core/settings/settings.dart';
 import '../../core/voice/narrator.dart';
 import '../../l10n/app_localizations.dart';
 import '../battle/battle_overlay.dart';
@@ -58,7 +59,8 @@ class ReplayView extends ConsumerStatefulWidget {
 
 class _ReplayViewState extends ConsumerState<ReplayView> {
   late final Sounds _sounds = ref.read(soundsProvider);
-  late final c = ReplayController(widget.record, onSfx: _sounds.play)..addListener(_changed);
+  late final Settings _settings = ref.read(settingsProvider).value ?? const Settings();
+  late final c = ReplayController(widget.record, onSfx: _sounds.play, battlesOn: _settings.battlesShown)..addListener(_changed);
   Narrator? _narrator;
   int _lineHeard = 0;
 
@@ -153,6 +155,7 @@ class _ReplayViewState extends ConsumerState<ReplayView> {
                     burst: c.burst,
                     slide: c.slide,
                     showCoordinates: c.chronicle,
+                    classic: _settings.classicPieces,
                   ),
                 ),
               ),
@@ -176,7 +179,7 @@ class _ReplayViewState extends ConsumerState<ReplayView> {
               onFinished: c.battleFinished,
             ),
           ),
-        if (c.ended && !c.chronicle) _EndCard(c: c, l10n: l10n),
+        if (c.ended && !c.chronicle) EndCard(line: c.line ?? ReplayLine.endUnfinished, l10n: l10n, onAgain: c.restart, onDone: () => context.pop()),
       ],
     );
   }
@@ -192,6 +195,7 @@ String lineText(AppLocalizations l10n, ReplayLine l) => switch (l) {
   ReplayLine.endResign => l10n.replayEndResign,
   ReplayLine.endDraw => l10n.replayEndDraw,
   ReplayLine.endUnfinished => l10n.replayEndUnfinished,
+  ReplayLine.timeTrouble => l10n.liveTimeTrouble,
 };
 
 /// Story mode: no text, big buttons, a timeline with battle dots.
@@ -309,14 +313,15 @@ class _ChronicleBar extends StatelessWidget {
 }
 
 /// Mate: crown. Resignation: the king bows. Draw: handshake (PLAN §1).
-class _EndCard extends StatelessWidget {
-  const _EndCard({required this.c, required this.l10n});
-  final ReplayController c;
+class EndCard extends StatelessWidget {
+  const EndCard({super.key, required this.line, required this.l10n, required this.onAgain, required this.onDone});
+  final ReplayLine line;
   final AppLocalizations l10n;
+  final VoidCallback onAgain;
+  final VoidCallback onDone;
 
   @override
   Widget build(BuildContext context) {
-    final line = c.line ?? ReplayLine.endUnfinished;
     final icon = switch (line) {
       ReplayLine.endMate => Icons.emoji_events_rounded,
       ReplayLine.endDraw => Icons.handshake_rounded,
@@ -345,9 +350,9 @@ class _EndCard extends StatelessWidget {
                 Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    IconButton.filledTonal(iconSize: 40, onPressed: c.restart, icon: const Icon(Icons.replay_rounded), tooltip: l10n.again),
+                    IconButton.filledTonal(iconSize: 40, onPressed: onAgain, icon: const Icon(Icons.replay_rounded), tooltip: l10n.again),
                     const SizedBox(width: 24),
-                    IconButton.filled(iconSize: 40, onPressed: () => context.pop(), icon: const Icon(Icons.check_rounded), tooltip: l10n.back),
+                    IconButton.filled(iconSize: 40, onPressed: onDone, icon: const Icon(Icons.check_rounded), tooltip: l10n.back),
                   ],
                 ),
               ],

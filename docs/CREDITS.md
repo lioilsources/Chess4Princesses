@@ -47,3 +47,10 @@ are our own (`data/games/sources.yaml`). Players PGN Mentor does not have yet (t
 challenger Javokhir Sindarov) come from the public Lichess broadcasts of classical events
 (lichess.org/broadcast), fetched by `tool/games/lichess_player.py`; the same facts only are kept. The stories of the golden board (G4) will be checked
 against a second source game by game.
+
+## Live mode adviser
+
+Suggested moves and the "who is ahead" bar come from the public Lichess cloud evaluation
+(`lichess.org/api/cloud-eval`) and the `[%eval]` comments of Lichess broadcasts, asked only
+through the relay (`feed/`, `/v1/advice`). Engine lines are facts, not commentary; nothing else
+is taken. The child-facing UI calls it "the adviser" and names no source or engine.

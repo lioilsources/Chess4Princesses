@@ -213,4 +213,72 @@ class AppLocalizationsNl extends AppLocalizations {
   String liveGame(int n) {
     return 'Partij $n';
   }
+
+  @override
+  String get settingsTitle => 'Instellingen';
+
+  @override
+  String get settingsBattles => 'Gevechten bij slaan';
+
+  @override
+  String get settingsBattlesHint =>
+      'Uit: een geslagen stuk verdwijnt alleen in een wolkje.';
+
+  @override
+  String get settingsClassic => 'Klassieke schaakstukken';
+
+  @override
+  String get settingsClassicHint =>
+      'In partijen in plaats van de legerfiguren. Gevechten worden dan niet getoond.';
+
+  @override
+  String get liveBadge => 'Live';
+
+  @override
+  String get liveSkip => 'Overslaan';
+
+  @override
+  String get liveTryOwn => 'Ik probeer het zelf';
+
+  @override
+  String get liveAdviser => 'Raadgever';
+
+  @override
+  String get liveBackToGame => 'Terug naar de partij';
+
+  @override
+  String get liveNewMove => 'Nieuwe zet!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Nieuwe zetten: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'De tijd raakt op!';
+
+  @override
+  String get liveAdviserThinking => 'De raadgever denkt nog na.';
+
+  @override
+  String get liveAdviserContinue => 'Ik ga zelf verder';
+
+  @override
+  String get liveAhead => 'Wie staat voor';
+
+  @override
+  String get liveClockApprox => 'De tijd is bij benadering';
+
+  @override
+  String get liveReset => 'Vanaf het begin';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Begint om $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'diepte $n';
+  }
 }

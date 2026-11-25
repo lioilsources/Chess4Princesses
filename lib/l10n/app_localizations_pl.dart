@@ -213,4 +213,72 @@ class AppLocalizationsPl extends AppLocalizations {
   String liveGame(int n) {
     return 'Partia $n';
   }
+
+  @override
+  String get settingsTitle => 'Ustawienia';
+
+  @override
+  String get settingsBattles => 'Bitwy przy biciu';
+
+  @override
+  String get settingsBattlesHint =>
+      'Wyłączone: zbita figura po prostu znika w chmurce.';
+
+  @override
+  String get settingsClassic => 'Klasyczne figury szachowe';
+
+  @override
+  String get settingsClassicHint =>
+      'W partiach zamiast postaci armii. Bitwy wtedy się nie pokazują.';
+
+  @override
+  String get liveBadge => 'Na żywo';
+
+  @override
+  String get liveSkip => 'Pomiń';
+
+  @override
+  String get liveTryOwn => 'Spróbuję sam';
+
+  @override
+  String get liveAdviser => 'Doradca';
+
+  @override
+  String get liveBackToGame => 'Wróć do partii';
+
+  @override
+  String get liveNewMove => 'Nowy ruch!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Nowe ruchy: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Kończy się czas!';
+
+  @override
+  String get liveAdviserThinking => 'Doradca jeszcze myśli.';
+
+  @override
+  String get liveAdviserContinue => 'Pogram dalej sam';
+
+  @override
+  String get liveAhead => 'Kto prowadzi';
+
+  @override
+  String get liveClockApprox => 'Czas jest przybliżony';
+
+  @override
+  String get liveReset => 'Od początku';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Początek o $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'głębokość $n';
+  }
 }

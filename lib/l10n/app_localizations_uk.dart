@@ -213,4 +213,72 @@ class AppLocalizationsUk extends AppLocalizations {
   String liveGame(int n) {
     return 'Партія $n';
   }
+
+  @override
+  String get settingsTitle => 'Налаштування';
+
+  @override
+  String get settingsBattles => 'Битви під час взяття';
+
+  @override
+  String get settingsBattlesHint =>
+      'Вимкнено: взята фігура просто зникає в хмаринці.';
+
+  @override
+  String get settingsClassic => 'Класичні шахові фігури';
+
+  @override
+  String get settingsClassicHint =>
+      'У партіях замість персонажів армій. Тоді битви не показуються.';
+
+  @override
+  String get liveBadge => 'Наживо';
+
+  @override
+  String get liveSkip => 'Пропустити';
+
+  @override
+  String get liveTryOwn => 'Спробую сам';
+
+  @override
+  String get liveAdviser => 'Порадник';
+
+  @override
+  String get liveBackToGame => 'Назад до партії';
+
+  @override
+  String get liveNewMove => 'Новий хід!';
+
+  @override
+  String liveNewMoves(int n) {
+    return 'Нові ходи: $n';
+  }
+
+  @override
+  String get liveTimeTrouble => 'Час закінчується!';
+
+  @override
+  String get liveAdviserThinking => 'Порадник ще думає.';
+
+  @override
+  String get liveAdviserContinue => 'Продовжу сам';
+
+  @override
+  String get liveAhead => 'Хто веде';
+
+  @override
+  String get liveClockApprox => 'Час приблизний';
+
+  @override
+  String get liveReset => 'З початку';
+
+  @override
+  String liveStartsAt(String time) {
+    return 'Початок о $time';
+  }
+
+  @override
+  String liveDepth(int n) {
+    return 'глибина $n';
+  }
 }

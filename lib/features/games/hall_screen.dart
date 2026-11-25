@@ -28,7 +28,10 @@ class HallScreen extends ConsumerWidget {
       body: SafeArea(
         child: Column(
           children: [
-            HallHeader(title: l10n.hallTitle),
+            HallHeader(
+              title: l10n.hallTitle,
+              trailing: IconButton(iconSize: 32, tooltip: l10n.settingsTitle, icon: const Icon(Icons.settings_rounded), onPressed: () => context.push('/settings')),
+            ),
             Expanded(
               child: ListView(
                 padding: const EdgeInsets.only(bottom: 24),
