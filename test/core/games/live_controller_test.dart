@@ -174,6 +174,18 @@ void main() {
     expect(c.inGame, isTrue);
   });
 
+  test('chronicle steps slide the piece both ways, a jump does not', () {
+    final c = make(upTo(10))..skipCatchUp();
+    c.setChronicle(true);
+    c.browse(9);
+    expect(c.slide!.move.from, c.record.moves[9].to);
+    expect(c.slide!.move.to, c.record.moves[9].from);
+    c.browse(10);
+    expect(c.slide!.move, c.record.moves[9]);
+    c.browse(2);
+    expect(c.slide, isNull);
+  });
+
   group('watcher', () {
     setUp(() => SharedPreferences.setMockInitialValues({}));
 

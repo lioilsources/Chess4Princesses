@@ -23,6 +23,17 @@ class ReplayBattle {
 
 typedef ReplayTimer = Timer Function(Duration, void Function());
 
+/// The slide for one step between two game plies: forward slides the move,
+/// back slides it in reverse. Longer jumps have none.
+MoveSlide? stepSlide(List<Move> moves, int from, int to, int tick) {
+  if (to == from + 1 && from < moves.length) return MoveSlide(moves[from], tick, duration: replaySlide);
+  if (to == from - 1 && to >= 0) {
+    final m = moves[to];
+    return MoveSlide(Move(m.to, m.from), tick, duration: replaySlide);
+  }
+  return null;
+}
+
 /// Plays a [GameRecord] like a film (story mode) or step by step
 /// (chronicle mode for the parent). Pure state + a timer; the screen renders.
 class ReplayController extends ChangeNotifier {
@@ -96,12 +107,23 @@ class ReplayController extends ChangeNotifier {
   void stepBack() {
     if (ply == 0) return;
     pause();
-    _seek(ply - 1);
+    _seekSliding(ply - 1);
   }
 
   void jumpTo(int target) {
     pause();
-    _seek(target.clamp(0, record.length));
+    _seekSliding(target.clamp(0, record.length));
+  }
+
+  /// Chronicle step: the piece slides there (and back) instead of jumping.
+  void _seekSliding(int target) {
+    final s = stepSlide(record.moves, ply, target, _tick + 1);
+    _seek(target);
+    if (s != null) {
+      _tick++;
+      slide = s;
+      _changed();
+    }
   }
 
   /// "Skoč na další bitvu": quietly fast-forward to just before the next

@@ -184,7 +184,7 @@ class LiveController extends ChangeNotifier {
     final i = ply;
     final m = _record.moves[i];
     ply++;
-    slide = MoveSlide(m, ++_tick, duration: _fast ? liveCatchUpPly : replaySlide);
+    slide = MoveSlide(m, ++_tick, duration: _fast ? liveCatchUpPly : liveSlide);
     final moment = _moments[i];
     final quiet = _fast;
     if (moment != null && moment.isCapture) {
@@ -260,8 +260,9 @@ class LiveController extends ChangeNotifier {
     if (phase == LivePhase.catchUp) skipCatchUp();
     _cancel();
     battle = null;
-    slide = null;
-    ply = target.clamp(0, _record.length);
+    final next = target.clamp(0, _record.length);
+    slide = stepSlide(_record.moves, ply, next, ++_tick);
+    ply = next;
     if (inGame) _lengthAtLeave = _record.length;
     away = ply >= _record.length ? LiveAway.none : LiveAway.browse;
     if (inGame) _arrive();

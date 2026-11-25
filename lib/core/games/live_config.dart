@@ -11,6 +11,9 @@ const livePollMax = Duration(seconds: 60);
 const liveCatchUpPly = Duration(milliseconds: 120);
 const liveCatchUpMax = Duration(seconds: 12);
 
+/// A new live move slides slower than in a replay: it is the event everyone waits for.
+const liveSlide = Duration(milliseconds: 700);
+
 /// More new plies than this at once are played quickly, without battles.
 const liveBurstMax = 4;
 
