@@ -271,7 +271,7 @@ class _LiveViewState extends ConsumerState<_LiveView> {
                         position: c.position,
                         armyOf: _armyOf,
                         mySide: Side.white,
-                        marks: BoardMarks(done: last == null ? const {} : {last.from, last.to}, selected: c.selected, dots: c.dots, arrows: arrows),
+                        marks: BoardMarks(lastMove: last, selected: c.selected, dots: c.dots, arrows: arrows),
                         burst: c.burst,
                         slide: c.slide,
                         showCoordinates: c.chronicle,

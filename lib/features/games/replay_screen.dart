@@ -153,7 +153,7 @@ class _ReplayViewState extends ConsumerState<ReplayView> {
                     position: c.position,
                     armyOf: _armyOf,
                     mySide: Side.white,
-                    marks: BoardMarks(done: last == null ? const {} : {last.from, last.to}),
+                    marks: BoardMarks(lastMove: last),
                     burst: c.burst,
                     slide: c.slide,
                     showCoordinates: c.chronicle,
