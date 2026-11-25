@@ -13,8 +13,10 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'core/games/live_controller_test.dart' show full, pgnOf;
 
-class _Feed extends FeedClient {
-  _Feed() : super(baseUrl: 'http://feed.invalid');
+export 'core/games/live_controller_test.dart' show pgnOf;
+
+class LiveFeedFake extends FeedClient {
+  LiveFeedFake() : super(baseUrl: 'http://feed.invalid');
   String body = '';
   int adviceCalls = 0;
 
@@ -30,7 +32,7 @@ class _Feed extends FeedClient {
 }
 
 /// Timers the test fires by hand; the screen never waits on real time.
-class _Timers {
+class ManualTimers {
   final pending = <void Function()>[];
   Timer call(Duration d, void Function() f) {
     pending.add(f);
@@ -55,7 +57,7 @@ class _T implements Timer {
   int get tick => 0;
 }
 
-Widget _app(Widget home, _Feed feed) => ProviderScope(
+Widget liveTestApp(Widget home, LiveFeedFake feed) => ProviderScope(
   overrides: [feedClientProvider.overrideWithValue(feed)],
   child: MaterialApp(
     locale: const Locale('cs'),
@@ -72,9 +74,9 @@ void main() {
     t.view.physicalSize = const Size(1170, 2532);
     t.view.devicePixelRatio = 3;
     addTearDown(t.view.reset);
-    final feed = _Feed()..body = pgnOf(20);
-    final timers = _Timers();
-    await t.pumpWidget(_app(LiveGameScreen(tournamentId: 'wch2026', roundId: 'L3j03TZq', timer: timers.call), feed));
+    final feed = LiveFeedFake()..body = pgnOf(20);
+    final timers = ManualTimers();
+    await t.pumpWidget(liveTestApp(LiveGameScreen(tournamentId: 'wch2026', roundId: 'L3j03TZq', timer: timers.call), feed));
     await t.pump();
     await t.pump();
     expect(find.text('Přeskočit'), findsOneWidget);
@@ -117,7 +119,7 @@ void main() {
   });
 
   testWidgets('settings: classic pieces turn the battle switch off', (t) async {
-    await t.pumpWidget(_app(const SettingsScreen(), _Feed()));
+    await t.pumpWidget(liveTestApp(const SettingsScreen(), LiveFeedFake()));
     await t.pumpAndSettle();
     expect(find.text('Bitvy při braní'), findsOneWidget);
     await t.tap(find.text('Klasické šachové figurky'));

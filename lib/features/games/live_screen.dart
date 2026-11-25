@@ -144,7 +144,9 @@ class LiveRoundScreen extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final l10n = AppLocalizations.of(context);
-    final live = round.state == RoundState.ongoing;
+    // Every game of the feed opens in the live screen: a finished one catches up
+    // to its end card, then offers the adviser and own tries like a running one.
+    final live = round.state != RoundState.upcoming;
     final games = ref.watch(roundGamesProvider((tournamentId, round)));
     return switch (games) {
       AsyncData(value: Cached(value: [_])) when live => LiveGameScreen(tournamentId: tournamentId, roundId: round.id),

@@ -83,6 +83,19 @@ void main() {
     c.dispose();
   });
 
+  test('a copy stored mid-round is fetched again once the round is finished', () async {
+    // Saved at move 3 while the round was running (result *).
+    SharedPreferences.setMockInitialValues({'feed.round.wch2026.xLgOJ6cb': '[White "Gukesh D"]\n[Black "Sindarov, Javokhir"]\n[Result "*"]\n\n1. e4 e5 2. Nf3 *\n'});
+    final feed = FakeFeed();
+    final round = parseLive(_live).single.rounds.first;
+    final c = ProviderContainer(overrides: [feedClientProvider.overrideWithValue(feed)]);
+    final games = (await c.read(roundGamesProvider(('wch2026', round)).future)).value;
+    expect(feed.calls, 1);
+    expect(games.single.length, 6);
+    expect(roundComplete(_round), isTrue);
+    c.dispose();
+  });
+
   test('without a relay the live switch stays off', () async {
     final c = ProviderContainer();
     expect(feedConfigured, isFalse);

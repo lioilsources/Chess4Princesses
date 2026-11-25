@@ -202,6 +202,9 @@ class _LiveView extends ConsumerStatefulWidget {
 
 class _LiveViewState extends ConsumerState<_LiveView> {
   bool _adviserOpen = false;
+
+  /// The end card was closed: the finished game stays open for analysis.
+  bool _endClosed = false;
   final Map<String, Future<Advice>> _advice = {};
 
   LiveController get c => widget.c;
@@ -305,12 +308,12 @@ class _LiveViewState extends ConsumerState<_LiveView> {
               onFinished: c.battleFinished,
             ),
           ),
-        if (c.ended && !c.chronicle)
+        if (c.ended && !c.chronicle && !_endClosed)
           EndCard(
             line: c.line ?? ReplayLine.endUnfinished,
             l10n: l10n,
             onAgain: () => Navigator.of(context).push(MaterialPageRoute<void>(builder: (_) => ReplayScreen(gameId: g.id, game: g))),
-            onDone: () => context.pop(),
+            onDone: () => setState(() => _endClosed = true),
           ),
       ],
     );
