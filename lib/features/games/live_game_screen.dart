@@ -255,7 +255,9 @@ class _LiveViewState extends ConsumerState<_LiveView> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 12),
-                child: Center(
+                child: Align(
+                  // Top, so the board stays put while the panels below change height.
+                  alignment: Alignment.topCenter,
                   child: FutureBuilder<Advice>(
                     future: advice,
                     builder: (context, snap) {

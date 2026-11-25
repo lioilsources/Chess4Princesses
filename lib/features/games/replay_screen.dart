@@ -146,7 +146,9 @@ class _ReplayViewState extends ConsumerState<ReplayView> {
             Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(12),
-                child: Center(
+                child: Align(
+                  // Top, so the board stays put while the panels below change height.
+                  alignment: Alignment.topCenter,
                   child: ChessBoard(
                     position: c.position,
                     armyOf: _armyOf,
