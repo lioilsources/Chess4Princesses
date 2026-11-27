@@ -84,10 +84,26 @@ class BattleGame extends FlameGame with TapCallbacks {
     request.onLine?.call(text);
   }
 
+  /// Longest step one frame may take. A stalled frame (image decode, audio
+  /// start) must slow the battle down, not jump it to the end.
+  static const maxStep = 1 / 30;
+
+  /// The battle clock waits for both fighters' art, at most this long.
+  static const maxLoadWait = 2.0;
+
+  double _loadWait = 0;
+
+  bool get _fightersReady => _attacker.isLoaded && _defender.isLoaded;
+
   @override
   void update(double dt) {
-    super.update(dt);
-    for (final e in director.update(dt)) {
+    final step = min(dt, maxStep);
+    super.update(step);
+    if (!_fightersReady && _loadWait < maxLoadWait) {
+      _loadWait += step;
+      return;
+    }
+    for (final e in director.update(step)) {
       switch (e) {
         case BattleEvent.phase:
           _onPhase(director.phase);
