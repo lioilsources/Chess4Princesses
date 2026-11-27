@@ -226,8 +226,7 @@ class AppLocalizationsBn extends AppLocalizations {
   String get settingsClassic => 'ক্লাসিক দাবার ঘুঁটি';
 
   @override
-  String get settingsClassicHint =>
-      'খেলায় সেনাবাহিনীর চরিত্রের বদলে। তখন লড়াই দেখানো হয় না।';
+  String get settingsClassicHint => 'খেলায় সেনাবাহিনীর চরিত্রের বদলে।';
 
   @override
   String get liveBadge => 'সরাসরি';

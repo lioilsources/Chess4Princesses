@@ -66,7 +66,7 @@
   "settingsBattles": "Batallas al capturar",
   "settingsBattlesHint": "Desactivado: la pieza capturada solo desaparece en una nube.",
   "settingsClassic": "Piezas de ajedrez clásicas",
-  "settingsClassicHint": "En las partidas, en lugar de los personajes de los ejércitos. Entonces no se muestran batallas.",
+  "settingsClassicHint": "En las partidas, en lugar de los personajes de los ejércitos.",
   "liveBadge": "En directo",
   "liveSkip": "Saltar",
   "liveTryOwn": "Lo intento yo",

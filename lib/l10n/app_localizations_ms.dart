@@ -230,7 +230,7 @@ class AppLocalizationsMs extends AppLocalizations {
 
   @override
   String get settingsClassicHint =>
-      'Dalam permainan, menggantikan watak tentera. Pertempuran tidak dipaparkan.';
+      'Dalam permainan, menggantikan watak tentera.';
 
   @override
   String get liveBadge => 'Langsung';

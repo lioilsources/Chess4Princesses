@@ -232,7 +232,7 @@ class AppLocalizationsTa extends AppLocalizations {
 
   @override
   String get settingsClassicHint =>
-      'ஆட்டங்களில் படைகளின் பாத்திரங்களுக்குப் பதிலாக. அப்போது போர்கள் காட்டப்படாது.';
+      'ஆட்டங்களில் படைகளின் பாத்திரங்களுக்குப் பதிலாக.';
 
   @override
   String get liveBadge => 'நேரலை';

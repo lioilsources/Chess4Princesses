@@ -229,8 +229,7 @@ class AppLocalizationsKn extends AppLocalizations {
   String get settingsClassic => 'ಕ್ಲಾಸಿಕ್ ಚದುರಂಗದ ಕಾಯಿಗಳು';
 
   @override
-  String get settingsClassicHint =>
-      'ಆಟಗಳಲ್ಲಿ ಸೈನ್ಯದ ಪಾತ್ರಗಳ ಬದಲು. ಆಗ ಯುದ್ಧಗಳು ಕಾಣುವುದಿಲ್ಲ.';
+  String get settingsClassicHint => 'ಆಟಗಳಲ್ಲಿ ಸೈನ್ಯದ ಪಾತ್ರಗಳ ಬದಲು.';
 
   @override
   String get liveBadge => 'ನೇರ';

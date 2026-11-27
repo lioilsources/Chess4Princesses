@@ -66,7 +66,7 @@
   "settingsBattles": "Combats lors des prises",
   "settingsBattlesHint": "Désactivé : la pièce prise disparaît simplement dans un nuage.",
   "settingsClassic": "Pièces d'échecs classiques",
-  "settingsClassicHint": "Dans les parties, à la place des personnages des armées. Les combats ne s'affichent alors pas.",
+  "settingsClassicHint": "Dans les parties, à la place des personnages des armées.",
   "liveBadge": "En direct",
   "liveSkip": "Passer",
   "liveTryOwn": "J'essaie moi-même",

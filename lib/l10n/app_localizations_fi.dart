@@ -227,8 +227,7 @@ class AppLocalizationsFi extends AppLocalizations {
   String get settingsClassic => 'Klassiset shakkinappulat';
 
   @override
-  String get settingsClassicHint =>
-      'Peleissä armeijoiden hahmojen sijaan. Taisteluita ei silloin näytetä.';
+  String get settingsClassicHint => 'Peleissä armeijoiden hahmojen sijaan.';
 
   @override
   String get liveBadge => 'Suorana';

@@ -118,14 +118,15 @@ void main() {
     timers.fireAll();
   });
 
-  testWidgets('settings: classic pieces turn the battle switch off', (t) async {
+  testWidgets('settings: classic pieces leave the battle switch alone', (t) async {
     await t.pumpWidget(liveTestApp(const SettingsScreen(), LiveFeedFake()));
     await t.pumpAndSettle();
     expect(find.text('Bitvy při braní'), findsOneWidget);
     await t.tap(find.text('Klasické šachové figurky'));
     await t.pumpAndSettle();
     final battles = t.widget<SwitchListTile>(find.byKey(const ValueKey('settings.battles')));
-    expect(battles.onChanged, isNull);
+    expect(battles.onChanged, isNotNull);
+    expect(battles.value, isTrue);
     expect((await SharedPreferences.getInstance()).getBool('settings.classicPieces'), isTrue);
   });
 

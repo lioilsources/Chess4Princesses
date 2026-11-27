@@ -230,7 +230,7 @@ class AppLocalizationsEl extends AppLocalizations {
 
   @override
   String get settingsClassicHint =>
-      'Στις παρτίδες αντί για τους χαρακτήρες των στρατών. Τότε οι μάχες δεν εμφανίζονται.';
+      'Στις παρτίδες αντί για τους χαρακτήρες των στρατών.';
 
   @override
   String get liveBadge => 'Ζωντανά';

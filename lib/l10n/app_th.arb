@@ -66,7 +66,7 @@
   "settingsBattles": "การต่อสู้เมื่อกินหมาก",
   "settingsBattlesHint": "ปิด: หมากที่ถูกกินจะหายไปในก้อนเมฆเท่านั้น",
   "settingsClassic": "หมากรุกแบบคลาสสิก",
-  "settingsClassicHint": "ในเกมแทนตัวละครของกองทัพ แล้วจะไม่แสดงการต่อสู้",
+  "settingsClassicHint": "ในเกมแทนตัวละครของกองทัพ",
   "liveBadge": "สด",
   "liveSkip": "ข้าม",
   "liveTryOwn": "ฉันจะลองเอง",

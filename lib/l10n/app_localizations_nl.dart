@@ -229,7 +229,7 @@ class AppLocalizationsNl extends AppLocalizations {
 
   @override
   String get settingsClassicHint =>
-      'In partijen in plaats van de legerfiguren. Gevechten worden dan niet getoond.';
+      'In partijen in plaats van de legerfiguren.';
 
   @override
   String get liveBadge => 'Live';

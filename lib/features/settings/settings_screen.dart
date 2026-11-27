@@ -31,7 +31,7 @@ class SettingsScreen extends ConsumerWidget {
                     child: SwitchListTile(
                       key: const ValueKey('settings.battles'),
                       value: s.battles,
-                      onChanged: s.classicPieces ? null : (v) => notifier.change((x) => x.copyWith(battles: v)),
+                      onChanged: (v) => notifier.change((x) => x.copyWith(battles: v)),
                       secondary: const Icon(Icons.flash_on_rounded, size: 36, color: Color(0xFFFFA000)),
                       title: Text(l10n.settingsBattles),
                       subtitle: Text(l10n.settingsBattlesHint),

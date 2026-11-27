@@ -228,8 +228,7 @@ class AppLocalizationsUr extends AppLocalizations {
   String get settingsClassic => 'کلاسیکی شطرنج کے مہرے';
 
   @override
-  String get settingsClassicHint =>
-      'کھیلوں میں فوج کے کرداروں کی جگہ۔ تب لڑائیاں نہیں دکھتیں۔';
+  String get settingsClassicHint => 'کھیلوں میں فوج کے کرداروں کی جگہ۔';
 
   @override
   String get liveBadge => 'براہِ راست';

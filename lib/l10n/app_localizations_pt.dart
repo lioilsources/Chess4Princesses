@@ -230,7 +230,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get settingsClassicHint =>
-      'Nas partidas, em vez das personagens dos exércitos. As batalhas deixam de aparecer.';
+      'Nas partidas, em vez das personagens dos exércitos.';
 
   @override
   String get liveBadge => 'Em direto';
@@ -510,7 +510,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get settingsClassicHint =>
-      'Nas partidas, no lugar dos personagens dos exércitos. Aí as batalhas não aparecem.';
+      'Nas partidas, no lugar dos personagens dos exércitos.';
 
   @override
   String get liveBadge => 'Ao vivo';
@@ -791,7 +791,7 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
 
   @override
   String get settingsClassicHint =>
-      'Nas partidas, em vez das personagens dos exércitos. As batalhas deixam de aparecer.';
+      'Nas partidas, em vez das personagens dos exércitos.';
 
   @override
   String get liveBadge => 'Em direto';

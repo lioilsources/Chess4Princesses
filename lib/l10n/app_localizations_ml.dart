@@ -230,7 +230,7 @@ class AppLocalizationsMl extends AppLocalizations {
 
   @override
   String get settingsClassicHint =>
-      'കളികളിൽ സൈന്യത്തിന്റെ കഥാപാത്രങ്ങൾക്ക് പകരം. അപ്പോൾ യുദ്ധങ്ങൾ കാണിക്കില്ല.';
+      'കളികളിൽ സൈന്യത്തിന്റെ കഥാപാത്രങ്ങൾക്ക് പകരം.';
 
   @override
   String get liveBadge => 'തത്സമയം';

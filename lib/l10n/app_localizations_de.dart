@@ -230,8 +230,7 @@ class AppLocalizationsDe extends AppLocalizations {
   String get settingsClassic => 'Klassische Schachfiguren';
 
   @override
-  String get settingsClassicHint =>
-      'In Partien statt der Armeefiguren. Kämpfe werden dann nicht gezeigt.';
+  String get settingsClassicHint => 'In Partien statt der Armeefiguren.';
 
   @override
   String get liveBadge => 'Live';

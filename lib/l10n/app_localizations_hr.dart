@@ -229,8 +229,7 @@ class AppLocalizationsHr extends AppLocalizations {
   String get settingsClassic => 'Klasične šahovske figure';
 
   @override
-  String get settingsClassicHint =>
-      'U partijama umjesto likova vojski. Tada se bitke ne prikazuju.';
+  String get settingsClassicHint => 'U partijama umjesto likova vojski.';
 
   @override
   String get liveBadge => 'Uživo';

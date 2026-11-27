@@ -225,8 +225,7 @@ class AppLocalizationsMr extends AppLocalizations {
   String get settingsClassic => 'क्लासिक बुद्धिबळाचे मोहरे';
 
   @override
-  String get settingsClassicHint =>
-      'डावांमध्ये सैन्याच्या पात्रांऐवजी. तेव्हा लढाया दिसत नाहीत.';
+  String get settingsClassicHint => 'डावांमध्ये सैन्याच्या पात्रांऐवजी.';
 
   @override
   String get liveBadge => 'थेट';

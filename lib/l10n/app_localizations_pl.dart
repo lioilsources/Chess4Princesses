@@ -228,8 +228,7 @@ class AppLocalizationsPl extends AppLocalizations {
   String get settingsClassic => 'Klasyczne figury szachowe';
 
   @override
-  String get settingsClassicHint =>
-      'W partiach zamiast postaci armii. Bitwy wtedy się nie pokazują.';
+  String get settingsClassicHint => 'W partiach zamiast postaci armii.';
 
   @override
   String get liveBadge => 'Na żywo';

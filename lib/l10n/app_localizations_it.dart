@@ -230,7 +230,7 @@ class AppLocalizationsIt extends AppLocalizations {
 
   @override
   String get settingsClassicHint =>
-      'Nelle partite, al posto dei personaggi degli eserciti. Le battaglie allora non si vedono.';
+      'Nelle partite, al posto dei personaggi degli eserciti.';
 
   @override
   String get liveBadge => 'In diretta';

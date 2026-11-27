@@ -228,8 +228,7 @@ class AppLocalizationsTe extends AppLocalizations {
   String get settingsClassic => 'క్లాసిక్ చదరంగం పావులు';
 
   @override
-  String get settingsClassicHint =>
-      'ఆటల్లో సైన్యాల పాత్రలకు బదులుగా. అప్పుడు యుద్ధాలు కనిపించవు.';
+  String get settingsClassicHint => 'ఆటల్లో సైన్యాల పాత్రలకు బదులుగా.';
 
   @override
   String get liveBadge => 'ప్రత్యక్షం';

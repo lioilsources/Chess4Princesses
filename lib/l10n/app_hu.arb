@@ -66,7 +66,7 @@
   "settingsBattles": "Csaták ütéskor",
   "settingsBattlesHint": "Kikapcsolva: a leütött bábu csak eltűnik egy felhőben.",
   "settingsClassic": "Klasszikus sakkfigurák",
-  "settingsClassicHint": "A játszmákban a seregek szereplői helyett. Ilyenkor nincsenek csaták.",
+  "settingsClassicHint": "A játszmákban a seregek szereplői helyett.",
   "liveBadge": "Élő",
   "liveSkip": "Átugrás",
   "liveTryOwn": "Kipróbálom magam",

@@ -229,8 +229,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get settingsClassic => 'Bidak catur klasik';
 
   @override
-  String get settingsClassicHint =>
-      'Di partai, menggantikan tokoh pasukan. Pertempuran lalu tidak ditampilkan.';
+  String get settingsClassicHint => 'Di partai, menggantikan tokoh pasukan.';
 
   @override
   String get liveBadge => 'Langsung';
