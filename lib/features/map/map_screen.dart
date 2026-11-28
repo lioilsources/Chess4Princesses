@@ -56,11 +56,20 @@ class MapScreen extends ConsumerWidget {
       body: SafeArea(
         child: Column(
           children: [
+            // Title on its own line (scaled down, never broken inside a word),
+            // the buttons in a row below it.
             Padding(
-              padding: const EdgeInsets.fromLTRB(16, 8, 8, 0),
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                child: BubbleText(l10n.appTitle, role: KidRole.title, size: 34, palette: KidPalette.peach),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Expanded(child: BubbleText(l10n.appTitle, role: KidRole.title, size: 34, palette: KidPalette.peach)),
                   IconButton(iconSize: 36, tooltip: l10n.hallTitle, icon: const Icon(Icons.emoji_events_rounded), onPressed: () => context.push('/hall')),
                   IconButton(iconSize: 36, tooltip: l10n.battleDemo, icon: const Icon(Icons.bolt_rounded), onPressed: () => context.push('/battle')),
                   IconButton(iconSize: 36, tooltip: l10n.armies, icon: const Icon(Icons.shield_rounded), onPressed: () => context.push('/army')),
